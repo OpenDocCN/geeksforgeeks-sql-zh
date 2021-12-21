@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 IDENTITY [( seed, increment)]
 
 Seed: Starting value of a column. 

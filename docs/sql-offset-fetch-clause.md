@@ -14,7 +14,7 @@ OFFSET 参数用于标识从结果集中返回行的起始点。基本上，它�
 
 语法:
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE condition
@@ -29,7 +29,7 @@ OFFSET rows_to_skip ROWS;
 
 *   打印除最低工资员工以外的所有员工的姓名。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 ORDER BY Salary
@@ -45,7 +45,7 @@ OFFSET 1 ROWS;
 FETCH 参数用于返回一组行数。FETCH 不能单独使用，它是和 OFFSET 一起使用的。
 语法:
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 ORDER BY column_name
@@ -57,7 +57,7 @@ FETCH NEXT number_of_rows ROWS ONLY;
 
 *   根据“工资”排序时，打印员工表中从第 3 到第 6 个元组的 Fname、Lname。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 ORDER BY Salary
@@ -71,7 +71,7 @@ FETCH NEXT 4 ROWS ONLY;
 
 *   按薪资排序时，打印员工表的后 2 个元组。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 ORDER BY Salary

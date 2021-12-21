@@ -11,7 +11,7 @@
 **示例–**
 两个表即 Student 和 Marks 属于同一个数据库 University。如果用户想要连接两个表中的所有行，查询必须以–
 
-```
+```sql
 select * 
 from student full join marks
 ```

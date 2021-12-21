@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 Create table Fd_master(Sr_no varchar2(10), 
 Branch_no varchar2(10), account_no varchar2(20),
 company_type varchar2(20), constraint pk primary key(Sr_no),  
@@ -42,25 +42,25 @@ constraint chk check(company_type in (‘1C’, ’2C’, ’3C’)));
 
 **语法:**
 
-```
+```sql
 CREATE TABLE ParentTable (ID int not null constraint DF_ParentTable default (1), 
 name varchar2(5));
 ```
 
-```
+```sql
 CREATE TABLE ForeignTable (ID int not null, Col2 VARCHAR(5));
 ```
 
 **约束 2(检查):**
 
-```
+```sql
 ALTER TABLE ParentTable ADD CONSTRAINT CK_ParentTable_ID CHECK(ID<100);
 ```
 
 **约束 3(外键):**
 外键
 
-```
+```sql
 ALTER TABLE ParentTable 
 ADD CONSTRAINT FK_parent_foreign FOREIGN KEY (ID) REFERENCES ForeignTable(ID);
 ```

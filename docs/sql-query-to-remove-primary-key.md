@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -38,7 +38,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_details(
   stu_id VARCHAR(8) NOT NULL PRIMARY KEY,
   stu_name VARCHAR(20),
@@ -56,7 +56,7 @@ CREATE TABLE student_details(
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns student_details
 ```
 
@@ -70,7 +70,7 @@ EXEC sp_columns student_details
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_details VALUES
 ('1940001','PRATHAM','E.C.E'),
 ('1940002','ASHOK','C.S.E'),
@@ -90,7 +90,7 @@ INSERT INTO student_details VALUES
 
 **查询:**
 
-```
+```sql
 SELECT* FROM student_details 
 ```
 
@@ -102,7 +102,7 @@ SELECT* FROM student_details
 
 **查询:**
 
-```
+```sql
 SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE  
 ```
 
@@ -122,7 +122,7 @@ SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
 
 **查询:**
 
-```
+```sql
 ALTER TABLE student_details
 DROP CONSTRAINT PK__student___E53CAB21F07312DD
 ```

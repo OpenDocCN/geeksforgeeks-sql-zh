@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SYSDATE()
 
 ```
@@ -20,7 +20,7 @@ SYSDATE()
 **示例-1 :**
 使用 SYSDATE 函数获取当前日期和时间。
 
-```
+```sql
 SELECT SYSDATE() as CurrentDateAndTime ;
 
 ```
@@ -34,7 +34,7 @@ SELECT SYSDATE() as CurrentDateAndTime ;
 **示例-2 :**
 使用数字格式的 SYSDATE 函数获取当前日期和时间。
 
-```
+```sql
 SELECT SYSDATE() + 0 as CurrDateAndTime ;
 
 ```
@@ -48,7 +48,7 @@ SELECT SYSDATE() + 0 as CurrDateAndTime ;
 **示例-3 :**
 可以使用 SYSDATE 函数设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE DeliveryDetails (
 DeliveryId INT AUTO_INCREMENT,
 ProductId INT NOT NULL,
@@ -61,7 +61,7 @@ PRIMARY KEY(DeliveryId)
 
 在这里，我们将使用 SYSDATE 函数，当一个交付将被完成。“交货时间”列中的值将是系统日期函数给出的值。
 
-```
+```sql
 INSERT INTO  
 DeliveryDetails(ProductId, ProductName, Delivered_At)
 VALUES
@@ -70,7 +70,7 @@ VALUES
 
 现在，检查交货详细信息表:
 
-```
+```sql
 SELECT * FROM DeliveryDetails;
 
 ```

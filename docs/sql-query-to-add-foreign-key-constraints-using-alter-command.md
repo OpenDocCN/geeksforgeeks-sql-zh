@@ -13,13 +13,13 @@
 
 我们可以使用以下命令创建数据库:
 
-```
+```sql
 Syntax: CREATE DATABASE DATABASE_NAME;
 ```
 
 让我们创建一个如下所示的*极客*数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -29,7 +29,7 @@ CREATE DATABASE geeks;
 
 使用以下命令使用*极客*数据库:
 
-```
+```sql
 use geeks;
 ```
 
@@ -39,13 +39,13 @@ use geeks;
 
 要将表添加到数据库中，我们使用以下命令:
 
-```
+```sql
 Syntax:- CREATE TABLE table_name (Attribute_name datatype...);
 ```
 
 因此，让我们在*极客*数据库中创建一个*极客*表，如下所示:
 
-```
+```sql
 CREATE TABLE geeks(id int , name varchar(20));
 ```
 
@@ -57,7 +57,7 @@ CREATE TABLE geeks(id int , name varchar(20));
 
 要将记录插入表中，我们可以使用下面的命令:
 
-```
+```sql
 Syntax: INSERT INTO table_name(column1,
                 column2,
                 column 3,.....)
@@ -68,7 +68,7 @@ Syntax: INSERT INTO table_name(column1,
 
 所以让我们在*极客*表中添加一些记录:
 
-```
+```sql
  INSERT INTO geeks(id,name) VALUES (1,"teja");
 ```
 
@@ -78,13 +78,13 @@ Syntax: INSERT INTO table_name(column1,
 
 要在表中有外键，我们必须有主键。要创建主服务器，我们使用以下命令:
 
-```
+```sql
 Syntax: CREATE TABLE table_name (Attribute_name  datatype PRIMARY_KEY);
 ```
 
 现在让我们创建一个主键:
 
-```
+```sql
 CREATE TABLE emp (id int NOT NULL PRIMARY KEY,name varchar(20))
 ```
 
@@ -92,7 +92,7 @@ CREATE TABLE emp (id int NOT NULL PRIMARY KEY,name varchar(20))
 
 现在要添加外键，我们必须通过以下方式创建一个新表:
 
-```
+```sql
 CREATE TABLE  student(
 id int ,
 name varchar(20),
@@ -105,7 +105,7 @@ Emp_id int REFERENCES emp(id));
 
 因此，如果您已经创建了学生表，并且现在希望添加外键，则可以使用下面的命令进行更改:
 
-```
+```sql
 ALTER TABLE dbo.student 
 add  constraint Fk_empid foreign key(emp_id)
 references dbo.emp(id);

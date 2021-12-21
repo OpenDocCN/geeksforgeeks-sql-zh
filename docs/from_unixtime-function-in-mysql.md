@@ -7,7 +7,7 @@ MySQL 中的这个函数有助于返回 Unix 时间戳的日期/日期时间表�
 
 **语法:**
 
-```
+```sql
 FROM_UNIXTIME(unix_timestamp, format)
 ```
 
@@ -25,7 +25,7 @@ FROM_UNIXTIME(unix_timestamp, format)
 **示例-1:**
 FROM _ UNIXTIME()函数在一个参数下的工作。
 
-```
+```sql
 SELECT FROM_UNIXTIME(599462400) 
 AS Unix;
 ```
@@ -42,7 +42,7 @@ Unix 操作系统
 **示例-2 :**
 分数秒 FROM_UNIXTIME()函数的工作原理。
 
-```
+```sql
 SELECT FROM_UNIXTIME(599462445.99999) 
 AS Unix;
 ```
@@ -61,7 +61,7 @@ Unix 操作系统
 
 *   **When format is ‘%W, %D %M %Y’ –**
 
-    ```
+    ```sql
     SELECT FROM_UNIXTIME(799462445, '%W, %D %M %Y') 
     AS Unix;
     ```
@@ -77,7 +77,7 @@ Unix 操作系统
 
 *   **When format is ‘%h:%i %p, %D %M %Y’ –**
 
-    ```
+    ```sql
     SELECT FROM_UNIXTIME(799462445, '%h:%i %p, %D %M %Y') 
     AS Unix;
     ```
@@ -94,7 +94,7 @@ Unix 操作系统
 **示例-4 :**
 在数值上下文中使用 FROM_UNIXTIME()函数。
 
-```
+```sql
 SELECT  
 FROM_UNIXTIME(846562400) As 'String_form',
 FROM_UNIXTIME(846562400) + 1 As 'Numeric_form';

@@ -14,7 +14,7 @@ CREATE 查询用于创建新的数据库。
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Test
 ```
 
@@ -31,7 +31,7 @@ CREATE DATABASE Test
 
 **查询:**
 
-```
+```sql
 ALTER DATABASE Test MODIFY NAME = Example
 ```
 

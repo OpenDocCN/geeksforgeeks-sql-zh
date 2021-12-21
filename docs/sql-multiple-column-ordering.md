@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name ORDER BY column_name;
 ```
 
@@ -22,7 +22,7 @@ SELECT * FROM table_name ORDER BY column_name;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -32,7 +32,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -42,7 +42,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
  CREATE TABLE geeksforgeeks(
  FIRSTNAME VARCHAR(20), LASTNAME VARCHAR(20), 
  CITY VARCHAR(20), AGE INT, GENDER VARCHAR(20));
@@ -52,7 +52,7 @@ USE geeks;
 
 ### **第四步:将数据**插入**表格**
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES
 ('ROMY', 'Kumari', 'New Delhi', 22, 'female'),
 ('Pushkar', 'jha', 'New Delhi', 23, 'male'),
@@ -72,7 +72,7 @@ INSERT INTO geeksforgeeks VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -84,7 +84,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
  SELECT * FROM geeksforgeeks ORDER BY FIRSTNAME, AGE;
 ```
 
@@ -96,7 +96,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
  SELECT * FROM geeksforgeeks ORDER BY FIRSTNAME, LASTNAME DESC, AGE DESC ;
 ```
 

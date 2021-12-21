@@ -9,7 +9,7 @@ MySQL 中的 DATABASE()函数返回默认或当前数据库的名称。DATABASE(
 
 **语法:**
 
-```
+```sql
 SELECT DATABASE();
 ```
 
@@ -22,7 +22,7 @@ DATABASE()函数易于使用，不接受任何参数。我们可以在 MySQL 控
 
 **输出:**
 
-```
+```sql
 'Employees'
 ```
 
@@ -34,7 +34,7 @@ MySQL 中的 CURRENT_USER()函数用于返回 MySQL 帐户的用户名和主机�
 
 **语法:**
 
-```
+```sql
 SELECT CURRENT_USER();
 ```
 
@@ -47,6 +47,6 @@ CURRENT_USER()函数也不接受任何参数。
 
 **输出:**
 
-```
+```sql
 'root@localhost'
 ```

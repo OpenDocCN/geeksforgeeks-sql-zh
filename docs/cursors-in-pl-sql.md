@@ -29,7 +29,7 @@
 
 创建光标的一般语法:
 
-```
+```sql
 CURSOR cursor_name IS select_statement;
 
 cursor_name – A suitable name for the cursor.
@@ -47,7 +47,7 @@ select_statement – A select query which returns multiple rows
 
 **语法:**
 
-```
+```sql
 DECLARE variables;
  records;
  create a cursor;

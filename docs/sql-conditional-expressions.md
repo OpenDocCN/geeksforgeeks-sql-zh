@@ -9,7 +9,7 @@
     We cannot specify literal null for the return_expr and the else_expr. All of the expressions(expr, comparison_expr, return_expr) must be of the same data type.
     **Syntax:**
 
-    ```
+    ```sql
     CASE expr WHEN comparison_expr1 THEN return_expr1
              [WHEN comparison_expr2 THEN return_expr2
               .
@@ -23,7 +23,7 @@
 
     **示例:**
 
-    ```
+    ```sql
     Input :
     SELECT first_name, dpartment_id, salary,
            CASE dpartment_id WHEN 50 THEN 1.5*salary
@@ -43,14 +43,14 @@
     If the default value is omitted, a null value is returned where a search value does not match any of the result values.
     **Syntax:**
 
-    ```
+    ```sql
     DECODE(col/expression, search1, result1
                             [, search2, result2,........,]
                             [, default])
 
     ```
 
-    ```
+    ```sql
     Input :
     SELECT first_name, dpartment_id, salary,
            DECODE(dpartment_id, 50, 1.5*salary,
@@ -69,12 +69,12 @@
     NOTE: Same as CASE expressions, COALESCE also will not evaluate the arguments to the right of the first non-null argument found.
     **Syntax:**
 
-    ```
+    ```sql
     COALESCE(value [, ......] )
 
     ```
 
-    ```
+    ```sql
     Input:
     SELECT COALESCE(last_name, '- NA -')
     from Employee;
@@ -89,19 +89,19 @@
     **注意:**如果列表中的任何表达式为空，则返回空。
     **语法:**
 
-    ```
+    ```sql
     GREATEST(expr1, expr2 [, .....] )
 
     ```
 
-    *   ```
+    *   ```sql
         Input:
         SELECT GREATEST('XYZ', 'xyz')
         from dual;
 
         ```
 
-        ```
+        ```sql
         Output:
         GREATEST('XYZ', 'xyz')
         xyz
@@ -110,7 +110,7 @@
 
         **说明:**小字母的 ASCII 值较大。
 
-    *   ```
+    *   ```sql
         Input:
         SELECT GREATEST('XYZ', null, 'xyz')
         from dual;
@@ -125,19 +125,19 @@
 5.  **IFNULL:** 如果 expr1 不为空，则返回 expr 1；否则它返回 expr2。根据使用它的上下文，返回一个数值或字符串值。
     **语法:**
 
-    ```
+    ```sql
     IFNULL(expr1, expr2)
 
     ```
 
-    *   ```
+    *   ```sql
         Input:
         SELECT IFNULL(1,0) 
         FROM dual;
 
         ```
 
-        ```
+        ```sql
         Output:
         -
         1
@@ -146,7 +146,7 @@
 
         **说明:**自，无表达式为空。
 
-    *   ```
+    *   ```sql
         Input:
         SELECT IFNULL(NULL,10) 
         FROM dual;
@@ -163,12 +163,12 @@
     NOTE: Same as CASE and COALESCE expressions, IN also will not evaluate the arguments to the right of the first non-null argument found.
     **Syntax:**
 
-    ```
+    ```sql
     WHERE column IN (x1, x2, x3 [,......] )
 
     ```
 
-    ```
+    ```sql
     Input:
     SELECT * from Employee
     WHERE dpartment_id IN(50, 12);
@@ -185,12 +185,12 @@
 
     **语法:**
 
-    ```
+    ```sql
     LEAST(expr1, expr2 [, ......])
 
     ```
 
-    *   ```
+    *   ```sql
 
         strong>Input:
         SELECT LEAST('XYZ', 'xyz')
@@ -204,7 +204,7 @@
 
         **说明:**大写字母的 ASCII 值较小。
 
-    *   ```
+    *   ```sql
 
         **Input:**
         SELECT LEAST('XYZ', null, 'xyz')
@@ -221,14 +221,14 @@
 8.  **NULLIF:** Returns a null value if value1=value2, otherwise it returns value1.
     **Syntax:**
 
-    ```
+    ```sql
     NULLIF(value1, value2)
 
     ```
 
     **示例:**
 
-    ```
+    ```sql
 
     **Input:**
     SELECT NULLIF(9995463931, contact_num) 

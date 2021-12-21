@@ -26,7 +26,7 @@
 
 **案例 1:** 当我们需要选择一个聚合函数并为其命名一列时。低于给它的代码。
 
-```
+```sql
 SELECT avg(salary1) AS average
 FROM table1;
 ```

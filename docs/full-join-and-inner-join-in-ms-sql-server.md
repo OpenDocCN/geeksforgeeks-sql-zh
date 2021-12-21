@@ -8,7 +8,7 @@ T5】1。完全连接:
 
 **语法–**
 
-```
+```sql
 select select_list 
 from table1 full join table2 on join _predicate
                            (OR)
@@ -21,7 +21,7 @@ from table1 full join table2
 
 **语法–**
 
-```
+```sql
 select select_list 
 from table1 inner join table2 on join_predicate
                         (OR)
@@ -62,7 +62,7 @@ from table1 inner join table2
 **1。完全连接:**
 完全连接应用于学生和分数表，下表是结果集。
 
-```
+```sql
 select * 
 from student full join marks 
 ```
@@ -80,7 +80,7 @@ from student full join marks
 **2。内部连接:**
 内部连接应用于学生表和成绩表，下表是结果集。
 
-```
+```sql
 select * 
 from student inner join marks 
 ```

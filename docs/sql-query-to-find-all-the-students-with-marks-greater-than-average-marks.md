@@ -10,13 +10,13 @@ SQL 中的查询就像执行任务的语句。在这里，我们需要写一个�
 
 我们可以使用以下命令创建数据库:
 
-```
+```sql
 Syntax: CREATE DATABASE DATABASE_NAME;
 ```
 
 让我们创建一个如下所示的*极客*数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -26,7 +26,7 @@ CREATE DATABASE geeks;
 
 使用以下命令使用*极客*数据库:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -36,13 +36,13 @@ USE geeks;
 
 要将表添加到数据库中，我们使用以下命令:
 
-```
+```sql
 Syntax: CREATE TABLE table_name (Attribute_name datatype...);
 ```
 
 因此，让我们在*极客*数据库中创建一个学生表，如下所示:
 
-```
+```sql
 CREATE TABLE Students(
 Id int,
 Name varchar(20),
@@ -53,7 +53,7 @@ TotalMarks int);
 
 **查看表格说明:**
 
-```
+```sql
 EXEC sp_columns Students;
 ```
 
@@ -63,7 +63,7 @@ EXEC sp_columns Students;
 
 要将记录插入表中，我们可以使用下面的命令:
 
-```
+```sql
 Syntax: INSERT INTO table_name(column1,
                 column2,
                 column 3,.....)
@@ -74,7 +74,7 @@ Syntax: INSERT INTO table_name(column1,
 
 所以让我们给*学生*表添加一些记录:
 
-```
+```sql
 INSERT INTO Students VALUES (1,'Neha',90);
 INSERT INTO Students VALUES (2,'Sahil',50);
 INSERT INTO Students VALUES (3,'Rohan',70);
@@ -88,7 +88,7 @@ INSERT INTO Students VALUES (7,'Alka',75);
 
 现在，让我们使用如下所示的 SELECT 语句打印表格中的可用数据:
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -102,7 +102,7 @@ SELECT * FROM department;
 
 使用以下语法查询所有分数高于班级平均水平的学生:
 
-```
+```sql
 Syntax:
 SELECT column1 FROM table_name
 WHERE column2 > (SELECT AVG(
@@ -112,7 +112,7 @@ FROM table_name);
 
 现在使用上面的语法对我们的*学生*表进行如下查询:
 
-```
+```sql
 SELECT Name FROM Students WHERE TotalMarks > (SELECT AVG(TotalMarks) FROM Students);
 ```
 

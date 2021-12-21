@@ -7,7 +7,7 @@ DELETE 是一个 [DML(数据操作语言)](https://www.geeksforgeeks.org/differe
 
 **DELETE 命令语法:**
 
-```
+```sql
 DELETE FROM TableName 
 WHERE condition; 
 ```
@@ -17,7 +17,7 @@ TRUNCATE 是一个 [DDL(数据定义语言)](https://www.geeksforgeeks.org/diffe
 
 **TRUNCATE 命令的语法:-**
 
-```
+```sql
 TRUNCATE TABLE  TableName; 
 ```
 

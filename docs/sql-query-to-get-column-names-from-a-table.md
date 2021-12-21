@@ -12,7 +12,7 @@ SQL 代表结构化查询语言。它是一种用于与数据库交互的语言�
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Test
 ```
 
@@ -28,7 +28,7 @@ CREATE DATABASE Test
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Data(FirstName varchar(40),
 LastName varchar(30),Age int, );
 ```
@@ -45,7 +45,7 @@ LastName varchar(30),Age int, );
 
 **查询:**
 
-```
+```sql
 INSERT INTO Data
 VALUES ('Rahul','Sharma',15),
    ('Soha','Shaikh',24),
@@ -63,7 +63,7 @@ VALUES ('Rahul','Sharma',15),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Data
 ```
 
@@ -84,7 +84,7 @@ SELECT * FROM Data
 
 **查询:**
 
-```
+```sql
 SELECT name FROM sys.columns WHERE object_id = OBJECT_ID('Data')  
 ```
 

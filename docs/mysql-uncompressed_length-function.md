@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 UNCOMPRESSED_LENGTH(compressed_string);
 ```
 
@@ -29,39 +29,39 @@ MySQL 中的 UNCOMPRESSED_LENGTH()函数返回压缩字符串的长度。
 
 **示例-1:** 在字符串上实现 UNCOMPRESSED_LENGTH()函数。
 
-```
+```sql
 SELECT  
 UNCOMPRESSED_LENGTH(COMPRESS('geeksforgeeks')); 
 ```
 
 **输出:**
 
-```
+```sql
 13 
 ```
 
 **示例-2:** 在包含字符和整数的字符串上实现 UNCOMPRESSED_LENGTH()函数。
 
-```
+```sql
 SELECT 
 UNCOMPRESSED_LENGTH(COMPRESS('geeksforgeeks123')); 
 ```
 
 **输出:**
 
-```
+```sql
 16 
 ```
 
 **示例-3:** 对空字符串实现 UNCOMPRESSED_LENGTH()函数，并返回压缩后的字符串长度。
 
-```
+```sql
 SELECT
 UNCOMPRESSED_LENGTH(COMPRESS(NULL)); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

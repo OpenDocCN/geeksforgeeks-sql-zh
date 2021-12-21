@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 NTILE(number_expression) OVER (
    [PARTITION BY partition_expression ]
    ORDER BY sort_expression [ASC | DESC]
@@ -28,7 +28,7 @@ NTILE(number_expression) OVER (
     **示例:**
     让我们创建一个名为 geeks_demo 的表:
 
-    ```
+    ```sql
     CREATE TABLE geeks_demo (
     ID INT NOT NULL );
     INSERT INTO geeks_demo(ID)
@@ -38,7 +38,7 @@ NTILE(number_expression) OVER (
 
     现在，
 
-    ```
+    ```sql
     SELECT * 
     FROM geeks_demo;
 
@@ -59,7 +59,7 @@ NTILE(number_expression) OVER (
 
     1.  **Use NTILE() function to divide above rows into 3 groups :**
 
-        ```
+        ```sql
         SELECT ID,
         NTILE (3) OVER (
         ORDER BY ID
@@ -84,7 +84,7 @@ NTILE(number_expression) OVER (
 
     2.  **Use the NTILE() function to distribute rows into 5 groups :**
 
-        ```
+        ```sql
         SELECT ID,
         NTILE (3) OVER (
         ORDER BY ID
@@ -110,7 +110,7 @@ NTILE(number_expression) OVER (
 
     3.  **If someone try to run use the NTILE() function without number_expression :**
 
-        ```
+        ```sql
         SELECT ID,
         NTILE () OVER (
         ORDER BY ID
@@ -122,7 +122,7 @@ NTILE(number_expression) OVER (
         **输出:**
         会抛出以下错误:
 
-        ```
+        ```sql
         The function 'NTILE' takes exactly 1 argument(s). 
 
         ```

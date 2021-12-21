@@ -36,13 +36,13 @@
 
 使用 *openDatabase* ()方法访问数据库。如果数据库不存在，方法首先创建它，然后打开它:
 
-```
+```sql
 Syntax: var gfgDb = opendatabase(database name, version number, description, size);
 ```
 
 我们可以通过运行以下查询来创建数据库:
 
-```
+```sql
 var gfgDb = opendatabase('mydb', '1.0', 'this is a client side database', 2 * 1024 * 1024);
 
 //to check whether the database is created or not.
@@ -58,7 +58,7 @@ var gfgDb = opendatabase('mydb', '1.0', 'this is a client side database', 2 * 10
 
 我们可以从数据库实例中使用名为**事务**的函数。
 
-```
+```sql
 Syntax:
 gfgDb.transaction(function (tx) {
 
@@ -71,7 +71,7 @@ gfgDb.transaction(function (tx) {
 
 要执行查询，可以使用 database.transaction()函数。它只有一个参数，执行如下查询:
 
-```
+```sql
 var gfgDb = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);   
 
 gfgDb.transaction(function (tx) {     
@@ -85,7 +85,7 @@ gfgDb.transaction(function (tx) {
 
 按如下方式在表中创建条目
 
-```
+```sql
 var gfgDb = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);  
 
 gfgDb.transaction(function (tx) {  
@@ -97,7 +97,7 @@ gfgDb.transaction(function (tx) {
 
 *executeSql* 的第二个参数将字段数据映射到查询，如下所示:
 
-```
+```sql
 var id="1";
 var text="First";
 
@@ -110,7 +110,7 @@ tx.executeSql('INSERT INTO CLASS (id, text) VALUES (?, ?)', [id, text]);
 
 要读取已经存在的记录，我们使用回调:
 
-```
+```sql
 var gfgDb = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);  
 
 db.transaction(function (tx) { 
@@ -139,7 +139,7 @@ db.transaction(function (tx) {
 
 ## 超文本标记语言
 
-```
+```sql
 <!DOCTYPE HTML>   
 
 <html>    
@@ -195,7 +195,7 @@ db.transaction(function (tx) {
 
 ## 超文本标记语言
 
-```
+```sql
 <!DOCTYPE HTML>   
 
 <html>    

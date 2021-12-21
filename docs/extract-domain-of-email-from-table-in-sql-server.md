@@ -8,13 +8,13 @@
 SQL 查询可用于从电子邮件地址中提取域。
 让我们创建一个名为“ **email_demo** ”的表–
 
-```
+```sql
 create table (ID int, Email varchar (200));
 ```
 
 在表格中插入值 email _ demo–
 
-```
+```sql
 insert into email_demo values(
 (1, 'Sam@gfg.com'), (2, 'Khushi@gfg.com'),
 (3, 'Komal@gfg.org'), (4, 'Priya@xyz.com'),
@@ -29,7 +29,7 @@ insert into email_demo values(
 
 显示表格内容–
 
-```
+```sql
 select * from email_demo;
 ```
 
@@ -57,7 +57,7 @@ select * from email_demo;
 
 **SQL 从电子邮件中提取域–**
 
-```
+```sql
 SELECT ID,
 SUBSTRING ([Email], CHARINDEX( '@', [Email]) + 1,
 LEN([Email])) AS [Domain]
@@ -95,7 +95,7 @@ FROM [email_demo];
 **2。在 SQL Server 中统计从电子邮件中提取的域名数量:**
 **方法 1 :** SQL 查询统计从电子邮件中提取域名的记录数量–
 
-```
+```sql
 SELECT RIGHT ([Email],
 LEN([Email]) - CHARINDEX( '@', [Email])) AS [Domain],
 COUNT(*) AS [Total Number of Domain]
@@ -117,7 +117,7 @@ LEN([Email]) - CHARINDEX( '@', [Email]));
 
 **方法 2 :** 统计从电子邮件中提取域名的记录数量的 SQL 查询–
 
-```
+```sql
 SELECT SUBSTRING ([Email],
 CHARINDEX( '@', [Email] ) + 1, LEN([Email])) AS [Domain],
 COUNT(*) AS [Total Number of Domain]

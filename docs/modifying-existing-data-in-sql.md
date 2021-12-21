@@ -12,14 +12,14 @@ ALTER 命令最常用于通过添加和删除索引来改进 SQL SELECT 查询�
 **语法:**
 **向现有表格添加一列–**
 
-```
+```sql
 ALTER TABLE tableName 
 ADD columnName columnDefinition;
 ```
 
 **示例–**
 
-```
+```sql
 ALTER TABLE Student 
 ADD marks_obtained Number (3);
 ```
@@ -50,14 +50,14 @@ marks _ 获得了
 **语法:**
 **从现有表中删除列–**
 
-```
+```sql
 ALTER TABLE tableName 
 DROP COLUMN columnName;
 ```
 
 **示例–**
 
-```
+```sql
 ALTER TABLE Student 
 DROP COLUMN city;
 ```
@@ -90,14 +90,14 @@ DROP COLUMN city;
 
 **更改现有表中的列名–**
 
-```
+```sql
 ALTER TABLE tableName 
 RENAME COLUMN olderName TO newName;
 ```
 
 **示例–**
 
-```
+```sql
 ALTER TABLE student 
 RENAME COLUMN contactTO contact_no;
 ```
@@ -131,7 +131,7 @@ UPDATE 是关系数据库管理系统中使用的一个 SQL 命令，是一个�
 **语法:**
 **更新现有表中的数据–**
 
-```
+```sql
 UPDATE table_name 
 SET column1 = value1, 
 column2 = value2, ... WHERE condition;
@@ -139,7 +139,7 @@ column2 = value2, ... WHERE condition;
 
 **示例–**
 
-```
+```sql
 UPDATE student 
 SET contact = 91111\. WHERE name =ashu;
 ```

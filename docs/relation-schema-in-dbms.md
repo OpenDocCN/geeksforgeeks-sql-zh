@@ -6,7 +6,7 @@
 
 有一个叫极客的学生，她正在攻读 B.Tech，第四年，属于 IT 系(第一系)，学号 1601347，由 S .莫汉蒂夫人监考。如果我们想用数据库表示这一点，我们必须创建一个学生表，以姓名、性别、学位、年份、系、系号、学号和监考老师(顾问)作为属性。
 
-```
+```sql
 student (rollNo, name, degree, year, sex, deptNo, advisor)
 ```
 
@@ -17,37 +17,37 @@ student (rollNo, name, degree, year, sex, deptNo, advisor)
 
 这个部门和其他部门可以用部门表来表示，属性有部门标识、名称、部门负责人和电话。
 
-```
+```sql
 department (deptId, name, hod, phone)
 ```
 
 学生选择的课程有课程 id、课程名称、学分和系号。
 
-```
+```sql
 course (coursId, ename, credits, deptNo)
 ```
 
 教授会有员工的身份证、姓名、性别、部门号和电话号码。
 
-```
+```sql
 professor (empId, name, sex, startYear, deptNo, phone)
 ```
 
 我们可以有另一个名为“注册”的表，它有 roll no、courseId、学期、年份和年级作为属性。
 
-```
+```sql
 enrollment (rollNo, coursId, sem, year, grade)
 ```
 
 教学可以是另一个表，有员工 id、课程 id、学期、年份和教室作为属性。
 
-```
+```sql
 teaching (empId, coursed, sem, year, Classroom)
 ```
 
 当我们开始课程时，有一些课程需要在开始当前课程之前完成另一个课程，因此这可以由具有先决课程和课程 id 属性的先决条件表来表示。
 
-```
+```sql
 prerequisite (preReqCourse, courseId) 
 ```
 

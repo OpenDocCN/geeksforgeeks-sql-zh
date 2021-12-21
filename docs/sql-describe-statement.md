@@ -7,7 +7,7 @@
 顾名思义，DESCHERE 用来描述某物。因为在数据库中我们有表，所以我们使用**description**或 **DESC** (两者相同)命令来描述表的**结构**。
 **语法**:
 
-```
+```sql
 DESCRIBE one;
   OR
 DESC one;
@@ -20,7 +20,7 @@ DESC one;
 
 **输出**:
 
-```
+```sql
 Name          Null       Type
 FIRST_NAME              CHAR(25)
 LAST_NAME               CHAR(25)
@@ -36,7 +36,7 @@ SALARY                  NUMBER(6)
 
 **创建表格或定义表格的结构**
 
-```
+```sql
 create table one
 (
 id int not null, 
@@ -51,7 +51,7 @@ name char(25)
 
 **第一步**:定义表格的结构，即创建表格:
 
-```
+```sql
 create table one
 (
  id int not null,
@@ -63,14 +63,14 @@ create table one
 
 **第二步**:显示表格结构:
 
-```
+```sql
 DESC one
   OR
 DESCRIBE one
 
 ```
 
-```
+```sql
 Output:
 Name      Null       Type
 ID       Not Null    INT

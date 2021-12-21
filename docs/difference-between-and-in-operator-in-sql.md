@@ -26,7 +26,7 @@
 获取地址为德里或罗塔克的学生记录。
 使用=运算符的 SQL 查询将是:
 
-```
+```sql
  SELECT * 
 FROM Student 
 WHERE ADDRESS='Delhi' OR ADDRESS='ROHTAK'; 
@@ -51,7 +51,7 @@ WHERE ADDRESS='Delhi' OR ADDRESS='ROHTAK';
 获取地址为德里或罗塔克的学生记录。
 使用输入运算符的 SQL 查询将是，
 
-```
+```sql
 SELECT * 
 FROM Student 
 WHERE ADDRESS IN ('Delhi', 'ROHTAK'); 

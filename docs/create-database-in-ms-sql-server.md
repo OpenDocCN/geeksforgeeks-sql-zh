@@ -50,7 +50,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE DATABASE databasename
     [ ON
          [ PRIMARY ] <filespec> [...n ]
@@ -66,13 +66,13 @@
 
     **使用默认设置创建数据库–**
 
-    ```
+    ```sql
     CREATE DATABASE test;
     ```
 
     **使用选项–**创建数据库
 
-    ```
+    ```sql
     CREATE DATABASE test  
     ON (NAME = test_dat, *--logical datafile name*
         FILENAME = 'D:\DATA\testdat.mdf',  *--physical datafile name*

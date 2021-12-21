@@ -12,7 +12,7 @@ SQL 包含一些重要的特性，它们是:
 *   **创建:**用于创建表格。
     **语法:**
 
-```
+```sql
 create table 
 tablename(attribute1 datatype......attributen datatype); 
 ```
@@ -20,14 +20,14 @@ tablename(attribute1 datatype......attributen datatype);
 *   **删除:**用于删除包含所有属性的表。
     **语法:**
 
-```
+```sql
 drop table tablename; 
 ```
 
 *   **alter:** alter 是修饰表结构的保留字。
     **语法:**
 
-```
+```sql
 alter table 
 tablename add(new column1 datatype......new columnx datatype); 
 ```
@@ -35,7 +35,7 @@ tablename add(new column1 datatype......new columnx datatype);
 *   **重命名:**可以使用保留者“重命名”
     **语法:**来更改表名
 
-```
+```sql
 rename old table name to new table name; 
 ```
 
@@ -46,7 +46,7 @@ rename old table name to new table name;
 *   **插入:**该命令一般用在 create 命令之后，将一组值插入表中。
     **语法:**
 
-```
+```sql
 insert into tablename values(attribute1 datatype);
 :
 :
@@ -57,14 +57,14 @@ insert into tablename values (attributen datatype);
 *   **delete:** 用于从表中删除特定元组或行或基数的命令。
     **语法:**
 
-```
+```sql
 delete from tablename where condition; 
 ```
 
 *   **更新:**更新表中的元组。
     **语法:**
 
-```
+```sql
 update tablename set tuplename='attributename'; 
 ```
 
@@ -94,21 +94,21 @@ SQL 提供了在运行时从宿主语言中嵌入 C、COBOL、Java 等语言进�
 *   **提交:**只要数据库一致，它就随时保存数据库。
     **语法:**
 
-```
+```sql
 commit; 
 ```
 
 *   **回滚:**回滚/撤销到事务的上一点。
     **语法:**
 
-```
+```sql
 rollback; 
 ```
 
 *   **保存点:**它返回到上一个事务，而不返回到整个事务。
     **语法:**
 
-```
+```sql
 savepoint; 
 ```
 

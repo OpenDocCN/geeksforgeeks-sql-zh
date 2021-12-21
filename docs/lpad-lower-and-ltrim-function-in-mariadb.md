@@ -9,48 +9,48 @@
 
 **语法:**
 
-```
+```sql
 LPAD( string, length, pad_string )
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT LPAD('geeksforgeeks', 15, 'A');
 
 ```
 
 **输出:**
 
-```
+```sql
 AAgeeksforgeeks
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LPAD('Computer', 4, 'x');
 
 ```
 
 **输出:**
 
-```
+```sql
 Comp
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LPAD('DSA', 4, 'gfg');
 
 ```
 
 **输出:**
 
-```
+```sql
 gDSA
 ```
 
@@ -59,44 +59,44 @@ gDSA
 
 **语法:**
 
-```
+```sql
 LOWER( string )
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT LOWER('GFG');
 ```
 
 **输出:**
 
-```
+```sql
 gfg
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LOWER('GeeksForGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LOWER('DSA@SELF!');
 ```
 
 **输出:**
 
-```
+```sql
 dsa@self!
 ```
 
@@ -105,42 +105,42 @@ dsa@self!
 
 **语法:**
 
-```
+```sql
 LTRIM( string )
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT LTRIM('   geeksforgeeks');
 ```
 
 **输出:**
 
-```
+```sql
 'geeksforgeeks'
 ```
 
 **示例-2 :**
 
-```
+```sql
 ELECT LTRIM('   gfg  ');
 ```
 
 **输出:**
 
-```
+```sql
 'gfg  '
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LTRIM('This is best portal  ');
 ```
 
 **输出:**
 
-```
+```sql
 'This is best portal  '
 ```

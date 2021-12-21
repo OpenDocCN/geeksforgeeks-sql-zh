@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeksDatabase;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeksDatabase;
 ```
 
@@ -34,7 +34,7 @@ USE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Participant (
  ID INTEGER PRIMARY KEY,
  Name TEXT NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE Participant (
 
 **查询:**
 
-```
+```sql
 INSERT INTO Participant VALUES (55, 'BB',81 ,'Civil');
 INSERT INTO Participant VALUES (56, 'NN',75 ,'IT');
 INSERT INTO Participant VALUES (57, 'RR',100 ,'CSE');
@@ -60,7 +60,7 @@ INSERT INTO Participant VALUES (58, 'SS',94 ,'Civil');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Participant;
 ```
 
@@ -72,7 +72,7 @@ SELECT * FROM Participant;
 
 **<u>查询:</u>**
 
-```
+```sql
 SELECT TOP(count) column1, column2, ...,column n 
 FROM table_name
 [WHERE your conditions]
@@ -87,7 +87,7 @@ FROM table_name
 
 **查询 1:**
 
-```
+```sql
 SELECT TOP(2) *
 FROM Participant
 ORDER BY Percentage DESC;
@@ -105,7 +105,7 @@ ORDER BY Percentage DESC;
 
 **查询 2:**
 
-```
+```sql
 SELECT TOP(2) *
 FROM Participant
 WHERE ID != 58

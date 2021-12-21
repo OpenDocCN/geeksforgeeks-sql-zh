@@ -15,7 +15,7 @@ SQL Server 中的这个[函数用于检查指定的表达式是否为有效日�
 
 **语法:**
 
-```
+```sql
 ISDATE(expression)
 ```
 
@@ -30,20 +30,20 @@ ISDATE(expression)
 **示例-1 :**
 使用 ISDATE()函数并获取输出。
 
-```
+```sql
 SELECT ISDATE('2020/01/03');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2 :**
 使用带有变量的 ISDATE()函数并获得所需的输出。
 
-```
+```sql
 DECLARE @exp VARCHAR(50);
 SET @exp= '2021/12/25';
 SELECT ISDATE(@exp);
@@ -52,33 +52,33 @@ SELECT ISDATE(@exp);
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-3 :**
 使用 ISDATE()函数，以日期为参数，其中还包括时间。
 
-```
+```sql
 SELECT ISDATE('2021/01/03 08:55');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-4 :**
 使用带有无效日期的 ISDATE()函数并获取输出。
 
-```
+```sql
 SELECT ISDATE('2021/01/32 08:55');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 

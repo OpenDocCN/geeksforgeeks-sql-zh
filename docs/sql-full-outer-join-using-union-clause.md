@@ -13,21 +13,21 @@
 **步骤-1:创建数据库:**
 使用如下 SQL 查询创建数据库。
 
-```
+```sql
 CREATE geeks;
 ```
 
 **第 2 步:使用数据库:**
 要使用这个数据库使用如下 SQL 查询如下。
 
-```
+```sql
 USE geeks;
 ```
 
 **步骤-3:创建表:**
 使用 SQL 查询在‘极客’数据库中创建表“部门”，如下所示。
 
-```
+```sql
 CREATE TABLE department
 (
    ID int,
@@ -40,7 +40,7 @@ CREATE TABLE department
 **第 4 步:插入数据:**
 使用如下 SQL 查询向表中添加值。
 
-```
+```sql
 INSERT INTO department VALUES (1, 34000, 'ANURAG', 'UI DEVELOPERS');
 INSERT INTO department VALUES (2, 33000, 'HARSH', 'BACKEND DEVELOPERS');
 INSERT INTO department VALUES (3, 36000, 'SUMIT', 'BACKEND DEVELOPERS');
@@ -51,7 +51,7 @@ INSERT INTO department VALUES (5, 37000, 'KAE', 'UI DEVELOPERS');
 **第 5 步:验证插入的数据:**
 如下选择表格内的数据。
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -70,7 +70,7 @@ SELECT * FROM department;
 **第 6 步:创建表:**
 在‘geek sdb’数据库中创建表“employee”，如下所示。
 
-```
+```sql
 Create Table employee(
  ID int,
  Email Varchar(255),
@@ -81,7 +81,7 @@ Create Table employee(
 **第 7 步:插入值:**
 将值添加到表“员工”中，如下所示。
 
-```
+```sql
 INSERT INTO employee VALUES (1, 'ANURAG@xyz.com', 'Noida');
 INSERT INTO employee VALUES (2, 'HARSH@xyz.com', 'Jaipur');
 INSERT INTO employee VALUES (3, 'SUMIT@xyz.com', 'Noida');
@@ -92,7 +92,7 @@ INSERT INTO employee VALUES (5, 'KAE@xyz.com', 'Noida');
 **第 8 步:验证插入的数据:**
 选择表格内的数据如下。
 
-```
+```sql
 SELECT * FROM employee;
 ```
 
@@ -109,7 +109,7 @@ SELECT * FROM employee;
 使用 Union 子句创建 SQL 完全外部联接。如果数据库不允许完全连接(MySQL 不允许)，您可以使用 UNION 子句组合左连接和右连接。
 **语法–**
 
-```
+```sql
 SELECT  *
   FROM table1
   LEFT JOIN table2
@@ -123,7 +123,7 @@ UNION
 
 **示例–**
 
-```
+```sql
 SELECT  *
  FROM department
  LEFT JOIN employee

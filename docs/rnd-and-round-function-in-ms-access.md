@@ -8,19 +8,19 @@
 
 *   **如果我们想生成 0 到 1 之间的–**
 
-    ```
+    ```sql
     Rnd 
     ```
 
 *   **如果我们想在一个范围内生成–**
 
-    ```
+    ```sql
     Int((upperbound - lowerbound + 1) * Rnd + lowerbound) 
     ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Int ((10 - 1 + 1) * Rnd + 1) AS RandNumBetween1and10;
 ```
 
@@ -31,7 +31,7 @@ SELECT Int ((10 - 1 + 1) * Rnd + 1) AS RandNumBetween1and10;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Rnd AS RandNumBetween0and1;
 ```
 
@@ -48,13 +48,13 @@ Round()函数将一个数字舍入到指定的小数位数。在这个函数中�
 
 **语法:**
 
-```
+```sql
 Round(expression, decimal_places)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Round(23.67, 1) As round;
 ```
 
@@ -65,7 +65,7 @@ SELECT Round(23.67, 1) As round;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Round(45.65, 1) As round;
 ```
 

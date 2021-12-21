@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 TRUNCATE( X, D)
 
 ```
@@ -25,14 +25,14 @@ TRUNCATE()函数接受两个参数，如上所述，如下所述。
 
 **截断负数–**
 
-```
+```sql
 SELECT TRUNCATE(-10.11, 0) AS Truncated_Number ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -43,14 +43,14 @@ SELECT TRUNCATE(-10.11, 0) AS Truncated_Number ;
 
 **截断正数–**
 
-```
+```sql
 SELECT TRUNCATE(100.61, 0) AS Truncated_Number ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -63,14 +63,14 @@ SELECT TRUNCATE(100.61, 0) AS Truncated_Number ;
 当 D 为负(-ve)时截断数字。
 T4【截断负数–
 
-```
+```sql
 SELECT TRUNCATE(-19087.1560, -3) AS Truncated_Number;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -82,14 +82,14 @@ SELECT TRUNCATE(-19087.1560, -3) AS Truncated_Number;
 
 **截断正数–**
 
-```
+```sql
 SELECT TRUNCATE(10876.5489, -1) AS Truncated_Number;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -102,14 +102,14 @@ SELECT TRUNCATE(10876.5489, -1) AS Truncated_Number;
 当 D 为正(+ve)时截断数字。
 **将负数截断到小数点后 2 位–**
 
-```
+```sql
 SELECT TRUNCATE(-7767.1160, 2) AS Truncated_Number;
 
 ```
 
 输出:
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -121,14 +121,14 @@ SELECT TRUNCATE(-7767.1160, 2) AS Truncated_Number;
 
 **将正数截断到小数点后 3 位–**
 
-```
+```sql
 mysql> SELECT TRUNCATE(17646.6019, 3) AS Truncated_Number;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Truncated_Number |
 +------------------+
@@ -140,7 +140,7 @@ mysql> SELECT TRUNCATE(17646.6019, 3) AS Truncated_Number;
 **示例-4 :**
 TRUNCATE 函数也可用于查找列数据的截断值。在本例中，我们将查找价格列的截断值。为了演示，创建一个名为**产品**的表格
 
-```
+```sql
 CREATE TABLE Product
 (
     Product_id INT AUTO_INCREMENT,  
@@ -156,7 +156,7 @@ CREATE TABLE Product
 
 **现在向产品表中插入一些数据:**
 
-```
+```sql
 INSERT INTO  
 Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -173,14 +173,14 @@ VALUES
 
 所以**产品**表为:
 
-```
+```sql
 mysql> SELECT * FROM Product;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------+--------------+--------------+---------------+--------------+
 | Product_id | Product_name | Buying_price | Selling_price | Selling_Date |
 +------------+--------------+--------------+---------------+--------------+
@@ -206,7 +206,7 @@ mysql> SELECT * FROM Product;
 
 现在，我们将把买入价格和卖出价格列截断到小数点后两位。
 
-```
+```sql
    SELECT  
    Product_name,
    Buying_price,
@@ -219,7 +219,7 @@ mysql> SELECT * FROM Product;
 
 **输出:**
 
-```
+```sql
 +--------------+--------------+-----------------+---------------+-----------------+
 | Product_name | Buying_price | Trucated_Bprice | Selling_price | Trucated_Sprice |
 +--------------+--------------+-----------------+---------------+-----------------+

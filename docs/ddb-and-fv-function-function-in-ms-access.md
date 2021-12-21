@@ -5,13 +5,13 @@
 **1。DDB()函数:**
 MS Access 中的 DDB()函数用于使用双倍余额递减法或其他方法计算特定时间段内资产的折旧。DDB 函数使用以下公式计算给定期间的折旧:
 
-```
+```sql
 Depreciation / period = ((cost – salvage) * factor) / life
 ```
 
 **语法:**
 
-```
+```sql
 DDB(cost, salvage, life, period, [factor])
 ```
 
@@ -30,7 +30,7 @@ DDB(cost, salvage, life, period, [factor])
 **例-1 :**
 考虑到资产的使用寿命为 10 年，残值率为 15%的资产折旧按第 2 年计算。
 
-```
+```sql
 SELECT DDB(1500.0, 1500.0*0.15, 10, 2) AS Amount;
 ```
 
@@ -51,7 +51,7 @@ SELECT DDB(1500.0, 1500.0*0.15, 10, 2) AS Amount;
 | Eleven thousand and two | Twelve thousand |
 | Eleven thousand and three | Ten thousand |
 
-```
+```sql
 SELECT DDB([LoanAmount], [LoanAmount]*.1, 15, 3) AS Amt 
 FROM Accounts;
 ```
@@ -69,7 +69,7 @@ MS Access 中的 FV()函数用于根据定期、固定付款和固定利率计�
 
 **语法**:
 
-```
+```sql
 FV(rate, nper, pmt, pv , type)
 ```
 
@@ -88,7 +88,7 @@ FV(rate, nper, pmt, pv , type)
 **示例-1 :**
 根据 6 %的年利率、“每月支付 2 次”和“每期支付 50 次”计算“贷款金额 1000”的未来值。
 
-```
+```sql
 SELECT FV(0.06/12, 2*12, -50, 1000, 0) AS FutureValue ;
 ```
 
@@ -109,7 +109,7 @@ SELECT FV(0.06/12, 2*12, -50, 1000, 0) AS FutureValue ;
 | One hundred and two | One thousand |
 | One hundred and three | One thousand two hundred |
 
-```
+```sql
 SELECT FV(0.06/12, 1*12, -100, [LoanAmount], 0) AS Amt 
 FROM Accounts;
 ```

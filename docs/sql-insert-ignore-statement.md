@@ -28,7 +28,7 @@
 
 **样本查询:**
 
-```
+```sql
 INSERT IGNORE INTO Employee (EmployeeID, Name, City)
 VALUES (15002, 'Ram', 'Mumbai');
 
@@ -43,7 +43,7 @@ VALUES (15002, 'Ram', 'Mumbai');
 
 一次插入多条记录时，任何不能插入的记录都不会被插入，但任何可以插入的记录都会被插入:
 
-```
+```sql
 INSERT IGNORE INTO Employee (EmployeeID, Name, City)
 VALUES (15007, 'Shikha', 'Delhi'), (15002, 'Ram', 'Mumbai'), (15009, 'Sam', 'Ahmedabad');
 

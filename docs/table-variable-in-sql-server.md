@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 DECLARE @TABLEVARIABLE TABLE
 (column1 datatype,  
 column2 datatype,  
@@ -19,7 +19,7 @@ columnN datatype
 **示例-1:**
 DECLARE @ WeekDays TABLE(Number INT，Day VARCHAR(40)，Name VARCHAR(40))
 
-```
+```sql
 INSERT INTO @WeekDays
 VALUES
 
@@ -51,7 +51,7 @@ VALUES
 
 **示例-2 :**
 
-```
+```sql
 DELETE @WeekDays WHERE Number=7;
 
 UPDATE @WeekDays SET Name='Saturday is a holiday' WHERE Number=6 ;

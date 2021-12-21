@@ -12,7 +12,7 @@ SQL 运算符广泛用于根据条件访问信息。在不等式运算符中，�
 **示例–**
 在本例中，假设您想从数据库的学生表中访问学生姓名。因此，我们将在 WHERE 子句中使用相等运算符，如下所示。
 
-```
+```sql
 Select * from student where name = 'ABC';
 ```
 
@@ -33,7 +33,7 @@ Select * from student where name = 'ABC';
 **例-1 :**
 所以要选择那些不在第二年的人。因此，在这里，我们将使用如下不等式运算符。
 
-```
+```sql
 SELECT * FROM students WHERE year <> 2;
 ```
 
@@ -57,7 +57,7 @@ SELECT * FROM students WHERE year <> 2;
 **示例-2 :**
 我们还可以使用带文本值的不等式运算符，比如在**【Java】中获取所有不主语的学生。**
 
-```
+```sql
 SELECT * FROM students WHERE subjects <> 'Java';
 ```
 

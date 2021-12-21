@@ -6,7 +6,7 @@ MySQL 中的 SIGN() [函数](https://www.geeksforgeeks.org/sql-functions-aggrega
 
 **语法:**
 
-```
+```sql
 
 SIGN(X)
 
@@ -23,7 +23,7 @@ SIGN()函数接受一个参数作为输入，并以正值(+1)、负值(-1)和零
 **示例-1 :**
 将 SIGN()函数应用于零。
 
-```
+```sql
 SELECT SIGN(0) AS Sign_Val;
 
 ```
@@ -37,7 +37,7 @@ SELECT SIGN(0) AS Sign_Val;
 **示例-2 :**
 将 SIGN()函数应用于正数。
 
-```
+```sql
 SELECT SIGN(12) AS Sign_Val;
 
 ```
@@ -51,7 +51,7 @@ SELECT SIGN(12) AS Sign_Val;
 **示例-3 :**
 对负数应用 SIGN()函数。
 
-```
+```sql
 SELECT SIGN(-2) AS Sign_Val;
 
 ```
@@ -73,7 +73,7 @@ SELECT SIGN(-2) AS Sign_Val;
 | -1.8 |
 | -14 |
 
-```
+```sql
 SELECT X, SIGN(X) AS X_Sign  FROM Number;
 
 ```

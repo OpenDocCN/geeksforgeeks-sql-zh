@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 DROP SCHEMA [IF EXISTS] schema_name;
 
 ```
@@ -16,7 +16,7 @@ DROP SCHEMA [IF EXISTS] schema_name;
 **示例:**
 让我们创建一个名为 geek sh([https://www.geeksforgeeks.org/create-schema-in-sql-server/](https://www.geeksforgeeks.org/create-schema-in-sql-server/))的新模式；
 
-```
+```sql
 CREATE SCHEMA geeksh;
 GO
 
@@ -24,7 +24,7 @@ GO
 
 现在在**极客**模式中创建一个名为**极客标签**的表:
 
-```
+```sql
 CREATE TABLE geeksh.geektab
 (id INT PRIMARY KEY,
 date DATE NOT NULL,
@@ -37,7 +37,7 @@ city varchar(200) NOT NULL);
 DROP SCHEMA geeksh
 由于模式不为空，SQL Server 将抛出类似的错误。
 
-```
+```sql
 Msg 3729, Level 16, State 1, Line 1
 Cannot drop schema 'geeksh' because it is being referenced by object 'geektab'.
 
@@ -45,14 +45,14 @@ Cannot drop schema 'geeksh' because it is being referenced by object 'geektab'.
 
 让我们放下表 geeksh.geektab:
 
-```
+```sql
 DROP TABLE geeksh.geektab;
 
 ```
 
 再次运行 DROP SCHEMA 来删除 geeksh 模式:
 
-```
+```sql
 DROP SCHEMA IF EXISTS geeksh;
 
 ```

@@ -11,7 +11,7 @@ From 子句可用于在 SQL 中指定子查询表达式。子查询产生的关�
 
 **<u>语法</u> :**
 
-```
+```sql
 SELECT column1, column2 FROM 
 (SELECT column_x  as C1, column_y FROM table WHERE PREDICATE_X)
 as table2
@@ -47,7 +47,7 @@ WHERE PREDICATE;
 
 **<u>查询</u> :**
 
-```
+```sql
 select I.ID, I.NAME, I.DEPARTMENT, I.SALARY from
 **(select avg(BUDGET) as averageBudget from DEPARTMENT) as BUDGET, Instructor as I**
 where I.SALARY > BUDGET.averageBudget;

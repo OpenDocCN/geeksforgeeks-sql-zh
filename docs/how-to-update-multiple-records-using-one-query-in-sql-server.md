@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE BANDS(
 BAND_NAME VARCHAR(20),
 PERFORMING_COST INT,
@@ -47,7 +47,7 @@ NUMBER_OF_MEMBERS INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS BANDS;
 ```
 
@@ -59,7 +59,7 @@ EXEC SP_COLUMNS BANDS;
 
 **查询:**
 
-```
+```sql
 INSERT INTO BANDS VALUES('INDIAN OCEAN',10000,5);
 INSERT INTO BANDS VALUES('BTS',20000,6);
 INSERT INTO BANDS VALUES('METALLICA',30000,10);
@@ -75,7 +75,7 @@ INSERT INTO BANDS VALUES('EAGLES',50000,4);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM BANDS;
 ```
 
@@ -87,14 +87,14 @@ SELECT * FROM BANDS;
 
 **语法:**
 
-```
+```sql
 UPDATE TABLE_NAME SET COLUMN_NAME
 = VALUE WHERE CONDITION;
 ```
 
 **查询:**
 
-```
+```sql
 UPDATE BANDS SET PERFORMING_COST = 
 2*PERFORMING_COST WHERE NUMBER_OF_MEMBERS<=5;
 ```
@@ -107,7 +107,7 @@ UPDATE BANDS SET PERFORMING_COST =
 
 **查询:**
 
-```
+```sql
 SELECT * FROM BANDS;
 ```
 
@@ -121,7 +121,7 @@ SELECT * FROM BANDS;
 
 **语法:**
 
-```
+```sql
 UPDATE TABLE_NAME
 SET COLUMN_VALUE 
 = CASE COLUMN_NAME
@@ -134,7 +134,7 @@ WHERE BAND_NAME IN('COLUMN_NAME1', 'COLUMN_NAME2');
 
 **查询:**
 
-```
+```sql
 UPDATE BANDS
 SET PERFORMING_COST 
 = CASE BAND_NAME
@@ -153,7 +153,7 @@ WHERE BAND_NAME IN('METALLICA', 'BTS');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM BANDS;
 ```
 

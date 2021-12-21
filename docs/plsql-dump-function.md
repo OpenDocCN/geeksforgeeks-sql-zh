@@ -7,7 +7,7 @@ PLSQL DUMP 函数接受一个表达式作为参数，如果表达式值为 NULL�
 
 **语法:**
 
-```
+```sql
 DUMP( expression [, return_format] [, start_position] [, length] )
 ```
 
@@ -46,7 +46,7 @@ DUMP 函数返回一个 VARCHAR2 值，但是如果省略 return_format、start_
 
 **示例-1:**
 
-```
+```sql
 SELECT DUMP('Geeksforgeeks') FROM dual 
 ```
 
@@ -56,7 +56,7 @@ SELECT DUMP('Geeksforgeeks') FROM dual
 
 **例-2:**
 
-```
+```sql
 SELECT DUMP('Geeksforgeeks', 10) FROM dual 
 ```
 
@@ -66,7 +66,7 @@ SELECT DUMP('Geeksforgeeks', 10) FROM dual
 
 **例-3:**
 
-```
+```sql
 SELECT DUMP('Geeksforgeeks', 16) FROM dual 
 ```
 
@@ -76,7 +76,7 @@ SELECT DUMP('Geeksforgeeks', 16) FROM dual
 
 **例-4:**
 
-```
+```sql
 SELECT DUMP('Geeksforgeeks', 17) FROM dual 
 ```
 
@@ -86,7 +86,7 @@ SELECT DUMP('Geeksforgeeks', 17) FROM dual
 
 **例-5:**
 
-```
+```sql
 SELECT DUMP('Geeksforgeeks', 1008) FROM dual 
 ```
 

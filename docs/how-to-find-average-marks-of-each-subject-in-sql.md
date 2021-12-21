@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE STDMARKS(
 ROLL_NO INT,
 STUDENT_NAME VARCHAR(10),
@@ -48,7 +48,7 @@ MARKS INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS STDMARKS;
 ```
 
@@ -60,7 +60,7 @@ EXEC SP_COLUMNS STDMARKS;
 
 **查询:**
 
-```
+```sql
 INSERT INTO STDMARKS VALUES(1,'RAVI','C++',75);
 INSERT INTO STDMARKS VALUES(1,'RAVI','ORACLE',84);
 INSERT INTO STDMARKS VALUES(1,'RAVI','JAVA',95);
@@ -87,7 +87,7 @@ INSERT INTO STDMARKS VALUES(4,'MAHESH','OS',35);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM STDMARKS;
 ```
 
@@ -99,14 +99,14 @@ SELECT * FROM STDMARKS;
 
 **语法:**
 
-```
+```sql
 SELECT COLUMN_NAME1,AVG(COLUMN_NAME2) 
 AS ALIAS FROM TABLE_NAME GROUP BY COLUMN_NAME1;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT SUBJECT,AVG(MARKS) AS "AVERAGE MARKS"
 FROM STDMARKS GROUP BY SUBJECT;
 ```

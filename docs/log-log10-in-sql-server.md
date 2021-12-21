@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT LOG(number);
 ```
 
@@ -21,7 +21,7 @@ SELECT LOG(number);
 选择日志(2)；
 **输出–**
 
-```
+```sql
 0.69314718055994529
 ```
 
@@ -30,7 +30,7 @@ SELECT LOG(number);
 
 **语法:**
 
-```
+```sql
 SELECT LOG10(number);
 ```
 
@@ -41,6 +41,6 @@ SELECT LOG10(number);
 
 **输出–**
 
-```
+```sql
 0.3010299956639812
 ```

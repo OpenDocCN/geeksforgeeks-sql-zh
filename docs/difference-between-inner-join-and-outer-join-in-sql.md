@@ -7,7 +7,7 @@
 
 语法:
 
-```
+```sql
 select * 
 from table1 INNER JOIN table2
 on table1.column_name = table2.column_name;
@@ -15,7 +15,7 @@ on table1.column_name = table2.column_name;
 
 运筹学
 
-```
+```sql
 select *
 from table1 JOIN table2
 on table1.column_name = table2.column_name;
@@ -30,7 +30,7 @@ on table1.column_name = table2.column_name;
 
 左外连接的语法:
 
-```
+```sql
 select *
 from table1 LEFT OUTER JOIN table2
 on table1.column_name = table2.column_name;
@@ -38,7 +38,7 @@ on table1.column_name = table2.column_name;
 
 右外连接的语法:
 
-```
+```sql
 select *
 from table1 RIGHT OUTER JOIN table2
 on table1.column_name = table2.column_name;
@@ -46,7 +46,7 @@ on table1.column_name = table2.column_name;
 
 完全外部联接的语法:
 
-```
+```sql
 select *
 from table1 FULL OUTER JOIN table2
 on table1.column_name = table2.column_name;

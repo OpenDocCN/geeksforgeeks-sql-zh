@@ -10,13 +10,13 @@ SQL 为 **[CREATE TABLE](https://www.geeksforgeeks.org/sql-create/)** 子句提�
 
 **语法:**
 
-```
+```sql
 CREATE TABLE newTable LIKE pets
 ```
 
 **示例:**
 
-```
+```sql
 CREATE TABLE newTable as
             (SELECT * 
              FROM pets
@@ -38,7 +38,7 @@ CREATE TABLE newTable as
 
  **查询 1:**
 
-```
+```sql
 CREATE TABLE newTable LIKE pets;
 SELECT * 
 FROM newTable 
@@ -54,7 +54,7 @@ where newTable.GENDER = 'Female';
 **说明:**创建的 newTable 是宠物表的副本。因此，从 newTable 中选择雌性宠物只会返回两行，其中宠物是雌性。
 T3】查询 2 :
 
-```
+```sql
 CREATE TABLE newTable as
             (SELECT * 
              FROM pets

@@ -19,7 +19,7 @@ DDL 命令为:
 
 **语法** :
 
-```
+```sql
 CREATE TABLE TABLE_NAME
 (
     column_name1 datatype1,
@@ -32,7 +32,7 @@ CREATE TABLE TABLE_NAME
 create table 命令中的 column_name 将告诉列的名称，相应的数据类型将指定该列的数据类型。在此表中，三个列名即–学生标识为 int 类型，名称为 varchar 类型，标记为 int 类型。
 例如:
 
-```
+```sql
 CREATE TABLE 
 Employee
 (Student_id INT, 
@@ -72,14 +72,14 @@ Alter 命令用于以多种形式更改表格，例如:
 *   **使用 ALTER–**
     语法添加列:
 
-```
+```sql
 ALTER TABLE table_name ADD(
     column_name datatype); 
 ```
 
 上面的命令将向表中添加一个新列。生成的表将多一列，如下所示:
 
-```
+```sql
 ALTER TABLE Student 
 ADD
 (Address  VARCHAR(200)); 
@@ -113,7 +113,7 @@ ADD
 *   **使用 ALTER–**
     语法重命名列:
 
-```
+```sql
 ALTER TABLE 
 table_name 
 RENAME 
@@ -122,7 +122,7 @@ old_column_name TO new_column_name;
 
 上述命令会将现有列重命名为新列。
 
-```
+```sql
 ALTER TABLE 
 Employee 
 RENAME 
@@ -159,7 +159,7 @@ Marks TO Age;
 *   **使用 ALTER–**
     语法删除列:
 
-```
+```sql
 ALTER TABLE
 table_name
 DROp
@@ -169,7 +169,7 @@ DROp
 上述命令将删除现有列。
 例如:
 
-```
+```sql
 ALTER TABLE Employee 
 DROP
 (Age);  
@@ -199,7 +199,7 @@ DROP
 *   **使用 ALTER–**
     语法修改列:
 
-```
+```sql
 ALTER TABLE
 Employee MODIFY
 (column_name datatype); 
@@ -208,7 +208,7 @@ Employee MODIFY
 上述命令将修改现有列。
 例如:
 
-```
+```sql
 ALTER TABLE 
 student 
 MODIFY
@@ -240,7 +240,7 @@ MODIFY
 该命令从表中删除所有记录。但是这个命令不会破坏表的结构。
 **语法**:
 
-```
+```sql
 TRUNCATE TABLE table_name
 ```
 
@@ -248,7 +248,7 @@ TRUNCATE TABLE table_name
 
 示例:
 
-```
+```sql
 TRUNCATE TABLE Student; 
 ```
 
@@ -257,7 +257,7 @@ TRUNCATE TABLE Student;
 
 **语法–**
 
-```
+```sql
 DROP TABLE table_name
 ```
 
@@ -266,7 +266,7 @@ DROP TABLE table_name
 
 示例:
 
-```
+```sql
 DROP TABLE Student; 
 ```
 

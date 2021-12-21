@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 CEIL(number)
 ```
 
@@ -28,7 +28,7 @@ CEIL(number)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number := 2.6;
 
@@ -40,7 +40,7 @@ END;
 
 **输出:**
 
-```
+```sql
 3
 ```
 
@@ -48,7 +48,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number := -2.6;
 
@@ -60,7 +60,7 @@ END;
 
 **输出:**
 
-```
+```sql
 -2
 ```
 

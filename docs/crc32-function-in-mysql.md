@@ -6,7 +6,7 @@ MySQL 中的 CRC32() [函数用于计算循环冗余值。如果参数为空，�
 
 **语法:**
 
-```
+```sql
 CRC32(expr)
 
 ```
@@ -22,7 +22,7 @@ CRC32(expr)
 **示例-1 :**
 使用 CRC32 函数查找字符串的循环冗余值。
 
-```
+```sql
 SELECT CRC32('geeksforgeeks') 
 AS CRC_Value;
 
@@ -37,7 +37,7 @@ AS CRC_Value;
 **示例-2 :**
 使用 CRC32 函数查找数字的循环冗余值。
 
-```
+```sql
 SELECT CRC32( 2020 ) 
 AS CRC_Value;
 
@@ -52,7 +52,7 @@ AS CRC_Value;
 **示例-3 :**
 使用 CRC32 函数为空参数查找循环冗余值。
 
-```
+```sql
 SELECT CRC32(NULL) 
 AS CRC_Value;
 
@@ -67,7 +67,7 @@ AS CRC_Value;
 **示例-4 :**
 使用 CRC32 函数查找列数据的循环冗余值。为了演示，让我们创建一个名为 Player 的表。
 
-```
+```sql
 CREATE TABLE Player
 (
 Player_id INT AUTO_INCREMENT,  
@@ -80,7 +80,7 @@ PRIMARY KEY(Player_id )
 
 现在，向播放器表中插入一些数据。
 
-```
+```sql
 INSERT INTO  
 Player(Player_name, Playing_team)
 VALUES
@@ -98,7 +98,7 @@ VALUES
 
 所以，玩家表如下。
 
-```
+```sql
 SELECT * FROM Player;
 
 ```
@@ -119,7 +119,7 @@ SELECT * FROM Player;
 
 现在，我们将使用 CRC32 函数为 Player_name 和 Playing_team 列找到循环冗余值。
 
-```
+```sql
 SELECT 
 *, CRC32(Player_name),
 CRC32(Playing_team)

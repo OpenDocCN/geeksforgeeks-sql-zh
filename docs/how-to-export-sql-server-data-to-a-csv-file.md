@@ -12,7 +12,7 @@ CSV(逗号分隔值):它是一个由纯文本数据组成的文件，其中数�
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -32,7 +32,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table
 (FIRSTNAME VARCHAR(20),
 LASTNAMENAME VARCHAR(20),
@@ -43,7 +43,7 @@ AGE INT,GENDER VARCHAR(20));
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('Romy', 'Kumari', 22, 'female'),
 ('Sujata', 'Jha', 20, 'female'),
@@ -59,7 +59,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 

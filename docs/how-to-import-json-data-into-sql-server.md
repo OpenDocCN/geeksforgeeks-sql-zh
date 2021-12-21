@@ -38,7 +38,7 @@ JSON 指的是 Javascript 对象符号。这是一种流行的文本数据格式
 
 **语法:**
 
-```
+```sql
 SELECT * FROM OPENROWSET (BULK 'file_path', SINGLE_CLOB) as correlation_name;
 ```
 
@@ -46,7 +46,7 @@ SELECT * FROM OPENROWSET (BULK 'file_path', SINGLE_CLOB) as correlation_name;
 
 **查询:**
 
-```
+```sql
 [{"Firstname": "ROMY", "Lastname": "KUMARI", "Gender": "female", "AGE" : 22 },
 {"Firstname": "PUSHKAR", "Lastname": "JHA", "Gender": "male", "AGE" : 22 },
 {"Firstname": "SHALINI", "Lastname": "JHA", "Gender": "female", "AGE" : 21 },
@@ -57,7 +57,7 @@ SELECT * FROM OPENROWSET (BULK 'file_path', SINGLE_CLOB) as correlation_name;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM OPENROWSET (BULK 'E:\file1.json', Single_CLOB) AS import;
 ```
 
@@ -76,7 +76,7 @@ SELECT * FROM OPENROWSET (BULK 'E:\file1.json', Single_CLOB) AS import;
 
 **查询:**
 
-```
+```sql
 Declare @JSON varchar(max)
 SELECT @JSON=BulkColumn
 FROM OPENROWSET (BULK 'E:\file1.json', SINGLE_CLOB) import

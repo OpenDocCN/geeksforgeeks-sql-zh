@@ -32,7 +32,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE User_details; USE User_details;   
 ```
 
@@ -46,7 +46,7 @@ CREATE DATABASE User_details; USE User_details;
 
 **查询:**
 
-```
+```sql
 CREATE Table Users1 (ID VARCHAR(20) Primary Key,
  Names VARCHAR(30), EmailId VARCHAR(30), Age INT);   
 ```
@@ -59,7 +59,7 @@ CREATE Table Users1 (ID VARCHAR(20) Primary Key,
 
 **查询:**
 
-```
+```sql
 INSERT INTO Users1 VALUES('O1201', 'Radhika Malhotra', 'rad12@gmail.com', 21); 
 INSERT INTO Users1 VALUES('O1202', 'Aryan Ray', 'Ar13@gmail.com', 25); 
 INSERT INTO Users1 VALUES('O1203', 'Sam Das', 'Sam1@gmail.com', 54); 
@@ -78,7 +78,7 @@ INSERT INTO Users1 VALUES('O1204', 'Radhika Malhotra', 'rad12@gmail.com', 21);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Users1;    
 ```
 
@@ -94,7 +94,7 @@ SELECT * FROM Users1;   
 
 **查询:**
 
-```
+```sql
 SELECT Names,COUNT(*) AS Occurrence FROM
  Users1 GROUP BY Names HAVING COUNT(*)>1;   
 ```

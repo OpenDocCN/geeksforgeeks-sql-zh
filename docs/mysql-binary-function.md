@@ -7,7 +7,7 @@ BINARY 函数接受一个参数，该参数是要转换的值，并返回一个�
 
 **语法:**
 
-```
+```sql
 BINARY value
 ```
 
@@ -31,48 +31,48 @@ MySQL BINARY 函数在转换用户指定的值后返回一个二进制字符串�
 
 **示例-1:** 实现 BINARY 函数返回二进制字符串。
 
-```
+```sql
 SELECT BINARY('Geeksforgeeks');  
 ```
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-2:** 在不使用 BINARY 函数的情况下对两个字符串进行逐字符比较。
 
-```
+```sql
 SELECT 'GEEKSFORGEEKS' = 'geeksforgeeks'; 
 ```
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-3:** 使用 BINARY 函数逐字节比较两个字符串。
 
-```
+```sql
 SELECT BINARY 'GEEKSFORGEEKS' = 'geeksforgeeks'; 
 ```
 
 **输出:**
 
-```
+```sql
 0 
 ```
 
 **示例-4:** 使用 BINARY 函数逐字节比较两个字符串。
 
-```
+```sql
 SELECT BINARY 'GEEKSFORGEEKS' = 'GEEKSFORGEEKS'; 
 ```
 
 **输出:**
 
-```
+```sql
 1 
 ```

@@ -10,7 +10,7 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -26,7 +26,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下*演示表*。
 
-```
+```sql
 CREATE TABLE demo_orders(
 ORDER_ID INT IDENTITY(1,1) PRIMARY KEY, 
 ITEM_NAME VARCHAR(30) NOT NULL,
@@ -36,7 +36,7 @@ ORDER_DATE DATE
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS demo_orders;
 ```
 
@@ -46,7 +46,7 @@ EXEC SP_COLUMNS demo_orders;
 
 使用以下语句将数据添加到*演示订单*表中:
 
-```
+```sql
 INSERT INTO demo_orders --no need to mention columns explicitly as we are inserting into
                         --all columns and ID gets
                           --automatically incremented.
@@ -60,7 +60,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM demo_orders;
 ```
 
@@ -70,13 +70,13 @@ SELECT * FROM demo_orders;
 
 下面是 DATEDIFF()函数的语法，用于查找两个给定日期之间的天数。
 
-```
+```sql
 Syntax: DATEDIFF(day or dy or y, <start_date>, <end_date>);
 ```
 
 **示例:**
 
-```
+```sql
 DECLARE 
 @start VARCHAR(10) = (
   SELECT order_date FROM demo_orders

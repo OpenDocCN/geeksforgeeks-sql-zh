@@ -8,7 +8,7 @@
 
 **创建表格:**
 
-```
+```sql
 create table student
 (
 rollnumber int, 
@@ -21,7 +21,7 @@ marks int
 
 **插入数据:**表中插入了一个值，如下所示。
 
-```
+```sql
 insert into student values('120' ,'Bam' , '2T');
 ```
 
@@ -34,7 +34,7 @@ insert into student values('120' ,'Bam' , '2T');
 
 显式转换必须使用**转换**或**转换**函数在 SQL Server 中完成。语法如下。
 
-```
+```sql
 cast(old _datatype as new_datatypename);
 convert(old_datatype as new_datatypename);
 ```
@@ -43,7 +43,7 @@ convert(old_datatype as new_datatypename);
 
 **例:**
 
-```
+```sql
 cast(150 as decimal2,2));
 ```
 

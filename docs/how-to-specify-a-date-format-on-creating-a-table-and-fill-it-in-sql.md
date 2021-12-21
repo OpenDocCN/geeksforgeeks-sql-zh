@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE User_details; 
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE User_details;
 
 **查询:**
 
-```
+```sql
 USE User_details; 
 ```
 
@@ -30,7 +30,7 @@ USE User_details;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE GFG_user(Id INT NOT NULL,Dt DATE, 
 Address  VARCHAR(100),Dt_FORMATTED AS 
 (convert(varchar(255), dt, 104)),   
@@ -47,7 +47,7 @@ PRIMARY KEY (Id) );
 
 **语法:**
 
-```
+```sql
 CONVERT ( data_type ( length ) ,
 expression , style )    
 ```
@@ -97,7 +97,7 @@ T57】101 = mm/DD/yyyy |
 
 **查询:**
 
-```
+```sql
 SET DATEFORMAT dmy; INSERT INTO GFG_user
 (Id, Dt, Address) VALUES ('1','23.11.2021',
 'German');   
@@ -109,7 +109,7 @@ SET DATEFORMAT dmy; INSERT INTO GFG_user
 
 **语法:**
 
-```
+```sql
 SET DATEFORMAT format    
 ```
 
@@ -127,7 +127,7 @@ SET DATEFORMAT format   
 
 **查询:**
 
-```
+```sql
 SELECT * FROM GFG_user; 
 ```
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 RPAD(str, len, padstr)
 ```
 
@@ -20,7 +20,7 @@ RPAD(str, len, padstr)
 
 **示例-1 :** 将 RPAD()函数应用于字符串以获得新的填充字符串。
 
-```
+```sql
 SELECT RPAD("geeksforgeeks", 20, "*") AS RightPaddedString;
 ```
 
@@ -36,7 +36,7 @@ SELECT RPAD("geeksforgeeks", 20, "*") AS RightPaddedString;
 
 **示例-2 :** 当原始字符串大于 len 参数时，对字符串应用 RPAD()函数。
 
-```
+```sql
 SELECT RPAD("geeksforgeeks", 10, "*") AS RightPaddedString;
 ```
 
@@ -58,7 +58,7 @@ SELECT RPAD("geeksforgeeks", 10, "*") AS RightPaddedString;
 | --- | --- | --- |
 |  |
 
-```
+```sql
 SELECT RPAD(Name, 15, "#") AS RightPadStudentName
 FROM Student_Details;
 ```

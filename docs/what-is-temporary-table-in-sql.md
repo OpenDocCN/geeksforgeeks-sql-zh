@@ -6,19 +6,19 @@
 
 **创建临时表:**
 
-```
+```sql
 CREATE TABLE #EmpDetails (id INT, name VARCHAR(25))  
 ```
 
 **将值插入临时表:**
 
-```
+```sql
 INSERT INTO #EmpDetails VALUES (01, 'Lalit'), (02, 'Atharva') 
 ```
 
 **从临时表中选择值:**
 
-```
+```sql
 SELECT * FROM #EmpDetails 
 ```
 
@@ -37,7 +37,7 @@ SELECT * FROM #EmpDetails
 
     **示例:**
 
-    ```
+    ```sql
     CREATE PROCEDURE ProcTemp 
     AS
     BEGIN
@@ -53,7 +53,7 @@ SELECT * FROM #EmpDetails
 
     **示例:**
 
-    ```
+    ```sql
     CREATE TABLE ##EmpDetails (id INT, name VARCHAR(25)) 
     ```
 

@@ -8,7 +8,7 @@
 
 **语法:**用于创建存储过程
 
-```
+```sql
 CREATE PROCEDURE (or CREATE PROC) proc_name
 AS
 BEGIN
@@ -20,7 +20,7 @@ END
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -32,7 +32,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -44,7 +44,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_details(
    stu_id VARCHAR(8),
    stu_name VARCHAR(20),
@@ -59,7 +59,7 @@ CREATE TABLE student_details(
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_details VALUES('40001','PRADEEP',9.6);
 INSERT INTO student_details VALUES('40002','ASHOK',8.2);
 INSERT INTO student_details VALUES('40003','PAVAN KUMAR',7.6);
@@ -75,7 +75,7 @@ INSERT INTO student_details VALUES('40005','RAHUL',7.0);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student_details;
 ```
 
@@ -87,7 +87,7 @@ SELECT * FROM student_details;
 
 **查询:**
 
-```
+```sql
 CREATE PROCEDURE view_details
 AS
 BEGIN 
@@ -103,7 +103,7 @@ END
 
 **语法:**
 
-```
+```sql
  EXEC proc_name
  or
  EXECUTE proc_name
@@ -113,7 +113,7 @@ END
 
 **查询:**
 
-```
+```sql
 EXECUTE view_details
 ```
 
@@ -125,7 +125,7 @@ EXECUTE view_details
 
 **查询:**
 
-```
+```sql
 CREATE PROCEDURE get_student_cg_details
 @stu_id VARCHAR(20)
 AS
@@ -141,7 +141,7 @@ END
 
 **查询:**
 
-```
+```sql
 EXECUTE get_student_cg_details '40002'
 ```
 

@@ -10,7 +10,7 @@
 
 假设我们有一个名为 **myTable** 的表，其数据如下:
 
-```
+```sql
 ID    NAME        SALARY
 -----------------------------
 1    Geeks      10000
@@ -23,7 +23,7 @@ ID    NAME        SALARY
 
 现在，假设我们希望前三行按薪资降序排序，那么必须执行以下查询:
 
-```
+```sql
 
 Query:
 SELECT * from myTable 
@@ -51,7 +51,7 @@ ID    NAME    SALARY
 
 因此，为了克服上述问题，甲骨文引入了一个名为**与**条款的条款。现在，让我们看看前面使用 With Ties 子句的例子。
 
-```
+```sql
 Query:
 SELECT * from myTable 
 order by salary desc 
@@ -75,7 +75,7 @@ ID    NAME       SALARY
 
 ****示例**–假设我们执行以下查询(不使用 order by 子句):**
 
-```
+```sql
 **Query**:
 SELECT * from myTable 
 fetch first 3 rows **With Ties**;

@@ -8,25 +8,25 @@
 
 **示例-1: Oracle 查询**
 
-```
+```sql
 SELECT SYSDATE;
 ```
 
 **输出–**
 
-```
+```sql
 ORA-00923: FROM keyword not found where expected
 ```
 
 **示例-2: Oracle 查询**
 
-```
+```sql
 SELECT 'GeeksforGeeks';
 ```
 
 **输出–**
 
-```
+```sql
 ORA-00923: FROM keyword not found where expected
 ```
 
@@ -35,14 +35,14 @@ ORA-00923: FROM keyword not found where expected
 
 **示例:Oracle 查询**
 
-```
+```sql
 SELECT * 
 FROM DUAL ;
 ```
 
 **输出–**
 
-```
+```sql
 X 
 ```
 
@@ -50,27 +50,27 @@ X
 
 **甲骨文查询:**
 
-```
+```sql
 SELECT 'GeeksforGeeks' 
 AS NAME FROM DUAL;
 ```
 
 **输出–**
 
-```
+```sql
 GeeksforGeeks 
 ```
 
 **甲骨文查询:**
 
-```
+```sql
 SELECT 2+2 
 FROM DUAL;
 ```
 
 **输出:**
 
-```
+```sql
 2+2 = 4 
 ```
 

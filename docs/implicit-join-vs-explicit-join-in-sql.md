@@ -11,7 +11,7 @@ JOIN 子句用于根据两个或多个表之间的关系组合它们的行。执
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -19,7 +19,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -27,7 +27,7 @@ USE geeks;
 
 使用下面的 SQL 语句创建一个名为 student 的表:
 
-```
+```sql
 CREATE TABLE student(
   ROLL_NO INT PRIMARY KEY,
   NAME VARCHAR(25),
@@ -36,7 +36,7 @@ CREATE TABLE student(
 
 使用下面的 SQL 语句创建一个名为“课程:
 
-```
+```sql
 CREATE TABLE course(
   COURSE_ID INT,
   ROLL_NO INT);
@@ -46,7 +46,7 @@ CREATE TABLE course(
 
 使用以下 SQL 语句将数据添加到学生表中:
 
-```
+```sql
 INSERT INTO student 
 VALUES 
 (1, 'Anjali', 20), 
@@ -59,7 +59,7 @@ VALUES
 
 使用以下 SQL 语句将数据添加到课程表中:
 
-```
+```sql
 INSERT INTO course 
 VALUES 
 (1, 1),
@@ -73,7 +73,7 @@ VALUES
 
 使用下面的 SQL 语句查看学生表的内容:
 
-```
+```sql
 SELECT * FROM student;
 ```
 
@@ -83,7 +83,7 @@ SELECT * FROM student;
 
 使用下面的 SQL 语句查看课程表的内容:
 
-```
+```sql
 SELECT * FROM course;
 ```
 
@@ -95,7 +95,7 @@ SELECT * FROM course;
 
 **语法:**
 
-```
+```sql
 SELECT column_names
 FROM table1
 JOIN table2
@@ -106,7 +106,7 @@ ON table1.column_name = table2.column_name
 
 **查询:**
 
-```
+```sql
 SELECT COURSE_ID, NAME, AGE 
 FROM student
 JOIN course
@@ -125,7 +125,7 @@ ON student.ROLL_NO = course.ROLL_NO;
 
 **语法:**
 
-```
+```sql
 SELECT column_names
 FROM table1, table2
 WHERE table1.column_name = table2.column_name
@@ -135,7 +135,7 @@ WHERE table1.column_name = table2.column_name
 
 **查询:**
 
-```
+```sql
 SELECT COURSE_ID, NAME, AGE 
 FROM student, course
 WHERE student.ROLL_NO = course.ROLL_NO;

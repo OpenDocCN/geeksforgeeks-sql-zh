@@ -11,7 +11,7 @@
     The syntax for varchar is:
     **Syntax :**
 
-    ```
+    ```sql
     varchar (n)
 
     ```
@@ -23,7 +23,7 @@
 
 **语法:**
 
-```
+```sql
 varchar(max)
 
 ```
@@ -33,7 +33,7 @@ varchar(max)
     Syntax for nvarchar is:
     **Syntax :**
 
-    ```
+    ```sql
     nvarchar
 
     ```

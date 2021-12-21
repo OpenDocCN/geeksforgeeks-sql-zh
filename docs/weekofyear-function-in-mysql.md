@@ -6,7 +6,7 @@ MySQL 中的 WEEKOFYEAR()函数用于查找给定日期的周数。如果日期�
 
 **语法:**
 
-```
+```sql
 WEEKOFYEAR( date)
 ```
 
@@ -21,7 +21,7 @@ WEEKOFYEAR( date)
 **例-1:**
 2020 年 9 月 29 日使用 WEEKOFYEAR()函数查找当前周数。
 
-```
+```sql
 SELECT WEEKOFYEAR(NOW()) AS Current_Week;
 
 ```
@@ -37,7 +37,7 @@ SELECT WEEKOFYEAR(NOW()) AS Current_Week;
 **示例-2 :**
 使用 WEEKOFYEAR()函数从给定的日期时间中查找星期。
 
-```
+```sql
 SELECT WEEKOFYEAR('2018-04-22 08:09:22') 
 AS Week_Number ;
 
@@ -54,7 +54,7 @@ AS Week_Number ;
 **示例-3 :**
 使用 WEEKOFYEAR()函数查找给定日期的周。
 
-```
+```sql
 SELECT WEEKOFYEAR('2019-07-25 ') 
 AS Week_Number ;
 
@@ -69,7 +69,7 @@ AS Week_Number ;
 **示例-4 :**
 当日期为空时，使用 WEEKOFYEAR()函数从给定的日期时间中查找周数。
 
-```
+```sql
 SELECT WEEKOFYEAR(NULL) 
 AS Week_Number;
 
@@ -84,7 +84,7 @@ AS Week_Number;
 **示例-4 :**
 在本例中，我们将查找一年中每周注册一门课程的学生人数。演示创建一个名为。**当然。**
 
-```
+```sql
 CREATE TABLE  Course
 (
     Course_name  VARCHAR(100) NOT NULL,
@@ -98,7 +98,7 @@ CREATE TABLE  Course
 
 现在向课程表中插入一些数据。
 
-```
+```sql
 INSERT INTO
 Course(Course_Name, Student_id, Student_name, Enroll_Date)
 VALUES
@@ -132,7 +132,7 @@ VALUES
 
 现在，我们要找出每周注册这门课程的学生人数。
 
-```
+```sql
 SELECT
 WEEKOFYEAR(Enroll_Date) Week_Number,
 COUNT(Student_id) Student_Enrolled

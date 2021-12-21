@@ -7,7 +7,7 @@
 1.  **BIN():** It converts a decimal number to a binary number.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT BIN(18);
 
     ```
@@ -18,7 +18,7 @@
 2.  **BINARY():** It converts a value to a binary string
     **Syntax:**
 
-    ```
+    ```sql
     SELECT BINARY "GeeksforGeeks";
     ```
 
@@ -28,7 +28,7 @@
 3.  **聚结():**它返回列表中的第一个非空表达式。
     **语法:**
 
-```
+```sql
 SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 
 ```
@@ -39,7 +39,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 8.  **CONNECTION_ID():** It returns the unique connection ID for the current connection.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT CONNECTION_ID();
 
     ```
@@ -50,7 +50,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 9.  **CURRENT_USER():** It returns the user name and host name for the MySQL account used by the server to authenticate the current client.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT CURRENT_USER();
 
     ```
@@ -61,7 +61,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 10.  **DATABASE():** It returns the name of the default database.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT DATABASE();
 
     ```
@@ -72,7 +72,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 11.  **IF():** It returns one value if a condition is TRUE, or another value if a condition is FALSE.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT IF(200<500, "YES", "NO");
 
     ```
@@ -83,7 +83,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 12.  **LAST_INSERT_ID():** It returns the first AUTO_INCREMENT value that was set by the most recent INSERT or UPDATE statement.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT LAST_INSERT_ID();
 
     ```
@@ -93,7 +93,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 
 14.  **Syntax:**
 
-    ```
+    ```sql
     SELECT NULLIF(25.11, 25);
 
     ```
@@ -103,7 +103,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 
 15.  **Syntax:**
 
-    ```
+    ```sql
     SELECT NULLIF(115, 115);
 
     ```
@@ -114,7 +114,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 16.  **SESSION_USER():** It returns the user name and host name for the current MySQL user.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT SESSION_USER();
     ```
 
@@ -124,7 +124,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 17.  **SYSTEM_USER():** It returns the user name and host name for the current MySQL user.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT SYSTEM_USER();
 
     ```
@@ -135,7 +135,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 18.  **USER():** It returns the user name and host name for the current MySQL user.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT USER();
 
     ```
@@ -146,7 +146,7 @@ SELECT COALESCE(NULL,NULL,'GeeksforGeeks',NULL,'Geeks');
 19.  **VERSION():** It returns the version of the MySQL database.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT VERSION();
 
     ```

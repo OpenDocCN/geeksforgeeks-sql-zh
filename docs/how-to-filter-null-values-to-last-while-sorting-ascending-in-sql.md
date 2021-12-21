@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column_name FROM table_name ORDER BY -column_name DESC;
 ```
 
@@ -24,7 +24,7 @@ SELECT column_name FROM table_name ORDER BY -column_name DESC;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -34,7 +34,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -44,7 +44,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 Name VARCHAR(20),
 Age int,
@@ -53,7 +53,7 @@ City VARCHAR(20));
 
 **步骤 4:** 将数据插入表格
 
-```
+```sql
 INSERT INTO demo_table VALUES('Romy', 22,'Delhi'),
 ('Rinkle', NULL, 'Delhi'),
 ('Ayushi', 21, 'Patna'),
@@ -67,7 +67,7 @@ INSERT INTO demo_table VALUES('Romy', 22,'Delhi'),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -79,7 +79,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table ORDER BY -AGE DESC;
 ```
 
@@ -97,7 +97,7 @@ SELECT * FROM demo_table ORDER BY -AGE DESC;
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name ORDER BY COALESCE(column_name, (select max(column_name) from table_name)+1);
 ```
 
@@ -105,7 +105,7 @@ SELECT * FROM table_name ORDER BY COALESCE(column_name, (select max(column_name)
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table ORDER BY COALESCE(AGE, (select max(AGE) from demo_table)+1);
 ```
 

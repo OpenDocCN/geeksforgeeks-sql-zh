@@ -11,21 +11,21 @@
 **第一步:创建数据库:**
 使用下面的 SQL 语句创建一个名为 geeks 的数据库，如下所示。
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **步骤 2:使用数据库:**
 使用下面的 SQL 语句将数据库上下文切换到极客，如下所示。
 
-```
+```sql
 USE geeks;
 ```
 
 **第三步:创建表:**
 我们的极客数据库中有以下演示表。
 
-```
+```sql
 CREATE TABLE demo_orders(
  ORDER_ID INT IDENTITY(1,1) PRIMARY KEY, 
  --IDENTITY(1,1) is same as AUTO_INCREMENT in MySQL.
@@ -38,7 +38,7 @@ CREATE TABLE demo_orders(
 **第 4 步:验证表:**
 可以使用下面的语句查询创建的表的描述，如下所示。
 
-```
+```sql
 EXEC SP_COLUMNS demo_orders;
 ```
 
@@ -55,7 +55,7 @@ EXEC SP_COLUMNS demo_orders;
 **第 5 步:向表中添加数据:**
 使用下面的语句向 demo_orders 表中添加数据，如下所示。
 
-```
+```sql
 INSERT INTO demo_orders 
 --no need to mention columns explicitly as we are inserting into all columns and ID gets 
 --automatically incremented.
@@ -70,7 +70,7 @@ VALUES
 **第 6 步:验证插入的数据:**
 要验证表格的内容，请使用以下语句。
 
-```
+```sql
 SELECT * FROM demo_orders;
 ```
 
@@ -88,7 +88,7 @@ SELECT * FROM demo_orders;
 
 **语法–**
 
-```
+```sql
 SELECT YEAR(<date_string>);
 --or within a table--
 SELECT YEAR(<column_table>) FROM <table_name>;
@@ -96,7 +96,7 @@ SELECT YEAR(<column_table>) FROM <table_name>;
 
 **示例–**
 
-```
+```sql
 SELECT YEAR(ORDER_DATE) AS YEAR_OF_ORDER
 FROM demo_orders
 WHERE ITEM_NAME='Maserati';
@@ -117,7 +117,7 @@ WHERE ITEM_NAME='Maserati';
 
 **示例–**
 
-```
+```sql
 SELECT day(order_date)[day], --here [day] is the identifier name for the column in the output.
        month(order_date)[month], 
        year(order_date)[year]

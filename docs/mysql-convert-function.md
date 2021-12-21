@@ -8,13 +8,13 @@ CONVERT()函数返回指定数据类型或字符集的值。
 
 **转换数据类型的语法:**
 
-```
+```sql
 CONVERT( input_value, data_type )
 ```
 
 **转换字符集的语法:**
 
-```
+```sql
 CONVERT( input_value USING character_set )
 ```
 
@@ -40,48 +40,48 @@ CONVERT()函数返回指定数据类型或字符集的值。
 
 **示例-1:** 实现 CONVERT()函数将值转换为 CHAR 数据类型。
 
-```
+```sql
 SELECT CONVERT(198, CHAR); 
 ```
 
 **输出:**
 
-```
+```sql
 198 
 ```
 
 **示例-2:** 实现 CONVERT()函数将值转换为日期时间数据类型。
 
-```
+```sql
 SELECT CONVERT('2019-11-19', DATETIME); 
 ```
 
 **输出:**
 
-```
+```sql
 2019-11-19 00:00:00 
 ```
 
 **示例-3:** 实现 CONVERT()函数将值转换为 UNSIGNED 类型。
 
-```
+```sql
 SELECT CONVERT(2-5, UNSIGNED); 
 ```
 
 **输出:**
 
-```
+```sql
 18446744073709551613 
 ```
 
 **示例-4:** 实现 CONVERT()函数，将字符串值转换为 utf8 字符集。
 
-```
+```sql
 SELECT CONVERT('geeksforgeeks' USING utf8); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```

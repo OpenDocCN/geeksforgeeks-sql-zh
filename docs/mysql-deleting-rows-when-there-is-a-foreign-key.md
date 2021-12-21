@@ -13,7 +13,7 @@
 **步骤-1:创建数据库** :
 使用如下 SQL 查询创建数据库学生。
 
-```
+```sql
 CREATE DATABASE student;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE student;
 **第 2 步:使用数据库** :
 使用数据库学生使用以下 SQL 查询如下。
 
-```
+```sql
 USE student;
 ```
 
@@ -35,7 +35,7 @@ USE student;
 **步骤-3:创建两个表:**
 **表 1–**使用如下 SQL 查询创建一个包含 3 列的表 student_details。
 
-```
+```sql
 CREATE TABLE student_details
 (
      student_id INT PRIMARY KEY,
@@ -50,7 +50,7 @@ CREATE TABLE student_details
 
 **表 2–**使用以下 SQL 查询创建一个包含 3 列的 student_exam 表，如下所示。
 
-```
+```sql
 CREATE TABLE student_exam
 (
   exam_id INT PRIMARY KEY,
@@ -70,7 +70,7 @@ CREATE TABLE student_exam
 **第 4 步:验证数据库** :
 使用以下 SQL 查询查看数据库中表的描述，如下所示。
 
-```
+```sql
 DESCRIBE student_details;
 ```
 
@@ -78,7 +78,7 @@ DESCRIBE student_details;
 
 ![](img/610a0b6f2b7efcf8bdbe0feca0da1ead.png)
 
-```
+```sql
 DESCRIBE student_exam;
 ```
 
@@ -90,7 +90,7 @@ DESCRIBE student_exam;
 **第 5 步:向表中插入数据** :
 使用如下 SQL 查询向 student_details 表中插入行。
 
-```
+```sql
 INSERT INTO student_details VALUES(19102047,'PRADEEP','1st');
 INSERT INTO student_details VALUES(19102048,'KOUSHIK','1st');
 INSERT INTO student_details VALUES(19102049,'SATWIK','2st');
@@ -103,7 +103,7 @@ INSERT INTO student_details VALUES(19102050,'VAMSI','2nd');
 
 使用以下 SQL 查询将行插入 student_exam 表，如下所示。
 
-```
+```sql
 INSERT INTO student_exam VALUES(9001,'DBMS','19102047');
 INSERT INTO student_exam VALUES(9002,'C.N','19102048');
 INSERT INTO student_exam VALUES(9003,'O.S','19102049');
@@ -117,7 +117,7 @@ INSERT INTO student_exam VALUES(9004,'O.S','19102050');
 **步骤-6:验证插入的数据:**
 使用如下 SQL 查询查看插入行后的表 student_details。
 
-```
+```sql
 SELECT * FROM student_details;
 ```
 
@@ -127,7 +127,7 @@ SELECT * FROM student_details;
 
 使用以下 SQL 查询在插入行后查看 student_exam 表，如下所示。
 
-```
+```sql
 SELECT* FROM student_exam;
 ```
 
@@ -142,14 +142,14 @@ SELECT* FROM student_exam;
 查询删除学生 _ 考试表中 id 为 19102048 的学生，其中引用的表是学生 _ 详细信息。
 **语法–**
 
-```
+```sql
  DELETE FROM table_name
  WHERE constraint;
 ```
 
 **查询–**
 
-```
+```sql
  DELETE FROM student_details
  WHERE student_id=19102048;
 ```

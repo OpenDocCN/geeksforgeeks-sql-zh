@@ -4,14 +4,14 @@
 
 **DEGREES()** 函数在 MySQL 中用于将弧度值转换为度数。弧度到度数的转换公式为:
 
-```
+```sql
 π radian = 180 degrees 
 
 ```
 
 **语法:**
 
-```
+```sql
 DEGREES(X)
 
 ```
@@ -22,7 +22,7 @@ DEGREES(X)
 
 **示例-1 :** 使用 DEGREES 函数查找 0 弧度的度数值。
 
-```
+```sql
 SELECT DEGREES(0) AS Degree_Value;
 
 ```
@@ -35,7 +35,7 @@ SELECT DEGREES(0) AS Degree_Value;
 
 **示例-2 :** 使用 DEGREES 函数求 3.141592653589793 弧度的度数值。
 
-```
+```sql
 SELECT DEGREES(3.141592653589793) AS Degree_Value;
 
 ```
@@ -48,7 +48,7 @@ SELECT DEGREES(3.141592653589793) AS Degree_Value;
 
 **示例-3 :** 使用 DEGREES 函数求-1.5707963267948966 弧度的度数值。
 
-```
+```sql
 SELECT DEGREES(-1.5707963267948966 ) AS Degree_Value;
 
 ```
@@ -61,7 +61,7 @@ SELECT DEGREES(-1.5707963267948966 ) AS Degree_Value;
 
 **示例-4 :** 使用 RADIANS 函数将列数据的弧度转换为度数。为了演示，让我们创建一个名为多边形的表。
 
-```
+```sql
 CREATE TABLE Polygon (
 Shape VARCHAR(100) NOT NULL,
 Sides INT NOT NULL,
@@ -74,7 +74,7 @@ PRIMARY KEY(Sides)
 
 现在，向多边形表中插入一些数据–
 
-```
+```sql
 INSERT INTO  
 Polygon(Shape, Sides, Sum_of_Interior_Angles, Each_Angle)
 VALUES
@@ -91,7 +91,7 @@ VALUES
 
 因此，多边形表是–
 
-```
+```sql
 SELECT * FROM Polygon;
 
 ```
@@ -109,7 +109,7 @@ SELECT * FROM Polygon;
 
 我们可以看到内角和多边形的每个角都是以弧度给出的。现在我们将在 DEVELOPES 函数的帮助下把这些转换成度数。
 
-```
+```sql
 SELECT Shape, Sides, 
 DEGREES(Sum_of_Interior_Angles) AS Sum_of_Interior_Angles_InDegree, 
 DEGREES(Each_Angle) AS Each_Angle_InDegree

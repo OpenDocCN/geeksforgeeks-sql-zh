@@ -15,7 +15,7 @@ SQL Server 中的此函数用于以“YYYY-MM-DD hh:mm:ss.mmm”模式返回当�
 
 **语法:**
 
-```
+```sql
 GETUTCDATE()
 ```
 
@@ -31,13 +31,13 @@ GETUTCDATE()
 
 使用 GETUTCDATE()函数并获取输出。
 
-```
+```sql
 SELECT GETUTCDATE();
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-03 15:34:14.403
 ```
 
@@ -47,7 +47,7 @@ SELECT GETUTCDATE();
 
 在下面的示例中使用 GETUTCDATE()作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE get_utc_date
 (
    id_num        INT IDENTITY,
@@ -72,7 +72,7 @@ FROM
 
 **输出:**
 
-```
+```sql
   |id_num |  message              |   generated_at
 -------------------------------------------------------------  
 1 | 1     | Its the first message.| 03.01.2021 17:32:16
@@ -88,13 +88,13 @@ FROM
 
 使用 CONVERT()函数，以便仅将 GETUTCDATE()函数的输出转换为当前日期。
 
-```
+```sql
 SELECT CONVERT(DATE, GETUTCDATE());
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-07
 ```
 
@@ -104,13 +104,13 @@ SELECT CONVERT(DATE, GETUTCDATE());
 
 使用 CONVERT()函数，以便仅将 GETUTCDATE()函数的输出转换为当前时间。
 
-```
+```sql
 SELECT CONVERT(TIME, GETUTCDATE());
 ```
 
 **输出:**
 
-```
+```sql
 06:40:14.4700000
 ```
 

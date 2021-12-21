@@ -14,7 +14,7 @@
 
 **示例–**
 
-```
+```sql
 CREATE SNAPSHOT emp_snap 
 as select * from emp;
 
@@ -25,7 +25,7 @@ as select * from emp;
 
 **示例–**
 
-```
+```sql
 CREATE SNAPSHOT sampleSnps1 
 AS SELECT student.rollno, student.name 
 FROM student

@@ -12,7 +12,7 @@ select 子句是数据库服务器计算的 select 语句的第一个子句，�
 [![table](img/50c96689a81f987c0ce6f2dc13ca8c20.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table.jpg) 
 **基本语法:**
 
-```
+```sql
 SELECT column1,column2 FROM table_name 
 column1 , column2: names of the fields of the table
 table_name: from where we want to fetch
@@ -22,13 +22,13 @@ table_name: from where we want to fetch
 
 *   要获取整个表或表中的所有字段:
 
-    ```
+    ```sql
      SELECT * FROM table_name;
     ```
 
 *   Query to fetch the fields ROLL_NO, NAME, AGE from the table Student:
 
-    ```
+    ```sql
     SELECT ROLL_NO, NAME, AGE FROM Student;
     ```
 
@@ -43,7 +43,7 @@ table_name: from where we want to fetch
 
 *   To fetch all the fields from the table Student:
 
-    ```
+    ```sql
      SELECT * FROM Student;
     ```
 

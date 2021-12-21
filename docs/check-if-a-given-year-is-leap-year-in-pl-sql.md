@@ -10,7 +10,7 @@
 
 示例:
 
-```
+```sql
 Input: 1500
 Output: 1500 is not leap year.
 
@@ -23,7 +23,7 @@ Output: 1600 is a leap year
 1)年是 400 的倍数
 2)年是 4 的倍数而不是 100 的倍数
 
-```
+```sql
 -- To check if a
 -- given year is leap year or not
 DECLARE
@@ -48,7 +48,7 @@ END; 
 
 输出:
 
-```
+```sql
 1600 is a leap year.
 
 ```

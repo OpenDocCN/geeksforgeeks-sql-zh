@@ -8,13 +8,13 @@
 
 **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -22,7 +22,7 @@ USE geeks;
 
 我们的*极客*数据库中有一个名为部门的下表。
 
-```
+```sql
 CREATE TABLE department
 (
     ID int,
@@ -34,7 +34,7 @@ CREATE TABLE department
 
 **加值到表中:**
 
-```
+```sql
 INSERT INTO department VALUES (1, 34000, 'Neha', '09-24-2013')
 INSERT INTO department VALUES (2, 33000, 'Hema', '02-02-2015')
 INSERT INTO department VALUES (3, 36000, 'Jaya', '09-09-2017')
@@ -44,7 +44,7 @@ INSERT INTO department VALUES (5, 34000, 'Ketan', '02-25-2019')
 
 要验证表的内容，请使用以下 SQL 查询:
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -64,7 +64,7 @@ SQL 有 [IsDate()](https://www.geeksforgeeks.org/isdate-function-in-sql-server/)
 
 **示例:**
 
-```
+```sql
 SELECT TOP 1000 [ID]
      ,[SALARY]
      ,[NAME]

@@ -8,7 +8,7 @@ CONCAT 函数允许您将两个字符串连接在一起。要连接两个以上�
 
 **语法:**
 
-```
+```sql
 CONCAT( string1, string2 )
 ```
 
@@ -27,7 +27,7 @@ CONCAT( string1, string2 )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(10) := 'Hello ';
    Test_String2 string(10) := 'world!';
@@ -40,13 +40,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Hello world! 
 ```
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(10) := 'Geeks';
    Test_String2 string(10) := 'For';
@@ -60,6 +60,6 @@ END;
 
 **输出:**
 
-```
+```sql
 GeeksForGeeks 
 ```

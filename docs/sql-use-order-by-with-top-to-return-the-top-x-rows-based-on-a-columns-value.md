@@ -8,13 +8,13 @@
 
 **步骤 1:** 创建数据库
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 **步骤 2:** 使用该数据库
 
-```
+```sql
 USE GFG
 ```
 
@@ -22,7 +22,7 @@ USE GFG
 
 我们将创建一个存储顶值的表，这样我们就可以用它从另一个表中获取值
 
-```
+```sql
 CREATE TABLE TopValue(
  val varchar (255)
 )
@@ -30,7 +30,7 @@ CREATE TABLE TopValue(
 
 在此表中插入一些顶值数据
 
-```
+```sql
 INSERT INTO TopValue VALUES(3) 
 ```
 
@@ -38,7 +38,7 @@ INSERT INTO TopValue VALUES(3)
 
 现在我们将创建一个表，该表的数据将被提取并将填充虚拟数据
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
     ID INT,
     Name varchar(255)
@@ -49,7 +49,7 @@ CREATE TABLE geeksforgeeks(
 
 在这个表中插入一些数据，这样我们就可以获取这些数据
 
-```
+```sql
 INSERT INTO [dbo].[geeksforgeeks]
            ([ID]
            ,[Name]
@@ -93,7 +93,7 @@ GO
 
 **步骤 5:** 现在根据另一个表值获取顶部数据
 
-```
+```sql
 DECLARE @TopVal INT;
 SET @TopVal = (SELECT val from TopValue)
 SELECT TOP (@TopVal) * FROM geeksforgeeks ORDER BY Age DESC

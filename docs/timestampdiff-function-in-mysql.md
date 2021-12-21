@@ -8,7 +8,7 @@ MySQL 中的这个函数用来在从另一个表达式中减去一个 DateTime �
 
 **语法:**
 
-```
+```sql
 TIMESTAMPDIFF(unit,expr1,expr2)
 ```
 
@@ -34,7 +34,7 @@ TIMESTAMPDIFF(unit,expr1,expr2)
 
 获取两个指定时间值之间的差值，其中时间以 YYYY-MM-DD HH-MM-SS 格式指定。这里 expr2 大于 expr1，所以返回值为正。
 
-```
+```sql
 SELECT TIMESTAMPDIFF(SECOND, '2010-01-01 10:10:20', '2010-01-01 10:45:59') AS SECONDDIFFERENCE;
 ```
 
@@ -52,7 +52,7 @@ SELECT TIMESTAMPDIFF(SECOND, '2010-01-01 10:10:20', '2010-01-01 10:45:59') AS SE
 
 获取两个指定时间值之间的差值，其中时间以 YYYY-MM-DD HH-MM-SS 格式指定。这里 expr2 小于 expr1，所以返回值为负。
 
-```
+```sql
 SELECT TIMESTAMPDIFF(SECOND, '2010-01-01 10:10:20', '2010-01-01 09:45:59') AS SECONDDIFFERENCE;
 ```
 
@@ -70,7 +70,7 @@ SELECT TIMESTAMPDIFF(SECOND, '2010-01-01 10:10:20', '2010-01-01 09:45:59') AS SE
 
 当日期以 YYYY-MM-DD 格式指定时，获取月份中两个指定日期值之间的差异。
 
-```
+```sql
 SELECT TIMESTAMPDIFF(MONTH, '2019-08-01', '2020-11-01') AS MONTHDIFFERENCE;
 ```
 
@@ -90,7 +90,7 @@ SELECT TIMESTAMPDIFF(MONTH, '2019-08-01', '2020-11-01') AS MONTHDIFFERENCE;
 
 **创建员工表–**
 
-```
+```sql
 CREATE TABLE Employee(
     id INT AUTO_INCREMENT PRIMARY KEY,
     Full_Name VARCHAR(50) NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE Employee(
 
 **将值插入表格–**
 
-```
+```sql
 INSERT INTO Employee(Full_Name , Joining_Date )
 VALUES('Riya Jana', '2000-01-01'),
       ('Sayan Ghosh', '2005-09-26'),
@@ -110,7 +110,7 @@ VALUES('Riya Jana', '2000-01-01'),
 
 现在，我们将使用 TIMESTAMPDIFF 来计算每个员工在一年中的工作经历。
 
-```
+```sql
 SELECT 
     id,
     Full_Name,

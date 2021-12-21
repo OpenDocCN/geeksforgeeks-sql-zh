@@ -13,7 +13,7 @@ SQL 中有两个 CREATE 语句可用:
 
 **语法**:
 
-```
+```sql
 CREATE DATABASE database_name;
 
 database_name: name of the database.
@@ -23,7 +23,7 @@ database_name: name of the database.
 **示例查询:**
 该查询将在 SQL 中创建新的数据库，并将该数据库命名为 *my_database* 。
 
-```
+```sql
 CREATE DATABASE my_database;
 
 ```
@@ -34,7 +34,7 @@ CREATE DATABASE my_database;
 
 **语法**:
 
-```
+```sql
 CREATE TABLE table_name
 (
 column1 data_type(size),
@@ -56,7 +56,7 @@ number of maximum 10 digits.
 **示例查询:**
 该查询将创建一个名为 Students 的表，该表有三列，ROLL_NO、NAME 和 SUBJECT。
 
-```
+```sql
 CREATE TABLE Students
 (
 ROLL_NO int(3),

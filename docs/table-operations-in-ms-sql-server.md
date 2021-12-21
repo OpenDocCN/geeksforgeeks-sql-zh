@@ -14,13 +14,13 @@
 
 **命名表的语法–**
 
-```
+```sql
 create table[db_name] [schema_name] table_name col1 datatype,......); 
 ```
 
 **示例–**
 
-```
+```sql
 create table student 
 (
 name varchar2(30),
@@ -31,7 +31,7 @@ course varchar2(10)
 
 将在数据库中创建一个名为 student 的表。可以插入如下几个值。
 
-```
+```sql
 insert into student values('Aisha', 111, 'CSE');
 insert into student values('Naina', 112, 'ECE');
 ```
@@ -52,19 +52,19 @@ T35】</center>
 
 学生表有这么多属性。如果用户想要添加一个新列，可以按如下方式进行。
 
-```
+```sql
 alter table table_name add column_name datatype column_constraint;
 ```
 
 假设用户想在学生表中添加学生的年龄，可以按如下方式进行。
 
-```
+```sql
 alter table student add age int; 
 ```
 
 将创建年龄列。用户可以在表格中插入年龄，如下所示:
 
-```
+```sql
 insert into student values('Aisha', 111, 'CSE', 18);
 insert into student values('Naina', 112, 'ECE', 19);
 ```
@@ -79,13 +79,13 @@ insert into student values('Naina', 112, 'ECE', 19);
 
 在数据库的生命周期中，有些列保持未使用或很少使用。为了从表中删除它们，必须按如下方式进行。
 
-```
+```sql
 alter table table_name drop column column_name;
 ```
 
 在学生表中，年龄是一个未使用的属性。要删除该列，必须给出如下查询:
 
-```
+```sql
 alter table student drop column age;
 ```
 

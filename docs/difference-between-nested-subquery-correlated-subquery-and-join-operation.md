@@ -7,14 +7,14 @@ Join 操作是一种二进制操作，用于根据两个或多个表之间的公
 
 **示例–**
 
-```
+```sql
 Orders (OrderID, CustomerID, OrderDate);
 Customers (CustomerID, CustomerName, ContactName, Country);
 ```
 
 查找已订购客户的详细信息。
 
-```
+```sql
 SELECT * from Customers JOIN Orders 
 ON Orders.CustomerID=Customers.CustomerID;
 ```
@@ -26,14 +26,14 @@ ON Orders.CustomerID=Customers.CustomerID;
     In Nested Query,  Inner query runs first, and only once. Outer query is executed with result from Inner query.Hence, Inner query is used in execution of Outer query.
     **Example –**
 
-    ```
+    ```sql
     Orders (OrderID, CustomerID, OrderDate);
     Customers (CustomerID, CustomerName, ContactName, Country);
     ```
 
     查找已订购客户的详细信息。
 
-    ```
+    ```sql
     SELECT * FROM Customers WHERE 
     CustomerID IN (SELECT CustomerID FROM Orders);
     ```
@@ -42,14 +42,14 @@ ON Orders.CustomerID=Customers.CustomerID;
     In Correlated Query,  Outer query executes first and for every Outer query row Inner query is executed. Hence, Inner query uses values from Outer query.
     **Example –**
 
-    ```
+    ```sql
     Orders (OrderID, CustomerID, OrderDate);
     Customers (CustomerID, CustomerName, ContactName, Country);
     ```
 
     查找已订购客户的详细信息。
 
-    ```
+    ```sql
     SELECT * FROM Customers where 
     EXISTS (SELECT CustomerID FROM Orders 
     WHERE Orders.CustomerID=Customers.CustomerID);
@@ -61,14 +61,14 @@ ON Orders.CustomerID=Customers.CustomerID;
 *   When we want to get data from multiple tables we use join operation.
     Example: Let’s consider two relations as:
 
-    ```
+    ```sql
     Employee (eId, eName, eSalary, dId);
     Department (dId, dName, dLocation);
     ```
 
     现在，我们必须找到在伦敦工作的员工姓名和部门名称。在这里，我们必须显示员工表中的姓名和部门表中的姓名。因此，我们必须使用连接操作。
 
-    ```
+    ```sql
     SELECT e.eName, d.dName from Employee e, 
     Department d 
     where e.dId=d.dId and d.dLocation="London";
@@ -79,14 +79,14 @@ ON Orders.CustomerID=Customers.CustomerID;
     这里，我们必须只显示雇员表中的 eName，因此我们可以使用连接操作或子查询
     **使用连接操作–**
 
-    ```
+    ```sql
     SELECT e.eName from Employee e, Department d 
     where e.dId=d.dId and d.dLocation="London";
     ```
 
     **使用子查询–**
 
-    ```
+    ```sql
     SELECT eName from Employee 
     where dId=(SELECT dId from Department where dLocation="London");
     ```

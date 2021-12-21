@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 EXPORT_SET
 (bits, on, off, separator, number of bits)
 ```
@@ -32,7 +32,7 @@ EXPORT_SET
 **示例-1:**
 EXPORT _ SET()函数的一般工作原理。
 
-```
+```sql
 SELECT EXPORT_SET(10, 'On', 'Off', ':', 5) 
 AS Export;
 ```
@@ -47,7 +47,7 @@ AS Export;
 
 *   **Using “Y” and “N” as second and third argument respectively –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(11, 'Y', 'N', ', ', 4) 
     AS Export;
     ```
@@ -59,7 +59,7 @@ AS Export;
 
 *   **Using “1” and “0” as second and third argument respectively –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(11, 1, 0, ', ', 4) 
     AS Export;
     ```
@@ -74,7 +74,7 @@ AS Export;
 
 *   **Using “-” as the fourth argument –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(10, 1, 0, '-', 4) 
     AS Export;
     ```
@@ -86,7 +86,7 @@ AS Export;
 
 *   **Using “::” as the fourth argument –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(10, 1, 0, '::', 4) 
     AS Export;
     ```
@@ -101,7 +101,7 @@ AS Export;
 
 *   **Using 10 as the fifth argument –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(9, 'Y', 'N', ' ', 10) 
     AS Export;
     ```
@@ -113,7 +113,7 @@ AS Export;
 
 *   **Using 20 as the fifth argument –**
 
-    ```
+    ```sql
     SELECT EXPORT_SET(9, 1, 0, ' ', 20) 
     AS Export;
     ```

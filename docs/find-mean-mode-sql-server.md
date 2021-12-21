@@ -6,7 +6,7 @@
 
 示例:
 
-```
+```sql
 Input:  1, 2, 3, 4, 5 
 Output: 3
 Explanation: 
@@ -18,7 +18,7 @@ mean = 15 / 5 = 3
 
 **查询查找表中的平均值**
 
-```
+```sql
 SELECT Avg(Column_Name) 
 FROM  Table_Name
 
@@ -39,7 +39,7 @@ FROM  Table_Name
 
 示例:
 
-```
+```sql
 Input:  1, 2, 2, 3, 4, 4, 4, 5, 5, 6
 Output: 4
 Explanation:
@@ -53,7 +53,7 @@ is thus the output.
 
 **查询查找表中的模式**
 
-```
+```sql
 SELECT TOP 1 Column_Name
 FROM   Table_name
 GROUP  BY [Column_Name]

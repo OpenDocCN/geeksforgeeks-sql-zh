@@ -6,14 +6,14 @@
 
 **语法:**
 
-```
+```sql
 SYSDATE
 
 ```
 
 **示例-1:**
 
-```
+```sql
 SELECT Sysdate AS System_date
 FROM Dual
 ```
@@ -30,7 +30,7 @@ FROM Dual
 
 **语法:**
 
-```
+```sql
 SELECT TO_CHAR(Sysdate, Format_Of_Date_and_Time) AS Alias_Name
 FROM Dual 
 
@@ -45,7 +45,7 @@ DD-MM-YYYY HH24:MM:SS (For 24hr time Format)
 
 **示例-2:**
 
-```
+```sql
 SELECT TO_CHAR (Sysdate, 'DD-MM-YYYY HH24:MI:SS') AS System_date_time
 FROM Dual
 ```
@@ -57,7 +57,7 @@ FROM Dual
 
 **示例-3:**
 
-```
+```sql
 SELECT TO_CHAR (Sysdate, 'YYYY-MON-DD HH24:MI:SS') AS System_date_time
 FROM Dual
 ```
@@ -74,7 +74,7 @@ FROM Dual
 
 **语法:**
 
-```
+```sql
 SELECT Sysdate+Level-1
 FROM Dual
 CONNECT BY Level<=n 
@@ -84,7 +84,7 @@ CONNECT BY Level<=n
 
 **示例-4:**
 
-```
+```sql
 SELECT Sysdate+Level-1 AS Consecutive_dates
 FROM Dual
 CONNECT BY Level<=5

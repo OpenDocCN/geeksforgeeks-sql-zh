@@ -14,7 +14,7 @@ SQL Server 中的此函数用于返回正在使用的 SQL Server 数据库中的
 
 **语法:**
 
-```
+```sql
 SESSION_USER;
 ```
 
@@ -30,13 +30,13 @@ SESSION_USER;
 
 使用 SESSION_USER()函数并获取当前用户的名称。
 
-```
+```sql
 SELECT SESSION_USER;
 ```
 
 **输出:**
 
-```
+```sql
 nidhi
 ```
 
@@ -44,7 +44,7 @@ nidhi
 
 在下面的例子中使用 SESSION_USER 作为默认值并获得输出。
 
-```
+```sql
 CREATE TABLE user01
 (  
 user_id int IDENTITY(100, 2) NOT NULL,
@@ -62,7 +62,7 @@ SELECT * FROM user01;
 
 **输出:**
 
-```
+```sql
   | user_id  | customer_id | user_name
 -----------------------------------------
 1 | 100      | 101         | nidhi
@@ -78,7 +78,7 @@ SELECT * FROM user01;
 
 使用 SESSION_USER()函数并模拟用户“极客”。
 
-```
+```sql
 SELECT SESSION_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT SESSION_USER;  
@@ -86,7 +86,7 @@ SELECT SESSION_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 ```
@@ -97,7 +97,7 @@ Geek
 
 使用 SESSION_USER()函数模拟用户“极客”，然后再次恢复代码以获得以前的当前用户。
 
-```
+```sql
 SELECT SESSION_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT SESSION_USER;  
@@ -107,7 +107,7 @@ SELECT SESSION_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 nidhi

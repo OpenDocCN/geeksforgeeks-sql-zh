@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 LTrim(string)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT LTrim("    GEEKSFORGEEKS") AS LeftTrimmedString;
 ```
 
@@ -24,7 +24,7 @@ SELECT LTrim("    GEEKSFORGEEKS") AS LeftTrimmedString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT LTrim("    GFG") AS LeftTrimmedString;
 ```
 
@@ -38,13 +38,13 @@ SELECT LTrim("    GFG") AS LeftTrimmedString;
 
 **语法:**
 
-```
+```sql
 RTrim(string)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT RTrim("GEEKSFORGEEKS    ") AS RightTrimmedString;
 ```
 
@@ -55,7 +55,7 @@ SELECT RTrim("GEEKSFORGEEKS    ") AS RightTrimmedString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT RTrim("GFG    ") AS RightTrimmedString;
 ```
 

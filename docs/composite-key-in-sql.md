@@ -19,19 +19,19 @@
 
 创建数据库:
 
-```
+```sql
 CREATE School;
 ```
 
 使用数据库:
 
-```
+```sql
 USE School;
 ```
 
 使用复合键创建表:
 
-```
+```sql
 CREATE TABLE student
 (rollNumber INT, 
 name VARCHAR(30), 
@@ -45,7 +45,7 @@ PRIMARY KEY (rollNumber, mobile));
 
 在表中插入记录:
 
-```
+```sql
 INSERT INTO student (rollNumber, name, class, section, mobile) 
 VALUES (1, "AMAN","FOURTH", "B", "9988774455");
 INSERT INTO student (rollNumber, name, class, section, mobile) 
@@ -58,7 +58,7 @@ VALUES (4, "RICHARD","SECOND", "C", "9955663322");
 
 查询记录:
 
-```
+```sql
 SELECT * FROM student;
 ```
 

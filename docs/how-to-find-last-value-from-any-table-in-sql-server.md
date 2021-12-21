@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT *,
 FROM tablename
 LAST_VALUE ( scalar_value )  
@@ -31,7 +31,7 @@ ORDER BY 子句定义了每个分区中使用 LAST_VALUE()函数的行的顺序�
 **示例-1 :**
 让我们假设我们有一个名为‘geek demo’的表；
 
-```
+```sql
 SELECT Name, City, Year
 FROM [geekdemo] ;
 ```
@@ -50,7 +50,7 @@ FROM [geekdemo] ;
 **示例-2 :**
 **不带 PARTITION BY 子句的 LAST_VALUE()**
 
-```
+```sql
 SELECT TOP 1000 Name, 
 Year, LAST_VALUE(City) 
 OVER 
@@ -75,7 +75,7 @@ FROM geekdemo;
 **示例-3 :**
 **LAST_VALUE()带 PARTITION BY 子句:**
 
-```
+```sql
 SELECT Name, 
 Year, 
 LAST_VALUE(City) OVER 

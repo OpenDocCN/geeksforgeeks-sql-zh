@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 STR(float_expression [, length [, decimal]])
 ```
 
@@ -20,48 +20,48 @@ STR(float_expression [, length [, decimal]])
 
 **示例-1 :**
 
-```
+```sql
 SELECT STR(246.573, 6, 2);
 ```
 
 **输出:**
 
-```
+```sql
 246.57
 ```
 
 **例-2 :**
 
-```
+```sql
 SELECT STR(246.573, 3, 3);
 ```
 
 **输出:**
 
-```
+```sql
 246
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT STR(246.573, 2, 2);
 ```
 
 **输出:**
 
-```
+```sql
 **
 ```
 
 **例-4 :**
 
-```
+```sql
 SELECT STR(246.573, 8, 4);
 ```
 
 **输出:**
 
-```
+```sql
 246.5730
 ```

@@ -17,13 +17,13 @@
 
 **语法:**
 
-```
+```sql
 Create database database_name; 
 ```
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Sample; // query will create a database in SQL Platform 
 ```
 
@@ -33,7 +33,7 @@ CREATE DATABASE Sample; // query will create a database in SQL Platform
 
 **查询:**
 
-```
+```sql
 use Sample;  
 ```
 
@@ -43,7 +43,7 @@ use Sample;
 
 **查询:**
 
-```
+```sql
 create table table_name(
 column1 type(size),
 column2 type(size),
@@ -56,7 +56,7 @@ columnN type(size)
 
 **查询:**
 
-```
+```sql
 CREATE TABLE EMPLOYEE
 (
 EMPNAME VARCHAR(25),
@@ -71,7 +71,7 @@ CITY VARCHAR(15)
 
 **查询:**
 
-```
+```sql
 CREATE TABLE ATTENDANCE
 ( EMPNAME VARCHAR(25),
 GENDER VARCHAR(6),
@@ -84,7 +84,7 @@ ATTENDATE DATE DEFAULT GETDATE()
 
 **查询:**
 
-```
+```sql
 INSERT INTO EMPLOYEET
 VALUES ('VISHAL','MALE','SALES',9193458625,'GAZIABAD'),
 ('DIVYA','FEMALE','MANAGER',7352158944,'BARIELLY'),
@@ -104,7 +104,7 @@ VALUES ('VISHAL','MALE','SALES',9193458625,'GAZIABAD'),
 
 **查询:**
 
-```
+```sql
  SELECT * FROM EMPLOYEET; 
 ```
 
@@ -118,7 +118,7 @@ VALUES ('VISHAL','MALE','SALES',9193458625,'GAZIABAD'),
 
 **查询:**
 
-```
+```sql
 INSERT INTO ATTENDENCE (EMPNAME,GENDER,DEPT)
 SELECT EMPNAME,GENDER,DEPT FROM EMPLOYEET; 
 ```
@@ -127,7 +127,7 @@ SELECT EMPNAME,GENDER,DEPT FROM EMPLOYEET;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM ATTENDENCE;
 ```
 

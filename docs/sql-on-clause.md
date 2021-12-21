@@ -23,7 +23,7 @@
 
 **QUERY 1:** 写 SQL 查询找到员工的工作地点。还要给出他们各自的员工 id、姓氏和部门 id？
 
-```
+```sql
 
 Input :SELECT e.employee_id, e.last_name, e.department_id,
 d.department_id, d.location_id
@@ -48,7 +48,7 @@ Output :
 
 **QUERY 2:** 写 SQL 查询找到 location_id、street_address、postal_code 以及它们各自的国家名称？
 
-```
+```sql
 
 Input : SELECT l.location_id, l.street_address, l.postal_code, c.country_name
 FROM locations l JOIN countries c

@@ -12,19 +12,19 @@
 
 使用下面的 SQL 查询创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **步骤 2:** 使用数据库
 
-```
+```sql
 USE geeks;
 ```
 
 **步骤 3:** 表格创建
 
-```
+```sql
 CREATE TABLE Employee  
 (  
 EmpID int,  
@@ -36,7 +36,7 @@ Salary INT
 
 **步骤 4:** 向表中添加数据
 
-```
+```sql
 INSERT INTO Employee VALUES(1, 'john' , 'ryther', 10000);
 INSERT INTO Employee VALUES(2, 'Alex' , 'Hamilton', 20000);
 INSERT INTO Employee VALUES(3, 'Sze' , 'Chauhan' , 10000);
@@ -51,7 +51,7 @@ INSERT INTO Employee VALUES(4,'Shiv', 'Chauhan', 50000);
 
 **语法:**
 
-```
+```sql
 SELECT (Column Name)
 FROM (Table Name);
 ```
@@ -60,7 +60,7 @@ FROM (Table Name);
 
 **查询:**
 
-```
+```sql
 SELECT FirstName
 FROM EMPLOYEE;
 ```
@@ -75,7 +75,7 @@ FROM EMPLOYEE;
 
 **查询:**
 
-```
+```sql
 SELECT FirstName
 FROM EMPLOYEE
 WHERE Salary=10000;
@@ -91,7 +91,7 @@ WHERE Salary=10000;
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,column3...
 FROM table name;
 ```
@@ -100,7 +100,7 @@ FROM table name;
 
 **查询:**
 
-```
+```sql
 SELECT FirstName,LastName
 FROM Employee;
 ```
@@ -127,7 +127,7 @@ FROM Employee;
 
 **查询:**
 
-```
+```sql
 SELECT FirstName, LastName
 FROM Employee
 WHERE Salary=10000 OR LastName='Chauhan';

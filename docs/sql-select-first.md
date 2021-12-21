@@ -6,7 +6,7 @@
 
 **first()函数用于返回任意表的第一行。**
 
-```
+```sql
 Syntax : SELECT FIRST(columnName) FROM tableName
 ```
 
@@ -14,19 +14,19 @@ Syntax : SELECT FIRST(columnName) FROM tableName
 
 **步骤 1:** 创建数据库。
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 **步骤 2:** 使用该数据库
 
-```
+```sql
 USE GFG
 ```
 
 **步骤 3:** 创建表格
 
-```
+```sql
 /****** (1,1) indicates that increment 1 every time insert is performed ******/
 
 CREATE TABLE first 
@@ -44,7 +44,7 @@ CREATE TABLE first
 
 **步骤 4:** 在表中插入数值
 
-```
+```sql
 /****** Insertion queries ******/
 
 INSERT INTO [dbo].[first]
@@ -76,7 +76,7 @@ GO
 
 **步骤 5:** 使用表中的 first()函数(在 MS ACCESS 中使用 first()。
 
-```
+```sql
 SELECT TOP 1 Name FROM first
 ```
 

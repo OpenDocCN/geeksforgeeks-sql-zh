@@ -5,7 +5,7 @@
 **CURRENT_TIMESTAMP()函数:**
 SQLServer 中的这个[函数用于返回当前日期和时间。输出的格式如下。](https://www.geeksforgeeks.org/categories-of-sql-functions/)
 
-```
+```sql
 'YYYY-MM-DD hh:mm:ss.mmm'
 ```
 
@@ -18,7 +18,7 @@ SQLServer 中的这个[函数用于返回当前日期和时间。输出的格式
 
 **语法:**
 
-```
+```sql
 CURRENT_TIMESTAMP
 ```
 
@@ -31,14 +31,14 @@ CURRENT_TIMESTAMP
 **示例-1 :**
 使用 CURRENT_TIMESTAMP 函数，获取当前日期和时间。
 
-```
+```sql
 SELECT CURRENT_TIMESTAMP 
 AS current_date_and_time;
 ```
 
 **输出:**
 
-```
+```sql
 current_date_and_time
 --------------------------
 2020-12-31 12:32:24.100
@@ -49,7 +49,7 @@ current_date_and_time
 **示例-2 :**
 在下面的示例中使用 CURRENT_TIMESTAMP 作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE current_time_stamp
 (
     id_num INT IDENTITY, 
@@ -63,7 +63,7 @@ CREATE TABLE current_time_stamp
 
 **将数据插入表格–**
 
-```
+```sql
 INSERT INTO current_time_stamp(message)
 VALUES('Its the first message.');
 
@@ -74,7 +74,7 @@ VALUES('current_time_stamp');
 
 **从表中读取数据–**
 
-```
+```sql
 SELECT 
     id_num, 
     message, 

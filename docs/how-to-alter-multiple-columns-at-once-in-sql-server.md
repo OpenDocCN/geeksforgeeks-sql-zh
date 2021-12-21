@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE FIRM(
 FIRST_NAME VARCHAR(20),
 LAST_NAME VARCHAR(20),
@@ -49,7 +49,7 @@ BONUS INT
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS FIRM;
 ```
 
@@ -61,7 +61,7 @@ EXEC SP_COLUMNS FIRM;
 
 **查询:**
 
-```
+```sql
 INSERT INTO FIRM VALUES('ALEX','STONE',10000,1000);
 INSERT INTO FIRM VALUES('MATT','JONES',20000,2000);
 INSERT INTO FIRM VALUES('JOHN','STARK',30000,3000);
@@ -77,7 +77,7 @@ INSERT INTO FIRM VALUES('RICHARD','WALT',50000,5000);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM FIRM;
 ```
 
@@ -89,14 +89,14 @@ SELECT * FROM FIRM;
 
 **语法:**
 
-```
+```sql
 ALTER TABLE TABLE_NAME ADD COLUMN1 
 DATA_TYPE, COLUMN2 DATA_TYPE........;
 ```
 
 **查询:**
 
-```
+```sql
 ALTER TABLE FIRM ADD JOINING_DATE DATE,
  LEAVING_DATE DATE;
 ```
@@ -109,7 +109,7 @@ ALTER TABLE FIRM ADD JOINING_DATE DATE,
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS FIRM;
 ```
 
@@ -123,14 +123,14 @@ EXEC SP_COLUMNS FIRM;
 
 **语法:**
 
-```
+```sql
 UPDATE TABLE_NAME SET COLUMN1=VALUE,
 COLUMN2=VALUE WHERE CONDITION;
 ```
 
 **查询:**
 
-```
+```sql
 UPDATE FIRM SET JOINING_DATE='01-JAN-2001',
 LEAVING_DATE='01-JAN-2002' WHERE FIRST_NAME='ALEX';
 UPDATE FIRM SET JOINING_DATE='02-FEB-2001',
@@ -151,7 +151,7 @@ LEAVING_DATE='05-MAY-2002' WHERE FIRST_NAME='RICHARD';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM FIRM;
 ```
 
@@ -165,14 +165,14 @@ SELECT * FROM FIRM;
 
 **语法:**
 
-```
+```sql
 ALTER TABLE TABLE_NAME DROP 
 COLUMN COLUMN1, COLUMN2........;
 ```
 
 **查询:**
 
-```
+```sql
 ALTER TABLE FIRM DROP COLUMN
 JOINING_DATE,LEAVING_DATE;
 ```
@@ -185,7 +185,7 @@ JOINING_DATE,LEAVING_DATE;
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS FIRM;
 ```
 
@@ -199,7 +199,7 @@ EXEC SP_COLUMNS FIRM;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM FIRM;
 ```
 

@@ -18,7 +18,7 @@
     **示例–**
     以下示例说明了输入模式参数的工作方式–
 
-    ```
+    ```sql
     SQL> CREATE OR REPLACE PROCEDURE PR1(X IN NUMBER, Y IN NUMBER)
     S NUMBER;
     BEGIN
@@ -29,11 +29,11 @@
 
     **输出–**
 
-    ```
+    ```sql
     Procedure created.
     ```
 
-    ```
+    ```sql
     SQL> DECLARE
     N1 NUMBER:=10;
     N2 NUMBER:=20;
@@ -44,7 +44,7 @@
 
     **输出–**
 
-    ```
+    ```sql
     SUM IS : 30
     PL/SQL procedure successfully completed.
     SQL>
@@ -56,7 +56,7 @@
     **示例–**
     以下示例说明了输出模式参数的工作方式–
 
-    ```
+    ```sql
     SQL> CREATE OR REPLACE PROCEDURE PR2(2 OUT NUMBER) AS
     X NUMBER:=11;
     Y NUMBER:=22;
@@ -67,11 +67,11 @@
 
     **输出–**
 
-    ```
+    ```sql
     Procedure created.
     ```
 
-    ```
+    ```sql
     SQL> DECLARE
     R NUMBER;
     BEGIN
@@ -82,7 +82,7 @@
 
     **输出–**
 
-    ```
+    ```sql
     RESULT IS : 33
     PL/SQL procedure successfully completed.
     SQL>
@@ -94,7 +94,7 @@
     **示例–**
     以下示例说明了输出模式参数的工作方式–
 
-    ```
+    ```sql
     SQL> CREATE OR REPLACE PROCEDURE PR3(2 OUT NUMBER) AS
     A NUMBER:=11;
     BEGIN
@@ -104,11 +104,11 @@
 
     **输出–**
 
-    ```
+    ```sql
     Procedure created.
     ```
 
-    ```
+    ```sql
     SQL> DECLARE
     R NUMBER:=22;
     BEGIN
@@ -119,7 +119,7 @@
 
     **输出–**
 
-    ```
+    ```sql
     RESULT IS : 33
     PL/SQL procedure successfully completed.
     SQL>

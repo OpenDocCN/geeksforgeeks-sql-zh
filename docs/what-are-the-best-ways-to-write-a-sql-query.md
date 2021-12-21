@@ -49,14 +49,14 @@
 
 **示例:**这是一个显示当前已订购产品且年龄小于 50 岁的客户的 CustomerID 和 LastName 的查询。
 
-```
+```sql
 Select distinct Customers.CustomerID, Customers.LastName from Customers INNER join Orders on Customers.CustomerID = Orders.CustomerID where Customers.Age < 50;
 
 ```
 
 上面的查询看起来不可读，因为所有语句都在一行中，并且关键字都是小写的。因此，下面给出了一个优化版本，使用了前面指定的格式化规则。
 
-```
+```sql
 SELECT DISTINCT Customers.CustomerID, Customers.LastName
 FROM Customers INNER JOIN Orders
 ON Customers.CustomerID = Orders.CustomerID
@@ -70,7 +70,7 @@ WHERE Customers.Age < 50;
 
 **示例:**当只需要 *CustomerID* 和*姓氏*时，这是一个显示客户表中所有数据的查询。
 
-```
+```sql
 SELECT * 
 FROM Customers;
 
@@ -78,7 +78,7 @@ FROM Customers;
 
 最好使用带有字段 *CustomerID* 和*姓氏*的 select 语句来获得所需的结果。
 
-```
+```sql
 SELECT CustomerID, LastName 
 FROM Customers;
 
@@ -90,7 +90,7 @@ FROM Customers;
 
 **示例:**这是一个使用相关子查询显示当前已订购产品的客户的*客户标识*的查询。
 
-```
+```sql
 SELECT CustomerID
 FROM Customers
 WHERE EXISTS (SELECT * FROM Orders
@@ -100,7 +100,7 @@ WHERE EXISTS (SELECT * FROM Orders
 
 在这种情况下，最好使用内部连接来获得相同的结果。
 
-```
+```sql
 SELECT DISTINCT Customers.CustomerID
 FROM Customers INNER JOIN Orders
 ON Customers.CustomerID = Orders.CustomerID;
@@ -115,7 +115,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 **示例:**这是一个显示限额为 3 的客户详细信息的查询:
 
-```
+```sql
 SELECT *
 FROM Customers 
 LIMIT 3;
@@ -128,7 +128,7 @@ DISTINCT 子句用于通过消除重复项从查询中获得不同的结果。�
 
 **示例:**这是一个使用 distinct 子句显示所有客户的 distinct LastName 的查询。
 
-```
+```sql
 select distinct LastName
 from Customers;
 
@@ -136,7 +136,7 @@ from Customers;
 
 客户的不同姓氏也可以使用 GROUP BY 子句获得，如下面的示例所示:
 
-```
+```sql
 SELECT LastName
 FROM  CUSTOMERS
 GROUP BY LastName;
@@ -149,7 +149,7 @@ SQL 中的函数用于执行特定的操作。但是，它们效率很低，因�
 
 **示例:**这是一个显示名称以“【沙】开头的产品详细信息的查询。
 
-```
+```sql
 SELECT *
 FROM Products
 WHERE SUBSTR(ProductName, 1, 3) = 'Sha';
@@ -158,7 +158,7 @@ WHERE SUBSTR(ProductName, 1, 3) = 'Sha';
 
 最好避免函数，而使用 LIKE 子句来获得相同的结果。
 
-```
+```sql
 SELECT *
 FROM Products
 WHERE ProductName LIKE 'Sha%';
@@ -173,7 +173,7 @@ WHERE ProductName LIKE 'Sha%';
 
 **示例 1:** 这是一个使用 OR 运算符显示 CustomerID 为 73001、73004 和 73005 的客户的详细信息的查询。
 
-```
+```sql
 SELECT * 
 FROM Customers
 WHERE CustomerID = 73001
@@ -184,7 +184,7 @@ OR CustomerID = 73005;
 
 在这种情况下，最好使用 IN 运算符来获得相同的结果。
 
-```
+```sql
 SELECT * 
 FROM Customers
 WHERE CustomerID IN (73001, 73004, 73005);
@@ -193,7 +193,7 @@ WHERE CustomerID IN (73001, 73004, 73005);
 
 **示例 2:** 这是一个使用 and 运算符显示年龄在 25 至 50 岁之间的客户的详细信息的查询。
 
-```
+```sql
 SELECT * 
 FROM Customers
 WHERE age >= 25 AND age <= 50; < pre>在这种情况下，最好使用 BENT 运算符来获得相同的结果。
@@ -203,7 +203,7 @@ SELECT *
 FROM Customers
 WHERE age BETWEEN 25 AND 50;
 
-```
+```sql
 
 8.尽可能使用 WHERE 子句而不是 HAVING 子句HAVING 子句与 GROUP BY 子句一起使用来强制条件，因为 WHERE 子句不能与聚合函数一起使用。但是，HAVING 子句不允许使用索引，这会降低查询的执行时间。所以最好尽可能使用 WHERE 子句而不是 HAVING 子句。**示例:**这是一个显示客户名字的查询，其中包含年龄超过 25 岁的客户的名字计数。这是使用 HAVING 子句完成的。
 
@@ -213,7 +213,7 @@ FROM Customers
 GROUP BY FirstName
 HAVING Age > 25;
 
-```
+```sql
 
 在这种情况下，最好使用 WHERE 子句，因为它将条件应用于单独的行，而不是使用 HAVING 子句将条件应用于 GROUP BY 子句的结果。
 
@@ -223,7 +223,7 @@ FROM Customers
 where Age > 25
 GROUP BY FirstName;
 
-```
+```sql
 
 9.使用 INNER JOIN 而不是 WHERE 子句来创建联接使用 WHERE 子句创建联接会产生笛卡尔乘积，其中行数是两个表的行数的乘积。这对于大型数据库来说显然是有问题的，因为需要更多的数据库资源。因此，最好使用 INNER JOIN，因为它只组合两个表中满足所需条件的行。**示例:**这是一个使用 WHERE 子句显示当前已订购产品的客户的 CustomerID 的查询。
 
@@ -232,7 +232,7 @@ SELECT DISTINCT Customers.CustomerID
 FROM Customers, Orders
 WHERE Customers.CustomerID = Orders.CustomerID;
 
-```
+```sql
 
 在这种情况下，最好使用内部连接来获得相同的结果。
 
@@ -241,7 +241,7 @@ SELECT DISTINCT Customers.CustomerID
 FROM Customers INNER JOIN Orders
 ON Customers.CustomerID = Orders.CustomerID;
 
-```
+```sql
 
 10.避免在 LIKE 子句模式的开头使用通配符像%和 _ 这样的通配符用于过滤掉 LIKE 子句的结果。但是，它们不应该在模式的开头使用，因为这会禁止数据库使用索引。在这种情况下，需要进行全表扫描来匹配消耗更多数据库资源的模式。因此，最好避免在模式的开头使用通配符，如果可能的话，只在结尾使用它们。**示例:**
 
@@ -249,7 +249,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 SELECT * FROM Customers
 WHERE FirstName LIKE '%A%'
 
-```
+```sql
 
 上面的查询效率很低，因为它在模式的开头使用了通配符% 1。下面给出了避免这种情况的更有效的查询版本:
 
@@ -257,7 +257,7 @@ WHERE FirstName LIKE '%A%'
 SELECT * FROM Customers
 WHERE FirstName LIKE 'A%'
 
-```
+```sql
 
 =>
 ```

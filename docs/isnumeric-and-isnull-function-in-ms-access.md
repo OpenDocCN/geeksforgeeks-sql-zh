@@ -7,7 +7,7 @@
 
 **语法**:
 
-```
+```sql
 IsNumeric(expression)
 ```
 
@@ -17,25 +17,25 @@ IsNumeric(expression)
 
 *   **Example-1 :**
 
-    ```
+    ```sql
     SELECT IsNumeric("GeeksforGeeks");
     ```
 
     **输出–**
 
-    ```
+    ```sql
     0
     ```
 
 *   **Example-2 :**
 
-    ```
+    ```sql
     SELECT IsNumeric(111);
     ```
 
     **输出–**
 
-    ```
+    ```sql
     -1
     ```
 
@@ -43,13 +43,13 @@ IsNumeric(expression)
 
 *   **Example-3 :**
 
-    ```
+    ```sql
     SELECT IsNumeric(#11/09/2020#);
     ```
 
     **输出–**
 
-    ```
+    ```sql
     0
     ```
 
@@ -58,7 +58,7 @@ MS Access 中的 IsNull()函数用于检查表达式是否为空值。它返回�
 
 **语法**:
 
-```
+```sql
 IsNull (expression)
 ```
 
@@ -68,36 +68,36 @@ IsNull (expression)
 
 *   **Example-1 :**
 
-    ```
+    ```sql
     SELECT IsNull("GeeksforGeeks");
     ```
 
     **输出–**
 
-    ```
+    ```sql
     0
     ```
 
 *   **Example-2 :**
 
-    ```
+    ```sql
     SELECT IsNull(11);
     ```
 
     **输出–**
 
-    ```
+    ```sql
     0
     ```
 
 *   **Example-3 :**
 
-    ```
+    ```sql
     SELECT IsNull(null);
     ```
 
     **输出–**
 
-    ```
+    ```sql
     -1
     ```

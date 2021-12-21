@@ -20,7 +20,7 @@ SQL Server 中有四种不同类型的登录:
 **怎样才能知道在一个 SQL Server 数据库中建立了多少次登录以及登录时间？**
 下面提到了几个返回登录信息的 SQL Server 查询。您可以使用以下问题来确定您的 SQL Server 上的登录次数:
 
-```
+```sql
 SELECT COUNT(*)
   FROM master..syslogins
 GO
@@ -32,7 +32,7 @@ GO
 
 要获取服务器上的登录列表及其创建日期，请运行以下查询:
 
-```
+```sql
 SELECT name, createdate
   FROM master..syslogins
 GO
@@ -44,7 +44,7 @@ GO
 
 同样，您可以使用以下 SQL 查询来获取数据库中的用户数量、用户名列表以及用户的创建日期:
 
-```
+```sql
 USE <database_name>
 GO
 SELECT COUNT(*)
@@ -59,7 +59,7 @@ GO
 
 **示例–**
 
-```
+```sql
 USE SQL_DBA
 GO
 SELECT COUNT(*)

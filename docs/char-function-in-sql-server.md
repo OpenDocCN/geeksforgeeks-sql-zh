@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 CHAR(integer_value)
 ```
 
@@ -35,7 +35,7 @@ CHAR(integer_value)
 **例-1:**
 CHAR()函数的基本用法，函数会返回‘P’和‘D’。
 
-```
+```sql
 SELECT  
 CHAR(80) AS 'Character1',
 CHAR(100) AS 'Character2';
@@ -49,7 +49,7 @@ CHAR(100) AS 'Character2';
 **示例-2 :**
 如果 CHAR()函数超出整数值的范围，则该函数将返回 NULL。
 
-```
+```sql
 SELECT CHAR(260) 
 AS 'Outcome';
 ```
@@ -62,7 +62,7 @@ AS 'Outcome';
 **示例-3 :**
 如何控制 CHAR()函数中的字符，我们在它们之间使用字符串和 CHAR()函数，
 
-```
+```sql
 SELECT 'Vansh' + CHAR(13) + 'vgaur12345@gmail.com' 
 AS 'Name_Email';
 ```
@@ -75,13 +75,13 @@ AS 'Name_Email';
 **示例-4 :**
 如果用户在 CHAR()函数中传递两个参数，函数将返回一个错误。
 
-```
+```sql
 SELECT CHAR(91, 200) 
 AS 'Outcome';
 ```
 
 **输出:**
 
-```
+```sql
 The char function requires 1 argument(s)
 ```

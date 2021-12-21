@@ -8,7 +8,7 @@ NOT IN 运算符充当 IN 运算符的否定，并返回指定列表中存在的
 
 **不在语法中:**
 
-```
+```sql
 SELECT * FROM table_name WHERE column_name NOT IN (list);
 ```
 
@@ -20,7 +20,7 @@ SELECT * FROM table_name WHERE column_name NOT IN (list);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -40,7 +40,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 NAME VARCHAR(20),
 AGE INT,
@@ -49,7 +49,7 @@ CITY VARCHAR(20) );
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 NAME VARCHAR(20),
 AGE int);
@@ -59,7 +59,7 @@ AGE int);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 ('Romy',23,'Delhi'),
 ('Rahul',23,'Delhi'),
@@ -75,7 +75,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES
 ('Fanny',25 ),
 ('Prem', 30), 
@@ -91,7 +91,7 @@ INSERT INTO demo_table2 VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -101,7 +101,7 @@ SELECT * FROM demo_table1;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -115,7 +115,7 @@ SELECT * FROM demo_table2;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table1 WHERE NAME NOT IN (SELECT NAME FROM demo_table2);
 ```
 

@@ -14,7 +14,7 @@
 **展示现有数据库–**
 让我们考虑现有的数据库，如 nformation _ schema、mysql、performance_schema、sakila、student、sys 和 world。如果您想显示现有的数据库，那么我们将使用如下所示的 show database 查询。
 
-```
+```sql
 SHOW DATABASES;  
 ```
 
@@ -35,7 +35,7 @@ SHOW DATABASES;
 **删除数据库–**
 假设我们要删除的数据库就是学生。
 
-```
+```sql
 DROP DATABASE student;
 SHOW DATABASES;  
 ```
@@ -57,7 +57,7 @@ SHOW DATABASES;
 **创建数据库–**
 假设我们要创建一个数据库即银行。
 
-```
+```sql
 CREATE DATABASE bank;
 SHOW DATABASES;
 ```
@@ -79,7 +79,7 @@ SHOW DATABASES;
 **查询-4 :**
 **使用数据库–**
 
-```
+```sql
 USE bank;
 ```
 
@@ -87,7 +87,7 @@ USE bank;
 **创建表–**
 这里的数据类型可以是 varchar、integer、date 等。
 
-```
+```sql
 CREATE TABLE table_name (
    column1 datatype,
    column2 datatype,
@@ -97,7 +97,7 @@ CREATE TABLE table_name (
 
 **示例–**
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS Employee (
    EmployeeID int,
    FirstName varchar(55),
@@ -110,21 +110,21 @@ CREATE TABLE IF NOT EXISTS Employee (
 **查询-6 :**
 **显示同一数据库中的表–**
 
-```
+```sql
 SHOW TABLES;
 ```
 
 **查询-7 :**
 **丢表–**
 
-```
+```sql
 DROP TABLE table_name;
 ```
 
 **查询-8 :**
 **将值插入现有表–**
 
-```
+```sql
 INSERT INTO Employee 
 VALUES(1111,'Dipak','Bera','dipakbera@gmail.com','1994-11-22');
 ```
@@ -132,7 +132,7 @@ VALUES(1111,'Dipak','Bera','dipakbera@gmail.com','1994-11-22');
 **查询-9 :**
 **在表中取值–**
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 
@@ -140,7 +140,7 @@ SELECT * FROM Employee;
 **Not Null–**
 我们可以指定在表中插入值(行)时，哪一列不接受 Null 值。它将在创建表时完成。
 
-```
+```sql
 CREATE TABLE table_name (
   column1 datatype NOT NULL,
   column2 datatype,
@@ -152,7 +152,7 @@ CREATE TABLE table_name (
 **Unique–**
 我们还可以指定特定列中的条目应该是唯一的。
 
-```
+```sql
 CREATE TABLE table_name (
  column1 datatype UNIQUE,
  column2 datatype,
@@ -162,7 +162,7 @@ CREATE TABLE table_name (
 
 **示例–**
 
-```
+```sql
 CREATE TABLE demo_table
 (
 EmployeeID int NOT NULL UNIQUE, 
@@ -177,7 +177,7 @@ LastName varchar(55)
 *   **主键–**
     约束主键建议对应于指定列的条目既不能为空，也不能重复。
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS Customer(
 CustID int NOT NULL,
 FName varchar(55),
@@ -191,7 +191,7 @@ CONSTRAINT customer_custid_pk  PRIMARY KEY(CustID)
 *   **外键–**
     外键用于在当前表和包含主键的上一个表之间建立连接。
 
-```
+```sql
 CREATE TABLE Account(
 AccNo int NOT NULL,
 AType varchar(20),
@@ -209,7 +209,7 @@ CONSTRAINT customer_AccNo_fk  FOREIGN KEY(AccNo) REFERENCES Customer(CustID)
 
 ****语法–****
 
-```
+```sql
 SELECT column1, column2, ...
 FROM table_name
 ORDER BY column1, column2, ... ASC|DESC;
@@ -231,7 +231,7 @@ ORDER BY column1, column2, ... ASC|DESC;
 
 *   **现在，我们将按如下方式使用 Order By 命令。**
 
-```
+```sql
 **SELECT * FROM Account ORDER BY CurBal; ** 
 ```
 
@@ -249,7 +249,7 @@ ORDER BY column1, column2, ... ASC|DESC;
 *   ****场景-2 :**
     **为降序:****
 
-```
+```sql
 SELECT * FROM Account ORDER BY CurBal DESC;
 ```
 
@@ -271,7 +271,7 @@ SELECT * FROM Account ORDER BY CurBal DESC;
 
 ****示例–****
 
-```
+```sql
 SELECT COUNT(AType) FROM Account GROUP BY AType;
 ```
 
@@ -293,7 +293,7 @@ SELECT COUNT(AType) FROM Account GROUP BY AType;
     LEFT JOIN 关键字返回左表(表 1)中的所有记录以及右表(表 2)中的匹配记录。
     **语法–****
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 LEFT JOIN table2
@@ -308,7 +308,7 @@ ON table1.column_name = table2.column_name;
     RIGHT JOIN 关键字返回右表(表 2)中的所有记录以及左表(表 1)中的匹配记录。**
 *   ****语法–****
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
@@ -323,7 +323,7 @@ ON table1.column_name = table2.column_name;
     INNER JOIN 关键字返回两个表中所有匹配的记录。**
 *   ****语法–****
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 INNER JOIN table2
@@ -338,7 +338,7 @@ ON table1.column_name = table2.column_name;
     完全连接或完全外部连接关键字返回两个表中的所有记录。**
 *   ****语法–****
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 FULL OUTER JOIN table2
@@ -351,7 +351,7 @@ ON table1.column_name = table2.column_name;
 
 *   ****注意–** **这个关键词在 MySQL 最新版本中没有使用。而是使用关键字 UNION。这里的语法如下。****
 
-```
+```sql
 **SELECT column_name(s) FROM table1
 UNION
 SELECT column_name(s) FROM table2;**
@@ -361,7 +361,7 @@ SELECT column_name(s) FROM table2;**
     这是同一个表的别名之间的常规连接。****
 *   ******语法–******
 
-```
+```sql
 **SELECT column_name(s)
 FROM table1 T1, table1 T2
 WHERE condition;**
@@ -372,7 +372,7 @@ WHERE condition;**
 
 ******语法–******
 
-```
+```sql
 **SELECT column1, column2, ...
 FROM table_name
 WHERE condition;**
@@ -380,7 +380,7 @@ WHERE condition;**
 
 ******示例–******
 
-```
+```sql
 **SELECT  AccNo,CurBal FROM Account WHERE CurBal>=1000;**
 ```
 
@@ -398,7 +398,7 @@ WHERE condition;**
 ******HAVING 子句:**
 这是必需的，因为 WHERE 子句不支持诸如计数、最小值、最大值、平均值、总和等聚合函数。****
 
-```
+```sql
 **SELECT column1, column2, ...
 FROM table_name
 HAVING condition;**
@@ -406,7 +406,7 @@ HAVING condition;**
 
 ******示例–******
 
-```
+```sql
 **SELECT  AccNo,CurBal FROM Account HAVING CurBal=MAX(CurBal);**
 ```
 

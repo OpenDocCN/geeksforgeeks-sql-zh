@@ -10,7 +10,7 @@ WHERE 关键字用于获取结果集中的**过滤数据**。
 **基本语法:**
 **选择 column1、column2 FROM 表 _name WHERE 列 _name 运算符值；**
 
-```
+```sql
 column1 , column2: fields int the table
 table_name: name of table
 column_name: name of field used for filtering the data
@@ -38,7 +38,7 @@ value: exact value or pattern to get related data in result
 
 *   To fetch record of students with age equal to 20
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE Age=20;
 
     ```
@@ -52,7 +52,7 @@ value: exact value or pattern to get related data in result
 
 *   To fetch Name and Address of students with ROLL_NO greater than 3
 
-    ```
+    ```sql
     SELECT ROLL_NO,NAME,ADDRESS FROM Student WHERE ROLL_NO > 3;
 
     ```
@@ -69,7 +69,7 @@ value: exact value or pattern to get related data in result
 **基本语法:**
 **选择列 1、列 2 FROM 表 _name WHERE 列 _name 介于值 1 和值 2 之间；**
 
-```
+```sql
 BETWEEN: operator name 
 ```
 
@@ -80,7 +80,7 @@ BETWEEN: operator name
 
 *   To fetch records of students where ROLL_NO is between 1 and 3 (inclusive)
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE ROLL_NO BETWEEN 1 AND 3;
 
     ```
@@ -97,7 +97,7 @@ BETWEEN: operator name
 
 *   To fetch NAME,ADDRESS of students where Age is between 20 and 30 (inclusive)
 
-    ```
+    ```sql
     SELECT NAME,ADDRESS FROM Student WHERE Age BETWEEN 20 AND 30;
 
     ```
@@ -115,7 +115,7 @@ BETWEEN: operator name
 **基本语法:**
 **SELECT column1、column 2 FROM table _ name WHERE column _ name LIKE 模式；**
 
-```
+```sql
 LIKE: operator name 
 ```
 
@@ -128,7 +128,7 @@ LIKE: operator name
 
 *   To fetch records of students where NAME starts with letter S.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE NAME LIKE 'S%'; 
     ```
 
@@ -145,7 +145,7 @@ LIKE: operator name
 
 *   To fetch records of students where NAME contains the patter ‘AM’.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE NAME LIKE '%AM%';
 
     ```
@@ -164,7 +164,7 @@ LIKE: operator name
 **基本语法:**
 **SELECT column1，column 2 FROM table _ name WHERE column _ name IN(值 1，值 2，..);**
 
-```
+```sql
 IN: operator name 
 ```
 
@@ -174,7 +174,7 @@ IN: operator name
 
 *   To fetch NAME and ADDRESS of students where Age is 18 or 20.
 
-    ```
+    ```sql
     SELECT NAME,ADDRESS FROM Student WHERE Age IN (18,20);
 
     ```
@@ -192,7 +192,7 @@ IN: operator name
 
 *   To fetch records of students where ROLL_NO is 1 or 4.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE ROLL_NO IN (1,4);
 
     ```

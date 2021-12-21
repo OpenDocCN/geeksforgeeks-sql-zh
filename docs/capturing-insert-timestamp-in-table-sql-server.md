@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE TableName (ColumName INT, ColumnDateTime DATETIME DEFAULT CURRENT_TIMESTAMP)
 GO
 ```
@@ -19,26 +19,26 @@ GO
 
 **让我们创建一个名为“极客标签”的表格。**
 
-```
+```sql
 CREATE TABLE GeekTab (ID INT, InDtTm DATETIME DEFAULT CURRENT_TIMESTAMP) ;
 GO
 ```
 
 **让我们在表中插入几个值。**
 
-```
+```sql
 INSERT INTO GeekTab (ID) VALUES (1),  (2) ; 
 GO
 ```
 
-```
+```sql
 INSERT INTO GeekTab (ID)VALUES (3), (4) ; 
 GO
 ```
 
 **现在，让我们从表中选择值。**
 
-```
+```sql
 SELECT * FROM GeekTab ;
 GO
 ```
@@ -63,12 +63,12 @@ GO
 
 让我们假设我们有一个表“EmployeeTab”，每当有新员工加入公司时， 一条新的记录被插入到表中:
 
-```
+```sql
 CREATE TABLE EmployeeTab (Name varchar(100), ID INT, Location varchar(100),
 InDtTm DATETIME DEFAULT CURRENT_TIMESTAMP); 
 ```
 
-```
+```sql
 SELECT  Name, ID, Location FROM EmployeeTab ;
 ```
 
@@ -83,7 +83,7 @@ SELECT  Name, ID, Location FROM EmployeeTab ;
 
 要将每个条目的插入日期和时间作为“加入日期”，可以使用以下查询:
 
-```
+```sql
 SELECT  Name, ID, Location, InDtTm as JoinDate FROM EmployeeTab ;
 ```
 

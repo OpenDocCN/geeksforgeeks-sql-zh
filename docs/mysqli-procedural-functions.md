@@ -22,7 +22,7 @@
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 // Database configuration
 $host  = "localhost";
@@ -47,7 +47,7 @@ else
 
 **输出:**
 
-```
+```sql
 Connection established successfully. 
 ```
 
@@ -59,7 +59,7 @@ Connection established successfully.
 
 *   如果在 PHP 配置中启用了 *display_errors* ，可以看到*MySQL _ connect _ error()*的一个错误，返回如下消息。
 
-```
+```sql
 Connection failed as the target machine actively refused it. 
 ```
 
@@ -68,7 +68,7 @@ Connection failed as the target machine actively refused it.
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 // Database configuration
 $host  = "localhost";
@@ -96,7 +96,7 @@ else
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 // Database configuration
 $host  = "localhost";
@@ -126,7 +126,7 @@ mysqli_close($conn);
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //create a trace file in the localhost
 mysqli_debug("d:t:o,/temp/client.trace");

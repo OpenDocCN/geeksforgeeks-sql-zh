@@ -8,13 +8,13 @@ SQL Server 是一个通用的数据库，它是许多软件行业中使用最多
 
 命令来创建数据库。这里 GEEKSFORGEEKS 是数据库的名字
 
-```
+```sql
 CREATE DATABASE GEEKSFORGEEKS;
 ```
 
 使数据库处于活动状态
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -24,7 +24,7 @@ USE GEEKSFORGEEKS;
 
 使用主键创建表。这里 ID 是一个主键，意味着每个作者都有自己的 ID
 
-```
+```sql
 CREATE TABLE Authors (
   ID INT NOT NULL PRIMARY KEY,
   <other column name1> <datatype> <null/not null>,
@@ -50,7 +50,7 @@ SQL EXCEPT 的工作方式类似于数学中的“-”运算符。也就是说�
 
 **例 1 :**
 
-```
+```sql
  SELECT * from Authors 
  EXCEPT
  SELECT * from Authors WHERE Skillsets like 'java%' 
@@ -70,7 +70,7 @@ SQL EXCEPT 的工作方式类似于数学中的“-”运算符。也就是说�
 
 **例 2 :**
 
-```
+```sql
 SELECT * from Authors WHERE Skillsets like 'java%'  
  EXCEPT
  SELECT * from Authors 
@@ -96,7 +96,7 @@ Author2021 目录
 
 **例 3 :**
 
-```
+```sql
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors   
 UNION
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors2021
@@ -124,7 +124,7 @@ SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors2021
 
 **例 4 :**
 
-```
+```sql
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors    
 UNION ALL
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors2021
@@ -148,7 +148,7 @@ SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors2021
 
 **例 5 :**
 
-```
+```sql
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors    
 INTERSECT
 SELECT AuthorName,Age,Skillsets,NumberOfPosts from Authors2021

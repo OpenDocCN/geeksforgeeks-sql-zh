@@ -15,7 +15,7 @@ SQL Server 中的此函数用于计算指定值组的总和。
 
 **语法:**
 
-```
+```sql
 SUM(expression)
 ```
 
@@ -34,7 +34,7 @@ SUM(expression)
 
 使用 SUM()函数并获取输出。
 
-```
+```sql
 CREATE TABLE product
 (  
 user_id int IDENTITY(100, 2) NOT NULL,    
@@ -53,7 +53,7 @@ SELECT SUM(price) FROM product;
 
 **输出:**
 
-```
+```sql
 1000
 ```
 
@@ -61,7 +61,7 @@ SELECT SUM(price) FROM product;
 
 使用 SUM()函数，求所有指定浮点值的和。
 
-```
+```sql
 CREATE TABLE floats
 (  
 user_id int IDENTITY(100, 2) NOT NULL,
@@ -87,7 +87,7 @@ SELECT SUM(float_val) FROM floats;
 
 **输出:**
 
-```
+```sql
 28
 ```
 
@@ -95,7 +95,7 @@ SELECT SUM(float_val) FROM floats;
 
 使用 SUM()函数，得到物料需求计划小于所有物料需求计划之和的输出。
 
-```
+```sql
 CREATE TABLE package
 (  
 user_id int IDENTITY(100, 4) NOT NULL,  
@@ -117,7 +117,7 @@ WHERE mrp < (SELECT SUM(mrp) FROM package);
 
 **输出:**
 
-```
+```sql
   | user_id  | item     | mrp
 --------------------------------
 1 | 100      | book1    | 3
@@ -131,7 +131,7 @@ WHERE mrp < (SELECT SUM(mrp) FROM package);
 
 使用 SUM()函数并获取所有(物料需求计划-销售价格)值的总和。
 
-```
+```sql
 CREATE TABLE package
 (  
 user_id int IDENTITY(100, 4) NOT NULL,  
@@ -153,7 +153,7 @@ SELECT SUM(mrp-sp) FROM package;
 
 **输出:**
 
-```
+```sql
 90
 ```
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LOG10(X)
 ```
 
@@ -19,7 +19,7 @@ LOG10(X)
 **示例-1 :**
 使用 LOG10()函数计算以 10 为底的给定数字的对数。
 
-```
+```sql
 SELECT LOG10(1000) AS Log10_Val ;
 ```
 
@@ -32,7 +32,7 @@ SELECT LOG10(1000) AS Log10_Val ;
 **例-2 :**
 使用 LOG10()函数求 0 的对数。
 
-```
+```sql
 SELECT LOG10(0) AS Log10_Val ;
 ```
 
@@ -45,7 +45,7 @@ SELECT LOG10(0) AS Log10_Val ;
 **例-3:**
 LOG10 函数也可以用来求一列数据的以 10 为基数的对数值。演示创建一个名为“产品”的表。
 
-```
+```sql
 CREATE TABLE Product(
 Product_id INT AUTO_INCREMENT,  
 Product_name VARCHAR(100) NOT NULL,
@@ -58,7 +58,7 @@ PRIMARY KEY(Product_id)
 
 **现在向产品表中插入一些数据–**
 
-```
+```sql
 INSERT INTO  
 Product(Product_name, Buying_price, Selling_price, Service_grade)
 VALUES
@@ -71,7 +71,7 @@ VALUES
 
 **显示产品表中的所有数据–**
 
-```
+```sql
 Select * from Product;
 ```
 
@@ -85,7 +85,7 @@ Select * from Product;
 
 现在，我们将查找 Service_grade 列中所有记录的以 10 为基数的对数值。
 
-```
+```sql
 Select Product_id, Product_name, Buying_price, 
 Selling_price, Service_grade,
 LOG10(Service_grade) AS GRADELOG10  

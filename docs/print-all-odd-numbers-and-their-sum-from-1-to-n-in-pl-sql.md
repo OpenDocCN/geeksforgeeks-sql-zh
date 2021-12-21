@@ -9,7 +9,7 @@
 
 示例:
 
-```
+```sql
 Input: 3
 Output: 1, 3
 
@@ -20,7 +20,7 @@ Output: 1, 3, 5
 
 方法是用 1 初始化一个*数*，用 0 初始化*和*，继续用 2 递增*数*，用*数*递增*数*，直到数< = n。
 
-```
+```sql
 -- display all odd number from 1 to n
 DECLARE
     -- declare variable num

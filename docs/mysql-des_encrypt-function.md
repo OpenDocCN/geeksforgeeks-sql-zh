@@ -8,7 +8,7 @@ DES _ ENCRYPT 函数返回的值是加密字符串或空值。DES _ ENCRYPT 函�
 
 **语法:**
 
-```
+```sql
 DES_ENCRYPT(plaintext_string, [key_number | key_string]);
 ```
 
@@ -32,20 +32,20 @@ MySQL 中的 DES_ENCRYPT 函数返回一个加密字符串。
 
 **示例-1:** 仅通过传递密钥号参数在字符串上实现 DES_ENCRYPT 函数。
 
-```
+```sql
 SELECT 
 DES_ENCRYPT('geeksforgeeks', 5); 
 ```
 
 **输出:**
 
-```
+```sql
 ??p4???c????-? 
 ```
 
 **示例-2:** 通过传递密钥号和密钥字符串参数，在字符串上实现 DES_ENCRYPT 函数。
 
-```
+```sql
 SELECT 
 DES_ENCRYPT('geeksforgeeks', 7), 
 DES_ENCRYPT('geeksforgeeks', 'TestPassward'); 
@@ -53,19 +53,19 @@ DES_ENCRYPT('geeksforgeeks', 'TestPassward');
 
 **输出:**
 
-```
+```sql
 ??p4???c????-?    ??]?? ???{?}\\?t? 
 ```
 
 **示例-3:** 在空字符串上实现 DES_ENCRYPT 函数。
 
-```
+```sql
 SELECT 
 DES_ENCRYPT(NULL, 7); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

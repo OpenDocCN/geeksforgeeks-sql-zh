@@ -14,7 +14,7 @@ SQL Server 中的这个函数用于返回指定日期的年份。
 
 **语法:**
 
-```
+```sql
 YEAR(date)
 ```
 
@@ -29,20 +29,20 @@ YEAR(date)
 **示例-1 :**
 使用 YEAR()函数，从指定日期开始获取年份。
 
-```
+```sql
 SELECT YEAR('2020/01/02');
 ```
 
 **输出:**
 
-```
+```sql
 2020
 ```
 
 **示例-2 :**
 使用带有变量的 YEAR()函数，从指定日期获取年份。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '2017/07/05';
 SELECT YEAR(@date);
@@ -50,27 +50,27 @@ SELECT YEAR(@date);
 
 **输出:**
 
-```
+```sql
 2017
 ```
 
 **示例-3 :**
 使用 YEAR()函数，以日期为参数，其中还包括时间。
 
-```
+```sql
 SELECT YEAR('2018/11/22 07:44');
 ```
 
 **输出:**
 
-```
+```sql
 2018
 ```
 
 **示例-4 :**
 使用带有变量和日期的 YEAR()函数作为参数，其中还包括时间。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '1995/05/13 23:59';
 SELECT YEAR(@date);
@@ -78,7 +78,7 @@ SELECT YEAR(@date);
 
 **输出:**
 
-```
+```sql
 1995
 ```
 

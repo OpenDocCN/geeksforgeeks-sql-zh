@@ -8,7 +8,7 @@
 
 **查询**:
 
-```
+```sql
 CREATE DATABASE Gfg;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE Gfg;
 
 **查询**:
 
-```
+```sql
 USE DATABASE Gfg;
 ```
 
@@ -30,7 +30,7 @@ USE DATABASE Gfg;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE EMPLOYEE (name VARCHAR(20), age VARCHAR(20),
  GENDER(20), birth DATE, Department VARCHAR(50) );
 ```
@@ -55,7 +55,7 @@ CREATE TABLE EMPLOYEE (name VARCHAR(20), age VARCHAR(20),
 
 **查询:**
 
-```
+```sql
 DELETE FROM Employee where birth < '2001-01-04'
 ```
 

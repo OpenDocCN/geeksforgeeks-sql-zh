@@ -8,13 +8,13 @@ SQL 代表**结构查询语言**，在数据库中用来检索数据，更新和
 
 要创建数据库，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 create database database_name;
 ```
 
 例如，
 
-```
+```sql
 create database sales;
 ```
 
@@ -22,7 +22,7 @@ create database sales;
 
 为了使用数据库，我们需要在 SQL 门户中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 use database_name;
 ```
 
@@ -30,7 +30,7 @@ use database_name;
 
 要在数据库中创建表，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 create table table_name(
 column1 type(size),
 column2 type(size),
@@ -43,7 +43,7 @@ columnN type(size)
 
 例如，
 
-```
+```sql
 create table sales_detail(
 sales_ID INT,
 sales_price INT,
@@ -56,7 +56,7 @@ sales_date DATE
 
 要查看该表使用**‘desc 表 _ 名称’**查询，这里的查询是，
 
-```
+```sql
 desc sales_detail;
 ```
 
@@ -66,7 +66,7 @@ desc sales_detail;
 
 为了给表增加价值，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 insert into table_name(
 value1,
 value2,
@@ -80,7 +80,7 @@ valueN);
 
 例如，这里的查询将是，
 
-```
+```sql
 INSERT INTO `sales_detail` (`sales_ID`, `sales_price`, `sales_product`, `sales_date`)
  VALUES
 (1, '3500', 'SQL', '2021-03-02'),
@@ -91,7 +91,7 @@ INSERT INTO `sales_detail` (`sales_ID`, `sales_price`, `sales_product`, `sales_d
 
 ### 插入后表格中的数据
 
-```
+```sql
 select * from sales_detail;
 ```
 
@@ -101,7 +101,7 @@ select * from sales_detail;
 
 1.要将月号转换为月名，我们必须使用函数 **MONTHNAME()，**该函数将日期列或日期作为字符串，并返回月号对应的月名。
 
-```
+```sql
  SELECT sales_product, MONTHNAME(sales_date) from sales_detail;
 ```
 
@@ -113,7 +113,7 @@ select * from sales_detail;
 
 对此的查询，
 
-```
+```sql
 select date_format(sales_date, '%M')as Monthname from sales_detail;
 ```
 

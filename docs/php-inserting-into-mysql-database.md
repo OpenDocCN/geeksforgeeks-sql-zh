@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 INSERT INTO TABLE_NAME (column1, column2, column3, ... columnN) 
 VALUES (value1, value2, value3, ...valueN);
 ```
@@ -20,7 +20,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 1.  **Creating table using MySQLi Object-oriented Procedure :**
 
-    ```
+    ```sql
     <?php
      $mysqli = new mysqli("localhost", "root", "", "newdb");
 
@@ -50,7 +50,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 2.  **Creating table using MySQLi Procedural Procedure :**
 
-    ```
+    ```sql
     <?php 
     $link = mysqli_connect("localhost", "root", "", "newdb");
 
@@ -79,7 +79,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 3.  **Creating table using MySQLi PDO Procedure :**
 
-    ```
+    ```sql
     <?php
     try {
        $pdo = new PDO("mysql:host=localhost;dbname=newdb",
@@ -119,7 +119,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 1.  **Creating table using MySQLi Object-oriented Procedure :**
 
-    ```
+    ```sql
     <?php 
     $mysqli = new mysqli("localhost", "root", "", "newdb");
 
@@ -151,7 +151,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 2.  **Creating table using MySQLi Procedural Procedure :**
 
-    ```
+    ```sql
     <?php 
     $link = mysqli_connect("localhost", "root", "", "newdb");
 
@@ -184,7 +184,7 @@ VALUES (value1, value2, value3, ...valueN);
 
 3.  **使用 MySQL PDO 程序创建表:**
 
-    ```
+    ```sql
     <?php 
     try {
         $pdo = new PDO("mysql:host=localhost;dbname="newdb",

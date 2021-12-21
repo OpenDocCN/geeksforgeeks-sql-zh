@@ -9,19 +9,19 @@
 
 **创建数据库:**
 
-```
+```sql
 create geeksdb;
 ```
 
 **使用该数据库:**
 
-```
+```sql
 use geeksdb;
 ```
 
 **在数据库中创建表 geek tab 1:**
 
-```
+```sql
 Create Table Geektab1 (
    ID int,
  NAME varchar (25) );
@@ -29,7 +29,7 @@ Create Table Geektab1 (
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO Geektab1 VALUES (1, 'Neha');
 INSERT INTO Geektab1 VALUES (2, 'Ankit');
 INSERT INTO Geektab1 VALUES (3, 'Khushi');
@@ -38,7 +38,7 @@ INSERT INTO Geektab1 VALUES (4, 'Mahesh');
 
 **这是我们表里面的数据:**
 
-```
+```sql
 SELECT * FROM DEPARTMENT;
 ```
 
@@ -55,7 +55,7 @@ SELECT * FROM DEPARTMENT;
 
 **在数据库中创建表 geek tab 2:**
 
-```
+```sql
 Create Table Geektab2 (
 ID int,
 NAME varchar (25) );
@@ -63,7 +63,7 @@ NAME varchar (25) );
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO Geektab1 VALUES (1, 'Neha');
 INSERT INTO Geektab1 VALUES (2, 'Ankit');
 INSERT INTO Geektab1 VALUES (3, 'Khushi');
@@ -71,7 +71,7 @@ INSERT INTO Geektab1 VALUES (3, 'Khushi');
 
 **这是我们表里面的数据:**
 
-```
+```sql
 SELECT * FROM DEPARTMENT;
 ```
 
@@ -95,7 +95,7 @@ SELECT * FROM DEPARTMENT;
 
 **语法(INTERSECT) :**
 
-```
+```sql
 SELECT * FROM table1
 INTERSECT
 SELECT * FROM table2 ;
@@ -103,7 +103,7 @@ SELECT * FROM table2 ;
 
 **示例:**
 
-```
+```sql
 SELECT * FROM Geektab1
 EXCEPT
 SELECT * FROM Geektab2 ;
@@ -123,7 +123,7 @@ SELECT * FROM Geektab2 ;
 
 **语法(除外):**
 
-```
+```sql
 SELECT * FROM table1
 EXCEPT
 SELECT * FROM table2 ;
@@ -131,7 +131,7 @@ SELECT * FROM table2 ;
 
 **示例:**
 
-```
+```sql
 SELECT * FROM Geektab1
 EXCEPT
 SELECT * FROM Geektab2 ;

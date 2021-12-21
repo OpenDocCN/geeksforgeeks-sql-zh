@@ -15,7 +15,7 @@ SQL Server 中的这个函数用于返回基于所述 id 的数据库用户名�
 
 **语法:**
 
-```
+```sql
 USER_NAME(id_number)
 ```
 
@@ -33,13 +33,13 @@ USER_NAME(id_number)
 
 使用 USER_NAME()函数并获取没有 id 号的用户名。
 
-```
+```sql
 SELECT USER_NAME();
 ```
 
 **输出:**
 
-```
+```sql
 nidhi
 ```
 
@@ -49,13 +49,13 @@ nidhi
 
 使用 USER_NAME()函数并获取指定 id 号的用户名。
 
-```
+```sql
 SELECT USER_NAME(2);
 ```
 
 **输出:**
 
-```
+```sql
 Geek
 ```
 
@@ -63,7 +63,7 @@ Geek
 
 使用 USER_NAME()函数，并使用变量获取指定 id 号的用户名。
 
-```
+```sql
 DECLARE @id INT;
 SET @id = 3;
 SELECT USER_NAME(@id);
@@ -71,7 +71,7 @@ SELECT USER_NAME(@id);
 
 **输出:**
 
-```
+```sql
 INFORMATION_SCHEMA
 ```
 
@@ -79,13 +79,13 @@ INFORMATION_SCHEMA
 
 使用 USER_NAME()函数，并使用 CAST()函数获取指定 id 号的用户名。
 
-```
+```sql
 SELECT USER_NAME(CAST(2.2 as int));
 ```
 
 **输出:**
 
-```
+```sql
 Geek
 ```
 

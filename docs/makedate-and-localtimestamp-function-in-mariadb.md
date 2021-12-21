@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 MAKEDATE(year, day-of-year)
 ```
 
@@ -20,61 +20,61 @@ MAKEDATE(year, day-of-year)
 
 **示例-1 :**
 
-```
+```sql
 SELECT MAKEDATE(2020, 1);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-01-01'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT MAKEDATE(2020, 42);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-02-11'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT MAKEDATE(2019, -12);
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
 **示例-4 :**
 
-```
+```sql
 SELECT MAKEDATE(2019, 366);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-01-01'
 ```
 
 **示例-5 :**
 
-```
+```sql
 SELECT MAKEDATE(2020, 366);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-12-31'
 ```
 
@@ -83,7 +83,7 @@ SELECT MAKEDATE(2020, 366);
 
 **语法:**
 
-```
+```sql
 LOCALTIMESTAMP( )
 ```
 
@@ -93,36 +93,36 @@ LOCALTIMESTAMP( )
 
 **示例-1 :**
 
-```
+```sql
 SELECT LOCALTIMESTAMP();
 ```
 
 **输出:**
 
-```
+```sql
 '2020-10-25 12:52:35'
 ```
 
 **示例-2 :** 将从当前时间戳右侧增加 10 个单位。
 
-```
+```sql
 SELECT LOCALTIMESTAMP()+10;
 ```
 
 **输出:**
 
-```
+```sql
 '20201025125225'
 ```
 
 **示例-3 :** 将从当前时间戳右侧减去 5 个单位。
 
-```
+```sql
 SELECT LOCALTIMESTAMP()-5;
 ```
 
 **输出:**
 
-```
+```sql
 '20201025125230'
 ```

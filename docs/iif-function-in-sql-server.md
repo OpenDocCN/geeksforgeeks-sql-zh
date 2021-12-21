@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 IIF(boolean_value, true_value, false_value)
 
 ```
@@ -22,7 +22,7 @@ IIF(boolean_value, true_value, false_value)
 
 **要知道的事实:**IIF()函数类似于 CASE 表达式–
 
-```
+```sql
 CASE  
    WHEN boolean_expression  
        THEN true_value
@@ -35,7 +35,7 @@ END
 **示例-1 :**
 使用 IIF()函数检查 40 <是否为 60:
 
-```
+```sql
 SELECT  IIF(40 < 60, 'True', 'False') AS Result ; 
 ```
 
@@ -66,7 +66,7 @@ True
 使用 IIF()函数与表列。
 以下示例使用 IIF()函数中的 IIF()函数:
 
-```
+```sql
 SELECT    
    IIF(G_status = 1, ‘Waiting’,  
        IIF(G_status=2, ‘InProgress’,
@@ -94,7 +94,7 @@ GROUP BY G_status ;
 将 IIF()函数与聚合函数一起使用。
 以下示例将 IIF()函数与 SUM()函数结合使用:
 
-```
+```sql
 SELECT    
    SUM(IIF(G_status = 1, 1, 0)) AS ‘Waiting’,  
    SUM(IIF(G_status = 2, 1, 0)) AS ‘InProgress’,  

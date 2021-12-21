@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 MONTHNAME(date)
 
 ```
@@ -19,7 +19,7 @@ MONTHNAME(date)
 
 **示例-1 :** 使用 Month name()函数查找当前月份名称。
 
-```
+```sql
 SELECT MONTHNAME(NOW()) AS Current_Month;
 
 ```
@@ -32,7 +32,7 @@ SELECT MONTHNAME(NOW()) AS Current_Month;
 
 **示例-2 :** 使用 Month name()函数从给定的日期时间中查找月份名称。
 
-```
+```sql
 SELECT MONTHNAME('2015-01-26 08:09:22') AS MONTHNAME;
 
 ```
@@ -45,7 +45,7 @@ SELECT MONTHNAME('2015-01-26 08:09:22') AS MONTHNAME;
 
 **示例-3 :** 当日期为空时，使用 Month name()函数从给定的日期时间中查找月份名称。
 
-```
+```sql
 SELECT MONTHNAME(NULL) AS MONTHNAME;
 
 ```
@@ -62,7 +62,7 @@ SELECT MONTHNAME(NULL) AS MONTHNAME;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
   Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -79,7 +79,7 @@ VALUES
 
 所以，我们的桌子看起来像:
 
-```
+```sql
 mysql> SELECT * FROM Product;
 +------------+-----------------------+--------------+---------------+--------------+
 | Product_id | Product_name          | Buying_price | Selling_price | Selling_Date |
@@ -98,7 +98,7 @@ mysql> SELECT * FROM Product;
 
 现在，我们将使用 MONTHNAME()函数来查找每月销售的产品数量。
 
-```
+```sql
 SELECT MONTHNAME(Selling_Date) MonthName,  
 COUNT(Product_id) Product_Sold 
 FROM Product 
@@ -109,7 +109,7 @@ ORDER BY MONTHNAME(Selling_Date);
 
 **输出:**
 
-```
+```sql
 +-----------+--------------+
 | MonthName | Product_Sold |
 +-----------+--------------+

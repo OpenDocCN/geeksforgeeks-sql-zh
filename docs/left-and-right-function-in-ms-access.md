@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 Left(string, number_of_chars)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Left("GEEKSFORGEEKS", 3) AS ExtractString;
 ```
 
@@ -24,7 +24,7 @@ SELECT Left("GEEKSFORGEEKS", 3) AS ExtractString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Left("GEEKSFORGEEKS", 10) AS ExtractString;
 ```
 
@@ -38,13 +38,13 @@ Right()函数的工作方式与 Left()函数类似，但它从字符串的右端
 
 **语法:**
 
-```
+```sql
 Right(string, number_of_chars)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Right("GEEKSFORGEEKS", 4) AS ExtractString;
 ```
 
@@ -55,7 +55,7 @@ SELECT Right("GEEKSFORGEEKS", 4) AS ExtractString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Right("GEEKSFORGEEKS", 8) AS ExtractString;
 ```
 

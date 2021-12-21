@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 select 
 select_list;
 from
@@ -24,7 +24,7 @@ schema_name.table.name;
 
 为了从表中检索所有的列，使用了 select*。
 
-```
+```sql
 Syntax -
 select*
 from
@@ -54,7 +54,7 @@ table_name;
 
 如果用户想要检索攻读计算机科学的学生的姓名，查询如下:
 
-```
+```sql
 select 
 name 
 from

@@ -10,19 +10,19 @@
 
 **创建数据库:**运行以下命令创建数据库。
 
-```
+```sql
 Create database testdb;
 ```
 
 **使用数据库:**运行以下命令使用数据库。
 
-```
+```sql
 use testdb;
 ```
 
 **向数据库添加表:**运行以下命令向数据库添加表。
 
-```
+```sql
 CREATE TABLE Students (
    StudentID int,
    LastName varchar(255),
@@ -34,7 +34,7 @@ CREATE TABLE Students (
 
 **将行插入数据库:**
 
-```
+```sql
 INSERT INTO students (
 StudentID,
 LastName,
@@ -56,7 +56,7 @@ VALUES
 
 键入以下命令获取输出。
 
-```
+```sql
 SELECT  * FROM students;
 ```
 
@@ -70,7 +70,7 @@ SELECT  * FROM students;
 
 **语法:**
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 LEFT JOIN Table2 
@@ -83,7 +83,7 @@ ON Table1.Column_Name=table2.column_name;
 
 **语法:**
 
-```
+```sql
 SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
@@ -94,7 +94,7 @@ ON table1.column_name = table2.column_name;
 
 ![](img/f5d37b67ac3800ed43725b7eac535533.png)
 
-```
+```sql
 Syntax:
 SELECT column_name
 FROM table1
@@ -107,7 +107,7 @@ WHERE condition;
 
 创建第一个示例表学生。
 
-```
+```sql
 CREATE TABLE students (
  id INTEGER,
  name TEXT NOT NULL,
@@ -121,7 +121,7 @@ INSERT INTO students Values (3, 'Moana', 'F');
 
 创建第二个样表学院。
 
-```
+```sql
 CREATE TABLE college (
  id INTEGER,
  classTeacher TEXT NOT NULL,

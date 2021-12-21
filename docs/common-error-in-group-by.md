@@ -15,7 +15,7 @@
 
 **示例:**
 
-```
+```sql
 Input: 
 select empId, empName, empAmount from emp group by empId, empName
 
@@ -25,7 +25,7 @@ Output: Error
 **解释:**
 empAmount 不在 group by list 中，也不是聚合函数，查询会给出以上错误。对于 empId 和 empName 有多个 empAmount，数据库引擎无法选择一个 empAmount。
 
-```
+```sql
 Input: 
 select empId, sum(empAmount) as debit from emp group by empId
 
@@ -51,7 +51,7 @@ MySQL 允许您在分组依据查询中选择任何内容。它会以随机的�
 
 **示例:**
 
-```
+```sql
 Input:
 select empId, empName, empAmount from emp group by empId, empName 
 ```

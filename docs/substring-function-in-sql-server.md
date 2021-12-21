@@ -4,7 +4,7 @@
 
 SUBSTRING()函数从输入字符串中给定长度的位置开始提取子字符串。在子字符串的情况下，您需要一个输入字符串，并且需要提到字符串的起点和总长度。
 
-```
+```sql
 Input  : String, start, length
 output : substring.
 
@@ -12,7 +12,7 @@ output : substring.
 
 **语法:**
 
-```
+```sql
 SUBSTRING(input_string, start, length);
 
 ```
@@ -30,7 +30,7 @@ SUBSTRING 函数接受 STRING、start、length 三个参数。让我们看看。
 **示例-1 :**
 使用带有文字字符串的 SUBSTRING()函数。
 
-```
+```sql
 SELECT SUBSTRING('SQL In Geeksforgeeks', 7, 18 ) 
 AS ExtractString;
 
@@ -53,7 +53,7 @@ AS ExtractString;
 | Thirty-three | 哈迪克·潘迪亚 | 孟买 |
 | forty-two | 锡卡扎万 | 德里 |
 
-```
+```sql
 SELECT SUBSTRING(PlayerName, 1, 5) AS ExtractString
 FROM Player_Details;
 

@@ -19,7 +19,7 @@
 
     **语法**:
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";
@@ -54,7 +54,7 @@
 
     **语法**:
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";
@@ -88,7 +88,7 @@
 
     **语法**:
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";

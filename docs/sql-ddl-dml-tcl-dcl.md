@@ -20,7 +20,7 @@
 
 **一些命令:**
 
-```
+```sql
 CREATE : to create objects in database
 ALTER : alters the structure of database
 DROP : delete objects from database
@@ -30,7 +30,7 @@ RENAME : rename an objects
 
 以下语句定义了部门表:
 
-```
+```sql
 create table department
 (dept_name  char(20),
   building   char(15),
@@ -52,7 +52,7 @@ DML 有两种类型–
 
 **一些命令:**
 
-```
+```sql
 SELECT: retrieve data from the database
 INSERT: insert data into a table
 UPDATE: update existing data within a table
@@ -62,7 +62,7 @@ DELETE: deletes all records from a table, space for the records remain
 
 查找历史系所有教师姓名的 SQL 查询示例:
 
-```
+```sql
 select instructor.name
  from instructor
  where instructor.dept_name = 'History';
@@ -77,7 +77,7 @@ select instructor.name
 
 TCL 命令示例–
 
-```
+```sql
 COMMIT: Commit command is used to permanently save any transaction
             into the database.
 ROLLBACK: This command restores the database to last committed state.
@@ -93,7 +93,7 @@ SAVEPOINT: Savepoint command is used to temporarily save a transaction so
 
 DCL 命令的示例:
 
-```
+```sql
 GRANT: allow specified users to perform specified tasks.
 REVOKE: cancel previously granted or denied permissions.
 ```

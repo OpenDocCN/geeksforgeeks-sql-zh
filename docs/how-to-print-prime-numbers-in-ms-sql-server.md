@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 DECLARE @I INT=2
 ```
 
@@ -16,7 +16,7 @@ DECLARE @I INT=2
 
 **查询:**
 
-```
+```sql
 DECLARE @PRIME INT=0
 ```
 
@@ -26,7 +26,7 @@ DECLARE @PRIME INT=0
 
 **查询:**
 
-```
+```sql
 DECLARE @OUTPUT TABLE (NUM INT)
 ```
 
@@ -34,7 +34,7 @@ DECLARE @OUTPUT TABLE (NUM INT)
 
 **查询:**
 
-```
+```sql
 DECLARE @I INT=2
 DECLARE @PRIME INT=0
 DECLARE @OUTPUT TABLE (NUM INT)
@@ -69,7 +69,7 @@ SELECT * FROM @OUTPUT
 
 **查询:**
 
-```
+```sql
 INSERT @OUTPUT VALUES (@I)
 ```
 

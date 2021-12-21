@@ -8,7 +8,7 @@ DROP 用于删除整个数据库或一个表。DROP 语句销毁对象，如现�
 SQL 中的 DROP 语句从关系数据库管理系统(RDBMS)中删除一个组件。
 **语法:**
 
-```
+```sql
 DROP object object_name
 
 Examples:
@@ -26,7 +26,7 @@ TRUNCATE 语句是一种数据定义语言(DDL)操作，用于标记表的范围
 TRUNCATE TABLE my TABLE 语句在逻辑上(虽然不是物理上)等同于 DELETE FROM mytable 语句(没有 WHERE 子句)。
 **语法:**
 
-```
+```sql
 TRUNCATE TABLE  table_name;
 table_name: Name of the table to be truncated.
 DATABASE name - student_data
@@ -47,7 +47,7 @@ DATABASE name - student_data
 
 *   To delete the whole database
 
-    ```
+    ```sql
     DROP DATABASE student_data; 
 
     ```
@@ -56,7 +56,7 @@ DATABASE name - student_data
 
 *   To truncate Student_details table from student_data database.
 
-    ```
+    ```sql
     TRUNCATE TABLE Student_details;
 
     ```

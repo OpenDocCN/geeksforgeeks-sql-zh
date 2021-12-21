@@ -16,7 +16,7 @@ PLSQL 中的 Compose 函数用于返回一个 Unicode 字符串。
 
 **语法:**
 
-```
+```sql
 COMPOSE( string )
 ```
 
@@ -33,7 +33,7 @@ COMPOSE( string )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_Char char := 'a';
    Test_Char2 char := 'e';
@@ -49,7 +49,7 @@ END;
 
 **输出:**
 
-```
+```sql
 ä
 á
 ã

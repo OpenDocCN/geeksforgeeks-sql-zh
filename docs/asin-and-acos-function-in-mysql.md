@@ -7,7 +7,7 @@ MySQL 中的 ASIN() [函数](https://www.geeksforgeeks.org/sql-functions-aggrega
 
 **语法:**
 
-```
+```sql
 ASIN(X)
 
 ```
@@ -23,7 +23,7 @@ ASIN()函数接受一个参数，如上所述，如下所述。
 **示例-1 :**
 使用 ASIN()函数求 1 的反正弦。
 
-```
+```sql
 SELECT ASIN(1) AS Asin_Val ;
 
 ```
@@ -37,7 +37,7 @@ SELECT ASIN(1) AS Asin_Val ;
 **示例-2 :**
 使用 ASIN()函数对(0，1)范围内的数字进行反正弦运算。
 
-```
+```sql
 SELECT ASIN(0.25) AS Asin_Val;
 
 ```
@@ -51,7 +51,7 @@ SELECT ASIN(0.25) AS Asin_Val;
 **示例-3 :**
 使用 ASIN()函数对(0，-1)范围内的数字进行反正弦运算。
 
-```
+```sql
 SELECT ASIN(-0.35) AS Asin_Val;
 
 ```
@@ -64,7 +64,7 @@ SELECT ASIN(-0.35) AS Asin_Val;
 **示例-4 :**
 使用 ASIN()函数计算不在[0，-1]范围内的数字的反正弦。
 
-```
+```sql
 SELECT ASIN(2.75) AS Asin_Val ;
 
 ```
@@ -90,7 +90,7 @@ SELECT ASIN(2.75) AS Asin_Val ;
 | one |
 | Two |
 
-```
+```sql
 SELECT X, ASIN(X) AS ArcSin_X  FROM Number ;
 
 ```
@@ -112,7 +112,7 @@ SELECT X, ASIN(X) AS ArcSin_X  FROM Number ;
 
 **语法:**
 
-```
+```sql
 ACOS(X)
 
 ```
@@ -128,7 +128,7 @@ ACOS(X)函数接受一个参数，在 ACOS(X)函数中 X 为参数。让我们�
 **例-1 :**
 使用 ACOS()函数求 1 的弧余弦。
 
-```
+```sql
 SELECT ACOS(1) AS Acos_Val;
 
 ```
@@ -142,7 +142,7 @@ SELECT ACOS(1) AS Acos_Val;
 **示例-2 :**
 使用 ACOS()函数对(0，1)范围内的数字进行弧余弦运算。
 
-```
+```sql
 SELECT ACOS(0.75) AS Acos_Val;
 
 ```
@@ -156,7 +156,7 @@ SELECT ACOS(0.75) AS Acos_Val;
 **示例-3 :**
 使用 ACOS()函数对(0，-1)范围内的一个数进行弧余弦运算。
 
-```
+```sql
 SELECT ACOS(-0.75) AS Acos_Val ;
 
 ```
@@ -170,7 +170,7 @@ SELECT ACOS(-0.75) AS Acos_Val ;
 **示例-4 :**
 使用 ACOS()函数对不在[0，-1]范围内的数字进行弧余弦运算。
 
-```
+```sql
 SELECT ACOS(2.75) AS Acos_Val;
 
 ```
@@ -196,7 +196,7 @@ SELECT ACOS(2.75) AS Acos_Val;
 | one |
 | Two |
 
-```
+```sql
 SELECT X, ACOS(X) AS Acos_Val  FROM Number;
 
 ```

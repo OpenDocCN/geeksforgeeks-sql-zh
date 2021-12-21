@@ -7,7 +7,7 @@ CURRENT _ DATE 函数不接受任何参数。
 
 **语法:**
 
-```
+```sql
 CURRENT_DATE
 ```
 
@@ -27,7 +27,7 @@ CURRENT _ DATE 函数返回一个日期值。
 
 **示例-1:** 使用 SESSIONTIMEZONE 函数查找会话时区。
 
-```
+```sql
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-YYYY HH24:MI:SS';
 
 SELECT
@@ -38,7 +38,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 Session altered.
 
 SESSIONTIMEZONE
@@ -47,7 +47,7 @@ SESSIONTIMEZONE
 
 **示例-2:** 使用 CURRENT_DATE 函数获取会话时区的当前日期。
 
-```
+```sql
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-YYYY HH24:MI:SS';
 
 SELECT
@@ -63,7 +63,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 Session altered.
 
 SESSIONTIMEZONE
@@ -75,7 +75,7 @@ CURRENT_DATE
 
 **示例-3:** 更改会话时区后使用 CURRENT_DATE 函数获取当前日期。
 
-```
+```sql
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-YYYY HH24:MI:SS';
 
 SELECT
@@ -93,7 +93,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 Session altered.
 
 SESSIONTIMEZONE

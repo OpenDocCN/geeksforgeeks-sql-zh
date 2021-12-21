@@ -151,7 +151,7 @@ SQL 的 INSERT INTO 语句用于在表中插入一个新行。使用 INSERT INTO
 
 *   ****To insert multiple rows in a table using Single SQL Statement**
 
-    ```
+    ```sql
 
     INSERT INTO table_name(Column1,Column2,Column3,.......) 
     VALUES (Value1, Value2,Value3,.....),
@@ -170,7 +170,7 @@ SQL 的 INSERT INTO 语句用于在表中插入一个新行。使用 INSERT INTO
 
     以下 SQL 语句在学生表中插入多行。
 
-    ```
+    ```sql
     Input :
     INSERT INTO STUDENT(ID, NAME,AGE,GRADE,CITY) VALUES(1,"AMIT KUMAR",15,10,"DELHI"),
                                                        (2,"GAURI RAO",18,12,"BANGALORE"),

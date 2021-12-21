@@ -19,14 +19,14 @@
 使用 SP _ DEPENDS 存储过程。它将返回指定对象的所有依赖项，包括表、视图、存储过程、约束等。
 **查询–**
 
-```
+```sql
 Use DatabaseName ;
 EXEC sp_depends @objname = N'ObjectName' ;
 ```
 
 **示例-1 :**
 
-```
+```sql
 Use SQL_DBA ;
 EXEC sp_depends @objname = N'[dbo].[tbl_Errors_Stats]' ;
 ```
@@ -42,7 +42,7 @@ EXEC sp_depends @objname = N'[dbo].[tbl_Errors_Stats]' ;
 **进场-2 :**
 **查询–**
 
-```
+```sql
 Use DatabaseName ;
 SELECT * FROM sys.dm_sql_referencing_entities('ObjectName', 
                       'OBJECT') ;
@@ -50,7 +50,7 @@ SELECT * FROM sys.dm_sql_referencing_entities('ObjectName',
 
 **示例-1 :**
 
-```
+```sql
 use SQL_DBA ;
 SELECT * FROM sys.dm_sql_referencing_entities('[dbo].[tbl_Errors_Stats]',
                                    'OBJECT') ;
@@ -76,7 +76,7 @@ _ 列 | Zero |
 **进场-3 :**
 **查询–**
 
-```
+```sql
 SELECT ROUTINE_SCHEMA,
       ROUTINE_NAME,  
       ROUTINE_TYPE,
@@ -87,7 +87,7 @@ WHERE ROUTINE_DEFINITION LIKE '%ObjectName%'
 
 **示例-1 :**
 
-```
+```sql
 use SQL_DBA
 
 SELECT ROUTINE_SCHEMA,
@@ -108,7 +108,7 @@ WHERE ROUTINE_DEFINITION LIKE '%tbl_Errors_Stats%'
 **进场-4 :**
 **查询–**
 
-```
+```sql
 SELECT *
 FROM sys.sql_expression_dependencies A, sys.objects B
 WHERE referenced_id = OBJECT_ID(N'ObjectName') AND  
@@ -119,7 +119,7 @@ GO
 
 **示例-1 :**
 
-```
+```sql
 use SQL_DBA
 
 SELECT referenced_id, referenced_database_name, referenced_schema_name, name

@@ -15,7 +15,7 @@
 **替代方法:**
 在本文中，我们将通过几行 T-SQL 命令提供一个更快的替代方法。
 
-```
+```sql
 BULK INSERT <DATABASE NAME>.<SCHEMA NAME>.<TABLE_NAME>
 FROM '<FILE_PATH>'
 WITH
@@ -48,7 +48,7 @@ WITH
 **在此创建表格–**
 。我们将根据 csv 文件记录创建表模式。
 
-```
+```sql
 USE [Test]--Database name
 
 CREATE TABLE [dbo].[Employee](                              
@@ -63,7 +63,7 @@ CREATE TABLE [dbo].[Employee](
 **大容量插入–**
 现在让我们将文件大容量插入员工 SQL 表:
 
-```
+```sql
 BULK INSERT [Test].[dbo].[Employee]
 FROM 'C:\data\employee_data.csv'
 WITH (FIRSTROW = 2,

@@ -8,7 +8,7 @@
 
 **左连接语法:**
 
-```
+```sql
 SELECT column names
 FROM table1
 LEFT JOIN table2
@@ -41,7 +41,7 @@ ON table1.matching_column = table2.matching_column;
 
 为了连接这两个表并获得公共信息，我们需要使用以下查询
 
-```
+```sql
 SELECT E.Emp_id, E.First_Name, E.Last_Name, E.Gender, E.age, E.Date_of_join,    
        P.date AS Project_Assigned_date, P.No_of_hours_worked AS hours_worked
 FROM Employee E
@@ -80,7 +80,7 @@ GROUP BY E.Emp_id;
 
 为此，查询需要按照以下格式编写:
 
-```
+```sql
 SELECT E.Emp_id, E.First_Name, E.Last_Name, E.Gender, E.age, E.Date_of_join,  
    P.No_of_hours_worked AS hours_worked, S.Salary_inc AS Salary_Increment
 FROM Employee E
@@ -119,7 +119,7 @@ ON E.Emp_id = S.Emp_id;
 
 为此，查询需要按照以下格式编写:
 
-```
+```sql
 SELECT E.Emp_id, E.First_Name, E.Last_Name, P.date AS Project_Assigned_date, 
 E1.Experience AS EXP
 FROM Employee E

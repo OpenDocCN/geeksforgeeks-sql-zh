@@ -6,7 +6,7 @@
 
 **示例–**
 
-```
+```sql
 aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 
 ```
@@ -15,7 +15,7 @@ aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 
 **语法:**
 
-```
+```sql
 UUID()
 ```
 
@@ -27,7 +27,7 @@ UUID()
 **示例-1 :**
 借助 UUID 函数生成通用唯一标识符值。
 
-```
+```sql
 SELECT UUID() 
 AS UUID_Value ;
 ```
@@ -41,7 +41,7 @@ AS UUID_Value ;
 **示例-2 :**
 每当我们使用 UUID 函数时，我们都会得到不同的通用唯一标识符值。让我们检查一下。
 
-```
+```sql
   SELECT UUID() 
 AS  
 UUID_VALUE1, 
@@ -60,7 +60,7 @@ AS UUID_VALUE3 ;
 **示例-3 :**
 在本例中，我们将使用 UUID 作为表中的主键。为了演示，创建一个名为 OrderDetails 的表。
 
-```
+```sql
 CREATE TABLE OrderDetails(
    OrderId BINARY(16) PRIMARY KEY,
    ProductName VARCHAR(100) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE OrderDetails(
 
 现在，将数据插入 OrderDetails 表。在这里，我们将使用 UUID 和 UUID 的函数来指定 OrderId 列中的值。
 
-```
+```sql
 INSERT INTO OrderDetails(OrderId, ProductName, Price, ExpectedDelivery)
 VALUES(UUID_TO_BIN(UUID()), 'Asus Rog', 90000.00, '2020-12-20'),
       (UUID_TO_BIN(UUID()), 'Acer Predator', 100000.00, '2020-12-18'),
@@ -85,7 +85,7 @@ VALUES(UUID_TO_BIN(UUID()), 'Asus Rog', 90000.00, '2020-12-20'),
 
 接下来，我们将使用以下命令来检查该表。
 
-```
+```sql
 SELECT  * from OrderDetails;
 ```
 

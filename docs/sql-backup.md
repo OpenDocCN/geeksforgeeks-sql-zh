@@ -13,7 +13,7 @@
 
 **语法**
 
-```
+```sql
 BACKUP DATABASE databasename TO backup_device [ ] [ WITH with_options [] ] ;
 ```
 
@@ -33,7 +33,7 @@ BACKUP DATABASE databasename TO backup_device [ ] [ WITH with_options [] ] ;
 
 我们可以使用以下语句创建完整的 SQL Server 磁盘备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName
 TO DISK = 'C:\DatabaseName.BAK'
 GO
@@ -45,7 +45,7 @@ GO
 
 我们可以使用以下语句创建差异 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName
 TO DISK = 'C:\DatabaseName.BAK'  
 WITH DIFFERENTIAL  
@@ -56,7 +56,7 @@ GO
 
 我们可以使用以下语句创建文件级的 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName FILE = 'DatabaseName'  
 TO DISK = 'C:\DatabaseName_DatabaseName.FIL'
 GO
@@ -68,7 +68,7 @@ GO
 
 我们可以使用以下语句创建文件组 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName FILEGROUP = 'ReadOnly'  
 TO DISK = 'C:\DatabaseName.FLG'
 GO
@@ -78,7 +78,7 @@ GO
 
 我们可以使用以下语句创建多个磁盘文件的完整 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK',
 DISK = 'D:\DatabaseName_2.BAK',
@@ -92,7 +92,7 @@ GO
 
 我们可以使用以下语句用密码创建一个完整的 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 WITH PASSWORD = 'Q!W@E#R{content}apos;
@@ -105,7 +105,7 @@ GO
 
 我们可以使用以下语句创建带有进度统计信息的完整 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 WITH STATS
@@ -116,7 +116,7 @@ GO
 
 这是另一个示例，显示每 2%之后的统计数据。
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 WITH STATS = 2
@@ -127,7 +127,7 @@ GO
 
 我们可以创建一个 SQL Server 备份，并使用以下语句对其进行描述:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 WITH DESCRIPTION = 'Full backup for DatabaseName'
@@ -140,7 +140,7 @@ GO
 
 我们可以使用以下语句创建镜像的 SQL Server 备份:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 MIRROR TO DISK =  'D:\DatabaseName_mirror.BAK'
@@ -154,7 +154,7 @@ GO
 
 我们可以使用以下语句为 SQL Server 备份指定多个选项:
 
-```
+```sql
 BACKUP DATABASE DatabaseName 
 TO DISK = 'C:\DatabaseName_1.BAK'
 MIRROR TO DISK =  'D:\DatabaseName_mirror.BAK'
@@ -166,21 +166,21 @@ GO
 
 **创建数据库:**
 
-```
+```sql
 CREATE DATABASE GeeksDB;
 GO
 ```
 
 **使用该数据库:**
 
-```
+```sql
 USE GeeksDB;
 GO
 ```
 
 **备份该数据库:**
 
-```
+```sql
 BACKUP DATABASE GeeksDB
 TO DISK = 'D:\Backup\GeeksDB.bak'
  WITH FORMAT,

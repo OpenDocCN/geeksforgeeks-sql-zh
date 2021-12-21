@@ -6,7 +6,7 @@
 
 **语法:**用于更新查询
 
-```
+```sql
 UPDATE table_name 
 SET old_value = new_value
 WHERE condition 
@@ -18,7 +18,7 @@ WHERE condition
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -32,7 +32,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks;
 ```
 
@@ -46,7 +46,7 @@ USE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_details(
   stu_id VARCHAR(8),
   stu_name VARCHAR(20),
@@ -57,7 +57,7 @@ CREATE TABLE student_details(
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Updated_CG(
 stu_id VARCHAR(20),
 updated_cg DECIMAL(4,2));
@@ -73,7 +73,7 @@ updated_cg DECIMAL(4,2));
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_details VALUES('40001','PRADEEP',9.6);
 INSERT INTO student_details VALUES('40002','ASHOK',8.2);
 INSERT INTO student_details VALUES('40003','PAVAN KUMAR',7.6);
@@ -89,7 +89,7 @@ INSERT INTO student_details VALUES('40005','RAHUL',7.0);
 
 **查询:**
 
-```
+```sql
 INSERT INTO Updated_CG VALUES('40001',8.6);
 INSERT INTO Updated_CG VALUES('40002',8.4);
 INSERT INTO Updated_CG VALUES('40003',6.6);
@@ -105,7 +105,7 @@ INSERT INTO Updated_CG VALUES('40005',7.8);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student_details
 SELECT * FROM Updated_CG
 ```
@@ -118,7 +118,7 @@ SELECT * FROM Updated_CG
 
 **查询:**
 
-```
+```sql
 UPDATE student_details 
 SET stu_cgpa = (SELECT updated_cg 
 FROM Updated_CG 
@@ -133,7 +133,7 @@ WHERE student_details.stu_id = Updated_CG.stu_id)
 
 **查询:**
 
-```
+```sql
 SELECT * FROM stuent_details
 ```
 

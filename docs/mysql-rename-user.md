@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 RENAME USER 'username'@'host' TO 'new_username'@'host';
 
 ```

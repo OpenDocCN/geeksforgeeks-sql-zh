@@ -10,13 +10,13 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -24,7 +24,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下员工表:
 
-```
+```sql
 CREATE TABLE friends(
 firstName VARCHAR(30) not NULL,
 lastName VARCHAR(30) not NULL,
@@ -33,7 +33,7 @@ age INT NOT NULL);
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS friends;
 ```
 
@@ -43,7 +43,7 @@ EXEC SP_COLUMNS friends;
 
 使用以下语句向*好友*表添加数据:
 
-```
+```sql
 INSERT INTO friends
 values
 ('Ajit','Yadav', 20),
@@ -58,7 +58,7 @@ values
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM friends;
 ```
 
@@ -82,7 +82,7 @@ SELECT * FROM friends;
 
 **示例:**
 
-```
+```sql
 SELECT TOP 1 * FROM friends
 WHERE
 len(firstName) = 
@@ -111,7 +111,7 @@ len(firstName) =
 
 **示例:**
 
-```
+```sql
 SELECT TOP 1 *  FROM friends
 WHERE
 len(firstName) = 
@@ -137,7 +137,7 @@ ORDER BY firstname;
 
 **示例:**
 
-```
+```sql
 SELECT TOP 1 * FROMfriends
 WHERE
 len(firstName) = 
@@ -164,7 +164,7 @@ len(firstName) =
 
 **示例:**
 
-```
+```sql
 SELECT TOP 1* FROM friends
 WHERE
 len(firstName) = 

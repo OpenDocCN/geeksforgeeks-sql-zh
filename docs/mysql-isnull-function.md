@@ -8,7 +8,7 @@ ISNULL()函数接受表达式作为参数，并根据传递的参数返回一个
 
 **语法:**
 
-```
+```sql
 ISNULL(expression)
 ```
 
@@ -32,36 +32,36 @@ ISNULL(expression)
 
 **示例-1:** 实现 ISNULL()函数。
 
-```
+```sql
 SELECT ISNULL(NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-2:** 在字符串上实现 ISNULL()函数。
 
-```
+```sql
 SELECT ISNULL("gfg"); 
 ```
 
 **输出:**
 
-```
+```sql
 0 
 ```
 
 **示例-3:** 在整数值上实现 ISNULL()函数。
 
-```
+```sql
 SELECT ISNULL(123); 
 ```
 
 **输出:**
 
-```
+```sql
 0 
 ```

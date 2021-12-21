@@ -6,7 +6,7 @@
 ![SQL_Correlated_Subqueries](img/7d2460a1d87130c76e9bf886bf7f335f.png)
 对于父语句处理的每一行，相关子查询都计算一次。父语句可以是**选择**、**更新**或**删除**语句。
 
-```
+```sql
 SELECT column1, column2, ....
 FROM table1 outer
 WHERE column1 operator
@@ -24,7 +24,7 @@ WHERE column1 operator
 **注意:**您也可以在相关子查询中使用 **ANY** 和 **ALL** 运算符。
 **相关子查询示例:**查找部门内所有收入高于平均工资的员工。
 
-```
+```sql
 SELECT last_name, salary, department_id
  FROM employees outer
  WHERE salary >
@@ -38,7 +38,7 @@ SELECT last_name, salary, department_id
 
 ## 相关更新:
 
-```
+```sql
 UPDATE table1 alias1
  SET column = (SELECT expression 
                FROM table2 alias2
@@ -50,7 +50,7 @@ UPDATE table1 alias1
 
 ## 相关删除:
 
-```
+```sql
 DELETE FROM table1 alias1
  WHERE column1 operator
                (SELECT expression
@@ -66,7 +66,7 @@ EXISTS 运算符测试子查询结果集中是否存在行。如果找到了子�
 **使用 EXIST 运算符的示例:**
 查找至少有一个人向其报告的员工。
 
-```
+```sql
 SELECT employee_id, last_name, job_id, department_id
 FROM employees outer
 WHERE EXISTS ( SELECT ’X’
@@ -81,7 +81,7 @@ outer.employee_id);
 **使用 NOT EXIST 运算符的示例:**
 查找没有任何员工的所有部门。
 
-```
+```sql
 SELECT department_id, department_name
 FROM departments d
 WHERE NOT EXISTS (SELECT ’X’

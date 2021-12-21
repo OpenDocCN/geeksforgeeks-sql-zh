@@ -8,7 +8,7 @@
 
 **示例-1:**
 
-```
+```sql
 SELECT Level AS Sequence 
 FROM Dual
 CONNECT BY Level <= 5
@@ -31,7 +31,7 @@ CONNECT BY Level <= 5
 
 **语法:**
 
-```
+```sql
 SELECT Level+(n-1) AS Alias Name
 FROM Dual
 CONNECT BY Level <= 10
@@ -41,7 +41,7 @@ CONNECT BY Level <= 10
 
 **示例-2:**
 
-```
+```sql
 SELECT Level+(6-1) AS Sequence 
 FROM Dual
 CONNECT BY Level <= 10
@@ -61,7 +61,7 @@ CONNECT BY Level <= 10
 
 **示例-3:**
 
-```
+```sql
 SELECT Level AS Sequence, Sysdate AS System_date  
 FROM Dual
 CONNECT BY Level <= 5

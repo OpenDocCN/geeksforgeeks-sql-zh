@@ -8,7 +8,7 @@
 
 **示例:**
 
-```
+```sql
 Input: 123456
 Output: Odd digits = 3
         Even digits = 3
@@ -23,7 +23,7 @@ Output: Odd digits = 0
 
 ## 结构化查询语言
 
-```
+```sql
 --Odd and Even digits in a number
 --in PL/SQL
 DECLARE
@@ -62,7 +62,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Odd Digits: 3
 Even Digits: 3
 ```

@@ -8,7 +8,7 @@ SOUNDEX 函数接受一个参数 input_string，该参数可以是 CHAR、VARCHA
 
 **语法:**
 
-```
+```sql
 SOUNDEX( input_string )
 ```
 
@@ -32,7 +32,7 @@ SOUNDEX( input_string )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'geeksforgeeks';
 
@@ -44,13 +44,13 @@ END;
 
 **输出:**
 
-```
+```sql
 G216 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'GEEKSFORGEEKS';
 
@@ -62,13 +62,13 @@ END;
 
 **输出:**
 
-```
+```sql
 G216 
 ```
 
 **例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Hello';
 
@@ -80,13 +80,13 @@ END;
 
 **输出:**
 
-```
+```sql
 H400 
 ```
 
 **例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Hello';
 
@@ -98,13 +98,13 @@ END;
 
 **输出:**
 
-```
+```sql
 H400 
 ```
 
 **例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Hello User';
 
@@ -116,6 +116,6 @@ END;
 
 **输出:**
 
-```
+```sql
 H426 
 ```

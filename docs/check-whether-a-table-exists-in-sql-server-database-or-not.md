@@ -9,7 +9,7 @@
 
 **查询:**
 
-```
+```sql
 USE [DB_NAME]
 GO
 IF OBJECT_ID('table_name', 'U') IS NOT NULL
@@ -28,7 +28,7 @@ END
 
 **查询:**
 
-```
+```sql
 USE [DB_NAME]
 GO
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES
@@ -48,7 +48,7 @@ END
 
 **查询:**
 
-```
+```sql
 USE [DB_NAME]
 GO
 IF EXISTS(SELECT 1 FROM sys.Objects
@@ -66,7 +66,7 @@ END
 
 **输出:**
 
-```
+```sql
 Table does not exists.
 ```
 
@@ -75,7 +75,7 @@ Table does not exists.
 
 **查询:**
 
-```
+```sql
 USE [DB_NAME]
 GO
 IF EXISTS(SELECT 1 FROM sys.Tables
@@ -95,7 +95,7 @@ END
 
 **输入-1 :**
 
-```
+```sql
 USE [SQL_DBA]
 GO
 IF OBJECT_ID('geek_demo', 'U') IS NOT NULL
@@ -111,13 +111,13 @@ END
 
 **输出-1 :**
 
-```
+```sql
 Table does not exists.
 ```
 
 让我们创建表格。
 
-```
+```sql
 Create table geek_demo (id int, name varchar(200));
 ```
 
@@ -125,7 +125,7 @@ Create table geek_demo (id int, name varchar(200));
 
 **输入-2 :**
 
-```
+```sql
 USE [DB_NAME]
 GO
 IF EXISTS(SELECT 1 FROM sys.Objects
@@ -143,6 +143,6 @@ END
 
 **输出-2 :**
 
-```
+```sql
 Table exists.
 ```

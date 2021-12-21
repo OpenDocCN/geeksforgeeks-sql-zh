@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 INSERT INTO Table1 (Col1, Col2)
 OUTPUT inserted.Col1, inserted.Col2
 INTO Table2
@@ -18,7 +18,7 @@ GO
 
 让我们使用以下查询创建两个示例表–
 
-```
+```sql
 CREATE TABLE GeekTable1 (Id1 INT, Name1 VARCHAR(200), City1 VARCHAR(200))
 GO
 CREATE TABLE GeekTable2 (Id2 INT, Name2 VARCHAR(200), City2 VARCHAR(200))
@@ -27,7 +27,7 @@ GO
 
 现在让我们一起将值插入两个表中–
 
-```
+```sql
 INSERT INTO GeekTable1 (Id1, Name1, City1)
 OUTPUT inserted.Id1, inserted.Name1, inserted.City1
 INTO GeekTable2
@@ -37,7 +37,7 @@ GO
 
 从两个表中选择数据–
 
-```
+```sql
 SELECT * FROM GeekTable1 ;
 GO
 SELECT * FROM GeekTable2 ;

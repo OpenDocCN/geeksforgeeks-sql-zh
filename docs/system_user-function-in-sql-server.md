@@ -13,7 +13,7 @@
 
 **语法:**
 
-```
+```sql
 SYSTEM_USER;
 ```
 
@@ -26,20 +26,20 @@ SYSTEM_USER;
 **示例-1 :**
 使用 SYSTEM_USER()函数，获取当前用户的登录名。
 
-```
+```sql
 SELECT SYSTEM_USER;
 ```
 
 **输出:**
 
-```
+```sql
 nidhi
 ```
 
 **示例-2 :**
 在下面的示例中使用 SYSTEM_USER 作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE user01
 (  
 user_id int IDENTITY(100, 2) NOT NULL,
@@ -66,7 +66,7 @@ SELECT * FROM user01;
 **示例-3 :**
 使用 SYSTEM_USER()函数，模拟用户‘极客’。
 
-```
+```sql
 SELECT SYSTEM_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT SYSTEM_USER;  
@@ -74,7 +74,7 @@ SELECT SYSTEM_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 ```
@@ -84,7 +84,7 @@ Geek
 **示例-4 :**
 使用 SYSTEM_USER()函数模拟用户‘Geek’，然后再次还原代码，得到上一个当前用户。
 
-```
+```sql
 SELECT SYSTEM_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT SYSTEM_USER;  
@@ -94,7 +94,7 @@ SELECT SYSTEM_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 nidhi

@@ -10,7 +10,7 @@
 
 我们的数据库中有以下*车*表:
 
-```
+```sql
 CREATE TABLE car (
 companyid integer ,
 companyname varchar(20) ,
@@ -25,7 +25,7 @@ totalmodels integer )
 
 要在表中插入值，我们需要使用 *insert* 语句。使用以下语句将数据添加到*汽车*表中:
 
-```
+```sql
 INSERT INTO car values(1,'maruti  suzuki',10);
 INSERT INTO car values(2,'tata',12);
 INSERT INTO car values(3,'volkswagen',8);
@@ -39,7 +39,7 @@ INSERT INTO car values(3,'volkswagen',8);
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM car;
 ```
 
@@ -51,7 +51,7 @@ SELECT * FROM car;
 
 为此，我们需要使用 **avg()函数。**我们必须将列名作为参数传递。avg()函数具有以下语法:
 
-```
+```sql
 SELECT AVG( column_name ) FROM table_name;
 ```
 
@@ -59,7 +59,7 @@ SELECT AVG( column_name ) FROM table_name;
 
 下面的查询可以找到我们的*车*表*车型*栏的平均值:
 
-```
+```sql
 SELECT AVG(totalmodels) FROM car;
 ```
 

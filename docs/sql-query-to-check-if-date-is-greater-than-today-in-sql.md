@@ -15,7 +15,7 @@
 
 **查询:**
 
-```
+```sql
 SELECT GETDATE();        
 ```
 
@@ -31,7 +31,7 @@ SELECT GETDATE();
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -41,7 +41,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -51,7 +51,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
 NAME VARCHAR(20),
 Ordered DATE,
@@ -62,7 +62,7 @@ Deliver DATE);
 
 **查询:**
 
-```
+```sql
 INSERT  INTO geeksforgeeks VALUES
  ('ROMY', '2021-01-16', '2021-03-12'),
 ('AVINAV', '2021-11-12', '2021-12-12'),
@@ -75,7 +75,7 @@ INSERT  INTO geeksforgeeks VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -89,7 +89,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks WHERE Deliver > GETDATE();
 ```
 
@@ -105,7 +105,7 @@ SELECT * FROM geeksforgeeks WHERE Deliver > GETDATE();
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks WHERE Ordered > GETDATE();
 ```
 

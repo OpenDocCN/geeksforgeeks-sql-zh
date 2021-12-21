@@ -11,7 +11,7 @@ PLSQL 中的||运算符用于将两个或多个字符串连接在一起。
 
 **语法:**
 
-```
+```sql
 string1 || string2 [ || string_n ]
 ```
 
@@ -37,7 +37,7 @@ string1 || string2 [ || string_n ]
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(10) := 'Hello ';
    Test_String2 string(10) := 'world!';
@@ -50,13 +50,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Hello world! 
 ```
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(10) := 'Geeks';
    Test_String2 string(10) := 'For';
@@ -69,6 +69,6 @@ END;
 
 **输出:**
 
-```
+```sql
 GeeksForGeeks 
 ```

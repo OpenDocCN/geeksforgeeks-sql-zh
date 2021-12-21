@@ -22,7 +22,7 @@
 
 **步骤 1 :** 要克隆表，请使用下面的查询。使用此查询，可以创建一个空的表模式(结构)，其属性与原始表相同:
 
-```
+```sql
 CREATE TABLE Contact List(Clone_1) LIKE Original_table;
 ```
 
@@ -37,7 +37,7 @@ CREATE TABLE Contact List(Clone_1) LIKE Original_table;
 
 **第二步:**如果你想创建一个表，这个表被你的原始表的所有内容装饰起来，使用这个 MySQL 查询:
 
-```
+```sql
 CREATE TABLE Contact List(Clone_1) AS SELECT * 
 FROM Original_table; 
                  OR

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 DATEADD(interval, number, date)
 ```
 
@@ -16,13 +16,13 @@ DATEADD(interval, number, date)
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 #### 步骤 2:使用数据库
 
-```
+```sql
 USE GFG
 ```
 
@@ -30,7 +30,7 @@ USE GFG
 
 在数据库中创建一个表(雇员贷方)来存储数据。
 
-```
+```sql
 CREATE TABLE EmployeeCalender (
  EmpCalDate datetime NOT NULL ,
  IsBusinessDay char (1)
@@ -41,7 +41,7 @@ CREATE TABLE EmployeeCalender (
 
 **查询:**
 
-```
+```sql
 /* Data Inserted for a full week dates*/
 
 INSERT INTO EmployeeCalender (EmpCalDate, IsBusinessDay) VALUES ('9/06/2021','Y')
@@ -59,7 +59,7 @@ INSERT INTO EmployeeCalender (EmpCalDate, IsBusinessDay) VALUES ('9/12/2021','N'
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EmployeeCalender WHERE EmpCalDate >= DATEADD(d,-7,GETDATE())
 AND
 EmpCalDate < DATEADD(d,7,GETDATE())

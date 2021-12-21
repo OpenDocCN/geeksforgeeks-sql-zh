@@ -8,19 +8,19 @@
 
 **语法(当我们只有一个数据库时):**
 
-```
+```sql
 Select * from schema_name.table_name
 ```
 
 **语法(当我们有多个数据库时):**
 
-```
+```sql
 Select * from database_name.schema_name.table_name
 ```
 
 **示例:**
 
-```
+```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLES 
 ```
 

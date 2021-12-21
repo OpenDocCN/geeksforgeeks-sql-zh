@@ -12,7 +12,7 @@
 
 **如何使用 DBMS_FLASHBACK :**
 
-```
+```sql
 EXECUTE Dbms_Flashback.Enable_At_System_Change_Number(647392649);
 EXECUTE Dbms_Flashback.Enable_At_Time('19-APR-2020 11:00:00); 
 ```

@@ -18,7 +18,7 @@
 
 您可以使用下面给出的存储过程创建不带参数的存储过程。
 
-```
+```sql
 create procedure sp_get_empno
 as  
 begin  
@@ -31,7 +31,7 @@ exec sp_get_empno
 
 您可以使用下面给出的存储过程来创建带有输出参数的存储过程。
 
-```
+```sql
 declare @empId int
 exec GetEmployeeID (@empId int out)
 create procedure sp_get_empid(@name varchar(10) out)
@@ -46,7 +46,7 @@ exec sp_get_empid @empID
 
 您可以使用下面给出的存储过程来创建带有输入参数的存储过程。
 
-```
+```sql
 USE Db1
 GO
 CREATE PROCEDURE dbo.GetEmployeeID(@Email varchar(30))
@@ -59,7 +59,7 @@ GO
 
 您可以使用下面给出的存储过程来创建具有输入和输出参数的存储过程。
 
-```
+```sql
 create procedure sp_get_empname(@name varchar(10) out, @id int)
 as
 begin

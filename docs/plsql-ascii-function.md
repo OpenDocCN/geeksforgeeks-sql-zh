@@ -8,7 +8,7 @@ PLSQL 中的 ASCII 函数用于返回代表指定字符的 NUMBER 代码。
 
 **语法**
 
-```
+```sql
 ASCII( single_character )
 ```
 
@@ -27,7 +27,7 @@ ASCII( single_character )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_Char char := 'A';
    Test_Char2 char := 'H';
@@ -43,7 +43,7 @@ END;
 
 **输出:**
 
-```
+```sql
 65
 72
 72

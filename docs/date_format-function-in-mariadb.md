@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 DATE_FORMAT(date, format_mask)
 ```
 
@@ -54,120 +54,120 @@ DATE_FORMAT(date, format_mask)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2020-04-09', '%M %d, %Y');
 ```
 
 **输出–**
 
-```
+```sql
 'April 09, 2020'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2020-10-18', '%W');
 ```
 
 **输出–**
 
-```
+```sql
 'Sunday'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2020-10-20', '%M %e %Y');
 ```
 
 **输出–**
 
-```
+```sql
 'October 20 2020'
 ```
 
 **示例-4 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2020-10-19', '%W, %M %e, %Y');
 ```
 
 **输出–**
 
-```
+```sql
 'Monday, October 19, 2020'
 ```
 
 **示例-5 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2014-05-17 08:44:21.000001', '%h');
 ```
 
 **输出–**
 
-```
+```sql
 8
 ```
 
 **示例-6 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2019-08-11 10:44:21', '%s');
 ```
 
 **输出–**
 
-```
+```sql
 44
 ```
 
 **示例-7 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2012-06-15 11:23:16', '%t');
 ```
 
 **输出–**
 
-```
+```sql
 11:23:16
 ```
 
 **示例-8 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2019-03-13', '%M');
 ```
 
 **输出–**
 
-```
+```sql
 March
 ```
 
 **示例-9 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2020-10-23', '%W');
 ```
 
 **输出–**
 
-```
+```sql
 Friday
 ```
 
 **示例-10 :**
 
-```
+```sql
 SELECT DATE_FORMAT('2019-05-13', '%Y');
 ```
 
 **输出–**
 
-```
+```sql
 '2019'
 ```

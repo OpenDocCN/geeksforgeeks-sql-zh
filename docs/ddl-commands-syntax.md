@@ -23,7 +23,7 @@
 
 **语法–**
 
-```
+```sql
 CREATE TABLE table_name
 (
 column_1 datatype,
@@ -36,7 +36,7 @@ column_3 datatype,
 **示例–**
 我们需要创建一个表来存储特定学院的学生信息。创建语法如下。
 
-```
+```sql
 CREATE TABLE Student_info
 (
 College_Id number(2),
@@ -52,7 +52,7 @@ Branch varchar(10)
 **语法–**
 向现有表添加列的语法。
 
-```
+```sql
 ALTER TABLE table_name
 ADD column_name datatype;
 ```
@@ -60,7 +60,7 @@ ADD column_name datatype;
 **示例–**
 在我们的 Student_info 表中，我们想要为 CGPA 添加一个新列。语法如下。
 
-```
+```sql
 ALTER TABLE Student_info
 ADD CGPA number;
 ```
@@ -72,14 +72,14 @@ ADD CGPA number;
 **语法–**
 删除现有表的语法。
 
-```
+```sql
 TRUNCATE TABLE table_name;
 ```
 
 **示例–**
 学院管理局希望删除新批次所有学生的详细信息，但希望保留表格结构。他们可以使用的命令如下。
 
-```
+```sql
 TRUNCATE TABLE Student_info;
 ```
 
@@ -90,13 +90,13 @@ TRUNCATE TABLE Student_info;
 **语法–**
 删除现有表的语法。
 
-```
+```sql
 DROP TABLE table_name;
 ```
 
 **示例–**
 如果学院当局想要通过删除学生信息表来更改他们的数据库。
 
-```
+```sql
 DROP TABLE Student_info;
 ```

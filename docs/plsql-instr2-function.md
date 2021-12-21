@@ -9,7 +9,7 @@ PLSQL INSTR2 函数在字符串中搜索用户使用字符指定的子字符串�
 
 **语法:**
 
-```
+```sql
 INSTR2(string, substring [, start_position [, nth_appearance ]])
 ```
 
@@ -30,7 +30,7 @@ INSTR2(string, substring [, start_position [, nth_appearance ]])
 
 **示例-1:** 使用字符向前搜索来查找子串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -42,13 +42,13 @@ END;
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
 **示例-2:** 使用字符位置向前搜索来查找子串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -60,13 +60,13 @@ END;
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
 **示例-3:** 使用字符位置向前搜索来查找子串在第三个位置的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -78,13 +78,13 @@ END;
 
 **输出:**
 
-```
+```sql
 10 
 ```
 
 **示例-4:** 使用字符位置向后搜索来查找子串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -96,13 +96,13 @@ END;
 
 **输出:**
 
-```
+```sql
 11 
 ```
 
 **示例-5:** 使用三字节字符集查找子字符串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -114,6 +114,6 @@ END;
 
 **输出:**
 
-```
+```sql
 6 
 ```

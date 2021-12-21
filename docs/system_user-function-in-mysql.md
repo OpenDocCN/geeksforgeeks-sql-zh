@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 SYSTEM_USER()
 ```
 
@@ -37,25 +37,25 @@ SYSTEM_USER()
 在 MySQL 中实现 SYSTEM_USER()函数如下。
 **语法–**
 
-```
+```sql
 SELECT SYSTEM_USER();
 ```
 
 **输出:**
 
-```
+```sql
 //Expected Output will be in this format.
 username@hostname
 ```
 
 现在，让我们看看这个例子。
 
-```
+```sql
 SELECT SYSTEM_USER();
 ```
 
 **输出:**
 
-```
+```sql
 author@gfg
 ```

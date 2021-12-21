@@ -9,7 +9,7 @@
 **横向连接的语法:**
 横向连接由内部子查询前面的关键字横向表示，如下所示:
 
-```
+```sql
 SELECT <Column Name>
 FROM <Reference Table Name>
 LATERAL <Inner Subquery> 
@@ -18,7 +18,7 @@ LATERAL <Inner Subquery>
 **例:**
 假设我们要找到一个班成绩最高的前 3 名学生。这个查询很简单，如下所示:
 
-```
+```sql
 SELECT studId, marks 
 FROM student 
 ORDER BY marks DESC FETCH FIRST 3 ROWS ONLY 
@@ -26,7 +26,7 @@ ORDER BY marks DESC FETCH FIRST 3 ROWS ONLY
 
 现在假设每个班级有 n 个部分，我们需要找到分数最高的前 3 名学生。现在，我们需要连接区域表来获得结果，并使用 Rank()函数找到前 3 名学生。查询如下:
 
-```
+```sql
 SELECT secId, studId, marks 
 FROM ( SELECT sec.secId, stud.studId, stud.marks, 
        RANK() OVER (PARTITION BY sec.secId ORDER BY marks DESC) rn 
@@ -36,7 +36,7 @@ WHERE rn <= 3
 
 这就是横向救援的地方。我们将使用第一个查询作为内部子查询，在该查询中，我们获取了分数最高的前 3 名学生。接下来，我们使用横向关键字将截面表与内部子查询连接起来。将对左侧表中的每一行计算横向右侧的内部查询。查询如下所示:
 
-```
+```sql
 SELECT sec.secId, stud.studId, stud.marks 
 FROM section sec,
 LATERAL (SELECT studId, marks FROM student stud 

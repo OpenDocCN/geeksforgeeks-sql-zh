@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 LEN(Ename)
 ```
 
@@ -16,7 +16,7 @@ LEN(Ename)
 
 **语法:**
 
-```
+```sql
 LEFT(Ename , N)
 ```
 
@@ -26,7 +26,7 @@ LEFT(Ename , N)
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks
 ```
 
@@ -38,7 +38,7 @@ CREATE DATABASE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks;
 ```
 
@@ -48,7 +48,7 @@ USE GeeksforGeeks;
 
 使用如下 SQL 查询创建一个包含 5 列的 Emp 表。
 
-```
+```sql
 CREATE TABLE Emp
 (
 E_id varchar(20),
@@ -69,7 +69,7 @@ E_sex varchar(8)
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns Emp
 ```
 
@@ -83,7 +83,7 @@ EXEC sp_columns Emp
 
 **查询:**
 
-```
+```sql
  INSERT INTO Emp VALUES('E00001','JHONNY','BACKEND DEVELOPER',26,'male'),
  ('E00002','DARSHI','MARKETING',27,'male'),
 ('E00003','JASMINE','FRONTEND DEVELOPER',37,'female'),
@@ -101,7 +101,7 @@ EXEC sp_columns Emp
 
 **查询:**
 
-```
+```sql
 SELECT* FROM Emp
 ```
 
@@ -113,7 +113,7 @@ SELECT* FROM Emp
 
 **查询:**
 
-```
+```sql
 SELECT LEN(Ename) AS LengthofEname,
 LEFT(Ename,3) AS FirstThree FROM Emp
 ```
@@ -126,7 +126,7 @@ LEFT(Ename,3) AS FirstThree FROM Emp
 
 **查询:**
 
-```
+```sql
 SELECT LEN(Ename) AS LengthofEname,
 RIGHT(Ename,3) AS LastThree FROM Emp
 ```

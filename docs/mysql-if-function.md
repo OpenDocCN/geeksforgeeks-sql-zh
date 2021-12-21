@@ -7,7 +7,7 @@ IF()函数接受一个参数，该参数是要评估的条件。
 
 **语法:**
 
-```
+```sql
 IF(condition, true_value, false_value)
 ```
 
@@ -33,36 +33,36 @@ IF(condition, true_value, false_value)
 
 **示例-1:** 在数值条件下实现 IF()函数并返回字符串值。
 
-```
+```sql
 SELECT IF(5<12, 'TRUE', 'FALSE'); 
 ```
 
 **输出:**
 
-```
+```sql
 TRUE 
 ```
 
 **示例-2:** 实现 IF()函数比较两个字符串。
 
-```
+```sql
 SELECT IF(STRCMP('geeksforgeeks', 'gfg')=0, 'TRUE', 'FALSE'); 
 ```
 
 **输出:**
 
-```
+```sql
 FALSE 
 ```
 
 **示例-3:** 在数值条件下实现 IF()函数并返回数值。
 
-```
+```sql
 SELECT IF(5<12, '1', '0'); 
 ```
 
 **输出:**
 
-```
+```sql
 1 
 ```

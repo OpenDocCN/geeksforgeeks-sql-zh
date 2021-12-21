@@ -55,7 +55,7 @@
 
 **语法:**
 
-```
+```sql
 BACKUP DATABASE databasename TO backup_device [][WITH with_options[]];
 ```
 
@@ -77,7 +77,7 @@ BACKUP DATABASE databasename TO backup_device [][WITH with_options[]];
 **示例-1 :**
 **将数据库备份到磁盘设备。**
 
-```
+```sql
 USE GeekDB;
 GO
 BACKUP DATABASE GeekDB
@@ -91,7 +91,7 @@ GO
 **示例-2 :**
 **备份到磁带设备。**
 
-```
+```sql
 USE GeekDB;
 GO
 BACKUP DATABASE GeekDB

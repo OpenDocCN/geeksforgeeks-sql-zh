@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE table_name (column_name column_type constraints);
 ```
 
@@ -35,7 +35,7 @@ T6】学生–T8】
 **示例:**
 **使用<数据库>** 命令必须在对表进行任何操作之前使用。
 
-```
+```sql
 use gfg;
 Create table student(name Varchar(30) NOT NULL, marks Integer);
 ```
@@ -55,7 +55,7 @@ Create table student(name Varchar(30) NOT NULL, marks Integer);
 
 **例:**
 
-```
+```sql
 use gfg;
 select * from student;
 ```
@@ -73,14 +73,14 @@ select * from student;
 
 将学生表的名称列大小从 varchar(40)更改为 varchar(50)的 Alter Table 命令:
 
-```
+```sql
 Alter table student 
 modify name varchar(50) not null;
 ```
 
 **原表–**
 
-```
+```sql
 desc student;
 ```
 
@@ -100,7 +100,7 @@ int(11)
 
 **更改表格后–**
 
-```
+```sql
 desc student;
 ```
 
@@ -121,14 +121,14 @@ int(11)
 
 使用更新命令将姓名为 ravi 的学生的分数从 23 更新为 100 的更新命令:
 
-```
+```sql
 Update student set marks = 100 
 where name = "ravi";
 ```
 
 **原表–**
 
-```
+```sql
 select * from student;
 ```
 
@@ -137,7 +137,7 @@ select * from student;
 
 **更新表格后–**
 
-```
+```sql
 select * from student;
 ```
 
@@ -154,14 +154,14 @@ select * from student;
 
 删除命令，删除分数等于 100 的学生记录:
 
-```
+```sql
 delete from student 
 where marks = 100;
 ```
 
 **原表–**
 
-```
+```sql
 select * from student;
 ```
 
@@ -170,7 +170,7 @@ select * from student;
 
 **删除学生记录后–**
 
-```
+```sql
 select * from student;
 ```
 
@@ -184,13 +184,13 @@ select * from student;
 
 删除学生表的删除命令:
 
-```
+```sql
 drop table student;
 ```
 
 **原始结构–**
 
-```
+```sql
 use gfg;
 show tables;
 ```
@@ -204,7 +204,7 @@ show tables;
 
 **放下学生桌后–**
 
-```
+```sql
 use gfg;
 show tables;
 ```

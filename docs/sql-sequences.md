@@ -10,7 +10,7 @@ Sequence 是一组整数 1，2，3，…，它们由一些数据库系统生成�
 
 **语法:**
 
-```
+```sql
 CREATE SEQUENCE sequence_name
 START WITH initial_value
 INCREMENT BY increment_value
@@ -44,7 +44,7 @@ if sequence exceeds its max_value.
 
 *   **Example 1:**
 
-    ```
+    ```sql
     CREATE SEQUENCE sequence_1
     start with 1
     increment by 1
@@ -59,7 +59,7 @@ if sequence exceeds its max_value.
 *   **Example 2:**
     Following is the sequence query creating sequence in descending order.
 
-    ```
+    ```sql
     CREATE SEQUENCE sequence_2
     start with 100
     increment by -1
@@ -73,7 +73,7 @@ if sequence exceeds its max_value.
 
 *   **Example to use sequence :** create a table named students with columns as id and name.
 
-    ```
+    ```sql
     CREATE TABLE students
     ( 
     ID number(10),
@@ -84,7 +84,7 @@ if sequence exceeds its max_value.
 
     现在将值插入表中
 
-    ```
+    ```sql
     INSERT into students VALUES(sequence_1.nextval,'Ramesh');
     INSERT into students VALUES(sequence_1.nextval,'Suresh');
 
@@ -93,7 +93,7 @@ if sequence exceeds its max_value.
     其中 *sequence_1.nextval* 将以 sequence_1 中定义的序列在 id 列中插入 id。
     T3】输出:
 
-    ```
+    ```sql
      ______________________
     | ID  |      NAME      |
     ------------------------

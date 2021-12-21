@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 RTRIM(input_string)
 
 ```
@@ -22,7 +22,7 @@ RTRIM()函数接受 input_string 这样的单参数。
 **示例-1 :**
 使用带有文字字符串的 RTRIM()函数。
 
-```
+```sql
 SELECT RTRIM('GFG a computer science portal for geeks') 
 AS RightTrimmedString;
 
@@ -40,7 +40,7 @@ AS RightTrimmedString;
 **示例-2 :**
 使用带有变量的 RTRIM()函数。
 
-```
+```sql
 DECLARE @input_string varchar(25);  
 SET @input_string = 'IPL sponsorship this year.';  
 SELECT RTRIM(@input_string) + ' Dream11  '; 
@@ -49,7 +49,7 @@ SELECT RTRIM(@input_string) + ' Dream11  ';
 
 **输出:**
 
-```
+```sql
 IPL sponsorship this year Dream11
 
 ```
@@ -57,7 +57,7 @@ IPL sponsorship this year Dream11
 **示例-3 :**
 您可以使用带有问答变量的 RTRIM()函数，如下例所示。
 
-```
+```sql
 DECLARE @input_string varchar(25);  
 SET @input_string = 'who is the sponsor for IPL Game this year :';  
 SELECT RTRIM(@input_string)+'Dream11' ; 
@@ -66,7 +66,7 @@ SELECT RTRIM(@input_string)+'Dream11' ;
 
 **输出:**
 
-```
+```sql
 who is the sponsor for IPL Game this year :Dream11
 
 ```

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LEAST(X1, X2, X3, ...) 
 
 ```
@@ -19,14 +19,14 @@ LEAST(X1, X2, X3, ...)
 
 **示例-1 :** 使用最小()函数查找给定数字之间的最小数字。
 
-```
+```sql
 SELECT LEAST(10, 20, 30, 40) AS Least_Value;
 
 ```
 
 **输出:**
 
-```
+```sql
 +-------------+
 | Least_Value |
 +-------------+
@@ -37,14 +37,14 @@ SELECT LEAST(10, 20, 30, 40) AS Least_Value;
 
 **示例-2 :** 使用最小()函数查找给定字符串之间的最小值。
 
-```
+```sql
 SELECT LEAST( 'MySQL', 'MS ACCESS', 'SQL') AS LeastValue_String;
 
 ```
 
 **输出:**
 
-```
+```sql
 +-------------------+
 | LeastValue_String |
 +-------------------+
@@ -59,7 +59,7 @@ SELECT LEAST( 'MySQL', 'MS ACCESS', 'SQL') AS LeastValue_String;
 
 现在在学生表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
     Student(Student_name, Student_Class, Subject1, Subject2, Subject3, Subject4)
 
@@ -74,7 +74,7 @@ VALUES
 
 所以，我们的桌子看起来像:
 
-```
+```sql
 +------------+--------------+---------------+----------+----------+----------+----------+
 | Student_id | Student_name | Student_Class | Subject1 | Subject2 | Subject3 | Subject4 |
 +------------+--------------+---------------+----------+----------+----------+----------+
@@ -89,7 +89,7 @@ VALUES
 
 现在，我们将在所有科目中为每个学生找到最低分。
 
-```
+```sql
 Select 
     Student_id, Student_name, LEAST(Subject1, Subject2, Subject3, Subject4) as Least_Mark 
 FROM Student;
@@ -98,7 +98,7 @@ FROM Student;
 
 **输出:**
 
-```
+```sql
 +------------+--------------+------------+
 | Student_id | Student_name | Least_Mark |
 +------------+--------------+------------+

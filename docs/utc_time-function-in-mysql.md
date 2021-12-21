@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 UTC_TIME
   OR
 UTC_TIME()
@@ -22,7 +22,7 @@ UTC_TIME()
 **示例-1 :**
 使用 UTC_TIME 函数获取当前 UTC 时间。
 
-```
+```sql
 SELECT UTC_TIME as CurrUtcTime ;
 
 ```
@@ -36,7 +36,7 @@ SELECT UTC_TIME as CurrUtcTime ;
 **示例-2 :**
 使用数字格式的 UTC_TIME 函数获取当前 UTC 时间。
 
-```
+```sql
 SELECT UTC_TIME + 0 as CurrUtcTime ;
 
 ```
@@ -50,7 +50,7 @@ SELECT UTC_TIME + 0 as CurrUtcTime ;
 **示例-3 :**
 可以使用 UTC_TIME 函数设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE DeliveryDetails (
 DeliveryId INT AUTO_INCREMENT,
 ProductId INT NOT NULL,
@@ -64,7 +64,7 @@ PRIMARY KEY(DeliveryId)
 
 在这里，我们将使用世界协调时 _ 日期和世界协调时 _ 时间功能，当交付将完成。“交付时间”列中的值将是世界协调时 _ 日期函数给出的值，而“交付时间”列中的值将是世界协调时 _ 时间函数给出的值。
 
-```
+```sql
 INSERT INTO  
 DeliveryDetails(ProductId, ProductName, Delivered_On, Delivered_At)
 VALUES
@@ -74,7 +74,7 @@ VALUES
 
 现在，检查交货详细信息表:
 
-```
+```sql
 SELECT * FROM DeliveryDetails;
 
 ```

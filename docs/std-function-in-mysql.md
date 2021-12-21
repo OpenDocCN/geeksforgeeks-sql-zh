@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 STD(expr);
 ```
 
@@ -21,7 +21,7 @@ STD(expr);
 
 **创建玩家表:**
 
-```
+```sql
 CREATE TABLE Player  
 (
 PlayerId INT AUTO_INCREMENT,  
@@ -35,7 +35,7 @@ PRIMARY KEY(PlayerId)
 **将数据插入表中:**
 要验证，请使用如下命令。
 
-```
+```sql
 SELECT  * from Player ;
 ```
 
@@ -52,7 +52,7 @@ SELECT  * from Player ;
 
 现在我们要找到运行得分列的总体标准差。
 
-```
+```sql
 SELECT  STD(RunScored ) as Pop_Standard_Deviation 
 FROM Player ;
 
@@ -67,7 +67,7 @@ FROM Player ;
 **例-2 :**
 现在我们来找 WicketsTaken 列的人口标准差。
 
-```
+```sql
 SELECT  STD(WicketsTaken) as Pop_Std_Dev_Wickets   
 FROM Player ;
 
@@ -82,7 +82,7 @@ FROM Player ;
 **示例-3 :**
 在本例中，我们将找到在“加尔各答”工作的员工收入的总体标准偏差，以演示如何创建一个名为 EmloyeeDetails 的表。
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 
 Employee_Id INT AUTO_INCREMENT,  
@@ -97,7 +97,7 @@ PRIMARY KEY(Employee_Id )
 
 向表中插入数据:
 
-```
+```sql
 INSERT INTO  
 EmployeeDetails(Employee_Name, Working_At, Work_Location, Joining_Date, Annual_Income )
 
@@ -116,7 +116,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 Select * FROM EmployeeDetails;
 
 ```
@@ -138,7 +138,7 @@ Select * FROM EmployeeDetails;
 
 现在我们要找出工作地点在“加尔各答”的员工年收入的人口标准差
 
-```
+```sql
 SELECT  'Kolkata' AS 'Work_Location',
 STD(Annual_Income) as PopStdDevOfAnnualIncome  
 FROM EmployeeDetails where Work_Location = 'Kolkata';

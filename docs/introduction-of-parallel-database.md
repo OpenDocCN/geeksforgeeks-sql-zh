@@ -31,7 +31,7 @@
 **加速–**
 通过增加资源数量在更短时间内执行任务的能力称为加速。
 
-```
+```sql
 Speedup=time original/time parallel
 Where ,
 time original = time required to execute the task using 1 processor
@@ -55,7 +55,7 @@ time parallel = time required to execute the task using 'n' processors
 **纵向扩展–**
 当工作负载和资源成比例增加时，保持系统性能的能力。
 
-```
+```sql
 Scaleup = Volume Parallel/Volume Original
 Where ,
 Volume Parallel = volume executed in a given amount of time using 'n' processor

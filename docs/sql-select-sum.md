@@ -8,7 +8,7 @@ SELECT SUM 用于计算 SQL 中表达式的总值。这与在 SQL 中使用 [**<
 
 **语法:**
 
-```
+```sql
 SELECT SUM(expr)
 FROM Table_Name
 WHERE condition;
@@ -22,7 +22,7 @@ expr : Expression or column name
 
 使用以下语法创建数据库:
 
-```
+```sql
 CREATE DATABASE database_name
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE database_name
 
 使用以下语法创建表格:
 
-```
+```sql
 CREATE TABLE Table_name(
 col_1 TYPE col_1_constraint,
 col_2 TYPE col_2 constraint
@@ -46,7 +46,7 @@ col_constraint: Constraints in SQL like PRIMARY KEY, NOT NULL, UNIQUE, REFERENCE
 
 使用以下语法向表中插入数据:
 
-```
+```sql
 INSERT INTO Table_name
 VALUES(val_1, val_2, val_3, ..........)
 
@@ -57,7 +57,7 @@ val: Values in particular column
 
 使用以下语法查看表格的内容:
 
-```
+```sql
 SELECT * FROM Table_name
 ```
 

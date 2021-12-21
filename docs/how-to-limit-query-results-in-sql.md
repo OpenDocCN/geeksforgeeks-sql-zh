@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -28,7 +28,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Participant (
 ID INTEGER PRIMARY KEY,
 Name TEXT NOT NULL,
@@ -43,7 +43,7 @@ Branch TEXT NOT NULL
 
 **查询:**
 
-```
+```sql
 INSERT INTO Participant VALUES (55, 'BB',81 ,'Civil');
 INSERT INTO Participant VALUES (56, 'NN',75 ,'IT');
 INSERT INTO Participant VALUES (57, 'RR',100 ,'CSE');
@@ -54,7 +54,7 @@ INSERT INTO Participant VALUES (58, 'SS',94 ,'Civil');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Participant;
 ```
 
@@ -64,7 +64,7 @@ SELECT * FROM Participant;
 
 **语法:**
 
-```
+```sql
 SELECT column1, column2, ...
 FROM table_name
 [WHERE conditions]
@@ -80,7 +80,7 @@ LIMIT count;
 
 **查询 1:**
 
-```
+```sql
 SELECT *
 FROM Participant
 ORDER BY Percent DESC
@@ -103,7 +103,7 @@ LIMIT 运算符可用于上述情况，在这种情况下，我们需要找到�
 
 **查询 2:**
 
-```
+```sql
 SELECT *
 FROM Participant
 WHERE Branch != 'Civil'

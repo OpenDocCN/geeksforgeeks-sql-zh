@@ -13,7 +13,7 @@
 
 **语法:**
 
-```
+```sql
 insert [TOP(exp)[PERCENT]]
 into target_table
 column_list
@@ -52,7 +52,7 @@ query
 
 如果用户想将标记转移到学生表，查询如下–
 
-```
+```sql
 insert into marks (roll number, name, gpa)
 select roll number, name, course 
 from student 
@@ -60,7 +60,7 @@ from student
 
 值被插入。为了验证，查询如下–
 
-```
+```sql
 select *
 from student 
 ```
@@ -82,7 +82,7 @@ from student
 
 这是插入值的另一种方式。通过使用 TOP 关键字，我们可以从表中提取所需的值–
 
-```
+```sql
 insert TOP (6) PERCENT
 insert into marks(roll number, name, gpa)
 select roll number, name, course 

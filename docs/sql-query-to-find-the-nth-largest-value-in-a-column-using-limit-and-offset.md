@@ -28,7 +28,7 @@
 
 上表列出了一套公寓所有公寓的电费账单。你必须找到表格中第 n 大的电费账单。
 
-```
+```sql
 SELECT DISTINCT ElectricityBill AS NthHighestElectricityBill
 FROM Bills
 ORDER BY ElectricityBill DESC
@@ -43,7 +43,7 @@ OFFSET n-1;
 
 如果我们想找到第三高的电费账单，查询将是–
 
-```
+```sql
 SELECT DISTINCT ElectricityBill AS 3rdHighestElectricityBill
 FROM Bills
 ORDER BY ElectricityBill DESC
@@ -71,7 +71,7 @@ OFFSET 2;
 
 上表是在小公司工作的员工的工资。找到收入第四高的员工 id。
 
-```
+```sql
 SELECT EmployeeID AS 4thHighestEarningEmployee 
 FROM EmployeeSalary
 ORDER BY SalaryInThousands DESC

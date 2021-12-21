@@ -6,7 +6,7 @@
 
 **语法–**
 
-```
+```sql
 UPDATE tablename  
 INNER JOIN tablename  
 ON tablename.columnname = tablename.columnname  
@@ -17,7 +17,7 @@ SET tablenmae.columnnmae = tablenmae.columnname;
 
 让我们假设我们有两张表——极客 1 和极客 2。检查表格中的内容–
 
-```
+```sql
 SELECT * 
 FROM Geeks1;
 ```
@@ -38,7 +38,7 @@ FROM Geeks1;
 
 </center>
 
-```
+```sql
 SELECT * 
 FROM Geeks2;
 ```
@@ -59,7 +59,7 @@ FROM Geeks2;
 
 我们有表极客 2，它有两行，其中第 1 列是 21 和 31，我们想为第 1 列是 21 和 31 的行更新表极客 2 到表极客 1 的值。此外，我们只想更新第 2 列和第 3 列的值。
 
-```
+```sql
 UPDATE Geeks1  
 SET col2 = Geeks2.col2,  
 col3 = Geeks2.col3  
@@ -70,11 +70,11 @@ WHERE Geeks1.col1 IN (21, 31);
 
 **输出–**
 
-```
+```sql
 (2 row(s) affected)
 ```
 
-```
+```sql
 SELECT * 
 FROM Geeks1;
 ```
@@ -91,7 +91,7 @@ FROM Geeks1;
 
 </center>
 
-```
+```sql
 SELECT * 
 FROM Geeks2;
 ```

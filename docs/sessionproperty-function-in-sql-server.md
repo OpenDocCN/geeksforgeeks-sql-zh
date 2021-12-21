@@ -14,7 +14,7 @@ SQL Server 中的此函数用于返回参数部分中指定的会话设置。
 
 **语法:**
 
-```
+```sql
 SESSIONPROPERTY(option)
 ```
 
@@ -24,7 +24,7 @@ SESSIONPROPERTY(option)
 
 **选项–**用于检索会话设置的指定选项。它可以是下面给出的任何一个值，如下所示。
 
-```
+```sql
 ANSI_NULLS,
 ANSI_PADDING,
 ANSI_WARNINGS,
@@ -42,13 +42,13 @@ QUOTED_IDENTIFIER.
 
 使用 SESSIONPROPERTY()函数并获取输出。
 
-```
+```sql
 SELECT SESSIONPROPERTY('ANSI_PADDING');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
@@ -58,14 +58,14 @@ SELECT SESSIONPROPERTY('ANSI_PADDING');
 
 使用 SESSIONPROPERTY()函数并获取输出。
 
-```
+```sql
 SET ANSI_WARNINGS OFF;
 SELECT SESSIONPROPERTY('ANSI_WARNINGS');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
@@ -75,7 +75,7 @@ SELECT SESSIONPROPERTY('ANSI_WARNINGS');
 
 使用 SESSIONPROPERTY()函数并使用变量获取输出。
 
-```
+```sql
 DECLARE @sp VARCHAR(20);
 SET @sp = 'CONCAT_NULL_YIELDS_NULL';
 SELECT SESSIONPROPERTY(@sp);
@@ -83,7 +83,7 @@ SELECT SESSIONPROPERTY(@sp);
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -93,13 +93,13 @@ NULL
 
 使用 SESSIONPROPERTY()函数和“ARITHABORT”作为参数来获取输出。
 
-```
+```sql
 SELECT SESSIONPROPERTY('ARITHABORT');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 

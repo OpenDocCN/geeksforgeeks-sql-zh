@@ -10,12 +10,12 @@
 
 **语法**:
 
-```
+```sql
 SELECT id, first_name, last_name, first_name || last_name, 
                salary, first_name || salary FROM myTable
 ```
 
-```
+```sql
 Output (Third and Fifth Columns show  values concatenated by operator ||)
 id  first_name  last_name    first_name||last_name  salary   first_name||salary    
 1   Rajat        Rawat          RajatRawat          10000    Rajat10000                                                               
@@ -32,13 +32,13 @@ id  first_name  last_name    first_name||last_name  salary   first_name||salary
 **例 1** :使用文字
 **语法**:
 
-```
+```sql
 SELECT id, first_name, last_name, salary, 
       first_name||' has salary '||salary as "new"  FROM myTable
 
 ```
 
-```
+```sql
 Output : (Concatenating three values and giving a name 'new')
 id  first_name  last_name  salary            new
 1   Rajat        Rawat     10000      Rajat has salary 10000
@@ -53,13 +53,13 @@ id  first_name  last_name  salary            new
 **例 2** :使用字符和数字文字
 **语法**:
 
-```
+```sql
 SELECT id, first_name, last_name, salary, first_name||100||' 
                           has id '||id AS "new" FROM myTable
 
 ```
 
-```
+```sql
 Output (Making readable output by concatenating a string
 with values)
 

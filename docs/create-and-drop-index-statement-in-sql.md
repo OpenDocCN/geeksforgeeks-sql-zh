@@ -8,14 +8,14 @@ CREATE INDEX 语句将在表中创建索引。**索引**用于更快地从数据
 **语法:**
 在表上创建索引:
 
-```
+```sql
 CREATE INDEX indexname
 ON tablename (columnname1, columnname2, ...);
 ```
 
 在表上创建唯一索引–
 
-```
+```sql
 CREATE UNIQUE INDEX indexname
 ON tablename (columnname1, columnname2, ...);
 ```
@@ -23,14 +23,14 @@ ON tablename (columnname1, columnname2, ...);
 **示例–**
 下面的 SQL 语句将在“GeeksTab”表的“LastName”列上创建一个名为“idx_name”的索引–
 
-```
+```sql
 CREATE INDEX idx_name
 ON GeeksTab (LastName);
 ```
 
 要在多列上创建索引–
 
-```
+```sql
 CREATE INDEX idx_pname
 ON GeeksTab (LastName, FirstName);
 ```
@@ -40,12 +40,12 @@ ON GeeksTab (LastName, FirstName);
 
 **语法:**
 
-```
+```sql
 DROP INDEX tablename.indexname;
 ```
 
 **示例–**
 
-```
+```sql
 DROP INDEX GeeksTab.idx_pname;
 ```

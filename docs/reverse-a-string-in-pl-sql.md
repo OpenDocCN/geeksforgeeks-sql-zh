@@ -10,7 +10,7 @@
 
 示例:
 
-```
+```sql
 Input: skeegrofskeeg
 Output: geeksforgeeks
 
@@ -28,7 +28,7 @@ Output: skeeg
 
 下面是需要的实现:
 
-```
+```sql
 DECLARE
     -- declare variable str , len 
     -- and str1 of datatype varchar
@@ -54,7 +54,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Reverse of string is geeksforgeeks
 
 ```

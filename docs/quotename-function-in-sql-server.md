@@ -16,7 +16,7 @@ SQL Server 中的这个函数用于返回一个添加了分隔符的 Unicode 字
 
 **语法:**
 
-```
+```sql
 QUOTENAME(string, quote_char)
 ```
 
@@ -32,13 +32,13 @@ QUOTENAME(string, quote_char)
 **示例-1 :**
 获取字符串“xyz”的 Unicode 字符串。
 
-```
+```sql
 SELECT QUOTENAME('xyz');
 ```
 
 **输出:**
 
-```
+```sql
 [xyz]
 ```
 
@@ -47,13 +47,13 @@ SELECT QUOTENAME('xyz');
 **示例-2 :**
 获取带括号分隔符的 Unicode 字符串。
 
-```
+```sql
 SELECT QUOTENAME('abc', '{}');
 ```
 
 **输出:**
 
-```
+```sql
 {abc}
 ```
 
@@ -62,7 +62,7 @@ SELECT QUOTENAME('abc', '{}');
 **示例-3 :**
 使用带有变量的 QUOTENAME()函数，获取指定字符串的 Unicode 字符串。
 
-```
+```sql
 DECLARE @string VARCHAR(3);  
 SET @string = '123';  
 SELECT QUOTENAME(@string);
@@ -70,14 +70,14 @@ SELECT QUOTENAME(@string);
 
 **输出:**
 
-```
+```sql
 [123]
 ```
 
 **示例-4 :**
 使用带有变量的 QUOTENAME()函数，获取指定字符串的 Unicode 字符串以及分隔符。
 
-```
+```sql
 DECLARE @string VARCHAR(4);
 DECLARE @delimiter VARCHAR(2);
 SET @string = 'jk12';
@@ -88,20 +88,20 @@ SELECT QUOTENAME(@string, @delimiter);
 
 **输出:**
 
-```
+```sql
 (jk12)
 ```
 
 **示例-5 :**
 获取带大于号的 Unicode 字符串。
 
-```
+```sql
 SELECT QUOTENAME('23', '>');
 ```
 
 **输出:**
 
-```
+```sql
 <23>
 ```
 

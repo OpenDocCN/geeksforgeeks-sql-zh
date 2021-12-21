@@ -13,7 +13,7 @@ Oracle 12c、Oracle 11g、Oracle 10g、Oracle 9i、Oracle 8i 支持此功能。
 
 **示例–**
 
-```
+```sql
 INPUT: STR1='PL' , STR2='SQL'
 OUTPUT:PL SQL
 
@@ -26,7 +26,7 @@ OUTPUT:GEEKS FOR GEEKS
 
 **语法–**
 
-```
+```sql
 concat(source1,source2);
 ```
 
@@ -36,7 +36,7 @@ concat(source1,source2);
 
 **示例 1–**
 
-```
+```sql
 DECLARE
 str1 varchar2(25);
 str2 varchar2(25);
@@ -59,7 +59,7 @@ END;
 
 **示例 2–**
 
-```
+```sql
 DECLARE
 str1 varchar2(25);
 str2 varchar2(25);
@@ -99,7 +99,7 @@ END;
 
 **示例–**
 
-```
+```sql
 INPUT-COMPOSE('o' || unistr('\0308') )
 OUTPUT-ö
 
@@ -109,7 +109,7 @@ OUTPUT-â
 
 **语法–**
 
-```
+```sql
 COMPOSE(STRING)
 ```
 
@@ -119,7 +119,7 @@ COMPOSE(STRING)
 
 **示例 1–**
 
-```
+```sql
 DECLARE 
    Var1 char:='g';
    Var2 char:='f';
@@ -138,7 +138,7 @@ END;
 
 **示例 2–**
 
-```
+```sql
 DECLARE 
    Var1 char:='g';   
 BEGIN 

@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE CLUSTER <Cluster Name> 
 (<Column> <Data Type> 
 [, <Column> <Data Type> ] . . . . . )
@@ -24,7 +24,7 @@ CREATE CLUSTER <Cluster Name>
 
 **示例–**
 
-```
+```sql
 create table branch_master 
 ( 
 "branch_code" varchar(10) PRIMARY KEY, 
@@ -36,7 +36,7 @@ create table branch_master
 现在，考虑上面创建的表，让我们为其创建集群。
 **创建集群:**
 
-```
+```sql
 create cluster branch_info
 ( 
 "branch_code" varchar(10)

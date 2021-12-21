@@ -12,7 +12,7 @@
 
 使用如下 SQL 查询创建数据库极客。
 
-```
+```sql
  CREATE DATABASE GeeksForGeeks;
 ```
 
@@ -22,7 +22,7 @@
 
 使用数据库学生使用如下 SQL 查询。
 
-```
+```sql
 USE GeeksForGeeks;
 ```
 
@@ -30,7 +30,7 @@ USE GeeksForGeeks;
 
 使用 SQL 查询创建学生、课程和讲师三个表，如下所示:
 
-```
+```sql
 CREATE TABLE student
 ( stu_id varchar(10),
  stu_name varchar(20),
@@ -42,7 +42,7 @@ CREATE TABLE student
 
 ![](img/f96b563d07382e0d2717cf8be3d3d996.png)
 
-```
+```sql
 CREATE TABLE course
 (
   course_id varchar(10),
@@ -52,7 +52,7 @@ CREATE TABLE course
 
 ![](img/97f1a90660abaf2e6645b61012902ae4.png)
 
-```
+```sql
 CREATE TABLE lecturer
 (
   lecturer_id varchar(10),
@@ -66,7 +66,7 @@ CREATE TABLE lecturer
 
 要查看数据库 GeeksForGeeks 中三个表的描述，请使用如下 SQL 查询。
 
-```
+```sql
 EXEC sp_columns student;
 EXEC sp_columns course;
 EXEC sp_columns lecturer;
@@ -78,7 +78,7 @@ EXEC sp_columns lecturer;
 
 使用以下 SQL 查询将行插入学生表，如下所示:
 
-```
+```sql
 INSERT INTO student VALUES
 ('1901401','DEVA','CS1003','C.S', 'P4002'),
 ('1901402','HARSH','CS1001','C.S', 'P4001'),
@@ -94,7 +94,7 @@ INSERT INTO student VALUES
 
 使用以下 SQL 查询将行插入课程表，如下所示:
 
-```
+```sql
 INSERT INTO course VALUES
 ('CS1001', 'DBMS'),
 ('CS1002', 'O.S'),
@@ -107,7 +107,7 @@ INSERT INTO course VALUES
 
 使用以下 SQL 查询将行插入讲师表，如下所示:
 
-```
+```sql
 INSERT INTO lecturer VALUES
 ('P4001', 'RAMESH'),
 ('P4002', 'RAVINDER'),
@@ -122,7 +122,7 @@ INSERT INTO lecturer VALUES
 
 使用如下 SQL 查询在插入行后查看三个表。
 
-```
+```sql
 SELECT* FROM student;
 SELECT* FROM course;
 SELECT* FROM lecturer;
@@ -134,7 +134,7 @@ SELECT* FROM lecturer;
 
 多重连接的语法:
 
-```
+```sql
 SELECT column_name1,column_name2,..
 FROM table_name1
 INNER JOIN 
@@ -157,7 +157,7 @@ ON condition_3
 
 两张桌子上的内部连接学生和课程:
 
-```
+```sql
 SELECT *
 FROM student  
 INNER JOIN 
@@ -172,7 +172,7 @@ student.course_id = course.course_id;
 
 三张桌子上的内部连接学生、课程和讲师:
 
-```
+```sql
 SELECT *
 FROM student  
 INNER JOIN  
@@ -191,7 +191,7 @@ student.lecturer_id = lecturer.lecturer_id;
 
 三个表的内部连接学生，课程，讲师，但是通过选择特定表的特定列。
 
-```
+```sql
 SELECT stu_id, stu_name,course.course_id,course.course_name,
 lecturer.lecturer_name
 FROM student  

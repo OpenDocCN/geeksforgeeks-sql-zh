@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 STDDEV(expr);
 ```
 
@@ -22,7 +22,7 @@ STDDEV(expr);
 
 **创建学生标记表:**
 
-```
+```sql
 CREATE TABLE StudentMarks
 (
 StudentId INT AUTO_INCREMENT,  
@@ -38,7 +38,7 @@ PRIMARY KEY(StudentId )
 
 向表中插入数据:
 
-```
+```sql
 INSERT INTO StudentMarks
 (StudentName, Roll, Sub1Mark, Sub2Mark, Sub3Mark, TotalMarks)
 VALUES
@@ -52,7 +52,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 SELECT  * from StudentMarks;
 ```
 
@@ -69,7 +69,7 @@ SELECT  * from StudentMarks;
 
 现在我们要找到 sub1mark 列的标准差。
 
-```
+```sql
 SELECT  STDDEV(Sub1Mark) as Sub1StandardDeviation  
 FROM StudentMarks;
 ```
@@ -84,7 +84,7 @@ FROM StudentMarks;
 
 现在我们要找到总分栏的总体标准差。
 
-```
+```sql
 SELECT  STDDEV(TotalMarks) as StdDevOfTotalMarks  
 FROM StudentMarks;
 ```
@@ -97,7 +97,7 @@ FROM StudentMarks;
 
 **示例-3 :** 在本例中，我们将找到在“XYZ 数字”公司工作的员工收入的总体标准差。为了演示，创建一个名为**的表格。**
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 
     Employee_Id INT AUTO_INCREMENT,  
@@ -112,7 +112,7 @@ CREATE TABLE EmployeeDetails(
 
 向表中插入数据:
 
-```
+```sql
 INSERT INTO  
     EmployeeDetails(Employee_Name, Working_At, Work_Location, Joining_Date, Annual_Income )
 
@@ -131,7 +131,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 Select * FROM EmployeeDetails;
 ```
 
@@ -152,7 +152,7 @@ Select * FROM EmployeeDetails;
 
 现在我们要找出在“XYZ 数字”工作的员工年收入的总体标准差。
 
-```
+```sql
 SELECT  STDDEV(Annual_Income) as StdDevOfAnnualIncome  
 FROM EmployeeDetails where WORKING_AT = 'XYZ Digital';
 

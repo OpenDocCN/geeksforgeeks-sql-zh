@@ -7,7 +7,7 @@
 **使用 CTE–**
 我们可以通过在 SELECT、INSERT、UPDATE、DELETE 或 MERGE 语句前直接添加 WITH 子句来定义 CTEs。WITH 子句可以包含一个或多个用逗号分隔的 cte。可以遵循以下语法:
 
-```
+```sql
 [WITH  [, ...]]  
 
 ::=
@@ -26,7 +26,7 @@ AS (cte_query)
 
 **创建一个表:**
 
-```
+```sql
 CREATE TABLE Employees
 (
   EmployeeID int NOT NULL PRIMARY KEY,
@@ -49,7 +49,7 @@ INSERT INTO Employees VALUES (10, 'Michael', 'Jhonson', 6)
 
 创建雇员表后，将创建以下 SELECT 语句，该语句前面有一个 WITH 子句，该子句包含一个名为“字符报告”的 CTE:
 
-```
+```sql
 WITH
   cteReports (EmpID, FirstName, LastName, MgrID, EmpLevel)
   AS

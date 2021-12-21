@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LOG(X)
 
 ```
@@ -19,7 +19,7 @@ LOG(X)
 
 **示例-1 :** 使用 LOG()函数对给定数字进行对数运算。
 
-```
+```sql
 SELECT LOG(5) AS Log_Val ;
 
 ```
@@ -32,7 +32,7 @@ SELECT LOG(5) AS Log_Val ;
 
 **示例-2 :** 使用 LOG()函数对 0 求对数。
 
-```
+```sql
 SELECT LOG(0) AS Log_Val ;
 
 ```
@@ -49,7 +49,7 @@ SELECT LOG(0) AS Log_Val ;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO 
     Product(Product_name, Buying_price, Selling_price, Service_grade)
 VALUES
@@ -63,7 +63,7 @@ VALUES
 
 所以，我们的桌子看起来像:
 
-```
+```sql
 mysql> Select * from Product;
 +------------+----------------+--------------+---------------+---------------+
 | Product_id | Product_name   | Buying_price | Selling_price | Service_grade |
@@ -80,7 +80,7 @@ mysql> Select * from Product;
 
 现在，我们将找到 Service_grade 列中所有记录的对数值。
 
-```
+```sql
 Select Product_id,  
  Product_name,  
  Buying_price,  
@@ -93,7 +93,7 @@ Select Product_id,
 
 **输出:**
 
-```
+```sql
 +------------+----------------+--------------+---------------+---------------+----------------------+
 | Product_id | Product_name   | Buying_price | Selling_price | Service_grade | GRADELOG             |
 +------------+----------------+--------------+---------------+---------------+----------------------+

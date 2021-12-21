@@ -12,19 +12,19 @@
 
 **第一步:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 **步骤 2:** 使用该数据库–
 
-```
+```sql
 USE GFG
 ```
 
 **步骤 3:** 创建一个表作为**日**–
 
-```
+```sql
 CREATE TABLE geeksforgeeks 
                   (VALUE integer,
                   FirstDay varchar(20))
@@ -32,7 +32,7 @@ CREATE TABLE geeksforgeeks
 
 描述这张表–
 
-```
+```sql
 sp_help 'dbo.daysData'
 ```
 
@@ -42,7 +42,7 @@ sp_help 'dbo.daysData'
 
 **第 4 步:**在表格中插入数值–
 
-```
+```sql
 USE [GFG]
 GO
 
@@ -102,7 +102,7 @@ GO
 
 **步骤 5:** 检查现有的一周第一天–
 
-```
+```sql
 SELECT @@DATEFIRST
 ```
 
@@ -112,7 +112,7 @@ SELECT @@DATEFIRST
 
 **第 6 步:**现在使用**日期优先–**设置一周的第一天
 
-```
+```sql
 SET DATEFIRST 1
 ```
 

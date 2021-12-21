@@ -8,7 +8,7 @@
 
 **1。枢轴:**
 
-```
+```sql
 SELECT (ColumnNames) 
 FROM (TableName) 
 PIVOT
@@ -21,7 +21,7 @@ PIVOT
 
 **2 .un ivot:t1]**
 
-```
+```sql
 SELECT (ColumnNames) 
 FROM (TableName) 
 UNPIVOT
@@ -35,7 +35,7 @@ UNPIVOT
 **示例-1:**
 我们创建了一个名为“geeksforgeeks”的简单表格，其中包含课程名称、课程类别和价格等值，并插入了相应的值。
 
-```
+```sql
 Create Table geeksforgeeks 
 ( 
 CourseName nvarchar(50), 
@@ -66,7 +66,7 @@ SELECT * FROM geeksforgeeks
 
 现在，对该数据应用**透视**运算符:
 
-```
+```sql
 SELECT CourseName, PROGRAMMING, INTERVIEWPREPARATION
 FROM geeksforgeeks 
 PIVOT 
@@ -94,7 +94,7 @@ SUM(Price) FOR CourseCategory IN (PROGRAMMING, INTERVIEWPREPARATION )
 
 应用**解锁**操作符:
 
-```
+```sql
 SELECT CourseName, CourseCategory, Price 
 FROM 
 (

@@ -6,7 +6,7 @@
 
 **创建数据库:**
 
-```
+```sql
 Syntax : 
 CREATE DATABASE <DatabaseName>;
 Example :
@@ -17,7 +17,7 @@ Query returned successfully in 3 secs 817 msec.
 
 **使用数据库:**
 
-```
+```sql
 Syntax :
 USE <DatabaseName>;
 Example :
@@ -28,7 +28,7 @@ USE CSEportal;
 
 **创建表格:**
 
-```
+```sql
 Syntax :
 CREATE TABLE TableName (field1 dataType1 , field2 dataType2...fieldN dataTypeN);
 Example : 
@@ -42,7 +42,7 @@ courses VARCHAR(40));
 
 **在表中插入记录:**
 
-```
+```sql
 Syntax :
 INSERT INTO tablename (field1,field2,...fieldN) VALUES (value1,value2...valueN);
 Example :
@@ -51,7 +51,7 @@ INSERT INTO GeeksforGeeks(sno,Description,Courses) VALUES(1,'Cse Portal','DBMS')
 
 同样，我们可以使用这个 INSERT INTO 命令来填充我们的表。要查看创建的表，我们可以运行如下所示的 SELECT 命令:
 
-```
+```sql
 SELECT * from GeeksforGeeks;
 ```
 
@@ -63,7 +63,7 @@ SELECT * from GeeksforGeeks;
 
 现在我们可以继续编写我们的 SQL 查询来查找所有行中的最大值，这可以使用 SQL 中的 ***MAX(字段)*** 函数来完成。让我们尝试检索字段“描述”的最大值，如下所示:
 
-```
+```sql
 Select max(Description) as Maximum from GeeksforGeeks;
 ```
 
@@ -75,7 +75,7 @@ Select max(Description) as Maximum from GeeksforGeeks;
 
 在这里，我们将“*很好地解释为“*”作为输出，因为它是表中所有行的最大值。让我们尝试将此应用于包含一些数值的字段，以获得更清晰的概念。
 
-```
+```sql
  Select max(sno) from GeeksforGeeks;
 ```
 
@@ -85,7 +85,7 @@ Select max(Description) as Maximum from GeeksforGeeks;
 
 显然，4 是表中所有行的最大值，因此我们的输出是 4。另外，这里我们没有使用‘as’关键字，所以在结果字段中，我们得到了‘*max(SnO)‘*作为它的名称。这是一个可选步骤，可以用与上面所示相同的方式完成。我们还可以使用如下所示的单个查询从所有行中检索多个字段的最大值:
 
-```
+```sql
 Query:
 Select max(sno),max(description) from GeeksforGeeks;
 

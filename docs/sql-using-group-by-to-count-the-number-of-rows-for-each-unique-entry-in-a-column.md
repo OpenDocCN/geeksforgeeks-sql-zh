@@ -14,7 +14,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -32,7 +32,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE int,
@@ -43,7 +43,7 @@ CITY VARCHAR(10));
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES ('Romy',23,'Delhi'),
 ('Pushkar',23,'Delhi'),
 ('Nikhil',24,'Punjab'),
@@ -58,7 +58,7 @@ INSERT INTO demo_table VALUES ('Romy',23,'Delhi'),
 
 执行以下查询查看表格的内容
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -73,14 +73,14 @@ SELECT * FROM demo_table;
 
 **语法(计算所有行):**
 
-```
+```sql
 SELECT COUNT(*)
 FROM table_name;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT COUNT(*) FROM demo_table;
 ```
 
@@ -98,7 +98,7 @@ SELECT COUNT(*) FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT AGE, COUNT(*) as COUNT from demo_table GROUP BY AGE;
 ```
 
@@ -108,7 +108,7 @@ SELECT AGE, COUNT(*) as COUNT from demo_table GROUP BY AGE;
 
 *   用于计算“城市”列中的唯一值。
 
-```
+```sql
 SELECT CITY,COUNT(*) as COUNT from demo_table GROUP BY CITY;
 ```
 

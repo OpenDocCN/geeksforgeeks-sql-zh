@@ -14,13 +14,13 @@
 
 **步骤 1:** 创建数据库大学:
 
-```
+```sql
 CREATE DATABASE student;
 ```
 
 **步骤 2:** 使用数据库学生:
 
-```
+```sql
 USE student;
 ```
 
@@ -28,7 +28,7 @@ USE student;
 
 在 MSSQL 中，有接受日期的数据类型 DATE。
 
-```
+```sql
 CREATE TABLE assignment_details
 (
     stu_id VARCHAR(20),
@@ -43,7 +43,7 @@ CREATE TABLE assignment_details
 
 **第 4 步:**在表赋值 _ 明细中添加行:
 
-```
+```sql
 INSERT INTO assignment_details VALUES
 ('191021','SUJITH','DBMS','2021-04-21','2021-04-25'),
 ('191022','SUDEEP','DBMS','2021-04-21','2021-04-20'),
@@ -57,7 +57,7 @@ INSERT INTO assignment_details VALUES
 
 **步骤 5:** 查看表格中的行:
 
-```
+```sql
 SELECT * FROM assignment_details;
 ```
 
@@ -65,7 +65,7 @@ SELECT * FROM assignment_details;
 
 **查询 1:** 显示在‘2021-04-20’提交的学生。
 
-```
+```sql
 SELECT * FROM assignment_details
 WHERE submission_date='2021-04-20';
 ```
@@ -74,7 +74,7 @@ WHERE submission_date='2021-04-20';
 
 **查询 2:** 显示到期日之后提交的学生。
 
-```
+```sql
 SELECT * FROM assignment_details
 WHERE due_date<submission_date;
 ```
@@ -83,7 +83,7 @@ WHERE due_date<submission_date;
 
 **查询 3:** 显示到期日前提交的学生。
 
-```
+```sql
 SELECT * FROM assignment_details
 WHERE due_date>=submission_date;
 ```
@@ -92,7 +92,7 @@ WHERE due_date>=submission_date;
 
 **查询 4:** 显示按时提交作业的学生。
 
-```
+```sql
 SELECT stu_id,stu_name,submission_date FROM assignment_details
 WHERE assn_name='O.S' AND due_date>=submission_date;
 ```

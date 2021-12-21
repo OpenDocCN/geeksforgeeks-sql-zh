@@ -8,7 +8,7 @@ DISTINCT 在某些情况下很有用，但它有一个缺点，那就是它会�
 
 **1。使用[行号](https://docs.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-2017)删除重复项。**
 
-```
+```sql
 WITH CTE (Col1, Col2, Col3, DuplicateCount)
 AS
 (
@@ -22,14 +22,14 @@ AS
 **2。使用自连接**
 表删除重复项
 
-```
+```sql
 emp_name   emp_address  sex  matial_status  
 uuuu       eee          m    s
 iiii       iii          f    s
 uuuu       eee          m    s
 ```
 
-```
+```sql
 SELECT emp_name, emp_address, sex, marital_status
 from YourTable a
 WHERE NOT EXISTS (select 1 
@@ -43,7 +43,7 @@ WHERE NOT EXISTS (select 1
 **3。使用**
 分组删除重复项的想法是根据输出中要选择的所有列进行分组。例如，如果我们希望打印“名字、姓氏和手机号”的唯一值，我们可以简单地将这三个值分组。
 
-```
+```sql
 SELECT FirstName, LastName, MobileNo
 FROM  CUSTOMER
 GROUP BY FirstName, LastName, MobileNo;

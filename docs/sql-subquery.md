@@ -18,7 +18,7 @@
 **语法:**
 子查询没有任何通用语法。但是，子查询在 SELECT 语句中使用最频繁，如下所示:
 
-```
+```sql
 SELECT column_name
 FROM table_name
 WHERE column_name *expression operator* 
@@ -50,7 +50,7 @@ WHERE column_name *expression operator*
 
 *   To display NAME, LOCATION, PHONE_NUMBER of the students from DATABASE table whose section is A
 
-    ```
+    ```sql
     Select NAME, LOCATION, PHONE_NUMBER from DATABASE 
     WHERE ROLL_NO IN
     (SELECT ROLL_NO from STUDENT where SECTION=’A’); 
@@ -80,7 +80,7 @@ WHERE column_name *expression operator*
 
     要将 Student2 插入 Student1 表:
 
-    ```
+    ```sql
     INSERT INTO Student1  SELECT * FROM Student2;
 
     ```
@@ -92,7 +92,7 @@ WHERE column_name *expression operator*
     随机存取存储器(random access memory 的缩写)ˌ随机访问内存(random-access memory 的缩写)One hundred and onechennaiNine billion nine hundred and eighty-eight million seven hundred and seventy-three thousand three hundred and forty-four拉朱One hundred and two哥印拜陀Nine billion ninety million nine hundred and nine thousand and ninety拉维河One hundred and three塞伦Eight billion nine hundred and eighty-nine million eight hundred and ninety-eight thousand nine hundred and eighty-nine统治One hundred and elevenchennaiEight billion seven hundred and eighty-seven million eight hundred and seventy-eight thousand seven hundred and eighty-seven日本短剑One hundred and twelve孟买Six billion five hundred and sixty-five million six hundred and fifty-six thousand five hundred and sixty-five斯里One hundred and thirteen哥印拜陀7878787878
 *   删除学生 2 表格中的学生，该表格的序号与学生 1 表格中的序号相同，并且位置与钦奈相同
 
-    ```
+    ```sql
     DELETE FROM Student2 
     WHERE ROLL_NO IN ( SELECT ROLL_NO 
                        FROM Student1 
@@ -102,7 +102,7 @@ WHERE column_name *expression operator*
 
     输出:
 
-    ```
+    ```sql
     1 row delete successfully.
 
     ```
@@ -115,7 +115,7 @@ WHERE column_name *expression operator*
 
     T25】赛112T29】孟买6565656565T34斯里T37】113【T33 学生对学生 2 表中的极客，其位置与学生 1 表中的拉朱、拉维相同
 
-    ```
+    ```sql
     UPDATE Student2 
     SET NAME=’geeks’ 
     WHERE LOCATION IN ( SELECT LOCATION 
@@ -126,7 +126,7 @@ WHERE column_name *expression operator*
 
     输出:
 
-    ```
+    ```sql
     1 row updated successfully.
 
     ```

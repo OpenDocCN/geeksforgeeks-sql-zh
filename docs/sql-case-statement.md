@@ -9,7 +9,7 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
 
 1.  第一种方法采用一个名为 case_value 的变量，并将其与某个 statement_list 进行匹配。
 
-    ```
+    ```sql
     CASE case_value
         WHEN when_value THEN statement_list
         [WHEN when_value THEN statement_list] ...
@@ -20,7 +20,7 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
 
 2.  第二种方法考虑 search_condition 而不是变量 equality，并相应地执行语句 _list。
 
-    ```
+    ```sql
     CASE
         WHEN search_condition THEN statement_list
         [WHEN search_condition THEN statement_list] ...
@@ -48,7 +48,7 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
     **示例查询:**
     考虑一个变量，在 SQL 代码中输入的 department_name。
 
-    ```
+    ```sql
     CASE department_name
      WHEN 'CS'
       THEN UPDATE Faculty SET
@@ -64,14 +64,14 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
 
     输出:
 
-    ```
+    ```sql
     The department name corresponding to the given input gets renamed.
 
     ```
 
     考虑另一个查询，该查询选择对应于教员表的所有字段。由于在性别字段中写入的值是单字符值(M/F)，我们希望以更易读的格式呈现它们。
 
-    ```
+    ```sql
     SELECT FacultyID, Name, Department,
     CASE Gender
      WHEN'M' THEN 'Male'
@@ -93,7 +93,7 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
 
     再考虑一下 SQL 定制排序中大小写切换的另一个应用。
 
-    ```
+    ```sql
     CREATE PROCEDURE GetFaculty(@ColToSort varchar(150)) AS
     SELECT FacultyID, Name, Gender, Department
     FROM Customers
@@ -108,7 +108,7 @@ CASE 语句是 SQL 处理 if/then 逻辑的方式。
 
     输出:
 
-    ```
+    ```sql
     The output gets sorted according to the provided field.
 
     ```

@@ -35,13 +35,13 @@ rev = 54321
 
 更多示例:
 
-```
+```sql
 Input : 123456
 Output :654321
 
 ```
 
-```
+```sql
 Input :87459
 Output :95478
 
@@ -49,7 +49,7 @@ Output :95478
 
 以下是所需的实现:
 
-```
+```sql
 SET SERVEROUTPUT ON;
 DECLARE
 -- declare a number 'num' for reading actual input
@@ -79,7 +79,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Enter value for num : 157439
 Reverse of the number is: 934751
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SUBDATE(date, INTERVAL expr unit)
 
 ```
@@ -46,7 +46,7 @@ SUBDATE(date, INTERVAL expr unit)
 **示例-1 :**
 从日期中减去一个间隔值，并返回日期，其中日期以 YYYY-MM-DD 格式指定，间隔以天为单位:
 
-```
+```sql
 SELECT SUBDATE("2020-11-25", INTERVAL 30 DAY) 
 AS RESULTANTDATE;
 
@@ -61,7 +61,7 @@ AS RESULTANTDATE;
 **示例-2 :**
 从日期中减去一个间隔值，并返回以 YYYY-MM-DD 格式指定日期的日期和以负月份为单位的间隔:
 
-```
+```sql
 SELECT SUBDATE("2020-11-25", INTERVAL -02 MONTH) 
 AS RESULTANTDATE;
 
@@ -76,7 +76,7 @@ AS RESULTANTDATE;
 **示例-3 :**
 从日期中减去一个间隔值，并返回日期，其中日期以 YYYY-MM-DD 格式指定，间隔以小时为单位。
 
-```
+```sql
 SELECT SUBDATE("2020-11-25 04:12:06",  INTERVAL 09 HOUR) 
 AS RESULTANTDATE;
 
@@ -91,7 +91,7 @@ AS RESULTANTDATE;
 **示例-4 :**
 从日期中减去一个间隔值，并返回日期，其中日期以 YYYY-MM-DD 和 Interval in QUARTER 的格式指定。
 
-```
+```sql
 SELECT SUBDATE("2020-11-25 04:12:06",  INTERVAL 09 QUARTER) 
 AS RESULTANTDATE;
 
@@ -106,7 +106,7 @@ AS RESULTANTDATE;
 **例 5 :**
 从日期中减去一个区间值，返回以 YYYY-MM-DD 和 Interval in -YEAR 格式指定日期的日期。
 
-```
+```sql
 SELECT SUBDATE("2020-11-25 12:19:36",  INTERVAL -01 YEAR) 
 AS RESULTANTDATE;
 

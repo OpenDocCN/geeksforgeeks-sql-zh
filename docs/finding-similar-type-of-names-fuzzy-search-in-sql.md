@@ -58,7 +58,7 @@ SOUNDEX()函数可以发现名称中的不一致。SOUNDEX()可以评估两个�
 **病例-1 :**
 **名字与** **完全相同，但姓氏相似类型:**
 
-```
+```sql
 select distinct ss.firstname,ss.lastname,sd.firstname,sd.lastname
 from load as ss, load as sd
 where ss.firstName=sd.firstName and SOUNDEX(ss.lastName)=SOUNDEX(sd.lastname)
@@ -83,7 +83,7 @@ where ss.firstName=sd.firstName and SOUNDEX(ss.lastName)=SOUNDEX(sd.lastname)
 ****病例-2 :**
 **姓氏完全相同，但名字相似类型:****
 
-```
+```sql
 select distinct ss.lastname,ss.firstname,sd.lastname,sd.firstname
 from load as ss, load as sd
 where ss.lastname=sd.lastname and SOUNDEX(ss.firstname)=SOUNDEX(sd.firstname)

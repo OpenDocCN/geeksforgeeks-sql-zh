@@ -8,7 +8,7 @@ ALTER SQL 命令是一个 DDL(数据定义语言)语句。ALTER 用于更新数�
 
 **语法:**
 
-```
+```sql
 // add a column to the existing table
 
 ALTER TABLE tableName
@@ -41,7 +41,7 @@ ALTER COLUMN column_name column_type;
 
 **语法:**
 
-```
+```sql
 // table name that has to update
 
 UPDATE tableName

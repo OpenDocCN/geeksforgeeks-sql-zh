@@ -10,7 +10,7 @@ SOME 运算符计算外表和内表之间的条件，如果最终结果返回**�
 
 **语法:**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE expression comparison_operator SOME (subquery) 
@@ -30,7 +30,7 @@ WHERE expression comparison_operator SOME (subquery)
 
 **示例查询和输出:**
 
-```
+```sql
 select name
 from instructor
 where Salary > some(select Salary

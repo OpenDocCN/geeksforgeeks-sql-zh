@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 QUARTER(date)
 ```
 
@@ -20,7 +20,7 @@ QUARTER(date)
 
 使用季度()函数查找当前季度。
 
-```
+```sql
 SELECT QUARTER(NOW()) AS CURRENT_QUARTER;
 ```
 
@@ -34,7 +34,7 @@ SELECT QUARTER(NOW()) AS CURRENT_QUARTER;
 
 使用 Quarter()函数从给定的日期时间中查找季度。
 
-```
+```sql
 SELECT QUARTER('2020-04-26 08:09:22') AS QUARTER_NUMBER;
 ```
 
@@ -48,7 +48,7 @@ SELECT QUARTER('2020-04-26 08:09:22') AS QUARTER_NUMBER;
 
 当日期为空时，使用 Quarter()函数从给定的日期时间中查找季度。
 
-```
+```sql
 SELECT QUARTER(NULL) AS QUARTER_NUMBER;
 ```
 
@@ -66,7 +66,7 @@ SELECT QUARTER(NULL) AS QUARTER_NUMBER;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
   Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -89,7 +89,7 @@ VALUES
 
 现在，我们将使用 **MONTH ()** 功能来查找每个季度销售的产品数量。
 
-```
+```sql
 SELECT 
     QUARTER(Selling_Date) as quarter, 
     COUNT(Product_id) as PRODUCT_SOLD 

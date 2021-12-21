@@ -14,7 +14,7 @@
 
 **创建数据库日历:**
 
-```
+```sql
 CREATE DATABASE calendar;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE calendar;
 
 **使用数据库日历**
 
-```
+```sql
 USE calendar;
 ```
 
@@ -30,7 +30,7 @@ USE calendar;
 
 **创建表格时间表:**
 
-```
+```sql
 CREATE TABLE schedule
 (dates date);
 ```
@@ -39,7 +39,7 @@ CREATE TABLE schedule
 
 **查看表格描述:**
 
-```
+```sql
 DESCRIBE schedule;
 ```
 
@@ -47,7 +47,7 @@ DESCRIBE schedule;
 
 **在计划中插入行:**
 
-```
+```sql
 INSERT INTO schedule VALUES('2021-03-23');
 INSERT INTO schedule VALUES('2020-08-04');
 INSERT INTO schedule VALUES('2021-06-08');
@@ -60,7 +60,7 @@ INSERT INTO schedule VALUES('2025-09-13');
 
 **查看表中数据:**
 
-```
+```sql
 SELECT* FROMschedule;
 ```
 
@@ -70,7 +70,7 @@ SELECT* FROMschedule;
 
 为了得到当前日期的昨天和明天，我们可以使用 MySQL 中的 CURRDATE()函数，从中减去 1 得到昨天，再加上 1 得到明天。
 
-```
+```sql
 SELECT CURDATE(),
     DATE_SUB(CURDATE(),INTERVAL 1 DAY) AS yesterday,
     DATE_ADD(CURDATE(),INTERVAL 1 DAY) AS tomorrow;
@@ -89,7 +89,7 @@ SELECT CURDATE(),
 > 日期 _ 子(日期)、【间隔 1 天】作为某名称
 > 日期 _ 添加(日期)、【间隔 1 天】作为某名称；
 
-```
+```sql
  SELECT dates,
      DATE_SUB(dates,INTERVAL 1 DAY) AS yesterday,
      DATE_ADD(dates,INTERVAL 1 DAY) AS tomorrow
@@ -111,7 +111,7 @@ SELECT CURDATE(),
 > DAY name(前 _ 日)
 > DAYNAME(下 _ 日)；
 
-```
+```sql
   SELECT dates,
      DATE_SUB(dates,INTERVAL 1 DAY) AS yesterday,
      DATE_ADD(dates,INTERVAL 1 DAY) AS tomorrow,

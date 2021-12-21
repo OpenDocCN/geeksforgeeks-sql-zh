@@ -24,7 +24,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 1.  **INNER JOIN:** The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be same.
     **Syntax**:
 
-    ```
+    ```sql
     SELECT table1.column1,table1.column2,table2.column1,....
     FROM table1 
     INNER JOIN table2
@@ -44,7 +44,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
     *   This query will show the names and age of students enrolled in different courses.
 
-        ```
+        ```sql
         SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
         INNER JOIN StudentCourse
         ON Student.ROLL_NO = StudentCourse.ROLL_NO;
@@ -56,7 +56,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
 2.  **LEFT JOIN**: This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. The rows for which there is no matching row on right side, the result-set will contain *null*. LEFT JOIN is also known as LEFT OUTER JOIN.**Syntax:**
 
-    ```
+    ```sql
     SELECT table1.column1,table1.column2,table2.column1,....
     FROM table1 
     LEFT JOIN table2
@@ -73,7 +73,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
     **示例查询(左连接)**:
 
-    ```
+    ```sql
     SELECT Student.NAME,StudentCourse.COURSE_ID 
     FROM Student
     LEFT JOIN StudentCourse 
@@ -86,7 +86,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
 3.  **RIGHT JOIN**: RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain *null*. RIGHT JOIN is also known as RIGHT OUTER JOIN.**Syntax:**
 
-    ```
+    ```sql
     SELECT table1.column1,table1.column2,table2.column1,....
     FROM table1 
     RIGHT JOIN table2
@@ -103,7 +103,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
     **示例查询(右连接)**:
 
-    ```
+    ```sql
     SELECT Student.NAME,StudentCourse.COURSE_ID 
     FROM Student
     RIGHT JOIN StudentCourse 
@@ -116,7 +116,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
 4.  **FULL JOIN:** FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain *NULL* values.**Syntax:**
 
-    ```
+    ```sql
     SELECT table1.column1,table1.column2,table2.column1,....
     FROM table1 
     FULL JOIN table2
@@ -132,7 +132,7 @@ SQL Join 语句用于根据两个或多个表之间的公共字段组合它们�
 
     **示例查询(完全连接)**:
 
-    ```
+    ```sql
     SELECT Student.NAME,StudentCourse.COURSE_ID 
     FROM Student
     FULL JOIN StudentCourse 

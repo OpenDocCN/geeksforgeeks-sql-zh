@@ -6,7 +6,7 @@ MySQL **Version()** 函数用于返回 MySQL 数据库的当前版本。该函�
 
 **语法:**
 
-```
+```sql
 VERSION()
 ```
 
@@ -29,12 +29,12 @@ MySQL Version()函数以字符串形式返回 MySQL 数据库的版本。
 
 **示例:**在 MySQL 中实现 Version()函数。
 
-```
+```sql
 SELECT VERSION(); 
 ```
 
 **输出:**
 
-```
+```sql
 5.7.26-0ubuntu0.18.04.1 
 ```

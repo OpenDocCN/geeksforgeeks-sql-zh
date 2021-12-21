@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 LENGTH(string)
 ```
 
@@ -34,13 +34,13 @@ LENGTH(string)
 
 使用 LENGTH()函数并获取输出。
 
-```
+```sql
 SELECT LENGTH("GEEKSFORGEEKS");
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
@@ -48,7 +48,7 @@ SELECT LENGTH("GEEKSFORGEEKS");
 
 使用 LENGTH()函数并找到所有浮点值的长度。
 
-```
+```sql
 CREATE TABLE float061
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -75,7 +75,7 @@ SELECT LENGTH(float_val) FROM float061;
 
 **输出:**
 
-```
+```sql
     | LENGTH(float_val)|     
 -----------------------------
     |         3        | 
@@ -93,7 +93,7 @@ SELECT LENGTH(float_val) FROM float061;
 
 使用 LENGTH()函数并获取给定项目的长度。
 
-```
+```sql
 CREATE TABLE package099
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -109,7 +109,7 @@ SELECT LENGTH(item) FROM package099;
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -117,7 +117,7 @@ SELECT LENGTH(item) FROM package099;
 
 使用 LENGTH()函数并获取所有(MRP+销售价格)值的长度。
 
-```
+```sql
 CREATE TABLE package72
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -140,7 +140,7 @@ SELECT LENGTH(mrp+sp) FROM package72;
 
 **输出:**
 
-```
+```sql
     |  LENGTH(mrp+sp) |      
 -----------------------------
     |         3       | 

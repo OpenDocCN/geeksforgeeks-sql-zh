@@ -30,13 +30,13 @@ T35
 使用如下查询创建数据库。
 **语法:**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
 按如下方式创建数据库公司。
 
-```
+```sql
 CREATE DATABASE company;
 ```
 
@@ -48,7 +48,7 @@ CREATE DATABASE company;
 
 使用数据库公司使用如下 SQL 查询。
 
-```
+```sql
 syntax: USE database_name;
 ```
 
@@ -61,7 +61,7 @@ syntax: USE database_name;
 
 **语法:**
 
-```
+```sql
 CREATE TABLE table_name
 ( column_name1 data_type1 ,
 column_name2 data_type2 ,
@@ -73,7 +73,7 @@ column_nameN data_typeN , );
 
 创建表的 SQL 查询，如下所示。
 
-```
+```sql
 Creating a table employee 
 with 
 columns (emp_id,emp_name,emp_sex,emp_age,emp_salary) 
@@ -89,13 +89,13 @@ into a database company:
 
 **语法:**
 
-```
+```sql
 DESCRIBE table_name;
 ```
 
 用于验证列及其数据类型的 SQL 查询，如下所示。
 
-```
+```sql
 DESCRIBE employee;
 ```
 
@@ -108,7 +108,7 @@ DESCRIBE employee;
 
 **语法:**
 
-```
+```sql
 INSERT INTO table_name  
 VALUES(column1_data,column2_data,......columnN_data);
 ```
@@ -122,7 +122,7 @@ VALUES(column1_data,column2_data,......columnN_data);
 **步骤-7:验证插入的数据–**
 使用如下选择查询检查数据库中的插入数据。
 
-```
+```sql
 SELECT * FROM employee;
 ```
 
@@ -137,7 +137,7 @@ SELECT * FROM employee;
 查询查找薪资大于等于 1，000，000 的员工姓名。
 **SQL 查询–**
 
-```
+```sql
 SELECT emp_name
 FROM employee
 WHERE emp_salary>=100000;
@@ -151,7 +151,7 @@ WHERE emp_salary>=100000;
 查询查找薪资大于等于 2，000，000 的员工的所有详细信息。
 **SQL 查询–**
 
-```
+```sql
 SELECT emp_name
 FROM employee
 WHERE emp_salary>=200000;
@@ -165,7 +165,7 @@ WHERE emp_salary>=200000;
 查询查找工资 300 万的员工。
 **SQL 查询–**
 
-```
+```sql
 SELECT emp_name
 FROM employee
 WHERE emp_salary=300000;

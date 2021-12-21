@@ -30,7 +30,7 @@ SQL 逻辑运算符用于测试条件的真实性。像[比较](https://www.geek
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE xstream_db;
 ```
 
@@ -42,7 +42,7 @@ CREATE DATABASE xstream_db;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE employee (emp_id INT, emp_name VARCHAR(255), 
                                   emp_city VARCHAR(255),
                                   emp_country VARCHAR(255),
@@ -55,7 +55,7 @@ CREATE TABLE employee (emp_id INT, emp_name VARCHAR(255),
 
 **查询:**
 
-```
+```sql
 INSERT INTO employee VALUES (101, 'Utkarsh Tripathi', 'Varanasi', 'India'),
                             (102, 'Abhinav Singh', 'Varanasi', 'India'), 
                             (103, 'Utkarsh Raghuvanshi', 'Varanasi', 'India'),
@@ -76,7 +76,7 @@ INSERT INTO employee VALUES (101, 'Utkarsh Tripathi', 'Varanasi', 'India'),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_city = 'Allahabad' AND emp_country = 'India';
 ```
 
@@ -90,7 +90,7 @@ SELECT * FROM employee WHERE emp_city = 'Allahabad' AND emp_country = 'India';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_city IN ('Allahabad', 'Patna');
 ```
 
@@ -104,7 +104,7 @@ SELECT * FROM employee WHERE emp_city IN ('Allahabad', 'Patna');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_city NOT LIKE 'A%';
 ```
 
@@ -118,7 +118,7 @@ SELECT * FROM employee WHERE emp_city NOT LIKE 'A%';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_city = 'Varanasi' OR emp_country = 'India';
 ```
 
@@ -132,7 +132,7 @@ SELECT * FROM employee WHERE emp_city = 'Varanasi' OR emp_country = 'India';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_city LIKE 'P%';
 ```
 
@@ -146,7 +146,7 @@ SELECT * FROM employee WHERE emp_city LIKE 'P%';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_id BETWEEN 101 AND 104;
 ```
 
@@ -160,7 +160,7 @@ SELECT * FROM employee WHERE emp_id BETWEEN 101 AND 104;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_id = ALL 
                 (SELECT emp_id FROM employee WHERE emp_city = 'Varanasi');
 ```
@@ -175,7 +175,7 @@ SELECT * FROM employee WHERE emp_id = ALL
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_id = ANY
                 (SELECT emp_id FROM employee WHERE emp_city = 'Varanasi');
 ```
@@ -190,7 +190,7 @@ SELECT * FROM employee WHERE emp_id = ANY
 
 **查询:**
 
-```
+```sql
 SELECT emp_name FROM employee WHERE EXISTS
                 (SELECT emp_id FROM employee WHERE emp_city = 'Patna');
 ```
@@ -205,7 +205,7 @@ SELECT emp_name FROM employee WHERE EXISTS
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE emp_id < SOME 
                 (SELECT emp_id FROM employee WHERE emp_city = 'Patna');
 ```

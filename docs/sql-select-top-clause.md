@@ -6,7 +6,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 *   **基本语法:**
 
-    ```
+    ```sql
     SELECT TOP value column1,column2 FROM table_name;
     value: number of rows to return from top
     column1 , column2: fields in the table
@@ -16,7 +16,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 *   **语法使用百分比**
 
-    ```
+    ```sql
     SELECT TOP value PERCENT column1,column2 FROM table_name;
     value: percentage of number of rows to return from top
     column1 , column2: fields in the table
@@ -30,7 +30,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 *   To fetch first two data set from Student table.
 
-    ```
+    ```sql
     SELECT TOP 2 * FROM Student; 
 
     ```
@@ -44,7 +44,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 *   To fetch 50 percent of the total records from Student table.
 
-    ```
+    ```sql
     SELECT TOP 50 PERCENT * FROM Student; 
 
     ```
@@ -61,7 +61,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 3.  对于 MySQL 数据库:
 
-    ```
+    ```sql
     SELECT column1,column2 FROM table_name LIMIT value;
     column1 , column2: fields int the table
     table_name: name of table
@@ -71,7 +71,7 @@ SELECT TOP 子句用于从数据库中获取有限数量的行。这个子句在
 
 4.  For Oracle databases:
 
-    ```
+    ```sql
     SELECT column1,column2 FROM table_name WHERE ROWNUM <= value;
     column1 , column2: fields int the table
     table_name: name of table

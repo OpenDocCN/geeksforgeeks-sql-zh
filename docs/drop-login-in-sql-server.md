@@ -6,7 +6,7 @@
 
 **语法–**
 
-```
+```sql
 DROP LOGIN loginname;
 GO 
 ```
@@ -23,7 +23,7 @@ GO
 
 让我们假设，我们已经创建了以下登录:
 
-```
+```sql
 CREATE LOGIN geeks  
 WITH PASSWORD = ‘gEe@kF0rG##ks’; 
 ```
@@ -32,7 +32,7 @@ WITH PASSWORD = ‘gEe@kF0rG##ks’;
 
 **示例–**
 
-```
+```sql
 DROP LOGIN geeks; 
 ```
 

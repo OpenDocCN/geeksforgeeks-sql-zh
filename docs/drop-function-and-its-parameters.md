@@ -7,7 +7,7 @@
 
 **语法**:
 
-```
+```sql
 DROP FUNCTION [ IF EXISTS ] schema_name.function_name;
 
 ```
@@ -16,13 +16,13 @@ DROP FUNCTION [ IF EXISTS ] schema_name.function_name;
 
 让我们考虑极客是你想删除的功能，然后使用如下语法。
 
-```
+```sql
 DROP FUNCTION Geeks;
 ```
 
 **要删除多个用户定义的函数，请使用以下语法:**
 
-```
+```sql
 DROP FUNCTION [IF EXISTS]  
  schema_name.function_name1,  
  schema_name.function_name2,
@@ -49,7 +49,7 @@ DROP FUNCTION [IF EXISTS]
 
 **创建“极客折扣金额”功能–**
 
-```
+```sql
 CREATE FUNCTION Geek.discount_amount (
    @amount INT,
    @list DEC(10,2),
@@ -63,6 +63,6 @@ END
 
 要删除该函数，可以使用下面给出的 SQL 查询。
 
-```
+```sql
 DROP FUNCTION IF EXISTS Geek.discount_amount;
 ```

@@ -8,7 +8,7 @@ DBTYPE 函数返回的值取决于它在最近的 CREATE DATABASE 或 ALTER DATA
 
 **语法:**
 
-```
+```sql
 DBTIMEZONE
 ```
 
@@ -28,7 +28,7 @@ PLSQL 中的 DBTIMEZONE 函数返回时区偏移量或时区区域名称。
 
 **示例-1:** 显示数据库时区。
 
-```
+```sql
 SELECT
   DBTIMEZONE
 FROM
@@ -37,7 +37,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 +00:00 
 ```
 
@@ -45,7 +45,7 @@ FROM
 
 **示例-2:** 使用 ALTER 语句更改数据库时区后显示该时区。<
 
-```
+```sql
 ALTER DATABASE SET TIME_ZONE = ‘US/Michigan’;
 
 SELECT
@@ -56,6 +56,6 @@ FROM
 
 **输出:**
 
-```
+```sql
 US/Michigan 
 ```

@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 PERIOD_ADD( period, number)
 
 ```
@@ -28,42 +28,42 @@ PERIOD_ADD( period, number)
 
 **示例-1 :**
 
-```
+```sql
 SELECT PERIOD_ADD(202006, 6);
 
 ```
 
 **输出:**
 
-```
+```sql
 202012
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT PERIOD_ADD(201902, -10);
 
 ```
 
 **输出:**
 
-```
+```sql
 201804
 
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT PERIOD_ADD(1806, 5);
 
 ```
 
 **输出:**
 
-```
+```sql
 201811
 
 ```
@@ -74,7 +74,7 @@ SELECT PERIOD_ADD(1806, 5);
 
 **语法:**
 
-```
+```sql
 PERIOD_DIFF( period1, period2 )
 
 ```
@@ -92,42 +92,42 @@ PERIOD_DIFF( period1, period2 )
 
 **示例-1 :**
 
-```
+```sql
 SELECT PERIOD_DIFF(202005, 202002);
 
 ```
 
 **输出:**
 
-```
+```sql
 3
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT PERIOD_DIFF(1908, 1901);
 
 ```
 
 **输出:**
 
-```
+```sql
 7
 
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT PERIOD_DIFF(201903, 201909);
 
 ```
 
 **输出:**
 
-```
+```sql
 6
 
 ```

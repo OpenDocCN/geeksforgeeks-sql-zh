@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 Hex(number)
 
 ```
@@ -22,7 +22,7 @@ Hex(number)
 
 **示例-1:**2 的十六进制表示。
 
-```
+```sql
 SELECT Hex(2) AS HexNumber;
 
 ```
@@ -35,7 +35,7 @@ SELECT Hex(2) AS HexNumber;
 
 **示例-2:**13 的十六进制表示。
 
-```
+```sql
 SELECT Hex(13) AS HexNumber;
 
 ```
@@ -48,7 +48,7 @@ SELECT Hex(13) AS HexNumber;
 
 **示例-3:**1134.80 的十六进制表示。
 
-```
+```sql
 SELECT Hex(1134.80) AS HexNumber;        
 
 ```
@@ -63,7 +63,7 @@ SELECT Hex(1134.80) AS HexNumber;
 
 **语法:**
 
-```
+```sql
 Oct(number)
 
 ```
@@ -78,7 +78,7 @@ Oct(number)
 
 **示例-1:**7 的八进制表示。
 
-```
+```sql
 SELECT Oct(7) AS OctNumber;                
 
 ```
@@ -91,7 +91,7 @@ SELECT Oct(7) AS OctNumber;
 
 **示例-2:**111.45 的八进制表示。
 
-```
+```sql
 SELECT Oct(111.45) AS OctNumber;                
 
 ```

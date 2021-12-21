@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 CURDATE( )
 ```
 
@@ -18,37 +18,37 @@ CURDATE( )
 
 **示例-1 :**
 
-```
+```sql
 SELECT CURDATE();
 ```
 
 **输出:**
 
-```
+```sql
 '2020-10-17'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT CURDATE() + 0;
 ```
 
 **输出:**
 
-```
+```sql
 20201017
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT CURDATE() + 2;
 ```
 
 **输出:**
 
-```
+```sql
 20201019
 ```
 
@@ -57,7 +57,7 @@ SELECT CURDATE() + 2;
 
 **语法:**
 
-```
+```sql
 CURRENT_TIME( )
 ```
 
@@ -66,36 +66,36 @@ CURRENT_TIME( )
 
 **示例-1 :**
 
-```
+```sql
 SELECT CURRENT_TIME();
 ```
 
 **输出:**
 
-```
+```sql
 '07:25:28'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT CURRENT_TIME()+4;
 ```
 
 **输出:**
 
-```
+```sql
 072532
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT CURRENT_TIME()+0;
 ```
 
 **输出:**
 
-```
+```sql
 072528
 ```

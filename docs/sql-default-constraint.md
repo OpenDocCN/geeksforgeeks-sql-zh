@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE tablename (
 Columnname DEFAULT 'defaultvalue' );
 ```
@@ -16,7 +16,7 @@ Columnname DEFAULT 'defaultvalue' );
 **示例–**
 创建“极客”表时，为“位置”列设置默认值–
 
-```
+```sql
 CREATE TABLE Geeks (
 ID int NOT NULL,
 Name varchar(255),
@@ -24,7 +24,7 @@ Age int,
 Location varchar(255) DEFAULT 'Noida');
 ```
 
-```
+```sql
 INSERT INTO Geeks VALUES (4, 'Mira', 23, 'Delhi');
 INSERT INTO Geeks VALUES (5, 'Hema', 27);
 INSERT INTO Geeks VALUES (6, 'Neha', 25, 'Delhi');
@@ -33,7 +33,7 @@ INSERT INTO Geeks VALUES (7, 'Khushi', 26);
 
 **输出–**
 
-```
+```sql
 select *
 from Geeks;
 ```
@@ -53,7 +53,7 @@ from Geeks;
 
 **语法:**
 
-```
+```sql
 ALTER TABLE tablename
 ALTER COLUMN columnname 
 DROP DEFAULT;
@@ -61,7 +61,7 @@ DROP DEFAULT;
 
 **示例–**
 
-```
+```sql
 ALTER TABLE Geeks
 ALTER COLUMN Location
 DROP DEFAULT;
@@ -69,7 +69,7 @@ DROP DEFAULT;
 
 让我们在极客表中添加 2 个新行:
 
-```
+```sql
 INSERT INTO Geeks VALUES (8, 'Komal', 24, 'Delhi');
 INSERT INTO Geeks VALUES (9, 'Payal', 26);
 ```
@@ -79,7 +79,7 @@ INSERT INTO Geeks VALUES (9, 'Payal', 26);
 
 **输出–**
 
-```
+```sql
 Select * 
 from Geeks;
 ```

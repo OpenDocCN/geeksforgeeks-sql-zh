@@ -8,7 +8,7 @@ MySQL 中的这个函数有助于返回给定日期的工作日数字/索引(1 �
 **注–**
 以下为工作日数字。
 
-```
+```sql
 Sunday
 Monday
 Tuesday
@@ -21,7 +21,7 @@ Saturday
 
 **语法:**
 
-```
+```sql
 DAYOFWEEK(date)
 
 ```
@@ -40,7 +40,7 @@ DAYOFWEEK(date)
 **示例-1 :**
 从特定日期“2020-09-13”获取星期几。
 
-```
+```sql
 SELECT DAYOFWEEK("2020-09-13") 
 AS WEEKDAY;
 ```
@@ -53,7 +53,7 @@ AS WEEKDAY;
 **示例-2 :**
 从特定的日期时间“2000-11-27 07:12:23”中获取一周中的某一天。
 
-```
+```sql
 SELECT DAYOFWEEK("2000-11-02 07:12:23") 
 AS WEEKDAY;
 ```
@@ -66,7 +66,7 @@ AS WEEKDAY;
 **示例-3 :**
 获取当前系统日期的星期几，即使用 CURDATE()函数
 
-```
+```sql
 SELECT DAYOFWEEK(CURDATE()) 
 AS WEEKDAY;
 ```

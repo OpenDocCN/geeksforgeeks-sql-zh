@@ -15,7 +15,7 @@
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 DECLARE @Names VARCHAR(MAX)  
 SELECT @Names = COALESCE(@Names + ', ', '') + [FirstName] 
 FROM [geek_demo]
@@ -37,7 +37,7 @@ SELECT @Names AS [List of All Names]
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 DECLARE @FirstNames VARCHAR(MAX)
 DECLARE @LastNames VARCHAR(MAX)
 SELECT @FirstNames = COALESCE(@FirstNames + ', ', '') + [FirstName] 
@@ -63,7 +63,7 @@ SELECT @FirstNames AS [List of All First Names],
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 DECLARE @FirstNames VARCHAR(MAX)
 DECLARE @LastNames VARCHAR(MAX)
 SELECT @FirstNames = CONCAT(@FirstNames + ', ', '') + [FirstName] 
@@ -89,7 +89,7 @@ SELECT @FirstNames AS [List of First All Names],
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 SELECT STUFF((
    SELECT ',' + SPACE(1) + [FirstName],
    ' ' + SPACE(1) + [LastName]
@@ -127,7 +127,7 @@ AS [List Of All Names]
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 DECLARE @Names VARCHAR(MAX)
 DECLARE @Emails VARCHAR(MAX)
 SELECT @Names = CONCAT(@Names + ', ', '') + [Name] 
@@ -153,7 +153,7 @@ SELECT @Names AS [List of All Names],
 
 **查询连接 SQL Server 中的行–**
 
-```
+```sql
 SELECT STUFF((
   SELECT ',' + SPACE(1) + [Email]
   FROM [geek_demo]

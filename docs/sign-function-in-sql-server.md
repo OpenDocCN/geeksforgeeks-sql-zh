@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 SIGN(number)
 ```
 
@@ -29,33 +29,33 @@ SIGN(number)
 **示例-1 :**
 获得结果为 1，即指定数字 2 为正。
 
-```
+```sql
 SELECT SIGN(2);
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2 :**
 获取结果为-1，即指定数字-7 为负数。
 
-```
+```sql
 SELECT SIGN(-7);
 ```
 
 **输出:**
 
-```
+```sql
 -1
 ```
 
 **示例-3 :**
 使用带有变量的 SIGN()函数，得到指定数字 0 的结果为 0。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 0;
 SELECT SIGN(@Parameter_Value);
@@ -64,27 +64,27 @@ SELECT SIGN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-4 :**
 得到的结果为 1，即“5/2”的结果为正。
 
-```
+```sql
 SELECT SIGN(5/2);
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-5 :**
 使用带有变量的 SIGN()函数，得到的结果为 1，即浮点值“5.75”为正。
 
-```
+```sql
 DECLARE @Parameter_Value FLOAT;
 SET @Parameter_Value = 5.75;
 SELECT SIGN(@Parameter_Value);
@@ -93,7 +93,7 @@ SELECT SIGN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 1.0
 ```
 

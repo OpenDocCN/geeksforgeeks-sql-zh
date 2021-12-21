@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 RLIKE pattern
 
 ```
@@ -40,7 +40,7 @@ RLIKE pattern
 **示例-1 :**
 以下示例查找姓氏以字母 s 开头的员工
 
-```
+```sql
 CREATE TABLE Employee
 (
 Employee_id INT AUTO_INCREMENT,  
@@ -53,7 +53,7 @@ PRIMARY KEY(Employee_id )
 
 **在员工表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Employee
 (First_name ,Last_name , Joining_Date )
 VALUES
@@ -70,7 +70,7 @@ VALUES
 
 因此，员工表如下。
 
-```
+```sql
 select * from Employee ;
 ```
 
@@ -90,7 +90,7 @@ select * from Employee ;
 
 现在，我们将检查那些姓氏带有“S”的员工。
 
-```
+```sql
 SELECT * FROM Employee   
 WHERE Last_name RLIKE '^S' ;
 ```
@@ -107,7 +107,7 @@ WHERE Last_name RLIKE '^S' ;
 **示例-2 :**
 以下示例查找名字以字母“I”结尾的员工。
 
-```
+```sql
 SELECT * FROM Employee   
 WHERE First_name RLIKE 'i{content}apos; ;
 ```

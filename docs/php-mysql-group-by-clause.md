@@ -25,7 +25,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,.....columnn, function_name(columnn)
 FROM table_data 
 WHERE condition
@@ -58,7 +58,7 @@ GROUP BY column1, column2;
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -114,7 +114,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <center>

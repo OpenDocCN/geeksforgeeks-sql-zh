@@ -14,7 +14,7 @@ SQL Server 中的这个函数用来返回这个函数的第一个参数中所述
 
 **语法:**
 
-```
+```sql
 TRANSLATE(string, characters, translations)
 ```
 
@@ -31,20 +31,20 @@ TRANSLATE(string, characters, translations)
 **示例-1 :**
 从指定的字符串、字符和翻译中获取字符串。
 
-```
+```sql
 SELECT TRANSLATE('Geek', 'Geek', 'geek');
 ```
 
 **输出:**
 
-```
+```sql
 geek
 ```
 
 **示例-2 :**
 使用带有变量的 TRANSLATE()函数，并获取翻译后的字符串作为输出。
 
-```
+```sql
 DECLARE @str VARCHAR(2);
 SET @str = 'gf';
 SELECT TRANSLATE(@str, 'gf', 'cs');
@@ -52,14 +52,14 @@ SELECT TRANSLATE(@str, 'gf', 'cs');
 
 **输出:**
 
-```
+```sql
 cs
 ```
 
 **示例-3 :**
 使用带有三个变量的 TRANSLATE()函数，获取翻译后的字符串作为输出。
 
-```
+```sql
 DECLARE @str VARCHAR(3);
 DECLARE @chars VARCHAR(3);
 DECLARE @newchar VARCHAR(3);
@@ -71,20 +71,20 @@ SELECT TRANSLATE(@str, @chars, @newchar);
 
 **输出:**
 
-```
+```sql
 edc
 ```
 
 **示例-4 :**
 获取第一个参数中所述字符串的翻译字符串，此时该函数的*字符*参数中给出的字符被解释为最后一个参数中给出的字符，即翻译。
 
-```
+```sql
 SELECT TRANSLATE('x*[y+z]/[x-y]', '[][]', '()()');
 ```
 
 **输出:**
 
-```
+```sql
 x*(y+z)/(x-y)
 ```
 

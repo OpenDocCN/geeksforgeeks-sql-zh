@@ -15,7 +15,7 @@ SUBSTR 使用输入字符集定义的字符计算长度。SUBSTRB 使用字节�
 
 **语法:**
 
-```
+```sql
 SUBSTR( input_string, start_position, length)
 ```
 
@@ -38,7 +38,7 @@ PLSQL 中的 SUBSTR 函数返回一个字符串值。
 
 **示例-1:** 传递 SUBSTR 函数中的所有三个参数。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -50,13 +50,13 @@ END;
 
 **输出:**
 
-```
+```sql
 for
 ```
 
 **示例-2:** 在将参数传递给 SUBSTR 函数时，省略了长度参数。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -68,13 +68,13 @@ END;
 
 **输出:**
 
-```
+```sql
 forgeeks 
 ```
 
 **示例-3:** 在将参数传递给 SUBSTR 函数时，在 starting _ position 参数中传递负值。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -86,7 +86,7 @@ END;
 
 **输出:**
 
-```
+```sql
 rge 
 ```
 
@@ -94,7 +94,7 @@ SUBSTR 函数从字符串的末尾开始，如果起始位置参数为负值，�
 
 **示例-4:** 在 starting _ position 参数中传递一个大于 input_string 中字符数的值。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -106,7 +106,7 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 

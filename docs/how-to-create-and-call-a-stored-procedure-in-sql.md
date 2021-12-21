@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GFG
 
 **查询:**
 
-```
+```sql
 USE GFG
 ```
 
@@ -28,7 +28,7 @@ USE GFG
 
 **查询:**
 
-```
+```sql
 CREATE TABLE gfgTutorial(
 id integer,
 Name varchar(20)
@@ -39,7 +39,7 @@ Name varchar(20)
 
 **查询:**
 
-```
+```sql
 sp_help 'dbo.gfgTutorial'
 ```
 
@@ -53,7 +53,7 @@ sp_help 'dbo.gfgTutorial'
 
 **查询:**
 
-```
+```sql
 INSERT INTO [dbo].[gfgTutorial]
            ([id]
            ,[Name])
@@ -94,7 +94,7 @@ GO
 
 **查询:**
 
-```
+```sql
 CREATE PROCEDURE select_all_data
 AS
 SELECT * FROM gfgTutorial
@@ -111,7 +111,7 @@ GO;
 
 **查询:**
 
-```
+```sql
 EXEC select_all_data
 ```
 
@@ -127,7 +127,7 @@ EXEC select_all_data
 
 **查询:**
 
-```
+```sql
 CREATE PROCEDURE insertData
 @Name varchar(30), @id varchar(30)
 AS
@@ -139,7 +139,7 @@ GO
 
 **查询:**
 
-```
+```sql
 EXEC insertData @Name = 'Inserted Name', @id = 6
 ```
 

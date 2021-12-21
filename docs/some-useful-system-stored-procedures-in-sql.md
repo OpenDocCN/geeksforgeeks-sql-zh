@@ -18,7 +18,7 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
     **示例–**
     假设我们有一个名为 geek_demo 的表:
 
-    ```
+    ```sql
     Select * from geek_demo ;
     ```
 
@@ -37,7 +37,7 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
 
     让我们创建一个简单的存储过程，其中包含两个 Select 语句。
 
-    ```
+    ```sql
     CREATE PROCEDURE SelectGeek
     AS
     BEGIN
@@ -55,7 +55,7 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
 
     **调用存储过程:**
 
-    ```
+    ```sql
     EXEC SelectGeek ;
     ```
 
@@ -75,7 +75,7 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
 
     **sp _ help 存储过程示例:**
 
-    ```
+    ```sql
     SP_HELP SelectGeek ;
     ```
 
@@ -87,13 +87,13 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
 
     **sp _ help text 存储过程示例:**
 
-    ```
+    ```sql
     SP_HELPTEXT SelectGeek ;
     ```
 
     **输出:**
 
-    ```
+    ```sql
     Text
 
     CREATE PROCEDURE SelectGeek
@@ -111,7 +111,7 @@ SQL 中一些有用的系统[存储过程](https://www.geeksforgeeks.org/sql-pro
 
     **sp _ dependent 存储过程示例:**
 
-    ```
+    ```sql
     SP_DEPENDS SelectGeek ;
     ```
 

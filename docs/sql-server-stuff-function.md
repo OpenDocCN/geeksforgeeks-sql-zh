@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 STUFF (source_string, start, length, add_string)
 ```
 

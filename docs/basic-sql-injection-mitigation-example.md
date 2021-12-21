@@ -9,14 +9,14 @@ SQL 注入是一种代码注入技术，用于攻击数据驱动的应用程序�
 
 一会儿，把自己放在一个攻击者的角色中。你的目标很简单。您希望数据库执行任何意外的 SQL 语句。你只是想让一些东西工作，因为这将揭示一个事实，即应用程序有一个潜在的漏洞。例如，考虑图 1 所示的简单身份验证表单。
 
-```
+```sql
       ![Capture](img/4d9f5b96e7d98011411f84335c70122d.png)
                                      Figure 1
 ```
 
 **图 1 代码**
 
-```
+```sql
 <form action="/login.php" method="POST">
 <p>Username: <input type="text" name="username" /></p>
 <p>Password: <input type="text" name="password" /></p>
@@ -26,13 +26,13 @@ SQL 注入是一种代码注入技术，用于攻击数据驱动的应用程序�
 
 您已经可以对该应用程序可能用来验证访问凭据的 SQL 语句的类型做出非常有根据的猜测。很可能是 SELECT 语句。您还可以猜测数据库表中使用的命名约定，因为它可能与 HTML 表单中使用的简单名称相匹配。因为此表单用于身份验证，所以可能会使用 WHERE 子句
 
-```
+```sql
 $_POST['username'] and $_POST['password'].
 ```
 
 根据所有这些，您可能会预测到以下情况:
 
-```
+```sql
 <?php $sql = "SELECT count(*) FROM users WHERE 
               username = '{$_POST['username']}'AND 
               password = '...'"; ?>
@@ -40,15 +40,15 @@ $_POST['username'] and $_POST['password'].
 
 假设这个猜测是正确的，你能做什么来操作这个查询？想象一下发送以下用户名:
 
-```
+```sql
 akash' /*
 ```
 
-```
+```sql
 SELECT count(*)FROM users WHERE username = 'akash' /*'AND password = '...'";
 ```
 
-```
+```sql
 In this example, /* is used to begin a multi-line comment,
 effectively terminating the query at that point. This has
 been tested successfully with MySQL. A standard comment 
@@ -66,7 +66,7 @@ in SQL begins with --, and it's trivial to try both.
 1.  **准备:**创建一个 SQL 语句模板并将其发送到数据库。某些值未指定，称为参数(标记为“？”).
     示例:
 
-    ```
+    ```sql
     SELECT count(*)FROM users WHERE username = ? AND password = ?;
     ```
 
@@ -75,7 +75,7 @@ in SQL begins with --, and it's trivial to try both.
 
 **实施:**
 
-```
+```sql
 <?php 
 $stmt = $dbConnection->prepare('SELECT count(*)FROM users WHERE username = ? AND password = ?');
 

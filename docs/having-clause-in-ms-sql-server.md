@@ -8,7 +8,7 @@
 
 **语法–**
 
-```
+```sql
 select 
 select_list
 from
@@ -37,7 +37,7 @@ conditions
 
 假设用户想要从学生表中提取姓名以 R 开头的学生的学号，查询如下–
 
-```
+```sql
 select roll number
 from student 
 having name like 'R%'
@@ -47,7 +47,7 @@ having name like 'R%'
 输出将显示一个错误。这是因为查询中没有包含 group by 子句。
 为获得所需结果而修改的查询如下–
 
-```
+```sql
 select roll number 
 from student 
 group by name

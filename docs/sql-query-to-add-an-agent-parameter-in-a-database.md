@@ -6,19 +6,19 @@
 
 **步骤 1:** 使用以下 SQL 查询创建数据库销售:
 
-```
+```sql
 CREATE DATABASE sales;
 ```
 
 **第 2 步:**使用数据库销售通过使用以下 SQL 查询:
 
-```
+```sql
 USE sales;
 ```
 
 **步骤 3:** 使用以下 SQL 查询创建一个包含 4 列的表 sales_report:
 
-```
+```sql
 CREATE TABLE sales_report
 (
   customer_id VARCHAR(20),
@@ -32,7 +32,7 @@ CREATE TABLE sales_report
 
 **步骤 4:** 使用以下查询查看表中的列:
 
-```
+```sql
 SELECT * FROM sales_report;
 ```
 
@@ -50,14 +50,14 @@ SELECT * FROM sales_report;
 
 因此，现在使用 ALTER 命令，我们将在表中添加一个名为 agent 的新列(即 sales_report)
 
-```
+```sql
 ALTER TABLE sales_report
 ADD agent VARCHAR(40);
 ```
 
 查看更改后添加的列代理:
 
-```
+```sql
 SELECT * FROM sales_report;
 ```
 
@@ -67,7 +67,7 @@ SELECT * FROM sales_report;
 
 **第 6 步:**使用以下 SQL 查询向 sales_report 表中插入行:
 
-```
+```sql
 INSERT INTO sales_report VALUES
 ('C10002','PRATIK','E1221','DELIVERED','DHRUVA'),
 ('C10003','DINESH','E1224','PENDING','DHRUVA'),
@@ -80,7 +80,7 @@ INSERT INTO sales_report VALUES
 
 **步骤 7:** 查看插入的数据
 
-```
+```sql
 SELECT * FROM sales_report;
 ```
 

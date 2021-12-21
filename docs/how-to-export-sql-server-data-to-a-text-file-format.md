@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -16,7 +16,7 @@ CREATE DATABASE geeks;
 
 **步骤 2:** 选择新创建的数据库
 
-```
+```sql
 USE geeks;
 ```
 
@@ -28,7 +28,7 @@ USE geeks;
 
 ****查询:****
 
-```
+```sql
 CREATE TABLE brands(
 brand_id INT PRIMARY KEY,  
 brand_name VARCHAR(30) NOT NULL);
@@ -40,7 +40,7 @@ brand_name VARCHAR(30) NOT NULL);
 
 ****查询:****
 
-```
+```sql
 INSERT INTO brands VALUES
 (1, 'Electra'),
 (2, 'Haro'),
@@ -63,7 +63,7 @@ INSERT INTO brands VALUES
 
 ****查询:****
 
-```
+```sql
 SELECT * FROM brands;
 ```
 
@@ -73,7 +73,7 @@ SELECT * FROM brands;
 
 ****查询:****
 
-```
+```sql
 Select TOP (1000) [brand_id],[brand_name]
 from [sample].[production].[brands];
 ```
@@ -134,7 +134,7 @@ from [sample].[production].[brands];
 
 ****查询:****
 
-```
+```sql
 SELECT TOP (1000) [brand_id]
       ,[brand_name]
   FROM [sample].[production].[brands];
@@ -144,7 +144,7 @@ SELECT TOP (1000) [brand_id]
 
 ****查询:****
 
-```
+```sql
 sqlcmd -i SaveOutputToText.sql -o Result.txt
 ```
 

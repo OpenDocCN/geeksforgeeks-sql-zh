@@ -14,7 +14,7 @@ SQL Server 中的此函数用于从指定字符串的开头或结尾省略空格
 
 **语法:**
 
-```
+```sql
 TRIM([characters FROM ]string)
 ```
 
@@ -33,13 +33,13 @@ TRIM([characters FROM ]string)
 
 在省略指定字符串的开始和结束空格后获取该字符串。
 
-```
+```sql
 SELECT TRIM('     GFG     ');
 ```
 
 **输出:**
 
-```
+```sql
 GFG
 ```
 
@@ -47,7 +47,7 @@ GFG
 
 使用带有变量的 TRIM()函数，并获取修改后的指定字符串作为输出。
 
-```
+```sql
 DECLARE @str VARCHAR(10);
 SET @str = '   Geeks   ';
 SELECT TRIM(@str);
@@ -55,7 +55,7 @@ SELECT TRIM(@str);
 
 **输出:**
 
-```
+```sql
 Geeks
 ```
 
@@ -63,13 +63,13 @@ Geeks
 
 在省略特定字符及其开始和结束空格后获取指定字符串。
 
-```
+```sql
 SELECT TRIM('@$ ' FROM '    @geeksforgeeks$    ');
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks
 ```
 
@@ -79,7 +79,7 @@ geeksforgeeks
 
 使用带有两个变量的 TRIM()函数，并获取修改后的指定字符串作为输出。
 
-```
+```sql
 DECLARE @str VARCHAR(10);
 DEclare @char VARCHAR(10);
 SET @str = '   &Geeks*  ';
@@ -89,7 +89,7 @@ SELECT TRIM(@char FROM @str);
 
 **输出:**
 
-```
+```sql
 Geeks
 ```
 

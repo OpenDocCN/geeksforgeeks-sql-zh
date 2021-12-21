@@ -8,13 +8,13 @@
 
 不带 WITH 条件从句
 
-```
+```sql
 UPDATE table_name SET column1 = value1, column2 = value2;
 ```
 
 With WITH 条件从句
 
-```
+```sql
 UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
 ```
 
@@ -22,7 +22,7 @@ UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -34,7 +34,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -46,7 +46,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE STUDENT_MARKS(
 STUDENT_ID INT,
 STUDENT_NAME VARCHAR(20),
@@ -64,7 +64,7 @@ PHYSICS INT);
 
 **查询:**
 
-```
+```sql
 INSERT INTO STUDENT_MARKS VALUES(121,'ABHIGYAN SHARMA',5,90,85,80);
 INSERT INTO STUDENT_MARKS VALUES(133,'RUTURAJ GAIKWAD',5,76,66,91);
 INSERT INTO STUDENT_MARKS VALUES(146,'AJAY KUMAR',5,87,79,90);
@@ -80,7 +80,7 @@ INSERT INTO STUDENT_MARKS VALUES(160,'YUVI CHAHAL',6,79,92,82);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM STUDENT_MARKS;
 ```
 
@@ -92,7 +92,7 @@ SELECT * FROM STUDENT_MARKS;
 
 **查询:**
 
-```
+```sql
 UPDATE STUDENT_MARKS SET STUDENT_STANDARD=STUDENT_STANDARD+1;
 SELECT * FROM STUDENT_MARKS;
 ```
@@ -105,7 +105,7 @@ SELECT * FROM STUDENT_MARKS;
 
 **查询:**
 
-```
+```sql
 UPDATE STUDENT_MARKS SET STUDENT_NAME=SUBSTRING(STUDENT_NAME,1,4);
 SELECT * FROM STUDENT_MARKS;
 ```
@@ -118,7 +118,7 @@ SELECT * FROM STUDENT_MARKS;
 
 **查询:**
 
-```
+```sql
 UPDATE STUDENT_MARKS SET MATHS=MATHS+5;
 SELECT * FROM STUDENT_MARKS;
 ```

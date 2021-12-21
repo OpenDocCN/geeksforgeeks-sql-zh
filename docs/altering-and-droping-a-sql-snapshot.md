@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 ALTER SNAPSHOT <snapshot-name>
 [schema]
 [ [PCTFREE <Integer>] [PCTUSED <Integer>] 
@@ -66,7 +66,7 @@ ALTER SNAPSHOT <snapshot-name>
 
     **示例:**
 
-    ```
+    ```sql
     ALTER SNAPSHOT snp_emp
     REFRESH COMPLETE  
     START WITH TRUNC(SYSDATE+7) + 2/24 
@@ -78,7 +78,7 @@ ALTER SNAPSHOT <snapshot-name>
 
     **语法:**
 
-    ```
+    ```sql
     DROP SNAPSHOT 
     ```
 
@@ -86,6 +86,6 @@ ALTER SNAPSHOT <snapshot-name>
 
     **示例:**
 
-    ```
+    ```sql
     drop snapshot snp_emp;
     ```

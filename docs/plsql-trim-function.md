@@ -14,7 +14,7 @@ TRIM 函数接受三个参数，其中第一个参数可以有值“LEADING”�
 
 **语法:**
 
-```
+```sql
 TRIM( [ [ LEADING | TRAILING | BOTH ] trim_character FROM ] input_string )
 ```
 
@@ -39,7 +39,7 @@ PLSQL 中的 TRIM 函数返回一个字符串值。
 
 **示例-1:** 使用 LEADING 参数从 input_string 前面删除 trim _ 字符。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '1Geeksforgeeks1';
 
@@ -51,13 +51,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks1 
 ```
 
 **示例-2:** 使用 TRAING 参数从 input_string 的末尾移除 trim_character。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '1Geeksforgeeks1';
 
@@ -69,13 +69,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1Geeksforgeeks 
 ```
 
 **示例-3:** 使用 BOTH 参数从 input_string 的前面和末尾移除 trim_character。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '1Geeksforgeeks1';
 
@@ -87,13 +87,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-4:** 在 TRIM 函数的第一个参数中不传递任何值。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '  Geeksforgeeks  ';
 
@@ -105,7 +105,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 

@@ -8,7 +8,7 @@ PLSQL LOG 函数用于返回以 n 为底的 m 的对数。LOG 函数接受两个
 
 **语法:**
 
-```
+```sql
 LOG( m, n )
 ```
 
@@ -31,7 +31,7 @@ PLSQL 中的 LOG 函数返回一个数值。
 
 **示例-1:** 在 LOG 函数中使用正数值作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 9;
    Test_Number2 number := 3;
@@ -45,13 +45,13 @@ END;
 
 **输出:**
 
-```
+```sql
 0.5 
 ```
 
 **示例-2:** 在 LOG 函数中使用正数值作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 3;
    Test_Number2 number := 9;
@@ -65,13 +65,13 @@ END;
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
 **示例-3:** 在 LOG 函数的两个参数中使用相同的正数值。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 3;
    Test_Number2 number := 3;
@@ -85,13 +85,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-4:** 在 LOG 函数的基值参数中使用零。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 0;
    Test_Number2 number := 3;
@@ -105,7 +105,7 @@ END;
 
 **输出:**
 
-```
+```sql
 numeric or value error 
 ```
 
@@ -113,13 +113,13 @@ numeric or value error
 
 **示例-5:** 在选择查询中使用日志功能。
 
-```
+```sql
 SELECT LOG(2, 8) "Log base 2 of 8" FROM DUAL; 
 ```
 
 **输出:**
 
-```
+```sql
 3 
 ```
 

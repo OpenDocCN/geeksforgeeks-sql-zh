@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 CURDATE()
 
 ```
@@ -24,14 +24,14 @@ CURDATE()
 
 以“YYYY-MM-DD”(字符串)格式获取当前日期。
 
-```
+```sql
 SELECT CURDATE();
 
 ```
 
 **输出:**
 
-```
+```sql
 2020-11-19
 
 ```
@@ -40,14 +40,14 @@ SELECT CURDATE();
 
 以 YYYMMDD(数字)格式获取比当前日期晚 1 天的日期。
 
-```
+```sql
 SELECT CURDATE() + 1;
 
 ```
 
 **输出:**
 
-```
+```sql
 20201120
 
 ```
@@ -56,14 +56,14 @@ SELECT CURDATE() + 1;
 
 以 YYYMMDD(数字)格式获取当前日期前 5 天的日期。
 
-```
+```sql
 SELECT CURDATE() + 5;
 
 ```
 
 **输出:**
 
-```
+```sql
 20201114
 
 ```

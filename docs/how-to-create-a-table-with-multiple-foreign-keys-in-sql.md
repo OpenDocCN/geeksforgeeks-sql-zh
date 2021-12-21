@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 column_name(non_prime) data_type REFERENCES table_name(column_name(prime)
 ```
 
@@ -18,7 +18,7 @@ column_name(non_prime) data_type REFERENCES table_name(column_name(prime)
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -40,7 +40,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_details(
   stu_id VARCHAR(8) NOT NULL PRIMARY KEY,
   stu_name VARCHAR(20),
@@ -73,7 +73,7 @@ CREATE TABLE student_address(
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_branch_details VALUES
   ('E.C.E',46,170),
   ('E.E.E',47,178),
@@ -93,7 +93,7 @@ INSERT INTO student_address VALUES
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_details VALUES
 ('1940001','PRATHAM','E.C.E','555555'),
 ('1940002','ASHOK','C.S.E','666666'),
@@ -111,7 +111,7 @@ INSERT INTO student_details VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student_details
 SELECT * FROM student_branch_details
 SELECT * FROM student_address

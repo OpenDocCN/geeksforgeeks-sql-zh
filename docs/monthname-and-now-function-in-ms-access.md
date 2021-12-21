@@ -7,31 +7,31 @@ MonthName()函数根据数字返回月份名称。在这个函数中，第一个
 
 **语法:**
 
-```
+```sql
 MonthName(number, abbreviate) 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT MonthName(7);
 ```
 
 **输出–**
 
-```
+```sql
 July
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT MonthName(3, FALSE);
 ```
 
 **输出–**
 
-```
+```sql
 Mar
 ```
 
@@ -40,18 +40,18 @@ Now()函数返回计算机系统当前的日期和时间。在这个函数中，
 
 **语法:**
 
-```
+```sql
 Now()
 ```
 
 **示例:**
 
-```
+```sql
 SELECT Now();
 ```
 
 **输出–**
 
-```
+```sql
 9/3/2020 2:10:29 AM
 ```

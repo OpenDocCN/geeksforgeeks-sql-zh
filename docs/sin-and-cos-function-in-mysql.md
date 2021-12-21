@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SIN(X)
 ```
 
@@ -18,7 +18,7 @@ SIN(X)
 **示例-1 :**
 使用 SIN()函数求 0 的正弦值。
 
-```
+```sql
 SELECT SIN(0) AS Sin_Val;
 ```
 
@@ -31,7 +31,7 @@ SELECT SIN(0) AS Sin_Val;
 **示例-2 :**
 使用 SIN()函数计算 90 度正弦，即 1.5707963267948966 弧度。
 
-```
+```sql
 SELECT SIN(1.5707963267948966) AS Sin_Val;
 ```
 
@@ -44,7 +44,7 @@ SELECT SIN(1.5707963267948966) AS Sin_Val;
 **示例-3 :**
 使用 SIN()函数计算-90 度即-1.5707963267948966 弧度的正弦。
 
-```
+```sql
 SELECT SIN(-1.5707963267948966) AS Sin_Val;
 ```
 
@@ -67,7 +67,7 @@ SELECT SIN(-1.5707963267948966) AS Sin_Val;
 | Zero point five four |
 | One point five five |
 
-```
+```sql
 SELECT X, SIN(X) AS Sin_X  
 FROM Number;
 ```
@@ -87,7 +87,7 @@ MySQL 中的 COS()函数用于返回任意给定数字 X 的余弦值，其中 X
 
 **语法:**
 
-```
+```sql
 COS(X)
 ```
 
@@ -98,7 +98,7 @@ COS(X)
 **示例-1 :**
 使用 COS()函数求 0 的共正弦。
 
-```
+```sql
 SELECT COS(0) AS  Cos_Val;
 ```
 
@@ -111,7 +111,7 @@ SELECT COS(0) AS  Cos_Val;
 **例-2:**
 90 度共正弦即 1.5707963267948966 弧度使用 COS()函数。
 
-```
+```sql
 SELECT COS(1.5707963267948966) AS  Cos_Val;
 ```
 
@@ -134,7 +134,7 @@ SELECT COS(1.5707963267948966) AS  Cos_Val;
 | Zero point two five |
 | One point five five |
 
-```
+```sql
 SELECT X, COS(X) AS Cos_X  
 FROM Number;
 ```

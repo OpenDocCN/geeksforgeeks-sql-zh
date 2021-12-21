@@ -10,7 +10,7 @@ SQL Server 中的[**【CAST()】**](https://www.geeksforgeeks.org/mysql-cast-fun
 
 **语法:**
 
-```
+```sql
 CAST ( expression AS target_type [ ( length ) ] )
 ```
 
@@ -24,7 +24,7 @@ CAST ( expression AS target_type [ ( length ) ] )
 
 **查询:**
 
-```
+```sql
 SELECT CAST('1234' AS INT) AS Result;
 ```
 
@@ -38,7 +38,7 @@ SELECT CAST('1234' AS INT) AS Result;
 
 **语法:**
 
-```
+```sql
 SELECT CONVERT ( target_type ( length ), expression )  
 ```
 
@@ -52,7 +52,7 @@ SELECT CONVERT ( target_type ( length ), expression )
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(INT,'5678') AS Result;
 ```
 
@@ -66,7 +66,7 @@ SELECT CONVERT(INT,'5678') AS Result;
 
 **语法:**
 
-```
+```sql
 TRY_CAST ( expression AS data_type [ ( length ) ] )  
 ```
 
@@ -77,7 +77,7 @@ TRY_CAST ( expression AS data_type [ ( length ) ] )
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CAST('1234' as INT) as Result;
 ```
 
@@ -85,7 +85,7 @@ SELECT TRY_CAST('1234' as INT) as Result;
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CAST('1234abc' as INT) as Result;
 ```
 
@@ -97,7 +97,7 @@ SELECT TRY_CAST('1234abc' as INT) as Result;
 
 **语法:**
 
-```
+```sql
 TRY_CONVERT ( data_type[(length)], expression [,style])
 ```
 
@@ -109,7 +109,7 @@ TRY_CONVERT ( data_type[(length)], expression [,style])
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CONVERT( INT ,'5678') as Result;
 ```
 
@@ -117,7 +117,7 @@ SELECT TRY_CONVERT( INT ,'5678') as Result;
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CONVERT( INT ,'56abc') as Result;
 ```
 

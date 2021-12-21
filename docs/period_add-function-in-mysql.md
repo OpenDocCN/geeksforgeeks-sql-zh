@@ -6,7 +6,7 @@ MySQL 中的 PERIOD_ADD()函数有助于给定期间添加特定的月数。PERI
 
 **语法:**
 
-```
+```sql
 PERIOD_ADD(period, number)
 
 ```
@@ -24,7 +24,7 @@ PERIOD_ADD(period, number)
 **示例-1 :**
 使用 PERIOD_ADD()函数向给定期间添加月份。
 
-```
+```sql
 SELECT PERIOD_ADD(202011, 9) As New_period;
 
 ```
@@ -37,7 +37,7 @@ SELECT PERIOD_ADD(202011, 9) As New_period;
 **示例-2 :**
 使用 PERIOD_ADD()函数从给定期间减去月份。
 
-```
+```sql
 SELECT PERIOD_ADD(202102, -5) As New_period;
 
 ```
@@ -50,7 +50,7 @@ SELECT PERIOD_ADD(202102, -5) As New_period;
 **示例-3 :**
 从两位数的年期间中加减月份。
 
-```
+```sql
 SELECT  
 PERIOD_ADD(2109, -5) As New_period1,
 PERIOD_ADD(2109, +5) As New_period2;
@@ -65,7 +65,7 @@ PERIOD_ADD(2109, +5) As New_period2;
 **示例-4 :**
 使用当前日期和提取功能。
 
-```
+```sql
 SELECT  
    CURDATE( ) AS 'Curr_date',
    EXTRACT(YEAR_MONTH FROM CURDATE( )) AS 'Curr_period',

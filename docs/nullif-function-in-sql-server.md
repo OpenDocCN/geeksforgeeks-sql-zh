@@ -16,7 +16,7 @@ SQL Server 中的这个函数用于检查两个指定的表达式是否相等。
 
 **语法:**
 
-```
+```sql
 NULLIF(expr1, expr2)
 ```
 
@@ -34,13 +34,13 @@ NULLIF(expr1, expr2)
 
 使用 NULLIF()函数并获取输出。
 
-```
+```sql
 SELECT NULLIF(11, 11);
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -50,13 +50,13 @@ NULL
 
 使用 NULLIF()函数并获取输出。
 
-```
+```sql
 SELECT NULLIF('ab', 'abc');
 ```
 
 **输出:**
 
-```
+```sql
 ab
 ```
 
@@ -66,7 +66,7 @@ ab
 
 使用 NULLIF()函数，并使用变量获取输出。
 
-```
+```sql
 DECLARE @exp1 VARCHAR(50);
 DECLARE @exp2 VARCHAR(50);
 SET @exp1 = '2021/01/08';
@@ -76,7 +76,7 @@ SELECT NULLIF(@exp1, @exp2);
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -84,13 +84,13 @@ NULL
 
 使用 NULLIF()函数，使用 CAST()函数获取输出。
 
-```
+```sql
 SELECT NULLIF(11, CAST(11.65 AS int));
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 

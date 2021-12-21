@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT ABS(number);
 ```
 
@@ -33,13 +33,13 @@ SELECT ABS(number);
 
 获取指定数字 0 的绝对值 0。
 
-```
+```sql
 SELECT ABS(0);
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
@@ -47,13 +47,13 @@ SELECT ABS(0);
 
 获取指定数字的绝对值. 7-0.7
 
-```
+```sql
 SELECT ABS(-0.7);
 ```
 
 **输出:**
 
-```
+```sql
 .7
 ```
 
@@ -61,7 +61,7 @@ SELECT ABS(-0.7);
 
 使用带变量的 ABS()函数，得到指定数字 123 的绝对值 123。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 123;
 SELECT ABS(@Parameter_Value);
@@ -69,7 +69,7 @@ SELECT ABS(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 123
 ```
 
@@ -77,7 +77,7 @@ SELECT ABS(@Parameter_Value);
 
 使用带变量的 ABS()函数，得到指定浮点值“-34.87”的绝对值 34.87。
 
-```
+```sql
 DECLARE @Parameter_Value float;
 SET @Parameter_Value = -34.87;
 SELECT ABS(@Parameter_Value);
@@ -85,7 +85,7 @@ SELECT ABS(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 34.869999999999997
 ```
 

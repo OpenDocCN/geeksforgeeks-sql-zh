@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 create table table_name( column_name 1 data type ( size ) ,
         column_name 2 data type ( size) ,
           . . . . column_name n data type ( size ) )
@@ -18,7 +18,7 @@ create table table_name( column_name 1 data type ( size ) ,
 
 为了便于说明，我们将创建一个部门表，并对其进行操作。部门表将有 3 个字段，即 *deptid、deptname、totalemployees。*为此，请使用以下语句:
 
-```
+```sql
 CREATE TABLE department( deptid integer ,
                  deptname varchar(20) ,
                   totalemployees integer );
@@ -32,7 +32,7 @@ CREATE TABLE department( deptid integer ,
 
 现在，让我们使用下面的查询向部门表中插入一些行:
 
-```
+```sql
 INSERT INTO department values(1,'IT',32);
 INSERT INTO department values(2,'CSE',56);
 INSERT INTO department values(1,'ECE',28);
@@ -44,7 +44,7 @@ INSERT INTO department values(1,'ECE',28);
 
 按照相同的模式，我们在表中插入了一些行，现在让我们使用 SELECT 语句打印表中可用的数据，如下所示:
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -62,7 +62,7 @@ SELECT * FROM department;
 
 **示例:**
 
-```
+```sql
 SELECT SUM(totalemployees) FROM department;
 ```
 

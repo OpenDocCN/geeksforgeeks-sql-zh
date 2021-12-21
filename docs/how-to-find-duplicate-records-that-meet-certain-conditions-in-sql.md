@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeksDatabase;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeksDatabase;
 ```
 
@@ -34,7 +34,7 @@ USE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Geeks(
 GeekID INTEGER PRIMARY KEY,
 GeekName VARCHAR(255) NOT NULL,
@@ -47,7 +47,7 @@ GeekSchool VARCHAR(255) NOT NULL
 
 #### 查询:
 
-```
+```sql
 INSERT INTO Geeks VALUES (101, 'Nix',2 ,'Code Valley School');
 INSERT INTO Geeks VALUES (102, 'Rutz',4 ,'Blue Chip School');
 INSERT INTO Geeks VALUES (103, 'Shrey',1 ,'GCOEA School');
@@ -63,7 +63,7 @@ INSERT INTO Geeks VALUES (107, 'Bugs',5 ,'Twinkle Star Convent');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Geeks;
 ```
 
@@ -77,7 +77,7 @@ SELECT * FROM Geeks;
 
 **查询:**
 
-```
+```sql
 INSERT INTO Geeks VALUES (108, 'Maria', 5 ,'Code Valley School');
 ```
 
@@ -95,7 +95,7 @@ INSERT INTO Geeks VALUES (108, 'Maria', 5 ,'Code Valley School');
 
 **查询:**
 
-```
+```sql
 SELECT GeekRank, COUNT(GeekID) AS DuplicateRanks
 FROM Geeks
 GROUP BY GeekRank

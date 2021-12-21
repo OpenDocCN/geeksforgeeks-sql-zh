@@ -8,7 +8,7 @@ DECODE()函数接受两个参数，即要解码的编码字符串和解码编码
 
 **语法:**
 
-```
+```sql
 DECODE(encoded_string, password_string);
 ```
 
@@ -31,39 +31,39 @@ MySQL 中的 DECODE 函数对编码后的字符串进行解码后返回原始字
 
 **示例-1:** 在字符串上实现 DECODE 函数。
 
-```
+```sql
 SELECT  
 DECODE(ENCODE('geeksforgeeks', 'passwordstring'), 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```
 
 **示例-2:** 对包含字符和整数的字符串实现 DECODE 函数。
 
-```
+```sql
 SELECT  
 DECODE(ENCODE('geeksforgeeks123', 'passwordstring'), 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks123 
 ```
 
 **示例-3:** 对空字符串实现 DECODE 函数，压缩后返回字符串长度。
 
-```
+```sql
 SELECT  
 DECODE(ENCODE('NULL', 'passwordstring'), 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

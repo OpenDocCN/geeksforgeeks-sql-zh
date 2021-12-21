@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 NOW()
 ```
 
@@ -20,7 +20,7 @@ NOW()
 **示例-1 :**
 使用 NOW 函数查找当前日期和时间。在这里，我们将获得‘YYYY-MM-DD HH:MM:SS’格式的结果。
 
-```
+```sql
 SELECT NOW() 
 as CurrDateTime ;
 ```
@@ -38,7 +38,7 @@ as CurrDateTime ;
 **示例-2 :**
 使用数值格式的 NOW 函数获取当前日期和时间。这里的结果将是 YYYYMMDDHHMMSS.uuuuuu 格式。
 
-```
+```sql
 SELECT NOW()+ 0 
 as CurrDateTime ;
 ```
@@ -56,7 +56,7 @@ as CurrDateTime ;
 **示例-3 :**
 我们也可以使用 NOW 函数来设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE Product (
 ProductId INT NOT NULL,
 ProductName VARCHAR(20) NOT NULL,
@@ -67,7 +67,7 @@ PRIMARY KEY(ProductId)
 
 在这里，我们将使用现在功能，当交付将完成。“交货时间”列中的值将是“现在功能”给出的值。
 
-```
+```sql
 INSERT INTO  
 Product (ProductId, ProductName, Delivered_At)
 VALUES
@@ -76,7 +76,7 @@ VALUES
 
 现在，检查产品表:
 
-```
+```sql
 SELECT * FROM Product;
 ```
 

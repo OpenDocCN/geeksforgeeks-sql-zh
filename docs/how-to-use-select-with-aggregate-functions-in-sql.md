@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE END_SEM(
 S_NAME VARCHAR(20),
 ROLL INT,
@@ -47,7 +47,7 @@ MARKS INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS END_SEM;
 ```
 
@@ -59,7 +59,7 @@ EXEC SP_COLUMNS END_SEM;
 
 **查询:**
 
-```
+```sql
 INSERT INTO END_SEM VALUES('ABE',1,99);
 INSERT INTO END_SEM VALUES('SAM',2,87);
 INSERT INTO END_SEM VALUES('DARREN',3,74);
@@ -80,7 +80,7 @@ INSERT INTO END_SEM VALUES('ERIN',10,80);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM END_SEM;
 ```
 
@@ -94,7 +94,7 @@ SQL 中有五个[聚合函数](https://www.geeksforgeeks.org/aggregate-functions
 
 **查询:**
 
-```
+```sql
 SELECT SUM(MARKS) AS "SUM OF MARKS" FROM END_SEM;
 ```
 
@@ -106,7 +106,7 @@ SELECT SUM(MARKS) AS "SUM OF MARKS" FROM END_SEM;
 
 **查询:**
 
-```
+```sql
 SELECT COUNT(MARKS) AS "COUNT OF
 MARKS" FROM END_SEM;
 ```
@@ -119,7 +119,7 @@ MARKS" FROM END_SEM;
 
 **查询 1:**
 
-```
+```sql
 SELECT AVG(MARKS) AS "AVERAGE OF MARKS" FROM END_SEM;
 ```
 
@@ -129,7 +129,7 @@ SELECT AVG(MARKS) AS "AVERAGE OF MARKS" FROM END_SEM;
 
 **查询 2:**
 
-```
+```sql
 SELECT SUM(MARKS)/COUNT(MARKS) AS "AVERAGE OF MARKS" FROM END_SEM;
 ```
 
@@ -141,7 +141,7 @@ SELECT SUM(MARKS)/COUNT(MARKS) AS "AVERAGE OF MARKS" FROM END_SEM;
 
 **查询:**
 
-```
+```sql
 SELECT MAX(MARKS) AS "MAXIMUM OF MARKS" FROM END_SEM;
 ```
 
@@ -153,7 +153,7 @@ SELECT MAX(MARKS) AS "MAXIMUM OF MARKS" FROM END_SEM;
 
 **查询:**
 
-```
+```sql
 SELECT MIN(MARKS) AS "MINIMUM OF MARKS" FROM END_SEM;
 ```
 

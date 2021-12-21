@@ -8,7 +8,7 @@ PLSQL 中的 ASCIISTR 函数用于使用数据库字符集将任意字符集的�
 
 **语法:**
 
-```
+```sql
 ASCIISTR( string )
 ```
 
@@ -25,7 +25,7 @@ ASCIISTR( string )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_Char char := 'E';
    Test_Char2 varchar2(5) := 'Ê';
@@ -43,7 +43,7 @@ END;
 
 **输出:**
 
-```
+```sql
 E
 \00CA
 H

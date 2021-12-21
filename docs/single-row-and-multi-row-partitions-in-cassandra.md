@@ -13,7 +13,7 @@
 **示例–**
 让我们看一下 Employee 表，它有 Emp_id、Emp_name、Emp_email 等字段，其中 Emp_id 是主键。
 
-```
+```sql
 CREATE table Employee(
 Emp_id UUID, 
 Emp_name TEXT, 
@@ -24,7 +24,7 @@ primary key(Emp_id)
 
 您可以检查上述示例的分区逻辑参考模型，如下所示–
 
-```
+```sql
 K - Primary key
 C - Clustering column
 S - Static column
@@ -44,7 +44,7 @@ S - Static column
 
 在 Cassandra 中，主键是分区键和集群列(如果有)的组合。
 
-```
+```sql
 Primary Key = Partition Key + [Clustering Columns]
 ```
 
@@ -54,7 +54,7 @@ Primary Key = Partition Key + [Clustering Columns]
 **示例–**
 我们来看事件表，它有 Event_venue、Event_year、Event_artifact、Events_title、Events_country 这样的字段，其中 Event_venue、Event_year 是主键，Event_artifact 是聚类列键。
 
-```
+```sql
 CREATE table Events(
 Event_venue TEXT, 
 Event_year INT,
@@ -67,7 +67,7 @@ primary key((Event_venue, Event_year), Event_artifact)
 
 您可以检查上述示例的分区逻辑参考模型，如下所示–
 
-```
+```sql
 K - Primary key
 C - Clustering column
 S - Static column

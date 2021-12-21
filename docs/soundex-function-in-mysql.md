@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SOUNDEX(str)
 
 ```
@@ -27,7 +27,7 @@ SOUNDEX()函数接受一个参数，如上所述，如下所述。
 **示例-1 :**
 使用 SOUNDEX 函数找到“geeksforgeeks”的 SOUNDEX 字符串。
 
-```
+```sql
 SELECT SOUNDEX('geeksforgeeks') AS SoundexString; 
 
 ```
@@ -41,7 +41,7 @@ SELECT SOUNDEX('geeksforgeeks') AS SoundexString;
 **示例-2 :**
 使用 SOUNDEX 函数查找“Hello”的 SOUNDEX 字符串。
 
-```
+```sql
 SELECT SOUNDEX('Hello') AS SoundexString; 
 
 ```
@@ -55,7 +55,7 @@ SELECT SOUNDEX('Hello') AS SoundexString;
 **示例-3 :**
 SOUNDEX 函数也可以用来查找列数据的 SOUNDEX 字符串。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student
 (
    Student_id INT AUTO_INCREMENT,  
@@ -69,7 +69,7 @@ CREATE TABLE Student
 
 现在向学生表中插入一些数据:
 
-```
+```sql
 INSERT INTO Student
 (Student_name, Student_Class )
 VALUES
@@ -87,7 +87,7 @@ VALUES
 
 **那么，学生表如下。**
 
-```
+```sql
 mysql> select * from Student;
 +------------+-----------------+---------------+
 | Student_id | Student_name    | Student_Class |
@@ -108,7 +108,7 @@ mysql> select * from Student;
 
 现在，我们将为列 Student_name 找到 SOUNDEX 字符串。
 
-```
+```sql
 SELECT  
    Student_id,  Student_name,
    SOUNDEX( Student_name) AS  SoundexSname,
@@ -118,7 +118,7 @@ SELECT
 
 **输出:**
 
-```
+```sql
 +------------+-----------------+--------------+---------------+
 | Student_id | Student_name    | SoundexSname | Student_Class |
 +------------+-----------------+--------------+---------------+

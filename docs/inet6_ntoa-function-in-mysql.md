@@ -8,7 +8,7 @@ MySQL 中的这个函数将 IPv6 或 IPv4 网络地址以数字形式表示为�
 
 **语法:**
 
-```
+```sql
 INET6_NTOA(expr)
 ```
 
@@ -25,7 +25,7 @@ INET6_NTOA(expr)
 
 在 INET6_NTOA 和 UNHEX 函数的帮助下，检查以下地址“0A000511”的等效四点字符串表示形式。由于这是一个有效的 IPv4 地址，我们将得到一个点串的结果。
 
-```
+```sql
 SELECT INET6_NTOA(UNHEX('0A000511')) 
 AS Address_In_DottedString ;
 ```
@@ -44,7 +44,7 @@ AS Address_In_DottedString ;
 
 在 INET6_NTOA 和 UNHEX 函数的帮助下，检查以下地址“fcbe 00000000005 c34 abdfefa 6312”的等效四点字符串表示形式。因为它是一个有效的 IPv6 地址，所以我们将以点状字符串的形式得到结果。
 
-```
+```sql
 SELECT INET6_NTOA(UNHEX('FCBE0000000000005C34CABDFEFA6312')) 
 AS Address_In_DottedString ;
 ```
@@ -63,7 +63,7 @@ AS Address_In_DottedString ;
 
 借助 INET6_NTOA 和 UNHEX 函数，检查以下地址“456A”的等效点四字符串表示。由于它不是有效的 IPv6 或 IPv4 地址，我们将得到一个空结果。
 
-```
+```sql
 SELECT INET6_NTOA(UNHEX('456A')) 
 AS Address_In_DottedString ;
 ```
@@ -81,7 +81,7 @@ AS Address_In_DottedString ;
 
 借助 INET6_NTOA 和 inet 6 _ 艾顿函数，检查以下地址“9.7.5.8”的等效四点字符串表示形式。由于它不是有效的 IPv6 或 IPv4 地址，我们将以点状字符串的形式获得结果。
 
-```
+```sql
 SELECT INET6_NTOA(INET6_ATON('9.7.5.8')) 
 AS Address_In_DottedString ;
 ```

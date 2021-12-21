@@ -25,7 +25,7 @@
 我们根据演示表计算距离的中位数。
 **查询–**
 
-```
+```sql
 SET @rowindex := -1;
 
 SELECT
@@ -48,6 +48,6 @@ d.rowindex IN (FLOOR(@rowindex / 2), CEIL(@rowindex / 2));
 
 **输出–**
 
-```
+```sql
 25.0000
 ```

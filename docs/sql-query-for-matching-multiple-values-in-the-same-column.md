@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE CARS(
 CAR_NAME VARCHAR(10),
 COMPANY VARCHAR(10),
@@ -47,7 +47,7 @@ COST INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS CARS;
 ```
 
@@ -59,7 +59,7 @@ EXEC SP_COLUMNS CARS;
 
 **查询:**
 
-```
+```sql
 INSERT INTO CARS VALUES('INNOVA','TOYOTA',10000);
 INSERT INTO CARS VALUES('CAMRY','TOYOTA',20000);
 INSERT INTO CARS VALUES('CIAZ','HONDA',30000);
@@ -75,7 +75,7 @@ INSERT INTO CARS VALUES('BENZ','MERCEDES',100000);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM CARS;
 ```
 
@@ -89,13 +89,13 @@ SELECT * FROM CARS;
 
 **语法:**
 
-```
+```sql
 SELECT * FROM TABLE_NAME WHERE COLUMN_NAME IN (MATCHING_VALUE1,MATCHING_VALUE2);
 ```
 
 **查询:**
 
-```
+```sql
 SELECT * FROM CARS WHERE COMPANY IN ('TOYOTA','HONDA');
 ```
 
@@ -109,13 +109,13 @@ SELECT * FROM CARS WHERE COMPANY IN ('TOYOTA','HONDA');
 
 **语法:**
 
-```
+```sql
 SELECT * FROM TABLE_NAME WHERE COLUMN_NAME LIKE 'STARTING_LETTER%';
 ```
 
 **查询:**
 
-```
+```sql
 SELECT * FROM CARS WHERE CAR_NAME LIKE 'C%';
 ```
 
@@ -129,13 +129,13 @@ SELECT * FROM CARS WHERE CAR_NAME LIKE 'C%';
 
 **语法:**
 
-```
+```sql
 SELECT * FROM TABLE_NAME WHERE COLUMN_NAME >=VALUE;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT * FROM CARS WHERE COST>=30000;
 ```
 

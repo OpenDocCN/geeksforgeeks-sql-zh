@@ -10,21 +10,21 @@
 **第一步:创建数据库:**
 使用下面的 SQL 语句创建一个名为 geeks 的数据库，如下所示。
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **步骤 2:使用数据库:**
 使用下面的 SQL 语句将数据库上下文切换到极客，如下所示。
 
-```
+```sql
 USE geeks;
 ```
 
 **步骤-3:表定义:**
 我们的极客数据库中有以下演示表。
 
-```
+```sql
 CREATE TABLE demo_orders 
 (
 ORDER_ID INT IDENTITY(1,1) PRIMARY KEY, 
@@ -38,7 +38,7 @@ ORDER_DATE DATE
 **第 4 步:验证:**
 可以使用下面的语句查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS demo_orders;
 ```
 
@@ -55,7 +55,7 @@ EXEC SP_COLUMNS demo_orders;
 **第 5 步:向表中添加数据:**
 使用下面的语句向 demo_orders 表中添加数据，如下所示。
 
-```
+```sql
 INSERT INTO demo_orders 
 --no need to mention columns explicitly as we are inserting into all columns and ID gets
 --automatically incremented.
@@ -70,7 +70,7 @@ VALUES
 **第 6 步:验证:**
 要验证表格的内容，请使用如下语句。
 
-```
+```sql
 SELECT * FROM demo_orders;
 ```
 
@@ -86,13 +86,13 @@ SELECT * FROM demo_orders;
 **第 7 步:计算两个特定日期之间的月数的 SQL 查询:**
 现在，让我们使用 DATEDIFF()函数在表格中查找“玛莎拉蒂”和“法拉利”订单日期之间的月数。下面是 DATEDIFF()函数的语法。
 
-```
+```sql
 DATEDIFF(day/month/year, <start_date>, <end_date>);
 ```
 
 **示例–**
 
-```
+```sql
 DECLARE 
 @start VARCHAR(10) = (
   SELECT order_date FROM demo_orders

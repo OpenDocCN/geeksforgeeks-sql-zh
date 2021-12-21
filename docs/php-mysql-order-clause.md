@@ -17,7 +17,7 @@ Order By 子句的基本语法是–
 
 **使用程序方法按条款排序:**
 
-```
+```sql
 <?php
 $link = mysqli_connect("localhost", "root", "", "Mydb");
 
@@ -66,7 +66,7 @@ mysqli_close($link);
 
 **使用面向对象方法按子句排序:**
 
-```
+```sql
 <?php
 $mysqli = new mysqli("localhost", "root", "", "Mydb");
 
@@ -110,7 +110,7 @@ $mysqli->close();
 
 **使用 PDO 方法的订单条款:**
 
-```
+```sql
 <?php
 try{
     $pdo = new PDO("mysql:host=localhost;

@@ -9,7 +9,7 @@
 
 **语法–**
 
-```
+```sql
 select select_list 
 from table1 left join table2 on join_predicate
                  (OR)
@@ -23,7 +23,7 @@ from table1 right join table2
 
 **语法–**
 
-```
+```sql
 select select_list 
 from table1 right join table2 on join_predicate
                  (OR)
@@ -60,7 +60,7 @@ from table1 right join table2
 **1。左连接:**
 左连接应用于“课程”和“学生”表，下表是结果集。
 
-```
+```sql
 select name, course 
 from c.course left join s.student on c.age = s.age 
 ```
@@ -79,7 +79,7 @@ from c.course left join s.student on c.age = s.age
 **2。右连接:**
 右连接应用于“课程”和“学生”表，下表是结果集。
 
-```
+```sql
 select name, rollno 
 from c.course right join s.student on c.age = s.age 
 ```

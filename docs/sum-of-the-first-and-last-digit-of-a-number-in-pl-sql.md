@@ -8,7 +8,7 @@
 给定一个数字 n，任务是找出它的第一个和最后一个数字的和。
 **例:**
 
-```
+```sql
 Input: 14598.
 Output: Sum of the first and last digit is 9.
 
@@ -21,7 +21,7 @@ Output: Sum of the first and last digit is 15.
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE 
     -- declare variables are A, B,  C and S
     -- these are same datatype integer
@@ -48,7 +48,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Sum of the first and last digit is 9
 
 ```

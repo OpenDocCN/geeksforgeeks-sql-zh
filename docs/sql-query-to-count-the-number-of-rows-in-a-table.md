@@ -10,13 +10,13 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -24,7 +24,7 @@ USE geeks;
 
 我们的 *极客* 数据库中有以下员工表:
 
-```
+```sql
 CREATE TABLE geeks(
     id int(20) , 
     name varchar(200));
@@ -36,7 +36,7 @@ CREATE TABLE geeks(
 
 可以用下面的语句查询创建的表的描述:
 
-```
+```sql
 EXEC sp_columns employees;
 ```
 
@@ -44,7 +44,7 @@ EXEC sp_columns employees;
 
 使用以下语句向*员工*表添加数据:
 
-```
+```sql
 INSERT INTO geeks(id,name) values(1,'nikhil');
 INSERT INTO geeks(id,name) values(2,'kartik');
 ```
@@ -55,7 +55,7 @@ INSERT INTO geeks(id,name) values(2,'kartik');
 
 函数的作用是:返回表中的行数。它与 Select()语句一起使用。
 
-```
+```sql
 Syntax: SELECT COUNT(colmn_name) from table_name;
 ```
 
@@ -63,7 +63,7 @@ Syntax: SELECT COUNT(colmn_name) from table_name;
 
 使用' * '我们得到如下所示的所有行:
 
-```
+```sql
 SELECT * FROM geeks;
 ```
 
@@ -73,7 +73,7 @@ SELECT * FROM geeks;
 
 我们将要操作的表有两行。因此，让我们输入查询来获取特定列(比如 id)的行数，如下所示:
 
-```
+```sql
 SELECT COUNT(id) from geeks;
 ```
 
@@ -83,7 +83,7 @@ SELECT COUNT(id) from geeks;
 
 我们甚至可以更改显示计数的显示名称:
 
-```
+```sql
 SELECT COUNT(id) as id_count FROM geeks
 ```
 

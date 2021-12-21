@@ -10,7 +10,7 @@
 
 **无子查询:**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (value1, value2, ...);
@@ -18,7 +18,7 @@ WHERE column_name IN (value1, value2, ...);
 
 **带子查询**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (SELECT statement);
@@ -32,7 +32,7 @@ WHERE column_name IN (SELECT statement);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -40,7 +40,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -50,7 +50,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE int,
@@ -61,7 +61,7 @@ GRADE VARCHAR(5));
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table
 VALUES ('Romy',22, 'A'),
 ('Roshini', 20, 'A'),
@@ -80,7 +80,7 @@ VALUES ('Romy',22, 'A'),
 
 执行以下查询查看表格的内容
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -94,7 +94,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 WHERE NAME IN  
 (SELECT NAME FROM demo_table WHERE NAME LIKE 'R%') ;
@@ -110,7 +110,7 @@ WHERE NAME IN
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 WHERE AGE IN  
 (SELECT AGE FROM demo_table WHERE AGE>22) ;

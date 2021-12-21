@@ -10,7 +10,7 @@
 
 示例:
 
-```
+```sql
 Input: hypotenuse = 10, base = 4, height = 14
 Output:  Area = 28, Perimeter = 28
 Input: hypotenuse = 30,  base = 10, height = 25
@@ -21,19 +21,19 @@ Output: Area = 125, Perimeter = 65
 面积和周长计算公式:
 **直角三角形面积:**
 
-```
+```sql
  1/2 * base * height
 ```
 
 **三角形周长:**
 
-```
+```sql
 len of hypotenuse + len of base + len of height
 ```
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE
     -- declare variable side1, side2,
     -- base, height, area and perimeter
@@ -68,7 +68,7 @@ END;
 
 **输出:**
 
-```
+```sql
  Area of triangle is 28
  Perimeter of triangle is 28
 

@@ -10,7 +10,7 @@ SQL 中使用语句的顺序，通过在后缀中提到结果集为 [DESC](https
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GFG
 
 **查询:**
 
-```
+```sql
 USE GFG
 ```
 
@@ -26,7 +26,7 @@ USE GFG
 
 **查询:**
 
-```
+```sql
 CREATE TABLE s_marks 
 (
 studentid int PRIMARY KEY, 
@@ -39,7 +39,7 @@ professorid int
 
 **查询:**
 
-```
+```sql
 INSERT INTO [dbo].[s_marks]
            ([studentid]
            ,[subjectid]
@@ -73,7 +73,7 @@ GO
 
 **查询:**
 
-```
+```sql
 SELECT studentid, subjectid FROM s_marks 
     WHERE studentid 
     IN

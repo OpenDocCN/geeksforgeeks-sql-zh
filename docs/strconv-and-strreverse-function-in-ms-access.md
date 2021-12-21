@@ -22,14 +22,14 @@
 
 **语法:**
 
-```
+```sql
 StrConv(string1, conversion)
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT StrConv("GeeksforGeeks", 1) AS ConvertedString;
 
 ```
@@ -41,7 +41,7 @@ SELECT StrConv("GeeksforGeeks", 1) AS ConvertedString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT StrConv("geeks for geeks", 3) AS ConvertedString;
 
 ```
@@ -56,14 +56,14 @@ SELECT StrConv("geeks for geeks", 3) AS ConvertedString;
 
 **语法:**
 
-```
+```sql
 StrReverse(string)
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT StrReverse("Geeksforgeeks") AS StringReverse;
 
 ```
@@ -75,7 +75,7 @@ SELECT StrReverse("Geeksforgeeks") AS StringReverse;
 
 **示例-2 :**
 
-```
+```sql
 SELECT StrReverse("Gfg") AS StringReverse;
 
 ```

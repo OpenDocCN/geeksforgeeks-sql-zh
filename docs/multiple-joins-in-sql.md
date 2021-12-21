@@ -13,7 +13,7 @@
 
 **1。创建数据库:**
 
-```
+```sql
 CREATE geeks;
 ```
 
@@ -22,7 +22,7 @@ CREATE geeks;
 
 **2。使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -31,7 +31,7 @@ USE geeks;
 
 **3。向数据库添加表:**
 
-```
+```sql
 create table students(id int, name varchar(50),branch varchar(50));
 create table marks(id int, marks int);
 create table attendance(id int, attendance int);
@@ -45,7 +45,7 @@ create table attendance(id int, attendance int);
 **4。将数据插入表格:**
 **学生表格–**
 
-```
+```sql
 --students
 insert into students values(1,'anurag','cse');
 insert into students values(2,'harsh','ece');
@@ -61,7 +61,7 @@ insert into students values(4,'kae','cse');
 
 **5。标记表:**
 
-```
+```sql
 --marks
 insert into marks values(1,95);
 insert into marks values(2,85);
@@ -77,7 +77,7 @@ insert into marks values(4,65);
 
 ***6。*** **考勤表:**
 
-```
+```sql
 --attendance
 insert into attendance values(1,75);
 insert into attendance values(2,65);
@@ -93,7 +93,7 @@ insert into attendance values(4,80);
 
 **7。查看表内数据:**
 
-```
+```sql
 select *from students;
 ```
 
@@ -106,7 +106,7 @@ select *from students;
 
 </figure>
 
-```
+```sql
 select *from marks;
 ```
 
@@ -123,7 +123,7 @@ select *from marks;
 
 </figure>
 
-```
+```sql
 select *from attendance;
 ```
 
@@ -151,7 +151,7 @@ select *from attendance;
 
 **语法–**
 
-```
+```sql
 *JOIN*
 *table1.column_name=table2.column_name*
 *JOIN*
@@ -160,7 +160,7 @@ select *from attendance;
 
 **示例查询:**
 
-```
+```sql
 select s.id, name, marks, attendance
 from students as s
 inner join

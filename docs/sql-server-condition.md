@@ -6,7 +6,7 @@ IN 条件是 SELECT、INSERT、UPDATE 或 DELETE 语句中多个 OR 条件的替
 
 **语法:**
 
-```
+```sql
 expression IN (value1, value2, .... value_n);
 
 ```

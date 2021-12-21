@@ -21,7 +21,7 @@ Web 服务器在需要检索或存储用户数据的任何时候都可以与数�
 
 所以这个基本上**翻译成:**
 
-```
+```sql
 SELECT * from STUDENT where 
 STUDENT-ID == 12222345 or 1 = 1
 ```
@@ -30,14 +30,14 @@ STUDENT-ID == 12222345 or 1 = 1
 
 考虑下面的 SQL 查询。
 
-```
+```sql
 SELECT * from USER where 
 USERNAME = “” and PASSWORD=”” 
 ```
 
 现在，恶意者可以聪明地使用“=”操作符来检索私有和安全的用户信息。因此，执行以下查询时，不是上述查询，而是检索受保护的数据，而不是显示给用户。
 
-```
+```sql
 Select * from User where 
 (Username = “” or 1=1) AND 
 (Password=”” or 1=1).

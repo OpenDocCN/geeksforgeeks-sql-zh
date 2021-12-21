@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeksDatabase;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeksDatabase;
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Geeks(
 GeekID INTEGER PRIMARY KEY,
 GeekName VARCHAR(255) NOT NULL,
@@ -49,7 +49,7 @@ GeekSchool VARCHAR(255) NOT NULL
 
 **查询:**
 
-```
+```sql
 DESC tableName
 ```
 
@@ -57,7 +57,7 @@ DESC tableName
 
 **查询:**
 
-```
+```sql
 DESCRIBE databasename.tableName;
 ```
 
@@ -65,7 +65,7 @@ DESCRIBE databasename.tableName;
 
 **查询:**
 
-```
+```sql
 EXEC sp_help 'dbo.tableName';
 ```
 

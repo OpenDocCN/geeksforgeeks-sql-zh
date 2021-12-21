@@ -8,7 +8,7 @@ MySQL 服务器使用 Password 函数加密 MySQL 密码，以存储在用户授
 
 **语法:**
 
-```
+```sql
 PASSWORD( string_to_encrypt )
 ```
 
@@ -30,52 +30,52 @@ MySQL 中的 PASSWORD 函数返回一个散列字符串。
 
 **示例-1:** 在字符串上实现 PASSWORD 函数。
 
-```
+```sql
 SELECT 
 PASSWORD('xyz'); 
 ```
 
 **输出:**
 
-```
+```sql
 6gd7gb67shy87865 
 ```
 
 **示例-2:** 对包含字符和整数值的字符串实现 PASSWORD 函数。
 
-```
+```sql
 SELECT 
 PASSWORD('xyz123'); 
 ```
 
 **输出:**
 
-```
+```sql
 54fg56gs32sgi3862 
 ```
 
 **示例-3:** 在更大的字符串上实现 PASSWORD 函数。
 
-```
+```sql
 SELECT 
 PASSWORD('geeksforgeeks'); 
 ```
 
 **输出:**
 
-```
+```sql
 79sgs54uksr1fy76509 
 ```
 
 **示例-4:** 在空字符串上实现 PASSWORD 函数。
 
-```
+```sql
 SELECT 
 PASSWORD('NULL'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

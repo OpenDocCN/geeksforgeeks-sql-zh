@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 LCase(text)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT LCASE("GeekForGeeks") 
 AS LowercaseName
 ```
@@ -25,7 +25,7 @@ AS LowercaseName
 
 **示例–**
 
-```
+```sql
 SELECT LCASE("GFG") 
 AS LowercaseName
 ```
@@ -40,13 +40,13 @@ AS LowercaseName
 
 **语法:**
 
-```
+```sql
 UCase(text)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT UCASE("GeekForGeeks") 
 AS UppercaseName
 ```
@@ -58,7 +58,7 @@ AS UppercaseName
 
 **示例–**
 
-```
+```sql
 SELECT UCASE("gfg") 
 AS UppercaseName
 ```

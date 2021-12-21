@@ -15,7 +15,7 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -23,7 +23,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -31,7 +31,7 @@ USE geeks;
 
 我们的极客数据库中有以下 EpochDB。
 
-```
+```sql
 CREATE TABLE EpochDOB (
 Id INT,
 Person VARCHAR(50), 
@@ -45,7 +45,7 @@ Dt BIGINT
 
 使用以下语句将数据添加到 EpochDB 表中:
 
-```
+```sql
 INSERT INTO EpochDOB VALUES
 (1,'Anuj',848698632000),
 (2,'Harsh',957532509000),
@@ -56,7 +56,7 @@ INSERT INTO EpochDOB VALUES
 
 **步骤 5:** 要验证表格的内容，请使用以下语句
 
-```
+```sql
 SELECT * FROM EpochDOB;
 ```
 
@@ -66,7 +66,7 @@ SELECT * FROM EpochDOB;
 
 因为我们的 Epoch 时间是以毫秒为单位指定的，所以我们可以将其转换为秒。要将毫秒转换为秒，首先，将毫秒数除以 1000。稍后，我们使用 DATEADD()来添加自纪元以来的秒数，即 1970 年 1 月 1 日，并强制转换结果以检索自纪元以来的日期。
 
-```
+```sql
 SELECT *, CAST(DATEADD(SECOND, Dt/1000
  ,'1970/1/1') AS DATE) DOBDate
 FROM EpochDOB;

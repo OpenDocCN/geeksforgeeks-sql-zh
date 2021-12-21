@@ -6,7 +6,7 @@ A **存储过程**是 SQL 中的一种代码，可以存储起来以备后用，
 
 **语法:**
 
-```
+```sql
 CREATE PROCEDURE procedure_name
 AS
 sql_statement
@@ -15,13 +15,13 @@ GO;
 
 **执行存储过程–**
 
-```
+```sql
 EXEC procedure_name;
 ```
 
 **示例:**
 
-```
+```sql
 CREATE PROCEDURE SelectAllGeeks
 AS
 SELECT * 

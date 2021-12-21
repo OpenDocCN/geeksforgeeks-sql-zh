@@ -10,7 +10,7 @@
 **语法:**
 我们将使用以下语法执行自然连接查询。
 
-```
+```sql
 SELECT *
 FROM TABLE1
 NATURAL JOIN TABLE2;
@@ -28,14 +28,14 @@ NATURAL JOIN TABLE2;
 
 **步骤 1:创建数据库:**
 
-```
+```sql
 create database geeks;
 ```
 
 **第 2 步:使用数据库:**
 如下使用该数据库。
 
-```
+```sql
 use geeks;
 ```
 
@@ -44,7 +44,7 @@ use geeks;
 
 **表-1:** **部门–**
 
-```
+```sql
 Create Table department
 (
    DEPT_NAME Varchar(20),
@@ -54,7 +54,7 @@ Create Table department
 
 **表-2:员工–**
 
-```
+```sql
 Create Table employee
 (
    EMP_ID int,
@@ -66,7 +66,7 @@ Create Table employee
 **第 4 步:插入值:**
 将值添加到表格中，如下所示。
 
-```
+```sql
 INSERT INTO DEPARTMENT(DEPT_NAME,MANAGER_NAME) VALUES ( "IT", "ROHAN");
 INSERT INTO DEPARTMENT(DEPT_NAME,MANAGER_NAME) VALUES ( "SALES", "RAHUL");
 INSERT INTO DEPARTMENT(DEPT_NAME,MANAGER_NAME) VALUES ( "HR", "TANMAY");
@@ -83,7 +83,7 @@ INSERT INTO EMPLOYEE(EMP_ID, EMP_NAME, DEPT_NAME) VALUES (5, "SAGAR", "SALES");
 **第五步:验证插入的数据:**
 这是我们在表格里面的数据，如下。
 
-```
+```sql
 SELECT * FROM EMPLOYEE;
 ```
 
@@ -96,7 +96,7 @@ SELECT * FROM EMPLOYEE;
 
 </figure>
 
-```
+```sql
 SELECT * FROM DEPARTMENT;
 ```
 
@@ -111,7 +111,7 @@ SELECT * FROM DEPARTMENT;
 
 **第 6 步:查询实现 SQL 自然连接:**
 
-```
+```sql
 SELECT *
 FROM EMPLOYEE
 NATURAL JOIN DEPARTMENT;

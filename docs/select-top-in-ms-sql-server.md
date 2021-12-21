@@ -8,7 +8,7 @@
 
 **语法–**
 
-```
+```sql
 select top (expression) [percent] [with ties]
 from table_name 
 order by column_name 
@@ -26,7 +26,7 @@ order by 子句用于按时间顺序排列数据。必须在语法中使用此�
 **示例–**
 如果用户想要抽取一个机构的前 5 名学生，那么查询将被写成–
 
-```
+```sql
 select top 5 name rollnumber gpa
 from student 
 order by name ASC
@@ -49,7 +49,7 @@ order by name ASC
 
 这样可以提取所需的数据。最后一行学生的 gpa 为 7.7，如果还有几个学生共享相同的数字，则查询必须写成–
 
-```
+```sql
 select top 8 with ties
 name rollnumber gpa
 from student

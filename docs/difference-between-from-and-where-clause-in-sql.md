@@ -7,7 +7,7 @@
 
 **FROM 子句的语法:**
 
-```
+```sql
 SELECT * 
 FROM TABLE_NAME; 
 ```
@@ -18,7 +18,7 @@ AND、or、IN、NOT IN、BETWEEN、等于、不等于等。
 
 **WHERE 子句的语法:**
 
-```
+```sql
 SELECT * FROM TABLE_NAME
 WHERE (CONDITIONS); 
 ```
@@ -44,7 +44,7 @@ WHERE (CONDITIONS);
 
 **查询:**
 
-```
+```sql
 SELECT * 
 FROM STUDENT 
 WHERE S_AGE<22 AND S_SECTION='A'; 

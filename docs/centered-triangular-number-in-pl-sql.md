@@ -8,7 +8,7 @@
 给定 n，任务是找到第 n 个[居中的三角形](https://www.geeksforgeeks.org/centered-triangular-number/)数。居中的三角形数是一个居中的数，它表示一个三角形，在连续的三角形层中，中心有一个点，所有其他点都围绕着中心。
 **例:**
 
-```
+```sql
 Input: n = 6 
 Output: 64
 
@@ -25,7 +25,7 @@ Output: 166
 
 **下面是需要的实现:**
 
-```
+```sql
 --PL/SQL Program to find the nth Centered triangular number 
 -- declaration section 
 DECLARE 
@@ -58,7 +58,7 @@ DECLARE 
 
 **输出:**
 
-```
+```sql
 19
 235
 ```

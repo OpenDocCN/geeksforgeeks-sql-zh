@@ -8,7 +8,7 @@
 给定两个数字，任务是找出数字的最大公约数或最高公约数。
 **例:**
 
-```
+```sql
 Input:  num1 = 4, num2 = 6
 Output: gcd of (num1, num2) = 2
 
@@ -21,7 +21,7 @@ Output: gcd of (num1, num2) = 8
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE 
 
     -- declare variable num1, num2 and t 
@@ -55,7 +55,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 GCD of 8 and 48 is 8
 
 ```

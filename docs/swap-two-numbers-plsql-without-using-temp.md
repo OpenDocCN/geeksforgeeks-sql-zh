@@ -10,7 +10,7 @@
 
 示例:
 
-```
+```sql
 Input : num1  = 1000, num2 = 2000
 Output : num1  = 2000, num2 = 1000
 
@@ -22,7 +22,7 @@ Output : num1  = 20, num2 = 40
 **方法 1** (使用算术运算符)
 想法是在两个给定的数字中的一个中得到和。然后，可以使用求和和从求和中减去来交换数字。
 
-```
+```sql
 DECLARE 
     -- declare variable num1, num2  
     -- of datatype number 
@@ -61,7 +61,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Before
 num1 = 1000 num2 = 2000
 After
@@ -71,7 +71,7 @@ num1 = 2000 num2 = 1000
 
 **方法二**乘除也可以用于对换。
 
-```
+```sql
 DECLARE 
     -- declare variable num1, num2  
     -- of datatype number 
@@ -110,7 +110,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Before
 num1 = 1000 num2 = 2000
 After

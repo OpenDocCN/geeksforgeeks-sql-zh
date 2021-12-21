@@ -9,7 +9,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     column_name bit; 
     ```
 
@@ -22,7 +22,7 @@
 
         **语法–**
 
-        ```
+        ```sql
         column_name bigint; 
         ```
 
@@ -31,7 +31,7 @@
 
         **语法–**
 
-        ```
+        ```sql
         column_name int; 
         ```
 
@@ -40,7 +40,7 @@
 
         **语法–**
 
-        ```
+        ```sql
         column_name smallint; 
         ```
 
@@ -49,13 +49,13 @@
 
     **语法–**
 
-    ```
+    ```sql
     column_name tinyint; 
     ```
 
     例如，班级表中的学生人数可以分配如下。
 
-    ```
+    ```sql
     rollnumber int;  
     ```
 
@@ -80,13 +80,13 @@
 
     **语法–**
 
-    ```
+    ```sql
     column_name decimal(precision, scale) 
     ```
 
     例如，
 
-    ```
+    ```sql
     percentage(4,3)  
     ```
 
@@ -99,7 +99,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     date 
     ```
 
@@ -108,7 +108,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     time 
     ```
 
@@ -117,7 +117,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     datetime2 
     ```
 

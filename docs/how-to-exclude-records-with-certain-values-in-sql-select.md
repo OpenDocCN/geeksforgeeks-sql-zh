@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeksDatabase;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeksDatabase;
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeksDatabase;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Geeks(
 GeekID INTEGER PRIMARY KEY,
 GeekName VARCHAR(255) NOT NULL,
@@ -47,7 +47,7 @@ GeekSchool VARCHAR(255) NOT NULL
 
 **查询:**
 
-```
+```sql
 INSERT INTO Geeks VALUES (101, 'Nix',2 ,'Code Valley School');
 INSERT INTO Geeks VALUES (102, 'Rutz',4 ,'Blue Chip School');
 INSERT INTO Geeks VALUES (103, 'Shrey',1 ,'GCOEA School');
@@ -63,7 +63,7 @@ INSERT INTO Geeks VALUES (107, 'Bugs',5 ,'Twinkle Star Convent');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Geeks;
 ```
 
@@ -79,7 +79,7 @@ SELECT * FROM Geeks;
 
 注意:如果我们没有在这里使用 NOT，那么结果将是相反的。
 
-```
+```sql
 SELECT * FROM Geeks WHERE NOT GeekSchool = 'Blue Chip School';
 ```
 
@@ -93,7 +93,7 @@ SELECT * FROM Geeks WHERE NOT GeekSchool = 'Blue Chip School';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Geeks WHERE NOT GeekID > 104;
 ```
 
@@ -107,7 +107,7 @@ SELECT * FROM Geeks WHERE NOT GeekID > 104;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Geeks WHERE GeekID NOT IN (104,101,102,107);
 ```
 
@@ -123,7 +123,7 @@ SELECT * FROM Geeks WHERE GeekID NOT IN (104,101,102,107);
 
 我们还可以在 in 运算符中提供子查询，还可以使用 WHERE 子句包含一个或多个条件:
 
-```
+```sql
 SELECT * FROM Geeks WHERE GeekRank NOT IN (SELECT GeekRank FROM Geeks WHERE GeekRank >= 4);
 ```
 

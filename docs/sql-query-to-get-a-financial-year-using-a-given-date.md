@@ -8,19 +8,19 @@
 
 ### **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
 ### **在** ***极客*** **数据库中创建**一个**表:**
 
-```
+```sql
 CREATE TABLE [dbo].[department](
 [ID] [int] NULL,
 [SALARY] [int] NULL,
@@ -32,7 +32,7 @@ GO
 
 ### **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO [dbo].[department] VALUES  ( 1, 34000, 'Neha', '2013-09-24')  
 INSERT INTO [dbo].[department] VALUES  ( 2, 33000, 'Hema', '2015-02-0' )
 INSERT INTO [dbo].[department] VALUES  ( 3, 36000, 'Jaya', '2017-09-09' )
@@ -43,7 +43,7 @@ GO
 
 这是我们表中的数据:
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -51,7 +51,7 @@ SELECT * FROM department;
 
 **使用 SQL 查询查看当前财政年度:**
 
-```
+```sql
 DECLARE @FIYear VARCHAR(20)    
   SELECT @FIYear = (CASE WHEN (MONTH(GETDATE()))
   <= 3 THEN convert(varchar(4), YEAR(GETDATE())-1) + '-' + convert(varchar(4), YEAR(GETDATE())%100)
@@ -65,7 +65,7 @@ DECLARE @FIYear VARCHAR(20)
 
 **使用表中的给定日期获取财政年度:**
 
-```
+```sql
  SELECT  (CASE WHEN (MONTH(JoinDate))  <=3 THEN convert(varchar(4),
   YEAR(JoinDate)-1)  + '-' + convert(varchar(4), YEAR(JoinDate)%100)    
    ELSE convert(varchar(4),YEAR(JoinDate))+ '-' + convert(varchar(4),

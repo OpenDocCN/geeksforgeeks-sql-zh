@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 [labelname:] LOOP
    statements
 END LOOP [labelname]
@@ -19,7 +19,7 @@ END LOOP [labelname]
 
 带有 LEAVE 语句的 LOOP 语句的语法:
 
-```
+```sql
 [labelname]: LOOP
      -- terminate the loop
    IF condition THEN
@@ -30,11 +30,11 @@ END LOOP;
 
 **示例-1 :**
 
-```
+```sql
 DROP PROCEDURE IF EXISTS GeekLoop();
 ```
 
-```
+```sql
 DELIMITER $ 
 CREATE PROCEDURE GeekLoop()
  BEGIN
@@ -54,19 +54,19 @@ DELIMITER ;
 
 检查输出的语句:
 
-```
+```sql
 CALL GeekLoop();
 ```
 
 **输出–**
 
-```
+```sql
 0, 1, 2, 3, 4, 5
 ```
 
 **示例-2 :**
 
-```
+```sql
 DELIMITER $
 CREATE FUNCTION Geekdemo (value1 INT)
 RETURNS INT
@@ -87,29 +87,29 @@ DELIMITER ;
 
 检查输出的查询:
 
-```
+```sql
 CALL Geekdemo();
 ```
 
 **输入–**
 
-```
+```sql
 value1: 3500
 ```
 
 **输出–**
 
-```
+```sql
 value2: 3500
 ```
 
 **例-3 :**
 
-```
+```sql
 CREATE TABLE Geektable (value VARCHAR(50) NULL DEFAULT NULL); 
 ```
 
-```
+```sql
 DELIMITER $ 
 CREATE PROCEDURE ADD()
  BEGIN
@@ -126,7 +126,7 @@ END $
 
 **查询检查输出–**
 
-```
+```sql
 CALL ADD();
 Select value 
 from Geektable;
@@ -134,7 +134,7 @@ from Geektable;
 
 **输出–**
 
-```
+```sql
 1
 2
 3

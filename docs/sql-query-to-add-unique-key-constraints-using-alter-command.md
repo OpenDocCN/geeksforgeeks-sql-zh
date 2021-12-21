@@ -10,7 +10,7 @@
 
 使用下面的 SQL 语句创建一个名为*极客*的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到*极客*:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -26,7 +26,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下*演示*表。
 
-```
+```sql
 CREATE TABLE demo(
   ID INT IDENTITY(1,1) PRIMARY KEY, --IDENTITY(1,1) is same as AUTO_INCREMENT in MySQL.
                                       --Starts from 1 and increases by 1 with each inserted row.
@@ -37,7 +37,7 @@ CREATE TABLE demo(
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS demo;
 ```
 
@@ -47,7 +47,7 @@ EXEC SP_COLUMNS demo;
 
 使用以下语句将数据添加到演示表中:
 
-```
+```sql
 INSERT INTO demo --no need to mention columns explicitly as we are inserting into all columns and ID gets 
                  --automatically incremented.
 VALUES
@@ -60,7 +60,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM demo;
 ```
 
@@ -88,7 +88,7 @@ SELECT * FROM demo;
 
 **示例:**
 
-```
+```sql
 ALTER TABLE demo
 ADD UNIQUE (PHONE);
 

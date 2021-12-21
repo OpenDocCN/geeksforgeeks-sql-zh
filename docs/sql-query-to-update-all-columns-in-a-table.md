@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE SALARY(
 MONTHLY_SALARY INT,
 ANNUAL_SALARY INT);
@@ -46,7 +46,7 @@ ANNUAL_SALARY INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS SALARY;
 ```
 
@@ -58,7 +58,7 @@ EXEC SP_COLUMNS SALARY;
 
 **查询:**
 
-```
+```sql
 INSERT INTO SALARY VALUES(10000,120000);
 INSERT INTO SALARY VALUES(20000,240000);
 INSERT INTO SALARY VALUES(15000,180000);
@@ -74,7 +74,7 @@ INSERT INTO SALARY VALUES(25000,300000);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM SALARY;
 ```
 
@@ -86,14 +86,14 @@ SELECT * FROM SALARY;
 
 **语法:**
 
-```
+```sql
 UPDATE TABLE_NAME SET COLUMN1=VALUE1,
 COLUMN2 = VALUE2;
 ```
 
 **查询:**
 
-```
+```sql
 UPDATE SALARY SET MONTHLY_SALARY = 
 MONTHLY_SALARY+1000,ANNUAL_SALARY=
 ANNUAL_SALARY+12000;
@@ -107,7 +107,7 @@ ANNUAL_SALARY+12000;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM SALARY;
 ```
 

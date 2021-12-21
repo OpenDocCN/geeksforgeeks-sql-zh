@@ -22,7 +22,7 @@
 
     **语法:**
 
-    ```
+    ```sql
     SELECT table1.column1 , table1.column2, table2.column1...
     FROM table1
     CROSS JOIN table2;
@@ -36,7 +36,7 @@
 
 *   In the below query we will select NAME and Age from Student table and COURSE_ID from StudentCourse table. In the output you can see that each row of the table Student is joined with every row of the table StudentCourse. The total rows in the result-set = 4 * 4 = 16.
 
-    ```
+    ```sql
     SELECT Student.NAME, Student.AGE, StudentCourse.COURSE_ID
     FROM Student
     CROSS JOIN StudentCourse;
@@ -48,7 +48,7 @@
 
 2.  **SELF JOIN**: As the name signifies, in SELF JOIN a table is joined to itself. That is, each row of the table is joined with itself and all other rows depending on some conditions. In other words we can say that it is a join between two copies of the same table.**Syntax:**
 
-    ```
+    ```sql
     SELECT a.coulmn1 , b.column2
     FROM table_name a, table_name b
     WHERE some_condition;
@@ -60,7 +60,7 @@
 
     **示例查询(自连接):**
 
-    ```
+    ```sql
     SELECT a.ROLL_NO , b.NAME
     FROM Student a, Student b
     WHERE a.ROLL_NO < b.ROLL_NO;

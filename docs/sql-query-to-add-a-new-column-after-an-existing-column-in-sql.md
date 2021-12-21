@@ -10,7 +10,7 @@ S 结构化 Q uery L 语言或 SQL 是一种标准的数据库语言，用于创
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE employee;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE employee;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE employee_info
 ( Employee_id INT,
 First_Name VARCHAR(25),
@@ -41,7 +41,7 @@ VALUES (1,'Monika','Singh',800000,'Nashik'),
 
 **查询:**
 
-```
+```sql
 EXEC sp_help 'dbo.employee_info';
 ```
 
@@ -53,7 +53,7 @@ EXEC sp_help 'dbo.employee_info';
 
 **第四步:**改表。
 
-```
+```sql
 ALTER TABLE employee_info ADD Gender CHAR(1) CHECK (Gender IN ('M','F'));
 ```
 
@@ -69,7 +69,7 @@ ALTER TABLE employee_info ADD Gender CHAR(1) CHECK (Gender IN ('M','F'));
 
 **查询:**
 
-```
+```sql
 SELECT Employee_Id,First_Name,Last_Name,Gender,Salary,City FROM employee_info;
 ```
 

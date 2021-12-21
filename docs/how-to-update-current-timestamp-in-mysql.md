@@ -10,7 +10,7 @@ MySQL 是一个易于使用的 RDBMS。许多组织更喜欢使用它，因为�
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GEEKSFORGEEKS;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GEEKSFORGEEKS;
 
 **查询:**
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -26,7 +26,7 @@ USE GEEKSFORGEEKS;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE employee
    (
        empId int NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE employee
 
 **查询:**
 
-```
+```sql
 SET TIME_ZONE = '+00:00';
 ```
 
@@ -53,7 +53,7 @@ SET TIME_ZONE = '+00:00';
 
 **查询:**
 
-```
+```sql
 INSERT INTO employee
     (
         empId, empName, empLoginTime
@@ -69,7 +69,7 @@ VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee;
 ```
 
@@ -83,7 +83,7 @@ SELECT * FROM employee;
 
 **查询:**
 
-```
+```sql
 SET time_zone ='+03:00';
 SELECT * FROM employee;
 ```
@@ -96,7 +96,7 @@ SELECT * FROM employee;
 
 **查询:**
 
-```
+```sql
 ALTER TABLE employee MODIFY 
 COLUMN empLoginTime 
 TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -107,7 +107,7 @@ ON UPDATE CURRENT_TIMESTAMP;
 
 **查询:**
 
-```
+```sql
 DESC employee;
 ```
 
@@ -121,7 +121,7 @@ DESC employee;
 
 **查询:**
 
-```
+```sql
 **Since empLoginTime has the current 
 timestamp value, we no need to add the value
  explicitly to that column**
@@ -133,7 +133,7 @@ INSERT INTO employee (empId, empName) VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee;
 ```
 
@@ -153,7 +153,7 @@ SELECT * FROM employee;
 
 **查询:**
 
-```
+```sql
 UPDATE employee set empLoginTime = CURRENT_TIMESTAMP
 WHERE empId < 4;
 ```
@@ -162,7 +162,7 @@ WHERE empId < 4;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee;
 ```
 

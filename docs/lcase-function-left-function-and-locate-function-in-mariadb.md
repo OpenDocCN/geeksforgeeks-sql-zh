@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 LCASE(string) 
 ```
 
@@ -20,40 +20,40 @@ LCASE(string)
 
 **示例-1 :**
 
-```
+```sql
 SELECT LCASE('Geeksforgeeks');
 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LCASE('CO_MPU_TER');
 
 ```
 
 **输出:**
 
-```
+```sql
 co_mpu_ter
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LCASE('@ Self @paced');
 ```
 
 **输出:**
 
-```
+```sql
 @ self @paced
 ```
 
@@ -62,7 +62,7 @@ SELECT LCASE('@ Self @paced');
 
 **语法:**
 
-```
+```sql
 LEFT(string, number_of_characters)
 ```
 
@@ -76,37 +76,37 @@ LEFT(string, number_of_characters)
 
 **示例-1 :**
 
-```
+```sql
 SELECT LEFT('data', 1);
 ```
 
 **输出:**
 
-```
+```sql
 d
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LEFT('Article', 5);
 ```
 
 **输出:**
 
-```
+```sql
 Artic
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LEFT('dsa', 108);
 ```
 
 **输出:**
 
-```
+```sql
 dsa
 ```
 
@@ -115,7 +115,7 @@ dsa
 
 **语法:**
 
-```
+```sql
 LOCATE( substring, string, [start_position ] )
 ```
 
@@ -128,36 +128,36 @@ LOCATE( substring, string, [start_position ] )
 
     **示例-1 :**
 
-    ```
+    ```sql
     SELECT LOCATE('n', 'noncase');
     ```
 
     **输出:**
 
-    ```
+    ```sql
     1
     ```
 
     **示例-2 :**
 
-    ```
+    ```sql
     SELECT LOCATE('n', 'banana', 4);
     ```
 
     **输出:**
 
-    ```
+    ```sql
     5
     ```
 
     **示例-3 :**
 
-    ```
+    ```sql
     SELECT LOCATE('new', 'Example');
     ```
 
     **输出:**
 
-    ```
+    ```sql
     0
     ```

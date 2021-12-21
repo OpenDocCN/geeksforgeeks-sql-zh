@@ -24,7 +24,7 @@
 
     **查询:**
 
-    ```
+    ```sql
     DELETE M1 from managers M1, managers M2 where M2.Name=M1.Name AND M1.Id>M2.Id;
 
     ```
@@ -52,7 +52,7 @@
 
     ****查询:****
 
-    ```
+    ```sql
     SELECT ID, COALESCE(FName, SName, LName) as Name FROM employees;
 
     ```
@@ -79,7 +79,7 @@
 
     ****查询:****
 
-    ```
+    ```sql
     Select *, TIMESTAMPDIFF(month, Hiredate, current_date()) as 
     DiffMonth from employees
     where TIMESTAMPDIFF(month, Hiredate, current_date()) between 
@@ -112,7 +112,7 @@
 
     ****查询:****
 
-    ```
+    ```sql
     select *, DATEDIFF(current_date(), Hiredate)as 
     DiffDay from employees
     where DATEDIFF(current_date(), Hiredate) between
@@ -145,7 +145,7 @@
 
     ****查询:****
 
-    ```
+    ```sql
     select *, TIMESTAMPDIFF(year, Hiredate, current_date()) as 
     DiffYear from employees
     where TIMESTAMPDIFF(year, Hiredate, current_date()) 
@@ -178,7 +178,7 @@
 
     ****查询:****
 
-    ```
+    ```sql
     select *from employees where Fname like 'A%';
 
     select *from employees where left(FName, 1)='A';

@@ -6,7 +6,7 @@ REPLACE() [函数](https://www.geeksforgeeks.org/sql-functions-aggregate-scalar-
 
 **语法:**
 
-```
+```sql
 SELECT REPLACE(string, from_string, new_string)
 
 ```
@@ -17,14 +17,14 @@ SELECT REPLACE(string, from_string, new_string)
 在本例中，您将看到如何使用 replace 函数将任何字符串值替换为新的字符串值。
 我们来考虑一个例子，其中“MySQL”替换为“HTML”值。下面给出的是替换函数值。
 
-```
+```sql
 Replace "MySQL" with "HTML"
 
 ```
 
 现在，您将看到如何读取替换值。
 
-```
+```sql
 SELECT REPLACE("MySQL in Geeksforgeeks", "SQL", "HTML");
 
 ```
@@ -37,14 +37,14 @@ SELECT REPLACE("MySQL in Geeksforgeeks", "SQL", "HTML");
 
 **示例-2:**
 
-```
+```sql
 Replace "X" with "A"
 
 ```
 
 现在，如果你想读取替换值，那么使用下面给出的函数。
 
-```
+```sql
 SELECT REPLACE("It is Good to study XXX from GFG", "X", "A");
 
 ```
@@ -57,14 +57,14 @@ SELECT REPLACE("It is Good to study XXX from GFG", "X", "A");
 
 **示例-3:**
 
-```
+```sql
 Replace "x" with "a"
 
 ```
 
 现在，如果你想读取替换值，那么使用下面给出的函数。
 
-```
+```sql
 SELECT REPLACE("It is Good to study xxx from GFG", "x", "a");
 
 ```

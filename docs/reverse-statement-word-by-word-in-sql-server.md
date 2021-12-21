@@ -24,7 +24,7 @@
 
 **示例–**
 
-```
+```sql
 DECLARE @Input VARCHAR(MAX)
 DECLARE @Output VARCHAR(MAX)
 DECLARE @Length INT 
@@ -62,7 +62,7 @@ SELECT @Output
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks. on Tutorial Server SQL to Welcome
 
 ```

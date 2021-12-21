@@ -7,7 +7,7 @@
 
     **MIN()语法–**
 
-    ```
+    ```sql
     SELECT MIN(column_name)
     FROM table_name
     WHERE condition;
@@ -19,7 +19,7 @@
 
     **MAX()语法–**
 
-    ```
+    ```sql
     SELECT MAX(column_name)
     FROM table_name
     WHERE condition;
@@ -44,26 +44,26 @@
 1.  **MIN() Example :**
     The following SQL statement finds the lowest salary product :
 
-    ```
+    ```sql
     SELECT MIN(Salary) FROM GeeksTable;
     ```
 
     **输出–**
 
-    ```
+    ```sql
     2900
     ```
 
 2.  **MAX() Example :**
     The following SQL statement finds the highest salary :
 
-    ```
+    ```sql
     SELECT MAX(Price) FROM GeeksTable; 
     ```
 
     **输出–**
 
-    ```
+    ```sql
     8750
 
     ```

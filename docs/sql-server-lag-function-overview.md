@@ -10,7 +10,7 @@ SQL Server 提供 LAG()函数，该函数在当前行值需要与前一条记录
 
 **语法:**
 
-```
+```sql
 LAG (scalar_expression [, offset] [, default])  
 OVER ( [ partition_by ] order_by )  
 ```
@@ -28,7 +28,7 @@ OVER ( [ partition_by ] order_by )
 
 **示例-1:**
 
-```
+```sql
 SELECT Organisation, [Year], Revenue,
 LAG (Revenue, 1, 0) 
 OVER (PARTITION BY Organisation ORDER BY [Year]) AS PrevYearRevenue  
@@ -62,7 +62,7 @@ ORDER BY Organisation, [Year];
 
 **示例-2:**
 
-```
+```sql
 SELECT Z.*,  (Z.Revenue - z.PrevYearRevenue) as YearonYearGrowth
 from (SELECT Organisation, [Year], Revenue,
       LAG (Revenue, 1) 

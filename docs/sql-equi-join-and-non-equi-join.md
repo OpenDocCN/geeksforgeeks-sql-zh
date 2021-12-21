@@ -17,7 +17,7 @@
 
 在这个表格中，你有我，名字，班级和城市是字段。
 
-```
+```sql
 Select * from Student;
 ```
 
@@ -33,7 +33,7 @@ T133T19】德里 T21T23】4T25】梅嘎 T27】2 德里T32T35
 
 在这张表中，你有我，阶级和城市是领域。
 
-```
+```sql
 Select * from Record;
 ```
 
@@ -51,7 +51,7 @@ EQUI JOIN 为相关表的相等或匹配列值创建一个 JOIN。EQUI JOIN 还�
 
 **语法:**
 
-```
+```sql
 SELECT column_list  
 FROM table1, table2....
 WHERE table1.column_name =
@@ -61,7 +61,7 @@ table2.column_name;
 
 **示例–**
 
-```
+```sql
 SELECT student.name, student.id, record.class, record.city
 FROM student, record
 WHERE student.city = record.city;
@@ -71,7 +71,7 @@ WHERE student.city = record.city;
 
 **语法:**
 
-```
+```sql
 SELECT column_list
 FROM table1  
 JOIN table2
@@ -81,7 +81,7 @@ JOIN table2
 
 **示例–**
 
-```
+```sql
 SELECT student.name, student.id, record.class, record.city
 FROM student
 JOIN record
@@ -101,7 +101,7 @@ NON EQUI JOIN 使用等号(=)以外的比较运算符执行连接，如>、 =、
 
 **语法:**
 
-```
+```sql
 SELECT *  
 FROM table_name1, table_name2  
 WHERE table_name1.column [> |  < |  >= | <= ] table_name2.column;
@@ -110,7 +110,7 @@ WHERE table_name1.column [> |  < |  >= | <= ] table_name2.column;
 
 **示例–**
 
-```
+```sql
 SELECT student.name, record.id, record.city
 FROM student, record
 WHERE Student.id < Record.id ;

@@ -13,7 +13,7 @@
 **语法:**
 Mysql 中 **CREATE FUNCTION** 语句的语法为:
 
-```
+```sql
 CREATE FUNCTION function_name(func_parameter1, func_parameter2, ..)
           RETURN datatype [characteristics]
           func_body
@@ -33,7 +33,7 @@ CREATE FUNCTION function_name(func_parameter1, func_parameter2, ..)
 
 ***func_body*** 是执行运算的一组 Mysql 语句。它的结构如下:
 
-```
+```sql
 BEGIN
 
         Mysql Statements
@@ -62,7 +62,7 @@ END
 
 我们必须找到员工在公司的工作年限-
 
-```
+```sql
 DELIMITER //
 
 CREATE FUNCTION no_of_years(date1 date) RETURNS int DETERMINISTIC
@@ -80,7 +80,7 @@ DELIMITER ;
 
 上述函数的调用:
 
-```
+```sql
 Select emp_id, fname, lname, no_of_years(start_date) as 'years' from employee;
 
 ```

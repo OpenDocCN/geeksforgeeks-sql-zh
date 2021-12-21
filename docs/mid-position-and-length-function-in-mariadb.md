@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 MID(string, start_position, length)
 ```
 
@@ -25,37 +25,37 @@ MID(string, start_position, length)
 
 **示例-1 :**
 
-```
+```sql
 SELECT MID('geeksforgeeks', 1, 4);
 ```
 
 **输出:**
 
-```
+```sql
 geek
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT MID('computerscience', 2, 2);
 ```
 
 **输出:**
 
-```
+```sql
 om
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT MID('algorithm', -3, 3);
 ```
 
 **输出:**
 
-```
+```sql
 him
 ```
 
@@ -64,7 +64,7 @@ him
 
 **语法:**
 
-```
+```sql
 POSITION(substring IN string)
 ```
 
@@ -77,37 +77,37 @@ POSITION(substring IN string)
 
 **示例-1 :**
 
-```
+```sql
 SELECT POSITION('g' IN 'gfg');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT POSITION('s' IN 'DSASELFPACED');
 ```
 
 **输出:**
 
-```
+```sql
 2
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT POSITION('X' IN 'geeksforgeeks');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
@@ -116,7 +116,7 @@ SELECT POSITION('X' IN 'geeksforgeeks');
 
 **语法:**
 
-```
+```sql
 LENGTH(string)
 ```
 
@@ -125,36 +125,36 @@ LENGTH(string)
 
 **示例-1 :**
 
-```
+```sql
 SELECT LENGTH('geeksforgeeks');
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LENGTH('');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT LENGTH(' ');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```

@@ -7,7 +7,7 @@
 
 ****语法:****
 
-```
+```sql
 FLOOR(X)
 ```
 
@@ -18,7 +18,7 @@ FLOOR(X)
 ****示例-1 :**
 将 FLOOR()函数应用于+ve 整数。**
 
-```
+```sql
 SELECT FLOOR(4) AS Floor_Value;
 ```
 
@@ -31,7 +31,7 @@ SELECT FLOOR(4) AS Floor_Value;
  ****示例-2 :**
 将 FLOOR()函数应用于-ve 整数。**
 
-```
+```sql
 SELECT FLOOR(-6) AS Floor_Value;
 ```
 
@@ -44,7 +44,7 @@ SELECT FLOOR(-6) AS Floor_Value;
  ****示例-3 :**
 对+ve 浮点数应用 FLOOR()函数。**
 
-```
+```sql
 SELECT FLOOR(1.5) AS Floor_Value;
 ```
 
@@ -57,7 +57,7 @@ SELECT FLOOR(1.5) AS Floor_Value;
  ****示例-4 :**
 对-ve 浮点数应用 FLOOR()函数。**
 
-```
+```sql
 SELECT FLOOR(-1.5) AS Floor_Value;
 ```
 
@@ -80,7 +80,7 @@ SELECT FLOOR(-1.5) AS Floor_Value;
 | -45.76 |
 | Zero point two five |
 
-```
+```sql
 SELECT X, FLOOR(X) AS X_Floor FROM Number;
 ```
 
@@ -99,7 +99,7 @@ MySQL 中的 CEIL()函数用于返回大于或等于给定输入数的最小整�
 
 ****语法:****
 
-```
+```sql
 CEIL(X)
 ```
 
@@ -110,7 +110,7 @@ CEIL(X)
 ****示例-1 :**
 将 CEIL()函数应用于+ve 整数。**
 
-```
+```sql
 SELECT CEIL(5) AS Ceil_Value;
 ```
 
@@ -123,7 +123,7 @@ SELECT CEIL(5) AS Ceil_Value;
  ****示例-2 :**
 将 CEIL()函数应用于-ve 整数。**
 
-```
+```sql
 SELECT CEIL(-8) AS Ceil_Value;
 ```
 
@@ -136,7 +136,7 @@ SELECT CEIL(-8) AS Ceil_Value;
  ****示例-3 :**
 将 CEIL()函数应用于+ve 浮点数。**
 
-```
+```sql
 SELECT CEIL(1.5) AS Ceil_Value;
 ```
 
@@ -149,7 +149,7 @@ SELECT CEIL(1.5) AS Ceil_Value;
  ****示例-4 :**
 将 CEIL()函数应用于-ve 浮点数。**
 
-```
+```sql
 SELECT CEIL(-1.5) AS Ceil_Value;
 ```
 
@@ -172,7 +172,7 @@ SELECT CEIL(-1.5) AS Ceil_Value;
 | -1 |
 | -1.5 |
 
-```
+```sql
 SELECT X, CEIL(X) AS X_Ceil FROM Number;
 ```
 

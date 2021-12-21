@@ -8,7 +8,7 @@ ENCODE()函数接受两个参数，即要编码的字符串和对纯文本字符
 
 **语法:**
 
-```
+```sql
 ENCODE(plain_string, password_string);
 ```
 
@@ -31,39 +31,39 @@ MySQL 中的 ENCODE 函数在编码后返回一个二进制字符串。
 
 **示例-1:** 在字符串上实现 ENCODE 函数。
 
-```
+```sql
 SELECT  
 ENCODE('geeksforgeeks', 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 Q)?P????j[K 
 ```
 
 **示例-2:** 对包含字符和整数的字符串实现 ENCODE 函数。
 
-```
+```sql
 SELECT  
 ENCODE('geeksforgeeks123', 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 Q)?P????j[K??= 
 ```
 
 **示例-3:** 在空字符串上实现 ENCODE 函数。
 
-```
+```sql
 SELECT  
 ENCODE('NULL', 'passwordstring'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 PI()
 ```
 
@@ -30,13 +30,13 @@ PI()
 
 获取 pi 的默认值。
 
-```
+```sql
 SELECT PI();
 ```
 
 **输出:**
 
-```
+```sql
 3.1415926535897931
 ```
 
@@ -44,7 +44,7 @@ SELECT PI();
 
 以加值为 2 的 pi()函数为变量，加 2 后得到 PI 的值。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 2;
 SELECT PI() + @Parameter_Value;
@@ -52,7 +52,7 @@ SELECT PI() + @Parameter_Value;
 
 **输出:**
 
-```
+```sql
 5.1415926535897931
 ```
 
@@ -60,13 +60,13 @@ SELECT PI() + @Parameter_Value;
 
 减去 1 后得到圆周率的值。
 
-```
+```sql
 SELECT PI() - 1;
 ```
 
 **输出:**
 
-```
+```sql
 2.1415926535897931
 ```
 
@@ -74,13 +74,13 @@ SELECT PI() - 1;
 
 获取 pi 的默认值，直到小数点后 3 位。
 
-```
+```sql
 SELECT ROUND(PI(), 3) As New;
 ```
 
 **输出:**
 
-```
+```sql
 3.1419999999999
 ```
 

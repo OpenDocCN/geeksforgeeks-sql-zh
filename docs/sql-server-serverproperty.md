@@ -14,7 +14,7 @@ SQL Server 提供了一个系统定义函数**SERVERPROPERTY(property name)**。
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('MachineName')
 
 ```
@@ -31,7 +31,7 @@ SELECT SERVERPROPERTY ('MachineName')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('Edition')
 
 ```
@@ -44,7 +44,7 @@ SELECT SERVERPROPERTY ('Edition')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('INSTANCEDEFAULTDATAPATH')
 
 ```
@@ -57,7 +57,7 @@ SELECT SERVERPROPERTY ('INSTANCEDEFAULTDATAPATH')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('INSTANCEDEFAULTLOGPATH')
 
 ```
@@ -70,7 +70,7 @@ SELECT SERVERPROPERTY ('INSTANCEDEFAULTLOGPATH')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY (' PRODUCTVERSION')
 
 ```
@@ -83,7 +83,7 @@ SELECT SERVERPROPERTY (' PRODUCTVERSION')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('BUILDCLRVERSION')
 
 ```
@@ -96,7 +96,7 @@ SELECT SERVERPROPERTY ('BUILDCLRVERSION')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('PROCESSID')
 
 ```
@@ -109,7 +109,7 @@ SELECT SERVERPROPERTY ('PROCESSID')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('ResourceLastUpdateDateTime')
 
 ```
@@ -122,7 +122,7 @@ SELECT SERVERPROPERTY ('ResourceLastUpdateDateTime')
 
 **语法:**
 
-```
+```sql
 SELECT SERVERPROPERTY ('EditionID')
 
 ```
@@ -135,7 +135,7 @@ SELECT SERVERPROPERTY ('EditionID')
 
 **语法:**
 
-```
+```sql
 select SERVERPROPERTY ('collation')
 ```
 

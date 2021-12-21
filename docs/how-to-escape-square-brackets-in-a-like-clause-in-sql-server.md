@@ -23,7 +23,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -33,7 +33,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -43,7 +43,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 FIRSTNAME VARCHAR(20), LASTNAME VARCHAR(20),
 EMPCODE VARCHAR(20));
@@ -53,7 +53,7 @@ EMPCODE VARCHAR(20));
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY', 'Kumari', 'ROMY[78]KUM'),
 ('Rinkle', 'Arora', 'RINKLE[78}ARO'),
@@ -67,7 +67,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -81,7 +81,7 @@ SELECT * FROM demo_table;
 
 **用于匹配‘ROMY[78]’**
 
-```
+```sql
 SELECT *  
   FROM table_name 
   WHERE column_name LIKE 'ROMY[[]78]%'
@@ -89,7 +89,7 @@ SELECT *
 
 **查询:**匹配具有[78]的 EMPCODE
 
-```
+```sql
 SELECT *  
   FROM demo_table  
   WHERE EMPCODE LIKE '%[[]78]%'
@@ -109,7 +109,7 @@ SELECT *
 
 **用于匹配‘ROMY[78]’**
 
-```
+```sql
 SELECT *  
   FROM table_name  
   WHERE column_name LIKE 'ROMY\[78]%' ESCAPE '\';
@@ -117,7 +117,7 @@ SELECT *
 
 **查询:**
 
-```
+```sql
 SELECT *  
   FROM demo_table
   WHERE EMPCODE LIKE '%\[78]%' ESCAPE '\';

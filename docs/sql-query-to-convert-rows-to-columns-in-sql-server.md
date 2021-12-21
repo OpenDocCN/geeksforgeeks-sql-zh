@@ -28,7 +28,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT (ColumnNames)  
 FROM (TableName)  
 PIVOT
@@ -48,7 +48,7 @@ PIVOT
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -58,7 +58,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -68,7 +68,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME varchar(30),
 COLLEGE varchar(30),
@@ -81,7 +81,7 @@ MARKS int);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES ('ROMY', 'BVCOE', 
 '12-OCT-2021', 'DBMS', 90),
 ('ROMY', 'BVCOE', '12-OCT-2021', 'NETWORKING', 90),
@@ -101,7 +101,7 @@ INSERT INTO demo_table VALUES ('ROMY', 'BVCOE',
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -113,7 +113,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table  
  PIVOT
 (AVG(MARKS) FOR SUBJECTS IN (DBMS,NETWORKING, 

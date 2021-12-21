@@ -10,7 +10,7 @@
 
 下面的查询标识了阻塞链顶部的 SPID (SQL 进程标识)，因此也标识了 SQL 语句–
 
-```
+```sql
 Select * 
 from sysprocesses 
 where blocked <> 0 ;
@@ -20,13 +20,13 @@ where blocked <> 0 ;
 
 确定阻止 SPID 后，发出后续命令来敦促内容–
 
-```
+```sql
 dbcc inputbuffer (SPID)
 ```
 
 要移除阻塞，请使用 KILL 命令。
 
-```
+```sql
 KILL SPID_ofBlockingQuery
 ```
 

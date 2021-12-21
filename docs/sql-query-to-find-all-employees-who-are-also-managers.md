@@ -10,13 +10,13 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -24,7 +24,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下员工表:
 
-```
+```sql
 CREATE TABLE employees(
     EMPLOYEE_ID int,
     NAME Varchar(20),
@@ -35,7 +35,7 @@ CREATE TABLE employees(
 
 可以用下面的语句查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS employees;
 ```
 
@@ -45,7 +45,7 @@ EXEC SP_COLUMNS employees;
 
 使用以下语句向*员工*表添加数据:
 
-```
+```sql
 INSERT INTO EMPLOYEES VALUES (100, "ANURAG", 9889269997, "1987-06-17", 100);
 INSERT INTO EMPLOYEES VALUES (101, "harsh", 8789269986, "1987-06-20", 100);
 INSERT INTO EMPLOYEES VALUES (102, "SUMIT", 7689269975, "1987-07-07", 103);
@@ -57,7 +57,7 @@ INSERT INTO EMPLOYEES VALUES (104, "KAE", 8489269953, "1987-07-23", 103);
 
 使用以下语句验证表格的内容:
 
-```
+```sql
 SELECT * FROM EMPLOYEES;
 ```
 
@@ -65,7 +65,7 @@ SELECT * FROM EMPLOYEES;
 
 现在，为了获得同时也是经理的所有员工的详细信息，我们使用了 *EMPLOYEE_ID* 字段和 *MANAGER_ID* ，我们将找出同时也是经理的员工的详细信息。该查询将具有以下语法:
 
-```
+```sql
 Syntax:
 SELECT *
 FROM table_name  
@@ -74,7 +74,7 @@ WHERE (column_name IN (SELECT column_name FROM table_name));
 
 现在对我们创建的表运行相同的查询，如下所示:
 
-```
+```sql
 SELECT * FROM EMPLOYEES WHERE (EMPLOYEE_ID IN (SELECT MANAGER_ID FROM EMPLOYEES));
 ```
 

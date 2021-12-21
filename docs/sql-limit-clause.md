@@ -25,7 +25,7 @@
 
 **查询**
 
-```
+```sql
 SELECT *
 FROM Student
 LIMIT 5;
@@ -40,7 +40,7 @@ LIMIT 5;
 | Twelve thousand and four | 知更鸟 | nine |
 | Twelve thousand and five | 悉多 | seven |
 
-```
+```sql
 SELECT *
 FROM Student
 ORDER BY Grade DESC
@@ -63,7 +63,7 @@ OFFSET 只能与 ORDER BY 子句一起使用。它不能单独使用。
 偏移值必须大于或等于零。它不能为负，否则返回错误。
 T3】查询:
 
-```
+```sql
 SELECT *
 FROM Student
 LIMIT 5 OFFSET 2
@@ -83,7 +83,7 @@ ORDER BY ROLLNO;
 
 限制所有意味着没有限制。
 
-```
+```sql
 SELECT *
 FROM Student
 LIMIT ALL;

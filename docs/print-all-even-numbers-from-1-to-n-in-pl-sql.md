@@ -10,7 +10,7 @@
 
 示例:
 
-```
+```sql
 Input: N = 3
 Output: 2
 Sum = 2
@@ -24,7 +24,7 @@ Sum = 6
 **方法**是用 2 初始化一个数*数*，并不断增加 2，直到数为< = n.
 下面是它的实现:
 
-```
+```sql
 -- Display all even number from 1 to n
 DECLARE
     -- Declare variable num
@@ -52,7 +52,7 @@ END;
 
 输出:
 
-```
+```sql
 2
 4
 Sum of even numbers is 6

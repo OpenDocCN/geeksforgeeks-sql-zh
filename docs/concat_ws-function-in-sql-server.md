@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 CONCAT_WS(separator, input_string1, input_string2, [...input_stringN]);
 
 ```
@@ -26,14 +26,14 @@ CONCAT_WS(separator, input_string1, input_string2, [...input_stringN]);
 **示例-1 :**
 使用“–”分隔串联的字符串值。
 
-```
+```sql
 SELECT CONCAT_WS(' - ', 'GeeksforGeeks', 'computer', 'science', 'portal');
 
 ```
 
 **输出:**
 
-```
+```sql
 GeeksforGeeks - computer - science - portal
 
 ```
@@ -41,7 +41,7 @@ GeeksforGeeks - computer - science - portal
 **示例-2 :**
 使用“”分隔串联的字符串值。
 
-```
+```sql
 SELECT CONCAT_WS(' ', 'Hardik', 'Pandya') Your_Name;
 
 ```
@@ -54,7 +54,7 @@ SELECT CONCAT_WS(' ', 'Hardik', 'Pandya') Your_Name;
 **示例-3 :**
 使用带有空值的 CONCAT_WS()。
 
-```
+```sql
 SELECT CONCAT_WS(', ','DN Block', 'Bidhannagar', 
                       NULL, 'Kolkata', NULL, 700091) 
 AS Your_Address;
@@ -75,7 +75,7 @@ AS Your_Address;
 | Eighteen | 维拉·科尔 | Chiku |
 | seven | 迪奥尼女士 | 最高有效位(most significant digit) |
 
-```
+```sql
 SELECT 
     PLAYERNAME, 
     NICKNAME, 

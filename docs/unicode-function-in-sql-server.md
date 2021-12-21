@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 UNICODE(ncharacter_expression)
 
 ```
@@ -26,14 +26,14 @@ UNICODE 函数将为第一个字符提供一个整数值。它为输入表达式
 **示例-1 :**
 它将返回输入表达式第一个字符的整数值。
 
-```
+```sql
 SELECT UNICODE('MS Dhoni');
 
 ```
 
 **输出:**
 
-```
+```sql
 77
 
 ```
@@ -49,7 +49,7 @@ SELECT UNICODE('MS Dhoni');
 | seven | 迪奥尼女士 | 金奈 |
 | forty-two | 锡卡扎万 | 德里 |
 
-```
+```sql
 SELECT UNICODE(PlayerName) AS UnicodeOfFirstChar, PlayerName 
 FROM Player_Details;
 

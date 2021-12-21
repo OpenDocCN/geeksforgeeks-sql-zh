@@ -38,7 +38,7 @@ SQL 代表结构化查询语言。它用于与数据库通信。有一些标准�
 
 **查询:**
 
-```
+```sql
 DECLARE @Name1 VARCHAR(30), @Name2 VARCHAR(20);
 Set @Name1='geeks';
 Set @Name2='geeks';
@@ -55,7 +55,7 @@ If @Name1=@Name2 Select 'match' else Select 'not match';
 
 **查询:**
 
-```
+```sql
 DECLARE @Name1 VARCHAR(30), @Name2 VARCHAR(20);
 Set @Name1='geeks';
 Set @Name2='geeksforgeeks';

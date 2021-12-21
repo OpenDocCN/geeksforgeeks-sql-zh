@@ -8,7 +8,7 @@ MySQL **SHA1()** 函数用于使用 SHA-1 技术加密字符串。 [SHA1](https:
 
 **语法:**
 
-```
+```sql
 SHA1(string)
 ```
 
@@ -30,39 +30,39 @@ MySQL 中的 SHA1()函数返回加密字符串，如果传递的字符串为空�
 
 **示例-1:** 在字符串上实现 SHA1()函数。
 
-```
+```sql
 SELECT  
 SHA1('geeksforgeeks'); 
 ```
 
 **输出:**
 
-```
+```sql
 69c9a5c19c5c27e43cb0efc4c8644ed6d03a110b 
 ```
 
 **示例-2:** 在包含字符和整数的字符串上实现 SHA1()函数。
 
-```
+```sql
 SELECT 
 SHA1('geeksforgeeks123'); 
 ```
 
 **输出:**
 
-```
+```sql
 53ce00666cbef425ab8d06ed652095bea20a1616 
 ```
 
 **示例-3:** 对空字符串实现 SHA1()函数，并在压缩后返回字符串的长度。
 
-```
+```sql
 SELECT  
 SHA1(NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

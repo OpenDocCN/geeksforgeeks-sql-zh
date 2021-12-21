@@ -4,13 +4,13 @@
 
 **弧度()**函数在 MySQL 中用于将度数值转换为弧度。度数转换为弧度的公式为:
 
-```
+```sql
 180 degrees = π radian
 ```
 
 **语法:**
 
-```
+```sql
 RADIANS(X)
 ```
 
@@ -21,7 +21,7 @@ RADIANS(X)
 **示例-1 :**
 使用弧度函数求 0 度的弧度值。
 
-```
+```sql
 SELECT RADIANS(0) AS Radian_Value;
 ```
 
@@ -34,7 +34,7 @@ SELECT RADIANS(0) AS Radian_Value;
 **示例-2 :**
 使用弧度函数寻找 180 度的弧度值。
 
-```
+```sql
 SELECT RADIANS(180) AS Radian_Value;
 ```
 
@@ -47,7 +47,7 @@ SELECT RADIANS(180) AS Radian_Value;
 **示例-3 :**
 使用弧度函数查找-90 度的弧度值。
 
-```
+```sql
 SELECT RADIANS(-90) AS Radian_Value;
 ```
 
@@ -60,7 +60,7 @@ SELECT RADIANS(-90) AS Radian_Value;
 **示例-4 :**
 使用弧度函数将弧度从度数转换为列数据。为了演示，让我们创建一个名为多边形的表。
 
-```
+```sql
 CREATE TABLE Polygon (
 Shape VARCHAR(100) NOT NULL,
 Sides INT NOT NULL,
@@ -72,7 +72,7 @@ PRIMARY KEY(Sides)
 
 现在，向多边形表中插入一些数据–
 
-```
+```sql
 INSERT INTO  
 Polygon(Shape, Sides, Sum_of_Interior_Angles, Each_Angle)
 VALUES
@@ -88,7 +88,7 @@ VALUES
 
 因此，多边形表是–
 
-```
+```sql
 SELECT * FROM Polygon;
 ```
 
@@ -105,7 +105,7 @@ SELECT * FROM Polygon;
 
 我们可以看到内角和多边形的每个角都是以度数给出的。现在我们将在 RADIAN 函数的帮助下把这些转换成弧度。
 
-```
+```sql
 SELECT Shape, Sides, 
 RADIANS(Sum_of_Interior_Angles) AS Sum_of_Interior_Angles_InRadian, 
 RADIANS(Each_Angle) AS Each_Angle_InRadian

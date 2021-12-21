@@ -8,13 +8,13 @@ SQL 代表**结构化查询语言**，用于数据库中检索数据，更新和
 
 要创建数据库，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
 例如，
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks_salary;
 ```
 
@@ -24,13 +24,13 @@ CREATE DATABASE GeeksforGeeks_salary;
 
 要使用数据库，我们需要在 SQL 平台上使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 USE database_name;
 ```
 
 例如:
 
-```
+```sql
 USE GeeksforGeeks_salary;
 ```
 
@@ -40,7 +40,7 @@ USE GeeksforGeeks_salary;
 
 要在数据库中创建表，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 CREATE TABLE table_name(
 column1 type(size),
 column2 type(size),
@@ -53,7 +53,7 @@ columnN type(size)
 
 例如，
 
-```
+```sql
 CREATE TABLE GFG_salary(
 emp_ID INT,
 emp_name VARCHAR(50),
@@ -66,7 +66,7 @@ emp_An_salary INT
 
 要查看表格，请使用以下内容:
 
-```
+```sql
 DESC GFG_salary;
 ```
 
@@ -78,7 +78,7 @@ DESC GFG_salary;
 
 为了给表增加价值，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。命令是，
 
-```
+```sql
 INSERT INTO table_name(
 value1,
 value2,
@@ -92,7 +92,7 @@ valueN);
 
 例如，这里的查询将是，
 
-```
+```sql
 INSERT INTO `GFG_salary` (`emp_ID`, `emp_name`, `emp_course_mentor`, `emp_An_salary`)
 VALUES
 (1, 'EmpABC', 'C++', '480000'),
@@ -105,7 +105,7 @@ VALUES
 
 ### 插入后表格中的数据
 
-```
+```sql
 SELECT * FROM GFG_salary;
 ```
 
@@ -115,7 +115,7 @@ SELECT * FROM GFG_salary;
 
 要找到这一点，我们必须将年薪除以 12，并制作一个别名列作为月薪，以查看每个员工的月薪。要查看表中的其他详细信息，请选择 select 语句中的那些列。
 
-```
+```sql
 SELECT emp_name, (emp_An_salary/12) AS 'Monthly Salary' ,
 emp_An_Salary AS 'Annual Salary' FROM GFG_salary ;
 ```
@@ -124,7 +124,7 @@ emp_An_Salary AS 'Annual Salary' FROM GFG_salary ;
 
 现在把工资四舍五入到小数点后 2 位，为此我们已经使用了**四舍五入**功能，见下图
 
-```
+```sql
 SELECT emp_name, round(emp_An_salary/12,2) AS 'Monthly Salary' ,
 emp_An_Salary AS 'Annual Salary' FROM GFG_salary
 ```
@@ -133,7 +133,7 @@ emp_An_Salary AS 'Annual Salary' FROM GFG_salary
 
 要找到特定员工的月薪，请使用带有条件的 **where** 子句，如下所示:
 
-```
+```sql
 SELECT  emp_name, round(emp_An_salary/12,2) AS 'Monthly Salary' , emp_An_Salary AS 'Annual Salary'
 FROM gfg_salary
 WHERE

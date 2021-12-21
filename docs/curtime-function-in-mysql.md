@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 CURTIME(fsp)
 ```
 
@@ -25,7 +25,7 @@ CURTIME(fsp)
 
 使用 CURTIME 函数获取当前时间。
 
-```
+```sql
 SELECT CURTIME() as Curr_time ;
 ```
 
@@ -39,7 +39,7 @@ SELECT CURTIME() as Curr_time ;
 
 使用 CURTIME 函数获取当前时间的精度设置为 3。
 
-```
+```sql
 SELECT CURTIME(3) as Curr_time ;
 ```
 
@@ -53,7 +53,7 @@ SELECT CURTIME(3) as Curr_time ;
 
 使用数字格式的 CURTIME 函数获取当前时间。
 
-```
+```sql
 SELECT CURTIME() + 0  as Curr_time ;
 ```
 
@@ -67,7 +67,7 @@ SELECT CURTIME() + 0  as Curr_time ;
 
 CURTIME 函数可以用来设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE DeliveryDetails (
 DeliveryId INT AUTO_INCREMENT,
 ProductId INT NOT NULL,
@@ -80,7 +80,7 @@ PRIMARY KEY(DeliveryId)
 
 在这里，我们将使用 CODETATE 和 CURTIME 功能，当一个交付将完成。“交付时间”列中的值将是 CURTIME 给出的值，而“交付时间”列中的值将是 CURDATE 函数给出的值。
 
-```
+```sql
 INSERT INTO  
 DeliveryDetails(ProductId, ProductName, Delivered_At, Delivered_On)
 VALUES
@@ -89,7 +89,7 @@ VALUES
 
 现在，检查交货详细信息表:
 
-```
+```sql
 SELECT * FROM DeliveryDetails;
 ```
 

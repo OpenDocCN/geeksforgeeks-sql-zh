@@ -6,7 +6,7 @@
 
 下面的查询为数据库中的每个同义词生成一个条目。此查询提供了有关同义词元数据的详细信息，例如同义词的名称和基本对象的名称。
 
-```
+```sql
 select * 
 from sys.synonyms ;
 ```
@@ -15,7 +15,7 @@ from sys.synonyms ;
 
 **语法–**
 
-```
+```sql
 CREATE SYNONYM synonymname 
 FOR servername.databasename.schemaname.objectname;
 GO
@@ -28,7 +28,7 @@ GO
 
 现在，让我们为 GFG 数据库的极客表创建一个同义词:服务器 1 上的 Geeeksh 模式。
 
-```
+```sql
 CREATE SYNONYM Geektable  
 FOR Server1.GFG.Geeeksh.Geektab;  
 GO
@@ -36,7 +36,7 @@ GO
 
 使用同义词在服务器 2 中查找输出。
 
-```
+```sql
 SELECT ID, Name    
 FROM Geektable;
 ```
@@ -50,6 +50,6 @@ FROM Geektable;
 | three | Punit |
 | four | 随机存取存储器(random access memory 的缩写)ˌ随机访问内存(random-access memory 的缩写) |
 
-```
+```sql
 (4 row(s) affected)
 ```

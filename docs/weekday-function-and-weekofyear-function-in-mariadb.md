@@ -5,7 +5,7 @@
 **1。Weekday 函数:**
 在马里亚数据库中，WEEKDAY 函数返回日期的工作日索引。在这个函数中，第一个参数将是日期值。此函数返回日期的工作日索引。In WEEKDAY 函数返回给定日期值的工作日的索引值。它的工作原理与 DAYNAME 函数相反。和索引值如下。
 
-```
+```sql
 0=Monday, 
 1=Tuesday, 
 2=Wednesday, 
@@ -17,7 +17,7 @@
 
 **语法:**
 
-```
+```sql
 WEEKDAY( date_value )
 
 ```
@@ -31,14 +31,14 @@ WEEKDAY( date_value )
 
 **示例-1 :**
 
-```
+```sql
 SELECT WEEKDAY('2014-05-20');
 
 ```
 
 **输出:**
 
-```
+```sql
 1
 
 ```
@@ -46,13 +46,13 @@ SELECT WEEKDAY('2014-05-20');
 **示例-2 :**
 函数返回当前系统日期。今天是星期五，所以它将返回 5 点。
 
-```
+```sql
 SELECT WEEKDAY(CURDATE()); 
 ```
 
 **输出:**
 
-```
+```sql
 5
 
 ```
@@ -62,7 +62,7 @@ SELECT WEEKDAY(CURDATE());
 
 **语法:**
 
-```
+```sql
 WEEKOFYEAR( date_value )
 
 ```
@@ -76,14 +76,14 @@ WEEKOFYEAR( date_value )
 
 **示例-1 :**
 
-```
+```sql
 SELECT WEEKOFYEAR('2020-01-01');
 
 ```
 
 **输出:**
 
-```
+```sql
 1
 
 ```

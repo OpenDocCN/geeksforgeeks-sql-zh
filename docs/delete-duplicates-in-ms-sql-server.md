@@ -9,7 +9,7 @@
 
 让我们创建一个名为 Geek–
 
-```
+```sql
 CREATE TABLE Geek(
 Name NVARCHAR(100) NOT NULL,
 Email NVARCHAR(255) NOT NULL,
@@ -18,7 +18,7 @@ City NVARCHAR(100) NOT NULL);
 
 让我们在表 Geek 中插入一些值–
 
-```
+```sql
 INSERT INTO Geek (Name, Email, City) VALUES
 ('Nisha', 'nisha@gfg.com', 'Delhi'),
 ('Megha', 'megha@gfg.com', 'Noida'),
@@ -34,7 +34,7 @@ INSERT INTO Geek (Name, Email, City) VALUES
 
 让我们显示一下 Geek 表的内容–
 
-```
+```sql
 SELECT * 
 FROM Geek;
 ```
@@ -57,7 +57,7 @@ FROM Geek;
 
 **SQL Server 查询从表 Geek 中删除重复记录:**
 
-```
+```sql
 WITH CTE AS (
 SELECT Name, Email, City
 ROW_NUMBER() OVER (
@@ -73,7 +73,7 @@ WHERE row_num > 1;
 **输出–**
 (受影响 5 行)
 
-```
+```sql
 SELECT * 
 FROM Geek;
 ```

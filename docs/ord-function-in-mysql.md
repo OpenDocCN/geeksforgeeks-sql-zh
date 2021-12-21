@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 ORD( str )
 
 ```
@@ -21,7 +21,7 @@ ORD( str )
 
 **示例-1 :** 对单个字符应用 ORD()函数。
 
-```
+```sql
 SELECT ORD('S') as Find_Code;
 
 ```
@@ -34,7 +34,7 @@ SELECT ORD('S') as Find_Code;
 
 **示例-2 :** 将 ORD()函数应用于字符串。
 
-```
+```sql
 SELECT ORD('geeksforgeeks') as Find_Code;
 
 ```
@@ -47,7 +47,7 @@ SELECT ORD('geeksforgeeks') as Find_Code;
 
 **示例-3 :** 对数字应用 ORD()函数。
 
-```
+```sql
 SELECT ORD(100) as Find_Code;
 
 ```
@@ -63,7 +63,7 @@ order 函数也可以用来查找列数据最左边字符的代码。演示创�
 
 **玩家**
 
-```
+```sql
 CREATE TABLE Player(
 
     Player_id INT AUTO_INCREMENT,  
@@ -77,7 +77,7 @@ CREATE TABLE Player(
 
 现在向播放器表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
     Player(Player_name ,Playing_team)
 
@@ -96,7 +96,7 @@ VALUES
 
 因此，玩家表是:
 
-```
+```sql
 mysql> SELECT * FROM Player;
 +-----------+----------------+--------------+
 | Player_id | Player_name    | Playing_team |
@@ -116,7 +116,7 @@ mysql> SELECT * FROM Player;
 
 现在，我们将应用 ORD 函数来查找 Player_name 和 Playing_team 列最左边字符的代码。
 
-```
+```sql
 Select 
     * ,
     ORD(Player_name) ,   
@@ -127,7 +127,7 @@ FROM Player;
 
 **输出:**
 
-```
+```sql
 +-----------+----------------+--------------+------------------+-------------------+
 | Player_id | Player_name    | Playing_team | ORD(Player_name) | ORD(Playing_team) |
 +-----------+----------------+--------------+------------------+-------------------+

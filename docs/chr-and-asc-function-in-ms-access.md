@@ -7,7 +7,7 @@
 
 **语法–**
 
-```
+```sql
 Chr(ASCII number code)
 ```
 
@@ -16,7 +16,7 @@ Chr(ASCII number code)
 
 **示例–**
 
-```
+```sql
 SELECT Chr(75) 
 AS NumberCodeToCharacter;
 ```
@@ -35,7 +35,7 @@ ASC()函数返回字符的 ASCII 值。如果在函数中传递了多个字符�
 
 **语法–**
 
-```
+```sql
 ASC(Character)
 ```
 
@@ -54,7 +54,7 @@ ASC(Character)
 
 </center>
 
-```
+```sql
 SELECT STUDENT, Asc(STUDENTNAME) 
 AS NumCodeOfFirstChar
 FROM STUDENT;

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LEFT (str, len)
 ```
 
@@ -21,7 +21,7 @@ LEFT (str, len)
 **示例-1 :**
 将左()函数应用于给定的字符串。
 
-```
+```sql
 SELECT LEFT("geeksforgeeks", 4) AS Left_Str;
 ```
 
@@ -38,7 +38,7 @@ SELECT LEFT("geeksforgeeks", 4) AS Left_Str;
 **示例-2 :**
 对数字应用左()函数。
 
-```
+```sql
 SELECT LEFT(12345678, 4) AS Left_Num;
 ```
 
@@ -55,7 +55,7 @@ SELECT LEFT(12345678, 4) AS Left_Num;
 **示例-3 :**
 在给定字符串中插入>个字符时，对该字符串应用左()函数。
 
-```
+```sql
 SELECT LEFT("geeksforgeeks", 20) AS Left_Str;
 ```
 
@@ -82,7 +82,7 @@ SELECT LEFT("geeksforgeeks", 20) AS Left_Str;
 
 </figure>
 
-```
+```sql
 SELECT Student_Name, LEFT(Student_Email, 9) AS Email_Name 
 FROM Student_Details;
 ```

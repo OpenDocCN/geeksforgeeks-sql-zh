@@ -8,7 +8,7 @@ MySQL **解压缩()**函数用于解压缩字符串并将其恢复到原始状�
 
 **语法:**
 
-```
+```sql
 UNCOMPRESS(string);
 ```
 
@@ -30,39 +30,39 @@ MySQL 中的解压缩()函数将压缩后的字符串解压缩后返回原始字
 
 **示例-1:** 在字符串上实现解压缩功能。
 
-```
+```sql
 SELECT  
 UNCOMPRESS(COMPRESS('geeksforgeeks')); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```
 
 **示例-2:** 在包含字符和整数的字符串上实现解压缩功能。
 
-```
+```sql
 SELECT 
 UNCOMPRESS(COMPRESS('geeksforgeeks123')); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks123 
 ```
 
 **示例-3:** 对空字符串实现 COMPRESS 函数，压缩后返回字符串长度。
 
-```
+```sql
 SELECT  
 UNCOMPRESS(COMPRESS(NULL)); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

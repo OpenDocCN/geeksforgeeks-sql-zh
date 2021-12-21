@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 CHAR_LENGTH(str)
 
 ```
@@ -19,7 +19,7 @@ CHAR_LENGTH(str)
 
 **示例-1 :** CHAR_LENGTH()函数，用于查找字符串的长度。
 
-```
+```sql
 SELECT CHAR_LENGTH("geeksforgeeks") AS LengthOfString
 
 ```
@@ -32,7 +32,7 @@ SELECT CHAR_LENGTH("geeksforgeeks") AS LengthOfString
 
 **示例-2 :** CHAR_LENGTH()函数，用于查找字符串的长度。
 
-```
+```sql
 SELECT CHAR_LENGTH("SQL Tutorial in geeksforgeeks") AS LengthOfString
 
 ```

@@ -6,7 +6,7 @@
 
 **示例:**
 
-```
+```sql
 Input : 5
 Output : 120
 
@@ -15,7 +15,7 @@ Output : 120
 **解说:**
 5！= 5 * 4 * 3 * 2 * 1 = 120
 
-```
+```sql
 Input : 4
 Output : 24
 
@@ -23,7 +23,7 @@ Output : 24
 
 **pl/SQL 块的基本结构**
 
-```
+```sql
 declare
 -- declare all the variables
 
@@ -36,7 +36,7 @@ end -- for end block
 
 pl/sql 中一个数的阶乘程序如下:
 
-```
+```sql
 declare 
 -- it gives the final answer after computation
 fac number :=1;   
@@ -66,7 +66,7 @@ end;              
 
 **输出:**(如果给定输入为 5)
 
-```
+```sql
 120
 
 ```

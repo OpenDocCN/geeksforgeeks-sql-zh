@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 Weekday(date, firstdayofweek)
 
 ```
@@ -28,28 +28,28 @@ Weekday(date, firstdayofweek)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Weekday(#06/17/2020#);
 
 ```
 
 **输出:**
 
-```
+```sql
 4
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT Weekday(Date());
 
 ```
 
 **输出:**
 
-```
+```sql
 5
 
 ```
@@ -59,7 +59,7 @@ SELECT Weekday(Date());
 
 **语法:**
 
-```
+```sql
 WeekdayName(number, abbreviate, firstdayofweek)
 
 ```
@@ -81,28 +81,28 @@ WeekdayName(number, abbreviate, firstdayofweek)
 
 **示例-1 :**
 
-```
+```sql
 SELECT WeekdayName(1);
 
 ```
 
 **输出:**
 
-```
+```sql
 Sunday
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT WeekdayName (3, TRUE, 2)
 
 ```
 
 **输出:**
 
-```
+```sql
 Wed
 
 ```

@@ -12,19 +12,19 @@
 
 #### 第一步:
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 **步骤 2:** 使用数据库
 
-```
+```sql
 USE GFG
 ```
 
 **第 3 步:**创建一个名为**的表格，并输入**-
 
-```
+```sql
 CREATE TABLE inttodate (id bigint,
                         value bigint);
 ```
@@ -37,7 +37,7 @@ CREATE TABLE inttodate (id bigint,
 
 **步骤 5:** 在表格中插入一些值–
 
-```
+```sql
 INSERT INTO [dbo].[inttodate]
            ([id]
            ,[value])
@@ -61,7 +61,7 @@ INSERT INTO [dbo].[inttodate]
 
 在这里，我们将使用 dateadd 函数创建一个变量，然后我们将这些值分成年、月和日期。
 
-```
+```sql
 DECLARE @variable_date DATETIME = DATEADD(SECOND, (SELECT [value]
 FROM [dbo].[inttodate] WHERE [id] = '1'), 0)
 
@@ -76,7 +76,7 @@ SELECT CAST(DATEPART(YEAR, @variable_date) - 1900 AS VARCHAR(10))
 
 **步骤 7:** 当 id = 2 时，用不同的数据进行检查–
 
-```
+```sql
 DECLARE @variable_date DATETIME = DATEADD(SECOND, (SELECT [value]
 FROM [dbo].[inttodate] WHERE [id] = '2'), 0)
 

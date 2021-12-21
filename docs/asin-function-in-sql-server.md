@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT ASIN(number);
 ```
 
@@ -33,13 +33,13 @@ SELECT ASIN(number);
 
 获取指定值的反正弦值-1
 
-```
+```sql
 SELECT ASIN(-1);
 ```
 
 **输出:**
 
-```
+```sql
 -1.5707963267948966
 ```
 
@@ -47,13 +47,13 @@ SELECT ASIN(-1);
 
 获取指定值 1 的反正弦值
 
-```
+```sql
 SELECT ASIN(1);
 ```
 
 **输出:**
 
-```
+```sql
 1.5707963267948966
 ```
 
@@ -61,7 +61,7 @@ SELECT ASIN(1);
 
 使用带变量的 ASIN()函数，得到指定值 0 的反正弦值。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 0;
 SELECT ASIN(@Parameter_Value);
@@ -69,7 +69,7 @@ SELECT ASIN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0.0
 ```
 
@@ -77,7 +77,7 @@ SELECT ASIN(@Parameter_Value);
 
 使用带有变量的 ASIN()函数，并获得指定浮点值“0.45”的反正弦值。
 
-```
+```sql
 DECLARE @Parameter_Value float;
 SET @Parameter_Value = 0.45;
 SELECT ASIN(@Parameter_Value);
@@ -85,7 +85,7 @@ SELECT ASIN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0.46676533904729639
 ```
 

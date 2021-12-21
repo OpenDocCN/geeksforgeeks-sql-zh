@@ -7,13 +7,13 @@ sgn()函数返回一个数字的符号，如果这个数字是正数，那么它
 
 **语法:**
 
-```
+```sql
 Sgn(number)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Sgn(93.5) AS SgnNum;
 ```
 
@@ -24,7 +24,7 @@ SELECT Sgn(93.5) AS SgnNum;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Sgn(-93.5) AS SgnNum;
 ```
 
@@ -37,13 +37,13 @@ SELECT Sgn(-93.5) AS SgnNum;
 
 **语法:**
 
-```
+```sql
 Sqr(number)
 ```
 
 **示例-1**
 
-```
+```sql
 SELECT Sqr(100) AS SqrNum;
 ```
 
@@ -54,7 +54,7 @@ SELECT Sqr(100) AS SqrNum;
 
 **示例-2**
 
-```
+```sql
 SELECT Sqr(169) AS SqrNum;
 ```
 

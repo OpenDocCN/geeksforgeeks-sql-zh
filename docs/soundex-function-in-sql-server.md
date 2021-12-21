@@ -14,7 +14,7 @@ SQL Server 中的这个函数用来返回一个四个字符的代码，以便评
 
 **语法:**
 
-```
+```sql
 SOUNDEX(expression)
 ```
 
@@ -29,20 +29,20 @@ SOUNDEX(expression)
 **示例-1 :**
 获取听起来相似的指定表达式的四个字符代码。
 
-```
+```sql
 SELECT SOUNDEX('see'), SOUNDEX('sea');
 ```
 
 **输出:**
 
-```
+```sql
 S000
 ```
 
 **示例-2 :**
 使用带有变量的 SOUNDEX()函数，得到一个四个字符的代码。
 
-```
+```sql
 DECLARE @exp1 VARCHAR(15); 
 DECLARE @exp2 VARCHAR(15);
 SET @exp1 = 'sum';
@@ -52,33 +52,33 @@ SELECT SOUNDEX(@exp1), SOUNDEX(@exp2);
 
 **输出:**
 
-```
+```sql
 S500
 ```
 
 **示例-3 :**
 获取一个听起来一点都不相似的指定表达式的四个字符代码。
 
-```
+```sql
 SELECT SOUNDEX('cs'), SOUNDEX('portal');
 ```
 
 **输出:**
 
-```
+```sql
 P634
 ```
 
 **示例-4 :**
 获取指定表达式的四个字符的整数代码。
 
-```
+```sql
 SELECT SOUNDEX(34), SOUNDEX(45);
 ```
 
 **输出:**
 
-```
+```sql
 0000
 ```
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SQRT( number )
 ```
 
@@ -30,7 +30,7 @@ SQRT( number )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number := 25;
 
@@ -42,7 +42,7 @@ END;
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -50,7 +50,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number := 5.617;
 
@@ -62,7 +62,7 @@ END;
 
 **输出:**
 
-```
+```sql
 2.37002109695251
 ```
 
@@ -70,7 +70,7 @@ END;
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number := 9;
 
@@ -82,7 +82,7 @@ END;
 
 **输出:**
 
-```
+```sql
 3
 ```
 

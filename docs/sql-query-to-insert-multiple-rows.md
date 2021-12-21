@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -34,7 +34,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE employee_details(
    emp_id VARCHAR(8),
    emp_name VARCHAR(20),
@@ -50,7 +50,7 @@ CREATE TABLE employee_details(
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns employee_details;
 ```
 
@@ -66,7 +66,7 @@ EXEC sp_columns employee_details;
 
 **查询:**
 
-```
+```sql
 INSERT INTO employee_details VALUES('E40001','PRADEEP','E101',36);
 INSERT INTO employee_details VALUES('E40002','ASHOK','E102',28);
 INSERT INTO employee_details VALUES('E40003','PAVAN KUMAR','E103',28); 
@@ -80,7 +80,7 @@ INSERT INTO employee_details VALUES('E40003','PAVAN KUMAR','E103',28);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee_details;
 ```
 
@@ -92,7 +92,7 @@ SELECT * FROM employee_details;
 
 **查询:**
 
-```
+```sql
 INSERT INTO employee_details VALUES
   ('E40004','SANTHOSH','E102',25),
   ('E40005','THAMAN','E103',26),
@@ -108,7 +108,7 @@ INSERT INTO employee_details VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee_details;
 ```
 

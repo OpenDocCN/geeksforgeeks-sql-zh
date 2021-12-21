@@ -10,7 +10,7 @@ SQL 中的 UPDATE 语句用于更新数据库中现有表的数据。根据我�
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GFG
 
 **查询:**
 
-```
+```sql
 USE GFG
 ```
 
@@ -28,7 +28,7 @@ USE GFG
 
 **查询:**
 
-```
+```sql
 CREATE TABLE TimeTable(
  SubjectDate datetime NOT NULL ,
  SubjectName char (10)
@@ -39,7 +39,7 @@ CREATE TABLE TimeTable(
 
 **查询:**
 
-```
+```sql
 /* Data Inserted for a full week dates*/
 
 INSERT INTO TimeTable (SubjectDate , SubjectName) VALUES ('01/10/2021','DSA')
@@ -56,7 +56,7 @@ INSERT INTO TimeTable (SubjectDate , SubjectName) VALUES ('04/10/2021','OS')
 
 **查询:**
 
-```
+```sql
 UPDATE TimeTable   
 SET SubjectDate = '05/10/2021'   
 WHERE SubjectName = 'DSA'   

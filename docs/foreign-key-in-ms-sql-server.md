@@ -12,7 +12,7 @@
 
 **语法–**
 
-```
+```sql
 constraint fk_constraint-name foreign key(col1, col2) 
 references parent_table-name(col1, col2)
                                         (OR)
@@ -47,7 +47,7 @@ references parent_table-name(col1, col2)
 
 如果用户想要插入一个新的列，查询给出如下–
 
-```
+```sql
 foreign key('rollno') 
 references student('rollno')
 

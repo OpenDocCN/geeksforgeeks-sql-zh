@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 DateSerial(year, month, day)
 
 ```
@@ -23,28 +23,28 @@ DateSerial(year, month, day)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DateSerial(2020-10, 10-1, 20-5);
 
 ```
 
 **输出:**
 
-```
+```sql
 9/15/2010 
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DateSerial(2020, 4, 20);
 
 ```
 
 **输出:**
 
-```
+```sql
 4/20/2020 
 
 ```
@@ -57,7 +57,7 @@ SELECT DateSerial(2020, 4, 20);
 
 **语法:**
 
-```
+```sql
 DateValue(string_date)
 
 ```
@@ -69,28 +69,28 @@ DateValue(string_date)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DateValue("May 12, 2010");
 
 ```
 
 **输出:**
 
-```
+```sql
 5/12/2010
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DateValue("July 10");
 
 ```
 
 **输出:**
 
-```
+```sql
 7/10/2020 
 
 ```

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SPACE(num)
 
 ```
@@ -19,7 +19,7 @@ SPACE(num)
 
 **示例-1 :** SPACE()函数返回只包含空格的字符串。
 
-```
+```sql
 SELECT SPACE(6) AS String_Name;
 
 ```
@@ -32,7 +32,7 @@ SELECT SPACE(6) AS String_Name;
 
 **示例-2 :** 将 SPACE()函数与 CONCAT()函数一起应用将返回一个字符串。
 
-```
+```sql
 SELECT CONCAT('Geeks', SPACE(3), 'For', SPACE(3), 'Geeks') AS Company_Name;
 
 ```

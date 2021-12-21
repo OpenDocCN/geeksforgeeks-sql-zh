@@ -8,7 +8,7 @@
 给定圆的半径，任务是找到圆的面积和周长。
 **例:**
 
-```
+```sql
 Input: 3
 Output: Area = 28.26
         Perimeter = 18.84
@@ -22,13 +22,13 @@ Output: Area = 153.86
 圆的面积和周长公式:
 **面积:**
 
-```
+```sql
 pi * radius * radius 
 ```
 
 **周长:**
 
-```
+```sql
 2 * pi * radius
 ```
 
@@ -36,7 +36,7 @@ pi * radius * radius
 
 以下是所需的实现:
 
-```
+```sql
 --Find the area and perimeter of circle
 DECLARE 
 
@@ -63,7 +63,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Area = 28.26
 Perimeter = 18.84
 

@@ -7,7 +7,7 @@ MS Access 中的 FormatCurrency()函数用于使用系统控制面板中定义�
 
 **语法:**
 
-```
+```sql
 FormatCurrency 
 ( 
 Expression [, NumDigitsAfterDecimal ] 
@@ -41,7 +41,7 @@ include elementdigit、UseParensForNegativeNumbers 和 GroupDigits 参数具有�
 **示例-1 :**
 换算为正货币值。
 
-```
+```sql
 Select FormatCurrency(1200.2) as New_Currency;
 
 ```
@@ -55,7 +55,7 @@ Select FormatCurrency(1200.2) as New_Currency;
 **示例-2 :**
 换算为负货币值。
 
-```
+```sql
 Select Formatcurrency(-1000, 2, -1, -1, -1) 
 AS New_Currency;
 
@@ -71,7 +71,7 @@ AS New_Currency;
 
 **语法:**
 
-```
+```sql
 FormatDateTime( Date [, NamedFormat ] )
 
 ```
@@ -90,7 +90,7 @@ FormatDateTime()接受上面提到的和下面描述的两个参数。
 **示例-1 :**
 形成长日期。
 
-```
+```sql
 SELECT FormatDateTime(#17/04/2004#, 1) 
 as New_DFormat
 
@@ -105,7 +105,7 @@ as New_DFormat
 **例-2 :**
 形成至长时间。
 
-```
+```sql
 SELECT FormatDateTime(#12:30#, 4) 
 as Long_Format;
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 DELETE table1
 FROM table1 JOIN table2 ON
 table1.attribute_name = table2.attribute_name
@@ -17,7 +17,7 @@ WHERE condition
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -27,7 +27,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -39,7 +39,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student (
 student_id VARCHAR(8),
 student_name VARCHAR(20),
@@ -53,7 +53,7 @@ student_branch VARCHAR(20)
 
 **查询:**
 
-```
+```sql
 CREATE TABLE library_books(
 lib_id VARCHAR(20),
 book_taken INT
@@ -68,7 +68,7 @@ book_taken INT
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns students
 ```
 
@@ -78,7 +78,7 @@ EXEC sp_columns students
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns library_books
 ```
 
@@ -90,7 +90,7 @@ EXEC sp_columns library_books
 
 **查询:**
 
-```
+```sql
 INSERT INTO students
 VALUES( '1001','PRADEEP','E.C.E'),
 ( '1002','KIRAN','E.C.E'),
@@ -109,7 +109,7 @@ VALUES( '1001','PRADEEP','E.C.E'),
 
 **查询:**
 
-```
+```sql
 INSERT INTO library_books
 VALUES( '1001',2),
 ( '1002',3),
@@ -126,7 +126,7 @@ VALUES( '1001',2),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM students
 ```
 
@@ -136,7 +136,7 @@ SELECT * FROM students
 
 **查询:**
 
-```
+```sql
 SELECT * FROM library_books
 ```
 
@@ -148,7 +148,7 @@ SELECT * FROM library_books
 
 **查询:**
 
-```
+```sql
 DELETE library_books
 FROM  library_books JOIN students ON
 students.student_id =library_books.lib_id

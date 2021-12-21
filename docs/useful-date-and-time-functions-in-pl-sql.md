@@ -19,7 +19,7 @@
 
 *   **Example-1:** Extracting Year:
 
-    ```
+    ```sql
     SELECT SYSDATE AS CURRENT_DATE_TIME, EXTRACT(Year FROM SYSDATE) AS ONLY_CURRENT_YEAR
     FROM Dual
     ```
@@ -34,7 +34,7 @@
 
 *   **Example-2:** Extracting Month:
 
-    ```
+    ```sql
     SELECT SYSDATE AS CURRENT_DATE_TIME, EXTRACT(Month FROM SYSDATE) AS ONLY_CURRENT_MONTH
     FROM Dual
     ```
@@ -49,7 +49,7 @@
 
 *   **Example-3:** Extracting Day:
 
-    ```
+    ```sql
     SELECT SYSDATE AS CURRENT_DATE_TIME, EXTRACT(Day FROM SYSDATE) AS ONLY_CURRENT_DAY
     FROM Dual
     ```
@@ -67,7 +67,7 @@
 
 *   **Example-4:**
 
-    ```
+    ```sql
     SELECT ADD_MONTHS(SYSDATE, -1)  AS PREV_MONTH, SYSDATE AS CURRENT_DATE, 
                                      ADD_MONTHS(SYSDATE, 1) as NEXT_MONTH
     FROM Dual
@@ -86,7 +86,7 @@
 
 *   **Example-5:**
 
-    ```
+    ```sql
     SELECT SYSDATE AS CURRENT_DATE, LAST_DAY(SYSDATE) AS LAST_DAY_OF_MONTH, 
                                     LAST_DAY(SYSDATE)+1 AS FIRST_DAY_OF_NEXT_MONTH
     FROM Dual
@@ -102,7 +102,7 @@
 
 *   **Example-6:** Number of Days left in the month
 
-    ```
+    ```sql
     SELECT SYSDATE AS CURRENT_DATE, LAST_DAY(SYSDATE) - SYSDATE AS DAYS_LEFT_IN_MONTH
     FROM Dual
     ```
@@ -120,7 +120,7 @@
 
 *   **Example-7:**
 
-    ```
+    ```sql
     SELECT MONTHS_BETWEEN (TO_DATE ('01-07-2003', 'dd-mm-yyyy'), 
                            TO_DATE ('14-03-2003', 'dd-mm-yyyy')) AS NUMBER_OF_MONTHS
     FROM Dual
@@ -139,7 +139,7 @@
 
 *   **Example-8:**
 
-    ```
+    ```sql
     SELECT MONTHS_BETWEEN (SYSDATE, DATE_OF_HIRE) AS NUMBER_OF_MONTHS
     FROM Employees
     ```
@@ -167,7 +167,7 @@
 
 *   **Example-9:**
 
-    ```
+    ```sql
     SELECT NEXT_DAY(SYSDATE, 'SUNDAY') AS NEXT_SUNDAY
     FROM Dual
     ```

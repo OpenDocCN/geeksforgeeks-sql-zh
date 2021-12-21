@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 IDENTITY [ ( seed , increment ) ]
 ```
 
@@ -22,7 +22,7 @@ IDENTITY [ ( seed , increment ) ]
 
 **第一步:**创建一个名为学校的表。
 
-```
+```sql
 CREATE TABLE school (
 student_id INT IDENTITY,
 student_name VARCHAR(200),
@@ -34,7 +34,7 @@ marks INT
 
 **步骤 2 :** 在表格中插入一些值。
 
-```
+```sql
 INSERT INTO school (student_name, marks) VALUES ('Sahil', 100);
 INSERT INTO school (student_name, marks) VALUES ('Raj', 78);
 INSERT INTO school (student_name, marks) VALUES ('Navneet', 80);
@@ -45,7 +45,7 @@ INSERT INTO school (student_name, marks) VALUES ('Azaan', 75);
 
 **第三步:**要查看‘学校’表中的记录，我们可以使用以下代码:
 
-```
+```sql
 SELECT * FROM school;
 ```
 
@@ -61,13 +61,13 @@ SELECT * FROM school;
 
 **步骤 4 :** 让我们删除一条记录。
 
-```
+```sql
 DELETE FROM school WHERE student_id = 4;
 ```
 
 **第五步:**查看表格中的记录。
 
-```
+```sql
 SELECT * FROM school;
 ```
 
@@ -89,7 +89,7 @@ SELECT * FROM school;
 
 **语法:**
 
-```
+```sql
 DBCC CHECKIDENT ('table_name', RESEED, new_value);
 ```
 
@@ -104,31 +104,31 @@ DBCC CHECKIDENT ('table_name', RESEED, new_value);
 
 **步骤 6 :** 创建名为“new_school”的备份表。
 
-```
+```sql
 CREATE TABLE new_school AS SELECT student_id, student_name, marks FROM school;
 ```
 
 **第七步:**删除学校所有数据。
 
-```
+```sql
 DELETE FROM school;
 ```
 
 **第 8 步:**重置身份列。
 
-```
+```sql
 DBCC CHECKIDENT ('school', RESEED, 0);
 ```
 
 **步骤 9 :** 将备份表中的所有数据重新插入主表。
 
-```
+```sql
 INSERT INTO school (student_name, marks) SELECT student_name, marks FROM new_school ORDER BY student_id ASC;
 ```
 
 **第十步:**见表中记载。
 
-```
+```sql
 SELECT * FROM school;
 ```
 

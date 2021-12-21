@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 SUM(expression)
 ```
 
@@ -33,7 +33,7 @@ SUM(expression)
 
 使用 SUM()函数并获取输出。
 
-```
+```sql
 CREATE TABLE product09
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -53,7 +53,7 @@ SELECT SUM(price) FROM product09;
 
 **输出:**
 
-```
+```sql
 580
 ```
 
@@ -61,7 +61,7 @@ SELECT SUM(price) FROM product09;
 
 使用 SUM()函数，求所有指定浮点值的和。
 
-```
+```sql
 CREATE TABLE float062
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -88,7 +88,7 @@ SELECT SUM(float_val) FROM float062;
 
 **输出:**
 
-```
+```sql
 25
 ```
 
@@ -96,7 +96,7 @@ SELECT SUM(float_val) FROM float062;
 
 使用 SUM()函数，得到物料需求计划小于所有物料需求计划之和的输出。
 
-```
+```sql
 CREATE TABLE package77
 (  
 user_id int NOT NULL AUTO_INCREMENT, 
@@ -119,7 +119,7 @@ WHERE mrp < (SELECT SUM(mrp) FROM package77);
 
 **输出:**
 
-```
+```sql
  user_id | item    | mrp
 --------------------------------
   1      | book1   | 3
@@ -133,7 +133,7 @@ WHERE mrp < (SELECT SUM(mrp) FROM package77);
 
 使用 SUM()函数并获取所有(物料需求计划-销售价格)值的总和。
 
-```
+```sql
 CREATE TABLE package72
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -156,7 +156,7 @@ SELECT SUM(mrp-sp) FROM package72;
 
 **输出:**
 
-```
+```sql
 90
 ```
 

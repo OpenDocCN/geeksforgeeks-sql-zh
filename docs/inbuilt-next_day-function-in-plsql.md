@@ -11,7 +11,7 @@ PLSQL 代表**“SQL 的过程语言扩展”**，用于转换、更新和查询
 
 **示例–**
 
-```
+```sql
 INPUT: NEXT_DAY('22-Jul-21','WEDNESDAY')
 OUTPUT:'28-Jul-21'
 
@@ -24,7 +24,7 @@ OUTPUT:'26-Jul-20'
 
 **语法–**
 
-```
+```sql
 NEXT_DAY(DATE,WEEKDAY)
 ```
 
@@ -48,7 +48,7 @@ NEXT_DAY(DATE,WEEKDAY)
 
 ****示例 1–****
 
-```
+```sql
 SELECT 
     NEXT_DAY( DATE '2000-01-01', 'SUNDAY' ) as NEXT_DATE
 FROM
@@ -61,7 +61,7 @@ FROM
 
 ****示例 2–****
 
-```
+```sql
 DECLARE
 input varchar(25);
 weekday varchar(25);
@@ -84,7 +84,7 @@ END;
 ****示例 3–**
 使用 SYSDATE**
 
-```
+```sql
 SELECT NEXT_DAY(SYSDATE,'MONDAY') AS NEXT_MONDAY
 FROM DUAL;
 ```

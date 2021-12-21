@@ -20,7 +20,7 @@
 
 2.  **QUERY:**
 
-    ```
+    ```sql
     SELECT employee_id,first_name,salary
     FROM employees
     WHERE salary > 15000;
@@ -36,7 +36,7 @@
 
 3.  **QUERY:**
 
-    ```
+    ```sql
     SELECT employee_id,first_name,salary
     FROM employees
     WHERE salary > '15000';
@@ -61,7 +61,7 @@
 函数用于将数字或日期输入转换为具有格式模型的字符类型(可选)。
 **语法:**
 
-```
+```sql
 TO_CHAR(number1, [format], [nls_parameter])
 ```
 
@@ -69,7 +69,7 @@ TO_CHAR(number1, [format], [nls_parameter])
 
 **语法:**
 
-```
+```sql
 TO_CHAR(date, ’format_model’)
 ```
 
@@ -84,7 +84,7 @@ TO_CHAR(date, ’format_model’)
 
 **示例:**
 
-```
+```sql
 SELECT employee_id, TO_CHAR(hire_date, ’MM/YY’) Month_Hired
 FROM employees
 WHERE last_name = ’Higgins’;
@@ -149,7 +149,7 @@ WHERE last_name = ’Higgins’;
 
 **示例:**
 
-```
+```sql
 SELECT last_name,
 TO_CHAR(hire_date, ’fmDD Month YYYY’)
 AS HIREDATE
@@ -173,7 +173,7 @@ FROM employees;
 
 **语法:**
 
-```
+```sql
 TO_CHAR(number, ’format_model’)
 ```
 
@@ -190,7 +190,7 @@ TO_CHAR(number, ’format_model’)
 
 **示例:**
 
-```
+```sql
 SELECT TO_CHAR(salary, ’$99,999.00’) SALARY
 FROM employees
 WHERE last_name = ’Ernst’;
@@ -206,20 +206,20 @@ WHERE last_name = ’Ernst’;
 
 使用 **TO_NUMBER** 功能将字符串转换为数字格式:
 
-```
+```sql
 TO_NUMBER(char[, ’format_model’])
 ```
 
 使用**至 _ 日期**功能将字符串转换为日期格式:
 
-```
+```sql
 TO_DATE(char[, ’format_model’])
 ```
 
 这些函数有一个 **fx** 修改器。该修饰符指定了**至 _ 日期**函数的字符参数和日期格式模型的精确匹配。
 T5 例:
 
-```
+```sql
 SELECT last_name, hire_date
 FROM employees
 WHERE hire_date = TO_DATE(’May 24, 1999’, ’fxMonth DD, YYYY’);

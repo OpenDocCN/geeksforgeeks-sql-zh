@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 RANK() OVER (
    [PARTITION BY expression, ]
    ORDER BY expression (ASC | DESC) );
@@ -18,7 +18,7 @@ RANK() OVER (
 **示例–**
 让我们创建一个只有列名的表 geek_demo:
 
-```
+```sql
 CREATE TABLE geek_demo (Name VARCHAR(10) );
 
 ```
@@ -26,14 +26,14 @@ CREATE TABLE geek_demo (Name VARCHAR(10) );
 现在，在 sales.rank_demo 表中插入一些行:
 插入 geek_demo(名称)
 
-```
+```sql
 VALUES('A'), ('B'), ('B'), ('C'), ('C'), ('D'), ('E');
 
 ```
 
 从 geek_demo 表中选择数据:
 
-```
+```sql
 SELECT * 
 FROM sales.geek_demo; 
 
@@ -51,7 +51,7 @@ FROM sales.geek_demo;
 
 让我们使用 RANK()为 geek_demo 表的结果集中的行分配等级:
 
-```
+```sql
 SELECT Name, 
 RANK () OVER (
 ORDER BY Name

@@ -7,7 +7,7 @@ MySQL 中的这个函数有助于返回一个 UNIX 时间戳。我们可以将 U
 
 **语法:**
 
-```
+```sql
 UNIX_TIMESTAMP()
 UNIX_TIMESTAMP(date)
 ```
@@ -26,7 +26,7 @@ UNIX_TIMESTAMP(date)
 **示例-1 :**
 使用当前日期/时间运行 UNIX _ 时间戳()。
 
-```
+```sql
 SELECT UNIX_TIMESTAMP() 
 As TimeStamp; 
 ```
@@ -39,7 +39,7 @@ As TimeStamp;
 **示例-2 :**
 使用日期值' 1999-01-22 '运行 UNIX _ TIMPLATE()。
 
-```
+```sql
 SELECT UNIX_TIMESTAMP('1999-01-22') 
 As TimeStamp; 
 ```
@@ -52,7 +52,7 @@ As TimeStamp;
 **示例-3 :**
 使用 DateTime 值的 UNIX_TIMESTAMP()的工作方式' 2020-10-17 02:35:43 '。
 
-```
+```sql
 SELECT UNIX_TIMESTAMP('2020-10-17 02:35:43') 
 As TimeStamp; 
 ```
@@ -65,7 +65,7 @@ As TimeStamp;
 **示例-4 :**
 使用日期时间值和分数秒' 2020-10-17 02:35:43.12345 '来工作 UNIX _ 时间戳()。
 
-```
+```sql
 SELECT UNIX_TIMESTAMP('2020-10-17 02:35:43.12345') 
 As TimeStamp; 
 ```

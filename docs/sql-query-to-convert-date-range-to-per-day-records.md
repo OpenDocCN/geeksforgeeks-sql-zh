@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 --create a table CREATE TABLE Sample(SampleId  int  not null) 
 DECLARE @NoOfRows int SET @NoOfRows = 1000000  
 --We can add as many rows as you want  ;
@@ -40,7 +40,7 @@ INSERT Sample (SampleId) SELECT Number
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG_Demo; USE GFG_Demo;  
 ```
 
@@ -54,7 +54,7 @@ CREATE DATABASE GFG_Demo; USE GFG_Demo; 
 
 **查询:**
 
-```
+```sql
 CREATE TABLE WorkDone (ID VARCHAR(10) 
 NOT NULL , StartDate DATE NOT NULL , 
 EndDate DATE NOT NULL);   
@@ -70,7 +70,7 @@ EndDate DATE NOT NULL);
 
 **查询:**
 
-```
+```sql
 INSERT INTO WorkDone(ID,StartDate,EndDate)
 VALUES('S1', '2021-01-02','2021-01-06'),
 ('S2', '2021-02-03','2021-02-07'),
@@ -109,7 +109,7 @@ VALUES('S1', '2021-01-02','2021-01-06'),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM WorkDone; 
 ```
 
@@ -121,7 +121,7 @@ SELECT * FROM WorkDone; 
 
 **查询:**
 
-```
+```sql
 WITH S00(N) AS (SELECT 1 UNION ALL SELECT 1), 
 S02(N) AS (SELECT 1 FROM S00 a, S00 b) , 
 S04(N) AS (SELECT 1 FROM S02 a, S02 b) ,

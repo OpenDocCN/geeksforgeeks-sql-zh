@@ -6,7 +6,7 @@
 
 首先，让我们使用 CREATE TABLE 命令创建一个表:
 
-```
+```sql
 -- create a table
 CREATE TABLE students (Sr_No integer,Name varchar(20), Gender varchar(2));
 -- insert some values
@@ -26,19 +26,19 @@ SELECT * FROM students ;
 
 要**更新列值，**使用以下命令:
 
-```
+```sql
  UPDATE TABLE [TABLE_NAME]
 ```
 
 要将列值设置为空，请使用语法:
 
-```
+```sql
  update [TABLE_NAME] set [COLUMN_NAME] = NULL where [CRITERIA] 
 ```
 
 **示例:**对于上表
 
-```
+```sql
 update students set Gender = NULL where Gender='F';
 SELECT * FROM students ;
 ```
@@ -53,7 +53,7 @@ SELECT * FROM students ;
 
 **示例:**
 
-```
+```sql
 update students set Gender = NULL;
 SELECT * FROM students ;
 ```
@@ -68,7 +68,7 @@ SELECT * FROM students ;
 
 **示例:**
 
-```
+```sql
 -- create a table
 CREATE TABLE students (Sr_No integer,Name varchar(20), Gender varchar(2) NOT NULL);
 -- insert some values

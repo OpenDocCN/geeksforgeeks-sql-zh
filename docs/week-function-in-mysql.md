@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 WEEK(date, mode)
 ```
 
@@ -34,7 +34,7 @@ WEEK(date, mode)
     **例-1:**
     2020 年 10 月 15 日使用 week()函数查找当前周数。
 
-    ```
+    ```sql
     SELECT WEEK(NOW()) AS Current_Week;
     ```
 
@@ -49,7 +49,7 @@ WEEK(date, mode)
     **示例-2 :**
     使用 Week()函数从给定的日期时间中查找星期。
 
-    ```
+    ```sql
     SELECT WEEK('2010-05-20 08:09:22') AS Week;
     ```
 
@@ -64,7 +64,7 @@ WEEK(date, mode)
     **示例-3 :**
     当日期为空时，使用 Week()函数从给定的日期时间中查找星期。
 
-    ```
+    ```sql
     SELECT WEEK(NULL) AS Week;
     ```
 
@@ -77,7 +77,7 @@ WEEK(date, mode)
     **示例-4 :**
     在本例中，我们将查找每周注册课程的学生人数。为了演示，创建一个名为“课程”的表。
 
-    ```
+    ```sql
     CREATE TABLE Course(
     Course_name  VARCHAR(100) NOT NULL,
     Student_id INT NOT NULL,  
@@ -89,7 +89,7 @@ WEEK(date, mode)
 
     现在向课程表中插入一些数据–
 
-    ```
+    ```sql
     INSERT INTO  
     Course(Course_Name, Student_id, Student_name, Enroll_Date)
     VALUES
@@ -122,7 +122,7 @@ WEEK(date, mode)
 
     现在，我们要找出每周注册这门课程的学生人数。
 
-    ```
+    ```sql
     SELECT WEEK(Enroll_Date) WeekNumber,  
     COUNT(Student_id) Student_Enrolled
     FROM Course

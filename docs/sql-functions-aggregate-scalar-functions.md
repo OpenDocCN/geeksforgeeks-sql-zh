@@ -31,7 +31,7 @@
 *   **AVG()**: It returns average value after calculating from values in a numeric column.
     Syntax:
 
-    ```
+    ```sql
     SELECT AVG(column_name) FROM table_name;
 
     ```
@@ -40,7 +40,7 @@
 
     1.  Computing average marks of students.
 
-        ```
+        ```sql
         SELECT AVG(MARKS) AS AvgMarks FROM Students; 
 
         ```
@@ -52,7 +52,7 @@
 
     2.  Computing average age of students.
 
-        ```
+        ```sql
         SELECT AVG(AGE) AS AvgAge FROM Students; 
 
         ```
@@ -65,7 +65,7 @@
 *   **COUNT(): **It is used to count the number of rows returned in a SELECT statement. It can’t be used in MS ACCESS.
     Syntax:
 
-    ```
+    ```sql
     SELECT COUNT(column_name) FROM table_name;
 
     ```
@@ -74,7 +74,7 @@
 
     1.  Computing total number of students.
 
-        ```
+        ```sql
         SELECT COUNT(*) AS NumStudents FROM Stuents;
 
         ```
@@ -86,7 +86,7 @@
 
     2.  Computing number of students with unique/distinct age.
 
-        ```
+        ```sql
         SELECT COUNT(DISTINCT AGE) AS NumStudents FROM Students;
 
         ```
@@ -99,7 +99,7 @@
 *   **FIRST(): **The FIRST() function returns the first value of the selected column.
     Syntax:
 
-    ```
+    ```sql
     SELECT FIRST(column_name) FROM table_name;
 
     ```
@@ -108,7 +108,7 @@
 
     1.  Fetching marks of first student from the Students table.
 
-        ```
+        ```sql
         SELECT FIRST(MARKS) AS MarksFirst FROM Students;
 
         ```
@@ -120,7 +120,7 @@
 
     2.  Fetching age of first student from the Students table.
 
-        ```
+        ```sql
         SELECT FIRST(AGE) AS AgeFirst FROM Students;
 
         ```
@@ -133,7 +133,7 @@
 *   **LAST(): **The LAST() function returns the last value of the selected column. It can be used only in MS ACCESS.
     Syntax:
 
-    ```
+    ```sql
     SELECT LAST(column_name) FROM table_name;
 
     ```
@@ -142,7 +142,7 @@
 
     1.  Fetching marks of last student from the Students table.
 
-        ```
+        ```sql
         SELECT LAST(MARKS) AS MarksLast FROM Students;
 
         ```
@@ -154,7 +154,7 @@
 
     2.  Fetching age of last student from the Students table.
 
-        ```
+        ```sql
         SELECT LAST(AGE) AS AgeLast FROM Students;
 
         ```
@@ -167,7 +167,7 @@
 *   **MAX():**MAX()函数返回所选列的最大值。
     语法:
 
-```
+```sql
 SELECT MAX(column_name) FROM table_name;
 
 ```
@@ -176,7 +176,7 @@ SELECT MAX(column_name) FROM table_name;
 
 1.  Fetching maximum marks among students from the Students table.
 
-    ```
+    ```sql
     SELECT MAX(MARKS) AS MaxMarks FROM Students;
 
     ```
@@ -188,7 +188,7 @@ SELECT MAX(column_name) FROM table_name;
 
 2.  Fetching max age among students from the Students table.
 
-    ```
+    ```sql
     SELECT MAX(AGE) AS MaxAge FROM Students;
 
     ```
@@ -201,7 +201,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **MIN(): **The MIN() function returns the minimum value of the selected column.
     Syntax:
 
-    ```
+    ```sql
     SELECT MIN(column_name) FROM table_name;
 
     ```
@@ -210,7 +210,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching minimum marks among students from the Students table.
 
-        ```
+        ```sql
         SELECT MIN(MARKS) AS MinMarks FROM Students;
 
         ```
@@ -222,7 +222,7 @@ SELECT MAX(column_name) FROM table_name;
 
     2.  Fetching minimum age among students from the Students table.
 
-        ```
+        ```sql
         SELECT MIN(AGE) AS MinAge FROM Students;
 
         ```
@@ -235,7 +235,7 @@ SELECT MAX(column_name) FROM table_name;
         *   **SUM(): **The SUM() function returns the sum of all the values of the selected column.
     Syntax:
 
-    ```
+    ```sql
     SELECT SUM(column_name) FROM table_name;
 
     ```
@@ -244,7 +244,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching summation of total marks among students from the Students table.
 
-        ```
+        ```sql
         SELECT SUM(MARKS) AS TotalMarks FROM Students;
 
         ```
@@ -256,7 +256,7 @@ SELECT MAX(column_name) FROM table_name;
 
     2.  Fetching summation of total age among students from the Students table.
 
-        ```
+        ```sql
         SELECT SUM(AGE) AS TotalAge FROM Students;
 
         ```
@@ -271,7 +271,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **UCASE()**: It converts the value of a field to uppercase.
     Syntax:
 
-    ```
+    ```sql
     SELECT UCASE(column_name) FROM table_name;
 
     ```
@@ -280,7 +280,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Converting names of students from the table Students to uppercase.
 
-        ```
+        ```sql
         SELECT UCASE(NAME) FROM Students;
 
         ```
@@ -297,7 +297,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **LCASE()**: It converts the value of a field to lowercase.
     Syntax:
 
-    ```
+    ```sql
     SELECT LCASE(column_name) FROM table_name;
 
     ```
@@ -306,7 +306,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Converting names of students from the table Students to lowercase.
 
-        ```
+        ```sql
         SELECT LCASE(NAME) FROM Students;
 
         ```
@@ -323,7 +323,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **MID(): **The MID() function extracts texts from the text field.
     Syntax:
 
-    ```
+    ```sql
     SELECT MID(column_name,start,length) AS some_name FROM table_name;
 
     specifying length is optional here, and start signifies start position ( starting from 1 )
@@ -334,7 +334,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching first four characters of names of students from the Students table.
 
-        ```
+        ```sql
         SELECT MID(NAME,1,4) FROM Students; 
 
         ```
@@ -351,7 +351,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **LEN(): **The LEN() function returns the length of the value in a text field.
     Syntax:
 
-    ```
+    ```sql
     SELECT LENGTH(column_name) FROM table_name;
 
     ```
@@ -360,7 +360,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching length of names of students from Students table.
 
-        ```
+        ```sql
         SELECT LENGTH(NAME) FROM Students;
 
         ```
@@ -378,7 +378,7 @@ SELECT MAX(column_name) FROM table_name;
 
     语法:
 
-    ```
+    ```sql
     SELECT ROUND(column_name,decimals) FROM table_name; 
 
     decimals- number of decimals to be fetched.
@@ -389,7 +389,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching maximum marks among students from the Students table.
 
-        ```
+        ```sql
         SELECT ROUND(MARKS,0) FROM table_name; 
 
         ```
@@ -406,7 +406,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **NOW(): **The NOW() function returns the current system date and time.
     Syntax:
 
-    ```
+    ```sql
     SELECT NOW() FROM table_name;
 
     ```
@@ -415,7 +415,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Fetching current system time.
 
-        ```
+        ```sql
         SELECT NAME, NOW() AS DateTime FROM Students; 
 
         ```
@@ -432,7 +432,7 @@ SELECT MAX(column_name) FROM table_name;
 *   **FORMAT(): **The FORMAT() function is used to format how a field is to be displayed.
     Syntax:
 
-    ```
+    ```sql
     SELECT FORMAT(column_name,format) FROM table_name; 
 
     ```
@@ -441,7 +441,7 @@ SELECT MAX(column_name) FROM table_name;
 
     1.  Formatting current date as ‘YYYY-MM-DD’.
 
-        ```
+        ```sql
         SELECT NAME, FORMAT(Now(),'YYYY-MM-DD') AS Date FROM Students; 
 
         ```

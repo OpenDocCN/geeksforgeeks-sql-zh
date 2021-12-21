@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 DSum (expr, domain [, criteria])
 
 ```
@@ -31,7 +31,7 @@ DSum (expr, domain [, criteria])
 
 **例-1 :** 求所有产品价格之和。
 
-```
+```sql
 Select DSum("Product_Price", "Product Details") as Total_Price;
 
 ```
@@ -44,7 +44,7 @@ Select DSum("Product_Price", "Product Details") as Total_Price;
 
 **例-2 :** 求给定条件下产品 id 小于 103 的产品价格之和。
 
-```
+```sql
 Select DSum("Product_Price", "Product Details", "Product_Id  < 103") as Total_Price;
 
 ```
@@ -60,7 +60,7 @@ Select DSum("Product_Price", "Product Details", "Product_Id  < 103") as Total_Pr
 
 **语法:**
 
-```
+```sql
 DAvg (expr, domain [, criteria])
 
 ```
@@ -84,7 +84,7 @@ DAvg (expr, domain [, criteria])
 
 **例-1 :** 求产品价格的平均值。
 
-```
+```sql
 Select DAvg("Product_Price", "Product Details") as Avg_Price;
 
 ```
@@ -97,7 +97,7 @@ Select DAvg("Product_Price", "Product Details") as Avg_Price;
 
 **例-2 :** 求给定条件下产品 id 小于 103 的产品价格平均值。
 
-```
+```sql
 Select DAvg("Product_Price", "Product Details", "Product_Id  < 103") as Avg_Price;
 
 ```

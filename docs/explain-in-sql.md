@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 EXPLAIN (QUERY Statement) ; /* ONLY TAKES COMMAND AS PARAMETER */
 ```
 
@@ -20,13 +20,13 @@ EXPLAIN (QUERY Statement) ; /* ONLY TAKES COMMAND AS PARAMETER */
 
 让我们首先创建一个名为***【GFG】*****u**的数据库，唱出下面的命令:
 
-```
+```sql
 CREATE DATABASE GFG;
 ```
 
 现在向其中添加表格。
 
-```
+```sql
 SELECT * FROM gfgtable;
 ```
 
@@ -36,7 +36,7 @@ SELECT * FROM gfgtable;
 
 现在让我们使用**解释**从一个更简单的查询开始得到任何查询的解释。
 
-```
+```sql
  QUERY1: EXPLAIN SELECT * FROM gfgtable;
 ```
 
@@ -63,7 +63,7 @@ SELECT * FROM gfgtable;
 
 这样， **EXPLAIN** 关键字用于获取所有关于查询的信息，并将其制成表格，以便存储在**数据库**中，供进一步参考。
 
-```
+```sql
  QUERY 2:
 
  EXPLAIN

@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE BIKE(
 [SELECT] VARCHAR(10),
 [TABLE] INT);
@@ -48,7 +48,7 @@ CREATE TABLE BIKE(
 
 **查询:**
 
-```
+```sql
 INSERT INTO BIKE VALUES('HERO',10000);
 INSERT INTO BIKE VALUES('TVS',20000);
 INSERT INTO BIKE VALUES('YAMAHA',30000);
@@ -64,7 +64,7 @@ INSERT INTO BIKE VALUES('BAJAJ',50000);
 
 **查询:**
 
-```
+```sql
 SELECT [SELECT] FROM BIKE;
 ```
 
@@ -76,7 +76,7 @@ SELECT [SELECT] FROM BIKE;
 
 **查询:**
 
-```
+```sql
 SELECT [TABLE] FROM BIKE;
 ```
 
@@ -88,7 +88,7 @@ SELECT [TABLE] FROM BIKE;
 
 **查询:**
 
-```
+```sql
 SELECT [SELECT],[TABLE] FROM BIKE;
 ```
 

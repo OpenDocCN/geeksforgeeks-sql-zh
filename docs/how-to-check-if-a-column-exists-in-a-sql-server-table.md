@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,
@@ -20,7 +20,7 @@ CREATE TABLE table_name (
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Student(Name varchar(40),
 Department varchar(30),Roll_No int, );
 ```
@@ -35,7 +35,7 @@ Department varchar(30),Roll_No int, );
 
 #### 语法:
 
-```
+```sql
 INSERT INTO table_name
 VALUES (value1, value2, value3, ...);
 ```
@@ -44,7 +44,7 @@ VALUES (value1, value2, value3, ...);
 
 **查询:**
 
-```
+```sql
 INSERT INTO Student
 VALUES ('Rahul Sharma','Electronics',15),
        ('Soha Shaikh','Computer Science',24),
@@ -62,7 +62,7 @@ VALUES ('Rahul Sharma','Electronics',15),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student
 ```
 
@@ -76,7 +76,7 @@ SELECT * FROM Student
 
 **语法:**
 
-```
+```sql
 COL_LENGTH ( 'table' , 'column' )
 ```
 
@@ -88,7 +88,7 @@ COL_LENGTH ( 'table' , 'column' )
 
 **查询:**
 
-```
+```sql
 IF COL_LENGTH('table_name','column_name') IS NOT NULL
     PRINT 'Column Exists';
 ELSE

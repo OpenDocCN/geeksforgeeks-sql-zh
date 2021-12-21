@@ -12,7 +12,7 @@
 
     **查询–**
 
-    ```
+    ```sql
     SELECT TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, 
     ORDINAL_POSITION as org_pos, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH as CML
     FROM INFORMATION_SCHEMA.COLUMNS
@@ -36,7 +36,7 @@
 
 **查询–**
 
-```
+```sql
 SELECT col.name AS [Column Name], tab.name AS [Table Name]
 FROM sys.columns col
 INNER JOIN sys.tables tab

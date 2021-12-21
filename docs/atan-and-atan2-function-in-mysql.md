@@ -7,19 +7,19 @@ MySQL 中的 ATAN()函数用于返回任意数字 x 的反正切，x 的反正�
 
 当 y 的正切等于 x 时:
 
-```
+```sql
 tan y = x
 ```
 
 那么 x 的反正切等于 x 的反正切函数，等于 y:
 
-```
+```sql
 arctan x= tan-1 x = y
 ```
 
 **语法:**
 
-```
+```sql
 ATAN(X)
 
 ```
@@ -32,7 +32,7 @@ ATAN(X)
 
 **示例-1 :** 使用 ATAN()函数求 1 的反正切。
 
-```
+```sql
 SELECT ATAN(1) AS Atan_Val ;
 
 ```
@@ -45,7 +45,7 @@ SELECT ATAN(1) AS Atan_Val ;
 
 **示例-2 :** 使用 ATAN()函数求 0 的反正切。
 
-```
+```sql
 SELECT ATAN(0) AS Atan_Val ;
 
 ```
@@ -58,7 +58,7 @@ SELECT ATAN(0) AS Atan_Val ;
 
 **示例-3 :** 使用 ATAN()函数计算(0，-1)范围内+ve 数的反正切。
 
-```
+```sql
 SELECT ATAN(0.35) AS Atan_Val ;
 
 ```
@@ -71,7 +71,7 @@ SELECT ATAN(0.35) AS Atan_Val ;
 
 **示例-4 :** 使用 ATAN()函数计算一个数字的反正切。
 
-```
+```sql
 SELECT ATAN(-2.75) AS Atan_Val ;
 
 ```
@@ -96,7 +96,7 @@ SELECT ATAN(-2.75) AS Atan_Val ;
 | one |
 | Fourteen |
 
-```
+```sql
 SELECT X, ATAN(X) AS ArcTan_X  FROM Number ;
 
 ```
@@ -118,7 +118,7 @@ MySQL 中的 ATAN2()函数用于返回指定的两个数，即 x 和 y 之间的
 
 **语法:**
 
-```
+```sql
 ATAN2 (Y, X)
 
 ```
@@ -131,7 +131,7 @@ ATAN2 (Y, X)
 
 **例-1 :** 使用 ATAN2()函数求两个负数的反正切。
 
-```
+```sql
 SELECT ATAN2(-5.44, -10.5 ) AS Atan2_Val ;
 
 ```
@@ -144,7 +144,7 @@ SELECT ATAN2(-5.44, -10.5 ) AS Atan2_Val ;
 
 **例-2 :** 使用 ATAN2()函数求两个+ve 数的反正切。
 
-```
+```sql
 SELECT ATAN2( 20.35, 5.60 ) AS Atan2_Val ;
 
 ```
@@ -166,7 +166,7 @@ SELECT ATAN2( 20.35, 5.60 ) AS Atan2_Val ;
 | Six point seven | -1.2 |
 | -55.00 | -12.00 |
 
-```
+```sql
 SELECT X, Y, ATAN2(X, Y) AS ArcTan2_XY  FROM Number ;
 
 ```

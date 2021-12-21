@@ -10,13 +10,13 @@
 
 命令来创建数据库。这里的 GEEKSFORGEEKS 是数据库的名字。
 
-```
+```sql
 CREATE DATABASE GEEKSFORGEEKS;
 ```
 
 要激活数据库，请使用以下命令:
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -26,7 +26,7 @@ USE GEEKSFORGEEKS;
 
 现在让我们创建一个名为“ ***【作者】*** 的表，并让我们向其中插入一些数据，如下所示:
 
-```
+```sql
 CREATE TABLE Authors (
     ID INT IDENTITY NOT NULL PRIMARY KEY,
     AuthorName NVARCHAR(MAX),
@@ -65,7 +65,7 @@ JSON 在 Javascript 中被视为对象，因此被称为 JavaScript 对象符号
 
 【JSON 数据示例:
 
-```
+```sql
 {
 "Information": 
   {"SchoolDetails": 
@@ -78,7 +78,7 @@ JSON 在 Javascript 中被视为对象，因此被称为 JavaScript 对象符号
 
 该功能用于检查**给定的输入 json 字符串是否为 JSON 格式**。如果是 JSON 格式，则返回 1 作为输出，否则返回 0。即它以 INT 格式返回 1 或 0。
 
-```
+```sql
 SELECT ISJSON(@JSONData) AS VALIDJSON
 ```
 
@@ -95,7 +95,7 @@ SELECT ISJSON(@JSONData) AS VALIDJSON
 
 **示例:**
 
-```
+```sql
 SELECT JSON_VALUE(@JSONData,'$.Information.SchoolDetails[0].Name') as SchoolName
 ```
 
@@ -105,7 +105,7 @@ SELECT JSON_VALUE(@JSONData,'$.Information.SchoolDetails[0].Name') as SchoolName
 
 用于从 JSON 字符串中提取数据或对象的数组。
 
-```
+```sql
 SELECT JSON_QUERY(@JSONData,'$.Information.SchoolDetails')
 AS LISTOFSCHOOLS
 ```
@@ -118,7 +118,7 @@ AS LISTOFSCHOOLS
 
 (Transact-SQL)函数中有一个名为“JSON_MODIFY”的选项，可用于更新 JSON 字符串中的属性值，并返回更新后的 JSON 字符串。每当需要更改 JSON 文本时，我们都可以这样做
 
-```
+```sql
 SET @JSONData= JSON_MODIFY(@JSONData, '$.Information.SchoolDetails[2].Name', 'Adhyapana');
 SELECT modifiedJson = @JSONData;
 ```
@@ -136,13 +136,13 @@ SELECT modifiedJson = @JSONData;
 
 作者表输出
 
-```
+```sql
 SELECT * FROM Authors FOR JSON AUTO;
 ```
 
 ![](img/63e1bd0f56e8d3013d0ef6e2ede495dc.png)
 
-```
+```sql
 SELECT * FROM Authors FOR JSON AUTO, ROOT ('AuthorInfo')
 ```
 
@@ -154,7 +154,7 @@ SELECT * FROM Authors FOR JSON AUTO, ROOT ('AuthorInfo')
 
 **示例:**
 
-```
+```sql
 DECLARE @JSON VARCHAR(MAX)
 --Syntax to get json data using OPENROWSET  
 SELECT @JSON = BulkColumn FROM OPENROWSET  
@@ -176,13 +176,13 @@ SINGLE_BLOB，它将文件读取为 varbinary(最大值)。SINGLE_NCLOB，将文
 
 ![](img/0fbf59b3f5596ee4175f3ca01464448c.png)
 
-```
+```sql
 Select * FROM OPENJSON (@JSON)
 ```
 
 ![](img/91989fc07c4c29b753ea7b9c447c4eb9.png)
 
-```
+```sql
 SELECT @JSON = BulkColumn
 FROM OPENROWSET 
 (BULK '<location of json file>', SINGLE_CLOB) 
@@ -196,7 +196,7 @@ Select * FROM OPENJSON (@JSON)
 
 **如果 JSON 是嵌套的，我们需要使用路径变量**
 
-```
+```sql
 Select * FROM OPENJSON (@JSON,  '$.skills')
 ```
 
@@ -204,7 +204,7 @@ Select * FROM OPENJSON (@JSON,  '$.skills')
 
 我们甚至可以将技能集作为数据列
 
-```
+```sql
 SELECT * FROM OPENJSON (@JSON, '$.skills')  
 WITH ( skill1 VARCHAR(25), skill2 VARCHAR(25), skill3 VARCHAR(25) )
 ```
@@ -213,7 +213,7 @@ WITH ( skill1 VARCHAR(25), skill2 VARCHAR(25), skill3 VARCHAR(25) )
 
 **将行集保存到表中:**这里的列数应该与表中的计数相匹配:
 
-```
+```sql
 SELECT <col1>,<col2>,.... INTO <tablename>  FROM OPENJSON (@JSON, '$.skills')  
 WITH (skill1 VARCHAR(25),
 skill2 VARCHAR(25),
@@ -227,7 +227,7 @@ skill3 VARCHAR(25)
 
 (Transact-SQL)函数中有一个名为“JSON_MODIFY”的选项，可用于更新 JSON 字符串中的属性值，并返回更新后的 JSON 字符串。每当需要更改 JSON 文本时，我们都可以这样做
 
-```
+```sql
 DECLARE @json NVARCHAR(MAX);
 SET @json = '{"Information": {"SchoolDetails": [{"Name": "VidhyaMandhir"}, {"Name": "Chettinad"}, {"Name":"PSSenior"}]}}';
 SET @json = JSON_MODIFY(@json, '$.Information.SchoolDetails[2].Name', 'Adhyapana');

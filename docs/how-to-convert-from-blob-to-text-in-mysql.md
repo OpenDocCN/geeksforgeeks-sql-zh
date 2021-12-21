@@ -12,7 +12,7 @@ MySQL 中的文本数据类型用于在数据库中存储长文本字符串。�
 
 **语法:**
 
-```
+```sql
 CONVERT( column_name using utf8);
 ```
 
@@ -24,7 +24,7 @@ utf8 是编码 Unicode 字符的方式。建议在创建网页和数据库时使
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -36,7 +36,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -48,7 +48,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
  CREATE TABLE demo_table(
    NAME VARCHAR(20),
    AGE INT,
@@ -62,7 +62,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
  INSERT INTO demo_table VALUES ('Romy', 21, 
  'Delhi', 'My name is romy kumari,
  I am 21 yrs old'),
@@ -82,7 +82,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -96,7 +96,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT convert(File using utf8)
 from demo_table;
 ```
@@ -113,7 +113,7 @@ from demo_table;
 
 **语法**:
 
-```
+```sql
 ALTER Table demo_table ADD 
 COLUMN AFTER_CONERSION TEXT;
 ```
@@ -122,7 +122,7 @@ COLUMN AFTER_CONERSION TEXT;
 
 **步骤 2:** 向列中添加内容
 
-```
+```sql
  UPDATE demo_table SET AFTER_CONERSION 
  = CONVERT (FILE using utf8);
 ```
@@ -131,7 +131,7 @@ COLUMN AFTER_CONERSION TEXT;
 
 **步骤 3:** 删除 BLOB 列
 
-```
+```sql
  ALTER TABLE demo_table 
  DROP COLUMN FILE;
 ```

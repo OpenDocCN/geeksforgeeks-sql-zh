@@ -21,7 +21,7 @@
 如果我们想格式化一个数字。然后我们用下面的查询:
 **查询:**
 
-```
+```sql
 SELECT FORMAT(25, 'N')
 ```
 
@@ -32,7 +32,7 @@ SELECT FORMAT(25, 'N')
 再举一个 PERCENTAGE 格式的例子。
 **查询:**
 
-```
+```sql
 SELECT FORMAT(1, 'P', 'en-US')AS [PERCENTAGE IN US FORMAT], 
     FORMAT(1, 'P', 'en-IN') AS [PERCENTAGE IN INDIA FORMAT];
 ```
@@ -44,7 +44,7 @@ SELECT FORMAT(1, 'P', 'en-US')AS [PERCENTAGE IN US FORMAT],
 DATE 格式示例。
 **查询:**
 
-```
+```sql
 DECLARE @d DATETIME = GETDATE();  
 SELECT FORMAT( @d, 'dd/MM/yyyy', 'en-US' ) AS 'DateTime Result'
 ```
@@ -56,7 +56,7 @@ SELECT FORMAT( @d, 'dd/MM/yyyy', 'en-US' ) AS 'DateTime Result'
 在本例中，我们将使用上午或下午格式化当前时间。
 **查询:**
 
-```
+```sql
 SELECT FORMAT(SYSDATETIME(), N'hh:mm tt');
 ```
 
@@ -67,7 +67,7 @@ SELECT FORMAT(SYSDATETIME(), N'hh:mm tt');
 在本例中，我们更改了 CURRENCY 格式。
 **查询:**
 
-```
+```sql
 SELECT 
     FORMAT(1, 'C', 'in-IN') AS 'INDIA', 
     FORMAT(1, 'C', 'ch-CH') AS 'CHINA', 

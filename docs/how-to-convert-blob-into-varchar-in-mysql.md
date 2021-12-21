@@ -12,7 +12,7 @@
 
 ****查询:****
 
-```
+```sql
 CREATE DATABASE geek;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE geek;
 
 ****查询:****
 
-```
+```sql
 USE geek;
 ```
 
@@ -36,7 +36,7 @@ USE geek;
 
 ****查询:****
 
-```
+```sql
 CREATE TABLE demo_table(AGE INT,
 PHOTO BLOB,
 SALARY FLOAT);
@@ -50,7 +50,7 @@ SALARY FLOAT);
 
 ****查询:****
 
-```
+```sql
 DESCRIBE demo_table;
 ```
 
@@ -66,7 +66,7 @@ DESCRIBE demo_table;
 
 ****查询:****
 
-```
+```sql
 ALTER TABLE demo_table
 MODIFY PHOTO VARCHAR(100);
 ```
@@ -77,14 +77,14 @@ MODIFY PHOTO VARCHAR(100);
 
 ****查询:****
 
-```
+```sql
 ALTER TABLE demo_table CHANGE 
 PHOTO PHOTO_CHANGE VARCHAR(100);
 ```
 
 ****第 6 步:**描述你的表格，看看变化**
 
-```
+```sql
 DESCRIBE demo_table;
 ```
 

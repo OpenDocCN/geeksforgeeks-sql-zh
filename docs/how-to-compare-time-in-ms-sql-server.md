@@ -8,13 +8,13 @@
 
 ### **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -22,7 +22,7 @@ USE geeks;
 
 **语法:**
 
-```
+```sql
 declare  @input1 datetime;
 declare  @input2 datetime;
 select   @input1 = CONVERT(varchar(20),CONVERT(datetime, 'date and time'), 114)
@@ -40,7 +40,7 @@ else
 
 **示例:**
 
-```
+```sql
 declare  @day1 datetime;
 declare  @day2 datetime;
 select   @day1 = CONVERT(varchar(20),CONVERT(datetime, '2019-02-11 08:00:00'), 114)
@@ -53,7 +53,7 @@ else
 
 **输出:**
 
-```
+```sql
 @@day1 less then @@day2
 ```
 
@@ -65,7 +65,7 @@ SQL 中的 GETDATE()函数也可以用来比较多个日期。
 
 **示例:**
 
-```
+```sql
 declare  @day1 datetime;
 declare  @day2 datetime;
 select   @day1 = CONVERT(varchar(20),GETDATE(), 114)
@@ -78,7 +78,7 @@ else
 
 **输出:**
 
-```
+```sql
 @@day1 more then @@day2
 ```
 

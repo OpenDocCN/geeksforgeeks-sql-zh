@@ -7,7 +7,7 @@ MySQL 中的这个函数有助于将两个或多个字符串和一个分隔符�
 
 **语法:**
 
-```
+```sql
 CONCAT_WS(separator, string1, string2, ...)
 ```
 
@@ -24,7 +24,7 @@ CONCAT_WS(separator, string1, string2, ...)
 **示例 1 :**
 使用 CONCAT_WS 函数连接 2 个字符串，如下所示。
 
-```
+```sql
 SELECT CONCAT_WS(": ", "Geek ", "Vansh ") AS ConcatWsStr;
 ```
 
@@ -36,7 +36,7 @@ SELECT CONCAT_WS(": ", "Geek ", "Vansh ") AS ConcatWsStr;
 **示例-2 :**
 使用 CONCAT_WS 函数连接 3 个字符串，如下所示。
 
-```
+```sql
 SELECT CONCAT_WS("@ ", "Geek ", "Vansh ", 13 ) AS ConcatWsStr;
 ```
 
@@ -48,7 +48,7 @@ SELECT CONCAT_WS("@ ", "Geek ", "Vansh ", 13 ) AS ConcatWsStr;
 **示例-3 :**
 使用空分隔符串联一个空字符串，如下所示。
 
-```
+```sql
 SELECT CONCAT_WS(NULL, NULL, "Vansh ", 13 ) AS ConcatWsStr;
 ```
 
@@ -62,7 +62,7 @@ SELECT CONCAT_WS(NULL, NULL, "Vansh ", 13 ) AS ConcatWsStr;
 
 **创建员工表:**
 
-```
+```sql
 CREATE TABLE Emp(
 Employee_Id INT AUTO_INCREMENT,  
 FirstName VARCHAR(100) NOT NULL,
@@ -76,7 +76,7 @@ PRIMARY KEY(Employee_Id )
 
 **将数据插入表中:**
 
-```
+```sql
 INSERT INTO Emp(FirstName, LastName, Residence, Salary )
 VALUES
 ('Animesh', 'Garg', 'Delhi', 70000 ),
@@ -88,7 +88,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 Select * From Emp;
 ```
 
@@ -103,7 +103,7 @@ Select * From Emp;
 
 现在，使用“_”作为分隔符连接给定 Emp 表的名字和姓氏，形成一个新列作为全名。
 
-```
+```sql
 SELECT CONCAT_WS('_', FirstName,  LastName) AS FullName
 From Emp;  
 ```

@@ -11,7 +11,7 @@
 
 **语法:**
 
-```
+```sql
 CONCAT(column_name1, column_name2) AS column_name;
 ```
 
@@ -21,7 +21,7 @@ CONCAT(column_name1, column_name2) AS column_name;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -33,7 +33,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -45,7 +45,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 FIRSTNAME VARCHAR(20),
 LASTNAME VARCHAR(20),
@@ -58,7 +58,7 @@ AGE INT);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('Romy', 'Kumari', 21),
 ('Pushkar', 'Jha', 22),
@@ -76,7 +76,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -94,7 +94,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT  *, CONCAT(FIRSTNAME, LASTNAME) AS FIRSTNAME
 FROM demo_table;
 ```
@@ -107,7 +107,7 @@ FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT  *, CONCAT(FIRSTNAME,' ', LASTNAME) as FIRSTNAME
 FROM demo_table;
 ```
@@ -124,7 +124,7 @@ FROM demo_table;
 
 **查询:**
 
-```
+```sql
 UPDATE demo_table  
 SET FIRSTNAME = REPLACE(FIRSTNAME,FIRSTNAME, CONCAT(FIRSTNAME,' ', LASTNAME));
 ```

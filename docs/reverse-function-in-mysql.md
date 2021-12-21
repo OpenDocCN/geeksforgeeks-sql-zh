@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT REVERSE(string)
 
 ```
@@ -17,7 +17,7 @@ SELECT REVERSE(string)
 
 **示例-1:**
 
-```
+```sql
 SELECT REVERSE("GFG");
 
 ```
@@ -31,7 +31,7 @@ SELECT REVERSE("GFG");
 **示例-2:**
 使用 REVERSE()函数反转字符串:
 
-```
+```sql
 SELECT REVERSE("Geeksforgeeks");
 
 ```
@@ -44,7 +44,7 @@ SELECT REVERSE("Geeksforgeeks");
 
 使用 REVERSE()函数反转句子:
 
-```
+```sql
 SELECT REVERSE("Geeksforgeeks is an interesting site");
 
 ```
@@ -57,7 +57,7 @@ SELECT REVERSE("Geeksforgeeks is an interesting site");
 
 使用 REVERSE()函数查找字符串是否为回文:
 
-```
+```sql
 DECLARE 
 @input VARCHAR(100) = 'madam';
 SELECT 

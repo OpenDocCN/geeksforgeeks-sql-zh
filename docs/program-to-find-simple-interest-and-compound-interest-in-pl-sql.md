@@ -10,7 +10,7 @@
 
 **示例:**
 
-```
+```sql
 Input: p = 1500
        r = 5
        t = 3
@@ -34,7 +34,7 @@ T:时间段
 
 **以下是所需的实现:-**
 
-```
+```sql
   DECLARE
     --declaration of principal variable
     p  NUMBER(9, 2);
@@ -74,7 +74,7 @@ END;
 
 **输出**
 
-```
+```sql
 Simple Interest = 13860
 Compound interest = 49524.1
 

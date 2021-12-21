@@ -20,19 +20,19 @@ SQL 查询是从数据库的表中传递的对数据/信息的请求。这些数
 
 **步骤 1:** 创建**数据库**
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
 **步骤 2:** 进入该数据库使用它–
 
-```
+```sql
 USE geeksforgeeks;
 ```
 
 **第 3 步:**在数据库中创建一个表 1 作为**员工**，我们将在其中执行我们的操作–
 
-```
+```sql
 CREATE TABLE employee ( ID int(10),
             Name varchar(55),
             Email varchar(100),
@@ -42,7 +42,7 @@ CREATE TABLE employee ( ID int(10),
 
 **第四步:**创建另一个表 2 作为**部门**，我们将在此存储第二家公司员工的数据-
 
-```
+```sql
 CREATE TABLE dept     ( ID int(10),
             Name varchar(55),
             hodId int(10),
@@ -52,7 +52,7 @@ CREATE TABLE dept     ( ID int(10),
 
 **步骤 5:** 查看表格的模式，确保表格正确–
 
-```
+```sql
 > DESC employee;
 > DESC dept;
 ```
@@ -61,7 +61,7 @@ CREATE TABLE dept     ( ID int(10),
 
 **第 6 步:**将数据插入员工表–
 
-```
+```sql
 INSERT INTO employee VALUES(1, "Devesh", "geeks@geeks.com", 1);
 INSERT INTO employee VALUES(2, "Mayank", "for@geeks.com", 1);
 INSERT INTO employee VALUES(3, "Aditya", "geeks@geeks.com", 2);
@@ -74,7 +74,7 @@ INSERT INTO employee VALUES(8, "Jatin", "science@geeks.com", 4);
 
 **步骤 7:** 将数据插入部门表–
 
-```
+```sql
 INSERT INTO dept VALUES(1, "Computer Science", 1, 100000);
 INSERT INTO dept VALUES(2, "Electrical", 2, 45000);
 INSERT INTO dept VALUES(3, "Biotechnology", 3, 30000);
@@ -87,7 +87,7 @@ INSERT INTO dept VALUES(4, "Architecture", 4, 15000);
 
 **示例 1:** 选择部门负责人员工的所有数据–
 
-```
+```sql
 SELECT employee.ID, employee.Name, employee.Email
 FROM employee 
 JOIN dept
@@ -101,7 +101,7 @@ employee.ID = dept.hodId;
 
 **例 2:** 选择部门利润大于 45000 的所有数据–
 
-```
+```sql
 SELECT * 
 FROM employee
 LEFT JOIN dept
@@ -118,7 +118,7 @@ employee.Name IN
 
 **示例 3:** 使用 JOIN ( **交叉连接**)从两个表中选择所有数据–
 
-```
+```sql
 SELECT *
 FROM employee 
 FULL JOIN dept
@@ -130,7 +130,7 @@ dept.id > 0;
 
 **例 4:** 从利润总额大于 5000 的部门中选择所有员工
 
-```
+```sql
 SELECT DISTINCT dept.ID, dept.Name, dept.hodId
 FROM dept
 JOIN employee

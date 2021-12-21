@@ -36,7 +36,7 @@ PL/SQL 通过添加过程语言中的构造来扩展 SQL，从而产生了比 SQ
 
 通常，每个块在程序中执行一个逻辑动作。块具有以下结构:
 
-```
+```sql
 DECLARE
     declaration statements;
 
@@ -63,14 +63,14 @@ END;
 
     变量声明的语法:
 
-    ```
+    ```sql
     variable_name datatype [NOT NULL := value ];
 
     ```
 
     演示如何在 PL/SQL 中声明变量的示例:
 
-    ```
+    ```sql
     SQL> SET SERVEROUTPUT ON;
 
     SQL> DECLARE
@@ -86,7 +86,7 @@ END;
 
     输出:
 
-    ```
+    ```sql
     PL/SQL procedure successfully completed.
 
     ```
@@ -101,7 +101,7 @@ END;
     **1.1)初始化变量:**
     变量也可以像其他编程语言一样初始化。让我们看一个同样的例子:
 
-    ```
+    ```sql
     SQL> SET SERVEROUTPUT ON;
     SQL> DECLARE
          var1 INTEGER := 2 ;
@@ -116,7 +116,7 @@ END;
 
     输出:
 
-    ```
+    ```sql
     PL/SQL procedure successfully completed.
 
     ```
@@ -129,7 +129,7 @@ END;
 
     让我们看一个例子，看看如何使用 PL/SQL 显示消息:
 
-    ```
+    ```sql
     SQL> SET SERVEROUTPUT ON;
     SQL> DECLARE
          var varchar2(40) := 'I love GeeksForGeeks' ;
@@ -143,7 +143,7 @@ END;
 
     输出:
 
-    ```
+    ```sql
     I love GeeksForGeeks
 
     PL/SQL procedure successfully completed.
@@ -161,7 +161,7 @@ END;
 
     演示如何在 PL/SQL 中创建注释的示例:
 
-    ```
+    ```sql
     SQL> SET SERVEROUTPUT ON;
     SQL> DECLARE
 
@@ -177,7 +177,7 @@ END;
 
     输出:
 
-    ```
+    ```sql
     I love GeeksForGeeks
 
     PL/SQL procedure successfully completed.
@@ -187,7 +187,7 @@ END;
 4.  <u>**从用户处获取输入**</u> :
     就像在其他编程语言中一样，在 PL/SQL 中，我们也可以从用户处获取输入，并将其存储在变量中。让我们看一个例子来展示如何在 PL/SQL 中从用户那里获取输入:
 
-    ```
+    ```sql
     SQL> SET SERVEROUTPUT ON;
 
     SQL> DECLARE
@@ -207,7 +207,7 @@ END;
 
     输出:
 
-    ```
+    ```sql
     Enter value for a: 24
     old   2: a number := &a;
     new   2: a number := 24;
@@ -221,7 +221,7 @@ END;
 
 5.  **(* *)*****让我们看一个 PL/SQL 上的例子，在一个代码块中演示所有上述概念。***
 
-    ```
+    ```sql
     --PL/SQL code to print sum of two numbers taken from the user.
     SQL> SET SERVEROUTPUT ON;
 
@@ -242,7 +242,7 @@ END;
       /
     ```
 
-    ```
+    ```sql
     Enter value for a: 2
     Enter value for b: 3
 

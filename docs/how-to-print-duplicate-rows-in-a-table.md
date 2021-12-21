@@ -12,7 +12,7 @@ Let us consider below table.
 
 在上表中，我们可以使用下面的查询找到重复的行。
 
-```
+```sql
 SELECT name, section FROM tbl
 GROUP BY name, section
 HAVING COUNT(*) > 1
@@ -23,7 +23,7 @@ HAVING COUNT(*) > 1
 给定一个名为 PERSON 的表任务是编写一个 SQL 查询来查找表中所有重复的名字。
 **例:**
 
-```
+```sql
 +----+---------+
 | Id | NAME    |
 +----+---------+
@@ -45,14 +45,14 @@ Output :
 
 重复的名称存在不止一次，因此为了计算每个名称存在的次数，我们可以使用以下代码:
 
-```
+```sql
 select NAME, count(NAME) as num
 from Person
 group by NAME;
 
 ```
 
-```
+```sql
 | NAME    | num |
 |---------|-----|
 | Geeks   | 2   |
@@ -62,7 +62,7 @@ group by NAME;
 
 这是一个临时表，我们可以在上面运行下面的代码来获取重复的名称。
 
-```
+```sql
 select NAME from
 (
   select NAME, count(NAME) as num
@@ -77,7 +77,7 @@ where num > 1;
 
 **MySql :**
 
-```
+```sql
 select NAME
 from Person
 group by NAME

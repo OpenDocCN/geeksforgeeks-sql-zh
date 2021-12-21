@@ -7,7 +7,7 @@ MySQL 中的这个函数用于在字符串中插入一个字符串，从原始�
 
 **语法:**
 
-```
+```sql
 INSERT(str, pos, len, newstr)
 ```
 
@@ -24,7 +24,7 @@ INSERT(str, pos, len, newstr)
 **示例-1 :**
 将字符串“mysql”插入字符串“geeksforgeeks”并替换五个字符，从位置 9 开始，借助 INSERT Function。
 
-```
+```sql
 SELECT INSERT("geeksforgeeks", 9, 5, "MySQL") 
 AS NewString ;
 ```
@@ -38,7 +38,7 @@ AS NewString ;
 **示例-2 :**
 下面的 MySQL 语句返回 Original 字符串，实际的字符串本身。发生这种情况是因为指定为-5 的插入位置超出范围，因此不会发生插入。
 
-```
+```sql
 SELECT INSERT("geeksforgeeks", -5, 5, "MySQL") 
 AS NewString ;
 ```
@@ -52,7 +52,7 @@ AS NewString ;
 **示例-3 :**
 下面的 MySQL 语句返回了一个全新的字符串。这是因为插入位置是 1，长度是前一个字符串中的字符数。
 
-```
+```sql
 SELECT INSERT("geeksforgeeks", 1, 13, "stackoverflow") 
 AS NewString ;
 ```

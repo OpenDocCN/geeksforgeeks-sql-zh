@@ -12,13 +12,13 @@
 
 **语法–**
 
-```
+```sql
 create database_name;
 ```
 
 **示例–**
 
-```
+```sql
 create STUDENTS_DATA
 ```
 
@@ -27,13 +27,13 @@ create STUDENTS_DATA
 
 **语法–**
 
-```
+```sql
 use database_name;
 ```
 
 **示例–**
 
-```
+```sql
 use STUDENT_DATA
 ```
 
@@ -42,7 +42,7 @@ use STUDENT_DATA
 
 **表-1:语法–**
 
-```
+```sql
 create table table_name
 (
 column1 type, 
@@ -53,7 +53,7 @@ column2 type,
 
 **示例–**
 
-```
+```sql
 create table studentData1 
 (
 roll_number int primary key, 
@@ -67,13 +67,13 @@ marks int
 在表格 studentData1 中插入记录，如下所示。
 **语法–**
 
-```
+```sql
 insert into table_name(column1, column2 ...) values (value1, value2 ...);
 ```
 
 **插入学生数据 1 表–**
 
-```
+```sql
 insert into studentData1 (roll_number, firstname, lastname, marks) 
 values (1, 'albert', 'einstein',356);
 insert into studentData1 (roll_number, firstname, lastname, marks) 
@@ -93,7 +93,7 @@ values (7, 'drawn', 'caste',389);
 **第 5 步:创建表 2 :**
 这里，我们将使用 SQL 查询创建 studentData2，如下所示。
 
-```
+```sql
 create table studentData2 
 (
 id int primary key, 
@@ -106,7 +106,7 @@ marks int
 **第 6 步:插入记录:**
 在表格 studentData2 中插入记录如下。
 
-```
+```sql
 insert into studentData2 (id, firstname, lastname, marks) 
 values (2, 'isaac', 'newton',412);
 insert into studentData2 (id, firstname, lastname, marks) 
@@ -122,7 +122,7 @@ values (4, 'philip', 'jsam',389);
 **语法:**
 (选择所有列的所有记录)
 
-```
+```sql
 select * from table1, table 
 where 
 table1.col1 = table2.col2 and table1.col1 > someValue;
@@ -131,14 +131,14 @@ table1.col1 = table2.col2 and table1.col1 > someValue;
 **语法(可选):**
 (从表中选择特定列)
 
-```
+```sql
 select t1.col1, t2.col2,t3\. col3 ...., t2.col1, t2.col2, t2.col3....  
 from table1 t1, table t2 where t1.col1 = t2.col2 and t1.col1 <> t2.col2;
 ```
 
 **查询–**
 
-```
+```sql
 select * from studentData1, studentData2 
 where studentData1.roll_number = studentData2.id;
 ```
@@ -159,7 +159,7 @@ where studentData1.roll_number = studentData2.id;
 
 **语法–**
 
-```
+```sql
 select t1.col1, t1.col2... , t2.col1, t2.col2... , 
 from table1 as t1 left 
 join table2 as t2 on 
@@ -168,7 +168,7 @@ tabe1.col1 = table2.col1;
 
 **查询–**
 
-```
+```sql
 select a.roll_number, a.firstname, b.id 
 from studentData1 as a left 
 join 
@@ -196,7 +196,7 @@ UNION 允许我们比较两种相同类型的表或数据集。一旦我们可�
 
 **语法–**
 
-```
+```sql
 select col1, col2, col3 ....  
 from (select col1, col2, col3 ... 
 from Table1 union all select col1, col2, col3 ... 
@@ -206,7 +206,7 @@ cmpr order by ID;
 
 **示例–**
 
-```
+```sql
 select * from 
 (select * from studentData1 
 where roll_number > 4 

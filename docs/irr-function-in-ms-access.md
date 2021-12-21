@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 IRR( values () [, guess ] )
 ```
 
@@ -28,7 +28,7 @@ IRR()函数接受六个参数，如上所述，如下所述。
 我们假设*猜测*价值(业务成本)等于 7500，连续四年的年收入存储在 values()中。
 考虑这些值，如–
 
-```
+```sql
 value(0) = 3000
 value(1) = 5000
 value(2) = 1200
@@ -36,7 +36,7 @@ value(3) = 4000
 
 ```
 
-```
+```sql
 SELECT IRRInterest = IRR( values(), -7500)*100 AS Interest_IRR;
 
 ```
@@ -57,7 +57,7 @@ SELECT IRRInterest = IRR( values(), -7500)*100 AS Interest_IRR;
 | five | Fifty thousand two hundred and forty-three point two five |
 | six | Fifty thousand two hundred and forty-three point two five |
 
-```
+```sql
 SELECT IRR(cursor( SELECT cash_flow FROM test_tbl order by id asc )) as Interest
 
 ```

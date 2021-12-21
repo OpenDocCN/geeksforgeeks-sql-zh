@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
  USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
  CREATE TABLE Demofordatetime(
  demonumber int);
 ```
@@ -45,7 +45,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
  SELECT GETDATE() AS CurrentTime
 ```
 
@@ -59,7 +59,7 @@ CurrentTime 是这里的变量。
 
 **查询:**
 
-```
+```sql
  SELECT GETUTCDATE() AS UTCTime
 ```
 
@@ -77,7 +77,7 @@ IST–世界协调时= 5:30 小时，即 IST 领先世界协调时 5 小时 30 �
 
 **查询:**
 
-```
+```sql
  SELECT GETDATE() AS CurrentTime
  SELECT GETUTCDATE() AS UTCTime
 ```

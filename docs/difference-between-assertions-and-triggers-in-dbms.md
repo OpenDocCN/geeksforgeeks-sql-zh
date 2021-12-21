@@ -7,14 +7,14 @@
 
 **语法–**
 
-```
+```sql
 CREATE ASSERTION  [ assertion_name ]
 CHECK ( [ condition ] );
 ```
 
 **示例–**
 
-```
+```sql
 CREATE TABLE sailors (sid int,sname varchar(20), rating int,primary key(sid),
 CHECK(rating >= 1 AND rating <=10)
 CHECK((select count(s.sid) from sailors s) + (select count(b.bid)from boats b)<100) ); 
@@ -33,7 +33,7 @@ CHECK((select count(s.sid) from sailors s) + (select count(b.bid)from boats b)<1
 
 **语法–**
 
-```
+```sql
 create trigger [trigger_name]       
 [before | after]          
 {insert | update | delete} 
@@ -44,7 +44,7 @@ on [table_name]
 
 **示例–**
 
-```
+```sql
 create trigger t1  before  UPDATE on sailors
 for each row
 begin

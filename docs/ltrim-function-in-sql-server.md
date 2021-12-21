@@ -6,7 +6,7 @@ LTRIM()函数有助于返回删除字符串左侧的所有空格字符。
 
 **语法:**
 
-```
+```sql
 LTRIM(string, [trim_string])
 ```
 
@@ -31,20 +31,20 @@ LTRIM(string, [trim_string])
 **例 1:**
 LTRIM()函数的基本用法。
 
-```
+```sql
 SELECT LTRIM('       GeeksforGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 GeeksforGeeks
 ```
 
 **示例 2 :**
 使用带有变量的 LTRIM()函数。
 
-```
+```sql
 DECLARE @str VARCHAR(50)
 SET @str = '     Have a nice time ahead!!'
 SELECT LTRIM(@str);
@@ -52,19 +52,19 @@ SELECT LTRIM(@str);
 
 **输出:**
 
-```
+```sql
 Have a nice time ahead!!
 ```
 
 **示例-3 :**
 在 LTRIM()函数中使用“trim_space”。
 
-```
+```sql
 SELECT LTRIM (‘000325400’, ‘0’);
 ```
 
 **输出:**
 
-```
+```sql
 325400
 ```

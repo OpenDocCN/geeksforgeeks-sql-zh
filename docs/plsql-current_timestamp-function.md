@@ -7,7 +7,7 @@ CURRENT _ TIMESTAMP 函数不接受任何参数。
 
 **语法:**
 
-```
+```sql
 CURRENT_TIMESTAMP
 ```
 
@@ -27,7 +27,7 @@ CURRENT _ TIMESTAMP 函数返回 TIMESTAMP WITH TIME ZONE 数据类型中当前�
 
 **示例-1:** 使用 CURRENT_TIMESTAMP 函数显示会话时区中的当前时间戳。
 
-```
+```sql
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-YYYY HH24:MI:SS';
 
 SELECT
@@ -38,7 +38,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 Session altered.
 
 CURRENT_TIMESTAMP
@@ -47,7 +47,7 @@ CURRENT_TIMESTAMP
 
 **示例-2:** 使用 CURRENT_TIMESTAMP 函数使用更改的会话时区显示当前时间戳。
 
-```
+```sql
 ALTER SESSION SET TIME_ZONE = '-10:00';
 
 SELECT
@@ -58,7 +58,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 Session altered.
 
 CURRENT_TIMESTAMP

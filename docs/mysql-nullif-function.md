@@ -6,7 +6,7 @@ MySQL **NULLIF()** 函数用于两个表达式的比较。函数的作用是:如
 
 **语法:**
 
-```
+```sql
 NULLIF(expression1, expression2)
 ```
 
@@ -31,36 +31,36 @@ NULLIF(expression1, expression2)
 
 **示例-1:** 通过比较两个相同的字符串来实现 NULLIF()函数。
 
-```
+```sql
 SELECT NULLIF("Geeksforgeeks", "Geeksforgeeks"); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-2:** 通过比较两个不相等的字符串来实现 NULLIF()函数。
 
-```
+```sql
 SELECT NULLIF("123", "Geeksforgeeks"); 
 ```
 
 **输出:**
 
-```
+```sql
 123 
 ```
 
 **示例-3:** 通过比较两个整数值实现 NULLIF()函数。
 
-```
+```sql
 SELECT NULLIF(2, 4); 
 ```
 
 **输出:**
 
-```
+```sql
 2 
 ```

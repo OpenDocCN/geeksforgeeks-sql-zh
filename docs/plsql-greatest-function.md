@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 GREATEST(exp1, exp2, ... exp_n)
 ```
 
@@ -28,7 +28,7 @@ GREATEST(exp1, exp2, ... exp_n)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 1;
    Test_Number number2 := 2;
@@ -46,7 +46,7 @@ END;
 
 **输出:**
 
-```
+```sql
 30
 ```
 
@@ -54,7 +54,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 'a';
    Test_Number number2 := 'b';
@@ -70,7 +70,7 @@ END;
 
 **输出:**
 
-```
+```sql
 c
 ```
 
@@ -78,7 +78,7 @@ c
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 0;
    Test_Number number2 := -4;
@@ -94,7 +94,7 @@ END;
 
 **输出:**
 
-```
+```sql
 0.6
 ```
 

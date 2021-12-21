@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 UNHEX(str)
 ```
 
@@ -17,7 +17,7 @@ UNHEX(str)
 **示例-1** :
 对字符串使用 UNHEX()函数。
 
-```
+```sql
 SELECT UNHEX('6765656B73666F726765656B73') AS String_Name;
 ```
 
@@ -30,7 +30,7 @@ SELECT UNHEX('6765656B73666F726765656B73') AS String_Name;
 **示例-2 :**
 使用 UNHEX()函数将另一个字符串。
 
-```
+```sql
 SELECT UNHEX('48656C6C6F') AS String_Name;
 ```
 
@@ -43,7 +43,7 @@ SELECT UNHEX('48656C6C6F') AS String_Name;
 **示例-3 :**
 使用 UNHEX()函数将一个非十六进制字符串。
 
-```
+```sql
 SELECT UNHEX('www') AS String_Name;
 ```
 

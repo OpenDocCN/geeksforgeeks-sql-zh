@@ -16,7 +16,7 @@
 
 **示例-1:**
 
-```
+```sql
 Input: Enter value for date1: 01-SEP-19 
       Enter value for date2: 29-SEP-19
 
@@ -25,7 +25,7 @@ Output: no of Sundays : 5
 
 **示例-2:**
 
-```
+```sql
 Input: Enter value for date1: 01-SEP-19
       Enter value for date2: 15-SEP-19
 
@@ -34,7 +34,7 @@ Output: no of Sundays: 3
 
 **代码:**
 
-```
+```sql
 --declare the variables D1 and D2.
 --type of variable is Date.
 SQL> DECLARE
@@ -59,7 +59,7 @@ SQL> DECLARE
 
 **输出:**
 
-```
+```sql
 Enter value for date1: 01-SEP-19
 old 5: Begin D1:='&Date1';
 new 5: Begin D1:='01-SEP-19';

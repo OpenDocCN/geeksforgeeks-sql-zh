@@ -8,7 +8,7 @@ AES_ENCRYPT 函数返回的值是二进制字符串，如果参数为空，则�
 
 **语法:**
 
-```
+```sql
 AES_ENCRYPT(str, key_str)
 ```
 
@@ -31,39 +31,39 @@ MySQL 中的 AES_ENCRYPT 函数返回一个二进制字符串。
 
 **示例-1:** 在字符串上实现 AES_ENCRYPT 函数。
 
-```
+```sql
 SELECT
 AES_ENCRYPT('ABC', 'key'); 
 ```
 
 **输出:**
 
-```
+```sql
 \\YJ??f&K?M?q?* 
 ```
 
 **示例-2:** 在更大的字符串上实现 AES_ENCRYPT 函数。
 
-```
+```sql
 SELECT 
 AES_ENCRYPT('geeksforgeeks', 'key'); 
 ```
 
 **输出:**
 
-```
+```sql
 2G???B?????*?? 
 ```
 
 **示例-3:** 在空字符串上实现 AES_ENCRYPT 函数。
 
-```
+```sql
 SELECT  
 (AES_ENCRYPT(NULL, 'key'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

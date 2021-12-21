@@ -10,19 +10,19 @@
 
 使用下面的 SQL 语句创建一个名为*极客*的数据库:
 
-```
+```sql
 CREATE geeks;
 ```
 
 ### 使用数据库:
 
-```
+```sql
 USE geeks;
 ```
 
 ### *部门的表格定义 _ 旧的*表格:
 
-```
+```sql
 CREATE TABLE department_old(
  ID int,
  SALARY int,
@@ -34,7 +34,7 @@ CREATE TABLE department_old(
 
 使用以下查询向表中添加数据:
 
-```
+```sql
 INSERT INTO department_old VALUES (1, 34000, 'ANURAG', 'UI DEVELOPERS');
 INSERT INTO department_old VALUES (2, 33000, 'HARSH', 'BACKEND DEVELOPERS');
 INSERT INTO department_old VALUES (3, 36000, 'SUMIT', 'BACKEND DEVELOPERS');
@@ -44,7 +44,7 @@ INSERT INTO department_old VALUES (5, 37000, 'KAE', 'UI DEVELOPERS');
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM department_old;
 ```
 
@@ -66,7 +66,7 @@ SELECT * FROM department_old;
 
 ### *部门的表格定义 _ 新建*表格:
 
-```
+```sql
 CREATE TABLE department_new(
 ID int,
 SALARY int,
@@ -78,7 +78,7 @@ DEPT_ID Varchar(255));
 
 使用以下查询向表中添加数据:
 
-```
+```sql
 INSERT INTO department_new VALUES (1, 34000, 'ANURAG', 'UI DEVELOPERS');
 INSERT INTO department_new VALUES (2, 33000, 'HARSH', 'BACKEND DEVELOPERS');
 INSERT INTO department_new VALUES (3, 36000, 'SUMIT', 'BACKEND DEVELOPERS');
@@ -89,7 +89,7 @@ INSERT INTO department_new VALUES (6, 37000, 'REHA', 'BACKEND DEVELOPERS');
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM department_new;
 ```
 
@@ -116,7 +116,7 @@ SELECT * FROM department_new;
 
 **语法:**
 
-```
+```sql
 SELECT column1, column2.... columnN
 FROM
 ( SELECT table1.column1, table1.column2
@@ -131,7 +131,7 @@ HAVING COUNT(*) = 1
 
 **示例:**
 
-```
+```sql
 Select ID from
 ( select * from department_old
 UNION ALL

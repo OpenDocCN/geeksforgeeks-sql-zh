@@ -19,7 +19,7 @@
 **交易–**
 从 S Adam 账户向 Zee Young 账户转账 10:
 
-```
+```sql
 Input:
 BEGIN TRY
   BEGIN TRANSACTION
@@ -49,7 +49,7 @@ Not committed
 
 执行后:
 
-```
+```sql
 Input: 
         BEGIN TRY
           BEGIN TRANSACTION
@@ -79,7 +79,7 @@ Output:
 
 *   **1st Step –**
 
-    ```
+    ```sql
     Input:
     -- Transaction 1
     Select *from Bus_ticket; 
@@ -93,7 +93,7 @@ Output:
 *   **2nd Step –**
     Booking time for 1st customer
 
-    ```
+    ```sql
     Input:  
     --Transaction 1
             BEING Transaction
@@ -109,7 +109,7 @@ Output:
 
 *   **3rd Step –**
 
-    ```
+    ```sql
     Input:  
     -- Transaction 1
 

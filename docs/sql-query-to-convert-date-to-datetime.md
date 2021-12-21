@@ -13,7 +13,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Test;
 ```
 
@@ -29,7 +29,7 @@ CREATE DATABASE Test;
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(datetime, '2021-01-01');
 ```
 
@@ -43,7 +43,7 @@ SELECT CONVERT(datetime, '2021-01-01');
 
 **查询:**
 
-```
+```sql
 SELECT CAST('2021-01-01' AS datetime);
 ```
 

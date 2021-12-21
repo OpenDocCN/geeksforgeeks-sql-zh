@@ -16,7 +16,7 @@
 
 **语法:**
 
-```
+```sql
 SQRT(number)
 ```
 
@@ -31,33 +31,33 @@ SQRT(number)
 **例-1 :**
 求指定数字 4 的平方根。
 
-```
+```sql
 SELECT SQRT(4);
 ```
 
 **输出:**
 
-```
+```sql
 2.0
 ```
 
 **例-2 :**
 求指定数字 0 的平方根。
 
-```
+```sql
 SELECT SQRT(0);
 ```
 
 **输出:**
 
-```
+```sql
 0.0
 ```
 
 **示例-3 :**
 使用带变量的 SQRT()函数，得到指定数字 1 的平方根。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 1;
 SELECT SQRT(@Parameter_Value);
@@ -65,27 +65,27 @@ SELECT SQRT(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 1.0
 ```
 
 **例-4 :**
 求 16 的平方根，是“64/4”的结果。
 
-```
+```sql
 SELECT SQRT(64/4);
 ```
 
 **输出:**
 
-```
+```sql
 4.0
 ```
 
 **示例-5 :**
 使用带变量的 SQRT()函数，得到浮点值“4.7”的平方根。
 
-```
+```sql
 DECLARE @Parameter_Value FLOAT;
 SET @Parameter_Value = 4.7;
 SELECT SQRT(@Parameter_Value);
@@ -94,7 +94,7 @@ SELECT SQRT(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 2.16794833886788
 ```
 

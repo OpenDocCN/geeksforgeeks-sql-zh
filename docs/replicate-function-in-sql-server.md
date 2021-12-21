@@ -14,7 +14,7 @@ SQL Server 中的这个函数用于给定次数重复指定的字符串。
 
 **语法:**
 
-```
+```sql
 REPLICATE(string, integer)
 ```
 
@@ -30,20 +30,20 @@ REPLICATE(string, integer)
 **示例-1 :**
 获取指定次数的指定字符串。
 
-```
+```sql
 SELECT REPLICATE('Geeks for Geeks ', 2);
 ```
 
 **输出:**
 
-```
+```sql
 Geeks for Geeks Geeks for Geeks
 ```
 
 **示例-2 :**
 使用带有变量的 REPLICATE()函数，获取指定次数的重复字符串。
 
-```
+```sql
 DECLARE @string VARCHAR(4);  
 SET @string = '123 ';  
 SELECT REPLICATE(@string, 4);
@@ -52,14 +52,14 @@ SELECT REPLICATE(@string, 4);
 
 **输出:**
 
-```
+```sql
 123 123 123 123
 ```
 
 **示例-3 :**
 使用带有两个变量的 REPLICATE()函数，获取指定次数的重复字符串。
 
-```
+```sql
 DECLARE @string VARCHAR(6);  
 DECLARE @int INT;  
 SET @string = 'Geeks ';  
@@ -70,20 +70,20 @@ SELECT REPLICATE(@string, @int);
 
 **输出:**
 
-```
+```sql
 Geeks Geeks Geeks Geeks Geeks
 ```
 
 **示例-4 :**
 获取指定次数的指定字符串，该字符串为浮点值。
 
-```
+```sql
 SELECT REPLICATE('gfg ', 5.9);
 ```
 
 **输出:**
 
-```
+```sql
 gfg gfg gfg gfg gfg
 ```
 

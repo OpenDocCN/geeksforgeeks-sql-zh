@@ -10,7 +10,7 @@
 
 通过使用以下[**【SQL】**](https://www.geeksforgeeks.org/sql-tutorial/)查询创建学生数据库如下。
 
-```
+```sql
 CREATE DATABASE orders;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE orders;
 
 使用数据库学生使用以下 [**SQL**](https://www.geeksforgeeks.org/sql-tutorial/) 查询如下。
 
-```
+```sql
 USE orders;
 ```
 
@@ -30,7 +30,7 @@ USE orders;
 
 表–使用以下[](https://www.geeksforgeeks.org/sql-tutorial/)**查询创建一个 3 列的表 *order_details* 如下。**
 
-```
+```sql
 **CREATE TABLE** order_details(
 order_id **varchar(8)**,
 customer_name **varchar(20)**,
@@ -43,7 +43,7 @@ order_date **DATE**);
 
 **要查看数据库中表的描述，使用以下 [**SQL**](https://www.geeksforgeeks.org/sql-tutorial/) 查询如下。**
 
-```
+```sql
  **DESCRIBE** order_details;
 ```
 
@@ -53,7 +53,7 @@ order_date **DATE**);
 
 **使用如下 [SQL](https://www.geeksforgeeks.org/sql-tutorial/) 查询将行插入 order_details 表。**
 
-```
+```sql
  **INSERT INTO** order_details **VALUES**
      ('O0001','PRADEEP','2021-04-11'),
      ('O0002','KOUSHIK','2021-04-09'),
@@ -68,7 +68,7 @@ order_date **DATE**);
 
 **插入行后查看表 *order_details* 使用如下 [**SQL**](https://www.geeksforgeeks.org/sql-tutorial/) 查询如下。**
 
-```
+```sql
  **SELECT* FROM** order_details;
 ```
 
@@ -80,14 +80,14 @@ order_date **DATE**);
 
 **可以使用 **DATE_FORMAT( )** 功能从默认日期开始格式化默认日期:**
 
-```
+```sql
 SYNTAX:
 **DATE_FORMAT**(date,new_format);
 ```
 
 **在这个查询中，我们使用 **%d** 获取日，然后使用 **%b** 获取月，使用 **%y** 获取年。**
 
-```
+```sql
  **SELECT *,DATE_FORMAT**(order_date,**'%d-%b-%y'**) **AS** formatted_date
  **FROM** order_details;
 ```
@@ -98,12 +98,12 @@ SYNTAX:
 
 **使用 **DATE_ADD( )** 功能可以添加需要的天数:**
 
-```
+```sql
 SYNTAX:
 **DATE_ADD**(date, **INTERVAL** no_of_days **DAY**);
 ```
 
-```
+```sql
  **SELECT *,DATE_ADD**(order_date,**INTERVAL** 15 **DAY**)
  **AS** estimated_delivery
  **FROM** order_details;
@@ -115,7 +115,7 @@ SYNTAX:
 
 **这可以通过使用 **DATE_FORMAT( )** 和 **DATE_ADD( )** 功能来完成。**
 
-```
+```sql
  **SELECT ***,**DATE_FORMAT**(**DATE_ADD**(order_date,**INTERVAL** 15 **DAY**),**'%W'**)
  **AS** delivery_day
  **FROM** order_details;
@@ -129,7 +129,7 @@ SYNTAX:
 
 **这里 **DATE_ADD( )** 功能是获取预计发货，检查是否小于 2021-04-23。**
 
-```
+```sql
  **SELECT** order_id,customer_name
    **FROM** order_details
   ** WHERE** **DATE_ADD**(order_date,**INTERVAL** 15 **DAY**)**<**'2021-04-23';

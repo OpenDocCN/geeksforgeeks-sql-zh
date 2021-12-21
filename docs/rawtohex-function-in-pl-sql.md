@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 RAWTOHEX(x) 
 ```
 
@@ -19,7 +19,7 @@ RAWTOHEX(x)
 
 **示例-1:** 将十六进制转换值存储在变量“随机”中。
 
-```
+```sql
 CREATE PROCEDURE TEST_RAW2HEX
 IS
    random varchar2(20);
@@ -35,7 +35,7 @@ END TEST_RAW2HEX;
 
 创建过程并使用 SQL 脚本运行时–
 
-```
+```sql
 BEGIN
     TEST_RAW2HEX;
 END;
@@ -43,7 +43,7 @@ END;
 
 我们得到的输出为–
 
-```
+```sql
 random = 5859 
 ```
 
@@ -53,7 +53,7 @@ random = 5859
 
 **示例-2:** 将十六进制转换值存储在变量“random _ 1”&“random _ 2”中。
 
-```
+```sql
 CREATE PROCEDURE TEST1_RAW2HEX
 IS
 random_1 varchar2(12);
@@ -69,7 +69,7 @@ END TEST1_RAW2HEX;
 
 创建过程并使用 SQL 脚本运行时–
 
-```
+```sql
 BEGIN
     TEST1_RAW2HEX;
 END;
@@ -77,7 +77,7 @@ END;
 
 我们得到的输出为–
 
-```
+```sql
 random_1 = 4A415641
 random_2 = 435050 
 ```

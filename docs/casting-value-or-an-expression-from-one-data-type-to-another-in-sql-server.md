@@ -6,7 +6,7 @@ SQL Server 使用 CAST()函数将值或表达式从一种数据类型转换为�
 
 **语法:**
 
-```
+```sql
 CAST ( value AS targettype [ ( length ) ] )
 
 ```
@@ -22,7 +22,7 @@ CAST ( value AS targettype [ ( length ) ] )
 
     为了更好地理解，让我们运行如下查询。
 
-    ```
+    ```sql
     SELECT 3 + '3' AS Result;
     ```
 
@@ -39,7 +39,7 @@ CAST ( value AS targettype [ ( length ) ] )
 
     另一方面，SQL server 可以使用显式转换，其中 CAST()函数显式用于将一种类型的值转换为另一种类型，如下所示。
 
-    ```
+    ```sql
     SELECT 3 + CAST('3' AS INT) AS Result;
     ```
 
@@ -65,7 +65,7 @@ CAST ( value AS targettype [ ( length ) ] )
     *   **Example-1 :**
         Below example uses the CAST() function to convert the decimal type value to an integer type value.
 
-        ```
+        ```sql
         SELECT CAST(5.95 AS INT) AS Result;
         ```
 
@@ -78,7 +78,7 @@ CAST ( value AS targettype [ ( length ) ] )
     *   **Example-2 :**
         Below example uses the CAST() function to convert the decimal type value to another decimal type value number with the zero scale.
 
-        ```
+        ```sql
         SELECT CAST(5.95 AS DEC(3, 0)) Result;
         ```
 
@@ -92,7 +92,7 @@ CAST ( value AS targettype [ ( length ) ] )
         Using the CAST() function to convert a string to a datetime value example.
         The below example uses the CAST() function to convert the string to a datetime.
 
-        ```
+        ```sql
         SELECT CAST('2020-09-14' AS DATETIME) 
         AS Result;
         ```

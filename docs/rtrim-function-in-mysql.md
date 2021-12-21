@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 RTRIM(str)
 ```
 
@@ -22,7 +22,7 @@ RTRIM()函数接受一个参数，如上所述，如下所述。
 **示例-1 :**
 使用 RTRIM 函数移除给定字符串的所有尾随空格。
 
-```
+```sql
 SELECT RTRIM ('geeksforgeeks') 
 AS RightTrimmedString;  
 
@@ -30,7 +30,7 @@ AS RightTrimmedString;
 
 **输出:**
 
-```
+```sql
 +----------------------+--------------------+
 | geeksforgeeks        | RightTrimmedString |
 +----------------------+--------------------+
@@ -42,7 +42,7 @@ AS RightTrimmedString;
 **示例-2 :**
 使用 RTRIM 函数移除给定字符串的所有尾随空格。
 
-```
+```sql
 SELECT 'MySQL' AS String, RTRIM ('MySQL') 
 AS Tstring;
 
@@ -50,7 +50,7 @@ AS Tstring;
 
 **输出:**
 
-```
+```sql
 +----------------------+---------+
 | String               | Tstring |
 +----------------------+---------+
@@ -62,7 +62,7 @@ AS Tstring;
 **示例-3 :**
 RTRIM 函数也可以用来移除列数据的所有尾随空格。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student
 (
   Student_id INT AUTO_INCREMENT,  
@@ -76,7 +76,7 @@ CREATE TABLE Student
 
 **在学生表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Student
 (Student_name, Student_Class )
 VALUES
@@ -94,14 +94,14 @@ VALUES
 
 学生表如下。
 
-```
+```sql
 mysql> select * from Student;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------+----------------------+---------------+
 | Student_id | Student_name         | Student_Class |
 +------------+----------------------+---------------+
@@ -120,7 +120,7 @@ mysql> select * from Student;
 
 现在，我们将从学生名列中删除所有尾随空格。
 
-```
+```sql
   SELECT  
   Student_id,  Student_name,
   RTRIM( Student_name) AS  TrimmedSname 
@@ -130,7 +130,7 @@ mysql> select * from Student;
 
 **输出:**
 
-```
+```sql
 +------------+----------------------+-----------------+
 | Student_id | Student_name         | TrimmedSname    |
 +------------+----------------------+-----------------+

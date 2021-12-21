@@ -19,13 +19,13 @@
 
 要检查 SQL Server 实例的服务器排序规则，请使用以下命令:
 
-```
+```sql
 SELECT SERVERPROPERTY('collation');
 ```
 
 要查找 SQL Server 实例上可用的排序规则列表，请使用以下命令:
 
-```
+```sql
 SELECT * FROM sys.fn_helpcollations();
 ```
 
@@ -39,7 +39,7 @@ SQL Server 支持以下级别的排序规则:
 
     要查找 SQL Server 的服务器级排序规则，请使用以下查询:
 
-    ```
+    ```sql
     SELECT CONVERT(varchar, SERVERPROPERTY('collation'));
     ```
 
@@ -50,13 +50,13 @@ SQL Server 支持以下级别的排序规则:
 
     **语法–**
 
-    ```
+    ```sql
     CREATE DATABASE databasename COLLATE collationtype;
     ```
 
     **示例:**
 
-    ```
+    ```sql
     CREATE DATABASE GeekDB COLLATE Greek_CS_AI; 
     ```
 
@@ -64,7 +64,7 @@ SQL Server 支持以下级别的排序规则:
 
     **语法–**
 
-    ```
+    ```sql
     ALTER DATABASE databasename COLLATE collationtype;
     ```
 
@@ -72,7 +72,7 @@ SQL Server 支持以下级别的排序规则:
 
     **示例:**
 
-    ```
+    ```sql
     ALTER DATABASE GeekDB COLLATE SQL_Latin1_General_CP1_CI_AS; 
     ```
 
@@ -86,14 +86,14 @@ SQL Server 支持以下级别的排序规则:
 
     **语法–**
 
-    ```
+    ```sql
     ALTER TABLE tablename 
     ALTER COLUMN columnnmae COLLATE collationtype;
     ```
 
     **示例:**
 
-    ```
+    ```sql
     ALTER TABLE Geektable 
     ALTER COLUMN namecol NVARCHAR(10) COLLATE Greek_CS_AI; 
     ```
@@ -103,14 +103,14 @@ SQL Server 支持以下级别的排序规则:
 
     **语法–**
 
-    ```
+    ```sql
     SELECT * FROM tablename 
     ORDER BY columnname COLLATE collationtype;
     ```
 
     **示例:**
 
-    ```
+    ```sql
     SELECT * FROM Geektab 
     ORDER BY nname COLLATE SQL_Latin1_General_CP1_CI_AS; 
     ```

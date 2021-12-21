@@ -9,7 +9,7 @@
 **示例:**
 让我们创建两个表–
 
-```
+```sql
 CREATE TABLE GeekTab1 (Id1 INT, Name1 VARCHAR(100))
 GO
 CREATE TABLE GeekTab2 (Id2 INT, Name2 VARCHAR(100))
@@ -18,7 +18,7 @@ GO
 
 将样本数据插入表格–
 
-```
+```sql
 INSERT INTO GeekTab1 (Id1, Name1)
 VALUES(1,'Khushi'), (2, 'Komal')
 GO
@@ -26,7 +26,7 @@ GO
 
 从表中选择数据–
 
-```
+```sql
 Select * from GeekTab1
 GO
 ```
@@ -44,7 +44,7 @@ T27】</figure>
 
 从极客标签 1 中删除并插入极客标签 2–
 
-```
+```sql
 DELETE FROM GeekTab1
 OUTPUT deleted.Id1, deleted.Name1
 INTO GeekTab2
@@ -54,7 +54,7 @@ GO
 
 从两个表中选择数据–
 
-```
+```sql
 SELECT * FROM GeekTab1;
 GO
 SELECT * FROM GeekTab2;

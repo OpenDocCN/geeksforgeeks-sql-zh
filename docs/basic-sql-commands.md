@@ -17,61 +17,61 @@
 
 **1。显示“2010-08-05”之后购买的项目名称和成本。**
 
-```
+```sql
 Select Item_Name,Cost from ITEM where DOP>"2010-08-05";
 ```
 
 **2。显示按采购日期排列的采购数量大于 10 的物料的信息。**
 
-```
+```sql
 Select * from ITEM where Purchase_Qty>10 ORDER BY DOP;
 ```
 
 **3。显示“JKL”公司项目的平均成本价。**
 
-```
+```sql
 Select avg(cost) from ITEM where Company="JKL";
 ```
 
 **4。显示名称以字母“M”**开头的项目的所有信息。
 
-```
+```sql
 Select * from ITEM where Item_Name like "M%";
 ```
 
 **5。显示公司名称中包含字母“J”的项目的最高成本价。**
 
-```
+```sql
 Select max(Cost) from ITEM where Company like '%J%;
 ```
 
 **6。显示采购数量大于 5 的物料的所有详细信息，按采购日期的降序排列。**
 
-```
+```sql
 Select * from ITEM where Purchase_Qty>5 order by DOP desc;
 ```
 
 **7。显示物料号、物料名称和所有物料的成本，其中物料名称的第二位是字母“o”。**
 
-```
+```sql
 Select S_No,Item_Name,Cost from ITEM where instr(Item_Name,'o')=2;
 ```
 
 **8。要显示公司，按购买月份分组的最小购买数量。**
 
-```
+```sql
 Select Company,min(Purchase_Qty) from ITEM group by month(DOP);
 ```
 
 **9。显示表 ITEM 的结构。**
 
-```
+```sql
 Desc ITEM;
 ```
 
 **10。将采购数量设置为“JKL”公司的 31。**
 
-```
+```sql
 Update ITEM set Purchase_Qty=31 where Company='JKL'; 
 ```
 

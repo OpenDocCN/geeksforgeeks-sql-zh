@@ -8,7 +8,7 @@ PLSQL LOWER 函数用于将指定字符串中的所有字母转换为小写。�
 
 **语法:**
 
-```
+```sql
 LOWER( string )
 ```
 
@@ -26,7 +26,7 @@ LOWER( string )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -38,13 +38,13 @@ END;
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'GEEKSFORGEEKS';
 
@@ -56,13 +56,13 @@ END;
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```
 
 **例-3:**
 
-```
+```sql
 DECLARE 
    Test_String varchar2(30) := 'GEEKSFORGEEKS12345';
 
@@ -74,6 +74,6 @@ END;
 
 **输出:**
 
-```
+```sql
 geeksforgeeks12345 
 ```

@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 RANK() OVER(ORDER BY Any Column)
 ```
 
@@ -38,7 +38,7 @@ MATHEMATICS
 **第 2 步:创建** **表:**
 现在，用于创建该表的 SQL 语句如下。
 
-```
+```sql
 CREATE TABLE MarkList
 (
 id int,
@@ -52,7 +52,7 @@ chemistry int
 **步骤-3:插入数据:**
 这里，我们将按如下方式将行插入表中。
 
-```
+```sql
 insert into MarkList values( 501,'Surya',99,97,85);
 insert into MarkList values(502,'Charan',99,93,88);
 insert into MarkList values(503,'Sravan',91,98,94);
@@ -65,7 +65,7 @@ insert into MarkList values(507,'Madhav',90,97,89);
 **步骤-4:验证和排名数据:**
 现在，如果我们想要基于数学成绩的排名，那么查询如下。
 
-```
+```sql
 SELECT id, name, mathematics,
 RANK() OVER(ORDER BY Mathematics DESC) 
 as 

@@ -12,7 +12,7 @@ SQL 中的 GROUP BY 语句用于在一些函数的帮助下将相同的数据排
 
 **语法**:
 
-```
+```sql
 SELECT column1, function_name(column2)
 FROM table_name
 WHERE condition
@@ -38,7 +38,7 @@ condition: Condition used.
 
 *   **Group By single column**: Group By single column means, to place all the rows with same value of only that particular column in one group. Consider the query as shown below:
 
-    ```
+    ```sql
     SELECT NAME, SUM(SALARY) FROM Employee 
     GROUP BY NAME;
 
@@ -50,7 +50,7 @@ condition: Condition used.
 
 *   **Group By multiple columns**: Group by multiple column is say for example, **GROUP BY column1, column2**. This means to place all the rows with same values of both the columns **column1** and **column2** in one group. Consider the below query:
 
-    ```
+    ```sql
     SELECT SUBJECT, YEAR, Count(*)
     FROM Student
     GROUP BY SUBJECT, YEAR;
@@ -69,7 +69,7 @@ condition: Condition used.
 
 **语法**:
 
-```
+```sql
 SELECT column1, function_name(column2)
 FROM table_name
 WHERE condition
@@ -85,7 +85,7 @@ condition: Condition used.
 
 **例**:
 
-```
+```sql
 SELECT NAME, SUM(SALARY) FROM Employee 
 GROUP BY NAME
 HAVING SUM(SALARY)>3000; 

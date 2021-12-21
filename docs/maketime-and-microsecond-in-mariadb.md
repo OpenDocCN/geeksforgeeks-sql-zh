@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 MAKETIME( hour, minute, second )
 
 ```
@@ -24,42 +24,42 @@ MAKETIME( hour, minute, second )
 
 **示例–**
 
-```
+```sql
 SELECT MAKETIME(9, 49, 15);
 
 ```
 
 **输出:**
 
-```
+```sql
 '09:49:15'
 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT MAKETIME(23, 59, 59);
 
 ```
 
 **输出:**
 
-```
+```sql
 '23:59:59'
 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT MAKETIME(-838, 59, 59);
 
 ```
 
 **输出:**
 
-```
+```sql
 '-838:59:59'
 
 ```
@@ -69,7 +69,7 @@ SELECT MAKETIME(-838, 59, 59);
 
 **语法:**
 
-```
+```sql
 MICROSECOND( date_value )
 
 ```
@@ -84,40 +84,40 @@ MICROSECOND( date_value )
 
 **示例–**
 
-```
+```sql
 SELECT MICROSECOND('2017-01-29 03:22:05.000001');
 
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例–**
 
-```
+```sql
 SELECT MICROSECOND('2017-07-15');
 
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **示例–**
 
-```
+```sql
 SELECT MICROSECOND('10:16:06.294675');
 
 ```
 
 **输出:**
 
-```
+```sql
 294675
 
 ```

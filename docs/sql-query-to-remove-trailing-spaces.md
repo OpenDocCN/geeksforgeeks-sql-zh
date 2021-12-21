@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 RTRIM(string)
 ```
 
@@ -27,13 +27,13 @@ RTRIM(string)
 
 **查询:**
 
-```
+```sql
 SELECT RTRIM('Geeks for Geeks     ');
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | (No column name) |
 +------------------+
@@ -47,13 +47,13 @@ SELECT RTRIM('Geeks for Geeks     ');
 
 **查询:**
 
-```
+```sql
 SELECT RTRIM('   GeeksforGeeks     ');
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | (No column name) |
 +------------------+

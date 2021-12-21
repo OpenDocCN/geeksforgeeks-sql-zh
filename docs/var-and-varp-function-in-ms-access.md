@@ -7,7 +7,7 @@ MS Access 中的 Var()函数用于估计总体样本的方差。
 
 **语法:**
 
-```
+```sql
 Var(expr)
 ```
 
@@ -31,7 +31,7 @@ Var(expr)
 **例-1 :**
 产品价格的方差。
 
-```
+```sql
 SELECT Var(Product_Price) AS Var_Value 
 FROM ProcuctDetails;
 ```
@@ -45,7 +45,7 @@ FROM ProcuctDetails;
 **示例-2 :**
 仅一条记录的方差。
 
-```
+```sql
 SELECT Var(100) AS Var_Value ;
 ```
 
@@ -62,7 +62,7 @@ MS Access 中的 VarP()函数用于估计一个群体的方差。VarP()函数和
 
 **语法:**
 
-```
+```sql
 VarP(expr)
 ```
 
@@ -84,7 +84,7 @@ VarP(expr)
 
 **示例-1 :**
 
-```
+```sql
 SELECT VarP (P_Price) AS VarP_Value 
 FROM Procucts;
 ```
@@ -97,7 +97,7 @@ FROM Procucts;
 
 **示例-2 :**
 
-```
+```sql
 SELECT VarP (10) AS VarP_Value;
 ```
 

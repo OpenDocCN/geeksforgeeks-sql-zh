@@ -10,7 +10,7 @@
 
 1.  **微秒():**它返回日期值的微秒部分。
 
-    ```
+    ```sql
     Syntax: SELECT MICROSECOND("2018-07-18 09:12:00.000345");
     ```
 
@@ -18,7 +18,7 @@
 
 2.  **MINUTE():** 返回日期值的分钟部分。
 
-    ```
+    ```sql
     Syntax: SELECT MINUTE("2018-07-18 09:12:00");
     ```
 
@@ -26,7 +26,7 @@
 
 3.  **MONTH():** 返回日期值的月份部分。
 
-    ```
+    ```sql
     Syntax: SELECT MONTH ('2018/07/18')AS MONTH;
     ```
 
@@ -34,7 +34,7 @@
 
 4.  **MONTHNAME():**返回某个日期的完整月份名称。
 
-    ```
+    ```sql
     Syntax: SELECT MONTHNAME("2018/07/18");
     ```
 
@@ -42,7 +42,7 @@
 
 5.  **NOW():** 返回当前日期和时间。
 
-    ```
+    ```sql
     Syntax: SELECT NOW();
     ```
 
@@ -50,7 +50,7 @@
 
 6.  **PERIOD _ ADD():**取一个期间，加上指定的月数。
 
-    ```
+    ```sql
     Syntax: SELECT PERIOD_ADD(201803, 6);
     ```
 
@@ -58,7 +58,7 @@
 
 7.  **PERIOD _ DIFF():**返回两个期间的月差。
 
-    ```
+    ```sql
     Syntax: SELECT PERIOD_DIFF(201810, 201802);
     ```
 
@@ -66,7 +66,7 @@
 
 8.  **QUARTER():** 返回日期值的四分之一部分。
 
-    ```
+    ```sql
     Syntax: SELECT QUARTER("2018/07/18");
     ```
 
@@ -74,7 +74,7 @@
 
 9.  **SECOND():** 返回日期值的第二部分。
 
-    ```
+    ```sql
     Syntax: SELECT SECOND("09:14:00:00032");
     ```
 
@@ -82,7 +82,7 @@
 
 10.  **SEC _ TO _ TIME():**它将数字秒转换为时间值。
 
-    ```
+    ```sql
     Syntax: SELECT SEC_TO_TIME(1);
     ```
 
@@ -90,7 +90,7 @@
 
 11.  **STR _ TO _ DATE():**取一个字符串，返回格式掩码指定的日期。
 
-    ```
+    ```sql
     Syntax:  SELECT STR_TO_DATE("JULY 18 2018", "%M %D %Y");
     ```
 
@@ -98,7 +98,7 @@
 
 12.  **SUBDATE():**返回一个日期，在该日期之后减去了某个时间/日期间隔。
 
-    ```
+    ```sql
     Syntax: SELECT SUBDATE("2017-06-15", INTERVAL 10 DAY);
     ```
 
@@ -106,7 +106,7 @@
 
 13.  **subiteme():**减去一定时间间隔后返回时间/日期时间值。
 
-    ```
+    ```sql
     Syntax: SELECT SUBDATE("2018/07/18", INTERVAL 10 DAY);
     ```
 
@@ -114,7 +114,7 @@
 
 14.  **SYSDATE():**返回当前日期和时间。
 
-    ```
+    ```sql
     Syntax: SELECT SYSDATE();
     ```
 
@@ -122,7 +122,7 @@
 
 15.  **TIME():**它从一个时间/日期时间表达式中提取时间值。
 
-    ```
+    ```sql
     Syntax: SELECT TIME("09:16:10");
     ```
 
@@ -130,7 +130,7 @@
 
 16.  **TIME _ FORMAT():**它按照格式掩码指定的格式设置时间。
 
-    ```
+    ```sql
     Syntax: SELECT TIME_FORMAT("09:16:10", "%H %I %S");
     ```
 
@@ -138,7 +138,7 @@
 
 17.  **TIME _ TO _ SEC():**它将时间值转换为数字秒。
 
-    ```
+    ```sql
     Syntax: SELECT TIME_TO_SEC("09:16:10");
     ```
 
@@ -146,7 +146,7 @@
 
 18.  **TIMEDIFF():**返回两个时间/日期时间值的差值。
 
-    ```
+    ```sql
     Syntax: SELECT TIMEDIFF("09:16:10", "09:16:04");
     ```
 
@@ -154,7 +154,7 @@
 
 19.  **TIMESTAMP():**它将表达式转换为日期时间值，如果指定，则为该值添加可选的时间间隔。
 
-    ```
+    ```sql
     Syntax: SELECT TIMESTAMP("2018-07-18", "09:16:10");
     ```
 
@@ -162,7 +162,7 @@
 
 20.  **TO _ DAYS():**它将日期转换为数字天。
 
-    ```
+    ```sql
     Syntax: SELECT TO_DAYS("2018-07-18");
     ```
 
@@ -170,7 +170,7 @@
 
 21.  **WEEK():**返回日期值的周部分。
 
-    ```
+    ```sql
     Syntax: SELECT WEEK("2018-07-18");
     ```
 
@@ -178,7 +178,7 @@
 
 22.  **WEEKDAY():**返回日期值的 WEEKDAY 索引。
 
-    ```
+    ```sql
     Syntax: SELECT WEEKDAY("2018-07-18");
     ```
 
@@ -186,7 +186,7 @@
 
 23.  **WEEKOFYEAR():**返回一年中某一周的日期值。
 
-    ```
+    ```sql
     Syntax: SELECT WEEKOFYEAR("2018-07-18");
     ```
 
@@ -194,7 +194,7 @@
 
 24.  **YEAR():**返回日期值的年份部分。
 
-    ```
+    ```sql
     Syntax: SELECT YEAR("2018-07-18");
     ```
 
@@ -202,7 +202,7 @@
 
 25.  **year week():**返回日期值的年和周。
 
-    ```
+    ```sql
     Syntax:  SELECT YEARWEEK("2018-07-18");
     ```
 

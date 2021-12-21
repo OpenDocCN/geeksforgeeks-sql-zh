@@ -17,7 +17,7 @@
 
 **基本语法:**
 
-```
+```sql
 SELECT column1,column2 FROM table_name WHERE column LIKE wildcard_operator;
 column1 , column2: fields in the table
 table_name: name of table
@@ -31,7 +31,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with NAME ending with letter ‘T’.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE NAME LIKE '%T';
 
     ```
@@ -45,7 +45,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with NAME ending any letter but starting from ‘RAMES’.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE NAME LIKE 'RAMES_';
 
     ```
@@ -60,7 +60,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with address containing letters ‘a’, ‘b’, or ‘c’.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE ADDRESS LIKE '%[A-C]%';
 
     ```
@@ -78,7 +78,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with ADDRESS not containing letters ‘a’, ‘b’, or ‘c’.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE ADDRESS LIKE '%[^A-C]%';
 
     ```
@@ -92,7 +92,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with PHONE field having a ‘9’ in 1st position and a ‘5’ in 4th position.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE PHONE LIKE '9__5%';
 
     ```
@@ -105,7 +105,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with ADDRESS containing total of 6 characters.
 
-    ```
+    ```sql
     SELECT * FROM Student WHERE ADDRESS LIKE '______';
 
     ```
@@ -119,7 +119,7 @@ column: name of field used for filtering data
 
 *   To fetch records from Student table with ADDRESS containing ‘OH’ at any position, and the result set should not contain duplicate data.
 
-    ```
+    ```sql
     SELECT DISTINCT * FROM Student WHERE ADDRESS LIKE '%OH%';
 
     ```

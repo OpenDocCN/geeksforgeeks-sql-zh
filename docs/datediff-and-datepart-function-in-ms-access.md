@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 DateDiff(datepart, date1, date2, firstdayofweek, firstweekofyear)
 
 ```
@@ -46,28 +46,28 @@ s =秒 |
 
 **示例-1 :**
 
-```
+```sql
 SELECT DateDiff("yyyy", #15/02/2000#, #06/05/2020#);
 
 ```
 
 **输出:**
 
-```
+```sql
 20
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DateDiff("m", #15/02/2000#, #06/05/2020#);
 
 ```
 
 **输出:**
 
-```
+```sql
 244
 
 ```
@@ -77,7 +77,7 @@ SELECT DateDiff("m", #15/02/2000#, #06/05/2020#);
 
 **语法:**
 
-```
+```sql
 DatePart(datepart, date, firstdayofweek, firstweekofyear);
 
 ```
@@ -87,28 +87,28 @@ DatePart(datepart, date, firstdayofweek, firstweekofyear);
 
 **示例-1 :**
 
-```
+```sql
 SELECT DatePart("yyyy", #02/09/2020#);
 
 ```
 
 **输出:**
 
-```
+```sql
 2020
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DatePart("m", #02/09/2020#);
 
 ```
 
 **输出:**
 
-```
+```sql
 2
 
 ```

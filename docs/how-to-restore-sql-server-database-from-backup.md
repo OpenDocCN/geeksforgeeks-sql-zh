@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -34,7 +34,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table
 (FIRSTNAME varchar(20),
 LASTNAME varchar(20),
@@ -47,7 +47,7 @@ GENDER varchar(10), AGE int);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY','KUMARI','FEMALE', 22),
 ('PUSHKAR', 'JHA', 'MALE', 23),
@@ -60,7 +60,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -85,7 +85,7 @@ SELECT * FROM demo_table;
 
 **语法:**
 
-```
+```sql
 DROP DATABASE database_name;
 ```
 
@@ -93,7 +93,7 @@ DROP DATABASE database_name;
 
 **查询:**
 
-```
+```sql
 DROP DATABASE geeks;
 ```
 

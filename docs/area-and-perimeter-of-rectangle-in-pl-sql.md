@@ -9,7 +9,7 @@
 
 **示例:**
 
-```
+```sql
 Input: l = 2, b = 2
 Output: Area = 4, Perimeter = 8
 
@@ -28,7 +28,7 @@ Output: Area = 32, Perimeter=24
 
 以下是所需的实现:
 
-```
+```sql
 -- Declaration statement 
 DECLARE
   -- Declaration of length and assigning values 
@@ -57,7 +57,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Area of the rectangle is 21
 Perimeter of the rectangle is 20
 

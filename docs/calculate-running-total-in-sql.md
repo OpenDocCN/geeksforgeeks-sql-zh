@@ -7,19 +7,19 @@
 
 **创建数据库:**
 
-```
+```sql
 CREATE geeks;
 ```
 
 **使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
 **这是我们在极客数据库中的表:**
 
-```
+```sql
 CREATE TABLE department(
 ID int,
 SALARY int,
@@ -32,7 +32,7 @@ DEPT_ID Varchar(255));
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO department 
 VALUES (1, 34000, 'ANURAG', 'UI DEVELOPERS');
 
@@ -62,7 +62,7 @@ VALUES (5, 37000, 'KAE', 'UI DEVELOPERS');
 
 **这是我们表里面的数据:**
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -85,7 +85,7 @@ SELECT * FROM department;
 **示例 1:**
 **在 SQL Server 中计算运行总数的查询**
 
-```
+```sql
 SELECT * ,(
 SELECT SUM(T2.[SALARY])  
  FROM [department] AS T2
@@ -114,7 +114,7 @@ FROM [department] AS T1
 在这个 SQL Server 示例中，我们将使用 SUM 函数和 OVER 来查找运行总数。
 **查询计算 SQL Server 中的运行总数**
 
-```
+```sql
 SELECT *
     ,SUM([SALARY]) OVER (
            ORDER BY  [ID]
@@ -142,7 +142,7 @@ FROM department
 在这个 SQL Server 示例中，我们将使用 PARTITION BY 和 OVER 来查找运行总数。
 **查询计算 SQL Server 中的运行总数**
 
-```
+```sql
 SELECT *
    ,SUM([SALARY]) OVER  (
 PARTITION BY DEPT_ID  ORDER BY Id

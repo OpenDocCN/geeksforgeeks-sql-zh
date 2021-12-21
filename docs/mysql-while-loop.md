@@ -11,7 +11,7 @@
 
 **语法:**
 
-```
+```sql
 [label_name:] WHILE 
 condition DO 
   statements_list
@@ -38,7 +38,7 @@ WHILE 循环框图**
 ****示例-1 :**
 让我们使用 while 循环创建一个函数。**
 
-```
+```sql
 DELIMITER $
 CREATE FUNCTION GeekInc ( value INT )
 RETURNS INT
@@ -63,20 +63,20 @@ DELIMITER ;
 
 **要检查输出，请使用下面给出的命令。**
 
-```
+```sql
 CALL GeekInc(10000);
 ```
 
 ****输出–****
 
-```
+```sql
 0, 10000, 20000, 30000
 ```
 
 ****示例-2 :**
 让我们使用 while 循环创建一个过程。**
 
-```
+```sql
 DELIMITER $
 CREATE procedure while_ex()
 block: BEGIN
@@ -101,7 +101,7 @@ DELIMITER ;
 
 **要检查输出，请使用下面给出的命令。**
 
-```
+```sql
 call while_ex();
 ```
 
@@ -118,7 +118,7 @@ call while_ex();
 ****示例-3 :**
 让我们创建一个表“Test_Cal”，其日期如下。**
 
-```
+```sql
 CREATE TABLE Test_Cal(
    t_in INT AUTO_INCREMENT,
    fulldate DATE UNIQUE,
@@ -130,7 +130,7 @@ CREATE TABLE Test_Cal(
 
 **现在，创建一个存储过程，将数据插入表中，如下所示。**
 
-```
+```sql
 DELIMITER $
 CREATE PROCEDURE InsertCal(dt DATE)
 BEGIN
@@ -148,7 +148,7 @@ DELIMITER ;
 
 **现在创建存储过程 LoadCal()，将从开始日期开始的天数更新到表中。**
 
-```
+```sql
 DELIMITER $
 CREATE PROCEDURE LoadCal(
    startDate DATE,  
@@ -177,7 +177,7 @@ DELIMITER ;
 
 **要检查输出，请使用下面给出的命令。**
 
-```
+```sql
 CALL LoadCal('2021-01-01',31);
 select * from Test_Cal where tid < 10 ;
 ```

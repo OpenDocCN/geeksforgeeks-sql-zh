@@ -10,7 +10,7 @@ SQL server 中的 PATINDEX()函数用于返回字符串或指定表达式中第�
 
 ### 语法:
 
-```
+```sql
 PATINDEX ( '%pattern%' , expression )
 ```
 
@@ -34,13 +34,13 @@ PATINDEX ( '%pattern%' , expression )
 
 **查询:**
 
-```
+```sql
 SELECT PATINDEX('%ek%', 'GeeksforGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 3
 ```
 
@@ -50,7 +50,7 @@ SELECT PATINDEX('%ek%', 'GeeksforGeeks');
 
 **查询:**
 
-```
+```sql
 SELECT PATINDEX('%[z]%', 'GeeksforGeeks');
 ```
 
@@ -58,7 +58,7 @@ SELECT PATINDEX('%[z]%', 'GeeksforGeeks');
 
 它返回 0，因为给定的字符串不包含字母“z”。
 
-```
+```sql
 0
 ```
 
@@ -68,13 +68,13 @@ SELECT PATINDEX('%[z]%', 'GeeksforGeeks');
 
 **查询:**
 
-```
+```sql
 SELECT position = PATINDEX('%[^ 0-9A-z]%', 'How are you?');
 ```
 
 **输出:**
 
-```
+```sql
 12
 ```
 

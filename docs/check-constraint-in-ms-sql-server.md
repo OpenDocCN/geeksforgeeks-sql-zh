@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 Create table Marks 
 name varchar2(30), 
 rollnumber number primary key, 
@@ -27,7 +27,7 @@ marks int check (marks<=75)
 
 **示例-1:**
 
-```
+```sql
 Insert into Student 
 values('Maya', '117', '80')
 ```
@@ -37,7 +37,7 @@ values('Maya', '117', '80')
 
 **示例-2:**
 
-```
+```sql
 Insert into Student 
 values('Maya' '111', '74')
 ```
@@ -47,7 +47,7 @@ values('Maya' '111', '74')
 
 **空时检查约束:**
 
-```
+```sql
 Insert into Student 
 values('Riya', '112', 'NULL')
 ```

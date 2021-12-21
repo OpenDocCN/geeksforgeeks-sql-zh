@@ -14,14 +14,14 @@
 1.  **声明光标对象。**
     **语法:**声明光标名称光标为选择*从表名称
 
-    ```
+    ```sql
     DECLARE s1 CURSOR FOR SELECT * FROM studDetails
     ```
 
 2.  **打开光标连接。**
     **语法:**打开光标 _ 连接
 
-```
+```sql
 OPEN s1
 ```
 
@@ -35,7 +35,7 @@ OPEN s1
     **【相对 n】**用于以递增方式和递减方式获取数据。
     **语法:**获取下一个/第一个/最后一个/前一个/绝对 n/相对 n FROM cursor_name
 
-    ```
+    ```sql
     FETCH FIRST FROM s1
     FETCH LAST FROM s1
     FETCH NEXT FROM s1
@@ -46,13 +46,13 @@ OPEN s1
     ```</sup> *   **关闭光标连接。**
     **语法:**关闭光标 _ 名称
 
-    ```
+    ```sql
     CLOSE s1
     ```
 
     *   **释放光标内存。**
     **语法:**解除分配光标 _ 名称
 
-    ```
+    ```sql
     DEALLOCATE s1
     ```

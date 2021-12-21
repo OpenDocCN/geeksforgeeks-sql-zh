@@ -7,7 +7,7 @@ max()函数返回给定集合的最大值。在函数中传递一个查询，在
 
 **语法:**
 
-```
+```sql
 Max (expression)
 ```
 
@@ -23,7 +23,7 @@ Max (expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Max(Marks) AS marks 
 FROM student;
 ```
@@ -35,7 +35,7 @@ FROM student;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Max(Marks) AS marks 
 FROM student
 where Marks<80;
@@ -51,13 +51,13 @@ min()函数的工作方式与 max()函数类似，但它将返回表达式的最
 
 **语法:**
 
-```
+```sql
  Min(expression)
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Min(Marks) AS marks 
 FROM student;
 ```
@@ -69,7 +69,7 @@ FROM student;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Min(Marks) AS marks 
 FROM student
 where Marks>50;

@@ -15,7 +15,7 @@
 **步骤-1:创建数据库大学:**
 在这里，您将看到如何在 MySQL 中创建数据库，如下所示。
 
-```
+```sql
 CREATE DATABASE university;
 ```
 
@@ -26,7 +26,7 @@ CREATE DATABASE university;
 **第二步:使用数据库大学:**
 在这里，您将看到如何使用您已经创建的现有数据库，如下所示。
 
-```
+```sql
 USE university;
 ```
 
@@ -37,7 +37,7 @@ USE university;
 **步骤-3:创建表学生:**
 在这里，您将看到如何在 MySQL 中创建表，如下所示。
 
-```
+```sql
  CREATE TABLE student
  (
      student_id INT PRIMARY KEY,
@@ -53,7 +53,7 @@ USE university;
 **步骤-4:查看表的描述:**
 在这里，您将看到如何验证表，如下所示。
 
-```
+```sql
 DESCRIBE student;
 ```
 
@@ -71,7 +71,7 @@ DESCRIBE student;
 **第五步:创建另一个表考试:**
 在这一步，你会看到多一个表供参考。
 
-```
+```sql
 CREATE TABLE exam
  (
     exam_id INT PRIMARY KEY,
@@ -86,7 +86,7 @@ CREATE TABLE exam
 **第 6 步:查看表的描述:**
 在这一步，你可以验证你创建的表。
 
-```
+```sql
 DESCRIBE exam;
 ```
 
@@ -103,7 +103,7 @@ DESCRIBE exam;
 **步骤-7:在考试表中添加另一列 student_id:**
 在这里，您将看到如何在考试表中添加另一列 student _ id，如下所示。
 
-```
+```sql
  ALTER TABLE exam
  ADD COLUMN student_id INT;
 ```
@@ -117,7 +117,7 @@ DESCRIBE exam;
 
 **语法–**
 
-```
+```sql
 ALTER TABLE table_name
 ADD FOREIGN KEY (column_name)
 REFERENCE table_name(Referencing column_name in table_name);
@@ -125,7 +125,7 @@ REFERENCE table_name(Referencing column_name in table_name);
 
 **查询–**
 
-```
+```sql
 ALTER TABLE exam
 ADD FOREIGN KEY(student_id)
 REFERENCES student(student_id);
@@ -138,7 +138,7 @@ REFERENCES student(student_id);
 **第九步:验证考试表:**
 在这里，你会看到考试表的描述如下。
 
-```
+```sql
 DESCRIBE exam;
 ```
 

@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 FOR LEFT():
 LEFT ( expression, no_of_chars needed to the left)
 
@@ -24,7 +24,7 @@ RIGHT ( expression, no_of_chars needed to the right)
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -36,7 +36,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks;
 ```
 
@@ -48,7 +48,7 @@ USE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student(
 stu_id VARCHAR(8),
 stu_name VARCHAR(30),
@@ -64,7 +64,7 @@ stu_branch VARCHAR(30)
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns student 
 ```
 
@@ -76,7 +76,7 @@ EXEC sp_columns student
 
 **查询:**
 
-```
+```sql
 INSERT INTO student VALUES
 ('191401', 'ABHI','E.C.E'),
 ('191402', 'OLIVIA','E.C.E'),
@@ -94,7 +94,7 @@ INSERT INTO student VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student 
 ```
 
@@ -108,7 +108,7 @@ SELECT * FROM student
 
 **查询:**
 
-```
+```sql
 SELECT stu_name
 FROM student 
 WHERE LEFT(stu_name , 1) IN ('a','e','i','o','u')
@@ -125,7 +125,7 @@ AND RIGHT(stu_name,1) IN  ('a','e','i','o','u')
 
 **查询:**
 
-```
+```sql
 SELECT stu_name 
 FROM student 
 WHERE stu_name LIKE '[aeiouAEIOU]%[aeiouAEIOU]'

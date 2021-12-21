@@ -6,7 +6,7 @@
 
 **更新语法:**
 
-```
+```sql
 UPDATE table_name
 SET column_name = value
 WHERE condition;
@@ -22,7 +22,7 @@ WHERE condition;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -32,7 +32,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -42,7 +42,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 ID int,
 NAME VARCHAR(20),
@@ -52,7 +52,7 @@ CITY VARCHAR(20) );
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 ID int,
 NAME VARCHAR(20),
@@ -63,7 +63,7 @@ AGE int);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 (1,'Romy',23,'Delhi'),
 (2,'Rahul',23,'Delhi'),
@@ -79,7 +79,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES
 (3,'Fanny',25 ),
 (7,'Prem', 30),
@@ -93,7 +93,7 @@ INSERT INTO demo_table2 VALUES
 
 **查询(demo_table1):**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -103,7 +103,7 @@ SELECT * FROM demo_table1;
 
 **查询(demo_table2):**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -122,7 +122,7 @@ demo_table1 和 demo_table 2 都有 NAME 列。
 
 **查询:**
 
-```
+```sql
 UPDATE demo_table1
 SET demo_table1.NAME=demo_table2.NAME, 
 demo_table1.AGE=demo_table2.AGE

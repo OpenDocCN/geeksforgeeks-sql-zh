@@ -22,7 +22,7 @@
 
 1.  **创建 MySQL 数据库和表:**
 
-    ```
+    ```sql
     create database org;
     use org;
     create table employee(
@@ -46,7 +46,7 @@
 
     ## 数据库连接类
 
-    ```
+    ```sql
     package com.jdbc.util;
 
     import java.sql.Connection;
@@ -81,7 +81,7 @@
 
     ## 模型类
 
-    ```
+    ```sql
     package com.jdbc.model;
 
     public class Employee {
@@ -142,7 +142,7 @@
 
     ## 员工个人界面
 
-    ```
+    ```sql
     package com.jdbc.dao;
 
     import java.sql.SQLException;
@@ -167,7 +167,7 @@
 
     ## 员工实施类
 
-    ```
+    ```sql
     package com.jdbc.dao;
 
     import java.sql.Connection;
@@ -288,7 +288,7 @@
 
     ## 驱动程序代码
 
-    ```
+    ```sql
     package com.jdbc.main;
 
     import java.sql.SQLException;

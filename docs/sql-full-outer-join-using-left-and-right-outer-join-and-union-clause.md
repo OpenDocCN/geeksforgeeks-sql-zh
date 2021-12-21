@@ -39,7 +39,7 @@ SQL join 语句用于根据一个公共属性或字段组合来自两个或两�
 
 完全连接通过连接[左连接](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/)和[右连接](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/)提供结果。结果将包含表 1 和表 2 中的所有行。结果表中不匹配的行将具有空值。
 
-```
+```sql
 SELECT * FROM Table1
 FULL OUTER JOIN Table2
 ON Table1.column_match=Table2.column_match;
@@ -51,7 +51,7 @@ column_match: The column common to both the tables.
 
 上面的查询也可以使用**左外部连接、**右外部连接、**和联合的组合来编写。**UNION[UNION](https://www.geeksforgeeks.org/union-and-union-all-in-ms-sql-server/#:~:text=Union%20means%20joining%20two%20or,are%20described%20in%20the%20query.)的意思是将两个或多个数据集连接成一个集合。上面的查询和下面的查询将提供相同的输出。
 
-```
+```sql
 SELECT * FROM Table1
 LEFT OUTER JOIN Table2
 ON Table1.column_match=Table2.column_match
@@ -86,7 +86,7 @@ column_match: The column common to both the tables.
 
 现在我们来考虑一下*购买 _ 信息*表。要查看该表，请使用以下查询:
 
-```
+```sql
 SELECT * FROM purchase_information; 
 ```
 
@@ -98,7 +98,7 @@ SELECT * FROM purchase_information;
 
 要查看*客户信息*表，请使用以下查询:
 
-```
+```sql
 SELECT * FROM customer_information;
 ```
 
@@ -110,7 +110,7 @@ SELECT * FROM customer_information;
 
 现在我们可以简单地调用 FULL OUTER JOIN 子句，使用下面的查询从上面创建的两个表中获得一个组合结果:
 
-```
+```sql
 SELECT * FROM purchase_information
 FULL OUTER JOIN customer_information
 ON purchase_information.cust_name=customer_information.customer_name
@@ -124,7 +124,7 @@ ON purchase_information.cust_name=customer_information.customer_name
 
 但是我们可以在不使用 FULL OUTER JOIN 子句的情况下获得相同的结果。为此，我们使用左连接、右连接和联合子句，如下所示:
 
-```
+```sql
 SELECT FROM purchase_information
 LEFT OUTER JOIN customer information
 ON purchase_information.cust_name=customer_information.customer_name

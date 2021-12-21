@@ -7,7 +7,7 @@
 
 pl/sql 块的基本结构
 
-```
+```sql
 declare
 -- declare all the variables
 
@@ -21,7 +21,7 @@ end -- for end block
 
 示例:
 
-```
+```sql
 Input : num1  = 1000 num2 = 2000
 Output : num1  = 2000 num2 = 1000
 
@@ -30,7 +30,7 @@ Output : num1  = 20 num2 = 40
 
 ```
 
-```
+```sql
 declare
 
 -- declare variable num1, num2 
@@ -61,7 +61,7 @@ end;
 
 输出:
 
-```
+```sql
 before
 num1  = 1000 num2 = 2000
 after

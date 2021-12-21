@@ -33,7 +33,7 @@
 
 1.  **实施 1:**
 
-    ```
+    ```sql
     SELECT * FROM R 
     WHERE x not in ( SELECT x FROM (
     (SELECT x , y FROM (select y from S ) as p cross join 
@@ -45,7 +45,7 @@
 
 2.  **实现 2 :** 使用相关子查询
 
-    ```
+    ```sql
     SELECT * FROM R as sx
     WHERE NOT EXISTS (
     (SELECT p.y FROM S as p )
@@ -56,7 +56,7 @@
 
 **关系代数**
 
-```
+```sql
 Using steps which is mention above:
 All possible combinations
 r1 ← πx(R) x S
@@ -82,7 +82,7 @@ result ← πx(R)-r2x
 
 **Ans 1:使用实现 1**
 
-```
+```sql
 SELECT * FROM suppliers
 WHERE sid not in ( SELECT sid FROM ( (SELECT sid, pid FROM (select pid from parts) as p 
 cross join 
@@ -93,7 +93,7 @@ EXCEPT
 
 **Ans 2:使用实现 2**
 
-```
+```sql
 SELECT * FROM suppliers as s
 WHERE NOT EXISTS (( SELECT p.pid FROM parts as p )
 EXCEPT
@@ -108,7 +108,7 @@ EXCEPT
 
 **Ans 1。使用实现 1**
 
-```
+```sql
 SELECT * FROM employee AS e
 WHERE ssn NOT IN (
 SELECT essn FROM (
@@ -119,7 +119,7 @@ EXCEPT (SELECT essn, pno FROM works_on)) AS r );
 
 **Ans 2。使用实现 2**
 
-```
+```sql
 SELECT * FROM employee AS e
 WHERE NOT EXISTS (
  (SELECT pno FROM project WHERE dno = 4)

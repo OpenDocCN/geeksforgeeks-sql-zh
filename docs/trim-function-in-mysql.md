@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 TRIM([{BOTH | LEADING | TRAILING} [remstr] FROM] str)
 
 ```
@@ -21,7 +21,7 @@ TRIM([{BOTH | LEADING | TRAILING} [remstr] FROM] str)
 
 **示例-1 :** TRIM()函数仅删除前导空格。
 
-```
+```sql
 SELECT TRIM(LEADING FROM "    www.geeksforgeeks.org    ") AS TrimmedString;
 
 ```
@@ -34,7 +34,7 @@ SELECT TRIM(LEADING FROM "    www.geeksforgeeks.org    ") AS TrimmedString;
 
 **示例-2 :** TRIM()函数只删除尾随空格。
 
-```
+```sql
 SELECT TRIM(TRAILING FROM "    www.geeksforgeeks.org    ") AS TrimmedString;
 
 ```
@@ -47,7 +47,7 @@ SELECT TRIM(TRAILING FROM "    www.geeksforgeeks.org    ") AS TrimmedString;
 
 **示例-3 :** TRIM()函数删除前导和尾随空格。
 
-```
+```sql
 SELECT TRIM("    www.geeksforgeeks.org    ") AS TrimmedString;
 
 ```

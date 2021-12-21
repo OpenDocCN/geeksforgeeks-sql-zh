@@ -6,7 +6,7 @@
 
 根据各种求职网站上的数据，以下是十大高薪工作需要 SQL:
 
-```
+```sql
 1. Data Analyst
 2. Database Developer
 3. Database Administrator

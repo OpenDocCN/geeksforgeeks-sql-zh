@@ -13,7 +13,7 @@
 
 *   对于列别名:
 
-    ```
+    ```sql
     SELECT column as alias_name FROM table_name;
     column: fields in the table
     alias_name: temporary alias name to be used in replacement of original column name 
@@ -23,7 +23,7 @@
 
 *   对于表别名:
 
-    ```
+    ```sql
     SELECT column FROM table_name as alias_name;
     column: fields in the table 
     table_name: name of table
@@ -37,7 +37,7 @@
 
 *   To fetch ROLL_NO from Student table using CODE as alias name.
 
-    ```
+    ```sql
     SELECT ROLL_NO AS CODE FROM Student; 
 
     ```
@@ -53,7 +53,7 @@
 
 *   To fetch Branch using Stream as alias name and Grade as CGPA from table Student_Details.
 
-    ```
+    ```sql
     SELECT Branch AS Stream,Grade as CGPA FROM Student_Details; 
 
     ```
@@ -74,7 +74,7 @@
 
 *   To fetch Grade and NAME of Student with Age = 20.
 
-    ```
+    ```sql
     SELECT s.NAME, d.Grade FROM Student AS s, Student_Details
     AS d WHERE s.Age=20 AND s.ROLL_NO=d.ROLL_NO; 
 

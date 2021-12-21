@@ -21,7 +21,7 @@
 
     1.  **Syntax check –** concludes SQL syntactic validity. Example:
 
-        ```
+        ```sql
         SELECT * FORM employee 
         ```
 

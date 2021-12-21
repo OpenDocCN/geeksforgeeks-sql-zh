@@ -40,7 +40,7 @@
 
 **使用 SQL 约束 [**【唯一的】**](https://www.geeksforgeeks.org/sql-unique-constraint/#:~:text=Unique%20constraint%20in%20SQL%20is,tuples%2C%20else%20it%20return%20false.) 来定义 SQL 中的备用键。**
 
-```
+```sql
 UNIQUE(col_name(s))
 
 col_name(s): The name of the column(s) in the table which need to be unique.
@@ -50,13 +50,13 @@ col_name(s): The name of the column(s) in the table which need to be unique.
 
 ****1。创建数据库****
 
-```
+```sql
 CREATE DATABASE database_name
 ```
 
 ****2。创建表格****
 
-```
+```sql
 CREATE TABLE Table_name(
 col_1 TYPE col_1_constraint,
 col_2 TYPE col_2 constraint,
@@ -74,7 +74,7 @@ col_4: Definining an FOREIGN KEY using constraint REFERENCES
 
 ****3。插入表格****
 
-```
+```sql
 INSERT INTO Table_name
 VALUES(val_1, val_2, val_3, ..........)
 
@@ -83,7 +83,7 @@ val: Values in particular column
 
 ****4。查看表格****
 
-```
+```sql
 SELECT * FROM Table_name
 ```
 

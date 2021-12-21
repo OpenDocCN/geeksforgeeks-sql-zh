@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 ALTER TABLE table_name
 MODIFY column_name
 varchar(new_length);
@@ -20,7 +20,7 @@ varchar(new_length);
 
 让我们用 table_name 创建一个表；“学生”
 
-```
+```sql
 -- create a table
 CREATE TABLE students (Sr_No integer,Name varchar(20), Gender integer);
 ```
@@ -29,7 +29,7 @@ CREATE TABLE students (Sr_No integer,Name varchar(20), Gender integer);
 
 **语法:**
 
-```
+```sql
 DESCRIBE student;
  OR
 DESC student;
@@ -43,7 +43,7 @@ DESC student;
 
 现在使用 Alter 命令更改列的大小
 
-```
+```sql
 ALTER TABLE student
 MODIFY Name
 varchar(50);
@@ -53,7 +53,7 @@ varchar(50);
 
 要查看表格结构，请使用描述命令:
 
-```
+```sql
 DESCRIBE student;
 ```
 
@@ -65,7 +65,7 @@ DESCRIBE student;
 
 **用于减小“性别”栏的尺寸**
 
-```
+```sql
 ALTER TABLE student
 MODIFY Gender
 varchar(9);
@@ -75,7 +75,7 @@ varchar(9);
 
 要查看表格结构，请使用描述命令:
 
-```
+```sql
 DESCRIBE student;
 ```
 

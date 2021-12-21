@@ -6,19 +6,19 @@ SQL 查询是用特定语言编写的执行特定任务的程序的单行语句�
 
 **步骤 1:** 创建一个名为 GFG 的数据库:
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 **步骤 2:** 使用该数据库:
 
-```
+```sql
 USE GFG
 ```
 
 **步骤 3:** 在该数据库中创建一个表:
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
 id integer,
 FirstDay varchar(20)
@@ -27,7 +27,7 @@ FirstDay varchar(20)
 
 描述这张表:
 
-```
+```sql
 sp_help 'dbo.geeksforgeeks'
 ```
 
@@ -35,7 +35,7 @@ sp_help 'dbo.geeksforgeeks'
 
 **第 4 步:**在该数据库中插入日期值:
 
-```
+```sql
 INSERT INTO [dbo].[geeksforgeeks]
 ([id] ,[FirstDay])
 VALUES
@@ -81,7 +81,7 @@ GO
 
 现在，我们正在检查数据是否插入成功:
 
-```
+```sql
 SELECT * FROM [dbo].[geeksforgeeks]
 ```
 
@@ -89,7 +89,7 @@ SELECT * FROM [dbo].[geeksforgeeks]
 
 **第五步:**现在查看一周的第一天:
 
-```
+```sql
 SELECT id, FirstDay FROM [dbo].[geeksforgeeks] WHERE id = @@DATEFIRST 
 ```
 
@@ -99,7 +99,7 @@ SELECT id, FirstDay FROM [dbo].[geeksforgeeks] WHERE id = @@DATEFIRST
 
 **第 6 步:**现在我们将使用 DATEADD 函数()找出下周的第一天是什么:
 
-```
+```sql
 /* 
     If you want to find out the first day of 
     upcoming weeks then set @weeks as a positive integer
@@ -116,7 +116,7 @@ SELECT DATEADD(WEEK, @weeks, DATEADD(DAY, 1-DATEPART(WEEKDAY, GETDATE()),
 
 **第 7 步:**现在我们将使用 DATEADD 函数找出下周的最后一天是什么:
 
-```
+```sql
 /* 
     If you want to find out the first day of 
     previous weeks then set @weeks as a negative integer

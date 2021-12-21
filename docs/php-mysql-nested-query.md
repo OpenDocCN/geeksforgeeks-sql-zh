@@ -14,7 +14,7 @@ PHP 代表超文本预处理器，这是一种服务器端脚本语言，也用�
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,column3,...,columnn
 FROM table_name
 WHERE column_name expression operator  
@@ -31,13 +31,13 @@ WHERE column_name expression operator
 
 *   基于 sid 获取学生所有详细信息的嵌套查询，
 
-```
+```sql
 SELECT * FROM college1 WHERE sid IN (SELECT sid FROM college1);
 ```
 
 **结果:**
 
-```
+```sql
 student id: 1 - student name: sravan kumar - student address: kakumanu
 student id: 2 - student name: bobby - student address: kakumanu
 student id: 3 - student name: ojaswi - student address: hyderabad
@@ -47,13 +47,13 @@ student id: 5 - student name: gnanesh - student address: hyderabad
 
 *   基于小于 4 的 sid 获取学生所有详细信息的嵌套查询
 
-```
+```sql
 SELECT * FROM college1 WHERE sid IN (SELECT sid where sid < 4);
 ```
 
 **结果:**
 
-```
+```sql
 student id: 1 - student name: sravan kumar - student address: kakumanu
 student id: 2 - student name: bobby - student address: kakumanu
 student id: 3 - student name: ojaswi - student address: hyderabad
@@ -83,7 +83,7 @@ student id: 3 - student name: ojaswi - student address: hyderabad
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -133,7 +133,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php
@@ -194,7 +194,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php

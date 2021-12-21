@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 RPAD( string, length, pad_string )
 ```
 
@@ -22,52 +22,52 @@ RPAD( string, length, pad_string )
 
 **示例-1 :**
 
-```
+```sql
 SELECT RPAD
 ('geeksforgeeks.org', 20, 'A');
 ```
 
 **输出:**
 
-```
+```sql
 'geeksforgeeks.orgAAA'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT RPAD
 ('Computer', 2, 'b');
 ```
 
 **输出:**
 
-```
+```sql
 'Co'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT RPAD
 ('Database', 10, 'xyz');
 ```
 
 **输出:**
 
-```
+```sql
 'Databasexy'
 ```
 
 **示例-4 :**
 
-```
+```sql
 SELECT RPAD('Post', 7, ' ');
 ```
 
 **输出:**
 
-```
+```sql
 'Post   '
 ```
 
@@ -76,7 +76,7 @@ SELECT RPAD('Post', 7, ' ');
 
 **语法:**
 
-```
+```sql
 RTRIM( string )
 ```
 
@@ -89,38 +89,38 @@ RTRIM( string )
 
 **示例-1 :**
 
-```
+```sql
 SELECT RTRIM('geeksforgeeks    ');
 ```
 
 **输出:**
 
-```
+```sql
 'geeksforgeeks
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT RTRIM('    gfg is the best portal    ');
 
 ```
 
 **输出:**
 
-```
+```sql
 '    gfg is the best portal'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT RTRIM('arti@cle@!!!');
 
 ```
 
 **输出:**
 
-```
+```sql
 'arti@cle@!!!'
 ```

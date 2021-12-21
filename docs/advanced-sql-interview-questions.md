@@ -40,7 +40,7 @@
 *   **Que-7:** Using an existing table, make an empty one.
     **Explanation:**
 
-    ```
+    ```sql
     Select * into employeecopy from employee where 1=2 
     ```
 
@@ -48,7 +48,7 @@
     **Explanation:**
     You can get the most current SQL version by issuing this command:
 
-    ```
+    ```sql
     SELECT VERSION()
     ```
 
@@ -56,7 +56,7 @@
     **Explanation:**
     This can be achieved using the command:
 
-    ```
+    ```sql
     Select employeeId from (Select rowno, employeetId from employee) where mod(rowno, 2)=1 
     ```
 
@@ -64,7 +64,7 @@
     **解说:**
     的“**泾渭分明**的命令。这里有一个例子:
 
-```
+```sql
 Select DISTINCT employeeID from Employee 
 ```
 
@@ -80,7 +80,7 @@ Select DISTINCT employeeID from Employee
     **Explanation:**
     There are a few ways to do this. Nevertheless, the command presented below can be treated as a more popular and easier one:
 
-    ```
+    ```sql
     Select SUBSTRING(EmployeeSurname, 1, 5) as employeesurname from employee 
     ```
 
@@ -88,6 +88,6 @@ Select DISTINCT employeeID from Employee
     **解释:**
     通过执行以下任务:
 
-    ```
+    ```sql
     Select employeeID from employee. INTERSECT Select EmployeeID from WorkShift 
     ```

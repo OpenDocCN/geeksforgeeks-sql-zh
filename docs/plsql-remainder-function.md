@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 REMAINDER(a, b)
 ```
 
@@ -28,7 +28,7 @@ REMAINDER(a, b)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 15;
    Test_Number number2 := 5;
@@ -42,7 +42,7 @@ END;
 
 **输出:**
 
-```
+```sql
 0
 ```
 
@@ -50,7 +50,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 11.6;
    Test_Number number2 := 2;
@@ -64,7 +64,7 @@ END;
 
 **输出:**
 
-```
+```sql
 -0.4
 ```
 
@@ -72,7 +72,7 @@ END;
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := -15;
    Test_Number number2 := 4;
@@ -86,7 +86,7 @@ END;
 
 **输出:**
 
-```
+```sql
 1
 ```
 

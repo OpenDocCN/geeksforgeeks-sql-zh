@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 DATABASEPROPERTYEX ( 'databasename', 'propertyname' )  
 
 ```

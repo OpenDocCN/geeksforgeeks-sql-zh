@@ -18,7 +18,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -28,7 +28,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -38,7 +38,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE INT,
@@ -49,7 +49,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY', 22, 'NEW DELHI'),
 ('PUSHKAR',23, 'NEW DELHI'),
@@ -66,7 +66,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -80,7 +80,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 WHERE AGE = 22;                                
 {Boolean expression - > (AGE =22)}
@@ -96,7 +96,7 @@ WHERE AGE = 22;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 WHERE AGE > 22;                                      
 {Boolean expression - > (AGE > 22)}
@@ -112,7 +112,7 @@ WHERE AGE > 22;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 WHERE AGE = 22 OR AGE = 23;         
 {Boolean expression - > (AGE = 22 OR AGE = 23)}

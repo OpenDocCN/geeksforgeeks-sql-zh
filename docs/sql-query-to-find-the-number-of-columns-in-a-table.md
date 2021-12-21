@@ -8,13 +8,13 @@ SQL 代表一种**结构查询语言**，在数据库中用来检索数据，更
 
 要创建数据库，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 create database database_name;
 ```
 
 例如，
 
-```
+```sql
 create database GeeksforGeeks;
 ```
 
@@ -22,7 +22,7 @@ create database GeeksforGeeks;
 
 **输出:**
 
-```
+```sql
 Commands completed successfully
 ```
 
@@ -30,13 +30,13 @@ Commands completed successfully
 
 为了使用数据库，我们需要在 SQL 门户中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 use database_name;
 ```
 
 **这里查询的是**，
 
-```
+```sql
 use GeeksforGeeks;
 ```
 
@@ -44,7 +44,7 @@ use GeeksforGeeks;
 
 **输出:**
 
-```
+```sql
 Commands completed successfully
 ```
 
@@ -52,7 +52,7 @@ Commands completed successfully
 
 要在数据库中创建表，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 create table table_name(
 column1 type(size),
 column2 type(size),
@@ -65,7 +65,7 @@ columnN type(size)
 
 例如，
 
-```
+```sql
 create table GeeksforGeeks(
 course_ID INT,
 course_name VARCHAR(50),
@@ -86,13 +86,13 @@ course_enrolled_student INT
 
 这里的查询是，
 
-```
+```sql
 desc geeksforgeeks;
 ```
 
 如果我们使用微软的 SQL 服务器，那么我们需要使用**‘EXEC sp _ help’**来代替 DESC。在微软的 SQL 服务器中， **DESC** 命令不是 SQL 命令，而是在 Oracle 中使用。
 
-```
+```sql
 EXEC sp_help GFG_salary;
 ```
 
@@ -100,7 +100,7 @@ EXEC sp_help GFG_salary;
 
 **输出:**
 
-```
+```sql
 SL No   |    Column_name                   |    Type    |   Computed   |   Length
 ----------------------------------------------------------------------------------
 1\.        |    course_ID                       |    int     |      no      |     4
@@ -116,7 +116,7 @@ SL No   |    Column_name                   |    Type    |   Computed   |   Lengt
 
 为了给表增加价值，我们需要在 SQL 平台中使用一个查询，比如 MySql、Oracle 等。问题是，
 
-```
+```sql
 insert into table_name(
 value1,
 value2,
@@ -130,7 +130,7 @@ valueN);
 
 例如，这里的查询将是，
 
-```
+```sql
 INSERT INTO `geeksforgeeks` (`course_ID`, `course_name`, `course_mentor`, `course_fee`, `course_start_date`, `course_enrolled_student`) VALUES
 (1, 'SQL', 'mentor1', '3000', '2021-03-02', '10'),
 (2, 'JAVA', 'mentor2a', '5000', '2021-03-02', '12'),
@@ -142,13 +142,13 @@ INSERT INTO `geeksforgeeks` (`course_ID`, `course_name`, `course_mentor`, `cours
 
 **输出:**
 
-```
+```sql
 4 rows affected
 ```
 
 **插入后表格中的数据:**
 
-```
+```sql
 select * from geeksforgeeks;
 ```
 
@@ -156,7 +156,7 @@ select * from geeksforgeeks;
 
 **输出:**
 
-```
+```sql
    | course_ID    | course_name | course_mentor | course_fee | course_start_date |  course_enrolled_student  
 ----------------------------------------------------------------------------------------------------------
 1\. |  1         |    SQL      |     mentor1   |  3000      | 2021-03-02        |  10
@@ -170,7 +170,7 @@ select * from geeksforgeeks;
 
 为了找到答案，我们可以在关系数据库中使用一个简单的函数 **COUNT()** 和 **INFORMATION_SCHEMA** 视图。这个 **INFORMATION_SCHEMA** 是一组 **ANSI 标准**视图，提供对数据库及其对象(如表、约束、过程等)细节的只读访问。请参见下面的查询
 
-```
+```sql
 SELECT count(*) as No_of_Column FROM information_schema.columns WHERE table_name ='geeksforgeeks';
 ```
 
@@ -180,7 +180,7 @@ SELECT count(*) as No_of_Column FROM information_schema.columns WHERE table_name
 
 **输出:**
 
-```
+```sql
    |  No_of_Column  
 -------------------
 1\. |  6

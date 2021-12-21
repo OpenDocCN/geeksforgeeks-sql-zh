@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 
 Declare @variable_name DATATYPE     -- first declare all the
                                     -- variables with datatype
@@ -30,7 +30,7 @@ END                                 -- end while loop
 
 **First Pattern :**
 
-```
+```sql
 DECLARE @var int               -- Declare
 SELECT @var = 5                -- Initialization
 WHILE @var > 0                 -- condition
@@ -42,7 +42,7 @@ END                            -- END
 
 输出:
 
-```
+```sql
 * * * * *
 * * * * 
 * * * 
@@ -53,7 +53,7 @@ END                            -- END
 
 **第二种模式:**
 
-```
+```sql
 DECLARE @var int                  -- Declare 
 SELECT @var = 1                   -- initialization 
 WHILE @var <= 5                   -- Condition
@@ -65,7 +65,7 @@ END                               -- end
 
 输出:
 
-```
+```sql
 *
 * *
 * * *
@@ -76,7 +76,7 @@ END                               -- end
 
 **第三种模式:**
 
-```
+```sql
 DECLARE @var int, @x int                 -- declare two variable
 SELECT @var = 4,@x = 1                   -- initialization
 WHILE @x <=5                             -- condition
@@ -90,7 +90,7 @@ END                                      --
 
 输出:
 
-```
+```sql
     *
    **
   ***
@@ -101,7 +101,7 @@ END                                      --
 
 **第四种模式:**
 
-```
+```sql
 DECLARE @var int, @x int                 -- declare two variable
 SELECT @var = 0,@x = 5                   -- initialization
 WHILE @x > 0                             -- condition
@@ -115,7 +115,7 @@ END                                      --
 
 输出:
 
-```
+```sql
 *****
  ****
   ***

@@ -32,7 +32,7 @@ INNER JOIN 是一个关键字，用于选择两个表中具有匹配值的记录
 
 **语法:**
 
-```
+```sql
 SELECT column 1,column 2,...column n
 FROM table1
 INNER JOIN table2
@@ -53,13 +53,13 @@ ON table1.column_name = table2.column_name;
 
 *   基于内部连接显示学生地址详细信息的查询–
 
-```
+```sql
 SELECT  * from student_address INNER JOIN student_marks on student_address.sid=student_marks.sid;
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- NAME : sravan kumar ----- ADDRESS : kakumanu
 STUDENT-ID : 2 ----- NAME : bobby ----- ADDRESS : kakumanu
 STUDENT-ID : 3 ----- NAME : ojaswi ----- ADDRESS : hyderabad
@@ -68,13 +68,13 @@ STUDENT-ID : 4 ----- NAME : rohith ----- ADDRESS : hyderabad
 
 *   基于内部连接显示 student_marks 详细信息的查询。
 
-```
+```sql
 SELECT  * from student_marks INNER JOIN student_address on student_address.sid=student_marks.sid
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- SUBJECT 1 : 98 ----- SUBJECT 2 : 99
 STUDENT-ID : 2 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 89
 STUDENT-ID : 3 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 98
@@ -87,7 +87,7 @@ LEFT JOIN 关键字用于返回左表(表 1)中的所有记录，以及右表(�
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,...columnn
 FROM table1
 LEFT JOIN table2
@@ -96,13 +96,13 @@ ON table1.column_name = table2.column_name;
 
 *   使用左连接基于学生 id 显示所有学生地址表的查询
 
-```
+```sql
 SELECT * from student_address LEFT JOIN student_marks on student_address.sid=student_marks.sid
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- NAME : sravan kumar ----- ADDRESS : kakumanu
 STUDENT-ID : 2 ----- NAME : bobby ----- ADDRESS : kakumanu
 STUDENT-ID : 3 ----- NAME : ojaswi ----- ADDRESS : hyderabad
@@ -112,13 +112,13 @@ STUDENT-ID : ----- NAME : gnanesh ----- ADDRESS : hyderabad
 
 *   使用左连接基于学生 id 显示所有 student_marks 表的查询
 
-```
+```sql
 SELECT * from student_marks LEFT JOIN student_address on student_address.sid=student_marks.sid
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- SUBJECT 1 : 98 ----- SUBJECT 2 : 99
 STUDENT-ID : 2 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 89
 STUDENT-ID : 3 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 98
@@ -132,7 +132,7 @@ RIGHT JOIN 关键字用于返回右表(表 2)中的所有记录，以及左表(�
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,...columnn
 FROM table1
 RIGHT  JOIN table2
@@ -141,13 +141,13 @@ ON table1.column_name = table2.column_name;
 
 *   使用右连接基于学生 id 显示所有学生地址表的查询
 
-```
+```sql
 SELECT * from student_address RIGHT JOIN student_marks on student_address.sid=student_marks.sid
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- NAME : sravan kumar ----- ADDRESS : kakumanu
 STUDENT-ID : 2 ----- NAME : bobby ----- ADDRESS : kakumanu
 STUDENT-ID : 3 ----- NAME : ojaswi ----- ADDRESS : hyderabad
@@ -157,13 +157,13 @@ STUDENT-ID : 7 ----- NAME : ----- ADDRESS :
 
 *   使用右连接基于学生 id 显示所有 student_marks 表的查询
 
-```
+```sql
 SELECT * from student_marks RIGHT JOIN student_address on student_address.sid=student_marks.sid
 ```
 
 **结果:**
 
-```
+```sql
 STUDENT-ID : 1 ----- SUBJECT 1 : 98 ----- SUBJECT 2 : 99
 STUDENT-ID : 2 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 89
 STUDENT-ID : 3 ----- SUBJECT 1 : 78 ----- SUBJECT 2 : 98
@@ -200,7 +200,7 @@ STUDENT-ID : 5 ----- SUBJECT 1 : ----- SUBJECT 2 :
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -242,7 +242,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -286,7 +286,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php
@@ -346,7 +346,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php
@@ -406,7 +406,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php

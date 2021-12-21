@@ -18,7 +18,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT EXP(number);
 ```
 
@@ -36,13 +36,13 @@ SELECT EXP(number);
 
 得到值 1.0，即“e”的 0 次方。
 
-```
+```sql
 SELECT EXP(0);
 ```
 
 **输出:**
 
-```
+```sql
 1.0
 ```
 
@@ -50,13 +50,13 @@ SELECT EXP(0);
 
 得到值 2.7182818284590451，它是“e”的一次幂。
 
-```
+```sql
 SELECT EXP(1) As New;
 ```
 
 **输出:**
 
-```
+```sql
 2.7182818284590451
 ```
 
@@ -64,7 +64,7 @@ SELECT EXP(1) As New;
 
 使用带有变量的 EXP()函数，得到值 11.023176380641601，该值是“e”的 2.4 次方。
 
-```
+```sql
 DECLARE @Parameter_Value Float;
 SET @Parameter_Value = 2.4;
 SELECT EXP(@Parameter_Value);
@@ -72,7 +72,7 @@ SELECT EXP(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 11.023176380641601
 ```
 
@@ -80,7 +80,7 @@ SELECT EXP(@Parameter_Value);
 
 使用带有变量的 EXP()函数，得到值 0.1353352832366127，该值被“e”提升为(-2)次方。
 
-```
+```sql
 DECLARE @Parameter_Value int;
 SET @Parameter_Value = -2;
 SELECT EXP(@Parameter_Value);
@@ -88,7 +88,7 @@ SELECT EXP(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0.1353352832366127
 ```
 

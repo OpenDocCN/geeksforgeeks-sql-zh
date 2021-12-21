@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 SELECT SUBSTRING('HELLO GEEKS', 1, 5);
 ```
 
@@ -32,7 +32,7 @@ SELECT SUBSTRING('HELLO GEEKS', 1, 5);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -42,7 +42,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -52,7 +52,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
  CREATE TABLE demo_table
 (FIRSTNAME VARCHAR(20),
 LASTNAME VARCHAR(20),
@@ -63,7 +63,7 @@ AGE INT);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('Romy', 'Kumari', 22 ),
 ('Pushkar', 'Jha', 23),  
@@ -77,7 +77,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -91,14 +91,14 @@ SELECT * FROM demo_table;
 
 **语法:**
 
-```
+```sql
 SELECT SUBSTRING(column_name,1,LEN(column_name)-1) 
 FROM table_name;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT FIRSTNAME, SUBSTRING(LASTNAME,1,LEN(LASTNAME)-1)
  AS LASTNAME, AGE FROM demo_table;
 ```
@@ -115,7 +115,7 @@ SELECT FIRSTNAME, SUBSTRING(LASTNAME,1,LEN(LASTNAME)-1)
 
 **查询:**
 
-```
+```sql
 SELECT SUBSTRING(FIRSTNAME,1,LEN(FIRSTNAME)-1)
  AS FIRSTNAME, LASTNAME, AGE FROM demo_table;
 ```

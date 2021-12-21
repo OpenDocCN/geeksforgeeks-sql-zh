@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 TimeValue(string)
 
 ```
@@ -19,28 +19,28 @@ TimeValue(string)
 
 **示例-1 :**
 
-```
+```sql
 SELECT TimeValue("18:15:38");
 
 ```
 
 **输出:**
 
-```
+```sql
 6:15:38 PM 
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT TimeValue("5:45:18 PM");
 
 ```
 
 **输出:**
 
-```
+```sql
 5:45:18 PM 
 
 ```
@@ -50,7 +50,7 @@ SELECT TimeValue("5:45:18 PM");
 
 **语法:**
 
-```
+```sql
 TimeSerial(hour, minute, second)
 
 ```
@@ -64,28 +64,28 @@ TimeSerial(hour, minute, second)
 
 **示例-1 :**
 
-```
+```sql
 SELECT TimeSerial(5, 10, 20);
 
 ```
 
 **输出:**
 
-```
+```sql
 5:10:20 AM 
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT TimeSerial(18-4, 49-24, 18-5);
 
 ```
 
 **输出:**
 
-```
+```sql
 2:25:13 PM 
 
 ```

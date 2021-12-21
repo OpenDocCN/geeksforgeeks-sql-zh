@@ -12,7 +12,7 @@ SQL Server 是一个通用数据库，也是全世界使用最多的数据库。
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GEEKSFORGEEKS;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GEEKSFORGEEKS;
 
 **查询:**
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -32,7 +32,7 @@ USE GEEKSFORGEEKS;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE [dbo].[ArticleDetails](
     [ArticleID] [int] IDENTITY(1,1) NOT NULL,
     [AuthorID] [int],
@@ -46,7 +46,7 @@ GO
 
 **查询:**
 
-```
+```sql
 INSERT INTO ArticleDetails (AuthorID,ArticleDate,
 NARRATION) VALUES (1,'2021-12-10','MONGODB')
 INSERT INTO ArticleDetails (AuthorID,ArticleDate,
@@ -67,7 +67,7 @@ NARRATION) VALUES (2,'2021-12-01','PYTHON')
 
 **查询:**
 
-```
+```sql
 SELECT  * FROM ArticleDetails;
 ```
 
@@ -79,7 +79,7 @@ SELECT  * FROM ArticleDetails;
 
 **查询:**
 
-```
+```sql
 SELECT GETDATE() AS CURRENTDATE
 SELECT CONVERT(nvarchar(10),
 GETDATE(),101) AS FORMATTEDCURRENTDATE
@@ -89,7 +89,7 @@ GETDATE(),101) AS FORMATTEDCURRENTDATE
 
 **查询:**
 
-```
+```sql
 SELECT AuthorID,ArticleDate,NARRATION AS
  'Daily' FROM ArticleDetails
 WHERE ArticleDate = CONVERT(nvarchar(10),
@@ -100,7 +100,7 @@ GETDATE(),101);
 
 **查询:**
 
-```
+```sql
 -- To get the count of articles created/published
  by the author on daily basis
 SELECT AuthorID, COUNT(AuthorID) AS 
@@ -117,7 +117,7 @@ GETDATE(),101) GROUP BY AuthorID
 
 **查询:**
 
-```
+```sql
 -- To get weekly
 -- As we need to get the data between 7 days 
 from current date, we are using BETWEEN clause
@@ -138,7 +138,7 @@ AND CONVERT(nvarchar(10),GETDATE(),101)
 
 **查询:**
 
-```
+```sql
 SELECT AuthorID, COUNT(AuthorID) AS 
 'Weekly Writeups' FROM ArticleDetails
 WHERE ArticleDate BETWEEN DATEADD(d,-7,
@@ -153,7 +153,7 @@ GROUP BY AuthorID
 
 **查询:**
 
-```
+```sql
 SELECT AuthorID,ArticleDate,NARRATION AS 
 'Monthly Writeups' FROM ArticleDetails
 WHERE ArticleDate BETWEEN DATEADD(d,-30,
@@ -167,7 +167,7 @@ AND CONVERT(nvarchar(10),GETDATE(),101)
 
 **查询:**
 
-```
+```sql
 SELECT AuthorID, COUNT(AuthorID) AS 
 'Monthly Writeups' FROM ArticleDetails
 WHERE ArticleDate BETWEEN DATEADD(d,-30,

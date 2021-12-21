@@ -9,7 +9,7 @@
 
 **要替换字符串的 SQL Server 查询–**
 
-```
+```sql
 DECLARE @String_Value varchar(50)
 SET @String_Value = 'This provides free and excellent knowledge on SQL Server.'
 SELECT REPLACE (@String_Value, 'This', 'Geeksforgeeks');
@@ -17,7 +17,7 @@ SELECT REPLACE (@String_Value, 'This', 'Geeksforgeeks');
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks provides free and excellent knowledge on SQL Server.
 ```
 
@@ -39,7 +39,7 @@ Geeksforgeeks provides free and excellent knowledge on SQL Server.
 
 **替换部分字符串的 SQL Server 查询–**
 
-```
+```sql
 SELECT TOP 1000 [Name], [Salary], [City], [email], 
 REPLACE([email], 'xyz.com', 'gfg.org') AS [New EmailID]
 FROM [geek_demo]
@@ -63,20 +63,20 @@ FROM [geek_demo]
 
 **替换部分字符串的 SQL Server 查询–**
 
-```
+```sql
 UPDATE [geek_demo]
 SET [email] = REPLACE([email], 'xyz.com', 'gfg.org');
 ```
 
 **结果:**
 
-```
+```sql
 (8 row(s) affected)
 ```
 
 **现在让我们看看更新的表格–**
 
-```
+```sql
 SELECT TOP 1000 [Name], [Salary], [City], [email]
 FROM [geek_demo];
 ```

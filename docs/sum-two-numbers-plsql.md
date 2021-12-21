@@ -11,12 +11,12 @@
 
 示例:
 
-```
+```sql
 Input : 15 25
 Output : 40
 ```
 
-```
+```sql
 Input : 250 400
 Output : 650
 ```
@@ -25,7 +25,7 @@ Output : 650
 
 ## 结构化查询语言
 
-```
+```sql
 declare
 
 -- declare variable x, y
@@ -54,6 +54,6 @@ end;
 
 **输出:**
 
-```
+```sql
 Sum is 30
 ```

@@ -7,7 +7,7 @@ SQL Server 中的这个函数有助于将给定字符串的所有字母转换为
 
 **语法:**
 
-```
+```sql
 UPPER( str )
 ```
 
@@ -21,7 +21,7 @@ UPPER( str )
 **示例-1 :**
 使用带有小写字符串的 UPPER()函数。
 
-```
+```sql
 SELECT UPPER('be patience be awake') 
 As New;
 ```
@@ -38,7 +38,7 @@ As New;
 **示例-2 :**
 使用带混合大小写字符串的 UPPER()函数。
 
-```
+```sql
 SELECT UPPER('EvERy DAy iS A NEW day') 
 As New;
 ```
@@ -52,7 +52,7 @@ As New;
 使用带有 Select 语句的 UPPER()函数。
 创建玩家表，并在其中插入数值。
 
-```
+```sql
 Create table Players
 (
  Firstname varchar(40),
@@ -64,7 +64,7 @@ Create table Players
 
 **向玩家插入数据:**
 
-```
+```sql
 Insert into Players values 
 ('Kane', 'Williamson', 'New Zealand')
 
@@ -77,7 +77,7 @@ Insert into Players values
 
 使用 UPPER()函数。
 
-```
+```sql
 SELECT Firstname,  
       UPPER(Lastname) As New_name,  
       Country
@@ -93,7 +93,7 @@ FROM Players;
 **示例-4 :**
 在变量中使用 UPPER()函数。
 
-```
+```sql
 DECLARE @text VARCHAR(45);
 SET @text = 'be happy be light ';
 SELECT @text,  

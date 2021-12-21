@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 ADDTIME(expr1, expr2)
 
 ```
@@ -21,7 +21,7 @@ ADDTIME(expr1, expr2)
 **示例-1 :**
 使用 ADDTIME 函数将指定时间加上 15 秒。
 
-```
+```sql
 SELECT ADDTIME("11:34:21", "15") as Updated_time ;
 
 ```
@@ -35,7 +35,7 @@ SELECT ADDTIME("11:34:21", "15") as Updated_time ;
 **示例-2 :**
 使用 ADDTIME 函数将指定时间加上 10 分钟。
 
-```
+```sql
 SELECT ADDTIME("10:54:21", "00:10:00") 
 as Updated_time ;
 
@@ -50,7 +50,7 @@ as Updated_time ;
 **示例-3 :**
 使用 ADDTIME 函数用指定的日期时间添加 12 个小时。
 
-```
+```sql
 SELECT ADDTIME("2009-02-20 18:04:22.333444", "12:00:00") 
 as Updated_time ;
 
@@ -65,7 +65,7 @@ as Updated_time ;
 **示例-4 :**
 使用 ADDTIME 函数将 10 小时 30 分 25 秒和 100000 微秒与指定的日期时间相加。
 
-```
+```sql
 SELECT ADDTIME("2020-09-20 17:04:22.222333", "10:30:25.100000") 
 as Updated_time ;
 
@@ -80,7 +80,7 @@ as Updated_time ;
 **示例-5:**
 ADDTIME 函数可用于设置列的值。为了演示如何创建一个名为 ScheduleDetails 的表
 
-```
+```sql
 CREATE TABLE ScheduleDetails(
 TrainId INT NOT NULL,
 StationName VARCHAR(20) NOT NULL,
@@ -92,7 +92,7 @@ PRIMARY KEY(TrainId )
 
 现在在 ScheduleDetails 表中插入值。我们将使用 ADDTIME 函数来表示到达时间的延迟。ExpectedArrivalTime 列中的值将是 ADDTIME 函数给出的值。
 
-```
+```sql
 INSERT INTO  
 ScheduleDetails (TrainId, StationName, TrainName, ScheduledlArrivalTime )
 VALUES
@@ -102,7 +102,7 @@ VALUES
 
 现在，检查调度详细信息表:
 
-```
+```sql
 SELECT *, ADDTIME(ScheduledlArrivalTime, "00:10:00") 
 AS ExpectedArrivalTime FROM ScheduleDetails;
 

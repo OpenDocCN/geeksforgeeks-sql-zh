@@ -7,7 +7,7 @@ MySQL 中的这个函数有助于将日期或时间或日期时间转换为指�
 
 **语法:**
 
-```
+```sql
 GET_FORMAT({DATE | TIME | DATETIME}, 
 {'EUR' | 'USA' | 'JIS' | 'ISO' | 'INTERNAL'})
 ```
@@ -23,7 +23,7 @@ GET_FORMAT({DATE | TIME | DATETIME},
 **例-1:**
 GET _ FORMAT()函数的基本用法。
 
-```
+```sql
 SELECT GET_FORMAT(DATE, 'EUR') 
 As New_Format;
 ```
@@ -36,7 +36,7 @@ As New_Format;
 **示例-2 :**
 现在使用 DATE_FORMAT()函数和 GET_FORMAT()。
 
-```
+```sql
 SELECT DATE_FORMAT('2020-12-25', GET_FORMAT(DATE, 'USA')) 
 AS 'New_Format';
 ```
@@ -49,7 +49,7 @@ AS 'New_Format';
 **示例-3 :**
 带有 DATE 值的 GET_FORMAT()函数的用法，这意味着第一个参数固定为 Date，第二个参数连续变化。
 
-```
+```sql
 SELECT  
    GET_FORMAT(DATE, 'USA') AS 'USA_format',
    GET_FORMAT(DATE, 'JIS') AS 'JIS_format',
@@ -66,7 +66,7 @@ SELECT
 **示例-4 :**
 带有 DATETIME 值的 GET_FORMAT()函数的用法，这意味着第一个参数固定为 DateTime，第二个参数连续变化。
 
-```
+```sql
 SELECT  
    GET_FORMAT(DATETIME, 'USA') AS 'USA_format',
    GET_FORMAT(DATETIME, 'JIS') AS 'JIS_format',
@@ -83,7 +83,7 @@ SELECT
 **示例-5 :**
 带有 TIME 值的 GET_FORMAT()函数的用法，这意味着第一个参数固定为 Time，第二个参数连续变化。
 
-```
+```sql
 SELECT  
    GET_FORMAT(TIME, 'USA') AS 'USA_format',
    GET_FORMAT(TIME, 'JIS') AS 'JIS_format',

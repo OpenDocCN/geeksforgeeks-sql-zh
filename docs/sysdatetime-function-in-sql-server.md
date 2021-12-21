@@ -15,7 +15,7 @@ SQL Server 中的这个函数用于返回计算机当前运行 SQL Server 的日
 
 **语法:**
 
-```
+```sql
 SYSDATETIME()
 ```
 
@@ -31,13 +31,13 @@ SYSDATETIME()
 
 使用 SYSDATETIME()函数并获取输出。
 
-```
+```sql
 SELECT SYSDATETIME();
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-03 17:49:28.0575187
 ```
 
@@ -47,7 +47,7 @@ SELECT SYSDATETIME();
 
 在下面的示例中使用 SYSDATETIME()作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE system_date_time
 (
    id_num        INT IDENTITY,
@@ -72,7 +72,7 @@ FROM
 
 **输出:**
 
-```
+```sql
   |id_num |  message              |   generated_at 
 -------------------------------------------------------------  
 1 | 1     | Its the first message.| 03.01.2021 18:53:56
@@ -88,13 +88,13 @@ FROM
 
 使用 CONVERT()函数将 SYSDATETIME()函数的输出转换为当前日期。
 
-```
+```sql
 SELECT CONVERT(DATE, SYSDATETIME());
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-07
 ```
 
@@ -104,13 +104,13 @@ SELECT CONVERT(DATE, SYSDATETIME());
 
 使用 CONVERT()函数将 SYSDATETIME()函数的输出转换为当前时间。
 
-```
+```sql
 SELECT CONVERT(TIME, SYSDATETIME());
 ```
 
 **输出:**
 
-```
+```sql
 06:20:12.2400986
 ```
 

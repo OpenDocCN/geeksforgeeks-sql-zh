@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 WHERE value IS NULL;
 ```
 
@@ -20,7 +20,7 @@ WHERE value IS NULL;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -40,7 +40,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 GENDER VARCHAR(20),
@@ -52,7 +52,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY KUMARI', 'FEMALE', NULL, 'NEW DELHI'),
 ('PUSHKAR JHA', 'MALE',24, 'NEW DELHI'),
@@ -66,7 +66,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -80,7 +80,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE AGE NOT IN (SELECT AGE WHERE AGE IS NULL);
 ```
 
@@ -92,7 +92,7 @@ SELECT * FROM demo_table WHERE AGE NOT IN (SELECT AGE WHERE AGE IS NULL);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE AGE NOT IN ((SELECT AGE WHERE AGE IS NULL),24);
 ```
 
@@ -106,7 +106,7 @@ SELECT * FROM demo_table WHERE AGE NOT IN ((SELECT AGE WHERE AGE IS NULL),24);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE AGE NOT IN (SELECT AGE WHERE AGE IS NULL) and AGE NOT IN (24);
 ```
 

@@ -6,7 +6,7 @@ MySQL 中的 GROUP_CONCAT()函数用于将多行数据连接到一个字段中�
 
 **语法:**
 
-```
+```sql
 SELECT col1, col2, ..., colN
 GROUP_CONCAT ( [DISTINCT] col_name1 
 [ORDER BY clause]  [SEPARATOR str_val] ) 
@@ -45,7 +45,7 @@ GROUP_CONCAT()函数中各种子句的使用:
 
 1.使用简单的 GROUP_CONCAT()函数-
 
-```
+```sql
 SELECT emp_id, fname, lname, dept_id, 
 GROUP_CONCAT ( strength ) as "strengths" 
 FROM employee group by emp_id;
@@ -65,7 +65,7 @@ FROM employee group by emp_id;
 
 2.使用 DISTINCT 子句-
 
-```
+```sql
 SELECT dept_id, 
 GROUP_CONCAT ( DISTINCT strength) 
 as "employees strengths"  
@@ -86,7 +86,7 @@ from employee group by dept_id;
 
 3.订单依据条款的使用:
 
-```
+```sql
 SELECT dept_id, 
 GROUP_CONCAT ( DISTINCT emp_id ORDER BY emp_id  SEPARATOR', ') 
 as "employees ids" 
@@ -113,7 +113,7 @@ from employee group by dept_id;
 **示例:**
 考虑到上表“员工”，如果我们希望在第二次查询中找到员工实力和员工 id，那么它被写成-
 
-```
+```sql
 SELECT dept_id, GROUP_CONCAT ( strengths SEPARATOR '  ') as "emp-id : strengths"
 FROM ( SELECT dept_id, CONCAT ( emp_id, ':', GROUP_CONCATt(strength SEPARATOR', ') )
 as "strengths" FROM employee GROUP BYy emp_id )as emp GROUP BY dept_id;
@@ -124,7 +124,7 @@ as "strengths" FROM employee GROUP BYy emp_id )as emp GROUP BY dept_id;
 
 内部 SELECT 语句–
 
-```
+```sql
 SELECT dept_id, concat ( emp_id, ':',
 GROUP_CONCAT ( strength separator ', ' ) ) as "strengths"  
 FROM employee GROUP BY emp_id
@@ -160,7 +160,7 @@ FROM employee GROUP BY emp_id
 
 **注:**GROUP _ CONCAT()函数的结果被截断为最大长度，即 **1024** ，由系统变量 **group_concat_max_len** 给出。但是，group_concat_max_len 变量的值可以通过使用 **SET** 命令在运行时更改为-
 
-```
+```sql
 SET [GLOBAL | SESSION] group_concat_max_len = value;
 
 value: It is the new value set to the variable.

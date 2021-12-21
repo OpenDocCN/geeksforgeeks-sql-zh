@@ -14,7 +14,7 @@ SQL Server 中的这个函数用来以 **'YYYY-MM-DD hh:mm:ss.mmm'** 模式返�
 
 **语法:**
 
-```
+```sql
 GETDATE()
 ```
 
@@ -27,13 +27,13 @@ GETDATE()
 **示例-1 :**
 使用 GETDATE()函数并获取输出。
 
-```
+```sql
 SELECT GETDATE();
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-03 14:42:58.970
 ```
 
@@ -42,7 +42,7 @@ SELECT GETDATE();
 **示例-2 :**
 在下面的示例中使用 GETDATE()作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE get_date
 (
 id_num INT IDENTITY, 
@@ -56,7 +56,7 @@ PRIMARY KEY(id_num)
 
 **插入数据:**
 
-```
+```sql
 INSERT INTO get_date(message)
 VALUES('Its the first message.');
 
@@ -67,7 +67,7 @@ VALUES('get_date');
 
 **读取数据:**
 
-```
+```sql
 SELECT id_num, message, generated_at
 FROM get_date;
 ```

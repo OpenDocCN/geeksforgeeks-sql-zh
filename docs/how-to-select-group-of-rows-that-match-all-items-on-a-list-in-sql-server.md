@@ -21,7 +21,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -31,7 +31,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -41,7 +41,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE INT,
@@ -52,7 +52,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY KUMARI', 22, 'NEW DELHI'),
 ('PUSHKAR JHA',23, 'NEW DELHI'),
@@ -68,7 +68,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -84,13 +84,13 @@ SELECT * FROM demo_table;
 
 **语法:**
 
-```
+```sql
 SELECT *FROM table_name WHERE column_name IN (list);
 ```
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE AGE IN (21, 45, 23, 31);
 ```
 
@@ -102,7 +102,7 @@ SELECT * FROM demo_table WHERE AGE IN (21, 45, 23, 31);
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name
 JOIN STRING_SPLIT('list', 'separator')
 ON value = column_name;
@@ -110,7 +110,7 @@ ON value = column_name;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 JOIN STRING_SPLIT('21, 45, 23, 31', ',')
 ON value = AGE;

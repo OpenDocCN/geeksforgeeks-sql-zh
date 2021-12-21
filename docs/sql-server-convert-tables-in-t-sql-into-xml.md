@@ -10,7 +10,7 @@
 **示例–**
 下面是一个示例 XML 文档，如下所示。
 
-```
+```sql
 <email>
  <to>Manager</to>
  <from>Sruti</from>
@@ -24,7 +24,7 @@
 
 **创建表格–**员工 _ 表格
 
-```
+```sql
 CREATE TABLE Employee_Table  
 (  
 EmpId int identity(1,1) primary key,  
@@ -36,7 +36,7 @@ City varchar(20)
 
 **将数据插入员工表–**
 
-```
+```sql
 insert into Employee_Table ( Name,City,Salary)
 VALUES
 ('Sruti','Dhanbad',20000),
@@ -50,7 +50,7 @@ VALUES
 
 **读取数据进行验证–**
 
-```
+```sql
 SELECT * FROM Employee_Table
 ```
 
@@ -64,7 +64,7 @@ SELECT * FROM Employee_Table
 **使用 FOR XML AUTO–**
 FOR XML AUTO 类创建一个 XML 文档，其中每一列都是一个属性。
 
-```
+```sql
 SELECT * FROM Employee_Table
 FOR XML AUTO
 ```
@@ -80,7 +80,7 @@ FOR XML AUTO
 **使用 FOR XML PATH 子句–**
 FOR XML PATH 将创建一个 XML 文档，其中每行都嵌入到<行>和</行>子句中。每一行的每一列值都嵌入到<列名>和</列名>子句中。
 
-```
+```sql
 SELECT * FROM Car
 FOR XML PATH
 ```

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 CURRENT_TIME
     OR
 CURRENT_TIME(precision)
@@ -24,7 +24,7 @@ CURRENT_TIME(precision)
 **示例-1 :**
 使用 CURRENT_TIME 函数获取当前时间。
 
-```
+```sql
 SELECT CURRENT_TIME as Curr_time ;
 
 ```
@@ -38,7 +38,7 @@ SELECT CURRENT_TIME as Curr_time ;
 **示例-2 :**
 使用 CURRENT_TIME 函数获取当前时间，精度设置为 5。
 
-```
+```sql
 SELECT CURRENT_TIME(5) as Curr_time ;
 
 ```
@@ -52,7 +52,7 @@ SELECT CURRENT_TIME(5) as Curr_time ;
 **示例-3 :**
 使用 CURRENT_TIME 函数获取数字格式的当前时间。
 
-```
+```sql
 SELECT CURRENT_TIME + 0  as Curr_time ;
 
 ```
@@ -66,7 +66,7 @@ SELECT CURRENT_TIME + 0  as Curr_time ;
 **示例-4:**
 CURRENT _ TIME 函数可用于设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE DeliveryDetails (
 DeliveryId INT AUTO_INCREMENT,
 ProductId INT NOT NULL,
@@ -80,7 +80,7 @@ PRIMARY KEY(DeliveryId)
 
 在这里，我们将使用当前日期和当前时间功能，当交付将完成。“交付时间”列中的值将是当前时间给出的值，而“交付日期”列中的值将是当前日期函数给出的值。
 
-```
+```sql
 INSERT INTO  
 DeliveryDetails(ProductId, ProductName, Delivered_At, Delivered_On)
 VALUES
@@ -90,7 +90,7 @@ VALUES
 
 现在，检查交货详细信息表:
 
-```
+```sql
 SELECT * FROM DeliveryDetails;
 
 ```

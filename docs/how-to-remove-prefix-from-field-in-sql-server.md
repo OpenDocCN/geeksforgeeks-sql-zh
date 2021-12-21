@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE FLIGHT(
 PASSENGER_NAME VARCHAR(20),
 SEAT_NO INT,
@@ -47,7 +47,7 @@ DESTINATION VARCHAR(10));
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS FLIGHT;
 ```
 
@@ -59,7 +59,7 @@ EXEC SP_COLUMNS FLIGHT;
 
 **查询:**
 
-```
+```sql
 INSERT INTO FLIGHT VALUES('MR. MR. VINAYAK',11,'DEL');
 INSERT INTO FLIGHT VALUES('MR. MR. SINGH',06,'BOM');
 INSERT INTO FLIGHT VALUES('MR. MR. KHAN',32,'KOL');
@@ -75,7 +75,7 @@ INSERT INTO FLIGHT VALUES('MR. MR. KUMAR',16,'LKO');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM FLIGHT;
 ```
 
@@ -87,7 +87,7 @@ SELECT * FROM FLIGHT;
 
 **语法:**
 
-```
+```sql
 UPDATE TABLE_NAME
 SET COLUMN_NAME = RIGHT(COLUMN_NAME,LEN
 COLUMN_NAME)-LENGTH OF PREFIX TO BE REMOVED)
@@ -96,7 +96,7 @@ WHERE COLUMN_NAME LIKE 'PREFIX%';
 
 **查询:**
 
-```
+```sql
 UPDATE FLIGHT
 SET PASSENGER_NAME = RIGHT
 (PASSENGER_NAME,LEN(PASSENGER_NAME)-4)
@@ -111,7 +111,7 @@ WHERE PASSENGER_NAME LIKE 'MR. %';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM FLIGHT;
 ```
 

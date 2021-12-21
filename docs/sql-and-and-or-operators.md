@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name WHERE condition1 AND condition2 and ...conditionN;
 
 table_name: name of the table
@@ -27,7 +27,7 @@ condition1,2,..N : first condition, second condition and so on
 此运算符显示条件 1 和条件 2 中任一条件评估为真的记录。也就是说，条件 1 为真或条件 2 为真。
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name WHERE condition1 OR condition2 OR... conditionN;
 
 table_name: name of the table
@@ -43,7 +43,7 @@ condition1,2,..N : first condition, second condition and so on
 
 **查询**:
 
-```
+```sql
 SELECT * FROM Student WHERE Age = 18 AND ADDRESS = 'Delhi';
 ```
 
@@ -59,7 +59,7 @@ SELECT * FROM Student WHERE Age = 18 AND ADDRESS = 'Delhi';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student WHERE Age = 18 AND NAME = 'Ram';
 ```
 
@@ -75,7 +75,7 @@ SELECT * FROM Student WHERE Age = 18 AND NAME = 'Ram';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student WHERE NAME = 'Ram' OR NAME = 'SUJIT';
 ```
 
@@ -92,7 +92,7 @@ SELECT * FROM Student WHERE NAME = 'Ram' OR NAME = 'SUJIT';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student WHERE NAME = 'Ram' OR Age = 20;
 ```
 
@@ -111,7 +111,7 @@ SELECT * FROM Student WHERE NAME = 'Ram' OR Age = 20;
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name WHERE condition1 AND (condition2 OR condition3);
 ```
 
@@ -119,7 +119,7 @@ SELECT * FROM table_name WHERE condition1 AND (condition2 OR condition3);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student WHERE Age = 18 AND (NAME = 'Ram' OR NAME = 'RAMESH');
 ```
 

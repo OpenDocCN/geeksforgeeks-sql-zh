@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 Replace(string1, find, replacement, start, count) 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT Replace("geeksforgeeks", "e", "i") AS ReplaceString;
 ```
 
@@ -24,7 +24,7 @@ SELECT Replace("geeksforgeeks", "e", "i") AS ReplaceString;
 
 **示例–**
 
-```
+```sql
 SELECT Replace("geeksforgeeks", "g", "z", 4) AS ReplaceString;
 ```
 
@@ -38,13 +38,13 @@ SELECT Replace("geeksforgeeks", "g", "z", 4) AS ReplaceString;
 
 **语法:**
 
-```
+```sql
 Space(number) 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT len(Space(15)) AS SpaceString;
 ```
 
@@ -55,7 +55,7 @@ SELECT len(Space(15)) AS SpaceString;
 
 **示例–**
 
-```
+```sql
 SELECT len(Space(10)) AS SpaceString;
 ```
 

@@ -21,13 +21,13 @@ Working With sqldf in R
 
 为了使用 sqldf 包，首先按如下方式安装它:
 
-```
+```sql
 install.packages("sqldf")
 ```
 
 正确安装后，将包包含在 R 脚本中，如下所示:
 
-```
+```sql
 library(sqldf)
 ```
 
@@ -36,7 +36,7 @@ library(sqldf)
 
 ## r
 
-```
+```sql
 # Importing required library
 library(sqldf)
 
@@ -58,7 +58,7 @@ print(roads)
 
 **输出:**
 
-```
+```sql
   Year     Road       N_Crashes Volume
 1 1991 Interstate 65        25  40000
 2 1992 Interstate 65        37  41000
@@ -92,7 +92,7 @@ print(roads)
 
 ## r
 
-```
+```sql
 # Perform Left Join
 
 # Importing required library
@@ -125,7 +125,7 @@ tail(crashes_join_roads)
 
 **输出:**
 
-```
+```sql
   Year    Road        N_Crashes Volume  District   Length
 1 1991 Interstate 65        25  40000 Greenfield    262
 2 1992 Interstate 65        37  41000 Greenfield    262
@@ -149,7 +149,7 @@ crasses _ join _ roads 是一个由 sqldf 语句创建的新数据帧，它存�
 
 ## r
 
-```
+```sql
 # Perform Inner Join
 
 # Importing required package
@@ -181,7 +181,7 @@ tail(crashes_join_roads2)
 
 **输出:**
 
-```
+```sql
 
   Year     Road       N_Crashes Volume  District  Length
 1 1991 Interstate 65        25  40000 Greenfield    262
@@ -206,7 +206,7 @@ tail(crashes_join_roads2)
 
 ## r
 
-```
+```sql
 # Perform Merge operation
 
 # Import required library
@@ -230,7 +230,7 @@ tail(crashes_merge_roads2)
 
 **输出:**
 
-```
+```sql
 
      Road        Year  N_Crashes Volume    District    Length
 1 Interstate 275 1994        21  21200     <NA>     NA
@@ -259,7 +259,7 @@ r 可以执行与 SQL 完全相同的操作。因此，要使用包含任何条�
 
 ## r
 
-```
+```sql
 # Using where clause
 
 # Importing required library
@@ -291,7 +291,7 @@ tail(crashes_join_roads4)
 
 **输出:**
 
-```
+```sql
   Year  Road  N_Crashes Volume District   Length
 1 1991 US-40        46  21000 Greenfield    150
 2 1992 US-40       101  21500 Greenfield    150
@@ -316,7 +316,7 @@ tail(crashes_join_roads4)
 
 ## r
 
-```
+```sql
 # Perform aggregate operations
 
 # Import required library
@@ -342,7 +342,7 @@ sqldf(group_string)
 
 **输出:**
 
-```
+```sql
       Road         Mean_Crashes
 1 Interstate 275     24.95455
 2  Interstate 65    107.81818
@@ -356,7 +356,7 @@ sqldf()函数可用于执行某些类型的数据操作。要克服这些限制�
 
 ## r
 
-```
+```sql
 # Importing required library
 library(sqldf)
 library(plyr)
@@ -381,7 +381,7 @@ data.frame(
 
 **输出:**
 
-```
+```sql
 
      Road        Mean_Crashes   Q1_Crashes Q3_Crashes   Median_Crashes
 1 Interstate 65    107.81818      63.25     140.25          108.5

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 POWER(X, Y)
 
 ```
@@ -20,7 +20,7 @@ POWER(X, Y)
 
 **示例-1 :** 使用幂()函数求基数和指数都为正时的幂值。
 
-```
+```sql
 SELECT POWER( 5, 4) AS Power_Value ;
 
 ```
@@ -33,7 +33,7 @@ SELECT POWER( 5, 4) AS Power_Value ;
 
 **示例-2 :** 使用 Power()函数求基数和为正但指数为负时的幂值。
 
-```
+```sql
 SELECT POWER( 2, -4) AS Power_Value ;
 
 ```
@@ -46,7 +46,7 @@ SELECT POWER( 2, -4) AS Power_Value ;
 
 **示例-3 :** 使用 Power()函数，当基数和为负但指数为正时，求幂值。
 
-```
+```sql
 SELECT POWER( -3, 3) AS Power_Value ;
 
 ```
@@ -59,7 +59,7 @@ SELECT POWER( -3, 3) AS Power_Value ;
 
 **示例-4 :** 使用幂()函数求基数和指数都为负时的幂值。
 
-```
+```sql
 SELECT POWER( -3, -4) AS Power_Value ;
 
 ```
@@ -74,7 +74,7 @@ SELECT POWER( -3, -4) AS Power_Value ;
 
 **三角形。**
 
-```
+```sql
 CREATE TABLE Triangle(
 
     Type VARCHAR(25) NOT NULL,
@@ -87,7 +87,7 @@ CREATE TABLE Triangle(
 
 现在在三角形表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
     Triangle(Type, NoOfSides, Base, Height )
 VALUES
@@ -103,7 +103,7 @@ VALUES
 
 显示三角表–
 
-```
+```sql
 Select * from Triangle ;
 
 ```
@@ -119,7 +119,7 @@ T27】2T31 T62T67】8T69】3T73】直角三角形 T75】3【T77
 
 现在，我们要找到每个直角三角形的斜边和面积。
 
-```
+```sql
 SELECT 
     *,
     sqrt(POWER(Base, 2) + POWER(Height, 2))  AS Hypotenuse,

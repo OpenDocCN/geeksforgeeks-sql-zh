@@ -16,7 +16,7 @@ SQL Server 中的这个函数用来返回基于数字代码的 Unicode 字符。
 
 **语法:**
 
-```
+```sql
 NCHAR(number_code)
 ```
 
@@ -31,13 +31,13 @@ NCHAR(number_code)
 **示例-1 :**
 获取数字代码 65 的 Unicode 字符。
 
-```
+```sql
 SELECT NCHAR(65) AS NumberCodeToUnicode;
 ```
 
 **输出:**
 
-```
+```sql
 A
 ```
 
@@ -46,13 +46,13 @@ A
 **示例-2 :**
 获取指定十进制数 70.76 的 Unicode 字符。
 
-```
+```sql
 SELECT NCHAR(70.76) AS NumberCodeToUnicode;
 ```
 
 **输出:**
 
-```
+```sql
 F
 ```
 
@@ -61,7 +61,7 @@ F
 **示例-3 :**
 使用带有变量的 NCHAR()函数，获取指定数字代码 99 的 Unicode 字符。
 
-```
+```sql
 DECLARE @number_code INT;  
 SET @number_code = 99;  
 SELECT NCHAR(@number_code);
@@ -69,27 +69,27 @@ SELECT NCHAR(@number_code);
 
 **输出:**
 
-```
+```sql
 c
 ```
 
 **例-4 :**
 得到 Unicode 字符 125，这是“250/2”的结果。
 
-```
+```sql
 SELECT NCHAR(250/2);
 ```
 
 **输出:**
 
-```
+```sql
 }
 ```
 
 **示例-5 :**
 使用带有变量的 NCHAR()函数，获取指定浮点值“100.56”的 Unicode 字符。
 
-```
+```sql
 DECLARE @number_code Float;  
 SET @number_code = 100.56;  
 SELECT NCHAR(@number_code);
@@ -97,7 +97,7 @@ SELECT NCHAR(@number_code);
 
 **输出:**
 
-```
+```sql
 d
 ```
 

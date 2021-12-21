@@ -16,7 +16,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Product_details; USE Product_details;
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE Product_details; USE Product_details;
 
 **查询:**
 
-```
+```sql
 CREATE Table Products ( Order_date date, Sales int); 
 ```
 
@@ -42,7 +42,7 @@ CREATE Table Products ( Order_date date, Sales int);
 
 **查询:**
 
-```
+```sql
 INSERT INTO Products(Order_date,Sales)    
 VALUES('2021-01-01',20),('2021-03-02',32),('2021-02-03',45), 
 ('2021-01-04',31),('2021-03-05',33),('2021-01-06',19),
@@ -64,7 +64,7 @@ VALUES('2021-01-01',20),('2021-03-02',32),('2021-02-03',45),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Products; 
 ```
 
@@ -78,7 +78,7 @@ SQL Server 提供了 MONTH 和 YEAR 函数，允许我们从给定的日期分�
 
 **查询:**
 
-```
+```sql
 SELECT YEAR(Order_date) AS Year, 
 MONTH(Order_date) AS Month,SUM(Sales) 
 AS Total_Sales FROM Products   
@@ -95,7 +95,7 @@ GROUP BY YEAR(Order_date), MONTH(Order_date) ;
 
 **查询:**
 
-```
+```sql
 SELECT YEAR(Order_date) AS Year,MONTH(Order_date) 
 AS Month,COUNT(Sales) AS Count_Of_Sales     
 FROM Products GROUP BY YEAR(Order_date),MONTH(Order_date); 
@@ -107,7 +107,7 @@ FROM Products GROUP BY YEAR(Order_date),MONTH(Order_date);
 
 **查询:**
 
-```
+```sql
 SELECT YEAR(Order_date) AS Year, DATENAME(MONTH, Order_date) 
  AS Month, COUNT(Sales) AS Count_Of_Sales FROM Products 
  GROUP BY YEAR(Order_date), DATENAME(MONTH, Order_date); 
@@ -123,7 +123,7 @@ SELECT YEAR(Order_date) AS Year, DATENAME(MONTH, Order_date)
 
 **查询:**
 
-```
+```sql
 SELECT YEAR(Order_date) AS Year, DATENAME(MONTH, Order_date) 
 AS Month, COUNT(Sales) AS Count_Of_Sales FROM Products GROUP
 BY YEAR(Order_date), DATENAME(MONTH, Order_date) ORDER 

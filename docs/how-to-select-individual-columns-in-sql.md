@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE RESIDENTS(
 R_NAME VARCHAR(20),
 AGE INT,
@@ -47,7 +47,7 @@ FLAT INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS RESIDENTS;
 ```
 
@@ -59,7 +59,7 @@ EXEC SP_COLUMNS RESIDENTS;
 
 **查询:**
 
-```
+```sql
 INSERT INTO RESIDENTS VALUES('MICHAEL',45,904);
 INSERT INTO RESIDENTS VALUES('GARY',90,1105);
 INSERT INTO RESIDENTS VALUES('SCOTT',39,806);
@@ -75,7 +75,7 @@ INSERT INTO RESIDENTS VALUES('PAMELA',29,502);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM RESIDENTS;
 ```
 
@@ -87,13 +87,13 @@ SELECT * FROM RESIDENTS;
 
 **语法:**
 
-```
+```sql
 SELECT COLUMN_NAME FROM TABLE_NAME;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT R_NAME FROM RESIDENTS;
 ```
 
@@ -107,7 +107,7 @@ SELECT R_NAME FROM RESIDENTS;
 
 **查询:**
 
-```
+```sql
 SELECT AGE FROM RESIDENTS;
 ```
 
@@ -121,7 +121,7 @@ SELECT AGE FROM RESIDENTS;
 
 **查询:**
 
-```
+```sql
 SELECT FLAT FROM RESIDENTS;
 ```
 

@@ -15,7 +15,7 @@ SQL Server 中的这个函数用于检查所述表达式是否为数字。
 
 **语法:**
 
-```
+```sql
 ISNUMERIC(expression)
 
 ```
@@ -31,14 +31,14 @@ ISNUMERIC(expression)
 **示例-1 :**
 使用 ISNUMERIC()函数并获取输出。
 
-```
+```sql
 SELECT ISNUMERIC(1352);
 
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
@@ -47,14 +47,14 @@ SELECT ISNUMERIC(1352);
 **示例-2 :**
 使用 ISNUMERIC()函数并获取输出。
 
-```
+```sql
 SELECT ISNUMERIC('abd');
 
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
@@ -63,7 +63,7 @@ SELECT ISNUMERIC('abd');
 **示例-3 :**
 使用 ISNUMERIC()函数并使用变量获取输出。
 
-```
+```sql
 DECLARE @exp INT;
 SET @exp = 44;
 SELECT ISNUMERIC(@exp);
@@ -72,14 +72,14 @@ SELECT ISNUMERIC(@exp);
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-4 :**
 使用 ISNUMERIC()函数，并使用乘法运算和变量获得输出。
 
-```
+```sql
 DECLARE @exp INT;
 SET @exp = 30*7;
 SELECT ISNUMERIC(@exp);
@@ -88,7 +88,7 @@ SELECT ISNUMERIC(@exp);
 
 **输出:**
 
-```
+```sql
 1
 ```
 

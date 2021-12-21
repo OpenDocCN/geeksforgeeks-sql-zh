@@ -18,7 +18,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT ATAN(number);
 ```
 
@@ -36,13 +36,13 @@ SELECT ATAN(number);
 
 获取指定值的反正切-1
 
-```
+```sql
 SELECT ATAN(-1);
 ```
 
 **输出:**
 
-```
+```sql
 -0.78539816339744828
 ```
 
@@ -50,13 +50,13 @@ SELECT ATAN(-1);
 
 获取指定值的反正切 45
 
-```
+```sql
 SELECT ATAN(45);
 ```
 
 **输出:**
 
-```
+```sql
 1.5485777614681775
 ```
 
@@ -64,7 +64,7 @@ SELECT ATAN(45);
 
 使用带有变量的 ATAN()函数并获得指定值 0 的反正切。
 
-```
+```sql
 DECLARE @Parameter_Value INT;
 SET @Parameter_Value = 0;
 SELECT ATAN(@Parameter_Value);
@@ -72,7 +72,7 @@ SELECT ATAN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0.0
 ```
 
@@ -80,7 +80,7 @@ SELECT ATAN(@Parameter_Value);
 
 使用带有变量的 ATAN()函数，并获得指定浮点值“0.45”的反正切。
 
-```
+```sql
 DECLARE @Parameter_Value float;
 SET @Parameter_Value = 0.45;
 SELECT ATAN(@Parameter_Value);
@@ -88,7 +88,7 @@ SELECT ATAN(@Parameter_Value);
 
 **输出:**
 
-```
+```sql
 0.42285392613294071
 ```
 

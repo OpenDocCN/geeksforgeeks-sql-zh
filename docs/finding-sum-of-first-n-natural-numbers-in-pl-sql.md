@@ -7,7 +7,7 @@
 给定一个正整数 n，任务是求前 n 个自然数的和。
 **示例:**
 
-```
+```sql
 Input: n = 3
 Output: 10
 
@@ -18,7 +18,7 @@ Output: 4
 
 **方法**是从 1 到 n 取数字，然后像下面这样求和-
 
-```
+```sql
 Sum of first natural number: 1
 Sum of first and second natural number: 1 + 2 = 3
 Sum of first, second and third natural number = 1 + 2 + 3 = 6
@@ -26,7 +26,7 @@ Sum of first, second and third natural number = 1 + 2 + 3 = 6
 
 以下是所需的实现:
 
-```
+```sql
 --declaration section 
 DECLARE 
   x NUMBER; 
@@ -61,7 +61,7 @@ DECLARE 
 
 **输出:**
 
-```
+```sql
 Sum: 20
 ```
 
@@ -72,7 +72,7 @@ Sum: 20
 数学上，我们需要找到，σ((I *(I+1))/2)，其中 1 <= i <= n
 那么，让我们求解这个求和，
 
-```
+```sql
 Sum = Σ ((i * (i + 1))/2), where 1 <= i <= n
     = (1/2) * Σ (i * (i + 1))
     = (1/2) * Σ (i2 + i)
@@ -88,7 +88,7 @@ Sum = (1/2) * ((n * (n + 1) * (2*n + 1) / 6) + (n * ( n + 1) / 2))
 
 以下是所需的实现:
 
-```
+```sql
 --declaration section 
 DECLARE 
   x NUMBER; 
@@ -117,7 +117,7 @@ DECLARE 
 
 输出:
 
-```
+```sql
 Sum: 20
 ```
 

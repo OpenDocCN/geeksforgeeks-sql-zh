@@ -7,7 +7,7 @@
 
 示例:
 
-```
+```sql
 Input: 2 
 Output: even
 
@@ -20,7 +20,7 @@ Output: odd
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE
     -- Declare variable n, s, r, len
     -- and m of datatype number
@@ -41,7 +41,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Even
 
 ```

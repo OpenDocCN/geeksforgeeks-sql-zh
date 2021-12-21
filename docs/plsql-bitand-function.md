@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 BITAND(num1, num2)
 ```
 
@@ -28,7 +28,7 @@ BITAND(num1, num2)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 5;
    Test_Number number2 := 3;
@@ -42,7 +42,7 @@ END;
 
 **输出:**
 
-```
+```sql
 1
 ```
 
@@ -50,7 +50,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 5;
    Test_Number number2 := 0;
@@ -64,7 +64,7 @@ END;
 
 **输出:**
 
-```
+```sql
 0
 ```
 

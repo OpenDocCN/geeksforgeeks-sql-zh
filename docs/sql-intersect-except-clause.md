@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column-1, column-2 …… 
 FROM table 1
 WHERE…..
@@ -28,7 +28,7 @@ WHERE…..
 
 **查询:**
 
-```
+```sql
 SELECT ID, Name, Bonus 
 FROM
 table1 
@@ -55,7 +55,7 @@ ON table1.ID = table2.Employee_ID;
 
 **语法:**
 
-```
+```sql
 SELECT column-1, column-2 …… 
 FROM table 1
 WHERE…..
@@ -78,7 +78,7 @@ WHERE…..
 
 **查询:**
 
-```
+```sql
 SELECT ID, Name, Bonus 
 FROM
 table1 

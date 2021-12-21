@@ -12,7 +12,7 @@ CREATE SCHEMA 语句用于在当前数据库中创建新的架构。
 
 **语法:**
 
-```
+```sql
 CREATE SCHEMA schemaname
    [AUTHORIZATION ownername]
 GO
@@ -20,7 +20,7 @@ GO
 
 **示例–**
 
-```
+```sql
 CREATE SCHEMA geeks_sch;
 GO 
 ```
@@ -28,7 +28,7 @@ GO
 **要选择 SQL Server SCHEMA :**
 要列出当前数据库中的所有模式，请使用如下所示的查询:
 
-```
+```sql
 SELECT  *
 FROM sys.schemas 
 ```
@@ -60,14 +60,14 @@ FROM sys.schemas
 
 **语法:**
 
-```
+```sql
 CREATE TABLE schemaname.tablename(
  values... );
 ```
 
 **示例–**
 
-```
+```sql
 CREATE TABLE geeks_sch.Geektab(
 G_id INT PRIMARY KEY IDENTITY, 
 Name VARCHAR(200), 

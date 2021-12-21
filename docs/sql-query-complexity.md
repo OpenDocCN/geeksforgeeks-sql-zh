@@ -6,7 +6,7 @@
 
 **示例–**
 
-```
+```sql
 select * 
 from employee 
 where id = 77
@@ -29,12 +29,12 @@ where id = 77
 
     **示例–**
 
-    ```
+    ```sql
     select TOP 3 
     from employee
     ```
 
-    ```
+    ```sql
     select * 
     from employee limit 10
     ```
@@ -44,7 +44,7 @@ where id = 77
     **示例–**
     考虑以下查询:
 
-    ```
+    ```sql
     select * 
     from employee 
     where id = 77 or id = 85 or id = 69
@@ -52,7 +52,7 @@ where id = 77
 
     因此，您可以通过在中使用**来替换操作员**
 
-    ```
+    ```sql
     select * 
     from employee 
     where id in (77, 85, 69)

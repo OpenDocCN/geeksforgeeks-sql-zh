@@ -16,7 +16,7 @@
 
 **查询:**
 
-```
+```sql
 Create database sample
 ```
 
@@ -26,7 +26,7 @@ Create database sample
 
 **查询:**
 
-```
+```sql
 Use Sample 
 ```
 
@@ -36,7 +36,7 @@ Use Sample
 
 **查询:**
 
-```
+```sql
 CREATE TABLE COMPO
 (
 EMP_ID INT,
@@ -55,7 +55,7 @@ SALARY INT -->
 
 **查询:**
 
-```
+```sql
 EXEC sp_help COMPO;
 ```
 
@@ -69,7 +69,7 @@ EXEC sp_help COMPO;
 
 **查询:**
 
-```
+```sql
 INSERT INTO COMPO
 VALUES (101,001,'RAHUL','MALE',22000),
 (102,002,'RAJ','MALE',25000),
@@ -86,7 +86,7 @@ VALUES (101,001,'RAHUL','MALE',22000),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM  COMPO
 ```
 
@@ -100,7 +100,7 @@ SELECT * FROM  COMPO
 
 **查询:**
 
-```
+```sql
 SELECT EMPNAME,SALARY FROM COMPO WHERE EMP_ID= 102 AND DEPT_ID =6; 
 ```
 

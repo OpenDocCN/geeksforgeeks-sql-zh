@@ -6,19 +6,19 @@
 
 **步骤 1:** 使用如下 SQL 查询创建数据库学院。
 
-```
+```sql
 CREATE DATABASE college;
 ```
 
 **步骤 2:** 使用数据库学生使用如下 SQL 查询如下。
 
-```
+```sql
 USE college;
 ```
 
 **步骤 3:** 使用如下 SQL 查询创建一个包含 4 列的学生表。
 
-```
+```sql
 CREATE TABLE student
 (
     s_id varchar(20),
@@ -32,7 +32,7 @@ CREATE TABLE student
 
 **步骤 4:** 使用如下 SQL 查询查看数据库中表的描述。
 
-```
+```sql
 EXEC sp_columns student;
 ```
 
@@ -40,7 +40,7 @@ EXEC sp_columns student;
 
 **步骤 5:** 使用如下 SQL 查询将行插入 student_details 表。
 
-```
+```sql
 INSERT INTO student VALUES
 ('19102001','JOHNSON','E.C.E','john432@gmail.com'),
 ('19102002','VIVEK','E.C.E','VIVEK2252gmail.com'),
@@ -55,7 +55,7 @@ INSERT INTO student VALUES
 
 **步骤 6:** 使用如下 SQL 查询查看插入行后的表 student_details。
 
-```
+```sql
 SELECT * FROM student;
 ```
 
@@ -65,12 +65,12 @@ SELECT * FROM student;
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name
 WHERE attribute LIKE 'pattern';
 ```
 
-```
+```sql
 SELECT * FROM student
 WHERE s_email LIKE '%@gmail.com';
 ```

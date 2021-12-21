@@ -15,7 +15,7 @@ SQL 是一种不区分大小写的语言，即从产品中选择*与从产品中
 
 **语法:**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
@@ -23,7 +23,7 @@ CREATE DATABASE database_name;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE products(product_id int 
 primary key, product_name varchar(45),
  product_cost float);
@@ -33,7 +33,7 @@ primary key, product_name varchar(45),
 
 **查询:**
 
-```
+```sql
 INSERT INTO products VALUES
 (1001,'Colgate Toothpaste', 2.25),
 (1002, 'Sensodyne Toothpaste', 2.30),
@@ -46,7 +46,7 @@ INSERT INTO products VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM products;
 ```
 
@@ -58,7 +58,7 @@ SELECT * FROM products;
 
 **语法:**
 
-```
+```sql
 UPDATE table_name SET column_name1 = new_value1, 
 column_name2 = new_value2 ----  ;
 ```
@@ -71,7 +71,7 @@ column_name2 = new_value2 ----  ;
 
 **查询:**
 
-```
+```sql
 UPDATE products SET product_cost = 4;
 ```
 
@@ -83,7 +83,7 @@ UPDATE products SET product_cost = 4;
 
 **语法:**
 
-```
+```sql
 UPDATE table_name SET column_name1 = new_value1, 
 column_name2 = new_value2 ----  WHERE condition;
 ```
@@ -98,7 +98,7 @@ column_name2 = new_value2 ----  WHERE condition;
 
 **查询:**
 
-```
+```sql
 UPDATE products SET product_cost 
 = 4 WHERE product_id = 1001;
 ```

@@ -8,7 +8,7 @@ CONNECTION_ID()函数返回的值与信息模式的标识列中显示的值类�
 
 **语法:**
 
-```
+```sql
 CONNECTION_ID()
 ```
 
@@ -31,12 +31,12 @@ MySQL CONNECTION _ ID()函数返回一个整数值，代表当前唯一的连接
 
 **示例:**实现 CONNECTION_ID()函数。
 
-```
+```sql
 SELECT CONNECTION_ID(); 
 ```
 
 **输出:**
 
-```
+```sql
 1196078 
 ```

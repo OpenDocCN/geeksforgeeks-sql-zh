@@ -7,7 +7,7 @@ MySQL 中的这个函数用来返回给定字符串中第一个出现的子字�
 
 **语法:**
 
-```
+```sql
 INSTR(string_1, string_2)
 ```
 
@@ -30,7 +30,7 @@ INSTR(string_1, string_2)
 **例-1:**
 寻找子串的位置。
 
-```
+```sql
 SELECT INSTR("Python is a powerful Language", "powerful") 
 AS Found;
 ```
@@ -43,7 +43,7 @@ AS Found;
 **示例-2:**
 显示 INSTR()函数不区分大小写。
 
-```
+```sql
 SELECT  
  INSTR("Python is a powerful Language", "IS") 
 AS 'Found1';
@@ -59,7 +59,7 @@ AS 'Found2';
 **例-3:**
 如果在 string_1 中找不到 string_2。
 
-```
+```sql
 SELECT INSTR("Python is awesome", "hey") 
 AS Found;
 ```
@@ -73,26 +73,26 @@ AS Found;
 INSTR()函数中所有可能的错误。
 如果只通过一个参数。
 
-```
+```sql
 SELECT INSTR("Python is a powerful Language") 
 AS 'Found';
 ```
 
 **输出:**
 
-```
+```sql
 Incorrect parameter count in the call to native function 'INSTR'
 ```
 
 如果传递了三个或更多参数。
 
-```
+```sql
 SELECT INSTR("Python is a powerful Language", "is", "a", "lang) 
 AS 'Found';
 ```
 
 **输出:**
 
-```
+```sql
 Incorrect parameter count in the call to native function 'INSTR'
 ```

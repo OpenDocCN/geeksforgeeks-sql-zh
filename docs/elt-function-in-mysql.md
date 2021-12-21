@@ -7,7 +7,7 @@
 MySQL 中的 ELT [函数用于返回参数列表中指定的索引号处的字符串。在这个函数中有数字字段和字符串字段。
 **语法:**](https://www.geeksforgeeks.org/sql-functions-aggregate-scalar-functions/)
 
-```
+```sql
  ELT(N, string1, string2, string3, string4, …)
 
 ```
@@ -24,7 +24,7 @@ MySQL 中的 ELT [函数用于返回参数列表中指定的索引号处的字�
 **示例-1 :**
 使用 ELT()函数检索字符串。
 
-```
+```sql
 Select ELT(4, 'Learning', 'SQL', 'at', 'geeksforgeeks', 'is', 'fun') 
 As Res_Str;
 
@@ -39,7 +39,7 @@ As Res_Str;
 **示例-2 :**
 使用 ELT()函数检索字符串。
 
-```
+```sql
 Select ELT(1, 'Learning', 'SQL', 'at', 'geeksforgeeks', 'is', 'fun') 
 As Res_Str;
 
@@ -54,7 +54,7 @@ As Res_Str;
 **示例-3 :**
 当指定索引处没有字符串时，使用 ELT()函数检索字符串。
 
-```
+```sql
 Select ELT(8, 'Learning', 'SQL', 'at', 'geeksforgeeks', 'is', 'fun') 
 As Res_Str;
 

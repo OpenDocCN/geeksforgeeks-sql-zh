@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Test;
 ```
 
@@ -24,14 +24,14 @@ CREATE DATABASE Test;
 
 对于所有的方法，我们需要声明两个变量来存储分子和分母的值。
 
-```
+```sql
 DECLARE @Num1 INT;
 DECLARE @Num2 INT;
 ```
 
 声明变量后，我们必须设置值。将第二个变量值设置为零。
 
-```
+```sql
 SET @Num1=12;
 SET @Num2=0;
 ```
@@ -42,13 +42,13 @@ SET @Num2=0;
 
 **语法:**
 
-```
+```sql
 NULLIF(exp1, exp2);
 ```
 
 现在我们在分母中使用 NULLIF()函数，第二个参数值为零。
 
-```
+```sql
 SELECT @Num1/NULLIF(@Num2,0) AS Division;
 ```
 
@@ -60,7 +60,7 @@ SELECT @Num1/NULLIF(@Num2,0) AS Division;
 
 **查询:**
 
-```
+```sql
 DECLARE @Num1 INT;
 DECLARE @Num2 INT;
 SET @Num1=12;
@@ -78,7 +78,7 @@ SQL CASE 语句用于检查条件并返回一个值。它检查条件，直到�
 
 我们必须检查分母的值，即 Num2 变量的值。如果为零，则返回空值，否则返回常规除法。
 
-```
+```sql
 SELECT CASE
 WHEN @Num2=0
 THEN NULL
@@ -90,7 +90,7 @@ END AS Division;
 
 **查询:**
 
-```
+```sql
 DECLARE @Num1 INT;
 DECLARE @Num2 INT;
 SET @Num1=12;
@@ -112,7 +112,7 @@ END AS Division;
 
 像 ARITHBORT 一样，我们必须将 ANSI_WARNINGS 设置为 OFF，以避免出现错误消息。
 
-```
+```sql
 SET ARITHABORT OFF;
 SET ANSI_WARNINGS OFF;
 ```
@@ -121,7 +121,7 @@ SET ANSI_WARNINGS OFF;
 
 **查询:**
 
-```
+```sql
 SET ARITHABORT OFF;
 SET ANSI_WARNINGS OFF;
 DECLARE @Num1 INT;

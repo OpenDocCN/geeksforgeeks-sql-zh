@@ -7,7 +7,7 @@ MySQL 中的这个函数用于根据一年和天数值创建并返回一个日�
 
 **语法:**
 
-```
+```sql
 MAKEDATE(year, day)
 ```
 
@@ -26,7 +26,7 @@ MAKEDATE(year, day)
 
 基于年和天数值创建和返回日期。这里日期取 2020 年，天数 31。所以，MAKEDATE 函数将返回日期 31-01-2020。
 
-```
+```sql
 SELECT MAKEDATE(2020,31) AS NEWDATE ;
 ```
 
@@ -40,7 +40,7 @@ SELECT MAKEDATE(2020,31) AS NEWDATE ;
 
 基于年和天数值创建和返回日期。这里的日期是 2020 年，日数小于 0。因此，MAKEDATE 函数将返回空值。
 
-```
+```sql
 SELECT MAKEDATE(2020,-1) AS NEWDATE ;
 ```
 
@@ -54,7 +54,7 @@ SELECT MAKEDATE(2020,-1) AS NEWDATE ;
 
 基于年和天数值创建和返回日期。这里的日期是 2020 年，日数是 366。因此，MAKEDATE 函数将返回一年中的最后一天，因为它是闰年。
 
-```
+```sql
 SELECT MAKEDATE(2020,366) AS NEWDATE ;
 ```
 
@@ -68,7 +68,7 @@ SELECT MAKEDATE(2020,366) AS NEWDATE ;
 
 基于年和天数值创建和返回日期。这里日期取 2015 年，日号 366。因此，MAKEDATE 函数将返回第二年的第一天，即 2016 年 1 月 1 日。
 
-```
+```sql
 SELECT MAKEDATE(2015,366) AS NEWDATE ;
 ```
 

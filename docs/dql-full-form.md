@@ -19,7 +19,7 @@
 **示例:**
 如果用户想从员工表中检索所有的，必须给出如下查询:
 
-```
+```sql
 select *
 from employee;  
 ```
@@ -28,7 +28,7 @@ from employee;
 
 如果用户想知道员工的平均工资，必须给出如下查询:
 
-```
+```sql
 select avg(salary) 
 from employee; 
 ```
@@ -38,7 +38,7 @@ from employee;
 
 如果用户想知道工资低于 1 万的员工姓名；查询为:
 
-```
+```sql
 select ename 
 from employee 
 where salary<=10, 000; 

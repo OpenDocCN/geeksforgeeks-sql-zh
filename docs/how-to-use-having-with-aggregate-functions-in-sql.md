@@ -20,7 +20,7 @@ SQL 提供了许多执行任务的内置函数。有 4 种类型的函数:日期
 
 **语法:**
 
-```
+```sql
 SELECT column_name(s) 
 FROM table_name 
 WHERE condition 
@@ -36,7 +36,7 @@ LIMIT value;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
@@ -44,7 +44,7 @@ CREATE DATABASE database_name;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE PRODUCTS(product_id int primary key, product_name varchar(45), product_cost float);
 ```
 
@@ -52,7 +52,7 @@ CREATE TABLE PRODUCTS(product_id int primary key, product_name varchar(45), prod
 
 **查询:**
 
-```
+```sql
 INSERT INTO PRODUCTS VALUES 
 (1001, 'Colgate Toothpaste', 2.25), (1002 'T-Shirt', 5), 
 (1003, 'Jeans', 6.5), (1004, 'Shorts', 4.5), 
@@ -64,7 +64,7 @@ INSERT INTO PRODUCTS VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM products;
 ```
 
@@ -76,7 +76,7 @@ SELECT * FROM products;
 
 **查询:**
 
-```
+```sql
 SELECT product_name, product_cost  
 FROM products  
 GROUP BY product_name, product_cost  
@@ -100,7 +100,7 @@ ORDER BY product_cost;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM products;
 ```
 
@@ -108,7 +108,7 @@ SELECT * FROM products;
 
 **查询 1(查找最高价格大于 7 的产品)**
 
-```
+```sql
 SELECT product_name 
 FROM products 
 GROUP BY product_name 
@@ -121,7 +121,7 @@ HAVING MAX(product_cost) > 7;
 
 **查询 2(查找最低价格低于 3 的产品)**
 
-```
+```sql
 SELECT product_name 
 FROM products 
 GROUP BY product_name 
@@ -138,7 +138,7 @@ HAVING MIN(product_cost) < 3;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM products;
 ```
 
@@ -148,7 +148,7 @@ SELECT * FROM products;
 
 **查询:**
 
-```
+```sql
 SELECT product_name
 FROM products
 GROUP BY product_name
@@ -167,7 +167,7 @@ HAVING AVG(product_cost) > (SELECT AVG(product_cost) FROM products);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
@@ -175,7 +175,7 @@ CREATE DATABASE database_name;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE login(signin_id int PRIMARY KEY ,customer_id int, date_login date);
 ```
 
@@ -183,7 +183,7 @@ CREATE TABLE login(signin_id int PRIMARY KEY ,customer_id int, date_login date);
 
 **查询:**
 
-```
+```sql
 INSERT INTO login values
 (1, 121, '2021-10-21'), (2, 135, '2021-05-25'),  
 (3, 314, '2021-03-13'), (4, 245, '2021-07-19'),  
@@ -196,7 +196,7 @@ INSERT INTO login values
 
 **查询:**
 
-```
+```sql
 SELECT * FROM login;
 ```
 
@@ -208,7 +208,7 @@ SELECT * FROM login;
 
 **查询:**
 
-```
+```sql
 SELECT customer_id  
 FROM login
  GROUP BY customer_id 

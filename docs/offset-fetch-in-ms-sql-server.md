@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 order by column_list[ASC|DESC]
 Offset offset_row count{ROW|ROWS}
 Fetch{FIRST|NEXT} fetch row_count {ROW|ROWS} only
@@ -38,7 +38,7 @@ Fetch{FIRST|NEXT} fetch row_count {ROW|ROWS} only
 
 如果用户想跳过前两行并返回其余行，查询给出如下
 
-```
+```sql
 select name, rollnumber, course
 from student 
 order by rollnumber ASC
@@ -60,7 +60,7 @@ offset 2 ROWS
 
 偏移跳过查询中指定的行数，而按 ASC 排序从升序到降序排列行。如果用户想要跳过前 6 行并获取下一行，查询给出如下
 
-```
+```sql
 select name, rollnumber, course 
 from student
 order by roll number ASC

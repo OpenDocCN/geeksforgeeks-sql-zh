@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SQRT(X)
 
 ```
@@ -22,7 +22,7 @@ MySQL 中的 SQRT 函数接受一个参数，根据输入给出结果。在下�
 **示例-1 :**
 将 SQRT()函数应用于一个平方数。
 
-```
+```sql
 SELECT SQRT(4) AS Root_Val;
 
 ```
@@ -36,7 +36,7 @@ SELECT SQRT(4) AS Root_Val;
 **示例-2 :**
 将 SQRT()函数应用于非平方数。
 
-```
+```sql
 SELECT SQRT(14) AS Root_Val;
 
 ```
@@ -50,7 +50,7 @@ SELECT SQRT(14) AS Root_Val;
 **示例-3 :**
 对负数应用 SQRT()函数。
 
-```
+```sql
 SELECT SQRT(-14) AS Root_Val;
 
 ```
@@ -75,7 +75,7 @@ SELECT SQRT(-14) AS Root_Val;
 | Sixty-five point four two |
 | -10 |
 
-```
+```sql
 SELECT X, SQRT(X) AS X_Root  FROM Number ;
 
 ```

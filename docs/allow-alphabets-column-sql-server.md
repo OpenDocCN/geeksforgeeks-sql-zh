@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 CONSTRAINT (Constraint_Name) 
 CHECK ( BOOLEAN EXPRESSION)
 ```

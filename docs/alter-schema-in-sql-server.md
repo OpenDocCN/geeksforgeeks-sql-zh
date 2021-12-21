@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 ALTER SCHEMA target_schema_name    
    TRANSFER [ object_type :: ] object_name;
 
@@ -23,7 +23,7 @@ ALTER SCHEMA target_schema_name
 **示例:**
 让我们在 **dbo** 模式中创建名为**极客选项卡**的表:
 
-```
+```sql
 CREATE TABLE dbo.geektab
 (id INT PRIMARY KEY IDENTITY,
 name NVARCHAR(40) NOT NULL,
@@ -35,14 +35,14 @@ address NVARCHAR(255) NOT NULL);
 
 插入 dbo.geektab (id、名称、地址)
 
-```
+```sql
 VALUES (1, 'Neha', 'B-Wing, Delhi'), (2, 'Vineet', 'D-Wing, Noida');
 
 ```
 
 让我们创建一个存储过程来查找 id:
 
-```
+```sql
 CREATE PROCEDURE sp_get_id(@id INT
 ) AS
 BEGIN
@@ -63,7 +63,7 @@ END;
 
 SQL Server 将抛出类似下面提到的错误:
 
-```
+```sql
 strong>Msg 208, Level 16, State 1, Procedure sp_get_id, Line 3
 Invalid object name 'dbo.geektab'
 
@@ -71,7 +71,7 @@ Invalid object name 'dbo.geektab'
 
 现在，让我们手动修改存储过程以反映 geek 模式:
 
-```
+```sql
 ALTER PROCEDURE sp_get_id( @id INT
 ) AS
 BEGIN SELECT *
@@ -83,7 +83,7 @@ END;
 
 运行 sp_get_id 存储过程:
 
-```
+```sql
 EXEC sp_get_id 1; 
 ```
 

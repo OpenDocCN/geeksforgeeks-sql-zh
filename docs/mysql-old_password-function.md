@@ -8,7 +8,7 @@ MySQL 服务器使用该函数来加密 MySQL 密码，以便存储在用户授�
 
 **语法:**
 
-```
+```sql
 OLD_PASSWORD( plain_string )
 ```
 
@@ -30,52 +30,52 @@ MySQL 中的 OLD_PASSWORD 函数返回一个散列字符串。
 
 **示例-1:** 在字符串上实现 OLD_PASSWORD 函数。
 
-```
+```sql
 SELECT 
 OLD_PASSWORD('xyz'); 
 ```
 
 **输出:**
 
-```
+```sql
 5re6hsuy7dsvgs25 
 ```
 
 **示例-2:** 在包含字符和整数值的字符串上实现 OLD_PASSWORD。
 
-```
+```sql
 SELECT 
 OLD_PASSWORD('xyz123'); 
 ```
 
 **输出:**
 
-```
+```sql
 56fsrfshg312nsh34wf51 
 ```
 
 **示例-3:** 在更大的字符串上实现 OLD_PASSWORD 函数。
 
-```
+```sql
 SELECT 
 OLD_PASSWORD('geeksforgeeks'); 
 ```
 
 **输出:**
 
-```
+```sql
 98dsygdy5syg43gs21 
 ```
 
 **示例-4:** 在空字符串上实现 OLD_PASSWORD 函数。
 
-```
+```sql
 SELECT 
 OLD_PASSWORD('NULL'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

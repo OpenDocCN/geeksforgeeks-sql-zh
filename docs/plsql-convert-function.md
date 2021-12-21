@@ -10,7 +10,7 @@ PLSQL 中的 CONVERT 函数用于将字符串从一个字符集转换为另一�
 
 **语法:**
 
-```
+```sql
 CONVERT( string1, char_set_to [, char_set_from] )
 ```
 
@@ -45,7 +45,7 @@ CONVERT( string1, char_set_to [, char_set_from] )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_String string(10) := 'A B C D';
    Test_String2 string(20) := 'E Ä Ê Í';
@@ -59,7 +59,7 @@ END;
 
 **输出:**
 
-```
+```sql
 A B C D
 E A E I
 ```

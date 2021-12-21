@@ -31,7 +31,7 @@ DCL 命令是一种语句，用于执行与数据库系统的权限、权限和�
 
 **语法:**
 
-```
+```sql
 GRANT privilege_list
 ON Object_name
 TO user_name;
@@ -44,7 +44,7 @@ TO user_name;
 
 **语法:**
 
-```
+```sql
 REVOKE privilege_list
 ON object_name
 FROM user_name;

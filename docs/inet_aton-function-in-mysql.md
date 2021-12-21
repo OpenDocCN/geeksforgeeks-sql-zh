@@ -10,7 +10,7 @@ MySQL 中的这个函数将 IPv4 地址的四点表示作为字符串，并以�
 
 **语法:**
 
-```
+```sql
 INET_ATON(expr)
 ```
 
@@ -28,7 +28,7 @@ INET_ATON(expr)
 
 借助 INET_ATON 函数检查以下地址“1.6.5.0”的等效整数表示。由于这是一个有效的 IPv4 地址，我们将得到一个整数的结果。
 
-```
+```sql
 SELECT INET_ATON('1.6.5.0')  AS AddressInInteger ;
 ```
 
@@ -46,7 +46,7 @@ SELECT INET_ATON('1.6.5.0')  AS AddressInInteger ;
 
 借助 INET_ATON 函数检查以下地址“:1.6”的等效整数表示。由于它不是有效的 IPv4 地址，我们将得到空值。
 
-```
+```sql
  SELECT INET_ATON('::1.6')  AS AddressInInteger ;
 ```
 
@@ -64,7 +64,7 @@ SELECT INET_ATON('1.6.5.0')  AS AddressInInteger ;
 
 借助 INET_ATON 函数检查以下地址“115.16.55.255”的等效整数表示。由于这是一个有效的 IPv4 地址，我们将得到一个整数的结果。
 
-```
+```sql
  SELECT INET_ATON('15.16.55.255')  AS AddressInInteger ;
 ```
 
@@ -82,7 +82,7 @@ SELECT INET_ATON('1.6.5.0')  AS AddressInInteger ;
 
 借助 INET_ATON 函数检查以下 IPv6 地址“fdfe::5a55:caff:fefa:9089”的等效整数表示形式。
 
-```
+```sql
 SELECT INET_ATON('fdfe::5a55:caff:fefa:9089')  AS AddressInInteger ;
 ```
 

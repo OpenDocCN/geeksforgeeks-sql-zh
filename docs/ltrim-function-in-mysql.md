@@ -7,7 +7,7 @@ MySQL 中的这个函数用于删除字符串中的前导空格。
 
 **语法:**
 
-```
+```sql
 LTRIM(str)
 ```
 
@@ -22,7 +22,7 @@ LTRIM(str)
 **示例-1 :**
 使用 LTRIM 函数移除给定字符串的所有前导空格。
 
-```
+```sql
 SELECT '    geeksforgeeks'  As OriginalString,
 LTRIM ('    geeksforgeeks')  AS LeftTrimmedString;
 ```
@@ -36,7 +36,7 @@ LTRIM ('    geeksforgeeks')  AS LeftTrimmedString;
 **示例-2 :**
 使用 LTRIM 函数移除给定字符串的所有前导空格。
 
-```
+```sql
 SELECT '    MySQL' AS String, 
 RTRIM ('MySQL')  AS Tstring;
 ```
@@ -50,7 +50,7 @@ RTRIM ('MySQL')  AS Tstring;
 **示例-3 :**
 LTRIM 函数也可以用来删除列数据的所有前导空格。为了演示，创建一个名为 Employee 的表。
 
-```
+```sql
 CREATE TABLE Employee
 (
  Employee_id INT AUTO_INCREMENT,  
@@ -62,7 +62,7 @@ CREATE TABLE Employee
 
 **在员工表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Employee
 (Employee_name, Joining_Date )
 VALUES
@@ -79,7 +79,7 @@ VALUES
 
 因此，员工表如下。
 
-```
+```sql
 select * from Employee ;
 ```
 
@@ -99,7 +99,7 @@ select * from Employee ;
 
 现在，我们将从 Employee_name 列中删除所有前导空格。
 
-```
+```sql
  SELECT  
  Employee_id,  Employee_name,
  LTRIM( Employee_name) AS  TrimmedEname  

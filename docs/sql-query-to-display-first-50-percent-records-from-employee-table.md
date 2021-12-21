@@ -10,13 +10,13 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -24,7 +24,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下员工表:
 
-```
+```sql
 CREATE TABLE Employee(
 ID INT PRIMARY KEY AUTO_INCREMENT,
 NAME VARCHAR(30) NOT NULL,
@@ -35,7 +35,7 @@ DATE_OF_JOINING DATE);
 
 您可以使用以下命令查看表格说明:
 
-```
+```sql
  EXEC SP_COLUMNS Employee;
 ```
 
@@ -45,7 +45,7 @@ DATE_OF_JOINING DATE);
 
 使用以下语句向*员工*表添加数据:
 
-```
+```sql
 INSERT INTO Employee (NAME, PHONE, EMAIL, DATE_OF_JOINING)
 VALUES
 ('Yogesh Vaishnav', 0000000001, 'yogesh@mail.com', '2019-10-03'),
@@ -62,7 +62,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 
@@ -80,7 +80,7 @@ SELECT * FROM Employee;
 
 **示例:**
 
-```
+```sql
 select top 50 percent * from Employee;
 ```
 

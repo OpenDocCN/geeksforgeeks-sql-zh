@@ -6,7 +6,7 @@
 
 **语法–**
 
-```
+```sql
 InStr(start, string1, string2, compare)
 ```
 
@@ -28,7 +28,7 @@ InStr(start, string1, string2, compare)
 
 **示例–**
 
-```
+```sql
 SELECT InStr("geeksforgeeks", "f") 
 AS MatchPosition;
 ```
@@ -40,7 +40,7 @@ AS MatchPosition;
 
 **示例–**
 
-```
+```sql
 SELECT InStr("DSA self paced", "a") 
 AS MatchPosition;
 ```
@@ -55,13 +55,13 @@ InstrRev()函数的工作方式类似于 Instr()函数，但它返回一个字�
 
 **语法:**
 
-```
+```sql
 InstrRev(string1, string2, start, compare)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT InStrRev("geeksforgeeks", "k") 
 AS MatchPosition;
 ```
@@ -73,7 +73,7 @@ AS MatchPosition;
 
 **示例–**
 
-```
+```sql
 SELECT InStrRev("gfg", "k") 
 AS MatchPosition;
 ```

@@ -11,7 +11,7 @@
 **语法:**
 语法写一个查询来交换 SQL server 中的列值。
 
-```
+```sql
 UPDATE [tablename]
 SET [col1] = [col2],
    [col2] = [col1]
@@ -24,7 +24,7 @@ GO
 **示例–**
 让我们假设我们在表下方有“geek_demo”。
 
-```
+```sql
 Select * from geek_demo ;
 
 ```
@@ -40,7 +40,7 @@ Select * from geek_demo ;
 
 现在，要更新列或交换列，请使用下面给出的查询。
 
-```
+```sql
 UPDATE [geek_demo]
 SET [FirstName] = [LastName], 
 [LastName] = [FirstName]
@@ -50,7 +50,7 @@ GO
 
 现在，让我们看看输出。
 
-```
+```sql
 Select * from geek_demo ;
 ```
 

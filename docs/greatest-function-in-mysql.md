@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 GREATEST(X1, X2, X3, ...)
 ```
 
@@ -17,7 +17,7 @@ GREATEST(X1, X2, X3, ...)
 **示例-1 :**
 使用最大()函数寻找给定数字之间的最大值。
 
-```
+```sql
 SELECT GREATEST(10, 20, 30, 40, 50) AS Greatest_Value;
 ```
 
@@ -30,7 +30,7 @@ SELECT GREATEST(10, 20, 30, 40, 50) AS Greatest_Value;
 **示例-2 :**
 使用最大()函数查找给定字符串之间的最大值。
 
-```
+```sql
 SELECT GREATEST('MySQL', 'MS ACCESS', 'SQL') AS  GreatestValue_String;
 ```
 
@@ -43,7 +43,7 @@ SELECT GREATEST('MySQL', 'MS ACCESS', 'SQL') AS  GreatestValue_String;
 **示例-3 :**
 当存在空值时，使用最大()函数在给定数字之间寻找最大数字。
 
-```
+```sql
 SELECT GREATEST(10, 20, 30, 40, 50, NULL) AS Greatest_Value;
 ```
 
@@ -56,7 +56,7 @@ SELECT GREATEST(10, 20, 30, 40, 50, NULL) AS Greatest_Value;
 **示例-4 :**
 最大值函数也可以用来查找列数据之间的最大值。为了演示，创建一个名为**学生**的表格。
 
-```
+```sql
 CREATE TABLE Student(
     Student_id INT AUTO_INCREMENT,  
     Student_name VARCHAR(100) NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE Student(
 
 现在向学生表中插入一些数据–
 
-```
+```sql
 INSERT INTO  
     Student(Student_name, Student_Class, Subject1, Subject2, Subject3, Subject4)
 VALUES
@@ -84,7 +84,7 @@ VALUES
 
 显示学生表中的所有数据–
 
-```
+```sql
 Select * 
 From Student ;
 ```
@@ -99,7 +99,7 @@ From Student ;
 
 现在，我们要为每一个学生找到所有科目的最高分。
 
-```
+```sql
 Select Student_id, Student_name, 
 GREATEST(Subject1, Subject2, Subject3, Subject4) AS Greatest_Mark
 FROM Student;

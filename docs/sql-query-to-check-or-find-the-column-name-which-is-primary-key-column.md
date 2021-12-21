@@ -6,19 +6,19 @@
 
 **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
 **使用上面创建的数据库:**
 
-```
+```sql
 USE geeksforgeeks;
 ```
 
 **创建表格:**
 
-```
+```sql
 CREATE TABLE interns(
     id SERIAL PRIMARY KEY, 
     name VARCHAR(30),
@@ -30,7 +30,7 @@ CREATE TABLE interns(
 
 **查看上面创建的表的描述:**
 
-```
+```sql
 DESC interns;
 ```
 
@@ -38,7 +38,7 @@ DESC interns;
 
 **将数据插入表中:**
 
-```
+```sql
 INSERT INTO interns(name, gender, mobile, email, city) VALUES ('Richa', 'F', '7999022923', 'richa@gmail.com', 'Delhi');
 INSERT INTO interns(name, gender, mobile, email, city) VALUES ('Shivam', 'M', '9999028833', 'shivam@gmail.com', 'Pune');
 INSERT INTO interns(name, gender, mobile, email, city) VALUES ('Varnika', 'F', '7919490007', 'varnika@gmail.com', 'Mumbai');
@@ -49,7 +49,7 @@ INSERT INTO interns(name, gender, mobile, email, city) VALUES ('Abhishek', 'M', 
 
 **查看插入数据:**
 
-```
+```sql
 SELECT * FROM interns;
 ```
 
@@ -75,7 +75,7 @@ SELECT * FROM interns;
 
 **示例:**
 
-```
+```sql
 SELECT K.COLUMN_NAME FROM  
 INFORMATION_SCHEMA.TABLE_CONSTRAINTS T
 JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE K
@@ -93,13 +93,13 @@ AND T.CONSTRAINT_TYPE='PRIMARY KEY' LIMIT 1;
 
 信息模式。TABLE_CONSTRAINTS 是一个表，它包含了迄今为止在任何数据库中创建的所有表的信息。我们需要这个表来验证约束类型。您可以通过运行下面的查询来查看表格提供的信息。
 
-```
+```sql
 SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS;
 ```
 
 此外，我们还有 INFORMATION_SCHEMA。描述哪些键列有约束的键列使用表。我们需要这个表来获得列名。您可以通过运行下面的查询来查看表格提供的信息。
 
-```
+```sql
 SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE;
 ```
 

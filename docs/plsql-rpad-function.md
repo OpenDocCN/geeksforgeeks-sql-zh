@@ -12,7 +12,7 @@ input_string 和 pad_string 可以是 CHAR、VARCHAR2、NCHAR、NVARCHAR2、CLOB
 
 **语法:**
 
-```
+```sql
 RPAD( input_string, padded_length, pad_string)
 ```
 
@@ -32,7 +32,7 @@ RPAD( input_string, padded_length, pad_string)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -44,13 +44,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeks 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -62,13 +62,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks  
 ```
 
 **例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -80,13 +80,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks0000 
 ```
 
 **例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -98,6 +98,6 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeek 
 ```

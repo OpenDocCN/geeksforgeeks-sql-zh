@@ -8,19 +8,19 @@
 
 **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
 **这是我们表中的** ***极客*** **数据库**
 
-```
+```sql
 CREATE TABLE department(
     ID int,
     SALARY int,
@@ -30,7 +30,7 @@ CREATE TABLE department(
 
 **查看表格:**
 
-```
+```sql
 EXEC sp_column department;
 ```
 
@@ -38,7 +38,7 @@ EXEC sp_column department;
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO department VALUES (1, 34000, 'ANURAG', 'UI DEVELOPERS');
 INSERT INTO department VALUES (2, 33000, 'harsh', 'BACKEND DEVELOPERS');
 INSERT INTO department VALUES (3, 36000, 'SUMIT', 'BACKEND DEVELOPERS');
@@ -50,7 +50,7 @@ INSERT INTO department VALUES (5, 37000, 'KAE', 'UI DEVELOPERS');
 
 **这是我们表里面的数据:**
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -68,7 +68,7 @@ SELECT * FROM department;
 
 **例 1:** 在这个例子中，我们会找到以 h 开头的名字。
 
-```
+```sql
  SELECT * FROM department WHERE NAME LIKE 'H%';
 ```
 
@@ -78,7 +78,7 @@ SELECT * FROM department;
 
 **例 2:** 在这个例子中，我们会找到以 r 开头的名字。
 
-```
+```sql
  SELECT * FROM department WHERE NAME LIKE 'R%';
 ```
 

@@ -9,7 +9,7 @@
 *   **NVL(expr1, expr2)** : In SQL, NVL() converts a null value to an actual value. Data types that can be used are date, character and number. Data type must match with each other i.e. expr1 and expr2 must of same data type.
     **Syntax –**
 
-    ```
+    ```sql
     NVL (expr1, expr2)
 
     ```
@@ -19,7 +19,7 @@
 
     示例–
 
-    ```
+    ```sql
     SELECT  salary, NVL(commission_pct, 0),
         (salary*12) + (salary*12*NVL(commission_pct, 0))
           annual_salary FROM employees;
@@ -33,7 +33,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     NVL2 (expr1, expr2, expr3)
 
     ```
@@ -44,7 +44,7 @@
 
     示例–
 
-    ```
+    ```sql
     SELECT last_name, salary, commission_pct,
      NVL2(commission_pct, ’SAL+COMM’, ’SAL’)
      income FROM employees;
@@ -60,7 +60,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     DECODE(col|expression, search1, result1 
      [, search2, result2,...,][, default])
 
@@ -68,7 +68,7 @@
 
     示例–
 
-    ```
+    ```sql
     SELECT last_name, job_id, salary,
        DECODE(job_id, ’IT_PROG’, 1.10*salary,
         ’ST_CLERK’, 1.15*salary,
@@ -85,14 +85,14 @@
 
 **语法–**
 
-```
+```sql
 COALESCE (expr_1, expr_2, ... expr_n)
 
 ```
 
 示例–
 
-```
+```sql
 SELECT last_name, 
     COALESCE(commission_pct, salary, 10) comm
     FROM employees ORDER BY commission_pct;
@@ -106,14 +106,14 @@ SELECT last_name,
 
     **语法–**
 
-    ```
+    ```sql
     NULLIF (expr_1, expr_2)
 
     ```
 
     示例–
 
-    ```
+    ```sql
     SELECT LENGTH(first_name) "expr1",
        LENGTH(last_name) "expr2",
        NULLIF(LENGTH(first_name),LENGTH(last_name))
@@ -128,14 +128,14 @@ SELECT last_name,
 
     **语法–**
 
-    ```
+    ```sql
     LNNVL( condition(s) )
 
     ```
 
     示例–
 
-    ```
+    ```sql
     SELECT COUNT(*) FROM employees 
           WHERE commission_pct < .2; 
 
@@ -147,7 +147,7 @@ SELECT last_name,
     现在上面的例子根本没有考虑那些没有提成的员工。
     为了也包含它们，我们使用了 LNNVL()
 
-    ```
+    ```sql
     SELECT COUNT(*) FROM employees 
       WHERE LNNVL(commission_pct >= .2); 
 
@@ -160,7 +160,7 @@ SELECT last_name,
 
     **语法–**
 
-    ```
+    ```sql
     NANVL( n1 , n2 )
     ```
 
@@ -169,7 +169,7 @@ SELECT last_name,
 
     示例–
 
-    ```
+    ```sql
     SELECT bin_float, NANVL(bin_float,0)
       FROM nanvl_demo;
 

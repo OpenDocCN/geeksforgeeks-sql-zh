@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 select * from(
 select ename, sal, dense_rank() 
 over(order by sal desc)r from Employee) 
@@ -36,7 +36,7 @@ To find 3rd highest sal set n = 3 and so on.
 **备选方案:**
 —————————————
 
-```
+```sql
 CREATE TABLE `Employee` ( 
 `ENAME` varchar(225) COLLATE utf8_unicode_ci NOT NULL, 
 `SAL` bigint(20) unsigned NOT NULL, 
@@ -46,7 +46,7 @@ PRIMARY KEY (`ENAME`) 
 
 ————————————————————————————————————————————————————-
 
-```
+```sql
 6th highest
 mysql> select * from ((select * from Employee 
        ORDER BY `sal` DESC limit 6 ) AS T) 
@@ -64,7 +64,7 @@ select * from Employee ORDER BY `sal` DESC limit 5,1; // will return 6th highest
 
 ——————————————————————————————————————————————————–
 
-```
+```sql
 mysql> select * from Employee;
 +-------+-----+
 | ENAME | SAL |
@@ -92,7 +92,7 @@ mysql> select * from Employee;
 
 **查询**:
 
-```
+```sql
 SELECT * FROM Employee WHERE sal = 
          (
             SELECT MIN(sal) FROM Employee 
@@ -109,7 +109,7 @@ SELECT * FROM Employee WHERE sal =
 *   考虑 N = 4。
 *   从最内部的查询开始，查询:“*选择 DISTINCT TOP**4**sal FROM Employee ORDER BY sal desc*”将产生以下结果:
 
-```
+```sql
 51000
 39800
 35000
@@ -118,14 +118,14 @@ SELECT * FROM Employee WHERE sal =
 
 *   下一个外部查询是:“*从员工处选择最小(sal)sal IN(Result _ Set _ of _ Previous _ Query)*”。这将返回以下结果:
 
-```
+```sql
 31500
 ```
 
 *   可以看到上面返回的结果是要求的第四高工资。
 *   接下来是最外层的查询，即:“*SELECT * FROM Employee WHERE sal = Result _ of _ Previous _ Query*”。该查询将返回薪资第四高的员工的详细信息。
 
-```
+```sql
 ________________________
 ename             sal
 ________________________
@@ -137,14 +137,14 @@ ________________________
 **另一种解决方案–**
 这里 N =第 N 个最高工资，例如第 3 个最高工资:N=3。
 
-```
+```sql
 SELECT ename,sal from Employee e1 where 
         N-1 = (SELECT COUNT(DISTINCT sal)from Employee e2 where e2.sal > e1.sal) 
 ```
 
 **使用极限的解决方案:**
 
-```
+```sql
  Select Salary from table_name order by Salary DESC limit n-1,1;
 ```
 
@@ -156,7 +156,7 @@ Limit 子句有两个组件，第一个组件是从顶部跳过行数，第二�
 
 要查找第四高工资，查询将是:
 
-```
+```sql
  Select Salary from table_name order by Salary DESC limit 3,1;
 ```
 
@@ -164,13 +164,13 @@ Limit 子句有两个组件，第一个组件是从顶部跳过行数，第二�
 
 您还可以找到工资最高的员工姓名
 
-```
+```sql
 Select Emp_name from table_name where Salary =( Select Salary from table_name order by Salary DESC limit n-1,1);
 ```
 
 可以有另一个问题，比如找到第 n 个最低工资。为了做到这一点，只需使用 ASC 颠倒顺序(如果您没有指定默认情况下列将按升序排序)。
 
-```
+```sql
  Select Salary from table_name order by Salary limit n-1,1;
 ```
 

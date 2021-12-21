@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 CHAR_LENGTH(string)
 ```
 
@@ -16,49 +16,49 @@ CHAR_LENGTH(string)
 
 **示例-1 :**
 
-```
+```sql
 SELECT CHAR_LENGTH('GEEKSFORGEEKS');
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
 **例-2 :**
 
-```
+```sql
 SELECT CHAR_LENGTH(' ');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT CHAR_LENGTH('');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-4 :**
 
-```
+```sql
 SELECT CHAR_LENGTH(NULL);
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -67,7 +67,7 @@ NULL
 
 **语法:**
 
-```
+```sql
 ASCII(single_character)
 ```
 
@@ -76,48 +76,48 @@ ASCII(single_character)
 
 **示例-1 :**
 
-```
+```sql
 SELECT ASCII('GeeksForGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 107
 ```
 
 **例-2 :**
 
-```
+```sql
 SELECT ASCII('G');
 ```
 
 **输出:**
 
-```
+```sql
 107
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT ASCII('g');
 ```
 
 **输出:**
 
-```
+```sql
 147
 ```
 
 **例-4 :**
 
-```
+```sql
 SELECT ASCII('7');
 ```
 
 **输出:**
 
-```
+```sql
 55
 ```

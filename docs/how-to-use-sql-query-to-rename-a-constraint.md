@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE INFO(
 S_NAME VARCHAR(20),
 ROLL INT,
@@ -47,7 +47,7 @@ BRANCH VARCHAR(5));
 
 **查询:**
 
-```
+```sql
 ALTER TABLE INFO ADD CONSTRAINT BRANCH_CHECK 
 CHECK (BRANCH IN('CSE','ECE','CE','ME','ELE'));
 ```
@@ -60,7 +60,7 @@ CHECK (BRANCH IN('CSE','ECE','CE','ME','ELE'));
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS INFO;
 ```
 
@@ -72,7 +72,7 @@ EXEC SP_COLUMNS INFO;
 
 **查询:**
 
-```
+```sql
 INSERT INTO INFO VALUES('MATT',1001,'CSE');
 INSERT INTO INFO VALUES('SAM',1002,'ECE');
 INSERT INTO INFO VALUES('NICK',1003,'CE');
@@ -88,7 +88,7 @@ INSERT INTO INFO VALUES('BRUCE',1005,'ME');
 
 **查询:**
 
-```
+```sql
 INSERT INTO INFO VALUES('MORRIS',1006,'MECH');
 ```
 
@@ -100,7 +100,7 @@ INSERT INTO INFO VALUES('MORRIS',1006,'MECH');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM INFO;
 ```
 
@@ -112,7 +112,7 @@ SELECT * FROM INFO;
 
 **查询:**
 
-```
+```sql
 SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE 
 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS 
 WHERE TABLE_NAME='INFO';
@@ -126,7 +126,7 @@ WHERE TABLE_NAME='INFO';
 
 **查询:**
 
-```
+```sql
 SP_RENAME 'BRANCH_CHECK','CHECK_BRANCH';
 ```
 
@@ -138,7 +138,7 @@ SP_RENAME 'BRANCH_CHECK','CHECK_BRANCH';
 
 **查询:**
 
-```
+```sql
 SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE
 FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS
 WHERE TABLE_NAME='INFO';

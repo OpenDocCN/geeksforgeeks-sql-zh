@@ -11,7 +11,7 @@
 
 **语法:**
 
-```
+```sql
 select select_list
 from table_name
 where condition
@@ -28,7 +28,7 @@ where condition
 
 如果用户想提取正在攻读机械的学生姓名，查询如下:
 
-```
+```sql
 select name
 from student
 where course='Mechanical' 

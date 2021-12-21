@@ -7,13 +7,13 @@
 
 1.  **ABS():** It returns the absolute value of a number.
 
-    ```
+    ```sql
     Syntax: SELECT ABS(-243.5);
     ```
 
     **输出:** 243.5
 
-    ```
+    ```sql
     SQL> SELECT ABS(-10);
     +--------------------------------------+
     | ABS(10)                                                  
@@ -25,7 +25,7 @@
 
 2.  **ACOS():** It returns the cosine of a number.
 
-    ```
+    ```sql
     Syntax:  SELECT ACOS(0.25);
     ```
 
@@ -33,7 +33,7 @@
 
 3.  **ASIN():** It returns the arc sine of a number.
 
-    ```
+    ```sql
     Syntax: SELECT ASIN(0.25);
     ```
 
@@ -41,7 +41,7 @@
 
 4.  **ATAN():** It returns the arc tangent of a number.
 
-    ```
+    ```sql
     Syntax: SELECT ATAN(2.5);
     ```
 
@@ -49,7 +49,7 @@
 
 5.  **CEIL():** It returns the smallest integer value that is greater than or equal to a number.
 
-    ```
+    ```sql
     Syntax: SELECT CEIL(25.75);
     ```
 
@@ -57,7 +57,7 @@
 
 6.  **CEILING():** It returns the smallest integer value that is greater than or equal to a number.
 
-    ```
+    ```sql
     Syntax: SELECT CEILING(25.75);
     ```
 
@@ -65,7 +65,7 @@
 
 7.  **COS():** It returns the cosine of a number.
 
-    ```
+    ```sql
     Syntax: SELECT COS(30);
     ```
 
@@ -73,7 +73,7 @@
 
 8.  **COT():** It returns the cotangent of a number.
 
-    ```
+    ```sql
     Syntax: SELECT COT(6);
     ```
 
@@ -81,13 +81,13 @@
 
 9.  **DEGREES():** It converts a radian value into degrees.
 
-    ```
+    ```sql
     Syntax: SELECT DEGREES(1.5);
     ```
 
     **输出:**8560 . 888888888686
 
-    ```
+    ```sql
     SQL>SELECT DEGREES(PI());
     +------------------------------------------+
     | DEGREES(PI())                                           
@@ -98,7 +98,7 @@
 
 10.  **DIV():** It is used for integer division.
 
-    ```
+    ```sql
     Syntax: SELECT 10 DIV 5;
     ```
 
@@ -106,7 +106,7 @@
 
 11.  **EXP():** It returns e raised to the power of number.
 
-    ```
+    ```sql
     Syntax: SELECT EXP(1);
     ```
 
@@ -114,7 +114,7 @@
 
 12.  **FLOOR():** It returns the largest integer value that is less than or equal to a number.
 
-    ```
+    ```sql
     Syntax: SELECT FLOOR(25.75);
     ```
 
@@ -122,7 +122,7 @@
 
 13.  **GREATEST():** It returns the greatest value in a list of expressions.
 
-    ```
+    ```sql
     Syntax: SELECT GREATEST(30, 2, 36, 81, 125);
     ```
 
@@ -130,7 +130,7 @@
 
 14.  **LEAST():** It returns the smallest value in a list of expressions.
 
-    ```
+    ```sql
     Syntax: SELECT LEAST(30, 2, 36, 81, 125);
     ```
 
@@ -138,7 +138,7 @@
 
 15.  **LN():** It returns the natural logarithm of a number.
 
-    ```
+    ```sql
     Syntax: SELECT LN(2);
     ```
 
@@ -146,7 +146,7 @@
 
 16.  **LOG10():** It returns the base-10 logarithm of a number.
 
-    ```
+    ```sql
     Syntax: SELECT LOG(2);
     ```
 
@@ -154,7 +154,7 @@
 
 17.  **LOG2():** It returns the base-2 logarithm of a number.
 
-    ```
+    ```sql
     Syntax: SELECT LOG2(6);
     ```
 
@@ -162,7 +162,7 @@
 
 18.  **MOD():** It returns the remainder of n divided by m.
 
-    ```
+    ```sql
     Syntax: SELECT MOD(18, 4);
     ```
 
@@ -170,7 +170,7 @@
 
 19.  **PI():** It returns the value of PI displayed with 6 decimal places.
 
-    ```
+    ```sql
     Syntax: SELECT PI();
     ```
 
@@ -178,7 +178,7 @@
 
 20.  **POW():** It returns m raised to the nth power.
 
-    ```
+    ```sql
     Syntax: SELECT POW(4, 2);
     ```
 
@@ -186,7 +186,7 @@
 
 21.  **RADIANS():** It converts a value in degrees to radians.
 
-    ```
+    ```sql
     Syntax: SELECT RADIANS(180);
     ```
 
@@ -194,7 +194,7 @@
 
 22.  **RAND():** It returns a random number.
 
-    ```
+    ```sql
     Syntax: SELECT RAND();
     ```
 
@@ -202,7 +202,7 @@
 
 23.  **ROUND():** It returns a number rounded to a certain number of decimal places.
 
-    ```
+    ```sql
     Syntax: SELECT ROUND(5.553);
     ```
 
@@ -210,7 +210,7 @@
 
 24.  **SIGN():** It returns a value indicating the sign of a number.
 
-    ```
+    ```sql
     Syntax: SELECT SIGN(255.5);
     ```
 
@@ -218,7 +218,7 @@
 
 25.  **SIN():** It returns the sine of a number.
 
-    ```
+    ```sql
     Syntax: SELECT SIN(2);
     ```
 
@@ -226,7 +226,7 @@
 
 26.  **SQRT():** It returns the square root of a number.
 
-    ```
+    ```sql
     Syntax: SELECT SQRT(25);
     ```
 
@@ -234,7 +234,7 @@
 
 27.  **TAN():** It returns the tangent of a number.
 
-    ```
+    ```sql
     Syntax: SELECT TAN(1.75);
     ```
 
@@ -242,7 +242,7 @@
 
 28.  **ATAN2():** It returns the arctangent of the x and y coordinates, as an angle and expressed in radians.
 
-    ```
+    ```sql
     Syntax: SELECT ATAN2(7);
     ```
 
@@ -250,7 +250,7 @@
 
 29.  **TRUNCATE():** This doesn’t work for SQL Server. It returns 7.53635 truncated to 2 places right of the decimal point.
 
-    ```
+    ```sql
     Syntax: SELECT TRUNCATE(7.53635, 2);
     ```
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT FIND_IN_SET(REQUIRED_STRING, 
 LIST_OF_STRINGS);
 ```
@@ -15,7 +15,7 @@ LIST_OF_STRINGS);
 
 **语法:**
 
-```
+```sql
 SELECT FIND_IN_SET(REQUIRED_STRING, 
 LIST_OF_STRINGS)>0;
 ```
@@ -26,7 +26,7 @@ LIST_OF_STRINGS)>0;
 
 **查询:**
 
-```
+```sql
 SELECT FIND_IN_SET("STUDENT", 
 "PARENT,STUDENT,TEACHER");
 ```
@@ -37,7 +37,7 @@ SELECT FIND_IN_SET("STUDENT",
 
 **查询:**
 
-```
+```sql
 SELECT FIND_IN_SET("STUDENT", 
 "PARENT,STUDENT,TEACHER")>0;
 ```
@@ -50,7 +50,7 @@ SELECT FIND_IN_SET("STUDENT",
 
 **查询:**
 
-```
+```sql
 SELECT FIND_IN_SET("PEON", 
 "PARENT,STUDENT,TEACHER");
 ```
@@ -61,7 +61,7 @@ SELECT FIND_IN_SET("PEON",
 
 **查询:**
 
-```
+```sql
 SELECT FIND_IN_SET("PEON", 
 "PARENT,STUDENT,TEACHER")>0;
 ```

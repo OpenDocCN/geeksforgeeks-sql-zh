@@ -9,7 +9,7 @@ SQL Grant 命令专门用于为用户提供[数据库对象](https://www.geeksfo
 
 **语法:**
 
-```
+```sql
 grant privilege_name on object_name
 to {user_name | public | role_name} 
 ```
@@ -21,21 +21,21 @@ to {user_name | public | role_name}
 
 **语法:**
 
-```
+```sql
 revoke privilege_name on object_name
 from {user_name | public | role_name}
 ```
 
 **示例:**
 
-```
+```sql
 grant insert, 
 select on accounts to Ram
 ```
 
 通过上面的命令，用户 ram 已经授予了对帐户数据库对象的权限，就像他可以查询或插入帐户一样。
 
-```
+```sql
 revoke insert, 
 select on accounts from Ram
 ```

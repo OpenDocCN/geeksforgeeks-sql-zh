@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 POWER(a, b)
 ```
 
@@ -28,7 +28,7 @@ POWER(a, b)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 3;
    Test_Number number2 := 2;
@@ -42,7 +42,7 @@ END;
 
 **输出:**
 
-```
+```sql
 9
 ```
 
@@ -50,7 +50,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := -5;
    Test_Number number2 := 3;
@@ -64,7 +64,7 @@ END;
 
 **输出:**
 
-```
+```sql
 -125
 ```
 
@@ -72,7 +72,7 @@ END;
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 6.2;
    Test_Number number2 := 3.5;
@@ -86,7 +86,7 @@ END;
 
 **输出:**
 
-```
+```sql
 593.431934277892
 ```
 

@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE MARKS(
 ID INT,
 ENG INT,
@@ -48,7 +48,7 @@ PHYS INT);
 
 **查询:**
 
-```
+```sql
 INSERT INTO MARKS VALUES(1,99,0,89);
 INSERT INTO MARKS VALUES(2,0,65,78);
 INSERT INTO MARKS VALUES(3,83,85,0);
@@ -64,7 +64,7 @@ INSERT INTO MARKS VALUES(5,97,45,54);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MARKS;
 ```
 
@@ -76,7 +76,7 @@ SELECT * FROM MARKS;
 
 **语法:**
 
-```
+```sql
 REPLACE(Column_name, value_to_be_replaced, new_value)
 ```
 
@@ -84,7 +84,7 @@ REPLACE(Column_name, value_to_be_replaced, new_value)
 
 **查询:**
 
-```
+```sql
 SELECT ID, REPLACE(ENG,0,'') "ENG", REPLACE(MATHS,0,'') "MATHS", REPLACE(PHYS,0,'') "PHYS" FROM MARKS;
 ```
 

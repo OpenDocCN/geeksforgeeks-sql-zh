@@ -8,7 +8,7 @@ SESSION_USER()函数返回的用户名是连接到服务器时用户指定的名
 
 **语法:**
 
-```
+```sql
 SESSION_USER()
 ```
 
@@ -31,12 +31,12 @@ MySQL SESSION _ USER()函数返回 MySQL 连接的当前用户名和主机名。
 
 **示例:**在 MySQL 中实现 SESSION_USER()函数。
 
-```
+```sql
 SELECT SESSION_USER(); 
 ```
 
 **输出:**
 
-```
+```sql
 author@gfg 
 ```

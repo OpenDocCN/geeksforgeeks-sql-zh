@@ -6,7 +6,7 @@
 
 创建函数的语法:
 
-```
+```sql
 CREATE [OR REPLACE] FUNCTION function_name 
 [(parameter_name  type [, ...])] 
 
@@ -29,7 +29,7 @@ END [function_name];
 1.  我们必须找到学生在一所学校的不同部分使用函数
     的总强度
 
-```
+```sql
 // first lets create a table
 create table section(s_id int, s_name varchar(20), strength int );
 
@@ -68,7 +68,7 @@ end;
 
 **输出:**
 
-```
+```sql
 Total strength of students is  125
 
 ```
@@ -76,7 +76,7 @@ Total strength of students is  125
 *   Now, let’s take an example to demonstrate **Declaring, Defining and Invoking** a simple PL/SQL
     function which will compute and return the reverse of a number.
 
-    ```
+    ```sql
     set serveroutput on;
     declare
 
@@ -119,7 +119,7 @@ Total strength of students is  125
 
     **输出:**
 
-    ```
+    ```sql
     the reverse of number is  987654321
 
     ```
@@ -127,7 +127,7 @@ Total strength of students is  125
     *   Lets implement a recursive function to calculate the factorial of a number
     **Recursive functions example:**
 
-    ```
+    ```sql
     DECLARE  
        num int;  
        answer int;  
@@ -156,7 +156,7 @@ Total strength of students is  125
 
     *输出:*
 
-    ```
+    ```sql
      Factorial of  5 is 120
 
     ```
@@ -165,7 +165,7 @@ Total strength of students is  125
 
     示例:
 
-    ```
+    ```sql
     set serveroutput on;
 
     declare
@@ -208,7 +208,7 @@ Total strength of students is  125
 
     *输出:*
 
-    ```
+    ```sql
     square of negative number is  not allowed so returning the same number
     the value is -2
 

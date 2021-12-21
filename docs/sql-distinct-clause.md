@@ -6,7 +6,7 @@ distinct 关键字与 select 关键字结合使用。当需要避免任何特定
 
 **语法:**
 
-```
+```sql
 SELECT DISTINCT column1, column2 
 FROM table_name 
 
@@ -37,7 +37,7 @@ FROM table_name
 
 *   从名称字段提取唯一名称–
 
-```
+```sql
 SELECT DISTINCT NAME 
 FROM Student;
 
@@ -55,7 +55,7 @@ FROM Student;
 
 *   从整个表中获取唯一的行组合–
 
-```
+```sql
 SELECT DISTINCT * 
 FROM Student;
 

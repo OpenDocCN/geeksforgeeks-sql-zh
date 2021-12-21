@@ -7,7 +7,7 @@
 
 **示例:**
 
-```
+```sql
 int f = 2 
 ```
 
@@ -18,7 +18,7 @@ int f = 2
 
 **示例:**
 
-```
+```sql
 int y = X'12A' 
 ```
 
@@ -27,7 +27,7 @@ int y = X'12A'
 **语法:**
 十六进制文字值以下列形式书写:
 
-```
+```sql
 X'val' 
 x'val'
 0xval  
@@ -38,7 +38,7 @@ x'val'
 **例子:**
 这些都是有效的文字。
 
-```
+```sql
 X'015'
 X'01aF'
 x'BC'
@@ -50,7 +50,7 @@ x'2d'
 
 这些是无效的文字。
 
-```
+```sql
 X'1s' // s is not in range (0, 1, ...A, .., F)
 0X'1'  // OX is not a valid notation, 
        // correct notation is 0x 
@@ -58,7 +58,7 @@ X'1s' // s is not in range (0, 1, ...A, .., F)
 
 **注意:**X'val '或 X ' val '形式的符号包含偶数个数字，否则将引发语法错误。
 
-```
+```sql
 mysql>select X'3' 
 ```
 
@@ -66,7 +66,7 @@ mysql>select X'3'
 
 通过在字符串的开头填充零，可以避免错误。
 
-```
+```sql
 mysql> select X'03' 
                ->♥ 
 ```
@@ -78,7 +78,7 @@ mysql> select X'03'
 
 **示例:**
 
-```
+```sql
 mysql>select 0x65;
              -> e
 mysql>select 5461626c65;
@@ -91,7 +91,7 @@ mysql>select 0x465;
 
 空的十六进制文字值(X ' ')是零长度二进制字符串。
 
-```
+```sql
 mysql>select X'', length(X'')
        -> binary 0 
 ```
@@ -103,13 +103,13 @@ mysql>select X'', length(X'')
 
     **语法:**
 
-    ```
+    ```sql
     [_charset_name] literal [COLLATE collation_name]
     ```
 
     **示例:**
 
-    ```
+    ```sql
     mysql>select _utf8 X'4745454B'
          -> GEEK
     mysql>select _utf8 X'4745454B' COLLATE utf8_danish_ci;
@@ -119,7 +119,7 @@ mysql>select X'', length(X'')
 
 2.  **BIT Operations;**
 
-    ```
+    ```sql
     mysql>select X'01' | X'02', hex(X'01' | X'02')
           -> 3 3
     mysql>select _binary X'01' | X'02', hex(_binary X'01' | X'02')
@@ -131,7 +131,7 @@ mysql>select X'', length(X'')
 3.  **算术运算:**
     在数值上下文中，十六进制文字被视为 BIGINT (64 位整数)。对于数值上下文，我们可以使用像+、-、*、/、%这样的算术运算符；
 
-    ```
+    ```sql
     mysql>select 0x67+0
           -> 103
     mysql>select 0x45*2
@@ -142,7 +142,7 @@ mysql>select X'', length(X'')
 4.  **HEX() / UNHEX() fun:**
     We can use in-built function **HEX()** to convert a string or number in hexadecimal string.
 
-    ```
+    ```sql
     mysql>select hex('e')
           -> 65
     mysql>select hex('table')
@@ -152,7 +152,7 @@ mysql>select X'', length(X'')
 
     同样的，**unhx()**函数用于将每对十六进制数字转换为对应的字符。
 
-    ```
+    ```sql
     mysql>select unhex('5645')
            ->VE   
     mysql>select unhex('qq')

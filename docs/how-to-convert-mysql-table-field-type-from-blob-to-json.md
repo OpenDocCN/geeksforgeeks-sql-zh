@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geek;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE geek;
 
 **查询:**
 
-```
+```sql
 USE geek;
 ```
 
@@ -36,7 +36,7 @@ USE geek;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE table1(ID INT,
 DOCS BLOB,
 REVIEW VARCHAR(100));
@@ -50,7 +50,7 @@ REVIEW VARCHAR(100));
 
 **查询:**
 
-```
+```sql
 DESCRIBE table1;
 ```
 
@@ -66,7 +66,7 @@ DESCRIBE table1;
 
 **查询:**
 
-```
+```sql
 ALTER TABLE table1
 MODIFY DOCS JSON;
 ```
@@ -79,7 +79,7 @@ CHANGE 命令的语法不同。在 CHANGE 关键字之后，我们命名必须�
 
 **查询:**
 
-```
+```sql
 ALTER TABLE table1 CHANGE  
 DOCS DOCS_CHANGE JSON;
 ```
@@ -88,7 +88,7 @@ DOCS DOCS_CHANGE JSON;
 
 **第 6 步:**使用 description 命令查看对每个命令所做的更改:MODIFY 和 CHANGE。
 
-```
+```sql
 DESCRIBE table1;
 ```
 

@@ -13,7 +13,7 @@ SQL 中的 ORDER BY 语句用于根据一列或多列对提取的数据进行升
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name ORDER BY column_name ASC|DESC
 //Where 
 table_name: name of the table.
@@ -29,7 +29,7 @@ DESC: to sort the data in descending order.
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name ORDER BY column1 ASC|DESC , column2 ASC|DESC
 ```
 
@@ -43,7 +43,7 @@ SELECT * FROM table_name ORDER BY column1 ASC|DESC , column2 ASC|DESC
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student ORDER BY ROLL_NO DESC;
 ```
 
@@ -67,7 +67,7 @@ SELECT * FROM Student ORDER BY ROLL_NO DESC;
 在本例中，我们将从学生表中获取所有数据，然后首先根据年龄列按升序对结果进行排序。然后按照
 **列降序查询:**
 
-```
+```sql
 SELECT * FROM Student ORDER BY Age ASC , ROLL_NO DESC;
 ```
 
@@ -91,7 +91,7 @@ ASC 是 ORDER BY 子句的默认值。因此，如果我们在 ORDER BY 子句�
 再举一个例子，下面的查询会给出和上面类似的输出:
 **查询:**
 
-```
+```sql
 SELECT * FROM Student ORDER BY Age , ROLL_NO DESC;
 ```
 
@@ -114,7 +114,7 @@ SELECT * FROM Student ORDER BY Age , ROLL_NO DESC;
 
 **语法:**
 
-```
+```sql
 Order by Column_Number asc/desc
 ```
 
@@ -122,7 +122,7 @@ Order by Column_Number asc/desc
 
 **查询:**
 
-```
+```sql
 CREATE TABLE studentinfo
 ( Roll_no INT,
 NAME VARCHAR(25),

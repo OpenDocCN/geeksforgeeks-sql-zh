@@ -8,13 +8,13 @@
 
 动态 SQL 的语法如下所示:
 
-```
+```sql
 'SELECT statement';
 ```
 
 要运行动态 SQL 语句，请运行存储过程 **sp_executesql** ，如下所示:
 
-```
+```sql
 EXEC sp_executesql N'SELECT statement';
 ```
 
@@ -24,7 +24,7 @@ EXEC sp_executesql N'SELECT statement';
 
 1.  声明两个变量，@var1 用于保存表名，@var 2 用于保存动态 SQL :
 
-    ```
+    ```sql
     DECLARE 
     @var1 NVARCHAR(MAX), 
     @var2 NVARCHAR(MAX);
@@ -32,26 +32,26 @@ EXEC sp_executesql N'SELECT statement';
 
 2.  将@var1 变量的值设置为 table_name :
 
-    ```
+    ```sql
     SET @var1 = N'table_name';
     ```
 
 3.  通过将 SELECT 语句添加到表名参数中来创建动态 SQL:
 
-    ```
+    ```sql
     SET @var2= N'SELECT * 
     FROM ' + @var1;
     ```
 
 4.  使用@var2 参数运行 sp_executesql 存储过程:
 
-    ```
+    ```sql
     EXEC sp_executesql @var2;
     ```
 
 **示例–**
 
-```
+```sql
 SELECT * 
 from geek;
 ```
@@ -66,7 +66,7 @@ from geek;
 
 **使用动态 SQL :**
 
-```
+```sql
 DECLARE 
 @tab NVARCHAR(128), 
 @st NVARCHAR(MAX);

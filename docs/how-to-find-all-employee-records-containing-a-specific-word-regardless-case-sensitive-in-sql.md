@@ -20,7 +20,7 @@
 **步骤-1:创建数据库–**
 使用以下 SQL 查询创建数据库，如下所示。
 
-```
+```sql
 syntax:
 CREATE DATABASE database_name;
 ```
@@ -32,7 +32,7 @@ CREATE DATABASE database_name;
 **第 2 步:使用数据库–**
 使用数据库公司如下。
 
-```
+```sql
 syntax:
 USE database_name;
 ```
@@ -44,7 +44,7 @@ USE database_name;
 **步骤-3:添加表–**
 将表员工添加到数据库公司，如下所示。
 
-```
+```sql
 syntax:
 CREATE TABLE table_name
 ( column_name1 data_type1 ,
@@ -65,7 +65,7 @@ column_nameN data_typeN , );
 **步骤-5:通过 description 查询验证列和数据类型–**
 列及其数据类型，如下所示。
 
-```
+```sql
 syntax:
 DESCRIBE table_name;
 ```
@@ -77,7 +77,7 @@ DESCRIBE table_name;
 **第 6 步:向表中插入行–**
 使用如下 SQL 查询向表员工中插入行。
 
-```
+```sql
 syntax:
 INSERT INTO table_name  VALUES(column1_data,column2_data,......columnN_data);
 ```
@@ -89,7 +89,7 @@ INSERT INTO table_name  VALUES(column1_data,column2_data,......columnN_data);
 **步骤-7:验证插入的数据–**
 使用如下选择查询检查数据库中的插入数据。
 
-```
+```sql
 syntax:
 SELECT * FROM table_name;
 ```
@@ -106,7 +106,7 @@ SELECT * FROM table_name;
 
 **语法:**
 
-```
+```sql
 SELECT*
 FROM table_name
 WHERE column_name LIKE 'PATTERN';
@@ -114,7 +114,7 @@ WHERE column_name LIKE 'PATTERN';
 
 **选择数据查询–**
 
-```
+```sql
 SELECT* 
 FROM employee
 WHERE dept_name LIKE '%DEVELOPER';

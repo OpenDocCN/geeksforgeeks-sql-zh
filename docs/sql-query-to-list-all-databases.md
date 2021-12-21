@@ -8,7 +8,7 @@ SQL 语言是数据库管理系统中的一种数据管理语言。这用于操�
 
 要用 SQL 创建数据库，我们必须使用以下命令:
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
@@ -16,7 +16,7 @@ CREATE DATABASE database_name;
 
 要使用任何特定的数据库，我们应该在它们之间进行选择，如下所示:
 
-```
+```sql
 USE database_name;
 ```
 
@@ -24,7 +24,7 @@ USE database_name;
 
 为此，我们将使用下面给出的命令:
 
-```
+```sql
 CREATE TABLE [database_name.]table_name (
    pk_column data_type PRIMARY KEY,
    column_1 data_type NOT NULL,
@@ -42,7 +42,7 @@ SQL server 上最初存在两种类型的默认数据库:
 
 ### 1.系统数据库:
 
-```
+```sql
 The command to see system databases are :
 SELECT name, database_id, create_date  
 FROM sys.databases ;  
@@ -61,7 +61,7 @@ FROM sys.databases ;
 
 除了上述数据库之外，服务器中还存在其他一些数据库。这些可以显示如下:
 
-```
+```sql
 SELECT name FROM master.dbo.sysdatabases
 ```
 
@@ -75,7 +75,7 @@ SELECT name FROM master.dbo.sysdatabases
 
 我们将使用下面提到的命令向 SQL server 添加一些数据库:
 
-```
+```sql
 create database GFG;
 create database GFG1;
 create database GFG2;
@@ -87,7 +87,7 @@ create database GFG2;
 
 这些查询列出了服务器中存在的用户定义的数据库(虽然我们已经完成了上面的工作):
 
-```
+```sql
 select name  
 from sys.Databases
 WHERE name NOT IN ('master', 'tempdb', 'model', 'msdb');  /* removing the name of sys db*/

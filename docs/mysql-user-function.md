@@ -8,7 +8,7 @@ user()函数返回的用户名是连接到服务器时指定的用户名，而 U
 
 **语法:**
 
-```
+```sql
 USER()
 ```
 
@@ -31,12 +31,12 @@ MySQL Version()函数以字符串形式返回 MySQL 数据库的版本。
 
 **示例:**在 MySQL 中实现 USER()函数。
 
-```
+```sql
 SELECT USER(); 
 ```
 
 **输出:**
 
-```
+```sql
 author@gfg 
 ```

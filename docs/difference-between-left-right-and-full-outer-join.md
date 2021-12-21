@@ -16,7 +16,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 
     **语法:**
 
-    ```
+    ```sql
     SELECT [column1, column2, ....]
     FROM   table1
 
@@ -28,7 +28,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 
     或者
 
-    ```
+    ```sql
     SELECT [column1, column2, ....]
     FROM   table1
 
@@ -47,7 +47,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 
     **语法:**
 
-    ```
+    ```sql
     SELECT [column1, column2, ....]
     FROM   table1
 
@@ -59,7 +59,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 
     或者，
 
-    ```
+    ```sql
     SELECT [column1, column2, ....]
     FROM   table1
 
@@ -78,7 +78,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 
     **语法:**
 
-    ```
+    ```sql
     SELECT [column1, column2, ....]
     FROM   table1
 
@@ -121,7 +121,7 @@ SQL 连接大致分为[内部连接和](https://www.geeksforgeeks.org/inner-join
 现在，
 **1。左外连接查询–**
 
-```
+```sql
 Select empid, ename, deptid, deptname 
 from employee 
 left outer join department 
@@ -143,7 +143,7 @@ on employee.empdept = department.deptname;
 
 **2。右外连接查询–**
 
-```
+```sql
 Select empid, ename, deptid, deptname 
 from employee right outer join department 
 on employee.empdept = department.deptname;
@@ -161,7 +161,7 @@ on employee.empdept = department.deptname;
 
 **3。完全外部连接查询–**
 
-```
+```sql
 Select empid, ename, deptid, deptname 
 from employee full outer join department 
 on employee.empdept = department.deptname;

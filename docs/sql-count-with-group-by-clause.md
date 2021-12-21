@@ -6,7 +6,7 @@ count()函数是一个聚合函数，用于查找满足固定条件的行数。�
 
 **语法:**
 
-```
+```sql
 SELECT attribute1 , COUNT(attribute2)
 FROM table_name
 GROUP BY attribute1
@@ -18,7 +18,7 @@ GROUP BY attribute1
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -28,7 +28,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -38,7 +38,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_marks(
 stu_id VARCHAR(20),
 stu_name VARCHAR(20),
@@ -53,7 +53,7 @@ total_marks INT
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns student_marks
 ```
 
@@ -63,7 +63,7 @@ EXEC sp_columns student_marks
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_marks
 VALUES( '1001','PRADEEP','E.C.E', 550),
 ( '1002','KIRAN','E.C.E', 540),
@@ -82,7 +82,7 @@ VALUES( '1001','PRADEEP','E.C.E', 550),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student_marks
 ```
 
@@ -90,7 +90,7 @@ SELECT * FROM student_marks
 
 *   查询每个分支机构的学生人数
 
-```
+```sql
 SELECT stu_branch, COUNT(stu_id) AS number_of_students
 FROM student_marks
 GROUP BY stu_branch
@@ -100,7 +100,7 @@ GROUP BY stu_branch
 
 *   查询查找分数大于表格平均分数的学生人数。
 
-```
+```sql
 SELECT AVG(total_marks) AS average,COUNT(stu_id) AS number_of_students
 FROM student_marks
 WHERE total_marks>(SELECT AVG(total_marks) FROM student_marks)

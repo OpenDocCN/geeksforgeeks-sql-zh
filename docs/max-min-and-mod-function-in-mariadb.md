@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 Max(expression)
 ```
 
@@ -25,7 +25,7 @@ Max(expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Max(Score) AS MAX_Score
 FROM IPL;
 ```
@@ -37,7 +37,7 @@ FROM IPL;
 
 **例-2 :**
 
-```
+```sql
 SELECT Max(Score) AS MAX_Score
 FROM IPL
 WHERE Score < 190;
@@ -50,7 +50,7 @@ WHERE Score < 190;
 
 **例-3 :**
 
-```
+```sql
 SELECT Max(Score) AS MAX_Score
 FROM IPL
 WHERE Score < 160;
@@ -66,7 +66,7 @@ WHERE Score < 160;
 
 **语法:**
 
-```
+```sql
 Min(expression)
 ```
 
@@ -76,7 +76,7 @@ Min(expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Min(Score) AS Min_Score
 FROM IPL;
 ```
@@ -88,7 +88,7 @@ FROM IPL;
 
 **例-2 :**
 
-```
+```sql
 SELECT Min(Score) AS Min_Score
 FROM IPL
 WHERE Score > 150;
@@ -101,7 +101,7 @@ WHERE Score > 150;
 
 **例-3 :**
 
-```
+```sql
 SELECT Min(Score) AS Min_Score
 FROM IPL
 WHERE Score > 170; 
@@ -117,7 +117,7 @@ WHERE Score > 170;
 
 **语法:**
 
-```
+```sql
 MOD(n, m)
 OR
 n MOD m
@@ -134,36 +134,36 @@ n % m
 
 **示例-1 :**
 
-```
+```sql
 SELECT MOD(20, 5);
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-2 :**
 
-```
+```sql
 SELECT 21 MOD 4;
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **例-3 :**
 
-```
+```sql
 SELECT 51 % 7;
 ```
 
 **输出:**
 
-```
+```sql
 2
 ```

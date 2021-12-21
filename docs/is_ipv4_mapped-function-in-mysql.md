@@ -8,7 +8,7 @@ MySQL 中的这个函数将 IPv6 地址以数字形式表示为二进制字符�
 
 **语法:**
 
-```
+```sql
 IS_IPV4_MAPPED(expr)
 ```
 
@@ -27,7 +27,7 @@ IS_IPV4_MAPPED(expr)
 
 使用 IS_IPV4_MAPPED 函数检查给定地址“:12.10.15.8”是否有效。由于给定的输入不是有效的 IPv4 映射地址，它将返回 0。
 
-```
+```sql
 SELECT IS_IPV4_MAPPED(INET6_ATON('::12.10.15.8')) AS IS_IPV4_MAPPED ;
 ```
 
@@ -45,7 +45,7 @@ SELECT IS_IPV4_MAPPED(INET6_ATON('::12.10.15.8')) AS IS_IPV4_MAPPED ;
 
 使用 IS_IPV4_MAPPED 函数检查给定地址“::ffff:8.7.12.3”是否有效。由于这里给定的输入是有效的 IPv4 映射地址，它将返回 1。
 
-```
+```sql
  SELECT IS_IPV4_MAPPED(INET6_ATON('::ffff:8.7.12.3')) AS IS_IPV4_MAPPED;
 ```
 
@@ -63,7 +63,7 @@ SELECT IS_IPV4_MAPPED(INET6_ATON('::12.10.15.8')) AS IS_IPV4_MAPPED ;
 
 使用 IS_IPV4_MAPPED 函数检查给定地址“ff::9.6.10.11”是否有效。由于给定的输入不是有效的 IPv4 映射地址，它将返回 0。
 
-```
+```sql
 SELECT IS_IPV4_MAPPED(INET6_ATON('ff::9.6.10.11')) AS IS_IPV4_MAPPED ;
 ```
 
@@ -81,7 +81,7 @@ SELECT IS_IPV4_MAPPED(INET6_ATON('ff::9.6.10.11')) AS IS_IPV4_MAPPED ;
 
 使用 IS_IPV4_MAPPED 函数
 
-```
+```sql
 SELECT IS_IPV4_MAPPED(INET6_ATON('::1')) AS IS_IPV4_MAPPED;
 ```
 

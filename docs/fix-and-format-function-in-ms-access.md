@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 Fix(number) 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Fix(-75.43) AS FixNum;
 ```
 
@@ -24,7 +24,7 @@ SELECT Fix(-75.43) AS FixNum;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Fix(23.93) AS FixNum;
 ```
 
@@ -53,13 +53,13 @@ SELECT Fix(23.93) AS FixNum;
 
 **语法:**
 
-```
+```sql
 Format(value, format) 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Format(0.55, "Percent") 
 AS FormattedPercentage;
 ```
@@ -71,7 +71,7 @@ AS FormattedPercentage;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Format(0.0000000004500121424255, "Scientific") 
 AS FormattedScientific;
 ```

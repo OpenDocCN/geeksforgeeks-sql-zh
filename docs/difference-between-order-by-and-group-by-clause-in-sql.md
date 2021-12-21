@@ -7,7 +7,7 @@
 
 **按语法排序–**
 
-```
+```sql
 SELECT column_1, column_2, column_3...........
 FROM Table_Name
 ORDER BY column_1, column_2, column_3....... ASC|DESC;
@@ -22,7 +22,7 @@ DESC: keyword for descending order
 
 **按语法分组–**
 
-```
+```sql
 SELECT function_Name(column_1), column_2
 FROM Table_Name
 WHERE condition
@@ -32,7 +32,7 @@ ORDER BY column_1, column_2;
 
 函数名:聚合函数的名称，例如:
 
-```
+```sql
 SUM(), AVG(), COUNT() etc.
 
 Table_Name: Name of the table. 

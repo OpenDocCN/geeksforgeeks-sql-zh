@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 CONVERT(VARCHAR, datetime [,style])
 ```
 
@@ -20,7 +20,7 @@ CONVERT(VARCHAR, datetime [,style])
 
 **语法:**
 
-```
+```sql
 CAST(EXPRESSION AS DATATYPE(length))
 ```
 
@@ -74,7 +74,7 @@ CAST(EXPRESSION AS DATATYPE(length))
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Product_order;
 ```
 
@@ -88,7 +88,7 @@ CREATE DATABASE Product_order;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE orders (prod_id INT,
                      prod_name VARCHAR(255),
                      order_date DATE,
@@ -105,7 +105,7 @@ CREATE TABLE orders (prod_id INT,
 
 **查询:**
 
-```
+```sql
 INSERT INTO orders VALUES (101, 'iPhone', '2020-07-20'),
                           (102, 'iPad', '2018-01-01'),
                           (103, 'iWatch', '2019-03-15'),
@@ -118,7 +118,7 @@ INSERT INTO orders VALUES (101, 'iPhone', '2020-07-20'),
 
 **步骤 4:** 为了验证表的内容，我们将使用 SELECT 语句。
 
-```
+```sql
 SELECT * FROM orders;
 ```
 
@@ -136,7 +136,7 @@ SELECT * FROM orders;
 
 **查询:**
 
-```
+```sql
 /*Declaring DATETIME as dt*/
 DECLARE @dt DATETIME = (SELECT order_date 
 FROM orders WHERE prod_id = 101);
@@ -159,7 +159,7 @@ SELECT
 
 在本例中，我们将样式参数更改为 1。同样，您可以使用上表中不同的样式参数值。
 
-```
+```sql
 /*Declaring DATETIME as dt*/
 DECLARE @dt DATETIME = (SELECT order_date 
 FROM orders WHERE prod_id = 103);
@@ -182,7 +182,7 @@ CONVERT(VARCHAR(20),@dt,1) s1;
 
 **查询:**
 
-```
+```sql
 /*Declaring DATETIME as dt*/
 DECLARE @dt DATETIME = (SELECT order_date 
 FROM orders WHERE prod_id = 102);

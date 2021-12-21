@@ -10,13 +10,13 @@
 
     **语法**:
 
-    ```
+    ```sql
     ADD_MONTHS(d, n)
     ```
 
     **示例–**
 
-    ```
+    ```sql
     Select ADD_MONTHS(SYSDATE, 4) 
     "Add months" from dual;
 
@@ -24,7 +24,7 @@
 
     **输出:**
 
-    ```
+    ```sql
     Add Months
     01-NOV-04
 
@@ -35,13 +35,13 @@
 
     **语法:**
 
-    ```
+    ```sql
     LAST_DAY(date)
     ```
 
     **示例-**
 
-    ```
+    ```sql
     Select SYSDATE, LAST_DAY(SYSDATE) 
     "Last Day" from dual;
 
@@ -49,7 +49,7 @@
 
     **输出:**
 
-    ```
+    ```sql
     SYSDATE                Last Day
     01-NOV-04             30-NOV-04
 
@@ -60,13 +60,13 @@
 
     **语法:**
 
-    ```
+    ```sql
     MONTHS_BETWEEN(date1, date2)
     ```
 
     **示例–**
 
-    ```
+    ```sql
     Select MONTHS_BETWEEN('02-FEB-00', '01-JAN-00') 
     "Months" from dual;
 
@@ -74,7 +74,7 @@
 
     **输出:**
 
-    ```
+    ```sql
     Months
       1
 
@@ -85,13 +85,13 @@
 
     **语法:**
 
-    ```
+    ```sql
     NEXT_DAY(date, char)
     ```
 
     **示例–**
 
-    ```
+    ```sql
     SELECT NEXT_DAY('06-JUL-02', 'saturday') 
     "Next day" from dual;
 
@@ -100,7 +100,7 @@
     这里返回下周六的日期。
     **输出:**
 
-    ```
+    ```sql
     Next day
     13-JUL-02
 
@@ -111,7 +111,7 @@
 
     **语法:**
 
-    ```
+    ```sql
     NEW_TIME(date, zone1, zone2)
     ```
 
@@ -131,7 +131,7 @@
 
     **示例–**
 
-    ```
+    ```sql
     Select NEW_TIME(To_date('2004/07/01 01:45', 'yyyy/mm/dd HH24:MI'), 
     'AST', 'MST') "MST" from dual;
 
@@ -139,7 +139,7 @@
 
     **输出:**
 
-    ```
+    ```sql
     MST
     30-JUN-04
 

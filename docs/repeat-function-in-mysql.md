@@ -7,7 +7,7 @@ MySQL 中的这个函数用于将一个字符串重复指定的次数。
 
 **语法:**
 
-```
+```sql
 REPEAT(str, count)
 ```
 
@@ -23,7 +23,7 @@ REPEAT(str, count)
 **示例-1 :**
 借助 REPEAT 函数重复字符串“极客”3 次。
 
-```
+```sql
 SELECT REPEAT("Geeks", 3) 
 AS Repeated_String;
 ```
@@ -37,7 +37,7 @@ AS Repeated_String;
 **例-2 :**
 借助 REPEAT 函数重复字符串‘SQL’0 次。
 
-```
+```sql
 SELECT REPEAT("SQL", 0) 
 AS Repeated_String;
 ```
@@ -51,7 +51,7 @@ AS Repeated_String;
 **例-3 :**
 REPEAT 函数也可以用来重复列数据。为了演示，创建一个名为 Employee 的表。
 
-```
+```sql
 CREATE TABLE Employee
 (
 Employee_id INT AUTO_INCREMENT,  
@@ -63,7 +63,7 @@ PRIMARY KEY(Employee_id )
 
 **在员工表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Employee
 (Employee_name, Joining_Date )
 VALUES
@@ -76,7 +76,7 @@ VALUES
 
 因此，员工表如下。
 
-```
+```sql
 select * from Employee ;
 ```
 
@@ -92,7 +92,7 @@ select * from Employee ;
 
 现在，我们将从 Employee_name 列中获取所有重复的字符串。
 
-```
+```sql
 SELECT REPEAT(Employee_name, 2) 
 AS Repeated_Name
 FROM Employee;

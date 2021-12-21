@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
  CREATE INDEX index
  ON TABLE column;
 ```
@@ -21,7 +21,7 @@
 
 **语法:**
 
-```
+```sql
  CREATE INDEX index
  ON TABLE (column1, column2,.....);
 ```
@@ -31,7 +31,7 @@
 唯一索引用于维护表中数据的完整性以及快速性能，它不允许多个值输入表中。
 **语法:**
 
-```
+```sql
 CREATE UNIQUE INDEX index
  ON TABLE column;
 ```
@@ -58,7 +58,7 @@ CREATE UNIQUE INDEX index
 
 **语法:**
 
-```
+```sql
 DROP INDEX index;
 ```
 
@@ -68,7 +68,7 @@ DROP INDEX index;
 
 通过重建或重新组织索引来修改现有表的索引。
 
-```
+```sql
 ALTER INDEX IndexName 
 ON TableName REBUILD;
 ```
@@ -79,7 +79,7 @@ ON TableName REBUILD;
 
 **语法:**
 
-```
+```sql
 select * from USER_INDEXES;
 ```
 
@@ -91,7 +91,7 @@ select * from USER_INDEXES;
 
 **语法:**
 
-```
+```sql
 EXEC sp_rename  
    index_name,  
    new_index_name,  

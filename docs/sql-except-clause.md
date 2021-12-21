@@ -29,7 +29,7 @@
 | three | 马尼克 | 美国联合通讯社(Associated Press) |
 | four | 雷卡 | 社交网站（Social Network Site 的缩写） |
 
-```
+```sql
 SELECT Name
        FROM Students
 EXCEPT
@@ -40,7 +40,7 @@ SELECT NAME
 
 **输出:**
 
-```
+```sql
 Rohan
 Mansi
 Megha
@@ -49,7 +49,7 @@ Megha
 
 要保留重复项，我们必须明确地写**excepall**而不是 EXCEPT。
 
-```
+```sql
 SELECT Name
        FROM Students
 EXCEPTALL
@@ -60,7 +60,7 @@ SELECT Name
 
 **输出:**
 
-```
+```sql
 Rohan
 Mansi
 Mansi

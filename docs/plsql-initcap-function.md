@@ -8,7 +8,7 @@ PLSQL 中的 INITCAP 函数可以接受任何数据类型的 char can，例如 c
 
 **语法:**
 
-```
+```sql
 INITCAP(string)
 ```
 
@@ -29,7 +29,7 @@ PLSQL 中的 INITCAP 函数返回一个字符串值。
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'geeksforgeeks';
 
@@ -41,13 +41,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(40) := 'Hello, welcome to geeksforgeeks.';
 
@@ -59,6 +59,6 @@ END;
 
 **输出:**
 
-```
+```sql
 Hello, Welcome To Geeksforgeeks. 
 ```

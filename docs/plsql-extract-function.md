@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 EXTRACT(field FROM source)
 ```
 
@@ -33,7 +33,7 @@ EXTRACT 函数接受两个参数:
 
 **示例-1:** 从日期值中提取年份字段的值。
 
-```
+```sql
 SELECT
   EXTRACT(YEAR FROM DATE '2019-10-26')
 FROM
@@ -42,13 +42,13 @@ FROM
 
 **输出:**
 
-```
+```sql
 2019 
 ```
 
 **示例-2:** 从日期值中提取月份字段的值。
 
-```
+```sql
 SELECT
   EXTRACT(YEAR FROM DATE '2019-10-26')
 FROM
@@ -57,13 +57,13 @@ FROM
 
 **输出:**
 
-```
+```sql
 10 
 ```
 
 **示例-3:** 从日期值中提取日字段的值。
 
-```
+```sql
 SELECT
   EXTRACT(YEAR FROM DATE '2019-10-26')
 FROM
@@ -72,13 +72,13 @@ FROM
 
 **输出:**
 
-```
+```sql
 26 
 ```
 
 **示例-4:** 从间隔年到月提取年字段的值。
 
-```
+```sql
 SELECT
   EXTRACT( YEAR FROM INTERVAL '7-3' YEAR TO MONTH )
 FROM
@@ -87,7 +87,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 7 
 ```
 
@@ -95,7 +95,7 @@ FROM
 
 **示例-5:** 从间隔日到秒提取日字段的值。
 
-```
+```sql
 SELECT
   EXTRACT( DAY FROM INTERVAL '26 10:32:29.53' DAY TO SECOND )
 FROM
@@ -104,7 +104,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 26 
 ```
 
@@ -112,7 +112,7 @@ FROM
 
 **示例-6:** 从时间戳中提取年份字段的值。
 
-```
+```sql
 SELECT
   EXTRACT( YEAR FROM TIMESTAMP '2019-10-26 12:57:34.10' )
 FROM
@@ -121,6 +121,6 @@ FROM
 
 **输出:**
 
-```
+```sql
 2019 
 ```

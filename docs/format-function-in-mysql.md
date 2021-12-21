@@ -7,7 +7,7 @@ MySQL 中的这个函数有助于格式化给定的数字，如' #，##，##。#
 
 **语法:**
 
-```
+```sql
 FORMAT(N, D, locale)
 ```
 
@@ -26,7 +26,7 @@ FORMAT(N, D, locale)
 **示例-1 :**
 FORMAT()函数将给定的数字四舍五入到小数点后 2 位。
 
-```
+```sql
 SELECT FORMAT(555454.12365, 2) AS form;
 ```
 
@@ -38,7 +38,7 @@ SELECT FORMAT(555454.12365, 2) AS form;
 **示例-2 :**
 FORMAT()函数将给定的数字四舍五入到小数点后 0 位。
 
-```
+```sql
 SELECT FORMAT(130919999.456, 0) 
 AS form;
 ```
@@ -51,7 +51,7 @@ AS form;
 **示例-3 :**
 用 de_D 区域设置替换 en_US 区域设置。
 
-```
+```sql
 SELECT FORMAT(27112020.1052, 3, 'de_DE') As form;
 ```
 
@@ -64,7 +64,7 @@ SELECT FORMAT(27112020.1052, 3, 'de_DE') As form;
 FORMAT()函数舍入表格中的列。
 **创建产品表–**
 
-```
+```sql
 CREATE TABLE Products(
 Product_Id INT AUTO_INCREMENT,  
 Product_Name VARCHAR(100) NOT NULL,
@@ -75,7 +75,7 @@ PRIMARY KEY(Product_Id )
 
 **在表格中插入数值:**
 
-```
+```sql
 INSERT INTO Products(Product_Name, Price)
 VALUES
 ('MotorolaMobile', 75000.999 ),
@@ -85,7 +85,7 @@ VALUES
 
 该表将如下所示。
 
-```
+```sql
 SELECT * FROM Products;
 ```
 
@@ -96,7 +96,7 @@ SELECT * FROM Products;
 
 现在，通过四舍五入到小数点后 1 位来格式化价格列。
 
-```
+```sql
 SELECT  
    Product_Name, FORMAT(Price, 1) As New_price
 FROM

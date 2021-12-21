@@ -24,7 +24,7 @@ SQL 攻击有以下两个部分:
 
 ## Java 语言(一种计算机语言，尤用于创建网站)
 
-```
+```sql
 String query = "SELECT userName, balance FROM accounts"
     + "WHERE userID=" + request.getParameter("userID") +
   "and password='" + request.getParameter("Password") + "'";
@@ -45,7 +45,7 @@ catch (SQLException e)
 
 在正常情况下，用户输入他或她的用户标识和密码，这将生成以下执行语句:
 
-```
+```sql
 SELECT userName, balance 
 FROM accounts 
 WHERE userID=512 and password='thisisyoda'
@@ -53,14 +53,14 @@ WHERE userID=512 and password='thisisyoda'
 
 可能的 SQL 注入攻击会利用密码字段生成一个布尔表达式，该表达式在所有情况下的计算结果都为真。想象一下将用户标识和密码字段设置为
 
-```
+```sql
 userID = 1' or '1' = '1
 password = 1' or '1' = '1
 ```
 
 然后，SQL 语句变成
 
-```
+```sql
 SELECT userName, balance 
 FROM accounts 
 WHERE userID='1' OR '1'='1' and 
@@ -72,7 +72,7 @@ WHERE userID='1' OR '1'='1' and
 
 ## Java 语言(一种计算机语言，尤用于创建网站)
 
-```
+```sql
 String query = "SELECT userName, balance "+
                "FROM accounts WHERE userID = ?
                 and password = ?";
@@ -96,7 +96,7 @@ try {
 
 ## Java 语言(一种计算机语言，尤用于创建网站)
 
-```
+```sql
 String query = "SELECT userID, userName, passwordHash"+
                " FROM users WHERE userName = '"
                + request.getParameter("user") + "'";
@@ -130,7 +130,7 @@ catch (BadLoginException e){}
 
 正常的查询如下。
 
-```
+```sql
 SELECT userID, userName, passwordHash 
 FROM users 
 WHERE userName = 'Anannya'
@@ -138,7 +138,7 @@ WHERE userName = 'Anannya'
 
 攻击者可能会在用户名字段中插入以下内容。
 
-```
+```sql
 Anannya';
 INSERT INTO groupMmbership (userID, group) 
 VALUES (SELECT userID FROM users
@@ -147,7 +147,7 @@ WHERE userName='Anannya', 'Administrator'); --
 
 因此，实际查询将变为:
 
-```
+```sql
 SELECT userID, userName, passwordHash FROM 
        users WHERE userName = 'Anannya';
 INSERT INTO groupMmbership (userID, group) 
@@ -159,7 +159,7 @@ WHERE userName='Anannya', 'Administrator'); --'
 
 ## Java 语言(一种计算机语言，尤用于创建网站)
 
-```
+```sql
 String query = "SELECT userID, userName, passwordHash"+
                " FROM users WHERE userName = ?";
 
@@ -177,26 +177,26 @@ try
 
 ## Java 语言(一种计算机语言，尤用于创建网站)
 
-```
+```sql
 String query = "INSERT INTO users VALUES(" +
         request.getParameter("userName") + ");";
 ```
 
 一般查询为:
 
-```
+```sql
 INSERT INTO users VALUES("Anannya")
 ```
 
 考虑攻击者是否在用户名字段中输入了以下查询:
 
-```
+```sql
 "Anannya); DROP TABLE users;"
 ```
 
 查询将变为:
 
-```
+```sql
 INSERT INTO users VALUES("Anannya"); DROP TABLE users;
 ```
 

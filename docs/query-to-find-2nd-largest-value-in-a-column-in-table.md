@@ -9,7 +9,7 @@
 **示例:**
 在第一个示例中，在“收入”列中查找第二大值，在第二个示例中，在“成本”列中查找第二大值。
 
-```
+```sql
 Input: Table name- Employee
 +------+--------+
 | Name | Income |
@@ -38,7 +38,7 @@ Output: 180
 
 **语法:**
 
-```
+```sql
 SELECT MAX (column_name) 
 FROM table_name 
 WHERE column_name NOT IN (SELECT Max (column_name) 
@@ -49,7 +49,7 @@ WHERE column_name NOT IN (SELECT Max (column_name)
 
 *   **示例-1:**
 
-    ```
+    ```sql
     SELECT MAX (Income) 
     FROM Employee 
     WHERE Salary NOT IN (SELECT Max (Income) 
@@ -58,7 +58,7 @@ WHERE column_name NOT IN (SELECT Max (column_name)
 
 *   **示例-2:**
 
-    ```
+    ```sql
     SELECT MAX (Cost) 
     FROM price_list 
     WHERE Salary NOT IN (SELECT Max (Cost) 
@@ -69,7 +69,7 @@ WHERE column_name NOT IN (SELECT Max (column_name)
 
 **语法:**
 
-```
+```sql
 SELECT column_name
 FROM table_name e
 WHERE 2 = (SELECT COUNT (DISTINCT column_name) 
@@ -81,7 +81,7 @@ WHERE 2 = (SELECT COUNT (DISTINCT column_name)
 
 *   **示例-1:**
 
-    ```
+    ```sql
     SELECT Income
     FROM Employee e
     WHERE 2=(SELECT COUNT(DISTINCT Income) 
@@ -91,7 +91,7 @@ WHERE 2 = (SELECT COUNT (DISTINCT column_name)
 
 *   **示例-2:**
 
-    ```
+    ```sql
     SELECT Cost
     FROM price_list e
     WHERE 2=(SELECT COUNT(DISTINCT Cost) 

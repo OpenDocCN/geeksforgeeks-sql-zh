@@ -14,7 +14,7 @@ SQL Server 中的这个函数是用来查找两个指定日期的差异。
 
 **语法:**
 
-```
+```sql
 DATEDIFF(interval, date1, date2)
 
 ```
@@ -44,63 +44,63 @@ DATEDIFF(interval, date1, date2)
 **示例-1 :**
 使用 DATEDIFF()函数并获取两个日期值之间的差值，单位为年。
 
-```
+```sql
 SELECT DATEDIFF(year, '2010/01/12', '2021/01/12');
 
 ```
 
 **输出:**
 
-```
+```sql
 11
 ```
 
 **示例-2 :**
 使用 DATEDIFF()函数并获取两个日期值之间的差值，以月为单位。
 
-```
+```sql
 SELECT DATEDIFF(month, '2010/2/12', '2021/12/12');
 
 ```
 
 **输出:**
 
-```
+```sql
 142
 ```
 
 **示例-3 :**
 使用 DATEDIFF()函数并获取两个日期值之间的负差，单位为天。
 
-```
+```sql
 SELECT DATEDIFF(day, '2021/2/1', '2010/12/12');
 
 ```
 
 **输出:**
 
-```
+```sql
 -3704
 ```
 
 **示例-4 :**
 使用 DATEDIFF()函数，得到两个日期值之间的差值，其中也包括时间，单位为小时。
 
-```
+```sql
 SELECT DATEDIFF(hour, '2019/2/1 09:55', '2020/12/12 07:45');
 
 ```
 
 **输出:**
 
-```
+```sql
 16318
 ```
 
 **示例-5 :**
 使用 DATEDIFF()函数，并使用包含时间的变量获得两个日期值之间的差值，单位为秒。
 
-```
+```sql
 DECLARE @date1 VARCHAR(50);
 DECLARE @date2 VARCHAR(50);
 SET @date1 = '2019/2/1 09:55:44';
@@ -111,7 +111,7 @@ SELECT DATEDIFF(second, @date1, @date2);
 
 **输出:**
 
-```
+```sql
 58744178
 ```
 

@@ -31,7 +31,7 @@ Ans:SQL 和 PL/SQL 的一些常见区别如下:
  **之间**之间的运算符用于根据一系列值获取行。
 例如，****
 
-```
+```sql
 **SELECT * FROM Students 
 WHERE ROLL_NO BETWEEN 20 AND 30;**
 ```
@@ -40,7 +40,7 @@ WHERE ROLL_NO BETWEEN 20 AND 30;**
  ****运算符用于检查特定集合中包含的值。
 例如，********
 
-```
+```sql
 ****SELECT * FROM Students 
 WHERE ROLL_NO IN (20,21,23);****
 ```
@@ -51,7 +51,7 @@ WHERE ROLL_NO IN (20,21,23);****
 SQL 的 LIKE 运算符就是为此而使用的。它用于通过在 where 子句中搜索特定模式来获取筛选数据。
 使用 LIKE 的语法是，****** 
 
-```
+```sql
 ****SELECT column1,column2 FROM table_name WHERE column_name LIKE pattern;** 
 
 **LIKE**: operator name
@@ -61,7 +61,7 @@ result set.**
 
 ****所需的查询是:****
 
-```
+```sql
 **SELECT * FROM Employees WHERE EmpName like 'A%' ;**
 ```
 
@@ -76,21 +76,21 @@ SQL 中有三种类型的案例操作函数。他们是，****
 *   ******low**:这个函数的目的是以小写形式返回字符串。它将字符串作为参数，并通过将其转换为小写字母来返回字符串。
     语法:**** 
 
-```
+```sql
 **LOWER('string')**
 ```
 
 *   ******UPPER** :这个函数的目的是返回大写的字符串。它将字符串作为参数，并通过将其转换为大写形式来返回字符串。
     语法:****
 
-```
+```sql
 **UPPER('string')**
 ```
 
 *   ******INITCAP** :这个函数的目的是返回第一个字母大写，其余字母小写的字符串。
     语法:**** 
 
-```
+```sql
 **INITCAP('string')**
 ```
 
@@ -117,7 +117,7 @@ SQL 中有三种类型的案例操作函数。他们是，****
 
 ****基本语法:****
 
-```
+```sql
 **CREATE VIEW view_name AS
 SELECT column1, column2.....
 FROM table_name
@@ -151,7 +151,7 @@ T5】Orders****
 ****我们可以清楚地看到，Orders 表中的字段 C_ID 是 Customers 表中的主键，即它唯一地标识 Customers 表中的每一行。因此，它是订单表中的外键。
 语法:****
 
-```
+```sql
 **CREATE TABLE Orders
 (
 O_ID int NOT NULL,
@@ -332,7 +332,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 
 ****在 SQL 中，字符串末尾的空格由修剪函数删除。****
 
-```
+```sql
 ****Syntax:**
        Trim(s)
        Where s is a any string.**
@@ -352,7 +352,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 
 ******联合操作:**该操作包括存在于任一关系中的所有元组。例如:找到所有在银行有贷款或账户或两者都有的客户。****
 
-```
+```sql
  **SELECT CustomerName FROM Depositor 
  UNION 
  SELECT CustomerName FROM Borrower ;**
@@ -362,7 +362,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 
 ******交集运算:**该运算包括存在于两个关系中的元组。例如:要查找在银行有贷款和账户的客户:****
 
-```
+```sql
  **SELECT CustomerName FROM Depositor 
  INTERSECT
  SELECT CustomerName FROM Borrower ;**
@@ -372,7 +372,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 
 ******EXCEPT Operation:** 此操作包括存在于一个关系中但不应存在于另一个关系中的元组。例如:要查找在银行有账户但没有贷款的客户:****
 
-```
+```sql
  **SELECT CustomerName FROM Depositor 
  EXCEPT
  SELECT CustomerName FROM Borrower ;**
@@ -421,7 +421,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 
 ****LIKE 运算符:它用于通过在 where 子句中搜索特定模式来获取过滤后的数据。****
 
-```
+```sql
 ****Syntax:**
 
 **SELECT column1,column2 FROM table_name WHERE column_name LIKE pattern;**
@@ -501,7 +501,7 @@ LIKE: operator name**
 
 ****<u>**各种组功能**</u>****
 
-```
+```sql
 **<u>1) Count()
 2) Sum()
 3) Avg()
@@ -521,7 +521,7 @@ LIKE: operator name**
 
 **<u>**语法:**</u>**
 
-```
+```sql
 <u>SELECT tablenmae1.colunmname, tablename2.columnnmae    
 FROM tablenmae1  
 JOIN tablename2  
@@ -546,7 +546,7 @@ ORDER BY columnname;</u>
 
 ### **<u>语法:</u>**
 
-```
+```sql
 <u>CURRENT_DATE
      or
 CURRENT DATE</u>
@@ -578,7 +578,7 @@ CURRENT DATE</u>
 
 **<u>有时，在 SQL 中，我们需要创建一个已经定义(或创建)的表的精确副本。[<u>【MySQL】</u>](https://www.geeksforgeeks.org/sql-tutorial/#mysql)使您能够执行此操作。因为我们可能需要这样的重复表来测试数据，而不会对原始表和存储在其中的数据产生任何影响。</u>**
 
-```
+```sql
 <u>CREATE TABLE Contact List(Clone_1) LIKE Original_table;</u>
 ```
 
@@ -612,7 +612,7 @@ CURRENT DATE</u>
 
 **<u>**NVL(expr1，expr2):** 在 SQL 中，NVL()将空值转换为实际值。可以使用的数据类型有日期、字符和数字。数据类型必须相互匹配。即 expr1 和 expr2 必须是相同的数据类型。</u>** 
 
-```
+```sql
 <u>**Syntax:**
 
 **NVL (expr1, expr2)**</u>
@@ -620,7 +620,7 @@ CURRENT DATE</u>
 
 **<u>**NVL2(expr1，expr2，expr 3):**NVL2 函数检查第一个表达式。如果第一个表达式不为空，则 NVL2 函数返回第二个表达式。如果第一个表达式为空，则返回第三个表达式，即如果 expr1 不为空，则 NVL2 返回 expr2。如果 expr1 为空，NVL2 将返回 expr3。参数 expr1 可以有任何数据类型。</u>**
 
-```
+```sql
 <u>**Syntax:**
 
 **NVL2 (expr1, expr2, expr3)**</u>
@@ -632,7 +632,7 @@ CURRENT DATE</u>
 
 **<u>控制语句是大多数语言的重要组成部分 ，因为它们控制其他语句集的执行。这些也可以在 SQL 中找到，应该通过仔细选择符合我们要求的元组来用于查询过滤和查询优化等用途。在这篇文章中，我们探讨了 SQL 中的 Case-Switch 语句。CASE 语句是 SQL 处理 if/then 逻辑的方式。</u>**
 
-```
+```sql
 <u>syntax: 1
 CASE case_value
     WHEN when_value THEN statement_list
@@ -641,7 +641,7 @@ CASE case_value
 END CASE</u>
 ```
 
-```
+```sql
 <u>syntax: 2
 CASE
     WHEN search_condition THEN statement_list
@@ -658,7 +658,7 @@ END CASE</u>
 **<u>**聚结():**SQL 中的聚结函数返回其参数中的第一个非空表达式。如果所有表达式的计算结果都为 null，那么 function 函数将返回 null。
 语法:</u>**
 
-```
+```sql
 <u>SELECT column(s), CAOLESCE(expression_1,....,expression_n)
 FROM table_name;</u>
 ```
@@ -666,7 +666,7 @@ FROM table_name;</u>
 **<u>**ISNULL():**ISNULL 函数在 SQL Server 和 MySQL 中有不同的用法。在 SQL Server 中，ISNULL()函数用于替换空值。
 **语法:**</u>**
 
-```
+```sql
 <u>SELECT column(s), ISNULL(column_name, value_to_replace)
 FROM table_name;</u>
 ```

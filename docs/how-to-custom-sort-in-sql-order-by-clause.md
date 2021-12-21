@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name
 ORDER BY CASE 
      WHEN column_field = "value1" THEN priority1
@@ -23,7 +23,7 @@ ORDER BY CASE
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -33,7 +33,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -43,7 +43,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE student_marks(
 stu_id VARCHAR(20),
 stu_name VARCHAR(20),
@@ -58,7 +58,7 @@ total_marks INT
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns student_marks
 ```
 
@@ -68,7 +68,7 @@ EXEC sp_columns student_marks
 
 **查询:**
 
-```
+```sql
 INSERT INTO student_marks
 VALUES( '1001','PRADEEP','E.C.E', 550),
 ( '1002','KIRAN','E.C.E', 540),
@@ -87,7 +87,7 @@ VALUES( '1001','PRADEEP','E.C.E', 550),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM student_marks
 ```
 
@@ -97,7 +97,7 @@ SELECT * FROM student_marks
 
 **默认排序依据:**
 
-```
+```sql
 SELECT * FROM student_marks
 ORDER BY stu_branch 
 ```
@@ -108,7 +108,7 @@ ORDER BY stu_branch
 
 **自定义排序依据:**
 
-```
+```sql
 SELECT * FROM student_marks
 ORDER BY CASE
          WHEN stu_branch = 'C.S.E' then 1

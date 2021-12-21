@@ -11,14 +11,14 @@
 **步骤-1:创建数据库:**
 这里，我们将使用如下 SQL 查询创建数据库。
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 **第二步:使用数据库:**
 在这里，我们将使用极客数据库。
 
-```
+```sql
 USE geeks;
 ```
 
@@ -30,7 +30,7 @@ USE geeks;
 
 **添加表教授–**
 
-```
+```sql
 CREATE TABLE professor(
     ID int,
     Name varchar(20),
@@ -40,7 +40,7 @@ CREATE TABLE professor(
 
 **添加表格示教–**
 
-```
+```sql
 CREATE TABLE teaches(
     course_id int,
     prof_id int,
@@ -51,7 +51,7 @@ CREATE TABLE teaches(
 **第 4 步:表的描述:**
 我们可以使用下面的 SQL 命令获得这两个表的描述，如下所示。
 
-```
+```sql
 DESCRIBE professor
 ```
 
@@ -64,7 +64,7 @@ DESCRIBE professor
 
 </figure>
 
-```
+```sql
 DESCRIBE teaches
 ```
 
@@ -82,7 +82,7 @@ DESCRIBE teaches
 
 **在教授表中插入行–**
 
-```
+```sql
 INSERT INTO professor VALUES (1, 'Rohan', 57000);
 INSERT INTO professor VALUES (2, 'Aryan', 45000);
 INSERT INTO professor VALUES (3, 'Arpit', 60000);
@@ -96,7 +96,7 @@ INSERT INTO professor VALUES (5, 'Tara', 55000);
 
 **在示教表中插入行–**
 
-```
+```sql
 INSERT INTO teaches VALUES (1, 1, 'English');
 INSERT INTO teaches VALUES (1, 3, 'Physics');
 INSERT INTO teaches VALUES (2, 4, 'Chemistry');
@@ -112,7 +112,7 @@ INSERT INTO teaches VALUES (2, 5, 'Mathematics');
 
 **教授表–**
 
-```
+```sql
 SELECT * FROM professor;
 ```
 
@@ -127,7 +127,7 @@ SELECT * FROM professor;
 
 **示教表格–**
 
-```
+```sql
 SELECT * FROM teaches;
 ```
 
@@ -146,14 +146,14 @@ SELECT * FROM teaches;
 
 **语法:**
 
-```
+```sql
 SELECT comma_separated_column_names
 FROM table1 INNER JOIN table2 ON condition
 ```
 
 **示例–**
 
-```
+```sql
 SELECT teaches.course_id, teaches.prof_id, professor.Name, professor.Salary
 FROM professor INNER JOIN teaches ON professor.ID = teaches.prof_id;
 ```

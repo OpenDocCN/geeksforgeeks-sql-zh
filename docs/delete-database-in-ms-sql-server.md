@@ -33,7 +33,7 @@
 
 *   **删除数据库:**
 
-    ```
+    ```sql
     USE master ;  
     GO  
     DROP DATABASE Databasename;  
@@ -42,7 +42,7 @@
 
 *   **删除多个数据库:**
 
-    ```
+    ```sql
     USE master ;  
     GO  
     DROP DATABASE database1, database2, ...;  
@@ -52,7 +52,7 @@
 **示例:**
 让我们假设已经创建了一个不再需要的数据库“Geekstest”，要删除数据库:
 
-```
+```sql
 USE master ;
 GO
 DROP DATABASE Geekstest;

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN loginname;
 GO
 
@@ -16,7 +16,7 @@ GO
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN loginname ENABLE;
 
 ```
@@ -28,14 +28,14 @@ ALTER LOGIN geeks ENABLE
 **更改登录密码**
 **语法:**
 
-```
+```sql
 ALTER LOGIN geeks WITH PASSWORD = 'newpassword';
 
 ```
 
 **示例–**
 
-```
+```sql
 ALTER LOGIN geeks WITH PASSWORD = ‘G9h$fm@1LZe’;
 
 ```
@@ -44,7 +44,7 @@ ALTER LOGIN geeks WITH PASSWORD = ‘G9h$fm@1LZe’;
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN loginname 
 WITH PASSWORD = 'newpassword' OLD_PASSWORD = 'oldpassword';
 
@@ -52,7 +52,7 @@ WITH PASSWORD = 'newpassword' OLD_PASSWORD = 'oldpassword';
 
 **示例–**
 
-```
+```sql
 ALTER LOGIN geeks 
 WITH PASSWORD = ‘G9h$fm@1LZe’ OLD_PASSWORD = ‘Ge@@k$s12’;
 
@@ -62,14 +62,14 @@ WITH PASSWORD = ‘G9h$fm@1LZe’ OLD_PASSWORD = ‘Ge@@k$s12’;
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN loginnmae WITH NAME = newname;
 
 ```
 
 **示例–**
 
-```
+```sql
 ALTER LOGIN geeks WITH NAME = geek;
 
 ```
@@ -78,14 +78,14 @@ ALTER LOGIN geeks WITH NAME = geek;
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN loginnmae WITH PASSWORD = 'password' UNLOCK ;
 
 ```
 
 **示例–**
 
-```
+```sql
 ALTER LOGIN geeks WITH PASSWORD = ‘G9h$fm@1LZe’ UNLOCK ;
 
 ```
@@ -94,7 +94,7 @@ ALTER LOGIN geeks WITH PASSWORD = ‘G9h$fm@1LZe’ UNLOCK ;
 
 **语法:**
 
-```
+```sql
 ALTER LOGIN [loginname] WITH CHECK_POLICY = OFF;
 ALTER LOGIN [loginnmae] WITH CHECK_POLICY = ON;
 
@@ -102,7 +102,7 @@ ALTER LOGIN [loginnmae] WITH CHECK_POLICY = ON;
 
 **示例–**
 
-```
+```sql
 ALTER LOGIN geeks WITH CHECK_POLICY = OFF;
 
 ALTER LOGIN geeks WITH CHECK_POLICY = ON;

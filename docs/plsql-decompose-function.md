@@ -9,7 +9,7 @@ DEFAULT 函数仅对 Unicode 字符有效，它在与输入相同的字符集内
 
 **语法:**
 
-```
+```sql
 DECOMPOSE( string )
 ```
 
@@ -29,7 +29,7 @@ DECOMPOSE( string )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_String2 varchar(5) := 'â';
    Test_String varchar(20) := 'Gèèksforgèèks';
@@ -43,7 +43,7 @@ END;
 
 **输出:**
 
-```
+```sql
 a^
 Ge´e´ksforge´e´ks 
 ```

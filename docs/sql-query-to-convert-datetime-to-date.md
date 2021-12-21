@@ -17,7 +17,7 @@
 
 **语法:**
 
-```
+```sql
 CAST( dateToConvert AS DATE)
 ```
 
@@ -25,7 +25,7 @@ CAST( dateToConvert AS DATE)
 
 **查询:**
 
-```
+```sql
 SELECT CAST(GETDATE() AS DATE) AS CURRENT_DATE
 ```
 
@@ -39,7 +39,7 @@ SELECT CAST(GETDATE() AS DATE) AS CURRENT_DATE
 
 **查询:**
 
-```
+```sql
 SELECT CAST('2021-08-27 17:26:36.710' AS DATE) AS CURRENT_DATE_GFG
 ```
 
@@ -53,7 +53,7 @@ SELECT CAST('2021-08-27 17:26:36.710' AS DATE) AS CURRENT_DATE_GFG
 
 **语法:**
 
-```
+```sql
 CONVERT(DATE, dateToConvert)
 ```
 
@@ -61,7 +61,7 @@ CONVERT(DATE, dateToConvert)
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(DATE, GETDATE()) AS CURRENT_DATE_GFG
 ```
 
@@ -73,7 +73,7 @@ SELECT CONVERT(DATE, GETDATE()) AS CURRENT_DATE_GFG
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(DATE, '2021-08-27 17:26:36.710' ) AS CURRENT_DATE_GFG
 ```
 
@@ -87,7 +87,7 @@ SELECT CONVERT(DATE, '2021-08-27 17:26:36.710' ) AS CURRENT_DATE_GFG
 
 **语法:**
 
-```
+```sql
 TRY_CONVERT(DATE, dateToConvert)
 ```
 
@@ -97,7 +97,7 @@ TRY_CONVERT(DATE, dateToConvert)
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CONVERT(DATE,GETDATE()) AS CURRENT_DATE_GFG
 ```
 
@@ -109,7 +109,7 @@ SELECT TRY_CONVERT(DATE,GETDATE()) AS CURRENT_DATE_GFG
 
 **查询:**
 
-```
+```sql
 SELECT TRY_CONVERT(DATE,'2021-08-27 17:26:36.710') AS CURRENT_DATE_GFG
 ```
 
@@ -123,7 +123,7 @@ SELECT TRY_CONVERT(DATE,'2021-08-27 17:26:36.710') AS CURRENT_DATE_GFG
 
 **语法:**
 
-```
+```sql
 SUBSTRING( dateToConvert ,0,11)
 ```
 
@@ -131,7 +131,7 @@ SUBSTRING( dateToConvert ,0,11)
 
 **查询:**
 
-```
+```sql
 SELECT SUBSTRING( '2021-08-27 17:26:36.710' ,0,11) AS CURRENT_DATE_GFG
 ```
 
@@ -143,7 +143,7 @@ SELECT SUBSTRING( '2021-08-27 17:26:36.710' ,0,11) AS CURRENT_DATE_GFG
 
 **查询:**
 
-```
+```sql
 SELECT SUBSTRING( CONVERT(varchar(17), GETDATE(), 23) ,0,11) AS CURRENT_DATE_GFG
 ```
 

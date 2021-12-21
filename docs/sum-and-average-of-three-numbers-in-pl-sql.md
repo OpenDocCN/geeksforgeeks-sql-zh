@@ -8,7 +8,7 @@
 给定三个数字，任务是找出三个数字的和与平均值。
 **例:**
 
-```
+```sql
 Input: a = 12, b = 15, c = 32
 Output: sum = 59 avg = 19.66
 
@@ -24,7 +24,7 @@ Output: sum = 90 avg = 30
 
 以下是所需的实现:
 
-```
+```sql
 --To find sum and avg of three numbers 
 DECLARE 
 
@@ -67,7 +67,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Sum = 46
 Average = 15.33
 

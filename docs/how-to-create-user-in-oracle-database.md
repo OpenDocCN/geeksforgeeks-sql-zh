@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE USER user_name IDENTIFIED BY password ;
 ```
 

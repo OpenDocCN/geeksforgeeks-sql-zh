@@ -8,7 +8,7 @@ MySQL 中的这个函数用于从指定的日期提取一个零件。
 
 **语法:**
 
-```
+```sql
 EXTRACT(part FROM date)
 ```
 
@@ -27,13 +27,13 @@ EXTRACT(part FROM date)
 
 提取指定日期“2020-11-24”的周。
 
-```
+```sql
 SELECT EXTRACT(WEEK FROM "2020-11-24");
 ```
 
 **输出:**
 
-```
+```sql
 47
 ```
 
@@ -41,13 +41,13 @@ SELECT EXTRACT(WEEK FROM "2020-11-24");
 
 从指定日期和时间“2020-10-22 07:12:23”提取小时。
 
-```
+```sql
 SELECT EXTRACT(HOUR FROM "2020-10-22 07:12:23");
 ```
 
 **输出:**
 
-```
+```sql
 7
 ```
 
@@ -55,12 +55,12 @@ SELECT EXTRACT(HOUR FROM "2020-10-22 07:12:23");
 
 从指定的日期和时间“2020-10-22 07:12:23”中提取年和月。
 
-```
+```sql
 SELECT EXTRACT(YEAR_MONTH FROM "2020-10-22 07:12:23");
 ```
 
 **输出:**
 
-```
+```sql
 202010
 ```

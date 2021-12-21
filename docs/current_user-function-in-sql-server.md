@@ -13,7 +13,7 @@ SQL Server 中的这个函数用来返回当前用户在使用中的 SQL Server 
 
 **语法:**
 
-```
+```sql
 CURRENT_USER
 ```
 
@@ -24,20 +24,20 @@ CURRENT_USER
 **示例-1 :**
 使用 CURRENT_USER()函数，获取当前用户的姓名。
 
-```
+```sql
 SELECT CURRENT_USER;
 ```
 
 **输出:**
 
-```
+```sql
 nidhi
 ```
 
 **示例-2 :**
 在下面的示例中使用 CURRENT_USER 作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE user01 (  
 user_id int IDENTITY(100, 2) NOT NULL,
 customer_id int NOT NULL,
@@ -47,14 +47,14 @@ user_name char(50) NOT NULL DEFAULT CURRENT_USER
 
 在表格中插入值–
 
-```
+```sql
 INSERT user01(customer_id)  
 VALUES (101), (102);
 ```
 
 显示表格的内容–
 
-```
+```sql
 SELECT * 
 FROM user01;  
 ```
@@ -74,7 +74,7 @@ FROM user01;
 **示例-3 :**
 使用 CURRENT_USER()函数，模拟用户‘Geek’。
 
-```
+```sql
 SELECT CURRENT_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT CURRENT_USER;   
@@ -82,7 +82,7 @@ SELECT CURRENT_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 ```
@@ -92,7 +92,7 @@ Geek
 **示例-4 :**
 使用 CURRENT_USER()函数模拟用户‘Geek’，然后再次还原代码，得到上一个当前用户。
 
-```
+```sql
 SELECT CURRENT_USER;  
 EXECUTE AS USER = 'Geek';  
 SELECT CURRENT_USER;   
@@ -102,7 +102,7 @@ SELECT CURRENT_USER;
 
 **输出:**
 
-```
+```sql
 nidhi
 Geek
 nidhi

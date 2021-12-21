@@ -24,7 +24,7 @@
 **示例:**
 我们将创建带有字段 Student_ID、First_Name、Last_Name 的 Students 表，我们将使用自动增量自动生成 Student_ID，并将其作为表的主键。假设 IDENTITY 的起始值为 101，我们将为每个新记录将自动生成的密钥增加 1。
 
-```
+```sql
 CREATE TABLE Students(
 Student_ID int IDENTITY(101, 1) PRIMARY KEY, 
 First_Name varchar(255),
@@ -34,7 +34,7 @@ Last_Name varchar(255)
 
 要在学生表中插入新记录，我们不会指定学生标识的值，因为它将自动添加。
 
-```
+```sql
 INSERT INTO Students(First_Name, Last_Name ) 
 VALUES ('Deeksha', 'Jain');
 
@@ -52,7 +52,7 @@ VALUES ('Kavisha', 'Parikh');
 **示例:**
 我们将创建带有字段 Student_ID、First_Name、Last_Name 的 Students 表，我们将使用自动增量自动生成 Student_ID，并将其作为表的主键。
 
-```
+```sql
 CREATE TABLE Students(
 Student_ID int AUTO_INCREMENT PRIMARY KEY, 
 First_Name varchar(255),
@@ -62,7 +62,7 @@ Last_Name varchar(255)
 
 要在学生表中插入新记录，我们不会指定 Student_ID 的值，因为它将自动添加，并且第一条记录的键为 1，后续每条记录的键将增加 1。
 
-```
+```sql
 INSERT INTO Students(First_Name, Last_Name ) 
 VALUES ('Anish', 'Jain');
 
@@ -79,7 +79,7 @@ VALUES ('Shruti', 'Sogani');
 
 要更改默认的起始值，我们可以使用如下的 ALTER TABLE 命令:
 
-```
+```sql
 ALTER TABLE Students AUTO_INCREMENT = new_value; 
 ```
 
@@ -87,7 +87,7 @@ ALTER TABLE Students AUTO_INCREMENT = new_value;
 
 要将 AUTO_INCREMENT 间隔值更改为不同于 1 的数字，我们为 MySQL Server 的变量 *auto_increment_increment* 分配新的间隔值。
 
-```
+```sql
 *mysql>*
 SET @@ auto_increment_increment=new_interval_value; 
 ```
@@ -100,7 +100,7 @@ SET @@ auto_increment_increment=new_interval_value;
 **示例:**
 我们将创建带有字段 Student_ID、First_Name、Last_Name 的 Students 表，我们将使用自动增量自动生成 Student_ID，并将其作为表的主键。
 
-```
+```sql
 CREATE TABLE Students(
 Student_ID int SERIAL PRIMARY KEY, 
 First_Name varchar(255),
@@ -110,7 +110,7 @@ Last_Name varchar(255)
 
 要在学生表中插入新记录，我们不会指定学生标识的值，因为它将自动添加。
 
-```
+```sql
 INSERT INTO Students(First_Name, Last_Name ) 
 VALUES ('Anish', 'Jain');
 
@@ -131,7 +131,7 @@ VALUES ('Shruti', 'Sogani');
 **示例:**
 我们将创建带有字段 Student_ID、First_Name、Last_Name 的 Students 表，我们将使用自动增量自动生成 Student_ID，并将其作为表的主键。
 
-```
+```sql
 CREATE TABLE Students(
 Student_ID int AUTOINCREMENT PRIMARY KEY, 
 First_Name varchar(255),
@@ -141,7 +141,7 @@ Last_Name varchar(255)
 
 要在学生表中插入新记录，我们不会指定 Student_ID 的值，因为它将自动添加，并且第一条记录的键为 1，后续每条记录的键将增加 1。
 
-```
+```sql
 INSERT INTO Students(First_Name, Last_Name ) 
 VALUES ('Anish', 'Jain');
 
@@ -158,7 +158,7 @@ VALUES ('Shruti', 'Sogani');
 
 要更改默认的起始值和增量值，我们可以使用自动增量功能，如下所示:
 
-```
+```sql
 AUTOINCREMENT(starting_value, increment_value) 
 ```
 
@@ -169,7 +169,7 @@ AUTOINCREMENT(starting_value, increment_value)
 
 **语法:**
 
-```
+```sql
 CREATE SEQUENCE sequence_name
 MINVALUE 1
 START WITH 1
@@ -191,7 +191,7 @@ CACHE 10;
 **示例:**
 下面的代码创建了一个名为 seq_students 的序列对象，它以 101 开头，可以递增 1。它还将缓存多达 20 个性能值。
 
-```
+```sql
 CREATE SEQUENCE seq_students
 MINVALUE 1
 START WITH 101
@@ -201,7 +201,7 @@ CACHE 20;
 
 要将新记录插入“学生”表，我们必须使用 nextval 函数从 seq_students 序列中检索下一个值:
 
-```
+```sql
 INSERT INTO Students(Student_ID, First_Name, Last_Name)
 VALUES (seq_students.nextval, 'Deeksha', 'Jain');
 

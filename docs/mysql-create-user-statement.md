@@ -13,7 +13,7 @@ MySQL 中的 **CREATE USER** 语句允许我们创建新的 MySQL 帐户，或�
 **语法:**
 MySQL 中 CREATE USER 语句的语法是:
 
-```
+```sql
 CREATE USER user_account IDENTIFIED BY password;
 ```
 
@@ -28,7 +28,7 @@ CREATE USER user_account IDENTIFIED BY password;
 
     **语法:**
 
-```
+```sql
 CREATE USER gfguser1@localhost IDENTIFIED BY 'abcd';
 ```
 
@@ -37,7 +37,7 @@ CREATE USER gfguser1@localhost IDENTIFIED BY 'abcd';
 *   **创建多个用户**:对于创建多个从 localhost 连接到 MySQL 数据库服务器的新用户，CREATE USER 语句应该按照以下方式使用。
     **语法:**
 
-```
+```sql
 CREATE USER
 'gfguser2'@'localhost' IDENTIFIED BY 'efgh',
 'gfguser3'@'localhost' IDENTIFIED BY 'uvxy';
@@ -58,7 +58,7 @@ CREATE USER
 *   **查看用户账户的权限**:“显示授权”语句用于查看用户账户的权限。show grants 语句的用法如下:
     **语法:**
 
-```
+```sql
 SHOW GRANTS FOR user-account;
 ```
 

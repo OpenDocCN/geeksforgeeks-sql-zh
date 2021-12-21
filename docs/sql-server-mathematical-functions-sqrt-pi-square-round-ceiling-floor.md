@@ -8,7 +8,7 @@ SQRT()函数是最常用的函数。它接受任何数值，并返回该数值�
 
 **语法:**
 
-```
+```sql
 SELECT SQRT(..value..)
 ```
 
@@ -19,7 +19,7 @@ SELECT SQRT(..value..)
 
 **语法:**
 
-```
+```sql
 SELECT PI()
 ```
 
@@ -30,7 +30,7 @@ SELECT PI()
 
 **语法:**
 
-```
+```sql
 SELECT SQUARE(..value..)
 ```
 
@@ -41,7 +41,7 @@ SELECT SQUARE(..value..)
 
 **语法:**
 
-```
+```sql
 SELECT ROUND(..value.., number_of_decimal_places)
 ```
 
@@ -53,14 +53,14 @@ SELECT ROUND(..value.., number_of_decimal_places)
 
 **语法:**
 
-```
+```sql
 SELECT CEILING(..value..)
 ```
 
 **FLOOR():** FLOOR()函数返回下一个最低值(整数)。
 **语法:**
 
-```
+```sql
 SELECT FLOOR(..value..)
 ```
 

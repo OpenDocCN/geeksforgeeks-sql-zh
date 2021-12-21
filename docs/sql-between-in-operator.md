@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name BETWEEN value1 AND value2;
@@ -26,7 +26,7 @@ WHERE column_name BETWEEN value1 AND value2;
 *   **使用带数值的介于:**
     列出所有工资在 30000 到 45000 之间的员工姓名。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 WHERE Salary
@@ -40,7 +40,7 @@ BETWEEN 30000 AND 45000;
 *   **使用带日期值的介于:**
     查找出生日期在 1985 年 1 月 1 日至 1990 年 12 月 12 日之间的所有员工。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 where DOB
@@ -54,7 +54,7 @@ BETWEEN '1985-01-01' AND '1990-12-30';
 *   **使用 NOT 运算符和**之间的
     查找所有工资不在 30000 到 45000 范围内的员工姓名。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Emplyoee
 WHERE Salary
@@ -70,7 +70,7 @@ NOT BETWEEN 30000 AND 45000;
 运算符允许您轻松测试表达式是否匹配值列表中的任何值。它用于删除选择、插入、更新或删除中的多个或条件。您也可以使用“不输入”来排除列表中的行。我们应该注意，任何类型的重复条目都将被保留。
 语法:
 
-```
+```sql
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (list_of_values);
@@ -80,7 +80,7 @@ WHERE column_name IN (list_of_values);
 
 *   查找工资等于 30000、40000 或 25000 的员工的姓名。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 WHERE Salary IN (30000, 40000, 25000);
@@ -92,7 +92,7 @@ WHERE Salary IN (30000, 40000, 25000);
 
 *   查找所有工资不等于 25000 或 30000 的员工的姓名。
 
-```
+```sql
 SELECT Fname, Lname
 FROM Employee
 WHERE Salary NOT IN (25000, 30000);

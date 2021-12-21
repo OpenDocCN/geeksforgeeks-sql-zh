@@ -21,7 +21,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeks;
 ```
 
@@ -31,14 +31,14 @@ ALTER 命令后跟 SET 关键字用于设置数据库的用户模式。在更改
 
 **语法:**
 
-```
+```sql
 ALTER DATABASE database_name SET 
 SINGLE_USER WITH ROLLBACK IMMEDIATE
 ```
 
 **查询:**
 
-```
+```sql
 ALTER DATABASE geeks SET SINGLE_USER
 WITH ROLLBACK IMMEDIATE;
 ```
@@ -55,14 +55,14 @@ WITH ROLLBACK IMMEDIATE;
 
 **语法:**
 
-```
+```sql
 ALTER DATABASE database_name 
 SET MULTI_USER;
 ```
 
 **查询:**
 
-```
+```sql
 ALTER DATABASE geeks
 SET MULTI_USER;
 ```

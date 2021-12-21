@@ -5,7 +5,7 @@
 PHP 中的*MySQL _ connect()*函数是用来连接你和数据库的。在之前版本的连接中*使用了 mysql_connect()* 进行连接，然后出现了*MySQL _ connect()*其中 *i* 表示连接的改进版本，比 *mysql_connect()* 更安全。
 **语法:**
 
-```
+```sql
 mysqli_connect ( "host", "username", "password", "database_name" )
 ```
 
@@ -24,7 +24,7 @@ mysqli_connect ( "host", "username", "password", "database_name" )
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
     mysqli_connect("localhost", "root", "", "GFG");
 
@@ -37,6 +37,6 @@ mysqli_connect ( "host", "username", "password", "database_name" )
 
 输出:
 
-```
+```sql
 Database Connection Successfully.
 ```

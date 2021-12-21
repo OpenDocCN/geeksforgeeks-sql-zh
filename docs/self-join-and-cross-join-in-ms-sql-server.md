@@ -9,7 +9,7 @@
 
 **语法–**
 
-```
+```sql
 select 
 select_list
 from T t1 [Inner|Left] Join on T t2 
@@ -23,7 +23,7 @@ on join_predicate.
 
 **语法–**
 
-```
+```sql
 select 
 select_list 
 from T1 cross join T2
@@ -53,7 +53,7 @@ from T1 cross join T2
 **1。自连接:**
 应用自连接，结果集如下表所示。
 
-```
+```sql
 select n1.name, n2.name 
 from Student n1 inner join Student n2 
 on rollno n1 = rollno n2
@@ -68,7 +68,7 @@ on rollno n1 = rollno n2
 **2。交叉连接:**
 应用交叉连接，结果集为第四个表。
 
-```
+```sql
 select *
 from Student cross join Course
 ```

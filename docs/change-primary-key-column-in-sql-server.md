@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -28,7 +28,7 @@ USE geeks;
 
 **语法:**
 
-```
+```sql
 CREATE TABLE tablename (
 column_name datatype NOT
 NULL PRIMARY KEY);
@@ -38,7 +38,7 @@ NULL PRIMARY KEY);
 
 **语法:**
 
-```
+```sql
 Alter table table_name add  primary key (column_name);
 ```
 
@@ -53,7 +53,7 @@ Alter table table_name add  primary key (column_name);
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
 ID int PRIMARY KEY,
 FIRSTNAME varchar(30),
@@ -67,7 +67,7 @@ EmpID int NOT NULL
 
 **查询:**
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES 
 (1,'Romy', 'Kumari', 'Delhi',1900089),
 (2,'Avinav', 'Pandey', 'Delhi',1909089),
@@ -83,7 +83,7 @@ INSERT INTO geeksforgeeks VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -97,7 +97,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE  ;
 ```
 
@@ -113,7 +113,7 @@ SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE  ;
 
 **查询:**
 
-```
+```sql
 ALTER TABLE geeksforgeeks DROP CONSTRAINT PK__geeksfor__3214EC275032BA6D;
 ```
 
@@ -123,7 +123,7 @@ ALTER TABLE geeksforgeeks DROP CONSTRAINT PK__geeksfor__3214EC275032BA6D;
 
 **查询:**
 
-```
+```sql
 ALTER TABLE geeksforgeeks ADD PRIMARY KEY (EmpID);
 ```
 

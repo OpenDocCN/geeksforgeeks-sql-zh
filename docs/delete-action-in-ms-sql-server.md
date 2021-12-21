@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 foreign key(foreign-key_constraint) 
 references parent_table(parentkey_column) 
 ON Delete Action
@@ -38,7 +38,7 @@ ON Delete Action
 
 **对表执行删除操作的 SQL 查询是–**
 
-```
+```sql
 foreign key references Student(Name) 
 ON Delete Action
 ```

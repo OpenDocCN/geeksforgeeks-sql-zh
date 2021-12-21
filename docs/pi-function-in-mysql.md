@@ -6,7 +6,7 @@ MySQL 中的 PI() [函数用于返回 PI 值。默认显示的小数位数是 7�
 
 **语法:**
 
-```
+```sql
 PI()
 ```
 
@@ -19,7 +19,7 @@ PI()
 **示例-1 :**
 使用 PI 函数返回 Pi 的默认值。
 
-```
+```sql
 SELECT PI() AS DefaultPiValue;
 
 ```
@@ -34,7 +34,7 @@ SELECT PI() AS DefaultPiValue;
 
 使用 PI 函数返回最多 18 位小数的 Pi 值。
 
-```
+```sql
 SELECT PI()+0.000000000000000000 
 AS PiValue;
 
@@ -49,7 +49,7 @@ AS PiValue;
 **例-3 :**
 用 PI 函数计算一列中所有圆的面积和周长。为了演示，让我们创建一个名为 Circle 的表。
 
-```
+```sql
 CREATE TABLE Circle(
 Circle_id INT AUTO_INCREMENT,  
 Radius DECIMAL(10, 3) NOT NULL,
@@ -60,7 +60,7 @@ PRIMARY KEY(Circle_id )
 
 现在，向圆形表中插入一些数据。
 
-```
+```sql
 INSERT INTO Circle(Radius )
 VALUES
 (2 ),(3),(10 ),(12.5 ),(6.80),
@@ -70,7 +70,7 @@ VALUES
 
 所以，圆表如下。
 
-```
+```sql
 SELECT * FROM Circle;
 
 ```
@@ -89,7 +89,7 @@ SELECT * FROM Circle;
 
 现在，我们将使用 PI 函数计算每个圆的面积和周长。
 
-```
+```sql
 SELECT Circle_id, Radius,
 PI() * Radius * Radius  AS Area,
 2 * PI() * Radius AS Perimeter

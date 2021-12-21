@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 MONTH(date)
 ```
 
@@ -22,7 +22,7 @@ MONTH(date)
 
 使用 Month()函数查找当前月份。
 
-```
+```sql
 SELECT MONTH(NOW()) AS Current_Month;
 ```
 
@@ -36,7 +36,7 @@ SELECT MONTH(NOW()) AS Current_Month;
 
 使用 Month()函数从给定的日期时间中查找月份。
 
-```
+```sql
 SELECT MONTH('2015-09-26 08:09:22') AS MONTH;
 ```
 
@@ -50,7 +50,7 @@ SELECT MONTH('2015-09-26 08:09:22') AS MONTH;
 
 当日期为空时，使用 Month()函数从给定的日期时间中查找月份。
 
-```
+```sql
 SELECT MONTH(NULL) AS Month ;
 ```
 
@@ -64,7 +64,7 @@ MONTH 函数也可以用来查找每个月销售的产品总数。演示创建�
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
    Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -94,7 +94,7 @@ T28】1T30】奥迪 Q8T31 奥迪 A6T70】7006500.00【T71
 
 现在，我们将使用 month()函数来查找每月销售的产品数量。
 
-```
+```sql
 SELECT  
    MONTH (Selling_Date) month,  
    COUNT(Product_id) Product_Sold

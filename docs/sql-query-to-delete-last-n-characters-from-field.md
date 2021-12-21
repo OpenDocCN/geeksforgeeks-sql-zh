@@ -18,13 +18,13 @@
 
 **查询:**
 
-```
+```sql
 SUBSTRING('geeksforgeeks', 1, 5);
 ```
 
 **输出:**
 
-```
+```sql
 geeks
 ```
 
@@ -34,13 +34,13 @@ geeks
 
 **查询:**
 
-```
+```sql
 LEN('geeksforgeeks')
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
@@ -48,7 +48,7 @@ LEN('geeksforgeeks')
 
 **查询:**
 
-```
+```sql
 SUBSTRING(string, 1, length(string)-N)
 ```
 
@@ -70,7 +70,7 @@ SUBSTRING(string, 1, length(string)-N)
 
 **查询:**
 
-```
+```sql
   CREATE TABLE geeksforgeeks(FIRSTNAME VARCHAR(20),LASTNAME VARCHAR(20),CITY VARCHAR(20),
   AGE INT,GENDER VARCHAR(20));
 ```
@@ -79,7 +79,7 @@ SUBSTRING(string, 1, length(string)-N)
 
 **查询:**
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES ('ROMY', 'Kumari', 'New Delhi', 22, 'female');
 INSERT INTO geeksforgeeks VALUES ('Pushkar', 'jha', 'New Delhi', 23, 'male');
 INSERT INTO geeksforgeeks VALUES ('Sujata', 'jha', 'Bihar', 30, 'female');
@@ -91,7 +91,7 @@ INSERT INTO geeksforgeeks VALUES ('Avinav', 'Pandey', 'New Delhi', 21, 'male');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -107,7 +107,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询**:
 
-```
+```sql
 SELECT SUBSTRING(FIRSTNAME,1,len(FIRSTNAME)-2) FROM geeks for geeks;
 ```
 
@@ -119,7 +119,7 @@ SELECT SUBSTRING(FIRSTNAME,1,len(FIRSTNAME)-2) FROM geeks for geeks;
 
 **查询:**
 
-```
+```sql
 SELECT FIRSTNAME AS BEFORE, SUBSTRING(FIRSTNAME,1,len(FIRSTNAME)-3)AS AFTER FROM geeksforgeeks;
 ```
 

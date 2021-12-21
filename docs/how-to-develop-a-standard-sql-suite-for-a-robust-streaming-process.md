@@ -54,7 +54,7 @@ TVR 可以多种方式编码或具体化，特别是作为一系列经典关系�
 
 **CQL 某查询:**
 
-```
+```sql
 SELECT
      Rstream ( B . price, B . itemid )
 FROM
@@ -67,7 +67,7 @@ B . price =
 
 **SQL 中的一个查询:**
 
-```
+```sql
 SELECT
 MaxBid . wstart, MaxBid . wend,
 Bid . bidtime, Bid . price, Bid . itemid

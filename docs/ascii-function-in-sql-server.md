@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 ASCII(character_expression)
 ```
 
@@ -20,7 +20,7 @@ ASCII(character_expression)
 **示例-1 :**
 当参数包含单个大写和小写字母时。
 
-```
+```sql
 SELECT ASCII('A') AS A, ASCII('a') AS a,
 ASCII('Z') AS Z, ASCII('z') AS z;
 ```
@@ -33,7 +33,7 @@ ASCII('Z') AS Z, ASCII('z') AS z;
 **例-2 :**
 当自变量为单个数字和特殊字符时。
 
-```
+```sql
 SELECT ASCII('1') AS [1], ASCII('#') AS #,
 ASCII(9) AS [9], ASCII('@') AS [@]; 
 ```
@@ -46,13 +46,13 @@ ASCII(9) AS [9], ASCII('@') AS [@];
 **例-3 :**
 当自变量持有一个字符串的表达式时。
 
-```
+```sql
 SELECT ASCII('GeeksForGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 71
 ```
 
@@ -67,7 +67,7 @@ SELECT ASCII('GeeksForGeeks');
 | Thirty-three | 哈迪克·潘迪亚 | 孟买 |
 | forty-two | 锡卡扎万 | 德里 |
 
-```
+```sql
 SELECT PlayerName, ASCII(PlayerName) AS AsciiCodeOfFirstChar
 FROM Player_Details;
 ```

@@ -24,7 +24,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -34,7 +34,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -44,7 +44,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 GENDER VARCHAR(20),
@@ -56,7 +56,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY KUMARI', 'FEMALE', 22, 'NEW DELHI'),
 ('PUSHKAR JHA', 'MALE',23, 'NEW DELHI'),
@@ -68,7 +68,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -82,7 +82,7 @@ SELECT * FROM demo_table;
 
 **语法:**
 
-```
+```sql
 SELECT SUBSTRING(column_name,1,length(column_name)-4) FROM table_name;
 ```
 
@@ -92,7 +92,7 @@ SELECT SUBSTRING(column_name,1,length(column_name)-4) FROM table_name;
 
 **查询:**
 
-```
+```sql
 SELECT SUBSTRING(NAME,1,len(NAME)-4) AS NAME, GENDER, AGE, CITY FROM demo_table;
 ```
 
@@ -112,7 +112,7 @@ SELECT SUBSTRING(NAME,1,len(NAME)-4) AS NAME, GENDER, AGE, CITY FROM demo_table;
 
 **语法:**
 
-```
+```sql
 REPLACE(string, old_string, new_string)
 ```
 
@@ -120,7 +120,7 @@ REPLACE(string, old_string, new_string)
 
 **查询:**
 
-```
+```sql
 SELECT NAME, GENDER, AGE, REPLACE(CITY,'New','') AS CITY FROM demo_table;
 ```
 
@@ -136,7 +136,7 @@ SELECT NAME, GENDER, AGE, REPLACE(CITY,'New','') AS CITY FROM demo_table;
 
 ****语法:****
 
-```
+```sql
 TRIM([characters FROM ]string);
 ```
 
@@ -144,7 +144,7 @@ TRIM([characters FROM ]string);
 
 ****查询:****
 
-```
+```sql
 SELECT NAME, GENDER, AGE, TRIM ('NEW' FROM CITY)AS "NEW CITY"  FROM demo_table;
 ```
 

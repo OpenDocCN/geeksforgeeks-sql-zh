@@ -6,7 +6,7 @@
 
 **例 1:**
 
-```
+```sql
 DECLARE @inp VARCHAR(100)
 SET @inp = 'GeeksforGeeks'
 SELECT @inp AS Result
@@ -24,7 +24,7 @@ SELECT @inp AS Result
 
 **例 2:**
 
-```
+```sql
 DECLARE @var VARCHAR(100)
 SET @var = 'LearningSQL'
 SELECT @var AS Result
@@ -44,7 +44,7 @@ SELECT @var AS Result
 
 **例 1:**
 
-```
+```sql
 DECLARE @inp VARCHAR(100)
 SET @inp = GeeksforGeeks
 SELECT @inp AS Result
@@ -52,14 +52,14 @@ SELECT @inp AS Result
 
 **输出**
 
-```
+```sql
 Msg 107, Level 6, State 1, Line 2
 Invalid column name GeeksforGeeks.
 ```
 
 **例 2:**
 
-```
+```sql
 DECLARE @var VARCHAR(100)
 SET @var = LearningSQL
 SELECT @var AS Result
@@ -67,7 +67,7 @@ SELECT @var AS Result
 
 **输出**
 
-```
+```sql
 Msg 207, Level 7, State 1, Line 2
 Invalid column name LearningSQL.
 ```
@@ -132,7 +132,7 @@ Invalid column name LearningSQL.
 
 **例**
 
-```
+```sql
 EXEC GeekTest GeeksforGeeks
 ```
 
@@ -170,7 +170,7 @@ EXEC GeekTest GeeksforGeeks
 
 **输出**
 
-```
+```sql
 Msg 107, Level 8, State 2, Line 1
 Invalid column name.
 ```
@@ -181,7 +181,7 @@ exec 抗议学习 sql
 
 **输出**
 
-```
+```sql
 Msg 207, Level 9, State 2, Line 1
 Invalid column name.
 ```

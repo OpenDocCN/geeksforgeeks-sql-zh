@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 DEFAULT ( column_name)
 
 column_name: Name of column whose default value is written.
@@ -38,7 +38,7 @@ column_name: Name of column whose default value is written.
 
 表格中的数据-
 
-```
+```sql
 Select * from student;
 
 ```
@@ -64,7 +64,7 @@ Select * from student;
 
 **查询:**
 
-```
+```sql
 Select sid, sname, subject, marks, 
     IF ( grade is NULL, DEFAULT ( grade ), grade )
 AS grade  FROM  student LEFT JOIN result 
@@ -88,7 +88,7 @@ AND marks < = highest_marks;
 
 例如上表**结果**，查询输出为-
 
-```
+```sql
 Select default ( grade) from result;
 
 ```

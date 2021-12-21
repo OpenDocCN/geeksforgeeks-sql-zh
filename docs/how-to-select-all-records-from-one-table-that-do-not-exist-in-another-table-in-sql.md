@@ -8,7 +8,7 @@
 
 使用以下命令创建一个名为 GeeksforGeeks 的数据库:
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GeeksforGeeks
 
 要使用 GeeksforGeeks 数据库，请使用以下命令:
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -28,7 +28,7 @@ USE GeeksforGeeks
 
 使用以下 SQL 查询创建一个包含 4 列的表 ***【员工详细信息】*** :
 
-```
+```sql
 CREATE TABLE employee_details(
    emp_id VARCHAR(8),
    emp_name VARCHAR(20),
@@ -36,7 +36,7 @@ CREATE TABLE employee_details(
    emp_age INT);
 ```
 
-```
+```sql
 CREATE TABLE employee_resigned(
    emp_id VARCHAR(8),
    emp_name VARCHAR(20),
@@ -50,7 +50,7 @@ CREATE TABLE employee_resigned(
 
 使用以下 SQL 查询查看数据库中表的描述:
 
-```
+```sql
 EXEC sp_columns employee_details;
 EXEC sp_columns employee_resigned;
 ```
@@ -61,7 +61,7 @@ EXEC sp_columns employee_resigned;
 
 使用以下 SQL 查询将行插入员工详细信息表和员工辞职表:
 
-```
+```sql
 INSERT INTO employee_details VALUES
   ('E40001','PRADEEP','H.R',36),
   ('E40002','ASHOK','MANAGER',28),
@@ -74,7 +74,7 @@ INSERT INTO employee_details VALUES
   ('E40009','RISABH','BUSINESS ANALYST',26);
 ```
 
-```
+```sql
 INSERT INTO employee_resigned VALUES('E40001','PRADEEP','H.R',36),
   ('E40004','SANTHOSH','STORE MANAGER',25),
   ('E40005','THAMAN','GENERAL MANAGER',26);
@@ -86,7 +86,7 @@ INSERT INTO employee_resigned VALUES('E40001','PRADEEP','H.R',36),
 
 使用以下 SQL 查询在插入行后查看 employee_details 表:
 
-```
+```sql
 SELECT* FROM employee_details;
 SELECT* FROM employee_resigned;
 ```
@@ -97,7 +97,7 @@ SELECT* FROM employee_resigned;
 
 *   使用“不存在”查询未辞职人员的员工 id 和姓名。
 
-```
+```sql
 SELECT emp_id,emp_name  
 FROM employee_details
 WHERE NOT EXISTS
@@ -110,7 +110,7 @@ WHERE NOT EXISTS
 
 *   使用“不在”查询未辞职员工的详细信息。
 
-```
+```sql
 SELECT *
 FROM employee_details
 WHERE emp_id NOT IN

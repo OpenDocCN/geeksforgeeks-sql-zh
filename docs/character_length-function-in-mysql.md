@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 CHARACTER_LENGTH(string)
 ```
 
@@ -23,7 +23,7 @@ CHARACTER_LENGTH(string)
 **示例-1 :**
 使用 CHARACTER_LENGTH()函数计算给定字符串的长度，如下所示。
 
-```
+```sql
 SELECT CHARACTER_LENGTH("GeeksforGeeks") AS LenOfStr
 ```
 
@@ -35,7 +35,7 @@ SELECT CHARACTER_LENGTH("GeeksforGeeks") AS LenOfStr
 **示例-2 :**
 使用 CHARACTER_LENGTH()函数计算给定字符串的长度，如下所示。
 
-```
+```sql
 SELECT CHARACTER_LENGTH("//  GeeksforGeeks  //") 
 AS LenOfStr
 ```
@@ -58,7 +58,7 @@ AS LenOfStr
 
 现在，使用下面给出的命令来计算字符长度。
 
-```
+```sql
 SELECT CHARACTER_LENGTH(PLAYER_NAME) AS LenOfCol  
 FROM Cricketers_details;
 ```
@@ -77,7 +77,7 @@ FROM Cricketers_details;
 **示例-4 :**
 使用 CHARACTER_LENGTH()函数计算给定字符串的长度，如下所示。
 
-```
+```sql
 SELECT CHARACTER_LENGTH("//  @#$#@  //") 
 AS LenOfStr
 ```

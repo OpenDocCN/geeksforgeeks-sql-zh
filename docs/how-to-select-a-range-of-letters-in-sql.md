@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -32,7 +32,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE INT,
@@ -43,7 +43,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY KUMARI', 22, 'NEW DELHI'),
 ('PUSHKAR JHA',23, 'NEW DELHI'),
@@ -57,7 +57,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -69,7 +69,7 @@ SELECT * FROM demo_table;
 
 使用通配符运算符的语法
 
-```
+```sql
 SELECT * from tablename WHERE column_name LIKE '%[range_value]%';
 ```
 
@@ -81,7 +81,7 @@ SELECT * from tablename WHERE column_name LIKE '%[range_value]%';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE NAME LIKE '[O-S]%';
 ```
 
@@ -93,7 +93,7 @@ SELECT * FROM demo_table WHERE NAME LIKE '[O-S]%';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE AGE LIKE '[22-25]%';
 ```
 

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SUBSTRING_INDEX( str, delim, count )
 
 ```
@@ -21,7 +21,7 @@ SUBSTRING_INDEX( str, delim, count )
 
 **示例-1 :** SUBSTRING_INDEX()函数，分隔符出现次数为正数
 
-```
+```sql
 SELECT SUBSTRING_INDEX("www.geeksforgeeks.org", ".", 2) as Sub_Str;
 
 ```
@@ -34,7 +34,7 @@ SELECT SUBSTRING_INDEX("www.geeksforgeeks.org", ".", 2) as Sub_Str;
 
 **示例-2 :** SUBSTRING_INDEX()函数，分隔符出现次数为负数。
 
-```
+```sql
 SELECT SUBSTRING_INDEX("www.geeksforgeeks.org", ".", -2) as Sub_Str;
 
 ```
@@ -57,7 +57,7 @@ SELECT SUBSTRING_INDEX("www.geeksforgeeks.org", ".", -2) as Sub_Str;
 
 现在，我们将使用 SUBSTRING_INDEX 函数找到每个员工的 pin 号地址。
 
-```
+```sql
 SELECT  SUBSTRING_INDEX(Address, '  ', 1 )  AS Pin_Num FROM Employee 
 
 ```

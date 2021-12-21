@@ -21,7 +21,7 @@ SQL 中的视图是一种虚拟表。视图也有行和列，因为它们在数�
 
 **语法**:
 
-```
+```sql
 CREATE VIEW view_name AS
 SELECT column1, column2.....
 FROM table_name
@@ -39,7 +39,7 @@ condition: Condition to select rows
     *   In this example we will create a View named DetailsView from the table StudentDetails.
         Query:
 
-        ```
+        ```sql
         CREATE VIEW DetailsView AS
         SELECT NAME, ADDRESS
         FROM StudentDetails
@@ -49,7 +49,7 @@ condition: Condition to select rows
 
         要查看视图中的数据，我们可以像查询表一样查询视图。
 
-        ```
+        ```sql
         SELECT * FROM DetailsView;
 
         ```
@@ -60,7 +60,7 @@ condition: Condition to select rows
     *   In this example, we will create a view named StudentNames from the table StudentDetails.
         Query:
 
-        ```
+        ```sql
         CREATE VIEW StudentNames AS
         SELECT S_ID, NAME
         FROM StudentDetails
@@ -70,7 +70,7 @@ condition: Condition to select rows
 
         如果我们现在将视图查询为，
 
-        ```
+        ```sql
         SELECT * FROM StudentNames;
 
         ```
@@ -80,7 +80,7 @@ condition: Condition to select rows
 
 *   **Creating View from multiple tables**: In this example we will create a View named MarksView from two tables StudentDetails and StudentMarks. To create a View from multiple tables we can simply include multiple tables in the SELECT statement. Query:
 
-    ```
+    ```sql
     CREATE VIEW MarksView AS
     SELECT StudentDetails.NAME, StudentDetails.ADDRESS, StudentMarks.MARKS
     FROM StudentDetails, StudentMarks
@@ -90,7 +90,7 @@ condition: Condition to select rows
 
     要显示视图标记视图的数据:
 
-    ```
+    ```sql
     SELECT * FROM MarksView;
 
     ```
@@ -104,7 +104,7 @@ condition: Condition to select rows
 
 **语法**:
 
-```
+```sql
 DROP VIEW view_name;
 
 view_name: Name of the View which we want to delete.
@@ -113,7 +113,7 @@ view_name: Name of the View which we want to delete.
 
 例如，如果我们想删除视图**标记视图**，我们可以这样做:
 
-```
+```sql
 DROP VIEW MarksView;
 
 ```
@@ -131,7 +131,7 @@ DROP VIEW MarksView;
 *   我们可以使用 **CREATE 或 REPLACE VIEW** 语句在视图中添加或删除字段。
     **句法**:
 
-```
+```sql
 CREATE OR REPLACE VIEW view_name AS
 SELECT column1,coulmn2,..
 FROM table_name
@@ -141,7 +141,7 @@ WHERE condition;
 
 例如，如果我们想更新视图**标记视图**并将字段年龄从**学生标记**表添加到该视图中，我们可以这样做:
 
-```
+```sql
 CREATE OR REPLACE VIEW MarksView AS
 SELECT StudentDetails.NAME, StudentDetails.ADDRESS, StudentMarks.MARKS, StudentMarks.AGE
 FROM StudentDetails, StudentMarks
@@ -151,7 +151,7 @@ WHERE StudentDetails.NAME = StudentMarks.NAME;
 
 如果我们现在从 MarksView 获取所有数据，如下所示:
 
-```
+```sql
 SELECT * FROM MarksView;
 
 ```
@@ -162,7 +162,7 @@ SELECT * FROM MarksView;
 *   **Inserting a row in a view**:
     We can insert a row in a View in a same way as we do in a table. We can use the INSERT INTO statement of SQL to insert a row in a View.**Syntax**:
 
-    ```
+    ```sql
     INSERT INTO view_name(column1, column2 , column3,..) 
     VALUES(value1, value2, value3..);
 
@@ -173,7 +173,7 @@ SELECT * FROM MarksView;
     **示例** :
     在下面的示例中，我们将在视图详细信息视图中插入一个新行，该视图是我们在上面的“从单个表创建视图”示例中创建的。
 
-    ```
+    ```sql
     INSERT INTO DetailsView(NAME, ADDRESS)
     VALUES("Suresh","Gurgaon");
 
@@ -181,7 +181,7 @@ SELECT * FROM MarksView;
 
     如果我们现在从 DetailsView 中获取所有数据，
 
-    ```
+    ```sql
     SELECT * FROM DetailsView;
 
     ```
@@ -192,7 +192,7 @@ SELECT * FROM MarksView;
     *   **Deleting a row from a View**:
     Deleting rows from a view is also as simple as deleting rows from a table. We can use the DELETE statement of SQL to delete rows from a view. Also deleting a row from a view first delete the row from the actual table and the change is then reflected in the view.**Syntax**:
 
-    ```
+    ```sql
     DELETE FROM view_name
     WHERE condition;
 
@@ -204,7 +204,7 @@ SELECT * FROM MarksView;
     **示例** :
     在本例中，我们将从视图 DetailsView 中删除最后一行，该视图是我们在上面插入行的示例中刚刚添加的。
 
-    ```
+    ```sql
     DELETE FROM DetailsView
     WHERE NAME="Suresh";
 
@@ -212,7 +212,7 @@ SELECT * FROM MarksView;
 
     如果我们现在从 DetailsView 中获取所有数据，
 
-    ```
+    ```sql
     SELECT * FROM DetailsView;
 
     ```
@@ -230,7 +230,7 @@ SELECT * FROM MarksView;
     **示例** :
     在下面的示例中，我们使用带有检查选项子句的学生详细信息表创建了一个视图样本视图。
 
-    ```
+    ```sql
     CREATE VIEW SampleView AS
     SELECT S_ID, NAME
     FROM  StudentDetails
@@ -242,7 +242,7 @@ SELECT * FROM MarksView;
     在此视图中，如果我们现在尝试在“名称”列中插入一个空值的新行，那么它将给出一个错误，因为该视图是在“名称”列的条件为“非空”的情况下创建的。
     例如，虽然视图是可更新的，但是下面对该视图的查询也是无效的:
 
-    ```
+    ```sql
     INSERT INTO SampleView(S_ID)
     VALUES(6);
 

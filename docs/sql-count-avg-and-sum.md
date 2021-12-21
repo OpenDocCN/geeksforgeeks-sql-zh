@@ -7,7 +7,7 @@
 
     **COUNT()语法–**
 
-    ```
+    ```sql
     SELECT COUNT(column_name)
     FROM table_name
     WHERE condition; 
@@ -18,7 +18,7 @@
 
     **AVG()语法–**
 
-    ```
+    ```sql
     SELECT AVG(column_name)
     FROM table_name
     WHERE condition;
@@ -30,7 +30,7 @@
 
     **SUM()语法–**
 
-    ```
+    ```sql
     SELECT SUM(column_name)
     FROM table_name
     WHERE condition;
@@ -56,41 +56,41 @@
 1.  **COUNT() Example :**
     The following SQL statement finds the number of Names in the “GeeksTab” table :
 
-    ```
+    ```sql
     SELECT COUNT(Name)
     FROM GeeksTab; 
     ```
 
     **输出–**
 
-    ```
+    ```sql
     7 
     ```
 
 2.  **AVG() Example :**
     The following SQL statement finds the average price of salary in the “GeeksTab” table :
 
-    ```
+    ```sql
     SELECT AVG(Salary)
     FROM GeeksTab; 
     ```
 
     **输出–**
 
-    ```
+    ```sql
     6300 
     ```
 
 3.  **SUM() Example :**
     The following SQL statement will find the sum of the Salary in the “GeeksTab” table :
 
-    ```
+    ```sql
     SELECT SUM(Salary)
     FROM GeeksTab; 
     ```
 
     **输出–**
 
-    ```
+    ```sql
     44100 
     ```

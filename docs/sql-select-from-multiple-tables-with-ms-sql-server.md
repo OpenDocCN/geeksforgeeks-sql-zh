@@ -10,7 +10,7 @@
 
 **使用如下 SQL 查询创建数据库极客。**
 
-```
+```sql
 **CREATE DATABASE** GeeksForGeeks;
 ```
 
@@ -20,7 +20,7 @@
 
 **使用数据库学生使用如下 SQL 查询。**
 
-```
+```sql
 **USE** GeeksForGeeks;
 ```
 
@@ -30,7 +30,7 @@
 
 **创建三张表学生，*分行 _ 明细*，*信用 _ 明细*用 SQL 查询如下:**
 
-```
+```sql
 **CREATE TABLE** student
 (  
 stu_id **varchar**(10),
@@ -41,7 +41,7 @@ branch **varchar**(20)
 
 **![](img/152e8239b4c7ae98b65f6a55e3098d11.png)**
 
-```
+```sql
 **CREATE TABLE** branch_details
 (  
 branch_name **varchar**(10),
@@ -51,7 +51,7 @@ subjects **INT**
 
 **![](img/4a274faaafb59dd7d4bf3465c6dbcd7d.png)**
 
-```
+```sql
 **CREATE TABLE** credit_details
 (  
 branch **varchar**(20), 
@@ -66,7 +66,7 @@ min_credits_required **INT**
 
 **要查看数据库 GeeksForGeeks 中三个表的描述，请使用如下 SQL 查询。**
 
-```
+```sql
 **EXEC** sp_columns student;
 **EXEC** sp_columns branch_details;
 **EXEC** sp_columns credit_details;
@@ -78,7 +78,7 @@ min_credits_required **INT**
 
 **使用以下 SQL 查询将行插入表中，如下所示:**
 
-```
+```sql
 **INSERT INTO** student **VALUES**
 ('1901401','DEVA','C.S'),
 ('1901402','HARSH','C.S'),
@@ -106,7 +106,7 @@ min_credits_required **INT**
 
 **使用如下 SQL 查询在插入行后查看三个表。**
 
-```
+```sql
 **SELECT * FROM** student;
 **SELECT * FROM** branch_details;
 **SELECT * FROM** credit_details;
@@ -116,7 +116,7 @@ min_credits_required **INT**
 
 ### ****对 n 个表使用 SELECT 语句:****
 
-```
+```sql
 **SYNTAX:**
 **SELECT** columns
 **FROM** table_1, table_2,...table_n
@@ -125,7 +125,7 @@ WHERE condition;
 
 **对两个表使用 SELECT 语句，学生分支详细信息:**
 
-```
+```sql
 **SELECT * FROM** student, branch_details;
 ```
 
@@ -135,7 +135,7 @@ WHERE condition;
 
 **对 3 个表使用 SELECT 语句学生、分支机构详细信息、学分详细信息:**
 
-```
+```sql
 **SELECT * FROM** student, branch_details, credit_details;
 ```
 
@@ -149,7 +149,7 @@ WHERE condition;
 
 ****查询显示已注册课程的学生及其详细信息。****
 
-```
+```sql
 **SELECT** student.stu_id, student.stu_name,
 student.branch, subjects, max_credits
 **FROM** student, branch_details, credit_details

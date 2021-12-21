@@ -8,7 +8,7 @@
 给定一个字符串，任务是找出它是否是回文。
 **例:**
 
-```
+```sql
 Input: str = geeksskeeg
 Output: geeksskeeg is palindrome
 
@@ -21,7 +21,7 @@ Output: geeks is not palindrome
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE 
 
     -- Declared variables are s, l, t . 
@@ -55,7 +55,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 abccba is palindrome
 
 ```

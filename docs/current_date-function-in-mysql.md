@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 CURRENT_DATE()
 
 ```
@@ -23,7 +23,7 @@ CURRENT_DATE()
 **示例-1 :**
 CURRENT_DATE()函数查找当前日期。
 
-```
+```sql
 SELECT CURRENT_DATE() AS CURR_DATE;
 
 ```
@@ -37,7 +37,7 @@ SELECT CURRENT_DATE() AS CURR_DATE;
 **示例-2 :**
 CURRENT_DATE()函数以 YYYMMDD 格式查找当前日期。
 
-```
+```sql
 SELECT CURRENT_DATE()+0 AS CURR_DATE;
 
 ```
@@ -51,7 +51,7 @@ SELECT CURRENT_DATE()+0 AS CURR_DATE;
 **示例-3 :**
 在 CURRENT_DATE()函数中添加 3 天，查找下一个日期。
 
-```
+```sql
 SELECT CURRENT_DATE()+3 AS NEXT_DATE;
 
 ```

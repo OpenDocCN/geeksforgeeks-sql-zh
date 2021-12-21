@@ -9,7 +9,7 @@ DROP 是一个 [DDL(数据定义语言)](https://www.geeksforgeeks.org/sql-ddl-d
 
 **DROP 命令的语法–**
 
-```
+```sql
 DROP TABLE table_name;
 ```
 
@@ -18,7 +18,7 @@ TRUNCATE 是 [DDL(数据定义语言)](https://www.geeksforgeeks.org/sql-ddl-dql
 
 **TRUNCATE 命令的语法–**
 
-```
+```sql
 TRUNCATE TABLE table_name; 
 ```
 

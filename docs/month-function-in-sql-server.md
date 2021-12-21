@@ -14,7 +14,7 @@ SQL Server 中的这个函数用来返回一年中的月份，即从 1 到 12 �
 
 **语法:**
 
-```
+```sql
 MONTH(date)
 ```
 
@@ -29,20 +29,20 @@ MONTH(date)
 **示例-1 :**
 使用 MONTH()函数，从指定的日期获取一年中的月份。
 
-```
+```sql
 SELECT MONTH('2020/01/02');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2 :**
 使用带变量的 MONTH()函数，从指定日期获取一年中的月份。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '2020/07/05';
 SELECT MONTH(@date);
@@ -50,27 +50,27 @@ SELECT MONTH(@date);
 
 **输出:**
 
-```
+```sql
 7
 ```
 
 **示例-3 :**
 使用以日期为参数的 MONTH()函数，该函数还包括时间。
 
-```
+```sql
 SELECT MONTH('2018/11/22 07:44');
 ```
 
 **输出:**
 
-```
+```sql
 11
 ```
 
 **示例-4 :**
 使用带有变量和日期的 MONTH()函数作为参数，其中还包括时间。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '2020/09/30 23:59';
 SELECT MONTH(@date);
@@ -79,7 +79,7 @@ SELECT MONTH(@date);
 
 **输出:**
 
-```
+```sql
 9
 ```
 

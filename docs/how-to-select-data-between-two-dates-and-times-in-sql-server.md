@@ -8,7 +8,7 @@
 
 ****语法:****
 
-```
+```sql
 SELECT * FROM TABLE_NAME WHERE
 DATE_TIME_COLUMN BETWEEN 
 'STARTING_DATE_TIME' AND 'ENDING_DATE_TIME';
@@ -18,7 +18,7 @@ DATE_TIME_COLUMN BETWEEN
 
 ****查询:****
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE GeeksForGeeks
 
 ****查询:****
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -42,7 +42,7 @@ USE GeeksForGeeks
 
 ****查询:****
 
-```
+```sql
 CREATE TABLE ATM(
 HOLDER_NAME VARCHAR(10),
 WITHDRAWAL_AMOUNT INT,
@@ -57,7 +57,7 @@ TRANSACTION_TIME DATETIME2);
 
 ****查询:****
 
-```
+```sql
 EXEC SP_COLUMNS ATM;
 ```
 
@@ -69,7 +69,7 @@ EXEC SP_COLUMNS ATM;
 
 ****查询:****
 
-```
+```sql
 INSERT INTO ATM VALUES('BOB',300,'2001-01-10 10:40:50');
 INSERT INTO ATM VALUES('MARY',400,'2001-03-27 11:00:37');
 INSERT INTO ATM VALUES('VANCE',100,'2002-09-18 13:45:21');
@@ -85,7 +85,7 @@ INSERT INTO ATM VALUES('PETER',200,'2008-12-25 00:01:00');
 
 ****查询:****
 
-```
+```sql
 SELECT * FROM ATM;
 ```
 
@@ -97,7 +97,7 @@ SELECT * FROM ATM;
 
 ****查询:****
 
-```
+```sql
 SELECT * FROM ATM WHERE 
 TRANSACTION_TIME BETWEEN
 '2001-02-01 10:00:00' AND
@@ -112,7 +112,7 @@ TRANSACTION_TIME BETWEEN
 
 ****查询:****
 
-```
+```sql
 SELECT * FROM ATM WHERE TRANSACTION_TIME
 BETWEEN '2005-02-28 21:00:00' 
 AND '2008-12-25 00:00:00';
@@ -128,7 +128,7 @@ AND '2008-12-25 00:00:00';
 
 ****查询:****
 
-```
+```sql
 SELECT * FROM ATM WHERE TRANSACTION_TIME
 BETWEEN '2001-01-10 10:30:00' 
 AND '2001-03-27 12:00:00';

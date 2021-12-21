@@ -6,7 +6,7 @@ SQL 中的 UPDATE 语句用于更新数据库中现有表的数据。根据我�
 
 **基本语法**
 
-```
+```sql
 UPDATE table_name SET column1 = value1, column2 = value2,... 
 WHERE condition;  table_name: name of the table
 column1: name of first , second, third column....
@@ -22,7 +22,7 @@ values of columns needs to be updated.
 
 *   **Updating single column**: Update the column NAME and set the value to ‘PRATIK’ in all the rows where Age is 20.
 
-    ```
+    ```sql
     UPDATE Student SET NAME = 'PRATIK' WHERE Age = 20;
 
     ```
@@ -41,7 +41,7 @@ values of columns needs to be updated.
 
 *   **Updating multiple columns:** Update the columns NAME to ‘PRATIK’ and ADDRESS to ‘SIKKIM’ where ROLL_NO is 1.
 
-    ```
+    ```sql
     UPDATE Student SET NAME = 'PRATIK', ADDRESS = 'SIKKIM' WHERE ROLL_NO = 1;
 
     ```
@@ -62,7 +62,7 @@ values of columns needs to be updated.
 
 *   **Omitting WHERE clause:** If we omit the WHERE clause from the update query then all of the rows will get updated.
 
-    ```
+    ```sql
     UPDATE Student SET NAME = 'PRATIK';
 
     ```

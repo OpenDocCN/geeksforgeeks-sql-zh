@@ -37,49 +37,49 @@
 **TINYINT Demo :**
 在这个蜂巢数据类型中，范围是从-128 到 127。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata(college_id tinyint);
 ```
 
 **SMALLINT Demo :**
 在这个配置单元数据类型中，大小为 2 字节，范围从-32768 到 32767。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata(college_id smallint);
 ```
 
 **INT Demo :**
 在这个配置单元数据类型中，大小为 4 字节，范围从–2，147，483，648 到 2，147，483，647。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata(college_id  int);
 ```
 
 **BIGINT Demo :**
 在这个配置单元数据类型中，大小是 8 字节，范围是从 9，223，372，036，854，775，808 到 9，223，372，036，854，775，807。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata(phonenumber  bigint);
 ```
 
 **FLOAT 演示:**
 在这个配置单元数据类型中，大小为 Single Precision 浮点，范围为 Single Precision。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata(percentage float);
 ```
 
 **Double Demo :**
 在这个蜂巢数据类型中，大小是 DOUBLE 精度浮点，范围是 DOUBLE 精度。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata( percentage double );
 ```
 
 **DECIMAL 演示:**
 在这个配置单元数据类型中，size 是基于 Java BigDecimal Object 的 Precise decimal 类型，范围是 Big Decimal。让我们借助一个例子来理解。
 
-```
+```sql
 create table geeksportal.geekdata( percentage decimal);
 ```
 
@@ -87,21 +87,21 @@ create table geeksportal.geekdata( percentage decimal);
 **日期/时间数据类型–**
 在这里，我们将讨论 Hive 中的日期/时间数据类型，如下所示。
 
-```
+```sql
 TIMESTAMP - 'YYYY-MM-DD HH:MM:SS.fffffffff   = 9 decimal place precision
 ```
 
 **TIMESTAMP 演示:**
 在这个蜂巢数据类型中，你会看到 TIMESTAMP 数据类型的演示如下。
 
-```
+```sql
 create table geeksportal.geekdata( time timestamp);
 ```
 
 **字符串数据类型:**
 在这个配置单元数据类型中，您将借助如下示例来理解字符串数据类型数据类型。
 
-```
+```sql
 create table geeksportal.geekdata( name string);
 ```
 
@@ -114,7 +114,7 @@ create table geeksportal.geekdata( name string);
 
 **语法:**
 
-```
+```sql
 ARRAY<TINYINT>
 ```
 
@@ -123,7 +123,7 @@ ARRAY<TINYINT>
 
 **语法:**
 
-```
+```sql
 MAP<STRING,INT>
 ```
 
@@ -132,7 +132,7 @@ MAP<STRING,INT>
 
 **语法:**
 
-```
+```sql
 STRUCT<first : SMALLINT, second : FLOAT, third : STRING>
 ```
 
@@ -141,21 +141,21 @@ STRUCT<first : SMALLINT, second : FLOAT, third : STRING>
 
 **语法:**
 
-```
+```sql
 UNIONTYPE<INT,FLOAT,STRING>
 ```
 
 **示例:**
 借助示例演示数据类型，以便更好地理解。考虑一个文本文件(Geek.txt)，它包括主题并如下标记记录。
 
-```
+```sql
 7058,cse^1,1|2|3,A|50000,3,true
 7059,cse^2,1|2,B|40000,good,true
 ```
 
 **编码/查询:**
 
-```
+```sql
 Creating a table t1:
 create table t1(id int,class map<string,int>,sections array<int>,hostel
 struct<grade:string,fee:double>,rating uniontype<int,string>,exist boolean)

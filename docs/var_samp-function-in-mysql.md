@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 VAR_SAMP(expr);
 ```
 
@@ -21,7 +21,7 @@ VAR_SAMP(expr);
 
 **创建玩家表:**
 
-```
+```sql
 CREATE TABLE Player 
 (
 PlayerId INT AUTO_INCREMENT,  
@@ -34,7 +34,7 @@ PRIMARY KEY(PlayerId)
 
 **将数据插入表中:**
 
-```
+```sql
 INSERT INTO Player 
 (PlayerName, RunScored,  WicketsTaken )
 VALUES
@@ -50,7 +50,7 @@ KL Rahul', 52, 0 ),
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 SELECT  * from Player ;
 ```
 
@@ -67,7 +67,7 @@ SELECT  * from Player ;
 
 现在我们要找到运行得分列的样本方差。
 
-```
+```sql
 SELECT  VAR_SAMP(RunScored ) as Run_Variance 
 FROM Player ;
 
@@ -82,7 +82,7 @@ FROM Player ;
 **示例-2 :**
 现在我们要找到 WicketsTaken 列的样本方差。
 
-```
+```sql
 SELECT  VAR_SAMP(WicketsTaken) as Wicket_Variance 
 FROM Player ;
 
@@ -97,7 +97,7 @@ FROM Player ;
 **示例-3 :**
 在本例中，我们将找到在公司“PQR 索恩”工作的员工收入的样本方差为了演示，创建一个名为 EmloyeeDetails 的表。
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 
 Employee_Id INT AUTO_INCREMENT,  
@@ -112,7 +112,7 @@ PRIMARY KEY(Employee_Id )
 
 向表中插入数据:
 
-```
+```sql
 INSERT INTO  
 EmployeeDetails(Employee_Name, Working_At, Work_Location, Joining_Date, Annual_Income )
 
@@ -132,7 +132,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 Select * FROM EmployeeDetails;
 ```
 
@@ -153,7 +153,7 @@ Select * FROM EmployeeDetails;
 
 现在，我们将找到在“PQR 索恩”工作的员工的年收入差异样本
 
-```
+```sql
 SELECT 'PQR Soln.' AS 'Company_Name',
 VAR_SAMP(Annual_Income) as VarianceOfAnnualIncome  
 FROM EmployeeDetails where WORKING_AT = 'PQR Soln.';

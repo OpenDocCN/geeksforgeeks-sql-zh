@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE employee
 (emp_id INT, emp_fname VARCHAR(45), 
 emp_lname VARCHAR(45),join_date DATE, 
@@ -29,7 +29,7 @@ PRIMARY KEY(emp_id));
 
 **查询:**
 
-```
+```sql
 INSERT INTO employee VALUES 
 (100181, 'Utkarsh', 'Tyagi', '1996-01-31'),
  (100182, 'Abhishek', 'Singh', '1996-03-21'), 
@@ -44,7 +44,7 @@ INSERT INTO employee VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee;
 ```
 
@@ -58,7 +58,7 @@ SELECT * FROM employee;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE join_date = '2000-06-13';
 ```
 
@@ -74,7 +74,7 @@ SELECT * FROM employee WHERE join_date = '2000-06-13';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE join_date LIKE '1996-%';
 ```
 
@@ -88,7 +88,7 @@ SELECT * FROM employee WHERE join_date LIKE '1996-%';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM employee WHERE join_date BETWEEN '1996-01-01' AND '1997-12-31';
 ```
 

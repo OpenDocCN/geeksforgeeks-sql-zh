@@ -10,7 +10,7 @@ SQL Server 是一个通用的数据库，它是许多软件行业中使用最多
 
 命令来创建数据库。这里的 GEEKSFORGEEKS 是数据库的名字。
 
-```
+```sql
 --CREATE DATABASE <dbname>;
 ```
 
@@ -18,7 +18,7 @@ SQL Server 是一个通用的数据库，它是许多软件行业中使用最多
 
 使数据库处于活动状态
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -30,7 +30,7 @@ USE GEEKSFORGEEKS;
 
 使用主键创建表。这里 ID 是一个主键，意味着每个作者都有自己的 ID
 
-```
+```sql
 CREATE TABLE Authors (
    ID INT NOT NULL PRIMARY KEY,
    <other column name1> <datatype> <null/not null>,
@@ -50,7 +50,7 @@ CREATE TABLE Authors (
 
 **例 1 :**
 
-```
+```sql
 INSERT INTO <table_name> (column1, column2, column3, ...)  VALUES (value1, value2, value3, ...);
 ```
 
@@ -58,7 +58,7 @@ INSERT INTO <table_name> (column1, column2, column3, ...)  VALUES (value1, value
 
 **例 2 :**
 
-```
+```sql
 INSERT INTO <table_name> VALUES (value1, value2, value3, ...);
 ```
 
@@ -66,7 +66,7 @@ INSERT INTO <table_name> VALUES (value1, value2, value3, ...);
 
 ![](img/9da104d2b00c99f863e7cdb689fd29f5.png)
 
-```
+```sql
 Violation of PRIMARY KEY constraint 'PK__Authors__3214EC277EBB8ED1'. 
 Cannot insert duplicate key in object 'dbo.Authors'. The duplicate key value is (1).
 ```
@@ -75,7 +75,7 @@ Cannot insert duplicate key in object 'dbo.Authors'. The duplicate key value is 
 
 现在，让我们纠正这一点，并使用以下命令查询该表:
 
-```
+```sql
 SELECT * FROM <tablename>
 ```
 
@@ -112,7 +112,7 @@ SQL Server 是一个关系数据库，数据一致性是一个重要的机制，
 
 通过我们的例子，让我们看看锁定机制。
 
-```
+```sql
 --Let us create an open transaction and analyze the locked resource.
 BEGIN TRAN
 Let us update the Skillsets column for ID = 1
@@ -122,7 +122,7 @@ select @@SPID
 
 ![](img/06e3ab0bd9e274e90674b21c32f093c7.png)
 
-```
+```sql
 select * from sys.dm_tran_locks  WHERE request_session_id=<our session id. here it is 52>
 ```
 
@@ -130,7 +130,7 @@ select * from sys.dm_tran_locks  WHERE request_session_id=<our session id. here 
 
 让我们在表中插入更多的记录(大约 100 条记录),然后使用一个事务，让我们更新一些列，同时并行应用 select 查询
 
-```
+```sql
 --Let us create an open transaction and analyze the locked resources.
 BEGIN TRAN
 --Let us update the Skillsets when ID < 20
@@ -152,13 +152,13 @@ select @@SPID
 
 **如何克服目前为止的跑步过程？**
 
-```
+```sql
 KILL <spid> -> Kill the session
 ```
 
 (或)在事务内部，每次查询后，应用
 
-```
+```sql
 COMMIT -> TO COMMIT THE CHANGES
 ROLLBACK -> TO ROLLBACK THE CHANGES
 ```
@@ -171,13 +171,13 @@ ROLLBACK -> TO ROLLBACK THE CHANGES
 
 通过使用 NOLOCK 和 SELECT QUERY，我们可以克服
 
-```
+```sql
 SELECT * FROM Authors WITH (NOLOCK);
 ```
 
 对于 SELECT 语句状态，请使用 sp_who2 命令。查询运行时不需要等待 UPDATE 事务成功完成并释放表上的锁定，
 
-```
+```sql
 SELECT * FROM Authors WITH (READUNCOMMITTED);
 --This way also we can do
 ```

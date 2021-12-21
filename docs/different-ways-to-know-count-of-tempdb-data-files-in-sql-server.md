@@ -50,7 +50,7 @@
 
 **查询:**
 
-```
+```sql
 use tempdb
 SELECT COUNT(*) TempDBFilesCount
 FROM sys.database_files
@@ -63,7 +63,7 @@ GO
 
 另一种常见的方法是在 TempDB 的 sys 中查找 tempDB 文件的**细节。数据库文件。**
 
-```
+```sql
 use tempdb
 SELECT file_id, type_desc, name, physical_name, state_desc
 FROM sys.database_files
@@ -78,7 +78,7 @@ GO
 
 在错误日志中也可以找到 TempDB 文件的数量，但这是一种不太常见的方法。
 
-```
+```sql
 use tempdb
 EXEC sys.xp_readerrorlog 0, 1, N'The tempdb database has';
 ```

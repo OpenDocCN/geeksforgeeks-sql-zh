@@ -7,7 +7,7 @@
 
 ******第一步:创建数据库大学:******
 
-```
+```sql
 ****CREATE DATABASE** university;**
 ```
 
@@ -15,7 +15,7 @@
 
 ******第二步:使用数据库大学:******
 
-```
+```sql
 ****USE** university;**
 ```
 
@@ -23,7 +23,7 @@
 
 ******第三步:创建表格学生:******
 
-```
+```sql
 ****CREATE TABLE** student(
 student_id **INT**
 student_name **VARCHAR**(20)
@@ -36,7 +36,7 @@ state **VARCHAR**(20));**
 
 ******第 4 步:查看表格学生描述:******
 
-```
+```sql
 ****DESCRIBE** student;**
 ```
 
@@ -44,7 +44,7 @@ state **VARCHAR**(20));**
 
 ******第五步:在学生表中添加行:******
 
-```
+```sql
 ****INSERT INTO** student **VALUES**(194001,'PRANAB','1999-03-17','CSE','PUNJAB');
 **INSERT INTO** student **VALUES**(194002,'PRAKASH','2000-08-07','ECE','TAMIL NADU');
 **INSERT INTO** student **VALUES**(194003,'ROCKY','2000-03-10','ECE','PUNJAB');
@@ -56,7 +56,7 @@ state **VARCHAR**(20));**
 
 ******第 6 步:查看表格中的行:******
 
-```
+```sql
 ****SELECT * FROM** student;**
 ```
 
@@ -69,7 +69,7 @@ state **VARCHAR**(20));**
 ******示例-1:**
 使用 MySQL 中的 and 运算符查询查找带有 CSE 分支和 PUNJAB 州的学生记录:****
 
-```
+```sql
 ****SELECT ***
    ** FROM** student
  **   WHERE** branch='CSE'**AND**state='PUNJAB'**
@@ -97,7 +97,7 @@ state **VARCHAR**(20));**
 ******示例-3:**
 使用 MySQL 中的 NOT 运算符查询查找不在旁遮普的学生记录:****
 
-```
+```sql
 ****SELECT ***
     **  FROM** student
      ** WHERE NOT** state='PUNJAB';**

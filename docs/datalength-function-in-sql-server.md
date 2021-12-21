@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 DATALENGTH( expression )  
 
 ```
@@ -23,14 +23,14 @@ DATALENGTH( expression )
 **示例-1 :**
 返回表达式的长度。
 
-```
+```sql
 SELECT DATALENGTH('Geeksforgeeks');
 
 ```
 
 **输出:**
 
-```
+```sql
 13
 
 ```
@@ -38,14 +38,14 @@ SELECT DATALENGTH('Geeksforgeeks');
 **示例-2 :**
 检查 DATALENGTH()函数是否计算尾随空格。
 
-```
+```sql
 SELECT DATALENGTH('GFG   ');
 
 ```
 
 **输出:**
 
-```
+```sql
 6
 
 ```
@@ -53,14 +53,14 @@ SELECT DATALENGTH('GFG   ');
 **示例-3 :**
 检查 DATALENGTH()函数是否计算前导空格。
 
-```
+```sql
 SELECT DATALENGTH('    GFG');
 
 ```
 
 **输出:**
 
-```
+```sql
 7
 
 ```
@@ -68,14 +68,14 @@ SELECT DATALENGTH('    GFG');
 **示例-4 :**
 DATALENGTH()函数返回 NULL，如果表达式为 NULL。
 
-```
+```sql
 SELECT DATALENGTH(NULL);
 
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 
 ```

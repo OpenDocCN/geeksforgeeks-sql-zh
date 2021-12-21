@@ -10,14 +10,14 @@ Union 子句用于组合两个单独的 select 语句，并将结果集生成为
 
 **基本语法:**
 
-```
+```sql
 SELECT column_name(s) FROM table1 UNION SELECT column_name(s) FROM table2;
 
 Resultant set consists of distinct values.
 
 ```
 
-```
+```sql
 SELECT column_name(s) FROM table1 UNION ALL SELECT column_name(s) FROM table2;
 
 Resultant set consists of duplicate values too.
@@ -32,7 +32,7 @@ Resultant set consists of duplicate values too.
 
 *   To fetch distinct ROLL_NO from Student and Student_Details table.
 
-    ```
+    ```sql
     SELECT ROLL_NO FROM Student UNION SELECT ROLL_NO FROM Student_Details; 
 
     ```
@@ -48,7 +48,7 @@ Resultant set consists of duplicate values too.
 
 *   To fetch ROLL_NO from Student and Student_Details table including duplicate values.
 
-    ```
+    ```sql
     SELECT ROLL_NO FROM Student UNION ALL SELECT ROLL_NO FROM Student_Details; 
 
     ```
@@ -66,7 +66,7 @@ Resultant set consists of duplicate values too.
 
 *   To fetch ROLL_NO , NAME from Student table WHERE ROLL_NO is greater than 3 and ROLL_NO , Branch from Student_Details table WHERE ROLL_NO is less than 3 , including duplicate values and finally sorting the data by ROLL_NO.
 
-    ```
+    ```sql
     SELECT ROLL_NO,NAME FROM Student WHERE ROLL_NO>3 
     UNION ALL
     SELECT ROLL_NO,Branch FROM Student_Details WHERE ROLL_NO<3

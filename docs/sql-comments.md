@@ -14,7 +14,7 @@
     以“–”开头的行是注释，不会被执行。
     语法:
 
-```
+```sql
 -- single line comment
 -- another comment
 SELECT * FROM Customers; 
@@ -24,7 +24,7 @@ SELECT * FROM Customers;
 *   **Multi line comments: **Comments starting in one line and ending in different line are considered as multi line comments. Line starting with ‘/*’ is considered as starting point of comment and are terminated when ‘*/’ is encountered.
     Syntax:
 
-    ```
+    ```sql
     /* multi line comment
     another comment */
     SELECT * FROM Customers; 
@@ -34,14 +34,14 @@ SELECT * FROM Customers;
     *   **In line comments: **In line comments are an extension of multi line comments, comments can be stated in between the statements and are enclosed in between ‘/*’ and ‘*/’.
     Syntax:
 
-    ```
+    ```sql
     SELECT * FROM /* Customers; */ 
 
     ```
 
     更多示例:
 
-    ```
+    ```sql
     Multi line comment ->
     /* SELECT * FROM Students;
     SELECT * FROM STUDENT_DETAILS;

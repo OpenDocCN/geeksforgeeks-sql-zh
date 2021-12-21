@@ -7,7 +7,7 @@ SQL Server 聚结()函数对于处理 NULL 值非常有用。在表达式值计�
 
 **语法:**
 
-```
+```sql
 COALESCE ( exv1, exv2..., exvN )
 
 ```
@@ -22,7 +22,7 @@ ex v1、exv2…、exvN 为表达式值。
 
 **示例-1 :**
 
-```
+```sql
 SELECT COALESCE (NULL, 'X', 'Y') 
 AS RESULT ;
 ```
@@ -35,7 +35,7 @@ AS RESULT ;
 
 **示例-2 :**
 
-```
+```sql
 SELECT COALESCE (NULL, 13, 24, 35, 46) 
 AS RESULT ;
 ```
@@ -48,7 +48,7 @@ AS RESULT ;
 
 **示例-3 :**
 
-```
+```sql
 SELECT COALESCE (NULL, NULL, 45, NULL, NULL) 
 AS RESULT ;
 ```
@@ -61,7 +61,7 @@ AS RESULT ;
 
 **示例-4 :**
 
-```
+```sql
 SELECT COALESCE (NULL, NULL, NULL, NULL, NULL, 'GFG') 
 AS RESULT ;
 ```
@@ -86,7 +86,7 @@ AS RESULT ;
 
 **示例-6 :**
 
-```
+```sql
 SELECT COALESCE 
 (NULL, NULL, NULL, NULL, NULL, 'GFG', 1)
 ```
@@ -100,7 +100,7 @@ SELECT COALESCE
 **例-7 :**
 **输出:**
 
-```
+```sql
 Select * from GeekName;
 ```
 
@@ -115,7 +115,7 @@ Select * from GeekName;
 
 **示例-8 :**
 
-```
+```sql
 SELECT F_Name + ' ' +M_Name+ ' ' 
 + L_Name FullName FROM GeekName ;
 ```
@@ -136,7 +136,7 @@ SQL 语句将连接所有三个名称，但输出中不会出现空值。
 
 **示例-9 :**
 
-```
+```sql
 SELECT F_Name +' '+COALESCE(M_Name, '') +' '
 + L_Name   FullName  FROM GeekName ;
 ```

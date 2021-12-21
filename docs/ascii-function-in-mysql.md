@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 ASCII(str)
 
 ```
@@ -24,7 +24,7 @@ ASCII(str)
 **示例-1 :**
 ASCII()函数检查一个小写字符的值。
 
-```
+```sql
 SELECT ASCII('g')AS Lower_Case;
 
 ```
@@ -38,7 +38,7 @@ SELECT ASCII('g')AS Lower_Case;
 **示例-2 :**
 ASCII()函数检查大写字符的值。
 
-```
+```sql
 SELECT ASCII('G')AS Upper_Case;
 
 ```
@@ -52,7 +52,7 @@ SELECT ASCII('G')AS Upper_Case;
 **示例-3 :**
 ASCII()函数检查输入字符串的值。
 
-```
+```sql
 SELECT ASCII('MySQL')AS String_Value;
 
 ```
@@ -75,7 +75,7 @@ ASCII()函数检查表下一列中每个输入字符串的值。
 | One hundred and three | 等于 Haman） |
 | One hundred and three | 雪 |
 
-```
+```sql
 SELECT ASCII(Student_Name)  AS Ascii_Name FROM Student_Details ;
 
 ```

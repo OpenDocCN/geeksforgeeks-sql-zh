@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 GRANT privileges_names ON object TO user;
 ```
 
@@ -26,25 +26,25 @@ GRANT privileges_names ON object TO user;
 
 1.  **向表中的用户授予 Select 权限**:要向用户名为 Amit 的名为“users”的表授予 SELECT 权限，应执行以下 grant 语句。
 
-    ```
+    ```sql
     GRANT SELECT ON Users TO'Amit'@'localhost;
     ```
 
 2.  **向表中的用户授予多个权限**:要向表“用户”中名为“阿米特”的用户授予多个权限，应执行以下 grant 语句。
 
-    ```
+    ```sql
     GRANT SELECT, INSERT, DELETE, UPDATE ON Users TO 'Amit'@'localhost;
     ```
 
 3.  **向表中的用户授予所有权限**:要向表“用户”中名为“阿米特”的用户授予所有权限，应执行以下授予语句。
 
-    ```
+    ```sql
     GRANT ALL ON Users TO 'Amit'@'localhost;
     ```
 
 4.  **Granting a Privilege to all Users in a Table**: To Grant a specific privilege to all the users in a table “users”, the following Grant statement should be executed.
 
-    ```
+    ```sql
     GRANT SELECT  ON Users TO '*'@'localhost;
     ```
 
@@ -56,7 +56,7 @@ GRANT privileges_names ON object TO user;
 
     **语法:**
 
-    ```
+    ```sql
     GRANT EXECUTE ON [ PROCEDURE | FUNCTION ] object TO user; 
     ```
 
@@ -64,37 +64,37 @@ GRANT privileges_names ON object TO user;
 
     *   **授予 MySQL 中某个函数的 EXECUTE 权限。**:如果有一个名为“CalculateSalary”的函数，并且您想授予名为 Amit 的用户 EXECUTE 访问权限，那么应该执行下面的 grant 语句。
 
-        ```
+        ```sql
         GRANT EXECUTE ON FUNCTION Calculatesalary TO 'Amit'@localhost';
         ```
 
     *   **授予所有用户对 MySQL 中某个函数的执行权限。**:如果有一个名为“CalculateSalary”的函数，并且您想授予所有用户 EXECUTE 访问权限，那么应该执行下面的 grant 语句。
 
-        ```
+        ```sql
         GRANT EXECUTE ON FUNCTION Calculatesalary TO '*'@localhost'; 
         ```
 
     *   **授予用户在 MySQL 过程中的执行权限。**:如果有一个名为“DBMSProcedure”的过程，并且您想授予名为 Amit 的用户 EXECUTE 访问权限，那么应该执行下面的 grant 语句。
 
-        ```
+        ```sql
         GRANT EXECUTE ON PROCEDURE DBMSProcedure TO 'Amit'@localhost'; 
         ```
 
     *   **授予所有用户对 MySQL 中某个过程的执行权限。**:如果有一个名为“DBMSProcedure”的过程，并且您想授予所有用户 EXECUTE 访问权限，那么应该执行下面的 grant 语句。
 
-        ```
+        ```sql
         GRANT EXECUTE ON PROCEDURE DBMSProcedure TO '*'@localhost'; 
         ```
 
 **检查授予用户的权限**:要查看表中授予用户的权限，使用 SHOW GRANTS 语句。要检查授予名为“Amit”的用户和作为“localhost”的主机的权限，将执行以下 SHOW GRANTS 语句:
 
-```
+```sql
 SHOW GRANTS FOR  'Amit'@localhost'; 
 ```
 
 **输出:**
 
-```
+```sql
 GRANTS FOR  Amit@localhost 
 
 GRANT USAGE ON *.* TO `SUPER`@localhost` 
@@ -107,7 +107,7 @@ GRANT USAGE ON *.* TO `SUPER`@localhost`
 
 **语法:**
 
-```
+```sql
 REVOKE privileges ON object FROM user;
 
 ```
@@ -125,25 +125,25 @@ REVOKE privileges ON object FROM user;
 
 1.  **撤销表中用户的选择权限**:要撤销用户名为 Amit 的“用户”表的选择权限，应执行以下撤销语句。
 
-    ```
+    ```sql
     REVOKE SELECT ON  users TO 'Amit'@localhost'; 
     ```
 
 2.  **撤销表中用户的多个权限**:要撤销表“用户”中名为“阿米特”的用户的多个权限，应执行以下撤销语句。
 
-    ```
+    ```sql
     REVOKE SELECT, INSERT, DELETE, UPDATE ON Users TO 'Amit'@'localhost; 
     ```
 
 3.  **撤销表**中用户的所有权限:要撤销表“users”中名为“Amit”的用户的所有权限，应执行以下撤销语句。
 
-    ```
+    ```sql
     REVOKE ALL ON Users TO 'Amit'@'localhost; 
     ```
 
 4.  **撤销表中所有用户的权限**:要撤销表“用户”中所有用户的特定权限，应执行以下撤销语句。
 
-    ```
+    ```sql
     REVOKE SELECT  ON Users TO '*'@'localhost; 
     ```
 
@@ -151,30 +151,30 @@ REVOKE privileges ON object FROM user;
 
     **语法:**
 
-    ```
+    ```sql
     REVOKE EXECUTE ON [ PROCEDURE | FUNCTION ] object FROM user; 
     ```
 
     *   **撤销 MySQL 中某个函数的 EXECUTE 权限。**:如果有一个名为“CalculateSalary”的函数，你想撤销对名为 Amit 的用户的 EXECUTE 访问，那么应该执行下面的撤销语句。
 
-        ```
+        ```sql
         REVOKE EXECUTE ON FUNCTION Calculatesalary TO 'Amit'@localhost'; 
         ```
 
     *   **撤销 MySQL 中某个函数对所有用户的 EXECUTE 权限。**:如果有一个函数叫做“CalculateSalary”，你想撤销所有用户的 EXECUTE 访问权限，那么应该执行下面的撤销语句。
 
-        ```
+        ```sql
         REVOKE EXECUTE ON FUNCTION Calculatesalary TO '*'@localhost'; 
         ```
 
     *   **撤销用户在 MySQL 过程中的执行权限。**:如果有一个名为“DBMSProcedure”的过程，并且您想要撤销对名为 Amit 的用户的 EXECUTE 访问，那么应该执行下面的撤销语句。
 
-        ```
+        ```sql
         REVOKE EXECUTE ON PROCEDURE DBMSProcedure TO 'Amit'@localhost'; 
         ```
 
     *   **撤销所有用户对 MySQL 中某个过程的执行权限。**:如果有一个名为“DBMSProcedure”的过程，并且您想要撤销对所有用户的 EXECUTE 访问权限，那么应该执行下面的撤销语句。
 
-        ```
+        ```sql
         REVOKE EXECUTE ON PROCEDURE DBMSProcedure TO '*'@localhost'; 
         ```

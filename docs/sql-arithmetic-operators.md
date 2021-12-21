@@ -8,7 +8,7 @@
 
 算术运算符有:
 
-```
+```sql
 +           [Addition]
 -           [Subtraction]
 /           [Division]
@@ -22,7 +22,7 @@
 
 **实施**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary + 100
    AS "salary + 100" FROM addition;
 
@@ -40,7 +40,7 @@ SELECT employee_id, employee_name, salary, salary + 100
 
 让我们执行**添加 2 列**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary + employee_id
    AS "salary + employee_id" FROM addition;
 
@@ -62,7 +62,7 @@ SELECT employee_id, employee_name, salary, salary + employee_id
 
 **实施**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary - 100
     AS "salary - 100" FROM subtraction;
 
@@ -80,7 +80,7 @@ SELECT employee_id, employee_name, salary, salary - 100
 
 让我们执行 2 列的**减法:**
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary - employee_id
     AS "salary - employee_id" FROM subtraction;
 
@@ -104,7 +104,7 @@ SELECT employee_id, employee_name, salary, salary - employee_id
 
 **实施**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary * 100
     AS "salary * 100" FROM addition;
 
@@ -122,7 +122,7 @@ SELECT employee_id, employee_name, salary, salary * 100
 
 让我们执行 2 列的**乘法:**
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary * employee_id
      AS "salary * employee_id" FROM addition;
 
@@ -144,7 +144,7 @@ SELECT employee_id, employee_name, salary, salary * employee_id
 
 **实施**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary % 25000
     AS "salary % 25000" FROM addition;
 
@@ -162,7 +162,7 @@ SELECT employee_id, employee_name, salary, salary % 25000
 
 让我们在两列之间执行**模数运算:**
 
-```
+```sql
 SELECT employee_id, employee_name, salary, salary % employee_id
     AS "salary % employee_id" FROM addition;
 
@@ -186,7 +186,7 @@ SELECT employee_id, employee_name, salary, salary % employee_id
 
 **实施**:
 
-```
+```sql
 SELECT employee_id, employee_name, salary, type, type + 100
     AS "type+100" FROM addition;
 

@@ -7,7 +7,7 @@
 1.  **ISNULL(): **The ISNULL function have different uses in SQL Server and MySQL. In SQL Server, ISNULL() function is used to replace NULL values.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT column(s), ISNULL(column_name, value_to_replace)
     FROM table_name;
     ```
@@ -19,7 +19,7 @@
 
     **查询:**查找所有员工的薪资之和，如果任意员工的薪资不可用(或为空值)，则使用薪资为 10000。
 
-    ```
+    ```sql
     SELECT SUM(ISNULL(Salary, 10000) AS Salary
     FROM Employee;
     ```
@@ -31,7 +31,7 @@
     在 MySQL 中，ISNULL()函数用于测试表达式是否为空。如果表达式为空，则返回真，否则返回假。
     **语法:**
 
-    ```
+    ```sql
     SELECT column(s)
     FROM table_name
     WHERE ISNULL(column_name);
@@ -44,7 +44,7 @@
 
     **查询:**取表中所有薪资可用的员工姓名(非空)。
 
-    ```
+    ```sql
     SELECT Name
     FROM Employee
     WHERE ISNULL(Salary);
@@ -57,7 +57,7 @@
 2.  **IFNULL(): **This function is available in MySQL, and not in SQL Server or Oracle. This function take two arguments. If the first argument is not NULL, the function returns the first argument. Otherwise, the second argument is returned. This function is commonly used to replace NULL value with another value.
     **Syntax:**
 
-    ```
+    ```sql
     SELECT column(s), IFNULL(column_name, value_to_replace)
     FROM table_name;
     ```
@@ -69,7 +69,7 @@
 
     **查询:**查找所有员工的薪资之和，如果任意员工的薪资不可用(或为空值)，则使用薪资为 10000。
 
-    ```
+    ```sql
     SELECT SUM(IFNULL(Salary, 10000) AS Salary
     FROM Employee;
     ```
@@ -81,7 +81,7 @@
 3.  **COALESCE(): **COALESCE function in SQL returns the first non-NULL expression among its arguments. If all the expressions evaluate to null, then the COALESCE function will return null.
     Syntax:
 
-    ```
+    ```sql
     SELECT column(s), CAOLESCE(expression_1,....,expression_n)
     FROM table_name;
     ```
@@ -93,7 +93,7 @@
 
     **查询:**取每个员工的姓名、联系电话。
 
-    ```
+    ```sql
     SELECT Name, COALESCE(Phone1, Phone2) AS Contact
     FROM Contact_info;
     ```
@@ -105,7 +105,7 @@
 4.  **NULLIF(): **The NULLIF function takes two argument. If the two arguments are equal, then NULL is returned. Otherwise the first argument is returned.
     Syntax:
 
-    ```
+    ```sql
     SELECT column(s), NULLIF(expression1, expression2)
     FROM table_name;
     ```
@@ -115,7 +115,7 @@
 
     ![](img/045fa5d0f6ba5582b9ef29f476323ddf.png)
 
-    ```
+    ```sql
     SELECT Store, NULLIF(Actual, Goal)
     FROM Sales;
     ```

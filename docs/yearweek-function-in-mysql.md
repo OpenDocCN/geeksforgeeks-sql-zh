@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 
 YEARWEEK(date, mode)
 
@@ -31,14 +31,14 @@ T34】1T36】周一 T38】0-0 年
 
 **示例-1 :** 使用 2020 年 9 月 28 日的 Year()函数查找当前年份和星期。
 
-```
+```sql
 SELECT YEARWEEK(NOW()) AS Current_YearWeek;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------------------+
 | Current_YearWeek |
 +------------------+
@@ -52,14 +52,14 @@ SELECT YEARWEEK(NOW()) AS Current_YearWeek;
 
 **示例-2 :** 使用 YEARWEEK()函数从给定的日期时间中查找年和周。
 
-```
+```sql
 SELECT YEARWEEK('2018-04-22 08:09:22') AS Year_Week ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +-----------+
 | Year_Week |
 +-----------+
@@ -72,14 +72,14 @@ SELECT YEARWEEK('2018-04-22 08:09:22') AS Year_Week ;
 
 **示例-3 :** 当日期为空时，使用 YEARWEEK()函数从给定的日期时间中查找年和周。
 
-```
+```sql
 SELECT YEARWEEK(NULL) AS Year_Week ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +-----------+
 | Year_Week |
 +-----------+
@@ -94,7 +94,7 @@ SELECT YEARWEEK(NULL) AS Year_Week ;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO 
     Course(Course_Name, Student_id, Student_name, Enroll_Date)
 VALUES
@@ -113,7 +113,7 @@ VALUES
 
 所以，我们的桌子看起来像:
 
-```
+```sql
 mysql> select * from Course;
 +-------------+------------+---------------+-------------+
 | Course_name | Student_id | Student_name  | Enroll_Date |
@@ -135,7 +135,7 @@ mysql> select * from Course;
 
 现在，我们将找到每周和每年注册该课程的学生人数。
 
-```
+```sql
 SELECT 
     YEARWEEK(Enroll_Date) YearandWeek, 
     COUNT(Student_id) Student_Enrolled
@@ -148,7 +148,7 @@ ORDER BY YEARWEEK(Enroll_Date);
 
 **输出:**
 
-```
+```sql
 +-------------+------------------+
 | YearandWeek | Student_Enrolled |
 +-------------+------------------+

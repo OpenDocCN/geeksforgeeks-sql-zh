@@ -30,7 +30,7 @@
 
 1.TARGET 的咖啡价格是 15.00 英镑，而 SOURCE 是 25.00 英镑
 
-```
+```sql
       PRODUCT_LIST
 102     COFFEE    15.00
 
@@ -40,14 +40,14 @@
 
 2.源中没有饼干产品，但目标中有
 
-```
+```sql
       PRODUCT_LIST
 103     BISCUIT   20.00
 ```
 
 3.TARGET 中没有 CHIPS 产品，但 SOURCE 中有
 
-```
+```sql
       UPDATED_LIST
 104     CHIPS     22.00
 ```
@@ -56,19 +56,19 @@
 
 1.更新操作
 
-```
+```sql
 102     COFFEE    25.00
 ```
 
 2.删除操作
 
-```
+```sql
 103     BISCUIT   20.00
 ```
 
 3.插入操作
 
-```
+```sql
 104     CHIPS     22.00
 ```
 
@@ -80,7 +80,7 @@
 
 ## 结构化查询语言
 
-```
+```sql
 /* Selecting the Target and the Source */
 MERGE PRODUCT_LIST AS TARGET
     USING UPDATE_LIST AS SOURCE
@@ -119,7 +119,7 @@ MERGE PRODUCT_LIST AS TARGET
 
 **输出:**
 
-```
+```sql
   PRODUCT_LIST
 P_ID    P_NAME    P_PRICE
 101     TEA       10.00 

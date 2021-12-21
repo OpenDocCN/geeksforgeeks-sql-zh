@@ -10,13 +10,13 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM OPENROWSET (BULK 'file_path', SINGLE_CLOB) as correlation_name;
 ```
 
 该查询将读取文本文件的内容，并将其作为名为 Bulkcolumn 的表中的单个列返回。必须指定相关名称。我们有一个名为“极客. txt”的文本文件。文本文件的内容:
 
-```
+```sql
 Hii!! My name is Romy kumari.
 I am an engineer.
 
@@ -27,7 +27,7 @@ Welcome to GeeksforGeeks platform.
 
 **查询:**
 
-```
+```sql
 SELECT * FROM OPENROWSET(BULK 'E:\Geek.txt', SINGLE_CLOB) AS Contents;
 ```
 
@@ -51,7 +51,7 @@ SELECT * FROM OPENROWSET(BULK 'E:\Geek.txt', SINGLE_CLOB) AS Contents;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -61,7 +61,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -69,7 +69,7 @@ USE geeks;
 
 我们的极客数据库中有以下演示表。
 
-```
+```sql
 CREATE TABLE demo(
 Content VARCHAR(1000)
 );
@@ -81,7 +81,7 @@ Content VARCHAR(1000)
 
 **语法:**
 
-```
+```sql
 BULK INSERT dbo.table_name
   FROM 'file_path'
   WITH  
@@ -92,7 +92,7 @@ BULK INSERT dbo.table_name
 
 **查询:**
 
-```
+```sql
 BULK INSERT dbo.demo
   FROM 'E:\Geek.txt'
   WITH  
@@ -105,7 +105,7 @@ BULK INSERT dbo.demo
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo;
 ```
 

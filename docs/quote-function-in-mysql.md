@@ -7,7 +7,7 @@ MySQL 中的这个函数用来返回一个结果，这个结果可以作为 SQL 
 
 **语法:**
 
-```
+```sql
 QUOTE(string)
 ```
 
@@ -22,7 +22,7 @@ QUOTE(string)
 **示例-1 :**
 借助 QUOTE 函数将字符串“极客”中的单引号转义为“极客”。
 
-```
+```sql
 SELECT QUOTE('geeks''for''geeks' ) 
 AS Escaped_String;
 ```
@@ -36,7 +36,7 @@ AS Escaped_String;
 **示例-2 :**
 借助 QUOTE 函数对字符串 geeks \ for ' \ geeks '中的反斜杠进行转义。
 
-```
+```sql
 SELECT QUOTE('geeks\for\geeks' ) 
 AS Escaped_String;
 ```
@@ -50,7 +50,7 @@ AS Escaped_String;
 **例-3 :**
 QUOTE 函数也可以用于列数据。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student
 (
 Student_id INT AUTO_INCREMENT,  
@@ -63,7 +63,7 @@ PRIMARY KEY(Student_id )
 
 **在学生表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Student
 (Student_name, Roll, Department )
 VALUES
@@ -76,7 +76,7 @@ VALUES
 
 学生表如下。
 
-```
+```sql
 SELECT  * from Student ;
 
 ```
@@ -93,7 +93,7 @@ SELECT  * from Student ;
 
 现在，我们将在部门列中使用报价功能。
 
-```
+```sql
 SELECT *, QUOTE (Department) FROM Student;
 ```
 

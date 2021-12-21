@@ -8,7 +8,7 @@
 
 **语法–**
 
-```
+```sql
 DELETE FROM table_name 
 WHERE condition; 
 ```
@@ -32,20 +32,20 @@ WHERE condition;
 
 以下 SQL 语句从“学生”表中删除了一行，该行的学生名为“ABC”。
 
-```
+```sql
 DELETE FROM student 
 WHERE StudentName = 'ABC';
 ```
 
 **输出–**
 
-```
+```sql
 (1 row(s) affected)
 ```
 
 为了检查该值是否被实际删除，查询如下:
 
-```
+```sql
 select * 
 from student;
 ```
@@ -65,26 +65,26 @@ from student;
 
 **语法–**
 
-```
+```sql
 DELETE FROM table_name;
 ```
 
 **示例–**
 以下 SQL 语句删除“学生”表中的所有行，但不删除该表。
 
-```
+```sql
 DELETE FROM student;
 ```
 
 **输出–**
 
-```
+```sql
 (3 row(s) affected)
 ```
 
 为了检查该值是否被实际删除，查询如下:
 
-```
+```sql
 select * 
 from student;
 ```

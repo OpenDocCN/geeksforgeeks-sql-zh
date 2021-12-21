@@ -11,13 +11,13 @@
 
 示例:
 
-```
+```sql
 Input : 4
 Output : 24
 
 ```
 
-```
+```sql
 Input : 6
 Output : 720
 
@@ -25,7 +25,7 @@ Output : 720
 
 以下是所需的实现:
 
-```
+```sql
 declare
 
 -- declare variable num , fact
@@ -56,7 +56,7 @@ dbms_output.put_line('factorial of '|| num || ' is ' || fact);
 
 **输出:**
 
-```
+```sql
 factorial of 6 is 720.
 
 ```

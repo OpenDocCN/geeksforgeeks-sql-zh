@@ -10,7 +10,7 @@ MySQL 是一个基于结构化查询语言(SQL)的开源关系数据库管理系
 
 启动 MySQL 服务器，使用以下命令安装 go MySQL 驱动程序。
 
-```
+```sql
 go get -u github.com/go-sql-driver/mysql
 ```
 
@@ -18,7 +18,7 @@ go get -u github.com/go-sql-driver/mysql
 
 用 sql.Open 创建一个数据库对象。没有与 MySQL 建立连接，而是只创建一个数据库对象，供以后使用。
 
-```
+```sql
 db, err := sql.Open("mysql", "<user>:<password>@tcp(127.0.0.1:3306)/<database-name>")
 ```
 
@@ -26,7 +26,7 @@ db, err := sql.Open("mysql", "<user>:<password>@tcp(127.0.0.1:3306)/<database-na
 
 ## 去
 
-```
+```sql
 package main
 
 import (
@@ -78,7 +78,7 @@ func main() {
 
 ## 去
 
-```
+```sql
 package main
 
 import (
@@ -129,7 +129,7 @@ func main() {
 
 ## 去
 
-```
+```sql
 package main
 
 import (
@@ -179,7 +179,7 @@ func main() {
 
 ## 去
 
-```
+```sql
 package main
 
 import (

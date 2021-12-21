@@ -7,7 +7,7 @@ MS Access 中的 DVar()函数用于估计指定记录集(一个域)中一组值�
 
 **语法:**
 
-```
+```sql
 DVar (expr, domain, criteria)
 
 ```
@@ -33,7 +33,7 @@ DVar (expr, domain, criteria)
 
 **例-1 :** 产品价格的方差。
 
-```
+```sql
 SELECT DVar("Product_Price", "ProductSales") AS DVar_Value ;
 
 ```
@@ -46,7 +46,7 @@ SELECT DVar("Product_Price", "ProductSales") AS DVar_Value ;
 
 **例-2 :** 价格小于 12500 的产品价格的方差。
 
-```
+```sql
 SELECT DVar("Product_Price", "ProductSales", "Product_Price<12500") AS DVar_Value ;
 
 ```
@@ -64,7 +64,7 @@ DVar 和 Dvar 之间的主要区别在于，Dvar 函数评估整个群体的方�
 
 **语法:**
 
-```
+```sql
 DVarP (expr, domain, criteria)
 
 ```
@@ -91,7 +91,7 @@ DVarP (expr, domain, criteria)
 
 **例-1 :** 标记的方差。
 
-```
+```sql
 SELECT DVarP("Marks", "ExamDetails ") AS DVarP_Value ;
 
 ```
@@ -104,7 +104,7 @@ SELECT DVarP("Marks", "ExamDetails ") AS DVarP_Value ;
 
 **例-2 :** 标记的方差为> 90。
 
-```
+```sql
 SELECT DVarP("Marks", "ExamDetails ", "Marks>90") AS DVarP_Value ;
 
 ```

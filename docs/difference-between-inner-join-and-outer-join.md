@@ -75,7 +75,7 @@ SQL 中的 JOINS 用于在特定条件下组合多个表中的行，这是两个
     它是内部连接的子类别，在表中只限于相等条件。当且仅当查询中存在相等条件时，该连接称为 Equi 连接。
     查询上述两个表上的 **Equi Join** :
 
-```
+```sql
 SELECT * FROM 
 student 
 INNER JOIN 
@@ -93,7 +93,7 @@ student.student_id = location.student_id;
 
 对**自连接**的查询在上面两个表中:
 
-```
+```sql
 SELECT s1.student_id ,s1.student_name FROM 
 student s1
 INNER JOIN 
@@ -118,7 +118,7 @@ s1.student_name= s2.student_name AND s1.student_id<> s2.student_id;
 在左连接中，我们完全考虑左表和右表中匹配的属性(基于条件)，以及左表和右表中不匹配的属性相对于左表中的列被置为空。
 左连接的查询在上面两个表中:
 
-```
+```sql
 SELECT * FROM 
 student 
 LEFT JOIN 
@@ -139,7 +139,7 @@ student.student_id = location.student_id;
 在右连接中，我们完全考虑右表和左表中匹配的属性(基于条件)，以及右表和左表的不匹配属性相对于右表中的一列为空。
 右连接的查询在上面两个表中:
 
-```
+```sql
 SELECT * FROM 
 student 
 RIGHT JOIN 
@@ -160,7 +160,7 @@ student.student_id = location.student_id;
 它是左连接和右连接的结合，其中左表和右表的所有列都被认为是左表或右表的不匹配或未找到的属性将在结果表中以空值放置。
 完全连接的查询在上面两个表中:
 
-```
+```sql
 SELECT * FROM 
 student 
 FULL JOIN 

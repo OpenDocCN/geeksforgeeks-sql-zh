@@ -4,13 +4,13 @@
 
 给定一个数 x，确定给定的数是否是阿姆斯特朗数。一个 n 位数的正整数被称为 n 阶阿姆斯特朗数(阶是位数)。
 
-```
+```sql
 **abcd... = pow(a, n) + pow(b, n) + pow(c, n) + pow(d, n) + ....** 
 ```
 
 例:
 
-```
+```sql
 Input : 153
 Output : Yes
 153 is an Armstrong number.
@@ -31,7 +31,7 @@ Output : Yes
 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634
 ```
 
-```
+```sql
 declare
 -- declare variable n, s,r, len
 -- and m of datatype number
@@ -68,6 +68,6 @@ end;
 
 输出:
 
-```
+```sql
 Yes
 ```

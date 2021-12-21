@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 USE GEEKSFORGEEKS
 SELECT * FROM Authors;
 ```
@@ -21,7 +21,7 @@ SELECT * FROM Authors;
 
 让我们向“作者”表中添加一个 BIT 数据类型。位数据类型有助于表示真(1)或假(0)的布尔性质，它们是位数据类型唯一允许的值。
 
-```
+```sql
 -- Add a column named "isActiveAuthor" 
 with BIT datatype for "Authors" table
 ALTER TABLE Authors  ADD isActiveAuthor BIT;
@@ -31,7 +31,7 @@ ALTER TABLE Authors  ADD isActiveAuthor BIT;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Authors;
 ```
 
@@ -43,7 +43,7 @@ SELECT * FROM Authors;
 
 现在，让我们尝试用一个条件来更新该列，如果“NumberOfPosts”> 5，则将“isActiveAuthor”设置为值 1 或 0。
 
-```
+```sql
 -- Let us assume that if "NumberOfPosts" 
    is more than 5, author is active enough to write articles
 -- Hence for this condition , set "isActiveAuthor"
@@ -67,7 +67,7 @@ SELECT * FROM Authors;
 
 让我们尝试更新 0 或 1 以外的值
 
-```
+```sql
 -- Trying to update the "isActiveAuthor"
    with value 2, though errors are not 
    produced, output is different
@@ -87,7 +87,7 @@ SELECT * FROM Authors;
 
 我们可以用不同的例子来验证这一点
 
-```
+```sql
 DECLARE @isValid BIT
 
 -- Initially it will have "NULL" value 

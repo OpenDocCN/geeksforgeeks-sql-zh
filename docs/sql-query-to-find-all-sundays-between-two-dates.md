@@ -10,7 +10,7 @@
 
 稍微思考一下，我们有了这样的想法:我们可以检查给定的两个边界日期(星期日)之间的所有日期。此外，SQL 日期函数确实提供了一种这样的方法来实现这个想法:
 
-```
+```sql
 DATENAME(interval_part, Date)
 ```
 
@@ -18,7 +18,7 @@ DATENAME(interval_part, Date)
 
 例如:
 
-```
+```sql
 DATENAME(month, '18/11/2001' ) 
 ```
 
@@ -36,7 +36,7 @@ DATENAME(month, '18/11/2001' )
 
 这是我们针对这个主题的 SQL 查询:
 
-```
+```sql
 declare  @StartDate DateTime = '2021-02-01',
               @EndDate DateTime = '2021-02-28';
 /*Creating a temporary view in sql(CTE) which recursively 

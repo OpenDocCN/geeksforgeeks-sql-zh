@@ -7,7 +7,7 @@
 
 DELETE 命令的**语法**:
 
-```
+```sql
 DELETE FROM relation_name 
 WHERE condition;
 ```
@@ -16,7 +16,7 @@ WHERE condition;
 
 DROP 命令的**语法**:
 
-```
+```sql
 DROP SCHEMA schema_name RESTRICT;
 DROP Table table_name CASCADE;
 ```

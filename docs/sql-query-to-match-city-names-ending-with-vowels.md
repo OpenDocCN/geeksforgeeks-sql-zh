@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 Create database sample;
 ```
 
@@ -20,7 +20,7 @@ Create database sample;
 
 **查询:**
 
-```
+```sql
 use Sample;
 ```
 
@@ -30,7 +30,7 @@ use Sample;
 
 **语法:**
 
-```
+```sql
 create table table_name(
 column1 type(size),
 column2 type(size),
@@ -42,7 +42,7 @@ columnN type(size)
 
 **查询:**
 
-```
+```sql
 CREATE TABLE office
 (
 EMPNAME VARCHAR(25),
@@ -58,13 +58,13 @@ CITY VARCHAR(15)
 
 **语法:**
 
-```
+```sql
 EXEC sp_help table_name
 ```
 
 **查询:**
 
-```
+```sql
 EXEC sp_help office; 
 ```
 
@@ -80,7 +80,7 @@ EXEC sp_help 表 _ name 查询类似于 DESC 表名；在另一个平台如 Orac
 
 **查询:**
 
-```
+```sql
 INSERT INTO office
 VALUES ('VISHAL','SALES',9193458625,'GAZIABAD'),
 ('VIPIN','MANAGER',7352158944,'BARIELLY'),
@@ -100,7 +100,7 @@ VALUES ('VISHAL','SALES',9193458625,'GAZIABAD'),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM office;
 ```
 
@@ -112,7 +112,7 @@ SELECT * FROM office;
 
 **查询:**
 
-```
+```sql
 SELECT EMPNAME,CITY FROM office
 WHERE CITY LIKE '%a'
 OR CITY LIKE '%e'

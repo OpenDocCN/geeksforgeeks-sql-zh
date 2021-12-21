@@ -15,7 +15,7 @@ SQL Server 中的这个函数用于返回给定的值，以防所述表达式为
 
 **语法:**
 
-```
+```sql
 ISNULL(expression, value)
 ```
 
@@ -36,13 +36,13 @@ ISNULL(expression, value)
 
 使用 ISNULL()函数并获取输出。
 
-```
+```sql
 SELECT ISNULL('gfg', 'Geeks');
 ```
 
 **输出:**
 
-```
+```sql
 gfg
 ```
 
@@ -52,13 +52,13 @@ gfg
 
 使用 ISNULL()函数并获取输出。
 
-```
+```sql
 SELECT ISNULL(NULL, 'Geeks');
 ```
 
 **输出:**
 
-```
+```sql
 Geeks
 ```
 
@@ -68,7 +68,7 @@ Geeks
 
 使用 ISNULL()函数并使用变量获取输出。
 
-```
+```sql
 DECLARE @exp VARCHAR(50);
 SET @exp = 'geeksforgeeks';
 SELECT ISNULL(@exp, 150);
@@ -76,7 +76,7 @@ SELECT ISNULL(@exp, 150);
 
 **输出:**
 
-```
+```sql
 geeksforgeeks
 ```
 
@@ -84,7 +84,7 @@ geeksforgeeks
 
 使用 ISNULL()函数，并使用变量获取输出。
 
-```
+```sql
 DECLARE @exp VARCHAR(50);
 DECLARE @val VARCHAR(50);
 SET @exp = NULL;
@@ -94,7 +94,7 @@ SELECT ISNULL(@exp, @val);
 
 **输出:**
 
-```
+```sql
 GFG
 ```
 

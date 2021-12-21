@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 Create database Sample;
 ```
 
@@ -22,7 +22,7 @@ Create database Sample;
 
 **查询:**
 
-```
+```sql
 Use Sample;
 ```
 
@@ -32,7 +32,7 @@ Use Sample;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE EMP1
 ( EMPNAME VARCHAR(25),
 DEPT VARCHAR(20),
@@ -45,7 +45,7 @@ SALARY INT
 
 **查询:**
 
-```
+```sql
 EXEC sp_help EMP2021 
 ```
 
@@ -59,7 +59,7 @@ EXEC sp_help EMP2021
 
 **查询:**
 
-```
+```sql
 INSERT INTO EMP2021
 VALUES ('VISHAL','EXECUTIVE',9193458625,20000),
 ('VIPIN','SYSTEM ENGINEER',7352158944,32000),
@@ -79,7 +79,7 @@ VALUES ('VISHAL','EXECUTIVE',9193458625,20000),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EMP2021;
 ```
 
@@ -93,7 +93,7 @@ SELECT * FROM EMP2021;
 
 **查询:**
 
-```
+```sql
 UPDATE EMP2021 SET DEPT = 'SENIOR '+ DEPT WHERE SALARY >30000 AND SALARY <50000; 
 ```
 

@@ -8,14 +8,14 @@
 
 **语法:**
 
-```
+```sql
 Atn(number)
 
 ```
 
 **示例 1–**
 
-```
+```sql
 SELECT Atn(50) AS AtnNum;
 
 ```
@@ -27,7 +27,7 @@ SELECT Atn(50) AS AtnNum;
 
 **示例 2–**
 
-```
+```sql
 SELECT Atn(2) AS AtnNum;
 
 ```
@@ -43,14 +43,14 @@ SELECT Atn(2) AS AtnNum;
 
 **语法:**
 
-```
+```sql
 Cos(number)
 
 ```
 
 **示例 1–**
 
-```
+```sql
 SELECT Cos(45) AS CosNum;
 
 ```
@@ -62,7 +62,7 @@ SELECT Cos(45) AS CosNum;
 
 **示例 2–**
 
-```
+```sql
 SELECT Cos(30) AS CosNum;
 
 ```

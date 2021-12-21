@@ -26,13 +26,13 @@ SQL 在 1986 年成为美国国家标准协会(ANSI) 的规范，第二年在 19
 
 **1。创建数据库**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
 **2。创建表格**
 
-```
+```sql
 CREATE TABLE Table_name(
 col_1 TYPE col_1_constraint,
 col_2 TYPE col_2 constraint
@@ -46,7 +46,7 @@ col_constraint: Constraints in SQL like PRIMARY KEY, NOT NULL, UNIQUE, REFERENCE
 
 **3。插入表格**
 
-```
+```sql
 INSERT INTO Table_name
 VALUES(val_1, val_2, val_3, ..........);
 
@@ -55,7 +55,7 @@ val: Values in particular column.
 
 **4。查看表格**
 
-```
+```sql
 SELECT * FROM Table_name
 ```
 
@@ -65,13 +65,13 @@ SELECT * FROM Table_name
 
 **基本语法:**
 
-```
+```sql
 LAST(expression)
 ```
 
 例如，假设我们想从“学生信息”表中提取最后一个学生姓名
 
-```
+```sql
 SELECT LAST(Student_name) AS Stud_Name 
 FROM StudentInformation;
 ```
@@ -90,7 +90,7 @@ FROM StudentInformation;
 
 **MYSQL 语法:**
 
-```
+```sql
 SELECT col_name(s) FROM Table_Name
 ORDER BY appr_col_name DESC
 LIMIT 1;
@@ -101,7 +101,7 @@ appr_col_name: Appropriate column name to perform ORDER BY.
 
 **Oracle 语法:**
 
-```
+```sql
 SELECT col_name(s) FROM Table_Name
 ORDER BY appr_col_name DESC
 WHERE ROWNUM <= 1;
@@ -132,7 +132,7 @@ appr_col_name: Appropriate column name to perform ORDER BY.
 
 [**【子查询 T4】**](https://www.geeksforgeeks.org/sql-subquery/) 不过是另一个维护父子关系的查询里面的一个查询。首先执行内部查询，然后执行外部查询。这里，在这个方法中，基本思想是使用聚合函数[**【MAX】**](https://www.geeksforgeeks.org/sql-min-and-max/)获得最大 ID，然后选择与该最大 ID 相关联的学生姓名。这样，我们就可以从表格中提取出最后一个学生的名字。
 
-```
+```sql
 SELECT col_name(s) FROM Table_Name
 WHERE appr_col_name = (
         SELECT MAX(appr_col_name)
@@ -153,7 +153,7 @@ appr_col_name: Appropriate column name. For example ID.
 
 在这个方法中，我们还将使用子查询。基本思想是过滤掉这些行，并检查不存在比我们要提取的行具有更高标识值的行。这将有助于获取具有最大标识的行，因此我们可以检索最后的信息。这是一个复杂的查询，是一种迭代方法，我们将使用 **NOT EXISTS** 语句。如果表中有更多的记录，此方法将需要更多的时间来执行。
 
-```
+```sql
 SELECT col_name(s) FROM Table_Name t1
 WHERE NOT EXISTS(
     SELECT * FROM Table_Name t2

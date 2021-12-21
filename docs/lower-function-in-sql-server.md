@@ -7,7 +7,7 @@ SQL Server 中的这个函数有助于将给定字符串的所有字母转换为
 
 **语法:**
 
-```
+```sql
 LOWER( str )
 ```
 
@@ -21,7 +21,7 @@ LOWER( str )
 **示例-1 :**
 使用带大写字符串的 LOWER()函数。
 
-```
+```sql
 SELECT LOWER('WAKE UP AND TAKE UP') 
 As New;
 ```
@@ -42,7 +42,7 @@ As New;
 **示例-2 :**
 使用带混合大小写字符串的 LOWER()函数。
 
-```
+```sql
 SELECT LOWER('EvERy DAy iS A NEW day') 
 As New;
 ```
@@ -63,7 +63,7 @@ As New;
 **示例-3 :**
 在 Select 语句中使用 LOWER()函数。现在，让我们创建玩家表并在其中插入值。
 
-```
+```sql
 Create table Players
 (
  Firstname varchar(40),
@@ -74,7 +74,7 @@ Create table Players
 
 **插入数值:**
 
-```
+```sql
 Insert into Players values 
 ('VIRAT', 'KOHLI', 'INDIA')
 ```
@@ -91,7 +91,7 @@ T21】</figure>
 
 **使用 LOWER()函数:**
 
-```
+```sql
 SELECT LOWER(Firstname) 
 As firstname,  
 Lastname,  
@@ -111,7 +111,7 @@ T21】</figure>
 **示例-4 :**
 在变量中使用 LOWER()函数。
 
-```
+```sql
 DECLARE @text VARCHAR(45);
 SET @text = 'LIFE IS AWESOME IF YOU LIVE ';
 SELECT @text,  

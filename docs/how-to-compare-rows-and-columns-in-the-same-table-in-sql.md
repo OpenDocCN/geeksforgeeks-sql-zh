@@ -6,46 +6,46 @@
 
 要创建数据库，请执行以下操作:
 
-```
+```sql
 Syntax :
 CREATE database_name;
 ```
 
-```
+```sql
 CREATE Shopping
 ```
 
 要使用该数据库:
 
-```
+```sql
 Syntax :
 USE database_name;
 ```
 
-```
+```sql
 USE Shopping
 ```
 
 创建用于进行查询的表:
 
-```
+```sql
 Syntax :
 CREATE TABLE table_name(column1 TYPE, column2 TYPE ... );
 ```
 
-```
+```sql
 CREATE TABLE orders(order_id INT AUTO_INCREMENT PRIMARY KEY,
 order_date DATE, amount INT, customer VARCHAR(50), city VARCHAR(50));
 ```
 
 在学生表中插入记录:
 
-```
+```sql
 Syntax :
 INSERT INTO table_name(column1, column2 ...) VALUES (value1, value2 ...);
 ```
 
-```
+```sql
 INSERT INTO orders(order_date, amount, customer, city)
  VALUES
 ('2020-10-01',100, 'john', 'london'),
@@ -60,14 +60,14 @@ INSERT INTO orders(order_date, amount, customer, city)
 
 比较同一表的行。在该示例中，我们通过比较连续两天的金额来比较直接行，以计算一天的销售额。
 
-```
+```sql
 Syntax for inner join :
 SELECT column_name(s)
 FROM table1 t1 INNER JOIN table1 t2 
 on t1.column1 = t2.column1;
 ```
 
-```
+```sql
 SELECT g1.order_id, g1.order_date,g1.amount, (g2.amount - g1.amount) AS daily_amount 
 FROM orders g1 INNER JOIN orders g2 ON g2.order_id = g1.order_id + 1;
 ```
@@ -80,14 +80,14 @@ FROM orders g1 INNER JOIN orders g2 ON g2.order_id = g1.order_id + 1;
 
 在联接的帮助下，可以对同一表中的列进行比较。在这里，我们使用 SQL 中的自连接来比较同一城市的所有客户。自联接是一种常规联接，其中一个表是自己联接的。类似地，表可以用左连接、右连接、内部连接和完全连接来连接。
 
-```
+```sql
 Syntax for self join :
 SELECT column_name(s)
 FROM table1 t1, table1 t2
 WHERE condition1 and condition2 ... ;
 ```
 
-```
+```sql
 SELECT A.customer AS CustomerName1, B.customer AS CustomerName2, A.city
 FROM orders A, orders B
 WHERE A.order_id <> B.order_id
@@ -103,7 +103,7 @@ ORDER BY A.city;
 
 在本例中，我们比较了所有 order_id，其中第一个 order_id 的金额大于第二个 order_id 的金额。我们使用自连接来执行同一个表中的列的比较。
 
-```
+```sql
 SELECT A.customer AS CustomerName1, B.customer AS CustomerName2, 
 A.order_id AS order_id_1, B.order_id AS order_id_2, A.amount AS Amount_by_1, 
 B.amount AS Amount_by_2, (A.amount - B.amount) AS difference

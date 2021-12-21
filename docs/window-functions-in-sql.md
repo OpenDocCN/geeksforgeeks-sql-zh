@@ -12,7 +12,7 @@
 
 **基本语法:**
 
-```
+```sql
 SELECT coulmn_name1, 
  window_function(cloumn_name2),
  OVER([PARTITION BY column_name1] [ORDER BY column_name3]) AS new_column
@@ -47,7 +47,7 @@ table_name= Name of table
 **示例–**
 查找各部门员工的平均工资，并按年龄排序部门内的员工。
 
-```
+```sql
 SELECT Name, Age, Department, Salary, 
  AVERAGE(Salary) OVER( PARTITION BY Department ORDER BY Age) AS Avg_Salary
  FROM employee
@@ -85,7 +85,7 @@ SELECT Name, Age, Department, Salary,
 **例–**
 根据各部门内部工资计算员工排号、职级、密级为员工表。
 
-```
+```sql
 SELECT 
 ROW_NUMBER() OVER (PARTITION BY Department ORDER BY Salary DESC) 
 AS emp_row_no, Name,  Department, Salary,

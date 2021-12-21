@@ -14,14 +14,14 @@
 
 **创建表格:**
 
-```
+```sql
 CREATE TABLE Employee
 ('ID INT, F_Name CHAR(10), L_Name CHAR(10), Age INT);
 ```
 
 **在表格中插入数值:**
 
-```
+```sql
 INSERT INTO Employee
 VALUES('1','Rahul','Pal','20');
 INSERT INTO Employee
@@ -42,7 +42,7 @@ VALUES('4','Ram','Meena','30');
 
 要向表中添加唯一约束，请使用下面的语句:
 
-```
+```sql
 ALTER TABLE Employee
 ADD CONSTRAINT/INDEX unique_id UNIQUE (ID);
 ```
@@ -55,21 +55,21 @@ ADD CONSTRAINT/INDEX unique_id UNIQUE (ID);
 
 现在，下面的查询可以用来删除我们在上面创建的唯一约束:
 
-```
+```sql
 ALTER TABLE Employee
 DROP CONSTRAINT unique_id;
 ```
 
 现在让我们尝试在表中添加重复项:
 
-```
+```sql
 INSERT INTO Employee
 VALUES('4', 'ABC', 'XYZ', '35');
 ```
 
 由于我们没有得到错误，我们已经成功地删除了唯一的约束。让我们检查一下表格，使用下面的语句来验证这一点:
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 

@@ -12,7 +12,7 @@
 
 **基本语法:**
 
-```
+```sql
 select 
 select_list
 from
@@ -27,7 +27,7 @@ order by
 
 如果用户想要按顺序排列姓名，那么查询必须写如下:
 
-```
+```sql
 select
 roll number 
 name 

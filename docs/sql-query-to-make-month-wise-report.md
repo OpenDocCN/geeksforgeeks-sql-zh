@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 DATENAME( required part of date,date)
 ```
 
@@ -30,7 +30,7 @@ DATENAME( required part of date,date)
 
 **查询:**
 
-```
+```sql
 Create database SAMPLE;
 ```
 
@@ -40,7 +40,7 @@ SQL 语句切换数据库上下文示例，如下所示:
 
 **查询:**
 
-```
+```sql
 Use SAMPLE;
 ```
 
@@ -50,7 +50,7 @@ Use SAMPLE;
 
 **语法:**
 
-```
+```sql
 create table table_name(
 column1 type(size),
 column2 type(size),
@@ -63,7 +63,7 @@ columnN type(size)
 
 **查询:**
 
-```
+```sql
 DECLARE @date DATE;
 DECLARE @start_date DATE;
 DECLARE @end_date DATE;
@@ -107,7 +107,7 @@ CREATE TABLE NEWJOINEE
 
 **语法:**
 
-```
+```sql
 insert into table_name(
 value1,
 value2,
@@ -116,7 +116,7 @@ value3,...valueN);
 
 **查询:**
 
-```
+```sql
  INSERT INTO NEWJOINEE
  VALUES ('VISHAL',9193458625,'12-JAN-2021','SYSTEM ENGINEER'),
  ('RAM',7856958725,'22-JAN-2021','MANAGER'),
@@ -143,7 +143,7 @@ value3,...valueN);
 
 **查询:**
 
-```
+```sql
 SELECT MAX(DATENAME(MM,DATEOFJOIN)) AS JOININGMONTH, COUNT(1) AS "TOTALEMP. JOIN"
 FROM NEWJOINEE GROUP BY MONTH(DATEOFJOIN);
 ```

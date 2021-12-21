@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 LOG2( X )
 
 ```
@@ -26,7 +26,7 @@ LOG2()函数接受一个参数，描述如下。
 **示例-1 :**
 使用 LOG2()函数对给定的以 2 为底的数进行对数运算。
 
-```
+```sql
 SELECT LOG2(16) AS Log2_Val;
 
 ```
@@ -40,7 +40,7 @@ SELECT LOG2(16) AS Log2_Val;
 **例-2 :**
 使用 LOG2()函数求 0 的对数。
 
-```
+```sql
 SELECT LOG2(0) AS Log2_Val;
 
 ```
@@ -54,7 +54,7 @@ SELECT LOG2(0) AS Log2_Val;
 **例-3:**
 LOG2 函数也可以用来求列数据以 2 为基数的对数值。为了演示，创建一个名为**产品**的表格。
 
-```
+```sql
 CREATE TABLE Product
 (
     Product_id INT AUTO_INCREMENT,  
@@ -70,7 +70,7 @@ CREATE TABLE Product
 
 **现在向产品表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Product
 (Product_name, Buying_price, Selling_price, Service_grade)
 VALUES
@@ -84,7 +84,7 @@ VALUES
 
 **显示产品表中的所有数据:**
 
-```
+```sql
 Select * from Product;
 
 ```
@@ -99,7 +99,7 @@ Select * from Product;
 
 现在，我们将找到 Service_grade 列中所有记录的以 2 为基数的对数值。
 
-```
+```sql
         Select 
     Product_id,  
     Product_name,  

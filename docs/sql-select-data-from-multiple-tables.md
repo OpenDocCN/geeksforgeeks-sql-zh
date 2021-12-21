@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT tablenmae1.colunmname, tablename2.columnnmae    
 FROM tablenmae1  
 JOIN tablename2  
@@ -50,7 +50,7 @@ ORDER BY columnname;
 
 从多个表中选择的示例:
 
-```
+```sql
 SELECT Geeks3.GID, Geeks3.PID, 
        Geeks3.Asset, Geeks1.FirstName, 
        Geeks2.LastName  

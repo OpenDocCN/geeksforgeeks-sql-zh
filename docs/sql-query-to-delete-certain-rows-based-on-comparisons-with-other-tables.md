@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name WHERE column_name=
 ( SELECT column_name FROM table_name);
 ```
@@ -17,7 +17,7 @@ SELECT * FROM table_name WHERE column_name=
 
 **语法:**
 
-```
+```sql
 DELETE FROM table_name WHERE condition;
 ```
 
@@ -29,7 +29,7 @@ DELETE FROM table_name WHERE condition;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -39,7 +39,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -49,7 +49,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 NAME VARCHAR(20),
 AGE int,
@@ -58,7 +58,7 @@ CITY VARCHAR(10));
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 NAME VARCHAR(20),
 AGE int);
@@ -68,7 +68,7 @@ AGE int);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 ('Romy',23,'Delhi'),
 ('Pushkar',23,'Delhi'),
@@ -84,7 +84,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES ('Fanny',25 ),
 ('Prem', 30), ('Preeti',21 ),('Samita',32);
 ```
@@ -95,7 +95,7 @@ INSERT INTO demo_table2 VALUES ('Fanny',25 ),
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -105,7 +105,7 @@ SELECT * FROM demo_table1;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -121,7 +121,7 @@ SELECT * FROM demo_table2;
 
 **查询:**
 
-```
+```sql
 SELECT MIN(AGE) FROM demo_table2;
 ```
 
@@ -129,7 +129,7 @@ SELECT MIN(AGE) FROM demo_table2;
 
 **查询:**
 
-```
+```sql
 DELETE FROM demo_table1 WHERE AGE < 
 (SELECT MIN(AGE) FROM demo_table2);
 ```

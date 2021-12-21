@@ -7,14 +7,14 @@
 
 **语法:**
 
-```
+```sql
 Mid(string, start, length)
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Mid("GEEKSFORGEEKS", 3, 3) AS ExtractString;
 
 ```
@@ -26,7 +26,7 @@ SELECT Mid("GEEKSFORGEEKS", 3, 3) AS ExtractString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Mid("GEEKSFORGEEKS", 6, 14) AS ExtractString;
 
 ```
@@ -41,14 +41,14 @@ SELECT Mid("GEEKSFORGEEKS", 6, 14) AS ExtractString;
 
 **语法:**
 
-```
+```sql
 Len(string/varname)
 
 ```
 
 **例 1 :**
 
-```
+```sql
 SELECT Len("GEEKSFORGEEKS") AS LengthOfString;
 
 ```
@@ -60,7 +60,7 @@ SELECT Len("GEEKSFORGEEKS") AS LengthOfString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Len("GFG") AS LengthOfString;
 
 ```

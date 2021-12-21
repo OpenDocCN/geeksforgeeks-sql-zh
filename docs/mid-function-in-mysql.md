@@ -8,7 +8,7 @@ MySQL 中的函数用于从给定的输入字符串中提取一个子串。如�
 
 **语法:**
 
-```
+```sql
 MID(str,pos,len)
 ```
 
@@ -30,7 +30,7 @@ MID(str,pos,len)
 
 从位置 1 开始，借助 MID 函数，从字符串“geeksforgeeks”中提取长度为 5 的字符串。
 
-```
+```sql
 SELECT MID('geeksforgeeks', 1, 5) As SUBSTRING;
 ```
 
@@ -48,7 +48,7 @@ SELECT MID('geeksforgeeks', 1, 5) As SUBSTRING;
 
 在从位置 3 开始的 MID 函数的帮助下，从字符串“学习 MySQL 很有趣”中提取长度为 3 的字符串。
 
-```
+```sql
 SELECT MID('Learning MySQL is fun', -3, 3) As SUBSTRING;
 ```
 
@@ -68,7 +68,7 @@ SELECT MID('Learning MySQL is fun', -3, 3) As SUBSTRING;
 
 **创建学生表–**
 
-```
+```sql
 CREATE TABLE StudentDetails
 (
 Student_id INT AUTO_INCREMENT,  
@@ -81,7 +81,7 @@ PRIMARY KEY(Student_id )
 
 **将值插入表格–**
 
-```
+```sql
 INSERT INTO StudentDetails
 (Student_name ,Roll, Department )
 VALUES
@@ -95,7 +95,7 @@ VALUES
 
 表格将如下所示。
 
-```
+```sql
 SELECT  * from StudentDetails;
 ```
 
@@ -114,7 +114,7 @@ SELECT  * from StudentDetails;
 
 现在，我们将使用学生名列上的 MID 函数来查找每个学生的名字。
 
-```
+```sql
 SELECT Student_id , MID(Student_name,1,5 ) AS First_Name,
 Student_name ,Roll,Department FROM StudentDetails;
 ```

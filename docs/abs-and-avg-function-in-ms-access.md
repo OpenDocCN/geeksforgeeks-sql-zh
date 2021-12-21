@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 Abs(number)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT Abs(-240.7) AS AbsNum;
 ```
 
@@ -24,7 +24,7 @@ SELECT Abs(-240.7) AS AbsNum;
 
 **示例–**
 
-```
+```sql
 SELECT Abs(120.89) AS AbsNum;
 ```
 
@@ -41,7 +41,7 @@ SELECT Abs(120.89) AS AbsNum;
 
 **语法:**
 
-```
+```sql
 Avg(expression)
 ```
 
@@ -54,7 +54,7 @@ Avg(expression)
 
 **示例-1:**
 
-```
+```sql
 SELECT Avg(MARKS) AS Average 
 FROM Stu_Details;
 ```
@@ -66,7 +66,7 @@ FROM Stu_Details;
 
 **示例-2:**
 
-```
+```sql
 SELECT * 
 FROM Stu_Details
 WHERE MARKS > (SELECT Avg(MARKS) FROM Stu_Details);

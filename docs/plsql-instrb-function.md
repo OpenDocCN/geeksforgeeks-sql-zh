@@ -8,7 +8,7 @@ PLSQL INSTRB 函数接受四个参数，即字符串、子字符串、起始位�
 
 **语法:**
 
-```
+```sql
 INSTRB(string, substring [,start_position [, nth_appearance ]])
 ```
 
@@ -29,7 +29,7 @@ INSTRB(string, substring [,start_position [, nth_appearance ]])
 
 **示例-1:** 使用字符向前搜索来查找子串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -41,13 +41,13 @@ END;
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
 **示例-2:** 使用字符位置向前搜索来查找子串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -59,13 +59,13 @@ END;
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
 **示例-3:** 使用字符位置向前搜索来查找子串在第三个位置的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -77,13 +77,13 @@ END;
 
 **输出:**
 
-```
+```sql
 10 
 ```
 
 **示例-4:** 使用字符位置向后搜索来查找子字符串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -95,13 +95,13 @@ END;
 
 **输出:**
 
-```
+```sql
 11 
 ```
 
 **示例-5:** 使用三字节字符集查找子字符串的位置。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -113,6 +113,6 @@ END;
 
 **输出:**
 
-```
+```sql
 6 
 ```

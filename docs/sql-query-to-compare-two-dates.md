@@ -18,7 +18,7 @@
 
 **语法:**
 
-```
+```sql
 DECLARE @variable_name datatype;
 ```
 
@@ -26,7 +26,7 @@ DECLARE @variable_name datatype;
 
 **语法:**
 
-```
+```sql
 SET @variable_name;
 ```
 
@@ -34,7 +34,7 @@ SET @variable_name;
 
 **查询 1:**
 
-```
+```sql
 DECLARE @date1 DATE, @date2 DATE;                               
 SET @date1='2021-01-01';
 SET @date2='2021-02-02';                                       
@@ -53,7 +53,7 @@ ELSE SELECT 'date1 is greater';
 
 **查询 2:**
 
-```
+```sql
 DECLARE @date1 DATE, @date2 VARCHAR(20);
 SET @date1='2021-01-01';
 SET @date2='2021-01-01';
@@ -72,7 +72,7 @@ ELSE SELECT 'date1 is greater';
 
 **查询 3:**
 
-```
+```sql
 DECLARE @date1 DATE, @date2 VARCHAR(20);
 SET @date1='2022-01-01';
 SET @date2='2021-01-01';

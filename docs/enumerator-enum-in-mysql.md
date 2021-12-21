@@ -12,7 +12,7 @@ ENUM 是一个字符串对象，它的值由一组在创建列时显式定义的
 
 **列的枚举语法:**
 
-```
+```sql
 CREATE TABLE table_name (
   col...
   col ENUM ('value_1','value_2','value_3', ....),
@@ -32,7 +32,7 @@ CREATE TABLE table_name (
 **示例:**
 假设我们要将学生数据存储在表 **Student_grade** 中，以便将学生的成绩存储在相应的列**(高、中、低)中。**我们使用优先级语句为**枚举**列分配优先级。
 
-```
+```sql
 CREATE TABLE Student_grade(
 id INT PRIMARY KEY AUTO_INCREMENT, Grade VARCHAR(250) NOT NULL,
 priority ENUM('Low', 'Medium', 'High') NOT NULL
@@ -45,14 +45,14 @@ priority ENUM('Low', 'Medium', 'High') NOT NULL
 
 *   在名为 **Student_grade** 的表格中插入新的一行，语句如下–
 
-```
+```sql
 INSERT INTO Student_grade(Grade, priority)
 VALUES('Good grades', 'High');
 ```
 
 *   除了使用枚举值，您还可以使用数字索引，以便将值插入表的**枚举**列–
 
-```
+```sql
 INSERT INTO Student_grade(Grade, priority)
 VALUES('Poor grades', 1);
 // Here we use 1 instead of using 'Low' enumeration value, 
@@ -61,7 +61,7 @@ since 1 is mapped to 'Low' implicitly.
 
 *   让我们在表格中添加更多行**学生 _ 年级–**
 
-```
+```sql
 INSERT INTO Student_grade(Grade, priority)
 VALUES('Mediocre grade', 'Medium');
 
@@ -78,14 +78,14 @@ VALUES('Good grades','High');
 
 *   以下陈述带来了所有高分学生的成绩–
 
-```
+```sql
 SELECT * FROM Student_grade
 WHERE priority = 'High';
 ```
 
 *   您可以通过这个我的 SQL 查询得到相同的结果–
 
-```
+```sql
 SELECT * FROM Student_grade
 WHERE priority = 3;
 ```
@@ -94,7 +94,7 @@ WHERE priority = 3;
 
 *   下面的查询选择 Student_grade，并按优先级从高到低排序–
 
-```
+```sql
 SELECT Grade, priority FROM Student_grade
 ORDER BY priority DESC;
 ```
@@ -109,7 +109,7 @@ ORDER BY priority DESC;
 
 *   获取完整的枚举列表非常复杂，因为在这种情况下，您需要访问 inform_schema 数据库–
 
-```
+```sql
 SELECT colmn_type FROM inform_schema 
 WHERE TABLE_NAME = 'Student_grade' AND COLUMN_NAME = 'priority';
 ```

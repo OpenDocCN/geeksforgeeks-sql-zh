@@ -10,7 +10,7 @@
 
 **示例:**
 
-```
+```sql
 Input: str1 = ' RAMESH', str2 = 'SURESH'
 Output: RAMESH SURESH
 
@@ -24,7 +24,7 @@ Output: Ramesh is a good boy and Suresh is a brilliant student
 
 下面是需要的实现:
 
-```
+```sql
 DECLARE
     --Here variables are str, str1, str2 and v
     str  VARCHAR2(40) := 'Ramesh is a good boy';
@@ -45,7 +45,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Ramesh is a good boy and Suresh is a brilliant student
 
 ```

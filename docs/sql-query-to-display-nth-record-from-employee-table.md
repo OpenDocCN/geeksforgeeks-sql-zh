@@ -8,13 +8,13 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -22,7 +22,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下员工表:
 
-```
+```sql
 CREATE TABLE Employee(
 ID INT PRIMARY KEY AUTO_INCREMENT,
 NAME VARCHAR(30) NOT NULL,
@@ -33,7 +33,7 @@ DATE_OF_JOINING DATE);
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS Employee;
 ```
 
@@ -43,7 +43,7 @@ EXEC SP_COLUMNS Employee;
 
 使用以下语句向*员工*表添加数据:
 
-```
+```sql
 INSERT INTO Employee (NAME, PHONE, EMAIL, DATE_OF_JOINING)
 VALUES
 ('Yogesh Vaishnav', 0000000001, 'yogesh@mail.com', '2019-10-03'),
@@ -60,7 +60,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 
@@ -68,7 +68,7 @@ SELECT * FROM Employee;
 
 现在让我们显示表格的第 n 条记录。
 
-```
+```sql
 Syntax : SELECT * FROM <table_name> LIMIT  N-1,1;
 
 Here N refers to the row which is to be retrieved.
@@ -78,7 +78,7 @@ Here N refers to the row which is to be retrieved.
 
 让我们从已经创建的 Employee 表开始检索第 6 行。
 
-```
+```sql
 SELECT * FROM Employee 
 ORDER BY <column_name>     --column name is the name according to which the rows are to be ordered.Here it's ID.
 OFFSET 5 ROWS              --since N - 1 = 6 - 1 = 5 

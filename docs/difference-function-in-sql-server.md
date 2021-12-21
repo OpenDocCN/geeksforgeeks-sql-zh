@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 DIFFERENCE(string, string)
 ```
 
@@ -20,7 +20,7 @@ DIFFERENCE(string, string)
 **示例-1 :**
 使用具有相似 SOUNDEX()值的 DIFFERENCE()函数。
 
-```
+```sql
 SELECT SOUNDEX('poor') soundex_poor, SOUNDEX('pour') soundex_pour, 
 DIFFERENCE('poor', 'pour') similarity;
 ```
@@ -33,21 +33,21 @@ DIFFERENCE('poor', 'pour') similarity;
 **示例-2 :**
 返回差值 3，差值越小越好。
 
-```
+```sql
 SELECT SOUNDEX('GeeksForGeeks'), SOUNDEX('GeeksOfGeeks'),
 DIFFERENCE('GeeksForGeeks', 'GeeksOfGeeks');
 ```
 
 **输出:**
 
-```
+```sql
 3
 ```
 
 **示例-3 :**
 返回一个差值 2，中间可能的差值。
 
-```
+```sql
 SELECT SOUNDEX('GeeksForGeeks') soundex_GeeksForGeeks, SOUNDEX('GFG') soundex_GFG,
 DIFFERENCE('GeeksForGeeks', 'GFG') similarity;
 ```
@@ -60,7 +60,7 @@ DIFFERENCE('GeeksForGeeks', 'GFG') similarity;
 **示例-4 :**
 返回最大可能差值 0 的差值。
 
-```
+```sql
 SELECT SOUNDEX('javascript') soundex_javascript, SOUNDEX('c#') soundex_c#,
 DIFFERENCE('javascript', 'c#') similarity;
 ```

@@ -11,7 +11,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE LOGIN <loginname> WITH PASSWORD = '<Password>';
 
     ```
@@ -20,7 +20,7 @@
 
     **示例**使用密码为特定用户创建登录。
 
-    ```
+    ```sql
     CREATE LOGIN geeks 
     WITH PASSWORD = 'gEe@kF0rG##ks'; 
     ```
@@ -29,7 +29,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE LOGIN <loginname> WITH PASSWORD = '<Password>'
     MUST_CHANGE, CHECK_EXPIRATION = ON;
 
@@ -37,7 +37,7 @@
 
     **示例**为有密码的用户创建登录。
 
-    ```
+    ```sql
     CREATE LOGIN geeks WITH PASSWORD = 'gEe@kF0rG##ks'
     MUST_CHANGE, CHECK_EXPIRATION = ON;
 
@@ -50,7 +50,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE LOGIN [<domainname>\<loginname>] 
     FROM WINDOWS;
 
@@ -58,7 +58,7 @@
 
     **示例**从 Windows 域帐户创建登录。
 
-    ```
+    ```sql
     CREATE LOGIN [AD\geeks] FROM WINDOWS; 
     ```
 
@@ -66,7 +66,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE LOGIN <loginname> 
     WITH PASSWORD = '<Password>', 
     SID = 0x241C11948AEEB749B0D22646DB1AXXXX;
@@ -75,7 +75,7 @@
 
     **示例**从 SID 创建登录。
 
-    ```
+    ```sql
     CREATE LOGIN geeks 
     WITH PASSWORD = 'gEe@kF0rG##ks', 
     SID = 0x241C11948AEEB749B0D22646DB1AXXXX; 
@@ -85,7 +85,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     CREATE LOGIN <loginname>
     WITH PASSWORD = '<Password>',
     DEFAULT_DATABASE = <Databasename>,
@@ -95,7 +95,7 @@
 
     **示例**使用多个参数一起创建登录。
 
-    ```
+    ```sql
     CREATE LOGIN geeks WITH PASSWORD = 'gEe@kF0rG##ks'
     DEFAULT_DATABASE = GeeksDB,
     CHECK_POLICY = OFF,

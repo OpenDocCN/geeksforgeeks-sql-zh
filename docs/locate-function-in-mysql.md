@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LOCATE(substring, string, start)
 ```
 
@@ -26,7 +26,7 @@ LOCATE(substring, string, start)
 
 **示例-1 :** 借助 LOCATE 函数在字符串“geeksforgeeks”中搜索字符串“f”。
 
-```
+```sql
 SELECT LOCATE('f', 'geeksforgeeks') AS MatchLocation;
 ```
 
@@ -38,7 +38,7 @@ SELECT LOCATE('f', 'geeksforgeeks') AS MatchLocation;
 
 **示例-2 :** 借助 LOCATE 函数在字符串“学习 SQL 很有趣”中搜索字符串“MYSQL”。所以，它将返回 0。
 
-```
+```sql
 SELECT LOCATE('MYSQL', 'Learning SQL is fun') AS MatchLocation;
 ```
 
@@ -50,7 +50,7 @@ SELECT LOCATE('MYSQL', 'Learning SQL is fun') AS MatchLocation;
 
 **示例-3 :** 从位置 3 开始，借助 LOCATE 函数搜索字符串“geeksforgeeks”中的字符串“g”。
 
-```
+```sql
 SELECT LOCATE('g', 'geeksforgeeks', 3) AS MatchLocation;
 ```
 
@@ -63,7 +63,7 @@ SELECT LOCATE('g', 'geeksforgeeks', 3) AS MatchLocation;
 **示例-4 :**
 LOCATE 函数也可以用于列数据。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student
 (
 Student_id INT AUTO_INCREMENT,  
@@ -76,7 +76,7 @@ PRIMARY KEY(Student_id )
 
 向学生表中插入一些数据:
 
-```
+```sql
 INSERT INTO Student
 (Student_name, Roll, Department )
 VALUES
@@ -90,7 +90,7 @@ VALUES
 
 学生表如下。
 
-```
+```sql
 SELECT  * from Student ;
 ```
 
@@ -105,7 +105,7 @@ SELECT  * from Student ;
 
 现在，我们将在 LOCATE 函数的帮助下，在 Student_name 列中找到字符串“a”的第一次出现。
 
-```
+```sql
 SELECT *, LOCATE('a', Student_name ) AS FirstOccurrenceOfA  
 FROM STUDENT;
 ```

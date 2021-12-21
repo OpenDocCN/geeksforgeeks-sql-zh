@@ -5,7 +5,7 @@
 你已经给了一个数字 n，然后你必须打印一个数字的直角金字塔*
 示例:
 
-```
+```sql
 Input : 3
 Output :
 *
@@ -25,7 +25,7 @@ Output :
 
 ## C
 
-```
+```sql
 DECLARE
   -- declare variable n,
   --I AND J of datatype number
@@ -48,7 +48,7 @@ END;
 
 输出:
 
-```
+```sql
 *
 **
 ***

@@ -10,7 +10,7 @@
 **步骤-1:创建数据库–**
 使用以下 SQL 查询创建数据库公司，如下所示。
 
-```
+```sql
 CREATE DATABASE company;
 ```
 
@@ -21,7 +21,7 @@ CREATE DATABASE company;
 **步骤-2:使用数据库–**
 使用数据库公司使用如下 SQL 查询如下。
 
-```
+```sql
 USE company;
 ```
 
@@ -32,7 +32,7 @@ USE company;
 **步骤-3:创建表–**
 使用如下 SQL 查询创建一个包含 5 列的表员工。
 
-```
+```sql
 CREATE TABLE employee
 (
 emp_id varchar(20),
@@ -50,7 +50,7 @@ emp_sex varchar(8)
 **步骤-4:验证数据库–**
 使用以下 SQL 查询查看数据库的描述，如下所示。
 
-```
+```sql
 DESCRIBE employee;
 ```
 
@@ -62,7 +62,7 @@ DESCRIBE employee;
 **第 5 步:向表中插入数据–**
 使用如下 SQL 查询向员工表中插入行。
 
-```
+```sql
  INSERT INTO employee VALUES('E00001','JHONNY','BACKEND DEVELOPER',26,'male');
  INSERT INTO employee VALUES('E00002','DARSHI',NULL,27,'male');
  INSERT INTO employee VALUES('E00003','JASMINE',NULL,37,'female');
@@ -79,7 +79,7 @@ DESCRIBE employee;
 **第 6 步:验证插入的数据–**
 使用如下 SQL 查询查看插入行后的表员工。
 
-```
+```sql
 SELECT* FROM employee;
 ```
 
@@ -92,7 +92,7 @@ SELECT* FROM employee;
 
 **语法:**
 
-```
+```sql
 SELECT*
 FROM table_name
 WHERE column_name  IS NULL;
@@ -100,7 +100,7 @@ WHERE column_name  IS NULL;
 
 **选择数据查询–**
 
-```
+```sql
  SELECT*
  FROM employee
  WHERE emp_dept IS NULL;
@@ -116,7 +116,7 @@ WHERE column_name  IS NULL;
 
 **语法:**
 
-```
+```sql
 SELECT *
 FROM table_name
 WHERE column_name IS NOT NULL;
@@ -124,7 +124,7 @@ WHERE column_name IS NOT NULL;
 
 **选择查询–**
 
-```
+```sql
 SELECT *
 FROM employee
 WHERE emp_dept IS NOT NULL;

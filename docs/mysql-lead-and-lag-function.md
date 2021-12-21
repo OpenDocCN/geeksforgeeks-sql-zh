@@ -16,14 +16,14 @@ LEAD()函数用于从当前行后面的行中获取值。
 **语法:**
 用于 LEAD()函数-
 
-```
+```sql
 LEAD(expr, N, default) 
           OVER (Window_specification | Window_name)
 ```
 
 对于 LAG()函数-
 
-```
+```sql
 LAG(expr, N, default) 
           OVER (Window_specification | Window_name)
 ```
@@ -55,7 +55,7 @@ LAG(expr, N, default)
 
 **查询:**
 
-```
+```sql
 Select c_id, start_date, end_date, 
         end_date - lead (start_date) 
         over (order by start_date) 

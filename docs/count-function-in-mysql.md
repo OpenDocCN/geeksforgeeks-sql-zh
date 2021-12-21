@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 COUNT(expression)
 ```
 
@@ -33,7 +33,7 @@ COUNT(expression)
 
 使用 COUNT()函数并获取输出。
 
-```
+```sql
 CREATE TABLE product
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -53,7 +53,7 @@ SELECT COUNT(user_id) FROM product;
 
 **输出:**
 
-```
+```sql
 2
 ```
 
@@ -61,7 +61,7 @@ SELECT COUNT(user_id) FROM product;
 
 使用 COUNT()函数并计算浮点值。
 
-```
+```sql
 CREATE TABLE floats
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -88,7 +88,7 @@ SELECT COUNT(float_val) FROM floats;
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -96,7 +96,7 @@ SELECT COUNT(float_val) FROM floats;
 
 使用 COUNT()函数，得到物料需求计划大于物料需求计划数量的输出。
 
-```
+```sql
 CREATE TABLE package
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -119,7 +119,7 @@ WHERE mrp > (SELECT COUNT(mrp) FROM package);
 
 **输出:**
 
-```
+```sql
  user_id  | item     | mrp
 --------------------------------
   2       | book2    | 350
@@ -131,7 +131,7 @@ WHERE mrp > (SELECT COUNT(mrp) FROM package);
 
 使用 COUNT()函数并获取(物料需求计划-销售价格)的记录。
 
-```
+```sql
 CREATE TABLE package01
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -154,7 +154,7 @@ SELECT COUNT(mrp-sp) FROM package01;
 
 **输出:**
 
-```
+```sql
 2
 ```
 

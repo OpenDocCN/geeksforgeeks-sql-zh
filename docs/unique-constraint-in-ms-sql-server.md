@@ -7,7 +7,7 @@
 **示例–**
 如果用户想要创建一个学生表，并且想要强制执行唯一约束，可以按如下方式完成–
 
-```
+```sql
 create table Student
 (name varchar2(30), rollnumber int unique, age int)
 ```
@@ -23,7 +23,7 @@ create table Student
 
 在上面创建的表中，rollnumber 被强制执行一个唯一的约束，因为每个学生被分配了不同的 rollnumber 以避免混淆。为了进一步理解，下面给出了一个例子–
 
-```
+```sql
 insert into student 
 values ('Maya', '111', 'CSE');
 ```

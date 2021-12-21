@@ -16,7 +16,7 @@ SQL Server 兼容性级别是数据库设置之一。它有助于保持数据库
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
@@ -54,7 +54,7 @@ CREATE DATABASE geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 select name, compatibility_level
  from sys.databases;
 ```
@@ -73,7 +73,7 @@ select name, compatibility_level
 
 **查询:**
 
-```
+```sql
 ALTER DATABASE [geeksforgeeks] 
 SET COMPATIBILITY_LEVEL = 120;
 ```
@@ -88,7 +88,7 @@ SET COMPATIBILITY_LEVEL = 120;
 
 在这一步中，我们将使用以下查询来检查更新后的兼容性级别。
 
-```
+```sql
 SELECT compatibility_level FROM 
 sys.databases WHERE name = 'geeksforgeeks';
 ```

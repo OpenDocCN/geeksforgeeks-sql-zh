@@ -12,7 +12,7 @@
 
 **1。联合语法:**
 
-```
+```sql
 SELECT columnnames FROM table1
 UNION
 SELECT columnnames FROM table2;
@@ -23,7 +23,7 @@ SELECT columnnames FROM table2;
 
 **2。联合所有语法:**
 
-```
+```sql
 SELECT columnnames FROM table1
 UNION ALL
 SELECT columnnames FROM table2;
@@ -32,7 +32,7 @@ SELECT columnnames FROM table2;
 
 假设我们有两张表“极客 1”和“极客 2”；
 
-```
+```sql
 Select * 
 from Geeks1; 
 ```
@@ -47,7 +47,7 @@ from Geeks1;
 
 </center>
 
-```
+```sql
 Select * 
 from Geeks2; 
 ```
@@ -67,7 +67,7 @@ from Geeks2;
 
 **示例–**
 
-```
+```sql
 SELECT City 
 FROM Geeks1
 
@@ -96,7 +96,7 @@ ORDER BY City;
 
 **示例–**
 
-```
+```sql
 SELECT City 
 FROM Customers
 

@@ -10,7 +10,7 @@ MySQL 中的这个函数用于以 64 位无符号整数的形式返回一个“�
 
 **语法:**
 
-```
+```sql
 UUID_SHORT()
 ```
 
@@ -23,7 +23,7 @@ UUID_SHORT()
 **示例-1 :**
 借助 UUID_SHORT 函数生成短的通用唯一标识符值。
 
-```
+```sql
 SELECT UUID_SHORT() AS Short_UUID_Value ;
 
 ```
@@ -37,7 +37,7 @@ SELECT UUID_SHORT() AS Short_UUID_Value ;
 **示例-2 :**
 每当我们使用 UUID_SHORT 函数时，我们都会得到不同的 SHORT Universal Identifier 值。让我们检查一下–
 
-```
+```sql
 SELECT UUID_SHORT() 
 AS  SHORT_UUID_VALUE1, UUID_SHORT() 
 AS SHORT_UUID_VALUE2, UUID_SHORT() 
@@ -54,7 +54,7 @@ AS SHORT_UUID_VALUE3 ;
 **示例-3 :**
 在本例中，我们将使用 UUID_SHORT 作为表中的主键。为了演示，创建一个名为 OrderDetails 的表。
 
-```
+```sql
 CREATE TABLE OrderDetails2(
   OrderId BIGINT PRIMARY KEY,
   ProductName VARCHAR(100) NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE OrderDetails2(
 
 现在，将数据插入 OrderDetails 表。在这里，我们将使用 UUID _ 肖特函数来分配 OrderId 列中的值。
 
-```
+```sql
 INSERT INTO OrderDetails2(OrderId, ProductName, Price, ExpectedDelivery)
 VALUES(UUID_SHORT(), 'Asus Rog', 90000.00, '2020-12-20'),
      (UUID_SHORT(), 'Acer Predator', 100000.00, '2020-12-18'),
@@ -78,7 +78,7 @@ VALUES(UUID_SHORT(), 'Asus Rog', 90000.00, '2020-12-20'),
 
 接下来，我们将使用以下命令来检查该表。
 
-```
+```sql
 SELECT  * from OrderDetails2;
 
 ```

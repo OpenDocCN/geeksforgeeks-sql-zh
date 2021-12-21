@@ -10,7 +10,7 @@ string_to_replace 和 replacement_string 以及 input_string 都可以是任何�
 
 **语法:**
 
-```
+```sql
 REPLACE( input_string, string_to_replace, replacement_string] )
 ```
 
@@ -30,7 +30,7 @@ REPLACE( input_string, string_to_replace, replacement_string] )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '111Geeksforgeeks';
 
@@ -42,13 +42,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '111Geeksforgeeks111';
 
@@ -60,13 +60,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := '111Geeksforgeeks111';
 
@@ -78,13 +78,13 @@ END;
 
 **输出:**
 
-```
+```sql
 222Geeksforgeeks222 
 ```
 
 **例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Giiksforgiiks';
 
@@ -96,13 +96,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Giiksforgiiks';
 
@@ -114,6 +114,6 @@ END;
 
 **输出:**
 
-```
+```sql
 G  ksforg  ks 
 ```

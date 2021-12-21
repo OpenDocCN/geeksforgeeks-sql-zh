@@ -7,7 +7,7 @@
 
 *假设模式中有一些数据，*
 
-```
+```sql
 mysql> select * from book_det; 
 +-----+-------------+--------+ 
 | bid | btitle      | copies | 
@@ -30,7 +30,7 @@ mysql> select * from book_issue;
 
 **系统触发–**
 
-```
+```sql
 create trigger book_copies_deducts 
 after INSERT 
 on book_issue 
@@ -42,7 +42,7 @@ update book_det set copies = copies - 1 where bid = new.bid;
 
 **结果–**
 
-```
+```sql
 mysql> insert into book_issue values(1, 100, "Java");
 Query OK, 1 row affected (0.09 sec) 
 

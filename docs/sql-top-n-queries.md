@@ -17,7 +17,7 @@ Top-N 查询要求一列的最小或最大值 *n* 。最小和最大值集都被
 按照下面提到的查询，我们可以很容易地理解 SQL 中 Top-N 分析的工作方式:
 **语法:**
 
-```
+```sql
 SELECT *[column_list]*, ROWNUM
 FROM (SELECT *[column_list]*
       FROM *table_name*
@@ -32,7 +32,7 @@ WHERE ROWNUM<=N;
 
 **例 1:**
 
-```
+```sql
 Input : 
 SELECT ROWNUM as RANK, first_name, last_name, employee_id, salary
 FROM (SELECT salary, first_name, last_name, employee_id
@@ -50,7 +50,7 @@ WHERE ROWNUM<=3;
 
 **例 2:**
 
-```
+```sql
 Input : 
 SELECT ROWNUM as RANK, first_name, employee_id, hire_date
 FROM (SELECT first_name, employee_id, hire_date
@@ -72,7 +72,7 @@ WHERE ROWNUM<=3;
 
     **例:**
 
-```
+```sql
 Input : 
 SELECT first_name, last_name
 FROM (SELECT first_name, last_name
@@ -90,7 +90,7 @@ WHERE ROWNUM<=4;
 *   **嵌套内联视图和 ROWNUM :** 这个方法也可以用于分页数据，就像分页的 web 报表一样。
     **例:**
 
-```
+```sql
 Input :
 SELECT employee_id, first_name, salary
 FROM   (SELECT employee_id, first_name, salary, rownum AS rnum
@@ -110,7 +110,7 @@ WHERE  rnum>=2;
 *   **使用 RANK 函数:**RANK 解析函数为输出中的每个不同值分配一个顺序的秩。
     **例:**
 
-```
+```sql
 Input : 
 SELECT dpartment_id, first_name
 FROM (SELECT dpartment_id, first_name,
@@ -128,7 +128,7 @@ WHERE rnum<=3;
 *   **使用 DENSE_RANK 函数:**DENSE _ RANK 解析函数类似于 RANK()函数。不同的是，等级被压缩，因此没有间隙。
     **例:**
 
-```
+```sql
 Input : 
 SELECT dpartment_id, first_name
 FROM (SELECT dpartment_id, first_name,
@@ -146,7 +146,7 @@ WHERE rnum<=3;
 *   **使用 ROW_NUMBER 函数:**ROW _ NUMBER 解析函数类似于 ROWNUM 虚拟列，但与所有解析函数一样，它的动作可以根据数据的顺序限制为特定的数据输出。
     **例:**
 
-```
+```sql
 Input : 
 SELECT dpartment_id, first_name
 FROM (SELECT dpartment_id, first_name,

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 create trigger [trigger_name] 
 [before | after]  
 {insert | update | delete}  
@@ -35,7 +35,7 @@ AFTER 触发器在触发语句运行后运行触发动作。
 
 **假设数据库模式–**
 
-```
+```sql
 mysql> desc Student; 
 +-------+-------------+------+-----+---------+----------------+ 
 | Field | Type        | Null | Key | Default | Extra          | 
@@ -53,7 +53,7 @@ mysql> desc Student;
 
 问题语句的 SQL 触发器。
 
-```
+```sql
 create trigger stud_marks 
 before INSERT 
 on 
@@ -64,7 +64,7 @@ set Student.total = Student.subj1 + Student.subj2 + Student.subj3, Student.per =
 
 上面的 SQL 语句将在学生数据库中创建一个触发器，每当输入主题标记时，在将该数据插入数据库之前，触发器将计算这两个值，并使用输入的值进行插入。即，
 
-```
+```sql
 mysql> insert into Student values(0, "ABCDE", 20, 20, 20, 0, 0); 
 Query OK, 1 row affected (0.09 sec) 
 

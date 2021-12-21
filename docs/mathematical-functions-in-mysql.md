@@ -10,7 +10,7 @@
 
 在本文中，我们将研究 5 个这样的函数:
 
-```
+```sql
 1\. COUNT()
 2\. AVG()
 3\. SUM()
@@ -24,7 +24,7 @@
     The COUNT() function returns the number of rows that match specified criteria.
     For example, the manager wants to find the number of employees whose salary is greater than or equals to Rs.40, 000 per month. Using COUNT() function, he can create a general MySQL query to fetch the required data.
 
-    ```
+    ```sql
     SELECT COUNT(salary)
     FROM employees
     WHERE salary >= 40000;
@@ -36,7 +36,7 @@
     AVG()函数将帮助经理确定所有员工的平均工资。
     输出将以 int 的形式返回。
 
-    ```
+    ```sql
     SELECT AVG(salary)
     FROM employees;
     ```
@@ -45,7 +45,7 @@
     SUM()函数返回数值列的总和。
     这将有助于经理了解他发放员工工资的总支出。
 
-    ```
+    ```sql
     SELECT SUM(Price)
     FROM Products;
     ```
@@ -54,7 +54,7 @@
     顾名思义，MAX()函数返回所选列的最大值。这意味着经理可以使用此功能来查找其公司中领取最高工资的员工。
     该功能的工作代码为；
 
-    ```
+    ```sql
     SELECT MAX(column_name)
     FROM table_name;
     ```
@@ -63,7 +63,7 @@
     MIN()函数返回所选列的最小值。该功能可以查找从公司领取最低工资的员工的信息。
     该功能的工作代码为；
 
-    ```
+    ```sql
     SELECT MIN(column_name)
     FROM table_name;
     ```

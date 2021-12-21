@@ -9,7 +9,7 @@ SQL 中的查询帮助我们与数据库交互，完成对[数据库](https://ww
 
 **示例–**
 
-```
+```sql
 2021-03-23
 Monday Wednesday are first and last days of the month.
 Example2:
@@ -19,7 +19,7 @@ Thursday Friday are first and last days of the month.
 
 **步骤 1:创建数据库–**
 
-```
+```sql
 CREATE DATABASE calendar;
 ```
 
@@ -30,7 +30,7 @@ CREATE DATABASE calendar;
 **第 2 步:使用数据库–**
 使用数据库日历如下。
 
-```
+```sql
 USE calendar;
 ```
 
@@ -41,7 +41,7 @@ USE calendar;
 **步骤-3:在日历数据库中创建表格–**
 在日历数据库中创建表格，表格名称为日期，列为日期，如下所示。
 
-```
+```sql
 CREATE TABLE dates(daydate DATE);
 ```
 
@@ -52,7 +52,7 @@ CREATE TABLE dates(daydate DATE);
 **第 4 步:验证数据到表日期–**
 要查看表日期的描述，请使用如下 SQL 查询。
 
-```
+```sql
 DESCRIBE dates;
 ```
 
@@ -63,7 +63,7 @@ DESCRIBE dates;
 **第 5 步:向表中插入数据–**
 向表中插入行，如下所示。
 
-```
+```sql
  INSERT INTO dates values('2021-03-23');
  INSERT INTO dates values('2021-04-06');
  INSERT INTO dates values('2022-03-23');
@@ -78,7 +78,7 @@ DESCRIBE dates;
 **步骤-6:验证数据–**
 使用以下 SQL 查询查看插入了数据的表，如下所示。
 
-```
+```sql
  SELECT* FROM dates;
 ```
 
@@ -91,7 +91,7 @@ DESCRIBE dates;
 
 **语法:**
 
-```
+```sql
 Firstday:
 DATE_SUB(date1,INTERVAL DAYOFMONTH(date1)-1);
 Syntax for DATE_SUB:
@@ -103,13 +103,13 @@ DATE_SUB(date1,date2) subtracts date2 from date1
 
 **语法:**
 
-```
+```sql
 LastDay:LAST_DAY(date);
 ```
 
 在上面的语法中，DAYOFMONTH 函数给出了特定的一天，如下所示。
 
-```
+```sql
 SELECT daydate, DATE_SUB(daydate,INTERVAL DAYOFMONTH(daydate)- 1 DAY) 
 AS firstday,
 LAST_DAY(daydate) 
@@ -127,13 +127,13 @@ FROM dates;
 
 **语法:**
 
-```
+```sql
 DAYNAME(date1);
 ```
 
 在该表中，每月的第一天和最后一天的工作日也添加如下。
 
-```
+```sql
 SELECT daydate, DATE_SUB(daydate,INTERVAL DAYOFMONTH(daydate)- 1 DAY) 
 AS firstday,LAST_DAY(daydate) AS lastday,
 DAYNAME( DATE_SUB(daydate,INTERVAL DAYOFMONTH(daydate)- 1 DAY)) 

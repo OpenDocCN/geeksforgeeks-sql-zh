@@ -8,7 +8,7 @@ CONSTRUCT()函数将非空字符串存储为未压缩字符串的四字节长度
 
 **语法:**
 
-```
+```sql
 COMPRESS(string_to_compress)
 ```
 
@@ -30,46 +30,46 @@ MySQL 中的 COMPRESS 函数返回一个压缩的字符串。
 
 **示例-1:** 在字符串上实现压缩功能。
 
-```
+```sql
 SELECT 
 COMPRESS('geeskforgeeks'); 
 ```
 
 **示例-2:** 对包含字符和整数的字符串执行压缩功能。
 
-```
+```sql
 SELECT 
 COMPRESS('geeskforgeeks123'); 
 ```
 
 **输出:**
 
-```
+```sql
 \0\0\0x?KOM-?N?/JOM?.642\06?? 
 ```
 
 **示例-3:** 对字符串实现 COMPRESS 函数，压缩后返回字符串的长度。
 
-```
+```sql
 SELECT 
 COMPRESS('geeksforgeeks'), LENGTH(COMPRESS('geeksforgeeks')); 
 ```
 
 **输出:**
 
-```
+```sql
 \0\0\0x?KOM?.N?/J?\0%?f    22 
 ```
 
 **示例-4:** 对空字符串实现 COMPRESS 函数，并返回压缩后的字符串长度。
 
-```
+```sql
 SELECT 
 COMPRESS(NULL), LENGTH(COMPRESS(NULL)); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL NULL 
 ```

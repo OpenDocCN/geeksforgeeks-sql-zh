@@ -14,7 +14,7 @@ SQL 中的唯一约束用于检查子查询的结果中是否有重复的元组�
 
 **语法:**
 
-```
+```sql
 SELECT table.ID
 FROM  table
 WHERE UNIQUE (SELECT table2.ID
@@ -29,7 +29,7 @@ WHERE UNIQUE (SELECT table2.ID
 
 **注意:**不带 UNIQUE 子句的 SQL 语句也可以写成:
 
-```
+```sql
 SELECT table.ID
 FROM  table
 WHERE 1 <= (SELECT count(table2.ID)
@@ -51,7 +51,7 @@ WHERE 1 <= (SELECT count(table2.ID)
 | Seventy-seven thousand five hundred and five | 艾伦 | BIO775 | Two thousand and seventeen |
 | Ninety-two thousand seven hundred and one | 萨姆（男子名） | ECO980 | Two thousand and seventeen |
 
-```
+```sql
 SELECT I.EMPLOYEEID, I.NAME
 FROM Instructor as I
 WHERE UNIQUE (SELECT Inst.EMPLOYEEID
@@ -83,7 +83,7 @@ T3】航线关系:
 | CSE505 | 计算机网络 | 计算机科学 | Eleven thousand seven hundred and forty-seven |
 | CSE314 | 数据库管理系统 | 计算机科学 | Forty-four thousand seven hundred and fifteen |
 
-```
+```sql
 SELECT C.COURSEID, C.NAME
 FROM Course as C
 WHERE UNIQUE (SELECT T.INSTRUCTORID

@@ -8,7 +8,7 @@ LAST_DAY 函数接受一个参数，即用于计算一个月最后一天的日�
 
 **语法:**
 
-```
+```sql
 LAST_DAY(date)
 ```
 
@@ -29,7 +29,7 @@ PLSQL 中的 LAST_DAY 函数返回一个 DATE 类型的值。
 
 **示例-1:** 获取当月的最后一天。
 
-```
+```sql
 SELECT
   LAST_DAY(SYSDATE)
 FROM
@@ -38,13 +38,13 @@ FROM
 
 **输出:**
 
-```
+```sql
 31.10.19 
 ```
 
 **示例-2:** 获取特定月份的最后一天。
 
-```
+```sql
 SELECT
  LAST_DAY(TO_DATE('2003/02/12', 'yyyy/mm/dd'))
 FROM
@@ -53,13 +53,13 @@ FROM
 
 **输出:**
 
-```
+```sql
 Feb 28, 2003 
 ```
 
 **例-3:** 返回当月剩余天数。
 
-```
+```sql
 SELECT
   LAST_DAY( SYSDATE ) - SYSDATE
 FROM
@@ -68,7 +68,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 2 
 ```
 
@@ -76,7 +76,7 @@ FROM
 
 **例-4:** 返回上月最后一天。
 
-```
+```sql
 SELECT
    LAST_DAY(ADD_MONTHS(SYSDATE, -1 ))
 FROM
@@ -85,7 +85,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 30.09.19 
 ```
 
@@ -93,7 +93,7 @@ FROM
 
 **例-5:** 返回下个月的最后一天。
 
-```
+```sql
 SELECT
    LAST_DAY(ADD_MONTHS(SYSDATE, 1 ))
 FROM
@@ -102,7 +102,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 30.11.19 
 ```
 

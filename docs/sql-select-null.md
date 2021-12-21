@@ -8,7 +8,7 @@
 
 *   其中，SQL 为空
 
-```
+```sql
 Syntax: 
 SELECT  *
 FROM TABLANAME
@@ -17,7 +17,7 @@ WHERE COLUMNNAME IS NULL;
 
 *   其中，SQL 不为空
 
-```
+```sql
 Syntax:  
 SELECT *
 FROM TABLANAME
@@ -32,19 +32,19 @@ WHERE COLUMNNAME IS NOT NULL;
 
 ### **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用该数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
 ### **在** ***极客*** **数据库中创建**一个**表:**
 
-```
+```sql
 CREATE TABLE [dbo].[department](
 [ID] [int] NULL,
 [SALARY] [int] NULL,
@@ -55,7 +55,7 @@ GO
 
 ### **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO [dbo].[department] ( ID, SALARY, NAME) VALUES  ( 1, 34000, 'Neha')  
 INSERT INTO [dbo].[department]( ID,  NAME) VALUES  ( 2,  'Hema')
 INSERT INTO [dbo].[department]( ID, SALARY, NAME) VALUES  ( 3, 36000, 'Jaya' )
@@ -66,7 +66,7 @@ GO
 
 这是我们表中的数据:
 
-```
+```sql
 SELECT * FROM department;
 ```
 
@@ -74,7 +74,7 @@ SELECT * FROM department;
 
 **选择 SQL 为空的地方:**
 
-```
+```sql
 SELECT * FROM department WHERE salary IS NULL;
 ```
 
@@ -84,7 +84,7 @@ SELECT * FROM department WHERE salary IS NULL;
 
 **选择 SQL 不为空的地方:**
 
-```
+```sql
 SELECT * FROM department WHERE salary IS NOT NULL;
 ```
 

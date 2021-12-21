@@ -8,7 +8,7 @@
 
 **基本语法–**
 
-```
+```sql
 create table table name(
 pk_column datatype primary key
 ....
@@ -18,7 +18,7 @@ pk_column datatype primary key
 
 **示例–**
 
-```
+```sql
 
 create table student 
 rollnumber number Primary key

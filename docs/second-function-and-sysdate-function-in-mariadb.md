@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SECOND( date_value )
 ```
 
@@ -21,86 +21,86 @@ SECOND( date_value )
 
 **示例-1:**
 
-```
+```sql
 SELECT SECOND('10:06:23')-SECOND('2020-05-19 09:19:02.000004');
 ```
 
 **输出:**
 
-```
+```sql
 21
 ```
 
 **示例-2:**
 
-```
+```sql
 SELECT SECOND('01:02:22')+SECOND('02:10:06');
 ```
 
 **输出:**
 
-```
+```sql
 28
 ```
 
 **示例-3:**
 
-```
+```sql
 SELECT SECOND('14:01:26');
 ```
 
 **输出:**
 
-```
+```sql
 26
 ```
 
 **示例-4:**
 
-```
+```sql
 SELECT SECOND('2020-05-19 09:19:02.000004');
 ```
 
 **输出:**
 
-```
+```sql
 2
 ```
 
 **示例-5:**
 
-```
+```sql
 SELECT SECOND('2018-10-11 12:20:23');
 ```
 
 **输出:**
 
-```
+```sql
 23
 ```
 
 **示例-6:**
 
-```
+```sql
 SELECT SECOND('838:10:59');
 ```
 
 **输出:**
 
-```
+```sql
 59
 ```
 
 **示例-7:**
 
-```
+```sql
 #The Curdate() function will return the current time of the system date
 SELECT SECOND(CURDATE());
 ```
 
 **输出:**
 
-```
+```sql
 19
 ```
 
@@ -109,7 +109,7 @@ SELECT SECOND(CURDATE());
 
 **语法:**
 
-```
+```sql
 SYSDATE()
 ```
 
@@ -123,48 +123,48 @@ SYSDATE()
 
 **示例-1:**
 
-```
+```sql
 SELECT (SYSDATE()+12)-SYSDATE();
 ```
 
 **输出:**
 
-```
+```sql
 12
 ```
 
 **示例-2:**
 
-```
+```sql
 SELECT SYSDATE();
 ```
 
 **输出:**
 
-```
+```sql
 '2020-11-08 10:27:21'
 ```
 
 **示例-3:**
 
-```
+```sql
 SELECT SYSDATE() + 10;
 ```
 
 **输出:**
 
-```
+```sql
 20201108102731
 ```
 
 **示例-4:**
 
-```
+```sql
 SELECT SYSDATE() - 15;
 ```
 
 **输出:**
 
-```
+```sql
 20201108102706
 ```

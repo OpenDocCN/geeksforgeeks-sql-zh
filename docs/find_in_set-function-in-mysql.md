@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 FIND_IN_SET("string", "string_list")
 ```
 
@@ -21,7 +21,7 @@ FIND_IN_SET("string", "string_list")
 **示例-1:**
 在字符串列表中搜索“a”:
 
-```
+```sql
 SELECT FIND_IN_SET("a", "g, e, e, k, s, f, o, r, g, e, e, k, s"); 
 ```
 
@@ -34,7 +34,7 @@ SELECT FIND_IN_SET("a", "g, e, e, k, s, f, o, r, g, e, e, k, s");
 **示例-2:**
 在字符串列表中搜索“q”(字符串列表为空) :
 
-```
+```sql
 SELECT FIND_IN_SET("a", null); 
 ```
 
@@ -47,7 +47,7 @@ SELECT FIND_IN_SET("a", null);
 **示例-3:**
 在字符串列表中搜索“q”:
 
-```
+```sql
 SELECT FIND_IN_SET("g", "g, e, e, k, s, f, o, r, g, e, e, k, s"); 
 ```
 

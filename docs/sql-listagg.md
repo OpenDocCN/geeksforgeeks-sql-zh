@@ -9,7 +9,7 @@ DBMS 中的 LISTAGG 函数用于聚合数据库表中列中数据的字符串。
 
 **语法:**
 
-```
+```sql
 LISTAGG (measure_expr [, 'delimiter']) WITHIN GROUP 
 (order_by_clause) [OVER query_partition_clause]
 measure_expr : The column or expression to concatenate the values.
@@ -19,7 +19,7 @@ order_by_clause : Order of the concatenated values.
 
 让我们有一个名为 Gfg 的表，该表有两列，显示每个主题所属的主题名称和主题编号，如下所示:
 
-```
+```sql
 SQL> select * from GfG;
 
 SUBNO      SUBNAME
@@ -42,7 +42,7 @@ D20        Tree
 
 **查询 1:** 使用 LISTAGG 函数编写一个 SQL 查询，以逗号分隔的值在单个字段中输出主题名称。
 
-```
+```sql
 SQL> SELECT LISTAGG(SubName, ' , ') WITHIN GROUP (ORDER BY SubName) AS SUBJECTS
   2  FROM   GfG ;
 
@@ -50,7 +50,7 @@ SQL> SELECT LISTAGG(SubName, ' , ') WITHIN GROUP (ORDER BY SubName) AS SUBJECTS
 
 输出:
 
-```
+```sql
 SUBJECTS
 -----------------------------------------------------------------------------------
 Algorithm , C , C++ , DBMS , DataStructure , Graph , LinkedList , Matrix , Python ,
@@ -60,7 +60,7 @@ String , Tree
 
 **查询 2:** 借助 LISTAGG 函数，编写一个 SQL 查询，对每个主题进行分组，并显示每个主题在各自部门中的位置，用逗号分隔。
 
-```
+```sql
 SQL> SELECT SubNo, LISTAGG(SubName, ' , ') WITHIN GROUP (ORDER BY SubName) AS SUBJECTS
   2  FROM   GfG
   3  GROUP BY SubNo;
@@ -69,7 +69,7 @@ SQL> SELECT SubNo, LISTAGG(SubName, ' , ') WITHIN GROUP (ORDER BY SubName) AS SU
 
 输出:
 
-```
+```sql
 SUBNO      SUBJECTS
 ------     --------------------------------------------------------------------------------
 D10        LinkedList , String
@@ -80,7 +80,7 @@ D30         C , DBMS , DataStructure , Graph , Python
 
 **查询 3:** 借助 LISTAGG 函数，编写一个 SQL 查询，显示按主题号(SUBNO)排序的属于各个部门的主题。
 
-```
+```sql
 SQL> SELECT SubNo, LISTAGG(SubName, ',') WITHIN GROUP (ORDER BY SubName) AS SUBJECTS
   2  FROM   GfG
   3  GROUP BY SubNo
@@ -90,7 +90,7 @@ SQL> SELECT SubNo, LISTAGG(SubName, ',') WITHIN GROUP (ORDER BY SubName) AS SUBJ
 
 输出:
 
-```
+```sql
 SUBNO        SUBJECTS
 -----        --------------------------------
 D10          LinkedList, String

@@ -8,7 +8,7 @@ PLSQL VSIZE 函数用于返回表达式内部表示中的字节数。PLSQL 只�
 
 **语法:**
 
-```
+```sql
 VSIZE( expression )
 ```
 
@@ -29,7 +29,7 @@ PLSQL 中的 VSIZE 函数返回一个数值。
 
 **示例-1:** 传递仅包含字符的输入字符串。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -41,13 +41,13 @@ END;
 
 **输出:**
 
-```
+```sql
 13 
 ```
 
 **示例-2:** 传递带有字符和空格的输入字符串。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' Geeksforgeeks ';
 
@@ -59,13 +59,13 @@ END;
 
 **输出:**
 
-```
+```sql
 15 
 ```
 
 **示例-3:** 传递空参数。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := '';
 
@@ -77,13 +77,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-4:** 传递空格作为参数。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' ';
 
@@ -95,6 +95,6 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```

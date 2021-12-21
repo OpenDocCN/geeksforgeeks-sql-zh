@@ -26,7 +26,7 @@
 
 **1。编写一个触发器，确保数据库中不能插入年龄小于 25 岁的员工。**
 
-```
+```sql
 delimiter $
 CREATE TRIGGER  Check_age  BEFORE INSERT ON employee 
 FOR EACH ROW
@@ -46,14 +46,14 @@ delimiter;
 
 在写触发器之前，我们需要创建 employee_backup 表。
 
-```
+```sql
 create table employee_backup (employee_no int, 
       employee_name varchar(40), job varchar(40), 
       hiredate date, salary int, 
       primary key(employee_no)); 
 ```
 
-```
+```sql
 delimiter $
 CREATE TRIGGER Backup BEFORE DELETE ON employee 
 FOR EACH ROW
@@ -69,7 +69,7 @@ delimiter;
 
 **3。编写一个触发器来计算使用每个 insert 语句插入的新元组的数量。**
 
-```
+```sql
 Declare count int
 Set count=0;
 delimiter $

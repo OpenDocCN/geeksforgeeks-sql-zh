@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 LEAD(return_value, offset [, default])  
 OVER (
    [PARTITION BY partition_expression]
@@ -33,7 +33,7 @@ OVER (
 **示例-1:**
 假设我们有一个名为“CompanySales”的下表:
 
-```
+```sql
 Select * 
 from CompanySales;
 
@@ -52,7 +52,7 @@ from CompanySales;
 
 **示例-2:**
 
-```
+```sql
 SELECT TOP 10 [Company], [Year], [Amount],
 LEAD(Amount, 1) OVER (
 PARTITION BY Company

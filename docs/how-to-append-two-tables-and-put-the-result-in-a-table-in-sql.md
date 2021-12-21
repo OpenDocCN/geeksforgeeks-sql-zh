@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column_one, column_two,..column_N INTO Table_name FROM table_name
 UNION  SELECT column_one,column_two,column_three,.. column_N FROM table_name;
 ```
@@ -17,7 +17,7 @@ UNION  SELECT column_one,column_two,column_three,.. column_N FROM table_name;
 
 **语法:**
 
-```
+```sql
 SELECT column_one, column_two,column_three,.. column_N INTO Table_name FROM
 table_name UNION SELECT column_one, column_two, column_three,..column_N
  FROM table_name;
@@ -40,7 +40,7 @@ Union 和 UNION ALL 的区别在于 Union 不包含重复项，但是 Union All 
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Shop1(Item_Id int,Name varchar(20),Count int)
 ```
 
@@ -65,7 +65,7 @@ CREATE TABLE Shop1(Item_Id int,Name varchar(20),Count int)
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Shop2(Item_Id int,Name varchar(20),Count int)
 ```
 
@@ -79,7 +79,7 @@ CREATE TABLE Shop2(Item_Id int,Name varchar(20),Count int)
 
 **查询:**
 
-```
+```sql
 SELECT * INTO joined FROM Shop1 UNION SELECT * FROM Shop2;
 ```
 
@@ -87,7 +87,7 @@ SELECT * INTO joined FROM Shop1 UNION SELECT * FROM Shop2;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM joined;
 ```
 
@@ -123,7 +123,7 @@ SELECT * FROM joined;
 
 **查询:**
 
-```
+```sql
 SELECT * INTO joined2 FROM Shop1 UNION ALL SELECT * FROM Shop2;
 ```
 
@@ -133,7 +133,7 @@ SELECT * INTO joined2 FROM Shop1 UNION ALL SELECT * FROM Shop2;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM joined2;
 ```
 

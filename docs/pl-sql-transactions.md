@@ -7,7 +7,7 @@
 
 **示例–**考虑以下场景:
 
-```
+```sql
 acct_master (acct_no number(5) primary key, 
                          acct_name varchar2(10), 
                             balance number(10)); 
@@ -15,7 +15,7 @@ acct_master (acct_no number(5) primary key,
 
 首先，您需要创建 acct_master 表，
 
-```
+```sql
 # CREATING table acct_master 
 create table acct_master(acct_no number(5) primary key, 
                                 acct_name varchar2(10), 
@@ -24,7 +24,7 @@ create table acct_master(acct_no number(5) primary key,
 
 将这些数据插入表中，
 
-```
+```sql
 # INSERTING data in acct_mstr
 insert into acct_master values(1, 'aaa', 1000)
 insert into acct_master values(2, 'bbb', 100)
@@ -46,7 +46,7 @@ insert into acct_master values(5, 'eee', 1700)
 
 以下是所需的实现:
 
-```
+```sql
 -- DECLARING VARIABLES
 DECLARE 
 xacct_no number(5);
@@ -92,7 +92,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Enter value for xacct_no: 2
 old 6: xacct_no:=&xacct_no;
 new 6: xacct_no:=2;

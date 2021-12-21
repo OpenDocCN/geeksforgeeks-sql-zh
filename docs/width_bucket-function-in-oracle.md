@@ -8,7 +8,7 @@ width_bucket 函数是一个非常有用的分组函数。
 
 **语法:**
 
-```
+```sql
 WIDTH_BUCKET(expression, hist_min_value,
 hist_max_value, num_buckets)
 ```
@@ -28,7 +28,7 @@ hist_max_value, num_buckets)
 
 **查询:**
 
-```
+```sql
 create table geeksforgeeks_demo(employee_id number,
 employee_name varchar(20),employee_salary number);
 ```
@@ -41,7 +41,7 @@ employee_name varchar(20),employee_salary number);
 
 **查询:**
 
-```
+```sql
 insert into GeeksforGeeks_demo values(1, 'Chandler', 75000);
 insert into GeeksforGeeks_demo values(2, 'Erica', 12500);
 insert into GeeksforGeeks_demo values(3, 'Ron', 71000);
@@ -64,7 +64,7 @@ insert into GeeksforGeeks_demo values(12, 'Liam', 46000);
 
 **查询:**
 
-```
+```sql
 select * from GeeksforGeeks_demo;
 ```
 
@@ -76,7 +76,7 @@ select * from GeeksforGeeks_demo;
 
 **查询:**
 
-```
+```sql
 select 
       employee_id,
       employee_name, 

@@ -7,7 +7,7 @@
 以公里为单位给定距离，任务是将其转换为米和厘米。
 **举例:**
 
-```
+```sql
 Input: KM = 10
 Output: 10 KM is equivalent to 10000 meters
         10 KM is equivalent to 1000000 centimeters
@@ -21,7 +21,7 @@ Output: 2.5 KM is equivalent to 2500 meters
 
 ## 结构化查询语言
 
-```
+```sql
 --DECLARATION SECTION 
 DECLARE
     --VARIABLE DECLARATION -KM, MET, CEM;
@@ -47,7 +47,7 @@ END;
 
 **输出:**
 
-```
+```sql
 6.9KM is equivalent to meters: 6900
 6.9KM is equivalent to centimeters:690000
 ```

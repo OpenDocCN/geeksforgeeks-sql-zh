@@ -69,7 +69,7 @@ SQLite 提供了 typeof()函数，该函数可用于根据值的格式检查值�
 
 **例-1 :**
 
-```
+```sql
 SELECT typeof(200), typeof(20.0), 
 typeof('200'), typeof(x'2000'), typeof(NULL);
 ```
@@ -83,11 +83,11 @@ typeof('200'), typeof(x'2000'), typeof(NULL);
 **示例-2 :**
 让我们创建一个名为 geek_test 的新表并插入值–
 
-```
+```sql
 CREATE TABLE geek_test (Item);
 ```
 
-```
+```sql
 INSERT INTO geek_test (Item)
 VALUES (1), (2), (10.1), (20.5), ('A'), ('B'), 
 (NULL), (x'0010'), (x'0011');
@@ -95,7 +95,7 @@ VALUES (1), (2), (10.1), (20.5), ('A'), ('B'),
 
 使用 typeof()函数检查存储在 Item 列中的每个值的数据类型。
 
-```
+```sql
 SELECT Item, typeof(Item)
 FROM geek_test;
 ```

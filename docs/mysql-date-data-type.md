@@ -8,7 +8,7 @@ MySQL 支持多种数据类型。其中有时我们需要取 DATE 数据类型�
 
 **语法:**
 
-```
+```sql
 Variable_Name DATE
 ```
 
@@ -19,7 +19,7 @@ Variable_Name DATE
 **创建学生详细信息表****—**
 它由学生身份证、名字、姓氏、出生日期、班级、联系人详细信息列组成。其中出生日期列的数据类型为日期。
 
-```
+```sql
 CREATE TABLE StudentDetails (
    Student_Id INT AUTO_INCREMENT,       
    First_name VARCHAR (100) NOT NULL,       
@@ -33,7 +33,7 @@ CREATE TABLE StudentDetails (
 
 **将数据插入表格–**
 
-```
+```sql
 INSERT INTO     
 StudentDetails(First_name , Last_name , Date_Of_Birth , Class, Contact_Details)    
 VALUES 
@@ -49,7 +49,7 @@ VALUES
 
 **使用如下命令进行验证。**
 
-```
+```sql
 SELECT * FROM StudentDetails ;
 ```
 
@@ -71,7 +71,7 @@ SELECT * FROM StudentDetails ;
 **创建产品详细信息表****—**
 它由产品标识、产品名称和制造日期列组成，其中制造日期列的数据类型为日期。
 
-```
+```sql
 CREATE TABLE ProductDetails(
 ProductId INT NOT NULL,
 ProductName VARCHAR(20) NOT NULL,
@@ -83,7 +83,7 @@ PRIMARY KEY(ProductId)
 **将数据插入表中–**
 CURRENTDATE 函数用于在 Manufactured_On 列中赋值。CURRENTDATE 函数的返回数据类型是 DATE。
 
-```
+```sql
 INSERT INTO  
 ProductDetails(ProductId, ProductName, Manufactured_On)
 VALUES
@@ -92,7 +92,7 @@ VALUES
 
 **使用如下命令进行验证。**
 
-```
+```sql
 SELECT  * from ProductDetails;
 ```
 
@@ -110,7 +110,7 @@ SELECT  * from ProductDetails;
 **创建订单表****—**
 它由订单号、订单日期、发货日期、发货日期列组成。其中“订单日期”、“发货日期”和“交货日期”列的数据类型为“日期”。
 
-```
+```sql
 CREATE TABLE Orders(
    OrderNumber INT AUTO_INCREMENT,
    OrderDate DATE NOT NULL,
@@ -122,7 +122,7 @@ CREATE TABLE Orders(
 
 **将数据插入表格–**
 
-```
+```sql
 INSERT INTO 
 Orders(OrderNumber , OrderDate , ShippedDate  , DeliveryDate )
 VALUES 
@@ -134,7 +134,7 @@ VALUES
 
 **验证使用了如下命令。**
 
-```
+```sql
 SELECT * FROM Orders;
 ```
 

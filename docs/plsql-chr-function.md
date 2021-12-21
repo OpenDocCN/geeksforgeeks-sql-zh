@@ -8,7 +8,7 @@ PLSQL 中的 CHR 函数与 ASCII 函数相反，用于根据 NUMBER 代码返回
 
 **语法:**
 
-```
+```sql
 CHR( number_code )
 ```
 
@@ -26,7 +26,7 @@ CHR( number_code )
 
 **示例:**
 
-```
+```sql
 DECLARE 
    Test_Char varchar2(4) := '69';
    Test_Char1 varchar2(4) := '72';
@@ -40,7 +40,7 @@ END;
 
 **输出:**
 
-```
+```sql
 E
 H
 ```

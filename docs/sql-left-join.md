@@ -10,7 +10,7 @@ SQL 中的 LEFT JOIN 关键字返回所有**匹配的记录(或行)**和出现�
 
 **左连接的语法是:**
 
-```
+```sql
 SELECT column_name(s) 
 FROM tableA 
 LEFT JOIN tableB ON tableA.column_name = tableB.column_name;
@@ -39,7 +39,7 @@ LEFT JOIN tableB ON tableA.column_name = tableB.column_name;
 
 为了对这两个表执行左连接，我们将使用以下 SQL 查询:
 
-```
+```sql
 select emp_no ,emp_name , age, salary ,dept_name, location 
 from employee 
 left join department on employee.dept_no=department.dept_no;

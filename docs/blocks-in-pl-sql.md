@@ -12,7 +12,7 @@
 
 示例:下面是一个使用匿名块查找最大数的代码示例。
 
-```
+```sql
 DECLARE 
     -- declare variable a, b and c 
     -- and these three variables datatype are integer  
@@ -37,7 +37,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Maximum number in 10 and 100: 100
 
 ```
@@ -46,7 +46,7 @@ Maximum number in 10 and 100: 100
 
 示例:这里有一个代码示例，使用命名块查找最大数意味着使用函数。
 
-```
+```sql
 DECLARE 
 
     -- declare variable a, b and c 
@@ -81,7 +81,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Maximum number in 10 and 100: 100
 
 ```

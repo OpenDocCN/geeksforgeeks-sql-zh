@@ -22,7 +22,7 @@
 
 让我们来看一个例子:
 
-```
+```sql
 Query that uses Alternative Quote Operator(q)
 SELECT id, first_name, last_name, salary,
 first_name||q'{ has salary's }'||salary 
@@ -30,7 +30,7 @@ AS "new" FROM myTable
 
 ```
 
-```
+```sql
 
 Output:
 See, we are able to use apostrophe in the
@@ -58,7 +58,7 @@ ID  FIRST_NAME LAST_NAME  SALARY            new
 
 ****不使用报价运算符**:**
 
-```
+```sql
 Here we get **Error** since we are using **apostrophe** in our literal value directly.
 
 **Error** code below:
@@ -70,7 +70,7 @@ SELECT id, name, dept, name||' work's in '||dept||'
 从 myTable2 中选择 id、姓名、部门、姓名||q'[工作所在]' | |部门||'
 部门'作为“工作”**
 
-```
+```sql
 **Output**:
 See, we are able to use apostrophe in the 
 work column as a literal value of myTable2 

@@ -10,7 +10,7 @@ GETDATE()函数主要用于查找当前日期。它将返回 DATETIME 数据类�
 
 **查询:**
 
-```
+```sql
 Select GetDate() AS 'CurrentDATETime';
 ```
 
@@ -26,7 +26,7 @@ Select GetDate() AS 'CurrentDATETime';
 
 **查询:**
 
-```
+```sql
 Select CURRENT_TIMESTAMP AS "CURRENTTIMESTAMP"; 
 ```
 
@@ -42,7 +42,7 @@ Select CURRENT_TIMESTAMP AS "CURRENTTIMESTAMP";
 
 **查询:**
 
-```
+```sql
 SELECT SYSDATETIME() 'Current TIME using SYSDATETIME()'
 ```
 
@@ -58,7 +58,7 @@ SELECT SYSDATETIME() 'Current TIME using SYSDATETIME()'
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(VARCHAR(8), GETDATE(),108)'hh:mi:ss'
 ```
 

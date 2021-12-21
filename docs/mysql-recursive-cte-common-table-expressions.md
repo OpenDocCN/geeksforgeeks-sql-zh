@@ -19,7 +19,7 @@
 
 **语法:**
 
-```
+```sql
 WITH RECURSIVE 
 cte_name [(col1, col2, ...)]
 AS ( subquery )
@@ -34,7 +34,7 @@ subquery: A MySql query that refer to itself using cte_name as its own name.
 
 **子查询**块中提供的递归 CTE 结构:
 
-```
+```sql
 Select col1, col2, ... coln from table_name        
 UNION [ALL, DISTINCT]
 Select col1, col2, ...coln from cte_name          
@@ -54,7 +54,7 @@ WHERE clause
 考虑以下生成一系列前 5 个奇数的查询–
 **查询:**
 
-```
+```sql
 WITH RECURSIVE 
 odd_no (sr_no, n) AS
 (
@@ -67,7 +67,7 @@ SELECT * FROM odd_no;
 
 **输出:**
 
-```
+```sql
 +---------+-------+
 | sr_no   |  n    |
 +---------+-------+
@@ -84,7 +84,7 @@ SELECT * FROM odd_no;
 
 **非递归**部分-它将产生初始行，该初始行由两个名为“sr_no”和“n”的列和单行组成。
 
-```
+```sql
 Query:
 SELECT 1, 1 
 
@@ -98,7 +98,7 @@ Output:
 
 **递归**部分-
 
-```
+```sql
 SELECT sr_no+1, n+2 from cte where odd_no < 5 
 ```
 
@@ -108,7 +108,7 @@ SELECT sr_no+1, n+2 from cte where odd_no < 5
 
 考虑下面的“bst”表-
 
-```
+```sql
 mysql> SELECT * FROM bst order by node;
 +------+-----------+
 | node | parent    | 
@@ -129,7 +129,7 @@ mysql> SELECT * FROM bst order by node;
 
 **查询:**
 
-```
+```sql
 WITH RECURSIVE
 cte ( node, path )
 AS
@@ -144,7 +144,7 @@ SELECT * FROM cte ORDER BY node;
 
 **输出:**
 
-```
+```sql
 +------+-----------+
 | node |   path    |
 +------+-----------+
@@ -162,7 +162,7 @@ SELECT * FROM cte ORDER BY node;
 
 这里，上面 CTE 中的**非递归**部分将只给出一行，该行由根节点及其路径组成，路径设置为 1。
 
-```
+```sql
 SELECT node, cast ( 1 as char(30) )  
           FROM bst WHERE parent IS NULL
 
@@ -176,7 +176,7 @@ Output:
 
 **递归**部分-
 
-```
+```sql
 SELECT bst.node,  CONCAT ( cte.path, '-->', bst.node ) 
          FROM cte JOIN bst ON cte.node = bst.parent
 ```

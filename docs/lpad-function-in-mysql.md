@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LPAD(str, len, padstr)
 ```
 
@@ -23,7 +23,7 @@ LPAD(str, len, padstr)
 
 **示例-1 :** 将 LPAD()函数应用于字符串以获得新的填充字符串。
 
-```
+```sql
 SELECT LPAD("geeksforgeeks", 20, "*") AS LeftPaddedString;
 ```
 
@@ -39,7 +39,7 @@ SELECT LPAD("geeksforgeeks", 20, "*") AS LeftPaddedString;
 
 **示例-2 :** 当原始字符串大于 len 参数时，对字符串应用 LPAD()函数。
 
-```
+```sql
 SELECT LPAD("geeksforgeeks", 10, "*") AS LeftPaddedString;
 ```
 
@@ -55,7 +55,7 @@ SELECT LPAD("geeksforgeeks", 10, "*") AS LeftPaddedString;
 
 **示例-3 :** LPAD 函数也可以用来为列数据添加字符串。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student
 (
 Student_id INT AUTO_INCREMENT,  
@@ -67,7 +67,7 @@ PRIMARY KEY(Student_id )
 
 **现在向学生表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Student
 (Student_name, Student_Class)
 VALUES
@@ -86,7 +86,7 @@ VALUES
 
 现在，我们将向 Student_Class 列中显示的每个字符串添加一些字符串。
 
-```
+```sql
 SELECT Student_id, Student_name,
 LPAD(Student_Class, 10, ' _') AS LeftPaddedString
 FROM Student;

@@ -8,13 +8,13 @@
 
 ### **创建新数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### 使用数据库:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -22,7 +22,7 @@ USE geeks;
 
 我们的数据库中有以下 emp 表:
 
-```
+```sql
 CREATE TABLE emp(
 empno number(2) constraint pk primary key ,
 empname varchar2(20),
@@ -32,7 +32,7 @@ empsal number(20));
 
 要验证表架构，请使用以下查询:
 
-```
+```sql
 EXEC SP_COLUMNS emp;
 ```
 
@@ -46,7 +46,7 @@ EXEC SP_COLUMNS emp;
 
 使用以下语句将数据添加到 *emp* 表中:
 
-```
+```sql
 INSERT INTO emp values(1,'abc',5,20000);
 INSERT INTO emp values(2,'def',6,30000);
 INSERT INTO emp values(3,'xyz',7,40000);
@@ -62,7 +62,7 @@ INSERT INTO emp values(3,'xyz',7,40000);
 
 ### **创建部门表**
 
-```
+```sql
 CREATE TABLE dept(
 deptno number(2) constraint pk2 primary key ,
 dname varchar2(5),
@@ -71,7 +71,7 @@ loc varchar2(5));
 
 要签出当前表，请使用以下语句:
 
-```
+```sql
 SELECT * FROM dept;
 ```
 
@@ -85,7 +85,7 @@ SELECT * FROM dept;
 
 使用以下语句将数据添加到部门表:
 
-```
+```sql
 INSERT INTO dept values(5,'IT','hyd');
 INSERT INTO dept values(6,'sales','bglr');
 INSERT INTO dept values(7,'mgr','mumb');
@@ -93,7 +93,7 @@ INSERT INTO dept values(7,'mgr','mumb');
 
 要签出当前表，请使用以下语句:
 
-```
+```sql
 SELECT * FROM dept;
 ```
 
@@ -107,7 +107,7 @@ SELECT * FROM dept;
 
 ### 添加外键约束
 
-```
+```sql
 ALTER TABLE emp add constraint fk foreign key(deptno) references dept(deptno);
  //ADDS FOREIGN KEY CONSTRAINT ON EMP TABLE
 ```
@@ -118,13 +118,13 @@ ALTER TABLE emp add constraint fk foreign key(deptno) references dept(deptno);
 
 ### 删除外部约束:
 
-```
+```sql
 ALTER TABLE TABLE NAME drop constraint CONSTRAINT_NAME
 ```
 
 ### 使用 ALTER 从表中删除外键约束:
 
-```
+```sql
 ALTER TABLE emp drop constraint fk;
 ```
 

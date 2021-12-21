@@ -23,7 +23,7 @@
 
 **语法:**
 
-```
+```sql
 Create Table Person
 (
 Id int NOT NULL PRIMARY KEY, 
@@ -38,14 +38,14 @@ Address varchar2(50)
 **例-1 :**
 **验证主键工作:**
 
-```
+```sql
 Insert into Person values(1, 'Ajay', 'Mumbai');
 
 ```
 
 **输出:**
 
-```
+```sql
 1 row created
 
 ```
@@ -53,13 +53,13 @@ Insert into Person values(1, 'Ajay', 'Mumbai');
 **示例-2 :**
 让我们看看你是否会再次插入相同的值。
 
-```
+```sql
 Insert into Person values(1, 'Ajay', 'Mumbai');
 ```
 
 **输出:**
 
-```
+```sql
 Error at line 1: unique constraint violated
 
 ```
@@ -68,14 +68,14 @@ Error at line 1: unique constraint violated
 
 **示例-3 :**
 
-```
+```sql
 Insert into Person values('', 'Ajay', 'Mumbai');
 
 ```
 
 **输出:**
 
-```
+```sql
 Error at line 1: cannot insert Null into<"user"."Person"."ID">
 
 ```
@@ -87,7 +87,7 @@ Error at line 1: cannot insert Null into<"user"."Person"."ID">
 
 语法:
 
-```
+```sql
 Create Table Person
 (Id int NOT NULL, 
 Name varchar2(20), 
@@ -99,7 +99,7 @@ PRIMARY KEY(Id, Name)
 
 这里，一个表中只有一个主键，但它由多个列(标识、名称)组成。然而，以下是允许的。
 
-```
+```sql
 Insert into Person values(1, 'Ajay', 'Mumbai');
 Insert into Person values(2, 'Ajay', 'Mumbai');
 
@@ -112,14 +112,14 @@ Insert into Person values(2, 'Ajay', 'Mumbai');
 
 **语法:**
 
-```
+```sql
 Alter Table Person add Primary Key(Id);
 
 ```
 
 使用以下查询在多列中添加主键。
 
-```
+```sql
 Alter Table Person add Primary Key(Id, Name);
 
 ```
@@ -128,7 +128,7 @@ Alter Table Person add Primary Key(Id, Name);
 
 **输出:**
 
-```
+```sql
 Error at line 1: cannot validate- primary key violated
 
 ```
@@ -137,7 +137,7 @@ Error at line 1: cannot validate- primary key violated
 
 **输出:**
 
-```
+```sql
 Error at line 1: column contains NULL values; cannot alter to NOT NULL
 
 ```
@@ -145,7 +145,7 @@ Error at line 1: column contains NULL values; cannot alter to NOT NULL
 **删除主键约束:**
 要删除表的主键约束，请使用给定的 SQL，如下所示。
 
-```
+```sql
 ALTER table Person DROP PRIMARY KEY;
 
 ```

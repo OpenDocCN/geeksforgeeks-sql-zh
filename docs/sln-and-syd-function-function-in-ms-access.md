@@ -7,7 +7,7 @@ MS Access 中的 SLN()函数用于计算资产在单个期间的直线折旧。
 
 **语法:**
 
-```
+```sql
 SLN(cost, salvage, life)
 ```
 
@@ -24,7 +24,7 @@ SLN(cost, salvage, life)
 **例-1 :**
 考虑到资产的使用寿命为 10 年，残值为 15%的资产折旧。
 
-```
+```sql
 SELECT SLN(1500.0, 1500.0*0.15, 10) AS Amount;
 ```
 
@@ -45,7 +45,7 @@ SELECT SLN(1500.0, 1500.0*0.15, 10) AS Amount;
 | Eleven thousand and two | Twelve thousand |
 | Eleven thousand and three | Ten thousand |
 
-```
+```sql
 SELECT SLN([LoanAmount], [LoanAmount]*.1, 15) AS Amt 
 FROM Accounts;
 ```
@@ -63,7 +63,7 @@ MS Access 中的 SYD()函数用于计算某一资产在指定期间的年位数�
 
 **语法:**
 
-```
+```sql
 SYD(cost, salvage, life, period)
 ```
 
@@ -81,7 +81,7 @@ SYD(cost, salvage, life, period)
 **例-1 :**
 考虑到资产的使用寿命为 10 年，残值为 15%的资产折旧。计算第三年的折旧。
 
-```
+```sql
 SELECT SYD(1500.0, 1500.0*0.15, 10, 3) AS Amount;
 ```
 
@@ -102,7 +102,7 @@ SELECT SYD(1500.0, 1500.0*0.15, 10, 3) AS Amount;
 | One hundred and two | Twelve thousand |
 | One hundred and three | Ten thousand |
 
-```
+```sql
 SELECT SYD([LoanAmount], [LoanAmount]*.10, 15, 2) AS Amt 
 FROM Accounts;
 ```

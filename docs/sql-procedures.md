@@ -19,7 +19,7 @@ PL/SQL 中的一个存储过程不过是一系列可以存储在数据库目录�
 
 **创建存储过程的语法**
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -43,7 +43,7 @@ GO
 
 示例:
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -63,7 +63,7 @@ GO
 
 **修改现有存储过程的语法**
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -87,7 +87,7 @@ GO
 
 示例:
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -107,14 +107,14 @@ GO
 
 **删除程序的语法**:
 
-```
+```sql
 DROP PROCEDURE procedure_name
 
 ```
 
 示例:
 
-```
+```sql
 DROP PROCEDURE GetStudentDetails
 
 ```

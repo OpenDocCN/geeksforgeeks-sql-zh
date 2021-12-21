@@ -28,7 +28,7 @@
 
 **语法–**
 
-```
+```sql
 CREATE [ OR REPLACE ] PROCEDURE 
 procedure_name 
 [( Parameter [ parameter ] ) ] 
@@ -46,13 +46,13 @@ END [ procedure_name];
 
 **语法–**
 
-```
+```sql
 DROP PROCEDURE procedure_name; 
 ```
 
 **示例–**
 
-```
+```sql
 DROP PROCEDURE Update course; 
 ```
 

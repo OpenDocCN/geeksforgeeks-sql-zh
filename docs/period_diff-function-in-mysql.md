@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 PERIOD_DIFF(period1, period2)
 
 ```
@@ -24,52 +24,52 @@ PERIOD_DIFF(period1, period2)
 **例-1 :**
 这里参数采用 YYMM 格式，返回的月份为负数，因为 period1 小于 period2。
 
-```
+```sql
 SELECT PERIOD_DIFF(2003, 2011);
 ```
 
 **输出:**
 
-```
+```sql
 -8
 ```
 
 **例-2 :**
 这里参数采用 YYMM 格式，返回的月份为正，因为 period1 大于 period2。
 
-```
+```sql
 SELECT PERIOD_DIFF(2020, 2007);
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
 **例-3 :**
 这里参数采用 YYYMM 格式，返回的月份为负数，因为 period1 小于 period2。
 
-```
+```sql
 SELECT PERIOD_DIFF(202001, 202010);
 ```
 
 **输出:**
 
-```
+```sql
 -9
 ```
 
 **例-4 :**
 这里参数采用 YYYMM 格式，返回的月份为正，因为 period1 大于 period2。
 
-```
+```sql
 SELECT PERIOD_DIFF(202012, 202009);
 ```
 
 **输出:**
 
-```
+```sql
 3
 ```
 

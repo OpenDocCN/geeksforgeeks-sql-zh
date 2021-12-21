@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 ADDDATE(date, INTERVAL expr unit)
            OR
 ADDDATE(expr, days)
@@ -67,7 +67,7 @@ ADDDATE(expr, days)
 **示例-1 :**
 使用 ADDDATE 函数将 15 天与指定日期相加。
 
-```
+```sql
 SELECT ADDDATE('2020-08-20', INTERVAL 15 DAY) 
 as Updated_date;
 
@@ -82,7 +82,7 @@ as Updated_date;
 **示例-2 :**
 使用 ADDDATE 函数用指定的日期时间添加 30 分钟。
 
-```
+```sql
 SELECT ADDDATE('2020-08-28 20:59:59', INTERVAL 30 MINUTE) 
 as Updated_datetime;
 
@@ -97,7 +97,7 @@ as Updated_datetime;
 **示例-3 :**
 使用 ADDDATE 函数添加指定日期的 4 周。
 
-```
+```sql
 SELECT ADDDATE('2020-08-12', INTERVAL 4 WEEK) 
 as Updated_date;
 
@@ -112,7 +112,7 @@ as Updated_date;
 **示例-4 :**
 使用 ADDDATE 函数添加指定日期的 6 个月。
 
-```
+```sql
 SELECT ADDDATE('2019-08-12', INTERVAL 6 MONTH) 
 as Updated_date ;
 
@@ -127,7 +127,7 @@ as Updated_date ;
 **示例-5 :**
 使用 ADDDATE 函数将指定日期加上 10 年。
 
-```
+```sql
 SELECT ADDDATE('2010-12-10', INTERVAL 10 YEAR) 
 as Updated_date ;
 
@@ -142,7 +142,7 @@ as Updated_date ;
 **示例-6 :**
 使用 ADDDATE 函数用指定的日期时间添加 5 天 10 小时 05 分 20 秒。
 
-```
+```sql
 SELECT ADDDATE('2020-08-20 05:15:19', INTERVAL '5-10-05-20' DAY_SECOND) 
 as Updated_datetime;
 
@@ -157,7 +157,7 @@ as Updated_datetime;
 **示例-7:**
 ADDDATE 函数可用于设置列的值。为了演示，创建一个名为 ScheduleDetails 的表。
 
-```
+```sql
 CREATE TABLE ScheduleDetails(
 TrainId INT NOT NULL,
 StationName VARCHAR(20) NOT NULL,
@@ -169,7 +169,7 @@ PRIMARY KEY(TrainId )
 
 现在在 ScheduleDetails 表中插入值。我们将使用 ADDDATE 函数来表示到达时间的延迟。ExpectedArrivalTime 列中的值将是 ADDDATE 函数给出的值。
 
-```
+```sql
 INSERT INTO  
 ScheduleDetails (TrainId, StationName, TrainName, ScheduledlArrivalTime )
 VALUES
@@ -178,7 +178,7 @@ VALUES
 
 现在，检查调度详细信息表:
 
-```
+```sql
 SELECT *, ADDDATE(ScheduledlArrivalTime, INTERVAL '0-5-05-20' DAY_SECOND)  
 AS ExpectedArrivalTime FROM ScheduleDetails;
 

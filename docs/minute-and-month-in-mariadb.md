@@ -8,12 +8,12 @@
 
 **语法:**
 
-```
+```sql
 MINUTE( date_value )
 
 ```
 
-```
+```sql
 Minute range = [ 0 to 59 ]
 ```
 
@@ -33,28 +33,28 @@ Minute range = [ 0 to 59 ]
 
 **示例-1 :**
 
-```
+```sql
 SELECT MINUTE('2019-05-19 09:21:18.000004');
 
 ```
 
 **输出:**
 
-```
+```sql
 19
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT MINUTE('838:59:01');
 
 ```
 
 **输出:**
 
-```
+```sql
 59
 
 ```
@@ -63,14 +63,14 @@ SELECT MINUTE('838:59:01');
 
 curtime()函数返回当前时间。现在时间是 07:27:24。
 
-```
+```sql
 SELECT MINUTE(CURTIME());
 
 ```
 
 **输出:**
 
-```
+```sql
 27
 
 ```
@@ -81,12 +81,12 @@ SELECT MINUTE(CURTIME());
 
 **语法:**
 
-```
+```sql
  MONTH( date_value )
 
 ```
 
-```
+```sql
 Month range (In number) = [1 to 12]
 ```
 
@@ -106,28 +106,28 @@ Month range (In number) = [1 to 12]
 
 **示例-1 :**
 
-```
+```sql
 SELECT MONTH('2017-06-19 09:04:10');
 
 ```
 
 **输出:**
 
-```
+```sql
 6
 
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT MINUTE('838:59:01');
 
 ```
 
 **输出:**
 
-```
+```sql
 59
 
 ```
@@ -136,14 +136,14 @@ SELECT MINUTE('838:59:01');
 
 curtime()函数返回系统的当前时间。今天是 2020 年 07 月 11 日
 
-```
+```sql
 SELECT MINUTE(CURTIME());
 
 ```
 
 **输出:**
 
-```
+```sql
 11
 
 ```

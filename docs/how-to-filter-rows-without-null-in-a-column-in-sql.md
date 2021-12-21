@@ -10,7 +10,7 @@
 
 使用下面的 SQL 语句创建一个名为 geeks 的数据库:
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -26,7 +26,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下演示表。
 
-```
+```sql
 CREATE TABLE demo_orders(
  ORDER_ID INT IDENTITY(1,1) PRIMARY KEY, --IDENTITY(1,1) is same as AUTO_INCREMENT in MySQL.
                                               --Starts from 1 and increases by 1 with each inserted row.
@@ -37,7 +37,7 @@ CREATE TABLE demo_orders(
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS demo_orders;
 ```
 
@@ -47,7 +47,7 @@ EXEC SP_COLUMNS demo_orders;
 
 使用以下语句将数据添加到*演示订单*表中:
 
-```
+```sql
 INSERT INTO demo_orders --no need to mention columns explicitly as we
                         --are inserting into all columns and ID gets 
                          --automatically incremented.
@@ -61,7 +61,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM demo_orders;
 ```
 
@@ -69,7 +69,7 @@ SELECT * FROM demo_orders;
 
 现在让我们在 *order_date* 列中插入一些没有值(或空值)的行。
 
-```
+```sql
 INSERT INTO demo_orders(ITEM_NAME)
 VALUES
 ('NullRowOne'),
@@ -83,7 +83,7 @@ VALUES
 
 以下是筛选指定列中没有空值的行的语法。
 
-```
+```sql
 Syntax:
 SELECT * FROM <table_name>
 WHERE <column_name> IS NOT NULL;
@@ -91,7 +91,7 @@ WHERE <column_name> IS NOT NULL;
 
 **示例:**
 
-```
+```sql
 SELECT * FROM demo_orders
 WHERE ORDER_DATE IS NOT NULL;
 --Will output the rows consisting of non null *order_date* values.

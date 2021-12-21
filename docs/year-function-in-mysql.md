@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 YEAR(date)  
 
 ```
@@ -19,14 +19,14 @@ YEAR(date)
 
 **示例-1 :** 使用 Year()函数查找当前年份。
 
-```
+```sql
 SELECT YEAR(NOW()) AS Current_Year;
 
 ```
 
 **输出:**
 
-```
+```sql
 mysql> SELECT YEAR(NOW()) AS Current_Year;
 +--------------+
 | Current_Year |
@@ -39,14 +39,14 @@ mysql> SELECT YEAR(NOW()) AS Current_Year;
 
 **示例-2 :** 使用 Year()函数从给定的日期时间中查找年份。
 
-```
+```sql
 SELECT YEAR('2015-09-26 08:09:22') AS Year ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------+
 | Year |
 +------+
@@ -57,14 +57,14 @@ SELECT YEAR('2015-09-26 08:09:22') AS Year ;
 
 **示例-3 :** 当日期为空时，使用 Year()函数从给定的日期时间中查找年份。
 
-```
+```sql
 SELECT YEAR(NULL) AS Year ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +------+
 | Year |
 +------+
@@ -79,7 +79,7 @@ SELECT YEAR(NULL) AS Year ;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO 
     Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -96,7 +96,7 @@ VALUES
 
 所以，我们的桌子看起来像:
 
-```
+```sql
 mysql> SELECT * FROM Product;
 +------------+-----------------------+--------------+---------------+--------------+
 | Product_id | Product_name          | Buying_price | Selling_price | Selling_Date |
@@ -115,7 +115,7 @@ mysql> SELECT * FROM Product;
 
 现在，我们将使用 year()函数来查找每年销售的产品数量。
 
-```
+```sql
 SELECT 
     YEAR(Selling_Date) year, 
     COUNT(Product_id) Product_Sold
@@ -128,7 +128,7 @@ ORDER BY YEAR(Selling_Date);
 
 **输出:**
 
-```
+```sql
 +------+--------------+
 | year | Product_Sold |
 +------+--------------+

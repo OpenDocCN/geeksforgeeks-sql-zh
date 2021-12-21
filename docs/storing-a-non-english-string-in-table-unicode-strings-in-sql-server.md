@@ -13,7 +13,7 @@
 **创建表-TestLang–**
 让我们创建一个名为“TestLang”的表。
 
-```
+```sql
 CREATE TABLE TestLang  
   (
   LangName VARCHAR(100),
@@ -26,7 +26,7 @@ GO
 **插入数据–**
 现在，在表格中插入不同语言的数据，如下所示。
 
-```
+```sql
 INSERT INTO TestLang (LangName, Value, NValue)
 VALUES ('English', 'Welcome to GFG', N'Welcome to GFG');
 
@@ -42,7 +42,7 @@ GO
 **验证数据–**
 从表格中选择数据，如下所示。
 
-```
+```sql
 SELECT *
 FROM TestLang
 GO

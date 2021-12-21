@@ -16,7 +16,7 @@
 
 **使用 Where 子句–**
 
-```
+```sql
 SELECT * 
 FROM [Sales].[Orders]
 WHERE Order_Date >= '2017-01-01 00:00:00.000'
@@ -27,7 +27,7 @@ AND Order_Date < '2018-01-01 00:00:00.000'
 
 **使用分组依据条款–**
 
-```
+```sql
 SELECT CustomerID, COUNT(*) AS OrderNumbers
 FROM [Sales].[Orders]
 WHERE Order_Date >= '2017-01-01 00:00:00.000'
@@ -40,7 +40,7 @@ GROUP BY CustomerId
 **使用 Having 子句–**
 Having 子句用于过滤 Group By 子句中的值。下面的查询过滤掉了一些行
 
-```
+```sql
 SELECT SalesOrderID,
          SUM(UnitPrice* OrderQty) AS TotalPrice
 FROM     Sales.SalesOrderDetail
@@ -54,7 +54,7 @@ HAVING   TotalPrice > 5000
 
 **示例:**
 
-```
+```sql
 SELECT SalesOrderID,
          SUM(UnitPrice * OrderQty) AS TotalPrice
 FROM     Sales.SalesOrderDetail

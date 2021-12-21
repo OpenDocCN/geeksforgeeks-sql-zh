@@ -8,7 +8,7 @@ MySQL 中的 CURRENT_TIMESTAMP() [函数](https://www.geeksforgeeks.org/sql-func
 
 **语法:**
 
-```
+```sql
 CURRENT_TIMESTAMP
 OR
 CURRENT_TIMESTAMP()
@@ -24,7 +24,7 @@ CURRENT_TIMESTAMP()
 **示例-1 :**
 使用 CURRENT_TIMESTAMP 函数获取当前日期和时间。
 
-```
+```sql
 SELECT CURRENT_TIMESTAMP 
 as CurrDateAndTime ;
 
@@ -39,7 +39,7 @@ as CurrDateAndTime ;
 **示例-2 :**
 使用 CURRENT_TIMESTAMP 函数获取数字格式的当前日期和时间。
 
-```
+```sql
 SELECT CURRENT_TIMESTAMP + 0 
 as CurrDateAndTime ;
 
@@ -54,7 +54,7 @@ as CurrDateAndTime ;
 **示例-3:**
 CURRENT _ TIMESTAMP 函数可以用来设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE Details_of_Delivery (
 Delivery_Id INT AUTO_INCREMENT,
 Product_Id INT NOT NULL,
@@ -67,7 +67,7 @@ PRIMARY KEY(Delivery_Id)
 
 在这里，我们将使用 CURRENT_TIMESTAMP 函数来完成交付。“交付时间”列中的值将是当前时间戳函数给出的值。
 
-```
+```sql
 INSERT INTO  
 Details_of_Delivery(Product_Id, Product_Name, Delivered_At_time)
 VALUES
@@ -81,7 +81,7 @@ VALUES
 
 现在，检查交货明细表。
 
-```
+```sql
 SELECT * FROM Details_of_Delivery;
 ```
 

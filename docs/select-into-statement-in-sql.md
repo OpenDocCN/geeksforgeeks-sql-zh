@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column1, column2..... INTO TARGET_TABLE from SOURCE_TABLE 
 ```
 
@@ -17,7 +17,7 @@ SELECT column1, column2..... INTO TARGET_TABLE from SOURCE_TABLE
 
 让我们首先创建一个表 GFG _ 员工:
 
-```
+```sql
 create table GFG_Employees 
  (
   id int,
@@ -51,13 +51,13 @@ insert into GFG_EMPLOyees values(7, 'Naruto', 'uzumaki@konoha.com', 'Development
 
 **查询-1:** 将 GFG_Employees 的所有数据复制到 backUpEmployee 表中。
 
-```
+```sql
 SELECT * INTO backUpEmployee from GFG_Employees; 
 ```
 
 **输出:**
 
-```
+```sql
 Select * from backUpEmployee;
 ```
 
@@ -77,13 +77,13 @@ Select * from backUpEmployee;
 
 **查询-2:** 使用“where”子句仅将 GFG_Employees 中的一些行复制到 backUp2 表中。
 
-```
+```sql
 SELECT * INTO backUp2 from GFG_Employees where department in ('Development', 'IT'); 
 ```
 
 **输出:**
 
-```
+```sql
 Select * from backUp2; 
 ```
 
@@ -100,13 +100,13 @@ Select * from backUp2;
 
 **查询-3:** 要仅将 GFG_Employees 表中的一些列复制到 backUp3 表中，请在查询中指定它们。
 
-```
+```sql
 SELECT id, name INTO backUp3 from GFG_Employees; 
 ```
 
 **输出:**
 
-```
+```sql
 Select * from backUp3; 
 ```
 
@@ -127,14 +127,14 @@ Select * from backUp3;
 **INSERT INTO SELECT vs SELECT INTO:**
 这两个语句都可以用来将数据从一个表复制到另一个表。但是，只有当目标表存在时，才能使用 INSERT INTO SELECT 语句，而即使目标表不存在，也可以使用 SELECT INTO 语句，因为如果目标表不存在，它会创建目标表。
 
-```
+```sql
 INSERT INTO tempTable select * from GFG_Employees; 
 ```
 
 这里的表 tempTable 应该存在或者预先创建，否则会抛出一个错误。
 ![](img/80a67d784cfa64dbc26a225465faf78f.png)
 
-```
+```sql
 SELECT * INTO backUpTable from GFG_Employees;
 ```
 

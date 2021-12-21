@@ -12,7 +12,7 @@
 
 **案例语法:**
 
-```
+```sql
 CASE
    WHEN condition1 THEN result1
    WHEN condition2 THEN result2
@@ -25,7 +25,7 @@ END;
 
 **按语法排序:**
 
-```
+```sql
 SELECT column_name1, column_name2, ...
 FROM table_name
 ORDER BY column_name1, column_name2, ... ASC|DESC;
@@ -37,7 +37,7 @@ ORDER BY column_name1, column_name2, ... ASC|DESC;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -47,7 +47,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -57,7 +57,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 ID int,
 NAME VARCHAR(20),
@@ -69,7 +69,7 @@ ORANGE int);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 (1, 'Romy', 45, 7),
 (2, 'Rinkle', 20, 25),
@@ -84,7 +84,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table
 ORDER BY CASE  
           WHEN  APPLE< ORANGE THEN APPLE

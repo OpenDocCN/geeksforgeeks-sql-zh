@@ -8,7 +8,7 @@ NCHR 函数相当于将 CHR 函数与 USING NCHAR_CS 子句一起使用。传递
 
 **语法:**
 
-```
+```sql
 NCHR(number_code)
 ```
 
@@ -26,7 +26,7 @@ NCHR(number_code)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_value int := 103;
 
@@ -38,13 +38,13 @@ END;
 
 **输出:**
 
-```
+```sql
 g 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_value int := 103;
 
@@ -56,14 +56,14 @@ END;
 
 **输出**
 
-```
+```sql
 g
 
 ```
 
 **例-3:**
 
-```
+```sql
 DECLARE 
    Test_value int := 187;
 
@@ -75,6 +75,6 @@ END;
 
 **输出:**
 
-```
+```sql
 » 
 ```

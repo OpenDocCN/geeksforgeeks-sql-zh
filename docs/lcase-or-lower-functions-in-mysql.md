@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 SELECT LCASE(text)
 ```
 
 **示例:**
 
-```
+```sql
 SELECT LCASE("Reading on GEEKSFORGEEKS is FUN") AS LowerText; 
 ```
 
@@ -26,13 +26,13 @@ SELECT LCASE("Reading on GEEKSFORGEEKS is FUN") AS LowerText;
 **2。LOWER() :**
 **语法:**
 
-```
+```sql
 SELECT LOWER(text)
 ```
 
 **示例:**
 
-```
+```sql
 SELECT LOWER("Studying on GeeksForGeeks is FUN") AS LowerText; 
 ```
 

@@ -62,7 +62,7 @@ temp.php
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -106,7 +106,7 @@ form1.php
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <html>
 <body>
 <?php

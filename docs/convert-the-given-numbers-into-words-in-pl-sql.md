@@ -8,7 +8,7 @@
 给定一个数字，任务是将数字的每个数字转换成单词。
 **例:**
 
-```
+```sql
 Input: 47856
 Output: Four Seven Eight Five Six
 
@@ -20,7 +20,7 @@ Output: one two three four five six
 **方法**是使用解码功能选择特定数字的对应字。
 以下是所需的实施:
 
-```
+```sql
 DECLARE 
 
     -- declare variable are num, num_to_word, str, len, c 
@@ -68,7 +68,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 Entered Number is: 123456
 Number to words: One Two Three Four Five Six 
 

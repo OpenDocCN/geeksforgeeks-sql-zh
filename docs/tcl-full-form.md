@@ -18,7 +18,7 @@ TCL 命令包括:
 
 **语法:**
 
-```
+```sql
 commit; 
 ```
 
@@ -27,7 +27,7 @@ commit;
 
 **语法:**
 
-```
+```sql
 rollback;
 ```
 
@@ -36,7 +36,7 @@ rollback;
 
 **语法**:
 
-```
+```sql
 Savepoint A; 
 ```
 
@@ -52,7 +52,7 @@ Savepoint A;
 
 </figure>
 
-```
+```sql
 UPDATE STUDENT 
 SET NAME = ‘Sherlock’ 
 WHERE NAME = ‘Jolly’;
@@ -79,7 +79,7 @@ ROLLBACK;
 
 现在如果没有执行**提交**。
 
-```
+```sql
 UPDATE STUDENT 
 SET NAME = ‘Sherlock’ 
 WHERE STUDENT_NAME = ‘Jolly’; 
@@ -99,7 +99,7 @@ T31】</figure>
 
 现在如果在上表中执行**回滚**:
 
-```
+```sql
 rollback; 
 ```
 
@@ -117,7 +117,7 @@ rollback;
 
 如果在上表中执行了保存点:
 
-```
+```sql
 INSERT into STUDENT 
 VALUES ('Jack', 95);
 
@@ -158,7 +158,7 @@ FROM STUDENT;
 
 现在，如果我们回滚到保存点 B:
 
-```
+```sql
 Rollback to B; 
 ```
 
@@ -175,7 +175,7 @@ Rollback to B;
 
 现在，如果我们回滚到保存点 A:
 
-```
+```sql
 Rollback to A; 
 ```
 

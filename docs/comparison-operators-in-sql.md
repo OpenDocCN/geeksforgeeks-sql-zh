@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM TABLE_NAME WHERE 
 ATTRIBUTE CONDITION_OPERATOR GIVEN_VALUE;
 ```
@@ -15,7 +15,7 @@ ATTRIBUTE CONDITION_OPERATOR GIVEN_VALUE;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -27,7 +27,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -39,7 +39,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE MATHS(
 ROLL_NUMBER INT,
 S_NAME VARCHAR(10),
@@ -54,7 +54,7 @@ MARKS INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS 'MATHS';
 ```
 
@@ -66,7 +66,7 @@ EXEC SP_COLUMNS 'MATHS';
 
 **查询:**
 
-```
+```sql
 INSERT INTO MATHS VALUES(1,'ABHI',70);
 INSERT INTO MATHS VALUES(2,'RAVI',80);
 INSERT INTO MATHS VALUES(3,'ARJUN',90);
@@ -87,7 +87,7 @@ INSERT INTO MATHS VALUES(10,'KRITI',60);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS;
 ```
 
@@ -101,7 +101,7 @@ SELECT * FROM MATHS;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS=50;
 ```
 
@@ -113,7 +113,7 @@ SELECT * FROM MATHS WHERE MARKS=50;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS>60;
 ```
 
@@ -125,7 +125,7 @@ SELECT * FROM MATHS WHERE MARKS>60;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS<40;
 ```
 
@@ -137,7 +137,7 @@ SELECT * FROM MATHS WHERE MARKS<40;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS>=80;
 ```
 
@@ -149,7 +149,7 @@ SELECT * FROM MATHS WHERE MARKS>=80;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS<=30;
 ```
 
@@ -161,7 +161,7 @@ SELECT * FROM MATHS WHERE MARKS<=30;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM MATHS WHERE MARKS<>70;
 ```
 

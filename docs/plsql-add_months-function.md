@@ -9,7 +9,7 @@ date 参数可以是日期时间值，也可以是任何可以隐式转换为 DA
 
 **语法:**
 
-```
+```sql
 ADD_MONTHS( init_date, add_months )
 ```
 
@@ -31,7 +31,7 @@ ADD _ MONTHS 函数返回一个日期数据类型的值。
 
 **示例-1:** 在 add_months 函数的 ADD_MONTHS 参数中使用正数值。
 
-```
+```sql
 DECLARE 
    Test_Date date := '01-Aug-18';
    Add_Month number := 3;
@@ -44,13 +44,13 @@ END;
 
 **输出:**
 
-```
+```sql
 01.12.18 
 ```
 
 **示例-2:** 在 add_months 函数的 ADD_MONTHS 参数中使用负数值。
 
-```
+```sql
 DECLARE 
    Test_Date date := '01-Aug-18';
    Add_Month number := -3;
@@ -63,13 +63,13 @@ END;
 
 **输出:**
 
-```
+```sql
 01.05.03 
 ```
 
 **示例-3:** 在 add_months 函数的 ADD_MONTHS 参数中使用负数值。
 
-```
+```sql
 DECLARE 
    Test_Date date := '31-Aug-18';
    Add_Month number := -4;
@@ -82,7 +82,7 @@ END;
 
 **输出:**
 
-```
+```sql
 30.04.18 
 ```
 
@@ -90,7 +90,7 @@ END;
 
 **示例-4:** 在 add_months 函数的 ADD_MONTHS 参数中使用正数值。
 
-```
+```sql
 DECLARE 
    Test_Date date := '31-Aug-18';
    Add_Month number := 3;
@@ -103,7 +103,7 @@ END;
 
 **输出:**
 
-```
+```sql
 30.11.18 
 ```
 
@@ -111,7 +111,7 @@ END;
 
 **示例-5:** 使用带有 ADD _ MINUTES 函数的选择查询。
 
-```
+```sql
 SELECT
   ADD_MONTHS( DATE '2016-02-29', 1 )
 FROM
@@ -120,7 +120,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 31-MAR-16 
 ```
 

@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SUBSTRING(string, start, length)
 OR
 SUBSTRING(string FROM start FOR length)
@@ -27,7 +27,7 @@ SUBSTRING(string FROM start FOR length)
 **示例-1 :**
 从给定的字符串中导出子字符串，而不给出长度参数。
 
-```
+```sql
 SELECT SUBSTRING("GeeksForGeeks", 3) AS Sub_String;
 
 ```
@@ -45,7 +45,7 @@ SELECT SUBSTRING("GeeksForGeeks", 3) AS Sub_String;
 **示例-2 :**
 在给定长度参数的情况下，从给定字符串中导出子字符串。
 
-```
+```sql
 SELECT SUBSTRING("GeeksForGeeks", 3, 8) AS Sub_String; 
 
 ```
@@ -63,7 +63,7 @@ SELECT SUBSTRING("GeeksForGeeks", 3, 8) AS Sub_String;
 **示例-3 :**
 当起始位置为-ve 时，从给定的字符串派生子字符串，即:从结束开始。
 
-```
+```sql
 
 SELECT SUBSTRING("GeeksForGeeks", -3 ) AS Sub_String; 
 
@@ -95,7 +95,7 @@ SELECT SUBSTRING("GeeksForGeeks", -3 ) AS Sub_String;
 
 </center>
 
-```
+```sql
 SELECT SUBSTRING( Student_Name, 2 ) AS Sub_String FROM Student_Details ;
 
 ```

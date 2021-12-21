@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 Split(expression, delimiter, limit, compare)
 ```
 
@@ -24,7 +24,7 @@ Split(expression, delimiter, limit, compare)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Split("Geeks For Geeks") AS SplitString;
 ```
 
@@ -35,7 +35,7 @@ SELECT Split("Geeks For Geeks") AS SplitString;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Split("geeks:for:geeks", ":") AS SplitString;
 ```
 
@@ -46,13 +46,13 @@ SELECT Split("geeks:for:geeks", ":") AS SplitString;
 
 **示例-3 :**
 
-```
+```sql
 SELECT Split("The best computer science portal")
 ```
 
 **输出:**
 
-```
+```sql
 {"The", "best", "computer", "science", "portal"}
 ```
 
@@ -60,13 +60,13 @@ SELECT Split("The best computer science portal")
 
 **语法:**
 
-```
+```sql
 string1 & string2 & string3 &string_n
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT "GEEKS" & "FOR" & "GEEKS" AS The_String;
 ```
 
@@ -77,19 +77,19 @@ SELECT "GEEKS" & "FOR" & "GEEKS" AS The_String;
 
 **示例-2 :**
 
-```
+```sql
 SELECT "A" & NULL & "B"& NULL & "C";
 ```
 
 **输出:**
 
-```
+```sql
 "ABC"
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT "COMPUTER" & " " & "SCIENCE"  AS The_String;
 ```
 

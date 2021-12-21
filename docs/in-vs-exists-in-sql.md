@@ -12,7 +12,7 @@ SQL 代表结构化查询语言。它用于在数据库中存储数据、修改�
 
 我们可以直接列出值，也可以向 IN 运算符提供查询结果。
 
-```
+```sql
 Syntax : SELECT columnName(s) FROM tableName WHERE columnNamex IN (value1, value2, ...);
 ```
 
@@ -32,7 +32,7 @@ Syntax : SELECT columnName(s) FROM tableName WHERE columnNamex IN (value1, value
 
 如果参数子查询非空，则 exists 构造返回值 true，否则返回 false。为了检查是否通过这个子查询返回了一行，使用它。如果通过执行子查询返回了一行或多行，则返回 True 否则，如果没有返回任何行，则返回 False。
 
-```
+```sql
 Syntax :
 SELECT columnName(s) FROM tableName1 WHERE EXISTS
 (subquery);

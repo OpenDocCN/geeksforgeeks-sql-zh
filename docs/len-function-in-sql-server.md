@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 LEN(input_string)
 ```
 
@@ -22,19 +22,19 @@ LEN(input_string)
 
 **示例-1:** 返回字符串的长度
 
-```
+```sql
 SELECT LEN('Geeksforgeeks');
 ```
 
 **输出:**
 
-```
+```sql
 13
 ```
 
 **示例-2:** 检查 LEN()函数是否计算尾随空格
 
-```
+```sql
 SELECT LEN('GFG       ') 
 As Length_with_trailing_spaces;
 ```
@@ -46,7 +46,7 @@ As Length_with_trailing_spaces;
 
 **示例-3:** 检查 LEN()函数是否计算前导空格
 
-```
+```sql
 SELECT LEN('       GFG') 
 As Length_with_leading_spaces;
 ```
@@ -65,7 +65,7 @@ As Length_with_leading_spaces;
 | Eighteen | 维拉·科尔 | 孟加拉鲁 |
 | seven | M S Dhoni | 金奈 |
 
-```
+```sql
 SELECT
     PlayerName,
     LEN(PlayerName) PlayerName_Length

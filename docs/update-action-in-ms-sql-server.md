@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 foreign key (foreign-key_constraint) 
 references parent_table (parentkey_column) 
 ON Update Action
@@ -34,7 +34,7 @@ ON Update Action
 
 对表执行更新操作的 SQL 查询是:
 
-```
+```sql
 foreign key references 
 Student(rollnumber) 
 ON Update Action

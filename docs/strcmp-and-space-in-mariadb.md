@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 STRCMP( string1, string2 )
 ```
 
@@ -20,40 +20,40 @@ STRCMP( string1, string2 )
 
 **示例-1 :**
 
-```
+```sql
 SELECT STRCMP
 ('geeksforgeeks', 'geeksforgeeks');
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT STRCMP('DSA', 'DBMS');
 
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT STRCMP('Article', 'Post');
 
 ```
 
 **输出:**
 
-```
+```sql
 -1
 ```
 
@@ -62,7 +62,7 @@ SELECT STRCMP('Article', 'Post');
 
 **语法:**
 
-```
+```sql
 SPACE( number )
 
 ```
@@ -76,36 +76,36 @@ SPACE( number )
 
 **示例-1 :**
 
-```
+```sql
 SELECT SPACE(3);
 ```
 
 **输出:**
 
-```
+```sql
 '   '
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT SPACE(0);
 ```
 
 **输出:**
 
-```
+```sql
 ''
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT SPACE(-5);
 ```
 
 **输出:**
 
-```
+```sql
 ''
 ```

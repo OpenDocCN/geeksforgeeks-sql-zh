@@ -35,7 +35,7 @@
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 CREATE DATABASE myDatabase;
 
 CREATE TABLE myTable
@@ -68,7 +68,7 @@ VALUES ('1','Krishna','Kripa','Jansa','Varanasi');
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 CREATE DATABASE myDatabase1;
 GO
 USE myDatabase1;
@@ -136,7 +136,7 @@ GO
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 SELECT * FROM myDatabase2.myTable
 EXCEPT
 SELECT * FROM myDatabase1.myTable

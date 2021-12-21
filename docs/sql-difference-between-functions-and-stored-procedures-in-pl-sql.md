@@ -12,7 +12,7 @@
 1.  **SP** *可以返回值也可以不返回值*但是**UDF**T7】必须返回值。
     示例:
 
-    ```
+    ```sql
     SP ->
     create or replace procedure GEEKS(x int) 
     is
@@ -34,7 +34,7 @@
 2.  **SP** 可以有*输入/输出*参数，但是**UDF**T7】只有有输入参数。
     示例:
 
-    ```
+    ```sql
      SP ->
      CREATE OR REPLACE PROCEDURE Factorial(x IN NUMBER, result OUT NUMBER)
      is
@@ -55,7 +55,7 @@
 
     示例:
 
-    ```
+    ```sql
     Calling UDF cal() inside SP square() but reverse is not possible.
 
     set serveroutput on;
@@ -89,7 +89,7 @@
 
     输出:
 
-    ```
+    ```sql
     calling function in procedure
     the answer is 36
 

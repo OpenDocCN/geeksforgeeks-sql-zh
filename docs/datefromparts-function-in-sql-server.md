@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 DATEFROMPARTS(year, month, day)
 
 ```
@@ -32,21 +32,21 @@ DATEFROMPARTS(year, month, day)
 **示例-1 :**
 使用 DATEFROMPARTS()函数并获取指定的日期。
 
-```
+```sql
 SELECT DATEFROMPARTS(2021, 01, 04);
 
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-04
 ```
 
 **示例-2 :**
 使用带有变量的 DATEFROMPARTS()函数并获取指定的日期。
 
-```
+```sql
 DECLARE @year Int;
 SET @year = 2012;
 SELECT DATEFROMPARTS(@year, 09, 13);
@@ -55,14 +55,14 @@ SELECT DATEFROMPARTS(@year, 09, 13);
 
 **输出:**
 
-```
+```sql
 2012-09-13
 ```
 
 **示例-3 :**
 使用带有三个变量的 DATEFROMPARTS()函数并获取指定的日期。
 
-```
+```sql
 DECLARE @year Int;
 DECLARE @month Int;
 DECLARE @day Int;
@@ -75,14 +75,14 @@ SELECT DATEFROMPARTS(@year, @month, @day);
 
 **输出:**
 
-```
+```sql
 2016-08-29
 ```
 
 **示例-4 :**
 在下面的示例中使用 DATEFROMPARTS()作为默认值并获取输出。
 
-```
+```sql
 CREATE TABLE date_from_parts
 (
     id_num        INT IDENTITY, 

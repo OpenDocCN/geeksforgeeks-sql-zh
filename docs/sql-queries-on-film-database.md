@@ -4,7 +4,7 @@
 
 请考虑电影数据库中的以下表格:
 
-```
+```sql
 ARTIST (Art_id, Art_Name, Art_Gender) 
 PRODUCER (Prod_id, Prod_Name, Prod_Phone)
 FILMS (Film_id, Film_Title, Film_Year, Film_Lang, Prod_id) 
@@ -14,7 +14,7 @@ REVIEW (Film_id, Stars)
 
 这五个表的数据内容如下所示:
 
-```
+```sql
 SELECT * FROM ARTIST;
 ```
 
@@ -29,7 +29,7 @@ SELECT * FROM ARTIST;
 
 </center>
 
-```
+```sql
 SELECT * FROM PRODUCER;
 ```
 
@@ -44,7 +44,7 @@ SELECT * FROM PRODUCER;
 
 </center>
 
-```
+```sql
 SELECT * FROM FILMS;
 ```
 
@@ -59,7 +59,7 @@ SELECT * FROM FILMS;
 
 </center>
 
-```
+```sql
 SELECT * FROM CASTING;
 ```
 
@@ -75,7 +75,7 @@ SELECT * FROM CASTING;
 
 </center>
 
-```
+```sql
 SELECT * FROM REVIEW;
 ```
 
@@ -95,7 +95,7 @@ SELECT * FROM REVIEW;
 
 首先，我们将找到名为“NIRAJ”的生产者的生产者标识，为此我们使用生产者表。
 
-```
+```sql
 SELECT PROD_ID 
 FROM PRODUCER 
 WHERE PROD_NAME = ‘NIRAJ’
@@ -103,7 +103,7 @@ WHERE PROD_NAME = ‘NIRAJ’
 
 上面的查询将返回 Prod _ id“203”。现在我们将找到 pros_id 为“203”的电影的标题。为此，我们使用表 FILMS，并将上面的查询用作子查询。
 
-```
+```sql
 SELECT FILM_TITLE 
 FROM FILMS 
 WHERE PROD_ID IN (SELECT PROD_ID 
@@ -126,7 +126,7 @@ WHERE PROD_NAME = ‘NIRAJ’);
 
 为了找到这一点，我们需要使用艺术家表的艺术家名称字段以及电影表的电影年份字段。为了连接这两个表，我们使用第三个表 CASTING，使用 Art_id 和 Film_id。加入后，我们在 2016 年至 2018 年间使用“介于”运算符检查电影年份。
 
-```
+```sql
 SELECT A.ART_NAME,  F.FILM_TITLE, F.FILM_YEAR 
 FROM ARTIST A, CASTING C, FILMS F
 WHERE A.ART_ID=C.ART_ID 
@@ -147,7 +147,7 @@ AND F.FILM_YEAR  BETWEEN 2016 AND 2018;
 
 为此，我们需要电影表的电影标题字段以及评论表的星星字段。为了连接这两个表，我们将使用公共字段，即电影标识。在连接之后，我们使用 ORDER BY 子句按照 STARS 递增的顺序显示结果。
 
-```
+```sql
 SELECT F.FILM_TITLE, R_STARS
 FROM FILMS F, REVIEW R
 WHERE F.FILM_ID=R.FILM_ID
@@ -172,7 +172,7 @@ ORDER BY R.STARS DESC
 
 首先，我们使用以下查询找到名为“NIRAJ”的生产者的生产者标识:
 
-```
+```sql
 SELECT PROD_ID 
 FROM PRODUCER 
 WHERE PROD_NAME = ‘NIRAJ’
@@ -180,7 +180,7 @@ WHERE PROD_NAME = ‘NIRAJ’
 
 然后使用这个产品标识从电影表中找到电影标识。
 
-```
+```sql
 SELECT FILM_ID FROM FILMS 
 WHERE PROD_ID IN (SELECT PROD_ID 
 FROM PRODUCER 
@@ -189,7 +189,7 @@ WHERE PROD_NAME = ‘NIRAJ’)
 
 然后这个电影标识有助于使用更新命令更新评论表中的星星值。
 
-```
+```sql
 UPDATE REVIEW 
 SET STARS=5 
 WHERE FILM_ID IN (SELECT FILM_ID FROM FILMS 
@@ -200,13 +200,13 @@ WHERE PROD_NAME = ‘NIRAJ’));
 
 **输出:**
 
-```
+```sql
 1 row updated.
 ```
 
 要观察这些变化，我们可以使用 REVIEW 表中的 SELECT *命令。
 
-```
+```sql
 SELECT * FROM REVIEW;
 ```
 

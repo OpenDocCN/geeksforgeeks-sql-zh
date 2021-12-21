@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE PROCEDURE procedure_name AS 
 SELECT * FROM table_name;
 ```
@@ -19,7 +19,7 @@ SELECT * FROM table_name;
 
 **语法:**
 
-```
+```sql
 EXEC procedure_name;
 ```
 
@@ -36,7 +36,7 @@ EXEC procedure_name;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -46,7 +46,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -56,7 +56,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 AGE INT,
@@ -67,7 +67,7 @@ CITY VARCHAR(20) );
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('ROMY KUMARI', 22, 'NEW DELHI'),
 ('RINKLE ARORA',23, 'PUNJAB'),
@@ -87,7 +87,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 CREATE PROCEDURE Display AS  
 SELECT * FROM demo_table;
 ```
@@ -102,7 +102,7 @@ SELECT * FROM demo_table;
 
 **语法:**
 
-```
+```sql
 EXEC sp_rename 'Current procedure_name', 'New procedure_name';
 ```
 
@@ -110,13 +110,13 @@ EXEC sp_rename 'Current procedure_name', 'New procedure_name';
 
 **查询:**
 
-```
+```sql
 EXEC sp_rename 'Display', 'Show';
 ```
 
 **执行:**
 
-```
+```sql
 EXEC Show;
 ```
 

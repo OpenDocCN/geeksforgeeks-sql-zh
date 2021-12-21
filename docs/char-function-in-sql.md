@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT CHAR(code);
 
 ```
@@ -17,7 +17,7 @@ SELECT CHAR(code);
 
 **示例-1:**
 
-```
+```sql
 SELECT CHAR(65) AS Result;
 
 ```
@@ -30,7 +30,7 @@ SELECT CHAR(65) AS Result;
 
 **示例-2:**
 
-```
+```sql
 SELECT CHAR(165) AS Result;
 
 ```
@@ -43,7 +43,7 @@ SELECT CHAR(165) AS Result;
 
 **示例-3:**
 
-```
+```sql
 SELECT CHAR(67, 255) AS Result;
 
 ```
@@ -53,7 +53,7 @@ char 函数需要 1 个参数。如上例所示，当提供多个整数时，它
 
 **示例-4:**
 
-```
+```sql
 SELECT CHAR(1000) AS Result;
 
 ```
@@ -69,7 +69,7 @@ SELECT CHAR(1000) AS Result;
 
 **示例-5:**
 
-```
+```sql
 SELECT 'Hello' + CHAR(10) + 'World' AS Result;
 
 ```

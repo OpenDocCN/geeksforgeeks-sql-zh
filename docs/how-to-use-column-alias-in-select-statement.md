@@ -12,13 +12,13 @@
 
 **表别名语法:**
 
-```
+```sql
 SELECT * FROM table_name AS alias_name;
 ```
 
 **列别名的语法:**
 
-```
+```sql
 SELECT column_name AS alias_name FROM table_name;
 ```
 
@@ -30,7 +30,7 @@ SELECT column_name AS alias_name FROM table_name;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -40,7 +40,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -50,7 +50,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table
 (FIRSTNAME VARCHAR(20),
 ENDNAME VARCHAR(20),
@@ -59,7 +59,7 @@ AGE INT,GENDER VARCHAR(20));
 
 **第四步:将数据插入表格**
 
-```
+```sql
 INSERT INTO demo_table VALUES
 ('Romy', 'Kumari', 22, 'female'),
 ('Meenakshi', 'Jha', 20, 'female'),
@@ -74,7 +74,7 @@ INSERT INTO demo_table VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table;
 ```
 
@@ -86,7 +86,7 @@ SELECT * FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT FIRSTNAME, ENDNAME AS LASTNAME, AGE, GENDER FROM demo_table;
 ```
 
@@ -100,7 +100,7 @@ SELECT FIRSTNAME, ENDNAME AS LASTNAME, AGE, GENDER FROM demo_table;
 
 **查询:**
 
-```
+```sql
 SELECT FIRSTNAME AS "FIRST NAME", ENDNAME AS "LAST NAME", AGE, GENDER FROM demo_table;
 ```
 

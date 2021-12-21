@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG_Demo;
 USE GFG_Demo;     
 ```
@@ -25,7 +25,7 @@ USE GFG_Demo;
 
 **查询:**
 
-```
+```sql
 CREATE Table GFG_Demo_Table
 ( Order_date date, Sales int);   
 ```
@@ -40,7 +40,7 @@ CREATE Table GFG_Demo_Table
 
 **查询:**
 
-```
+```sql
 INSERT INTO GFG_Demo_Table(Order_date,Sales)   
 VALUES('2021-01-01',20),('2021-03-02',32),('2021-02-03',45),
 ('2021-01-04',31),('2021-03-05',33),('2021-01-06',19), 
@@ -98,7 +98,7 @@ VALUES('2021-01-01',20),('2021-03-02',32),('2021-02-03',45),
 
 **查询:**
 
-```
+```sql
 BEGIN TRAN UPDATE GFG_Demo_Table 
 SET Sales= 25 WHERE Sales=20;   
 ```
@@ -107,7 +107,7 @@ SET Sales= 25 WHERE Sales=20;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM GFG_Demo_Table;   
 ```
 
@@ -115,7 +115,7 @@ SELECT * FROM GFG_Demo_Table;
 
 **查询:**
 
-```
+```sql
 sp_who2 52   
 ```
 
@@ -125,7 +125,7 @@ sp_who2 52
 
 **查询:**
 
-```
+```sql
 SELECT * FROM GFG_Demo_Table WITH (NOLOCK);   
 ```
 
@@ -149,7 +149,7 @@ SELECT * FROM GFG_Demo_Table WITH (NOLOCK);
 
 **查询:**
 
-```
+```sql
 SET TRANSACTION ISOLATION LEVEL READ 
 UNCOMMITTED; 
 SELECT * FROM GFG_Demo_Table;  

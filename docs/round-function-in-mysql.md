@@ -6,7 +6,7 @@ MySQL 中的 **ROUND** ()函数用于将一个数字舍入到指定的小数位�
 
 **语法:**
 
-```
+```sql
 ROUND(X, D)
 ```
 
@@ -22,7 +22,7 @@ ROUND(X, D)
 
 *   Rounding a Negative number.
 
-    ```
+    ```sql
     SELECT ROUND(-10.11) AS Rounded_Number;
     ```
 
@@ -34,7 +34,7 @@ ROUND(X, D)
 
 *   Rounding a Positive number.
 
-    ```
+    ```sql
     SELECT ROUND(100.61) AS Rounded_Number;
     ```
 
@@ -49,7 +49,7 @@ ROUND(X, D)
 
 *   Rounding a Negative number.
 
-    ```
+    ```sql
     SELECT ROUND(-1567.1100, -3) AS Rounded_Number;
     ```
 
@@ -61,7 +61,7 @@ ROUND(X, D)
 
 *   Rounding a Positive number.
 
-    ```
+    ```sql
     SELECT ROUND(1016.6089, -1) AS Rounded_Number;
     ```
 
@@ -76,7 +76,7 @@ ROUND(X, D)
 
 *   Rounding a Negative number up to 2 decimal places.
 
-    ```
+    ```sql
     SELECT ROUND(-1567.1160, 2) AS Rounded_Number;
     ```
 
@@ -88,7 +88,7 @@ ROUND(X, D)
 
 *   Rounding a Positive number up to three decimal places.
 
-    ```
+    ```sql
     SELECT ROUND(1016.6019, 3) AS Rounded_Number;
     ```
 
@@ -101,7 +101,7 @@ ROUND(X, D)
 **示例-4 :**
 ROUND 函数也可用于查找列数据的舍入值。在本例中，我们将查找价格列的舍入值。为了演示，创建一个名为**产品的表格。**
 
-```
+```sql
 CREATE TABLE Product(
     Product_id INT AUTO_INCREMENT, 
     Product_name VARCHAR(100) NOT NULL,
@@ -114,7 +114,7 @@ CREATE TABLE Product(
 
 现在在产品表中插入一些数据–
 
-```
+```sql
 INSERT INTO 
     Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -141,7 +141,7 @@ VALUES
 
 现在，我们将买价和卖价列四舍五入到小数点后两位。
 
-```
+```sql
 SELECT Product_name, Buying_price, ROUND(Buying_price, 2) Rounded_Bprice, 
 Selling_price, ROUND(Selling_price, 2) Rounded_Sprice
 FROM Product;

@@ -10,7 +10,7 @@
 
 **语法:**
 
-```
+```sql
 VarType ( varname )
 ```
 
@@ -53,14 +53,14 @@ VarType ( varname )
 
 让我们考虑像 80000 这样的长整数值，如果您使用 VarType 函数，那么它将返回 3 作为长整数。
 
-```
+```sql
 SELECT VarType(80000);
 
 ```
 
 **输出–**
 
-```
+```sql
 3  
 
 ```
@@ -69,14 +69,14 @@ SELECT VarType(80000);
 
 让我们考虑像 11.1 这样的十进制值，如果您将使用 VarType 函数，那么它将为十进制返回 14。
 
-```
+```sql
 SELECT VarType(11.1);
 
 ```
 
 **输出:**
 
-```
+```sql
 14
 
 ```
@@ -85,14 +85,14 @@ SELECT VarType(11.1);
 
 让我们考虑一个像 Geeksforgeeks 这样的字符串值，如果您将使用 VarType 函数，那么它将为字符串返回 8。
 
-```
+```sql
 SELECT VarType( "Geeksforgeeks");
 
 ```
 
 **输出:**
 
-```
+```sql
 8
 
 ```
@@ -101,14 +101,14 @@ SELECT VarType( "Geeksforgeeks");
 
 让我们考虑像#11/09/20#这样的日期值，如果您将使用 VarType 函数，那么它将返回 7 作为日期值。
 
-```
+```sql
 SELECT VarType( #11/09/20# );
 
 ```
 
 **输出–**
 
-```
+```sql
 7
 ```
 
@@ -118,7 +118,7 @@ SELECT VarType( #11/09/20# );
 
 **示例–**
 
-```
+```sql
 Dim StrVar, DateVar, IntVar, MyFun
 
 StrVar     =  "Ashish"

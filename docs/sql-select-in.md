@@ -30,7 +30,7 @@
 
 使用下面的 SQL 语句创建一个名为 RECORD : 的数据库
 
-```
+```sql
 CREATE DATABASE RECORD;
 ```
 
@@ -38,7 +38,7 @@ CREATE DATABASE RECORD;
 
 使用下面的 SQL 语句将数据库更改为 RECORD:
 
-```
+```sql
 USE RECORD;
 ```
 
@@ -46,7 +46,7 @@ USE RECORD;
 
 现在，我们在记录数据库中创建一个名为“课程”的表:
 
-```
+```sql
 CREATE TABLE COURSE(
 course_id INT,
 course_name VARCHAR(20),
@@ -57,7 +57,7 @@ PRIMARY KEY(course_id)
 
 现在，我们再次在我们的 RECORD 数据库中创建另一个名为 STUDENT 的表:
 
-```
+```sql
 CREATE TABLE STUDENT(
 roll_no INT,
 student_name VARCHAR(20),
@@ -70,7 +70,7 @@ PRIMARY KEY(roll_no)
 
 使用以下语句，我们将数据插入到“课程”表中:
 
-```
+```sql
 INSERT INTO COURSE(course_id, course_name, duration_of_course) VALUES(1, 'BCA', 3);
 INSERT INTO COURSE(course_id, course_name, duration_of_course) VALUES(2, 'MCA', 3);
 INSERT INTO COURSE(course_id, course_name, duration_of_course) VALUES(3, 'B.E.', 4);
@@ -80,7 +80,7 @@ INSERT INTO COURSE(course_id, course_name, duration_of_course) VALUES(5, 'Integr
 
 同样，使用下面的语句，我们将数据插入到 STUDENT 表中:
 
-```
+```sql
 INSERT INTO STUDENT(roll_no, student_name, course_id) VALUES(1, 'ANDREW', 1);
 INSERT INTO STUDENT(roll_no, student_name, course_id) VALUES(2, 'BOB', 1);
 INSERT INTO STUDENT(roll_no, student_name, course_id) VALUES(3, 'CHARLES', 1);
@@ -100,7 +100,7 @@ INSERT INTO STUDENT(roll_no, student_name, course_id) VALUES(13, 'MICHAEL', 3);
 
 现在使用下面的语句，我们显示课程表的内容:
 
-```
+```sql
 SELECT * FROM COURSE;
 ```
 
@@ -108,7 +108,7 @@ SELECT * FROM COURSE;
 
 再次使用下面的语句，我们显示了 STUDENT 表的内容:
 
-```
+```sql
 SELECT * FROM STUDENT;
 ```
 
@@ -116,7 +116,7 @@ SELECT * FROM STUDENT;
 
 **列表中的条款:**
 
-```
+```sql
 SELECT * FROM
 STUDENT
 WHERE course_id
@@ -127,7 +127,7 @@ IN (1, 2, 3);
 
 **带子查询的 IN 子句:**
 
-```
+```sql
 SELECT * FROM
 STUDENT
 WHERE course_id

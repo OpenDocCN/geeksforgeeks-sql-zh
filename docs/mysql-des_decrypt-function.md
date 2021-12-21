@@ -8,7 +8,7 @@ DES _ DECRYPT 函数返回的值是一个解密字符串或空值。DES _ DECRYP
 
 **语法:**
 
-```
+```sql
 DES_DECRYPT(encrypted_string, key_string);
 ```
 
@@ -31,52 +31,52 @@ MySQL 中的 DES_DECRYPT 函数返回一个解密后的字符串。
 
 **示例-1:** 在字符串上实现 DES_DECRYPT 函数。
 
-```
+```sql
 SELECT  
 AES_DECRYPT(AES_ENCRYPT('ABC', 'key_string'), 'key_string'); 
 ```
 
 **输出:**
 
-```
+```sql
 ABC 
 ```
 
 **示例-2:** 对包含字符和整数值的字符串实现 AES_DECRYPT 函数。
 
-```
+```sql
 SELECT  
 AES_DECRYPT(AES_ENCRYPT('ABC123', 'key_string'), 'key_string'); 
 ```
 
 **输出:**
 
-```
+```sql
 ABC123 
 ```
 
 **示例-3:** 在更大的字符串上实现 AES_DECRYPT 函数。
 
-```
+```sql
 SELECT  
 AES_DECRYPT(AES_ENCRYPT('Geeksforgeeks', 'key_string'), 'key_string'); 
 ```
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-4:** 在空字符串上实现 AES_DECRYPT 函数。
 
-```
+```sql
 SELECT  
 AES_DECRYPT(AES_ENCRYPT(NULL, 'key_string'), 'key_string'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

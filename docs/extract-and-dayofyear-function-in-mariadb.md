@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 EXTRACT(unit FROM date)
 ```
 
@@ -21,37 +21,37 @@ EXTRACT(unit FROM date)
 
 **示例-1 :**
 
-```
+```sql
 SELECT EXTRACT(SECOND FROM '2020-05-19 08:44:21');
 ```
 
 **输出:**
 
-```
+```sql
 21
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT EXTRACT(YEAR_MONTH FROM '2010-05-19');
 ```
 
 **输出:**
 
-```
+```sql
 201005
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT EXTRACT(MINUTE_MICROSECOND FROM '2014-05-19 08:44:21.000001');
 ```
 
 **输出:**
 
-```
+```sql
 4421000001
 ```
 
@@ -61,7 +61,7 @@ SELECT EXTRACT(MINUTE_MICROSECOND FROM '2014-05-19 08:44:21.000001');
 
 **语法:**
 
-```
+```sql
 DAYOFYEAR(date_value)
 ```
 
@@ -73,36 +73,36 @@ DAYOFYEAR(date_value)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DAYOFYEAR('2015-12-31');
 ```
 
 **输出:**
 
-```
+```sql
 365
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DAYOFYEAR('2018-05-20')
 ```
 
 **输出:**
 
-```
+```sql
 140
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT DAYOFYEAR('2020-01-02')
 ```
 
 **输出:**
 
-```
+```sql
 2
 ```

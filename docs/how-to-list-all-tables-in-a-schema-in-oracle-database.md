@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 SELECT * FROM SYSOBJECTS 
 WHERE XTYPE='U';
 ```
@@ -23,7 +23,7 @@ WHERE XTYPE='U';
 
 **查询:**
 
-```
+```sql
 SELECT NAME,CRDATE,REFDATE 
 FROM SYSOBJECTS WHERE XTYPE='U';
 ```
@@ -36,7 +36,7 @@ FROM SYSOBJECTS WHERE XTYPE='U';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM SYSOBJECTS;
 ```
 
@@ -48,7 +48,7 @@ SELECT * FROM SYSOBJECTS;
 
 **查询:**
 
-```
+```sql
 SELECT NAME,CRDATE,REFDATE
 FROM SYSOBJECTS;
 ```

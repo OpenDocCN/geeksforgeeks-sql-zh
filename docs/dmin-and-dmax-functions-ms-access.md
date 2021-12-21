@@ -6,7 +6,7 @@
 
 MS Access 中的 DMin()函数用于确定一组指定记录(一个域)中的最小值。DMin 函数返回满足标准的最小值。如果表达式识别数值数据，DMin 函数返回数值。如果表达式识别字符串数据，它们将返回按字母顺序排列的第一个字符串。DMin 函数和最小函数的区别在于，在 d Min 函数中，在对数据进行分组之前先对值进行评估，而在最小函数中，在对字段表达式中的值进行评估之前先对数据进行分组。
 
-```
+```sql
 Syntax : DMin ( expr , domain , criteria)
 ```
 
@@ -34,7 +34,7 @@ Syntax : DMin ( expr , domain , criteria)
 **示例-1 :**
 寻找最低产品价格
 
-```
+```sql
 Select DMin("Product_Price", "ProcuctDetails") as Min_Price;
 
 ```
@@ -48,7 +48,7 @@ Select DMin("Product_Price", "ProcuctDetails") as Min_Price;
 **示例-2 :**
 查找给定条件下的最小产品价格，其中产品 id 为 104。
 
-```
+```sql
 Select DMin("Product_Price", "ProcuctDetails","Product_Id  = 104") as Min_Price;
 
 ```
@@ -65,7 +65,7 @@ MS Access 中的 DMax()函数用于确定一组指定记录(一个域)中的最�
 
 **语法–**
 
-```
+```sql
 DMax( expr , domain , criteria)
 ```
 
@@ -93,7 +93,7 @@ DMax( expr , domain , criteria)
 **例-1 :**
 求最高产品价格。
 
-```
+```sql
 Select DMax("Product_Price", "ProcuctDetails") as Max_Price;
 
 ```
@@ -107,7 +107,7 @@ Select DMax("Product_Price", "ProcuctDetails") as Max_Price;
 **例-2 :**
 求给定条件下产品 id 为 103 的最大产品价格。
 
-```
+```sql
 Select DMax("Product_Price", "ProcuctDetails","Product_Id  = 103") as Max_Price;
 
 ```

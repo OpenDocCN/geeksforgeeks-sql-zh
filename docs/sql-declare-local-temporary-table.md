@@ -6,7 +6,7 @@
 
 **语法–**
 
-```
+```sql
 DECLARE LOCAL TEMPORARY TABLE table-name
 ( column-name [ column-value ] );
 
@@ -14,7 +14,7 @@ DECLARE LOCAL TEMPORARY TABLE table-name
 
 **示例:**
 
-```
+```sql
 DECLARE LOCAL TEMPORARY TABLE TempGeek ( number INT );
 
 INSERT INTO Geeks 
@@ -38,7 +38,7 @@ from TempGeek;
 **示例–**
 您可以通过输入以下命令来创建本地临时表:
 
-```
+```sql
 declare local temporary table Geektable
 
 ```
@@ -51,7 +51,7 @@ declare local temporary table Geektable
 
 **示例–**
 
-```
+```sql
 DECLARE LOCAL TEMPORARY TABLE user1.Gfgt(col1 int);
 DECLARE LOCAL TEMPORARY TABLE user.Gfgt(col1 int);
 
@@ -64,7 +64,7 @@ DECLARE LOCAL TEMPORARY TABLE user.Gfgt(col1 int);
 **示例–**
 考虑以下顺序:
 
-```
+```sql
 CREATE TABLE Geeks (num int);
 INSERT INTO Geeks VALUES (9), (8) ;
 
@@ -81,7 +81,7 @@ INSERT INTO Geeks VALUES (9), (8) ;
 
 声明本地临时表极客；
 
-```
+```sql
 INSERT INTO Geeks VALUES (6), (7);
 
 ```
@@ -95,7 +95,7 @@ INSERT INTO Geeks VALUES (6), (7);
 
 </center>
 
-```
+```sql
 SELECT * 
 FROM Geeks; 
 ```

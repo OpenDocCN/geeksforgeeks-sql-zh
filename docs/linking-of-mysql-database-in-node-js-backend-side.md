@@ -12,7 +12,7 @@
 
 **模块安装:**要下载安装 **mysql** 模块，打开命令终端，执行以下命令:
 
-```
+```sql
 npm install mysql
 ```
 
@@ -22,7 +22,7 @@ npm install mysql
 
 ## java 描述语言
 
-```
+```sql
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -52,7 +52,7 @@ con.connect(function (err) {
 
 使用以下命令运行 **db.js** 文件:
 
-```
+```sql
 node db.js
 ```
 
@@ -68,7 +68,7 @@ node db.js
 
 ## java 描述语言
 
-```
+```sql
 var mysql = require('mysql');
 var con = mysql.createConnection({
     host: "localhost",
@@ -119,7 +119,7 @@ con.connect(function (err) {
 
 使用以下命令运行 **table.js** 文件:
 
-```
+```sql
 node table.js
 ```
 

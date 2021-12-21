@@ -8,7 +8,7 @@
 
 **示例:**
 
-```
+```sql
 Input: a = 46, b = 67, c = 21
 Output: 67
 
@@ -21,7 +21,7 @@ Output: 9887
 
 ## 结构化查询语言
 
-```
+```sql
 --To find the greatest number
 -- among given three numbers
 DECLARE
@@ -56,6 +56,6 @@ END;
 
 **输出:**
 
-```
+```sql
 Greatest number is 67
 ```

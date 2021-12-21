@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 POWER(m, n)
 ```
 
@@ -23,7 +23,7 @@ POWER(m, n)
 
 **示例-1 :**
 
-```
+```sql
 SELECT POWER(Score) AS POWER_Score
 FROM IPL
 WHERE Teamname='CSK';
@@ -36,7 +36,7 @@ WHERE Teamname='CSK';
 
 **示例-2 :**
 
-```
+```sql
 SELECT (POWER(7, 2) - POWER(2, 4)) AS POWER_VALUE;
 ```
 
@@ -47,7 +47,7 @@ SELECT (POWER(7, 2) - POWER(2, 4)) AS POWER_VALUE;
 
 **示例-3 :**
 
-```
+```sql
 SELECT (POWER(10, 0) * POWER(2, 3)) AS POWER_VALUE;
 ```
 
@@ -61,7 +61,7 @@ SELECT (POWER(10, 0) * POWER(2, 3)) AS POWER_VALUE;
 
 **语法:**
 
-```
+```sql
 SELECT SUM(aggregate_expression)
 FROM tables
 [WHERE conditions];
@@ -71,7 +71,7 @@ FROM tables
 
 **示例-1 :**
 
-```
+```sql
 SELECT SUM(Score) AS TOTAL_Score
 FROM IPL;
 ```
@@ -83,7 +83,7 @@ FROM IPL;
 
 **示例-2 :**
 
-```
+```sql
 SELECT (SUM(Score) + 100) AS TOTAL_Score
 FROM IPL
 WHERE Score<200;
@@ -96,7 +96,7 @@ WHERE Score<200;
 
 **示例-3 :**
 
-```
+```sql
 SELECT (SUM(Score) * 2) AS TOTAL_Score
 FROM IPL
 WHERE Score>170;
@@ -112,7 +112,7 @@ WHERE Score>170;
 
 **语法:**
 
-```
+```sql
 PI( )
 ```
 
@@ -120,36 +120,36 @@ PI( )
 
 **示例-1 :**
 
-```
+```sql
 SELECT PI();
 ```
 
 **输出:**
 
-```
+```sql
 3.141593
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT PI()*3.000000000000000;
 ```
 
 **输出:**
 
-```
+```sql
 9.424777960769380
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT PI()+5;
 ```
 
 **输出:**
 
-```
+```sql
  8.141593
 ```

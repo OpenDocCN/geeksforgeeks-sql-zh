@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 TRUNC( number, decimal_places )
 ```
 
@@ -31,7 +31,7 @@ TRUNC( number, decimal_places )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number := 5.5;
 
@@ -43,7 +43,7 @@ END;
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -51,7 +51,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 5;
    Test_Number number2 := 0;
@@ -65,7 +65,7 @@ END;
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -73,7 +73,7 @@ END;
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 15.3123;
    Test_Number number2 := 2;
@@ -87,7 +87,7 @@ END;
 
 **输出:**
 
-```
+```sql
 15.31
 ```
 

@@ -14,7 +14,7 @@
 
 **SYNTAX:**
 
-```
+```sql
 SELECT VIEW_NAME FROM USER_VIEWS;
 
         *OR*
@@ -23,13 +23,13 @@ SELECT * FROM USER_VIEWS;
 
 ```
 
-```
+```sql
 Input : SELECT VIEW_NAME FROM USER_VIEWS;
 Output :
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_VIEWS;
 Output :
 
@@ -39,7 +39,7 @@ Output :
 
 **SYNTAX:**
 
-```
+```sql
 SELECT SEQUENCE_NAME FROM USER_SEQUENCES;
 
         *OR*
@@ -48,13 +48,13 @@ SELECT * FROM USER_SEQUENCES;
 
 ```
 
-```
+```sql
 Input : SELECT SEQUENCE_NAME FROM USER_SEQUENCES;
 Output :
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_SEQUENCES;
 Output :
 
@@ -64,7 +64,7 @@ Output :
 
 **SYNTAX:**
 
-```
+```sql
 SELECT INDEX_NAME FROM USER_INDEXES;
 
         *OR*
@@ -73,13 +73,13 @@ SELECT * FROM USER_INDEXS;
 
 ```
 
-```
+```sql
 Input : SELECT INDEX_NAME FROM USER_INDEXES;
 Output :
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_INDEXES;
 Output :
 
@@ -89,7 +89,7 @@ Output :
 
 **SYNTAX:**
 
-```
+```sql
 SELECT TABLE_NAME FROM USER_TABLES;
 
         *OR*
@@ -98,13 +98,13 @@ SELECT * FROM USER_TABLES;
 
 ```
 
-```
+```sql
 Input : SELECT TABLE_NAME FROM USER_TABLES;
 Output :
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_TABLES;
 Output :
 
@@ -114,7 +114,7 @@ Output :
 
 **SYNTAX:**
 
-```
+```sql
 SELECT SYNONYM_NAME FROM USER_SYNONYMS;
 
         *OR*
@@ -123,13 +123,13 @@ SELECT * FROM USER_SYNONYMS;
 
 ```
 
-```
+```sql
 Input : SELECT SYNONYM_NAME FROM USER_SYNONYMS;
 Output : 
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_SYNONYMS;
 Output : 
 
@@ -139,7 +139,7 @@ Output :
 
 **SYNTAX:**
 
-```
+```sql
 SELECT TRIGGER_NAME FROM USER_TRIGGERS;
 
         *OR*
@@ -148,13 +148,13 @@ SELECT * FROM USER_TRIGGERS;
 
 ```
 
-```
+```sql
 Input : SELECT TRIGGER_NAME FROM USER_TRIGGERS;
 Output : 
 
 ```
 
-```
+```sql
 Input : SELECT * FROM USER_TRIGGERS;
 Output : 
 

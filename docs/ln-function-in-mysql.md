@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 LN(X)
 ```
 
@@ -22,7 +22,7 @@ LN()函数接受语法中如上所述的一个参数，描述如下。
 **示例-1 :**
 使用 LN()函数，以 e 为底数的给定数字的对数。
 
-```
+```sql
 SELECT LN(1000) AS Ln_Val ;
 
 ```
@@ -36,7 +36,7 @@ SELECT LN(1000) AS Ln_Val ;
 **例-2 :**
 使用 LN()函数求 0 的对数。
 
-```
+```sql
 SELECT LN(0) AS Ln_Val ;
 
 ```
@@ -50,7 +50,7 @@ SELECT LN(0) AS Ln_Val ;
 **例-3:**
 LN 函数也可以用来求一列数据的以 e 为基数的对数值。演示创建一个名为“产品”的表。
 
-```
+```sql
 CREATE TABLE Product(
 Product_id INT AUTO_INCREMENT,  
 Product_name VARCHAR(100) NOT NULL,
@@ -65,7 +65,7 @@ PRIMARY KEY(Product_id)
 **插入产品表:**
 现在向产品表插入一些数据–
 
-```
+```sql
 INSERT INTO  
 Product(Product_name, Buying_price, Selling_price, Service_grade)
 VALUES
@@ -80,7 +80,7 @@ VALUES
 **从表中读取数据:**
 显示产品表中的所有数据–
 
-```
+```sql
 Select * from Product;
 
 ```
@@ -97,7 +97,7 @@ Select * from Product;
 
 现在，我们将找到 Service_grade 列中所有记录的以 e 为基数的对数值。
 
-```
+```sql
 Select Product_id, Product_name, Buying_price,  
 Selling_price, Service_grade,
 LN(Service_grade) AS GRADELOGN  

@@ -39,7 +39,7 @@ MySQL 支持 3 种排名函数-
 
 1.  **dense_rank()** function-
 
-    ```
+    ```sql
     SELECT subjects, s_name, mark, dense_rank() 
     OVER ( partition by subjects order by mark desc ) 
     AS 'dense_rank' FROM result;
@@ -76,7 +76,7 @@ MySQL 支持 3 种排名函数-
 
 2.  **rank()** function-
 
-    ```
+    ```sql
     SELECT subjects, s_name, mark, rank() 
     OVER ( partition by subjects order by mark desc ) 
     AS 'rank' FROM result;
@@ -109,7 +109,7 @@ MySQL 支持 3 种排名函数-
 
 3.  **percent_rank()** function-
 
-    ```
+    ```sql
     SELECT subjects, s_name, mark, percent_rank() 
     OVER ( partition by subjects order by mark ) 
     AS 'percent_rank' FROM result;
@@ -138,7 +138,7 @@ MySQL 支持 3 种排名函数-
 
     percent_rank 使用以下公式计算-
 
-    ```
+    ```sql
     (rank - 1) / (rows - 1)
 
     ```
@@ -149,7 +149,7 @@ MySQL 支持 3 种排名函数-
 
     要清除此公式，请考虑以下查询-
 
-    ```
+    ```sql
     SELECT subjects, s_name, mark, rank() 
     OVER ( partition by subjects order by mark )-1 
     AS 'rank-1', count(*) over (partition by subjects)-1

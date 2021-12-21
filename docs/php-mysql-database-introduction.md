@@ -39,7 +39,7 @@ PHP 5 及更高版本可以使用以下方式使用 MySQL 数据库:
 
     **语法**:
 
-```
+```sql
 <?php
 $servername = "localhost";
 $username = "username";
@@ -66,7 +66,7 @@ echo "Connected successfully";
 
     **语法:**
 
-```
+```sql
 <?php
 $servername = "localhost";
 $username = "username";
@@ -93,7 +93,7 @@ echo "Connected successfully";
 
     **语法:**
 
-```
+```sql
 <?php
 $servername = "localhost";
 $username = "username";
@@ -125,20 +125,20 @@ catch(PDOException $e)
 *   **使用 MySQLi 面向对象程序**
     **语法**
 
-```
+```sql
 $conn->close();
 ```
 
 *   **使用 MySQLi 程序程序**
     **语法**
 
-```
+```sql
 mysqli_close($conn);
 ```
 
 *   **使用 PDO 程序**
     **语法**
 
-```
+```sql
 $conn = null;
 ```

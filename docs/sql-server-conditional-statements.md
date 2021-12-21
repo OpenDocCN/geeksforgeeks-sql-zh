@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 WHILE condition
 BEGIN
    {...statements...}
@@ -53,7 +53,7 @@ END;
 
 **语法:**
 
-```
+```sql
 CASE Expression
    WHEN Con_1 THEN Output1 
    WHEN Con_2 THEN Output2

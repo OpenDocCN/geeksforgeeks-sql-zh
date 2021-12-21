@@ -10,7 +10,7 @@
 
 使用以下命令创建一个名为 GeeksforGeeks 的数据库:
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksforGeeks
 
 要使用 GeeksforGeeks 数据库，请使用以下命令:
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -30,7 +30,7 @@ USE GeeksforGeeks
 
 使用以下 SQL 查询创建一个包含 4 列的 student_details 表:
 
-```
+```sql
 CREATE TABLE student_details(
 stu_id VARCHAR(8),
 branch VARCHAR(20),
@@ -45,7 +45,7 @@ backlogs VARCHAR(10)
 
 使用以下 SQL 查询查看数据库中表的描述:
 
-```
+```sql
 EXEC sp_columns student_details;
 ```
 
@@ -55,7 +55,7 @@ EXEC sp_columns student_details;
 
 使用以下 SQL 查询将行插入学生详细信息表:
 
-```
+```sql
 INSERT INTO student_details VALUES
   ('191401','E.C.E','ECPC-251', 'NO'),
   ('191302','I.C.E','ICPC-221','YES'),
@@ -73,7 +73,7 @@ INSERT INTO student_details VALUES
 
 使用以下 SQL 查询在插入行后查看表 student_details:
 
-```
+```sql
 SELECT* FROM employee_details;
 ```
 
@@ -87,14 +87,14 @@ SELECT* FROM employee_details;
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name
 WHERE req_column NOT IN(data1,data2,data3,....)
 ```
 
 **查询:**
 
-```
+```sql
 SELECT* FROM student_details
 WHERE branch NOT IN ('E.C.E','I.C.E','M.E');
 ```
@@ -105,14 +105,14 @@ WHERE branch NOT IN ('E.C.E','I.C.E','M.E');
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name
 WHERE condition1 AND condition2 AND condition3;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT* FROM student_details
 WHERE branch<>'E.C.E' AND branch <> 'I.C.E' AND branch<>'M.E';
 ```
@@ -121,7 +121,7 @@ WHERE branch<>'E.C.E' AND branch <> 'I.C.E' AND branch<>'M.E';
 
 **2。**查询更新除了中文系和中文系的学生以外没有其他人的积压
 
-```
+```sql
 UPDATE student_details
 SET backlogs='NO' WHERE branch NOT IN ('C.E','M.E');
 SELECT* FROM student_details;

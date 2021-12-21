@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 Create Table Student
 (StudentID Int, StudentFirstName Varchar(40),
 studentLastName Varchar(40),
@@ -25,7 +25,7 @@ Age Int, Course Varchar(60))
 
 **查询:**
 
-```
+```sql
 Insert Into Student Values
 (1001,'Sahil','Kumar',19,'B.Com'),
 1002,'Himanshu','Saini',20,'B.Tech'),
@@ -40,7 +40,7 @@ Insert Into Student Values
 
 **查询:**
 
-```
+```sql
 Select * From student;
 ```
 
@@ -52,7 +52,7 @@ Select * From student;
 
 **语法:**
 
-```
+```sql
 Select Column_Name From Table_Name
 Order By Column_Name Desc
 ```
@@ -71,7 +71,7 @@ Order By Column_Name Desc
 
 **查询:**
 
-```
+```sql
 Select Top 3 Column_Name From Table_Name
 Order By Column_Name Desc
 ```

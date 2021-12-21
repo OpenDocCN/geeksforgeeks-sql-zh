@@ -9,7 +9,7 @@
 
 **示例:**
 
-```
+```sql
 create table student (rollnumber int primary key, name varchar2(30), course varchar2(10));
 Insert into student values(111, 'ABC', 'Chemical');
 Insert into student values(112, 'JJP', 'Mech');
@@ -22,7 +22,7 @@ Insert into student values(112, 'JJP', 'Mech');
 
 这些值被插入到表中。假设插入了下面给出的值:
 
-```
+```sql
 Insert into student values(111, 'MAB', 'EEE');
 
 ```
@@ -34,7 +34,7 @@ Insert into student values(111, 'MAB', 'EEE');
 
 **示例:**
 
-```
+```sql
 create table marks (rollnumber int, name varchar2(30), course varchar2(30)
 references student, marks int);
 
@@ -48,7 +48,7 @@ references student, marks int);
 **例:**
 一个名字是不同字母的组合。我们可以将 name 列放在 char 数据类型中，但是 char 不满足条件，因此 varchar 最好用于 name。
 
-```
+```sql
 name varchar2(30);
 
 ```

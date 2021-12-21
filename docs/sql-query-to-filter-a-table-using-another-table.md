@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * FROM table_name WHERE
 column_name=( SELECT column_name FROM table_name);
 ```
@@ -21,7 +21,7 @@ column_name=( SELECT column_name FROM table_name);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -31,7 +31,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -41,7 +41,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 NAME VARCHAR(20),
 AGE int,
@@ -51,7 +51,7 @@ INCOME int);
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 NAME VARCHAR(20),
 AGE int,
@@ -62,7 +62,7 @@ INCOME int);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 ('Romy',23,'Delhi',400000),
 ('Pushkar',23,'Delhi',700000),
@@ -78,7 +78,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES
 ('Fanny',25,600000 ),
 ('Prem', 30,450000),
@@ -93,7 +93,7 @@ INSERT INTO demo_table2 VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -103,7 +103,7 @@ SELECT * FROM demo_table1;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -119,7 +119,7 @@ SELECT * FROM demo_table2;
 
 **查询:**
 
-```
+```sql
 SELECT MAX(INCOME) FROM demo_table2;
 ```
 
@@ -127,7 +127,7 @@ SELECT MAX(INCOME) FROM demo_table2;
 
 **最终查询:**
 
-```
+```sql
 SELECT * FROM demo_table WHERE INCOME > (SELECT MAX(INCOME) FROM demo_table2);
 ```
 

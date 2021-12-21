@@ -16,7 +16,7 @@
 
 使用以下步骤在 cmd 提示符下为数据创建一个新目录。
 
-```
+```sql
 "Search" button ⇒ Enter "cmd" ⇒ Click on "Command Prompt" 
 ```
 
@@ -24,13 +24,13 @@
 
 *   光盘文档(将进入文件夹)
 
-    ```
+    ```sql
     C:Users\Uesrname>cd Documents
     ```
 
 *   now you can create a directory with the keyword mkdir.
 
-    ```
+    ```sql
     mkdir mysql-files
     ```
 
@@ -41,7 +41,7 @@
 *   开始一个 CMD。
 *   转到重命名为 mysql 后保存的路径，然后使用关键字 **cd** 文件名转到 bin 文件夹。
 
-    ```
+    ```sql
     C:Users\Uesrname>cd Documents
     C:Users\Uesrname\Documents>cd mysql
     C:Users\Uesrname\Documentsmysql>cd bin
@@ -51,7 +51,7 @@
 
 *   Execute the following command in the cmd path of bin in mysql extracted path(i.e. in the path C:Users\Uesrname\Documents\mysql\bin>).
 
-    ```
+    ```sql
     mysqld –console –initialize –basedir=(path of newly created data directory) 
     –datadir=(path of newly created data directory)
     ```
@@ -65,7 +65,7 @@
 
 *   Add the newly created data which we named as “mysql-files” in Step1.
 
-    ```
+    ```sql
     mysqld --console --datadir=(path of newly created data directory)
     ```
 
@@ -76,7 +76,7 @@
 
 *   按如下方式执行以下命令。
 
-    ```
+    ```sql
     mysql -u root -p
     ```
 
@@ -88,7 +88,7 @@
 
 *   A last step: As using it the first time, you need to alter the password (as you have used temporary password) when you open the server as follows.
 
-    ```
+    ```sql
     ALTER USER root@localhost IDENTIFIED 
     BY '<Your password>';
     ```
@@ -100,13 +100,13 @@
 
 1.  如下执行以下命令。
 
-    ```
+    ```sql
     mysqld –console –datadir=(path of newly created data directory)
     ```
 
 2.  (在 mysql 路径 bin 的另一个 cmd 窗口中)
     执行如下命令。
 
-    ```
+    ```sql
     mysql -u root -p
     ```

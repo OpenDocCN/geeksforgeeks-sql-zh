@@ -16,7 +16,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
@@ -34,7 +34,7 @@ CREATE DATABASE geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeks_data(id INT, 
                         first_name VARCHAR(255),
                         last_name VARCHAR(255),
@@ -50,7 +50,7 @@ CREATE TABLE geeks_data(id INT,
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeks_dept(id INT, 
                         dept_name VARCHAR(255),
                         PRIMARY KEY(id));
@@ -66,7 +66,7 @@ CREATE TABLE geeks_dept(id INT,
 
 **查询:**
 
-```
+```sql
 INSERT INTO geeks_data VALUES 
 (1, 'Chandan', 'Mishra', 'Mechanical'),
 (2, 'Abhinav', 'Singh', 'Electronics'),
@@ -85,7 +85,7 @@ INSERT INTO geeks_data VALUES
 
 现在我们将插入表 geeks_dept 的数据。
 
-```
+```sql
 INSERT INTO geeks_dept VALUES (1, 'Computer Science'),
                               (2, 'Electronics'),
                               (3, 'Computer Science'),
@@ -108,7 +108,7 @@ INSERT INTO geeks_dept VALUES (1, 'Computer Science'),
 
 **查询:**
 
-```
+```sql
 SELECT first_name, last_name FROM geeks_data WHERE dept IN 
                     (SELECT dept_name FROM geeks_dept WHERE id = 1);
 ```

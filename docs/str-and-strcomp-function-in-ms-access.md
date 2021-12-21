@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
  Str(number) 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT Str(100) AS ConvertToString;
 ```
 
@@ -24,7 +24,7 @@ SELECT Str(100) AS ConvertToString;
 
 **示例–**
 
-```
+```sql
 SELECT Str(421) AS ConvertToString;
 ```
 
@@ -38,13 +38,13 @@ SELECT Str(421) AS ConvertToString;
 
 **语法:**
 
-```
+```sql
 StrComp(string1, string2) 
 ```
 
 **示例–**
 
-```
+```sql
 SELECT StrComp("geeksforgeeks", "gfg") AS CompString;
 ```
 
@@ -55,7 +55,7 @@ SELECT StrComp("geeksforgeeks", "gfg") AS CompString;
 
 **示例–**
 
-```
+```sql
 SELECT StrComp("gfg", "geeksforgeeks") AS CompString;
 ```
 

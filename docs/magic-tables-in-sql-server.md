@@ -20,7 +20,7 @@
 **创建数据库:**
 使用如下 SQL 查询创建数据库 GeeksForGeeks。
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks;
 ```
 
@@ -29,7 +29,7 @@ CREATE DATABASE GeeksForGeeks;
 **使用数据库:**
 使用数据库学生使用以下 SQL 查询如下。
 
-```
+```sql
 USE GeeksForGeeks;
 ```
 
@@ -37,7 +37,7 @@ USE GeeksForGeeks;
 
 使用 SQL 查询创建学生表，如下所示:
 
-```
+```sql
 CREATE TABLE students
 ( 
  stu_id varchar(10),
@@ -51,7 +51,7 @@ CREATE TABLE students
 **验证数据库:**
 要查看数据库 GeeksForGeeks 中表的描述，请使用以下 SQL 查询，如下所示。
 
-```
+```sql
 EXEC sp_columns students;
 ```
 
@@ -60,7 +60,7 @@ EXEC sp_columns students;
 **向表中插入数据:**
 使用如下 SQL 查询向学生表中插入行:
 
-```
+```sql
 INSERT INTO students VALUES
 ('1901401','DEVA','C.S'),
 ('1901402','HARSH','C.S'),
@@ -74,7 +74,7 @@ INSERT INTO students VALUES
 **验证插入的数据:**
 使用如下 SQL 查询查看插入行后的表。
 
-```
+```sql
 SELECT * FROM students;
 ```
 
@@ -82,7 +82,7 @@ SELECT * FROM students;
 
 **在插入操作时创建触发器 T1:**
 
-```
+```sql
 CREATE TRIGGER T1 ON students
 AFTER INSERT
 AS
@@ -95,7 +95,7 @@ END
 
 **插入条目检查触发器如何检索插入的魔法表:**
 
-```
+```sql
 INSERT INTO students VALUES
 ('1901406','PRADEEP','C.S'),
 ('1901407','DEVESH','C.S');
@@ -106,7 +106,7 @@ SELECT* FROM students ;
 
 **在删除操作时创建触发 T2:**
 
-```
+```sql
 CREATE TRIGGER T2 ON students
 AFTER DELETE
 AS
@@ -119,7 +119,7 @@ END
 
 **删除条目，检查触发器如何检索删除的魔法表:**
 
-```
+```sql
 DELETE FROM students
 WHERE stu_name = 'PRADEEP';
 SELECT* FROM students ;
@@ -129,7 +129,7 @@ SELECT* FROM students ;
 
 **在更新操作时创建触发 T3:**
 
-```
+```sql
 CREATE TRIGGER T3 ON students
 AFTER UPDATE
 AS
@@ -143,7 +143,7 @@ END
 
 **更新条目，检查触发器如何检索已删除、已插入的魔法表，因为我们在已删除和已更新的条目中发现了一个旧条目，该条目位于已插入的魔法表中:**
 
-```
+```sql
 UPDATE students SET stu_name= 'DEVANSH' 
 WHERE stu_id = '1901401'
 SELECT* FROM students

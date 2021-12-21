@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 BIT_XOR(expr)
 ```
 
@@ -19,7 +19,7 @@ BIT_XOR(expr)
 **示例-1 :**
 为了演示 BIT_XOR 函数的工作原理，我们必须首先创建一个名为 EmployeeDetails 的表。
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 Employee_Id INT AUTO_INCREMENT,  
 Employee_Name VARCHAR(100) NOT NULL,
@@ -33,7 +33,7 @@ PRIMARY KEY(Employee_Id)
 
 现在，将值插入表中–
 
-```
+```sql
 INSERT INTO EmployeeDetails (Employee_Name, 
 Working_At, Work_Location, Joining_Date, Annual_Income)
 VALUES
@@ -51,7 +51,7 @@ VALUES
 
 要验证是否使用了以下命令–
 
-```
+```sql
 Select * from EmployeeDetails;
 ```
 
@@ -72,7 +72,7 @@ Select * from EmployeeDetails;
 
 现在我们将从员工详细信息表中找到所有员工公司年收入的位异或。
 
-```
+```sql
 SELECT Working_At, BIT_XOR(Annual_Income) AS BITXORINCOME 
 FROM EmployeeDetails 
 Group By Working_At;
@@ -89,7 +89,7 @@ Group By Working_At;
 **示例-2 :**
 现在我们将从 EmployeeDetails 表中找到所有员工年收入的 BIT_XOR 位置。
 
-```
+```sql
 SELECT Work_Location, BIT_XOR(Annual_Income) AS BITORINCOME 
 FROM EmployeeDetails 
 Group By Work_Location;
@@ -105,7 +105,7 @@ Group By Work_Location;
 **示例-3 :**
 首先创建一个学生标记表–
 
-```
+```sql
 CREATE TABLE StudentMarks (
 StudentId INT AUTO_INCREMENT,  
 StudentName VARCHAR(100) NOT NULL,
@@ -121,7 +121,7 @@ PRIMARY KEY(StudentId)
 
 将数据插入表格–
 
-```
+```sql
 INSERT INTO StudentMarks
 (StudentName, Class, Roll, Sub1Mark, Sub2Mark, Sub3Mark, TotalMarks)
 VALUES
@@ -135,7 +135,7 @@ VALUES
 
 要验证是否使用了以下命令–
 
-```
+```sql
 SELECT * FROM StudentMarks;
 ```
 
@@ -152,7 +152,7 @@ SELECT * FROM StudentMarks;
 
 现在我们将从学生成绩表中找到所有学生班级总成绩的位异或。
 
-```
+```sql
 SELECT Class, BIT_XOR(TotalMarks) AS BITXORMARKS 
 FROM StudentMarks 
 Group By Class;

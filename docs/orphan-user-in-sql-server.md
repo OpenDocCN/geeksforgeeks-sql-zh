@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 USE DATABASENAME
 EXEC sp_change_users_login report
 GO
@@ -17,7 +17,7 @@ GO
 **示例–**
 让我们假设已经使用 Server2 中的以下命令将 **GeeksDb** 从 Server1 恢复到 Server2。
 
-```
+```sql
 USE GeeksDb
 EXEC sp_change_users_login report
 GO 
@@ -43,7 +43,7 @@ GO
 
     **语法:**
 
-    ```
+    ```sql
     USE MASTER
     CREATE LOGIN [LoginName] 
     WITH PASSWORD = 'Password',
@@ -52,7 +52,7 @@ GO
 
     **示例–**
 
-    ```
+    ```sql
     USE MASTER
     CREATE LOGIN [Geek1] WITH PASSWORD = 'Pa$W0rd1', 
     SID = 0x7A4X871C3EXX7C42X67B5F3CD2C35FXX 
@@ -64,7 +64,7 @@ GO
 
 首先，创建新的登录。
 
-```
+```sql
 USE MASTER
 CREATE LOGIN [LoginName] WITH PASSWORD = 'Password'
 ```
@@ -73,7 +73,7 @@ CREATE LOGIN [LoginName] WITH PASSWORD = 'Password'
 
 **语法:**
 
-```
+```sql
 USE DATABASENAME
 sp_change_users_login UPDATE_ONE, 'UserName', 'LoginName'
 GO
@@ -81,7 +81,7 @@ GO
 
 **示例–**
 
-```
+```sql
 USE MASTER
 CREATE LOGIN [Geek2] WITH PASSWORD = 'Pa$W0rd2'
 USE GeekDb
@@ -97,7 +97,7 @@ GO
 
     **语法:**
 
-    ```
+    ```sql
     USE master
     CREATE LOGIN [LoginName] WITH PASSWORD = 'Password'
 
@@ -108,7 +108,7 @@ GO
 
     **示例:**
 
-    ```
+    ```sql
     USE master
     CREATE LOGIN [Geek3] WITH PASSWORD = 'Pa$W0rd3'
     USE GeekDB
@@ -120,7 +120,7 @@ GO
 
     **语法:**
 
-    ```
+    ```sql
     USE DATABASENAME
     sp_change_users_login AUTO_FIX, 'UserName', NULL, 'Password'
     GO
@@ -128,7 +128,7 @@ GO
 
     **示例:**
 
-    ```
+    ```sql
     USE GeekDb
     sp_change_users_login AUTO_FIX, 'Geek4', NULL, 'Pa$W0rd4'
     GO 
@@ -136,7 +136,7 @@ GO
 
     **使用上述方法后获取任意数据库中的孤儿用户:**
 
-    ```
+    ```sql
     USE GeeksDb
     EXEC sp_change_users_login report
     GO 

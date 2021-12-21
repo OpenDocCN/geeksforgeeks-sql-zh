@@ -20,7 +20,7 @@
 
 </figure>
 
-```
+```sql
 Syntax:
 CREATE TABLE Table_Name AS SELECT * FROM Source_Table_Name;
 
@@ -30,7 +30,7 @@ AS: Aliasing
 
 在 MYSQL 中，我们可以使用以下命令来检查备份前后在数据库中创建的表的数量。但是，PostgreSQL 和其他版本的 SQL 不支持此命令。
 
-```
+```sql
 SHOW TABLES;
 ```
 
@@ -48,7 +48,7 @@ SHOW TABLES;
 
 **例 2:** 不强制复制所有列。我们也可以选几个专栏。
 
-```
+```sql
 Syntax:
 CREATE TABLE Table_Name AS SELECT col_1, col_2, ... FROM Source_Table_Name;
 
@@ -69,7 +69,7 @@ col: Required columns from source table
 
 到目前为止，我们已经看到了如何创建源表的克隆。在上面的备份表中，数据也随表一起复制。但是，我们也可以在不复制数据的情况下创建备份表。因此，要创建一个没有任何数据被复制的表，我们可以使用[**【WHERE】**](https://www.geeksforgeeks.org/sql-where-clause/)子句的帮助，该子句需要返回一个 FALSE 值。比如我们可以用 **WHERE 2 < 2 或者 WHERE 1=2** 。
 
-```
+```sql
 Syntax:
 CREATE TABLE Table_Name AS SELECT * FROM Source_Table_Name
 WHERE (RETURN FALSE);
@@ -93,7 +93,7 @@ FALSE: Any expression which returns FALSE. For example 4>5
 
 **例 2:** 不强制复制所有列。我们也可以选几个专栏。
 
-```
+```sql
 Syntax:
 CREATE TABLE Table_Name AS SELECT col1,col2,.... Source_Table_Name
 WHERE (RETURN FALSE);

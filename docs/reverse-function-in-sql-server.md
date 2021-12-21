@@ -15,7 +15,7 @@ SQL Server 中的这个函数是用来对所述字符串进行反转并返回输
 
 **语法:**
 
-```
+```sql
 REVERSE(string)
 ```
 
@@ -30,20 +30,20 @@ REVERSE(string)
 **示例-1 :**
 获取指定字符串的反转字符串。
 
-```
+```sql
 SELECT REVERSE('gfG');
 ```
 
 **输出:**
 
-```
+```sql
 Gfg
 ```
 
 **示例-2 :**
 使用带有变量的 REVERSE()函数，获取指定字符串的 REVERSE 字符串。
 
-```
+```sql
 DECLARE @string VARCHAR(15);  
 SET @string = 'geeksforGeeks';  
 SELECT REVERSE(@string);
@@ -52,33 +52,33 @@ SELECT REVERSE(@string);
 
 **输出:**
 
-```
+```sql
 skeeGrofskeeg
 ```
 
 **示例-3 :**
 获取一组整数的反串。
 
-```
+```sql
 SELECT REVERSE(123);
 ```
 
 **输出:**
 
-```
+```sql
 321
 ```
 
 **示例-4 :**
 获取浮点值的反向字符串。
 
-```
+```sql
 SELECT REVERSE(1.56);
 ```
 
 **输出:**
 
-```
+```sql
 65.1
 ```
 

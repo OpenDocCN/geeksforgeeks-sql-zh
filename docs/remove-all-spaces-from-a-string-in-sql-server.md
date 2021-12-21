@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 DECLARE @gfgString VARCHAR(26)= 
         '     GeeksForGeeks       ';
 
@@ -33,7 +33,7 @@ SELECT @gfgString as OriginalString,
 
 ****查询:****
 
-```
+```sql
 DECLARE @gfgString VARCHAR(26)=
         '     GeeksForGeeks       ';
 
@@ -54,7 +54,7 @@ SELECT @gfgString as OriginalString,
 
 ****查询:****
 
-```
+```sql
 DECLARE @gfgString VARCHAR(26)= 
         '     GeeksForGeeks       ';
 SELECT @gfgString as OriginalString, 
@@ -72,7 +72,7 @@ SELECT @gfgString as OriginalString,
 
 ****查询:****
 
-```
+```sql
 use GEEKSFORGEEKS
 SELECT AuthorName, LTRIM(AuthorName) as 'String after LTRIM', RTRIM(AuthorName) as 'String after RTRIM', 
 TRIM(AuthorName) as 'String after TRIM' FROM Authors;

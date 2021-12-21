@@ -8,7 +8,7 @@ MySQL 中的这个函数用于返回给定表达式中所有位的按位与。�
 
 **语法:**
 
-```
+```sql
 BIT_AND(expr)
 ```
 
@@ -28,7 +28,7 @@ BIT_AND(expr)
 
 **创建员工表–**
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 
 Employee_Id INT AUTO_INCREMENT,  
@@ -43,7 +43,7 @@ PRIMARY KEY(Employee_Id )
 
 **将数值插入表格–**
 
-```
+```sql
 INSERT INTO  
 EmployeeDetails(Employee_Name , Working_At, Work_Location, Joining_Date, Annual_Income )
 
@@ -62,7 +62,7 @@ VALUES
 
 表格将如下所示。
 
-```
+```sql
 Select * FROM EmployeeDetails;
 ```
 
@@ -81,7 +81,7 @@ Select * FROM EmployeeDetails;
 
 现在我们将从“员工详细信息”表中找到公司所有员工年收入的位与。
 
-```
+```sql
 SELECT Working_At, BIT_AND(Annual_Income) AS BITANDINCOME
 FROM employeedetails group by Working_At;
 ```
@@ -102,7 +102,7 @@ FROM employeedetails group by Working_At;
 
 现在我们将从“员工详细信息”表中找到所有员工年收入的位与。
 
-```
+```sql
 SELECT Work_Location, BIT_AND(Annual_Income) AS BITANDINCOME
 FROM EmployeeDetails group by  Work_Location;
 ```
@@ -121,7 +121,7 @@ FROM EmployeeDetails group by  Work_Location;
 
 **创建学生表–**
 
-```
+```sql
 CREATE TABLE StudentMarks
 (
 StudentId INT AUTO_INCREMENT,  
@@ -138,7 +138,7 @@ PRIMARY KEY(StudentId )
 
 **将数据插入表格–**
 
-```
+```sql
 INSERT INTO StudentMarks
 (StudentName, Class, Roll, Sub1Mark, Sub2Mark, Sub3Mark, TotalMarks)
 VALUES
@@ -152,7 +152,7 @@ VALUES
 
 表格如下。
 
-```
+```sql
 SELECT  * from StudentMarks;
 ```
 
@@ -173,7 +173,7 @@ SELECT  * from StudentMarks;
 
 现在我们将从“学生分数”表中找到所有学生班级总分数的位与。
 
-```
+```sql
 SELECT Class, BIT_AND(TotalMarks) AS BITANDMARKS
 FROM StudentMarks group by Class;
 ```

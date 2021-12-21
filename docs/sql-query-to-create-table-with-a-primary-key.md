@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE TABLE `Employee` ( `Emp_ID` VARCHAR(20) NOT NULL ,`Name` VARCHAR(50) NOT NULL ,  
 `Age` INT NOT NULL ,`Phone_No` VARCHAR(10) NOT NULL ,`Address` VARCHAR(100) NOT NULL ,
  PRIMARY KEY (`Emp_ID`));
@@ -22,7 +22,7 @@ CREATE TABLE `Employee` ( `Emp_ID` VARCHAR(20) NOT NULL ,`Name` VARCHAR(50) NOT 
 
 **查询:**
 
-```
+```sql
 DESCRIBE Employee;
 Or 
 DESC Employee;
@@ -38,7 +38,7 @@ DESC Employee;
 
 **查询:**
 
-```
+```sql
 ALTER TABLE Employee ADD PRIMARY KEY (Phone_No);
 ```
 
@@ -58,7 +58,7 @@ ALTER TABLE Employee ADD PRIMARY KEY (Phone_No);
 
 **查询:**
 
-```
+```sql
 CREATE TABLE `Employee` ( `Emp_ID` VARCHAR(20) NOT NULL ,
                       `Name` VARCHAR(50) NOT NULL ,  
                       `Age` INT NOT NULL ,  
@@ -77,7 +77,7 @@ CREATE TABLE `Employee` ( `Emp_ID` VARCHAR(20) NOT NULL ,
 
 **查询:**
 
-```
+```sql
 ALTER TABLE Employee
  ADD CONSTRAINT PK_CUSTID PRIMARY KEY (Emp_ID, NAME);
  DESC Employee;

@@ -8,7 +8,7 @@
 
 *   **USER_CONSTRAINTS Data Dictionary:** This data dictionary contains information about each constraint used in a database along with constraint specific information.
 
-    ```
+    ```sql
     DESC USER_CONSTRAINTS;
 
     Name              Null     Type         
@@ -38,7 +38,7 @@
 
     约束类型有:
 
-    ```
+    ```sql
     C - Check constraint on a table  
     P - Primary key  
     U - Unique key  
@@ -53,7 +53,7 @@
 
     现在考虑下面的源表“SDF”:
 
-    ```
+    ```sql
     SUPPNO  SNAME   STATUS  CITY
     21    JONYY    25    NY
     22    MIKKY    11    LA
@@ -65,7 +65,7 @@
 
     用于检查此表约束的查询:
 
-    ```
+    ```sql
     SELECT CONSTRAINT_NAME, SEARCH_CONDITION AS CONSTRAINT_TYPE 
     FROM USER_CONSTRAINTS 
     WHERE TABLE_NAME='SDF';
@@ -81,7 +81,7 @@
 
 *   **用户 _ CONS _ 列数据字典：**
 
-```
+```sql
 DESC USER_CONS_COLUMNS;
 
 Name            Null     Type           
@@ -96,7 +96,7 @@ POSITION                 NUMBER
 
 查询以检查带有约束的 SDF 表的列:
 
-```
+```sql
 SELECT * FROM USER_CONS_COLUMNS WHERE TABLE_NAME='SDF';
 
 ```
@@ -110,7 +110,7 @@ SELECT * FROM USER_CONS_COLUMNS WHERE TABLE_NAME='SDF';
 
 *   **Using Cartesian Product to get Complete information on constraints:**
 
-    ```
+    ```sql
     SELECT A.CONSTRAINT_NAME, A.CONSTRAINT_TYPE, B.COLUMN_NAME, B.TABLE_NAME
     FROM 
     USER_CONSTRAINTS A,

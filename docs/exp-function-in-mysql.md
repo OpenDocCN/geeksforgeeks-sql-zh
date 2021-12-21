@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 EXP(X)
 
 ```
@@ -20,7 +20,7 @@ EXP(X)
 **示例-1 :**
 使用 EXP()函数计算 e 的 1 次方。
 
-```
+```sql
 SELECT EXP(1) AS Exp_Val ;
 
 ```
@@ -34,7 +34,7 @@ SELECT EXP(1) AS Exp_Val ;
 **示例-2 :**
 使用 EXP()函数计算 e 升至-3 的幂。
 
-```
+```sql
 SELECT EXP(-3) AS Exp_Val ;
 
 ```
@@ -48,7 +48,7 @@ SELECT EXP(-3) AS Exp_Val ;
 **示例-3:**
 EXP 函数也可以用在一列数据中。演示创建一个名为“产品”的表。
 
-```
+```sql
 CREATE TABLE Product(
 Product_id INT AUTO_INCREMENT,  
 Product_name VARCHAR(100) NOT NULL,
@@ -62,7 +62,7 @@ PRIMARY KEY(Product_id)
 
 **现在向产品表中插入一些数据–**
 
-```
+```sql
 INSERT INTO  
 Product(Product_name, Buying_price, Selling_price, Service_grade)
 VALUES
@@ -76,7 +76,7 @@ VALUES
 
 **显示产品表中的所有数据–**
 
-```
+```sql
 Select * from Product;
 
 ```
@@ -91,7 +91,7 @@ Select * from Product;
 
 现在，我们将查找 Service_grade 列中所有记录的 exp 值。
 
-```
+```sql
 Select Product_id, Product_name, Buying_price,  
 Selling_price, Service_grade,
 EXP(Service_grade) AS EXPGRADE  

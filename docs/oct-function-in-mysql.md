@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 OCT(number)
 
 ```
@@ -20,7 +20,7 @@ OCT(number)
 **示例-1 :**
 使用 OCT 函数对十进制数 0 进行八进制表示。
 
-```
+```sql
 SELECT OCT(0) AS Oct_number ;
 
 ```
@@ -34,7 +34,7 @@ SELECT OCT(0) AS Oct_number ;
 **示例-2 :**
 使用 OCT 函数对十进制数 2020 进行八进制表示。
 
-```
+```sql
 SELECT OCT( 2020 ) AS Oct_number ;
 
 ```
@@ -48,7 +48,7 @@ SELECT OCT( 2020 ) AS Oct_number ;
 **示例-3 :**
 使用 OCT 函数查找列中所有十进制数的八进制表示。为了演示，让我们创建一个名为 Player 的表。
 
-```
+```sql
 CREATE TABLE Player(
 
 Player_id INT AUTO_INCREMENT,  
@@ -63,7 +63,7 @@ PRIMARY KEY(Player_id )
 
 现在，向玩家表中插入一些数据–
 
-```
+```sql
 INSERT INTO  
 Player(Player_name, Playing_team, Run_Scored)
 VALUES
@@ -81,7 +81,7 @@ VALUES
 
 因此，玩家表是–
 
-```
+```sql
 SELECT * FROM Player;
 
 ```
@@ -100,7 +100,7 @@ SELECT * FROM Player;
 
 现在，我们将使用华侨城函数找到每个玩家在八进制数中的得分。
 
-```
+```sql
 SELECT  
 Player_id, Player_name,
 Playing_team, OCT(Run_Scored) AS RunInOctal

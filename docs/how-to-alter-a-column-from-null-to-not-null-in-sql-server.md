@@ -12,19 +12,19 @@
 
 #### 步骤 1:创建数据库
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
 #### 步骤 2:使用数据库
 
-```
+```sql
 USE GFG
 ```
 
 #### 步骤 3:创建一个带有空列的表
 
-```
+```sql
 CREATE TABLE gfgTutorial(
 id integer,
 Name varchar(20)
@@ -33,7 +33,7 @@ Name varchar(20)
 
 #### 描述表格
 
-```
+```sql
 sp_help 'dbo.gfgTutorial'
 ```
 
@@ -41,7 +41,7 @@ sp_help 'dbo.gfgTutorial'
 
 #### 步骤 4:将 id 列更改为非空
 
-```
+```sql
 ALTER TABLE gfgTutorial ALTER COLUMN id VARCHAR (50) NOT NULL;
 ```
 

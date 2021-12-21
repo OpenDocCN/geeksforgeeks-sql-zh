@@ -27,7 +27,7 @@ CREATE TABLE 语句用于在 MySQL 中创建一个表。
 *   **Creating table using MySQLi Object-oriented Procedure**
     **Syntax :**
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";
@@ -66,7 +66,7 @@ CREATE TABLE 语句用于在 MySQL 中创建一个表。
 *   **Creating table using MySQLi Procedural procedure**
     **Syntax :**
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";
@@ -104,7 +104,7 @@ CREATE TABLE 语句用于在 MySQL 中创建一个表。
 *   **Creating table using PDO procedure**
     **Syntax :**
 
-    ```
+    ```sql
     <?php
     $servername = "localhost";
     $username = "username";

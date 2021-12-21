@@ -35,7 +35,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -45,7 +45,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -55,7 +55,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
 FIRSTNAME VARCHAR(20), LASTNAME VARCHAR(20),
 GENDER VARCHAR(20));
@@ -65,7 +65,7 @@ GENDER VARCHAR(20));
 
 **步骤 4:** 插入数据
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES
 ('ROMY', 'Kumari', 'female'), 
 ('Rinkle', 'Arora', 'female'),
@@ -88,7 +88,7 @@ INSERT INTO geeksforgeeks VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -102,7 +102,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 SELECT LASTNAME FROM geeksforgeeks WHERE LASTNAME LIKE '%a';
 ```
 
@@ -114,7 +114,7 @@ SELECT LASTNAME FROM geeksforgeeks WHERE LASTNAME LIKE '%a';
 
 **查询:**
 
-```
+```sql
 SELECT LASTNAME FROM geeksforgeeks Where LASTNAME LIKE '%ra';
 ```
 
@@ -126,7 +126,7 @@ SELECT LASTNAME FROM geeksforgeeks Where LASTNAME LIKE '%ra';
 
 **查询:**
 
-```
+```sql
 SELECT LASTNAME FROM geeksforgeeks Where LASTNAME LIKE 'A';
 ```
 

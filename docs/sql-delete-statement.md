@@ -6,7 +6,7 @@ SQL 中的 DELETE 语句用于从表中删除现有记录。根据我们在 WHER
 
 **基本语法:**
 
-```
+```sql
 DELETE FROM table_name WHERE some_condition;
 
 table_name: name of the table
@@ -23,7 +23,7 @@ some_condition: condition to choose particular record.
 
 *   **Deleting single record**: Delete the rows where NAME = ‘Ram’. This will delete only the first row.
 
-    ```
+    ```sql
     DELETE FROM Student WHERE NAME = 'Ram';
 
     ```
@@ -41,7 +41,7 @@ some_condition: condition to choose particular record.
 
 *   **Deleting multiple records**: Delete the rows from the table Student where Age is 20\. This will delete 2 rows(third row and fifth row).
 
-    ```
+    ```sql
     DELETE FROM Student WHERE Age = 20;
 
     ```
@@ -58,7 +58,7 @@ some_condition: condition to choose particular record.
 
 *   **Delete all of the records:** There are two queries to do this as shown below,
 
-    ```
+    ```sql
     query1: "DELETE FROM Student";
 
     query2: "DELETE * FROM Student";

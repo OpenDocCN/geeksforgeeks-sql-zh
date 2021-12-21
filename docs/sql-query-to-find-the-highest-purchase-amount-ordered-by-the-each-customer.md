@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE customer_order_details(
 customer_id VARCHAR(20),
 customer_name VARCHAR(20),
@@ -48,7 +48,7 @@ order_price INT)
 
 **查询:**
 
-```
+```sql
 INSERT INTO customer_order_details
 VALUES( 'C1098','PRADEEP','O3006', 20000),
 ( 'C1098','PRADEEP','O3010', 5000),
@@ -69,7 +69,7 @@ VALUES( 'C1098','PRADEEP','O3006', 20000),
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns customer_order_details
 ```
 
@@ -81,7 +81,7 @@ EXEC sp_columns customer_order_details
 
 **查询:**
 
-```
+```sql
 SELECT * FROM customer_order_details
 ```
 
@@ -93,7 +93,7 @@ SELECT * FROM customer_order_details
 
 **查询:**
 
-```
+```sql
 SELECT customer_id , MAX(order_price) AS HighestPurchase
 FROM customer_order_details
 GROUP BY customer_id 
@@ -108,7 +108,7 @@ ORDER BY MAX(order_price) DESC
 
 **查询:**
 
-```
+```sql
 SELECT customer_id , COUNT(order_id) AS NoofOrders
 FROM customer_order_details
 GROUP BY customer_id

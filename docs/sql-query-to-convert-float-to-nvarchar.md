@@ -8,13 +8,13 @@
 
 ### **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -22,7 +22,7 @@ USE geeks;
 
 我们的*极客*数据库中有以下*员工*表:
 
-```
+```sql
 CREATE TABLE person(
 id INT IDENTITY(1,1) PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
@@ -31,7 +31,7 @@ weight REAL NOT NULL);
 
 您可以使用下面的语句来查询创建的表的描述:
 
-```
+```sql
 EXEC SP_COLUMNS person;
 ```
 
@@ -41,7 +41,7 @@ EXEC SP_COLUMNS person;
 
 使用以下语句将数据添加到*人*表中:
 
-```
+```sql
 INSERT INTO person
 VALUES
 ('Yogesh Vaishnav', 62.5),
@@ -52,7 +52,7 @@ VALUES
 
 要验证表格的内容，请使用以下语句:
 
-```
+```sql
 SELECT * FROM person;
 ```
 
@@ -62,7 +62,7 @@ SELECT * FROM person;
 
 ### **使用 CONVERT()功能:**
 
-```
+```sql
 Syntax: SELECT CONVERT(<DATA_TYPE>, <VALUE>);
 --DATA_TYPE is the type we want to convert to.
 --VALUE is the value we want to convert into DATA_TYPE.
@@ -70,7 +70,7 @@ Syntax: SELECT CONVERT(<DATA_TYPE>, <VALUE>);
 
 **示例:**
 
-```
+```sql
 SELECT 'Weight of Yogesh Vaishnav is ' + CONVERT(NVARCHAR(20), weight) 
 AS person_weight
 FROM person
@@ -83,7 +83,7 @@ WHERE name = 'Yogesh Vaishnav';
 
 ### **使用 CAST()功能:**
 
-```
+```sql
 Syntax: SELECT CAST(<VALUE> AS <DATA_TYPE>);
 --DATA_TYPE is the type we want to convert to.
 --VALUE is the value we want to convert into DATA_TYPE.
@@ -91,7 +91,7 @@ Syntax: SELECT CAST(<VALUE> AS <DATA_TYPE>);
 
 **示例:**
 
-```
+```sql
 SELECT 'Weight of Yogesh Vaishnav is ' + CAST(weight as NVARCHAR(20)) 
 AS person_weight
 FROM person
@@ -106,7 +106,7 @@ WHERE name = 'Yogesh Vaishnav';
 
 虽然 format()函数对于格式化日期时间和不将一种类型转换为另一种类型很有用，但仍可用于将(或这里的 FORMAT)浮点值转换为 STR 值。
 
-```
+```sql
 Syntax: SELECT FORMAT(<VALUE> , 'actual_format';
 --actual_format is the format we want to achieve in a string form.
 --VALUE is the value we want to format according to the actual_format.
@@ -114,7 +114,7 @@ Syntax: SELECT FORMAT(<VALUE> , 'actual_format';
 
 **示例:**
 
-```
+```sql
 SELECT 'Weight of Ashish Yadav is ' + FORMAT(weight, '') --'' denotes no formating
 --i.e simply convert it to a string of characters.
 AS person_weight

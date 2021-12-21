@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 RIGHT( str, len )
 
 ```
@@ -20,7 +20,7 @@ RIGHT( str, len )
 
 **示例-1 :** 将右()函数应用于给定的字符串。
 
-```
+```sql
 SELECT RIGHT("geeksforgeeks", 4) AS Right_Str;
 
 ```
@@ -32,7 +32,7 @@ SELECT RIGHT("geeksforgeeks", 4) AS Right_Str;
 
 **示例-2 :** 将右()函数应用于数字。
 
-```
+```sql
 SELECT RIGHT(12345678, 4) AS Right_Num;
 
 ```
@@ -45,7 +45,7 @@ SELECT RIGHT(12345678, 4) AS Right_Num;
 
 **示例-3 :** 在字符串中插入>字符时，对给定字符串应用 RIGHT()函数。
 
-```
+```sql
 SELECT RIGHT("geeksforgeeks", 20) AS Right_Str;
 
 ```
@@ -58,7 +58,7 @@ SELECT RIGHT("geeksforgeeks", 20) AS Right_Str;
 
 **示例-4 :** 应用 RIGHT()函数查找表中玩家的姓氏。为了演示，创建一个名为**玩家**的表格。
 
-```
+```sql
 CREATE TABLE Player(
 
     Player_id INT AUTO_INCREMENT,  
@@ -71,7 +71,7 @@ CREATE TABLE Player(
 
 现在，在玩家表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
     Player(Player_name, Playing_team)
 
@@ -90,7 +90,7 @@ VALUES
 
 所以，玩家表是:
 
-```
+```sql
 mysql> SELECT * FROM Player;
 +-----------+----------------+--------------+
 | Player_id | Player_name    | Playing_team |
@@ -114,7 +114,7 @@ mysql> SELECT * FROM Player;
 *   Secondly, use the **length** () function to find the length of the player's name. The "len" of the right function here will be the length of the Player_name minus the position of the'' (space) character.
 *   Third, use the **right** () function to extract the last name of the player.
 
-```
+```sql
 SELECT 
     Player_name,
     RIGHT(Player_name, LENGTH(Player_name) - INSTR(Player_name, ' ')) Lastname,
@@ -126,7 +126,7 @@ FROM
 
 **输出:**
 
-```
+```sql
 +----------------+----------+--------------+
 | Player_name    | Lastname | Playing_team |
 +----------------+----------+--------------+

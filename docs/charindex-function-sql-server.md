@@ -7,7 +7,7 @@ SQL Server 中的这个函数有助于返回给定字符串中子字符串的位
 
 **语法:**
 
-```
+```sql
 CHARINDEX(substring, string, [starting_position]
 ```
 
@@ -39,7 +39,7 @@ CHARINDEX(substring, string, [starting_position]
 **示例-1 :**
 使用 CHARINDEX()函数搜索字符。
 
-```
+```sql
 SELECT CHARINDEX('k', 'GeeksforGeeks') 
 As Found ;
 ```
@@ -52,7 +52,7 @@ As Found ;
 **示例-2 :**
 使用 CHARINDEX()函数搜索子串。
 
-```
+```sql
 SELECT CHARINDEX('fully', 'Life is a journey so live it fully') 
 As Found ;
 ```
@@ -65,7 +65,7 @@ As Found ;
 **示例-3 :**
 如果子字符串与给定的字符串不匹配。
 
-```
+```sql
 SELECT CHARINDEX
 ('python', 'Geeks for geeks is a well known computer science website') 
 As Found ;
@@ -79,7 +79,7 @@ As Found ;
 **示例-4 :**
 在 CHARINDEX()函数中使用“starting _ position”参数。
 
-```
+```sql
 SELECT CHARINDEX
 ('for', 'Love for all, Hate for none', 10) 
 As Found ;
@@ -93,7 +93,7 @@ As Found ;
 **示例-5 :**
 显示 CHARINDEX()函数不区分大小写。
 
-```
+```sql
 SELECT  
 CHARINDEX('Bear', 'Bob likes Bear, beer likes bob') 
 As Found1,
@@ -109,7 +109,7 @@ As Found2 ;
 **示例-6 :**
 使用 COLLATE 子句使函数区分大小写。
 
-```
+```sql
 SELECT CHARINDEX
 ('A', 'There is always a need to Develop' COLLATE Latin1_General_CS_AS) 
 As Found;

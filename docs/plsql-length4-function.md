@@ -13,7 +13,7 @@ LENGTH4 函数返回的值是数据类型 NUMBER。
 
 **语法:**
 
-```
+```sql
 LENGTH4( string )
 ```
 
@@ -31,7 +31,7 @@ LENGTH4( string )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := NULL;
 
@@ -43,13 +43,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := '';
 
@@ -61,13 +61,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' ';
 
@@ -79,13 +79,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -97,13 +97,13 @@ END;
 
 **输出:**
 
-```
+```sql
 13 
 ```
 
 **示例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' Geeksforgeeks ';
 
@@ -115,6 +115,6 @@ END;
 
 **输出:**
 
-```
+```sql
 15 
 ```

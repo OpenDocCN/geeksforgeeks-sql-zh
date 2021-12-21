@@ -8,7 +8,7 @@
 
 **功能类别:**
 
-```
+```sql
 1. Single_row_function
 2. Aggregate_function
 3. Analytic_function
@@ -36,7 +36,7 @@
     除分组和计数(*)之外的所有聚合函数都忽略空值。您也可以在聚合函数的参数中使用 NVL 函数来替换空值。
     还可以嵌套聚合函数。例如:-
 
-```
+```sql
 SELECT AVG(MAX(salary) 
 FROM employees 
 GROUP BY department_id
@@ -82,7 +82,7 @@ AVG(MAX(salary))
 *   **标量函数:**
     可以在 SQL 中使用标量函数根据输入值返回单个值。
 
-```
+```sql
 Input: SELECT UCASE(geeksforgeeks) ;
 Output: GEEKSFORGEEKS 
 ```

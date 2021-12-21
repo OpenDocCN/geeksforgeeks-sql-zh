@@ -7,7 +7,7 @@
 
 **语法–**
 
-```
+```sql
 query1 UNION query2
 ```
 
@@ -15,7 +15,7 @@ query1 UNION query2
 
 **示例–**
 
-```
+```sql
 select name, rollnumber 
 from student 
 UNION 
@@ -61,7 +61,7 @@ from marks
 
 **语法–**
 
-```
+```sql
 query1 UNION ALL query2
 ```
 

@@ -10,7 +10,7 @@
 
 使用以下 **SQL** 查询创建数据库员工，如下所示。
 
-```
+```sql
 CREATE DATABASE employee;
 ```
 
@@ -22,7 +22,7 @@ CREATE DATABASE employee;
 
 使用数据库员工，使用如下 SQL 查询。
 
-```
+```sql
 USE employee;
 ```
 
@@ -34,7 +34,7 @@ USE employee;
 
 使用如下 SQL 查询创建一个包含 4 列的 employee_details 表。
 
-```
+```sql
   CREATE TABLE employee_details(
      emp_id VARCHAR(8),
      emp_name VARCHAR(20),
@@ -50,7 +50,7 @@ USE employee;
 
 使用如下 SQL 查询查看数据库中表的描述。
 
-```
+```sql
 EXEC sp_columns employee_details;
 ```
 
@@ -62,7 +62,7 @@ EXEC sp_columns employee_details;
 
 使用如下 SQL 查询将行插入 employee_details 表。
 
-```
+```sql
 INSERT INTO employee_details VALUES('E40001','PRADEEP','H.R',36),
     ('E40002','ASHOK','MANAGER',28),
     ('E40003','PAVAN KUMAR','ASST MANAGER',28),
@@ -78,7 +78,7 @@ INSERT INTO employee_details VALUES('E40001','PRADEEP','H.R',36),
 
 使用以下 SQL 查询在插入行后查看 employee_details 表，如下所示。
 
-```
+```sql
 SELECT * FROM employee_details;
 ```
 
@@ -90,7 +90,7 @@ SELECT * FROM employee_details;
 
 由于我们需要显示除帕拉德普之外的名称，因此我们可以在 where 子句中使用 not equal to **( < > )** 运算符来执行所需的查询，在 **WHERE** 子句中，我们可以使用任何其他条件，也可以使用其他运算符，如 **>、<、【AND】、or、NOT** 等..,
 
-```
+```sql
 SYNTAX:
 SELECT * 
 FROM table_name
@@ -101,7 +101,7 @@ WHERE condition1 ,condition 2,....;
 
 **1)使用< >操作员**
 
-```
+```sql
  SELECT* FROM employee_details
  WHERE emp_name <>'PRADEEP';
 ```
@@ -112,7 +112,7 @@ WHERE condition1 ,condition 2,....;
 
 **2)使用非操作符**
 
-```
+```sql
   SELECT* FROM employee_details
   WHERE NOT emp_name='PRADEEP';
 ```
@@ -125,7 +125,7 @@ WHERE condition1 ,condition 2,....;
 
 使用**和**运算符我们可以在这里合并不同的条件**和**用于执行以下查询。
 
-```
+```sql
   SELECT* FROM employee_details
  WHERE  emp_designation<> 'GENERAL MANAGER' AND
   emp_designation <> 'STORE MANAGER';

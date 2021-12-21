@@ -9,7 +9,7 @@ PLSQL 中 LENGTHB 函数接受的 char 可以是任何数据类型，如 CHAR、
 
 **语法:**
 
-```
+```sql
 LENGTHB( string )
 ```
 
@@ -27,7 +27,7 @@ LENGTHB( string )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := NULL;
 
@@ -39,13 +39,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := '';
 
@@ -57,13 +57,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' ';
 
@@ -75,13 +75,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -93,13 +93,13 @@ END;
 
 **输出:**
 
-```
+```sql
 13 
 ```
 
 **示例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' Geeksforgeeks ';
 
@@ -111,6 +111,6 @@ END;
 
 **输出:**
 
-```
+```sql
 15 
 ```

@@ -7,7 +7,7 @@ SQL Encrypt 函数用于使用 UNIX crypt()加密字符串。该函数基于 Uni
 
 **语法:**
 
-```
+```sql
 ENCRYPT(string, salt)
 ```
 
@@ -36,53 +36,53 @@ SQL 中的 Encrypt 函数返回一个二进制字符串。
 
 **示例-1:** 在字符串上实现加密功能。
 
-```
+```sql
 SELECT 
 ENCRYPT('xyz'); 
 ```
 
 **输出:**
 
-```
+```sql
 sf3Le/pz2ApNY 
 ```
 
 **示例-2:** 在更大的字符串上实现加密功能。
 
-```
+```sql
 SELECT 
 ENCRYPT('geeksforgeeks'); 
 ```
 
 **输出:**
 
-```
+```sql
 .mblNS3yOZxb2 
 ```
 
 **示例-3:** 通过传递两个参数在字符串上实现加密功能。
 
-```
+```sql
 SELECT 
 ENCRYPT('geeksforgeeks', '123'); 
 ```
 
 **输出:**
 
-```
+```sql
 12SrVMQf0pwFU 
 ```
 
 **示例-4:** 通过在 salt 参数中传递少于 2 个字符，在字符串上实现 Encrypt 函数。
 
-```
+```sql
 SELECT 
 ENCRYPT('geeksforgeeks', '2'); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
@@ -90,13 +90,13 @@ NULL
 
 **示例-5:** 在空字符串上实现加密功能。
 
-```
+```sql
 SELECT 
 ENCRYPT(NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 NULL 
 ```

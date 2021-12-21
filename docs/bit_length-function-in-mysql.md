@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 BIT_LENGTH(str)
 ```
 
@@ -17,7 +17,7 @@ BIT_LENGTH(str)
 **示例-1 :**
 BIT_LENGTH()函数查找字符串的位长。
 
-```
+```sql
 SELECT BIT_LENGTH("geeksforgeeks") AS BitLengthOfString;
 ```
 
@@ -30,7 +30,7 @@ SELECT BIT_LENGTH("geeksforgeeks") AS BitLengthOfString;
 **示例-2 :**
 BIT_LENGTH()函数查找数字字符串的位长。
 
-```
+```sql
 SELECT BIT_LENGTH(2020) AS BitLengthOfString;
 ```
 
@@ -53,7 +53,7 @@ BIT_LENGTH()函数，用于查找表的一列中每个字符串的位长。
 | four | rohit！rohit |
 | five | 艾什瓦里亚 |
 
-```
+```sql
 SELECT BIT_LENGTH(Student_Name) AS BitLengthOfName 
 FROM Student_Details;
 ```

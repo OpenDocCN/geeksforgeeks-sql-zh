@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 insert into table_name(column_list)
 values(values_list) 
 
@@ -17,7 +17,7 @@ values(values_list)
 **示例–**
 名为 student 的表必须插入值。必须按照以下步骤进行:
 
-```
+```sql
 insert into student (varchar2 name(20), int rollnumber, varchar2 course(50));
 values('Riya', 111, 'Computer Science'); 
 
@@ -25,14 +25,14 @@ values('Riya', 111, 'Computer Science');
 
 **输出–**
 
-```
+```sql
 1 row(s) inserted 
 
 ```
 
 要检查值是否实际插入，必须给出如下查询:
 
-```
+```sql
 select *
 from student; 
 
@@ -53,7 +53,7 @@ from student;
 
 **语法:**
 
-```
+```sql
 insert into table_name(column_list)
 values(value_list1)
 values(values_list2)
@@ -70,7 +70,7 @@ values(values_listn)
 **示例–**
 考虑一个表生。如果用户一次要输入 6 个学生的数据，必须按如下方式进行查询-
 
-```
+```sql
 insert into student(int rollnumber, varchar2(30) name, varchar2(20) course);
 values(111, 'Riya', 'CSE');
 values(112, 'Apoorva', 'ECE');
@@ -83,14 +83,14 @@ values(116, 'Deepa', 'EEE');
 
 **输出–**
 
-```
+```sql
 6 row(s) inserted 
 
 ```
 
 要检查表中是否存在这些值，必须按如下方式进行查询:
 
-```
+```sql
 select *
 from student; 
 

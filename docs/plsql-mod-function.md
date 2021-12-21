@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 MOD(a, b)
 ```
 
@@ -28,7 +28,7 @@ MOD(a, b)
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 15;
    Test_Number number2 := 4;
@@ -42,7 +42,7 @@ END;
 
 **输出:**
 
-```
+```sql
 3
 ```
 
@@ -50,7 +50,7 @@ END;
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 15;
    Test_Number number2 := 0;
@@ -64,7 +64,7 @@ END;
 
 **输出:**
 
-```
+```sql
 15
 ```
 
@@ -72,7 +72,7 @@ END;
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_Number number1 := 11.6;
    Test_Number number2 := 2.1;
@@ -86,7 +86,7 @@ END;
 
 **输出:**
 
-```
+```sql
 1.1
 ```
 

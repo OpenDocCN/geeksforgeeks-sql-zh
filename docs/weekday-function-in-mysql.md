@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 WEEKDAY(date)
 
 ```
@@ -19,14 +19,14 @@ WEEKDAY(date)
 
 **例-1:**2020 年 9 月 27 日使用 weekday()函数求当前日期的 WEEKDAY 值。
 
-```
+```sql
 SELECT WEEKDAY(NOW()) AS  WeekDay;
 
 ```
 
 **输出:**
 
-```
+```sql
 mysql> SELECT WEEKDAY(NOW()) AS WeekDay;
 +---------+
 | WeekDay |
@@ -40,14 +40,14 @@ mysql> SELECT WEEKDAY(NOW()) AS WeekDay;
 
 **示例-2 :** 使用 weekday()函数从给定的日期时间中查找工作日值。
 
-```
+```sql
 SELECT WEEKDAY ('2017-08-22 08:09:22') AS WeekDay_Value ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +---------------+
 | WeekDay_Value |
 +---------------+
@@ -60,14 +60,14 @@ SELECT WEEKDAY ('2017-08-22 08:09:22') AS WeekDay_Value ;
 
 **示例-3 :** 当日期为空时，使用 weekday()函数从给定的日期时间中查找工作日值。
 
-```
+```sql
 SELECT WEEKDAY (NULL) AS WeekDay_Value ;
 
 ```
 
 **输出:**
 
-```
+```sql
 +---------------+
 | WeekDay_Value |
 +---------------+
@@ -82,7 +82,7 @@ SELECT WEEKDAY (NULL) AS WeekDay_Value ;
 
 现在在产品表中插入一些数据:
 
-```
+```sql
 INSERT INTO 
     Product(Product_name, Buying_price, Selling_price, Selling_Date)
 VALUES
@@ -101,7 +101,7 @@ VALUES
 
 因此，产品表为:
 
-```
+```sql
 mysql> Select * from Product;
 +------------+-----------------------+--------------+---------------+--------------+
 | Product_id | Product_name          | Buying_price | Selling_price | Selling_Date |
@@ -122,7 +122,7 @@ mysql> Select * from Product;
 
 现在，我们将找到每个工作日售出的产品数量。
 
-```
+```sql
 SELECT 
     WEEKDAY (Selling_Date) WeekDay, 
     COUNT(Product_id) Product_Sold
@@ -135,7 +135,7 @@ ORDER BY WEEKDAY(Selling_Date);
 
 **输出:**
 
-```
+```sql
 +---------+--------------+
 | WeekDay | Product_Sold |
 +---------+--------------+

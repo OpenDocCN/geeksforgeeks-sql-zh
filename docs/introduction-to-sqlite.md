@@ -23,7 +23,7 @@
 
 打开终端，键入此命令并输入密码
 
-```
+```sql
 sudo apt-get install sqlite3 libsqlite3-dev
 ```
 

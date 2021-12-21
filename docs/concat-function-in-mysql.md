@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 CONCAT(str1, str2, ...)
 
 ```
@@ -20,7 +20,7 @@ CONCAT(str1, str2, ...)
 **示例-1 :**
 使用 CONCAT 函数连接 3 个字符串。
 
-```
+```sql
 SELECT CONCAT('geeks', 'for', 'geeks') AS ConcatenatedString ;
 
 ```
@@ -34,7 +34,7 @@ SELECT CONCAT('geeks', 'for', 'geeks') AS ConcatenatedString ;
 **示例-2 :**
 使用 CONCAT 函数连接数字字符串。
 
-```
+```sql
 SELECT CONCAT(19, 10, 5.60) AS ConcatenatedNumber ;
 
 ```
@@ -48,7 +48,7 @@ SELECT CONCAT(19, 10, 5.60) AS ConcatenatedNumber ;
 **示例-3 :**
 使用 CONCAT 函数连接包含空字符串的字符串。
 
-```
+```sql
 SELECT CONCAT('geeks', 'for', 'geeks', NULL) AS ConcatenatedString ;
 
 ```
@@ -62,7 +62,7 @@ SELECT CONCAT('geeks', 'for', 'geeks', NULL) AS ConcatenatedString ;
 **示例-4 :**
 在本例中，我们将在表的列之间连接字符串。为了演示，创建一个名为 Student 的表。
 
-```
+```sql
 CREATE TABLE Student(
 
 StudentId INT AUTO_INCREMENT,  
@@ -80,7 +80,7 @@ PRIMARY KEY(StudentId )
 
 现在向学生表中插入一些数据:
 
-```
+```sql
 INSERT INTO  
 Student(FirstName, LastName, Class, City, State, PinNo )
 VALUES
@@ -94,7 +94,7 @@ VALUES
 
 学生表是:
 
-```
+```sql
 Select * From Student ;
 
 ```
@@ -109,7 +109,7 @@ Select * From Student ;
 
 现在，我们将使用 CONCAT 函数连接名字和姓氏以获得全名和城市、州和 PinNo 以获得地址。
 
-```
+```sql
 Select 
     StudentId, FirstName, LastName, 
     CONCAT(FirstName, ' ', LastName) AS FullName,

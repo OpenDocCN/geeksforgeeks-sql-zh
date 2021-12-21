@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 TIME(expression)
 
 ```
@@ -22,7 +22,7 @@ TIME(expression)
 **示例-1 :**
 使用时间函数从日期时间表达式中提取时间，其中日期时间以 YYYY-MM-DD HH-MM-SS 的格式指定。
 
-```
+```sql
 SELECT TIME("2019-01-10 08:14:21")as Time ;
 
 ```
@@ -36,7 +36,7 @@ SELECT TIME("2019-01-10 08:14:21")as Time ;
 **示例-2 :**
 使用时间函数从日期时间表达式中提取时间，其中日期时间以 HH-MM-SS 的格式指定。
 
-```
+```sql
 SELECT TIME("18:24:23")as Time ;
 
 ```
@@ -50,7 +50,7 @@ SELECT TIME("18:24:23")as Time ;
 **示例-3 :**
 使用时间函数从不是日期时间的表达式中提取时间。
 
-```
+```sql
 SELECT TIME(NULL) AS TIME;
 
 ```
@@ -64,7 +64,7 @@ SELECT TIME(NULL) AS TIME;
 **示例-4 :**
 时间功能可用于设置列的值。为了演示，创建一个名为 DeliveryDetails 的表。
 
-```
+```sql
 CREATE TABLE DeliveryDetails (
 DeliveryId INT AUTO_INCREMENT,
 ProductId INT NOT NULL,
@@ -76,7 +76,7 @@ PRIMARY KEY(DeliveryId)
 
 在这里，我们将使用时间功能时，将完成交付。“交付时间”列中的值将是时间函数给出的值。
 
-```
+```sql
 INSERT INTO  
 DeliveryDetails(ProductId, ProductName, Delivered_At)
 VALUES
@@ -86,7 +86,7 @@ VALUES
 
 现在，检查交货详细信息表:
 
-```
+```sql
 SELECT * FROM DeliveryDetails;
 
 ```

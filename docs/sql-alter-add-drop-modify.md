@@ -10,7 +10,7 @@ ADD 用于向现有表中添加列。有时我们可能需要添加额外的信�
 
 **语法:**
 
-```
+```sql
  ALTER TABLE table_name
               ADD (Columnname_1  datatype,
               Columnname_2  datatype,
@@ -25,7 +25,7 @@ DROP COLUMN 用于删除表中的列。从表中删除不需要的列。
 
 **语法:**
 
-```
+```sql
 ALTER TABLE table_name
 DROP COLUMN column_name;
 
@@ -38,7 +38,7 @@ DROP COLUMN column_name;
 
 **语法(Oracle、MySQL、MariaDB):**
 
-```
+```sql
  ALTER TABLE table_name
 MODIFY column_name column_type;
 
@@ -46,7 +46,7 @@ MODIFY column_name column_type;
 
 **语法(SQL Server):**
 
-```
+```sql
  ALTER TABLE table_name
 ALTER COLUMN column_name column_type; 
 
@@ -69,7 +69,7 @@ ALTER COLUMN column_name column_type;
 
 *   向学生表中添加 2 列年龄和课程。
 
-```
+```sql
  ALTER TABLE Student ADD (AGE number(3),COURSE varchar(40));
 ```
 
@@ -84,7 +84,7 @@ ALTER COLUMN column_name column_type;
 
 *   修改学生表中的课程列
 
-```
+```sql
  ALTER TABLE Student MODIFY COURSE varchar(20); 
 ```
 
@@ -92,7 +92,7 @@ ALTER COLUMN column_name column_type;
 
 *   在学生表中删除课程列。
 
-```
+```sql
  ALTER TABLE Student DROP COLUMN COURSE;
 ```
 

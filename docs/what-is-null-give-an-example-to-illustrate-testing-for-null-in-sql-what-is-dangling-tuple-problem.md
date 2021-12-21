@@ -45,7 +45,7 @@
 
 现在我们可以使用 IS NOT NULL 操作符并编写如下查询。
 
-```
+```sql
 SQL> SELECT * 
 FROM CUSTOMERS 
 WHERE SALARY IS NOT NULL;
@@ -88,7 +88,7 @@ WHERE SALARY IS NOT NULL;
 
 现在我们可以使用 IS NULL 运算符并编写一个查询。
 
-```
+```sql
 SQL> SELECT * 
 FROM CUSTOMERS 
 WHERE SALARY IS NULL;

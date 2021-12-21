@@ -9,7 +9,7 @@
 
 **语法–**
 
-```
+```sql
 column_name char(number _of_bytes);
 
 ```
@@ -19,7 +19,7 @@ n-char 也是可以存储 unicode 数据的字符串。nchar 代表民族性格�
 
 **语法–**
 
-```
+```sql
 column_name nchar(number_of_bytes);
 
 ```
@@ -36,13 +36,13 @@ column_name nchar(number_of_bytes);
 | 它使用 Unicode 标准来存储数据。 | 它使用 ASCII 标准来存储数据。 |
 | **语法:**
 
-```
+```sql
 col_name char(n); 
 ```
 
 *n 是字节数。 | **语法:**
 
-```
+```sql
 col_name nchar(n); 
 ```
 

@@ -12,7 +12,7 @@
 
 **基本语法:**
 
-```
+```sql
 select distinct
 select_list
 from
@@ -38,7 +38,7 @@ table_name
 
 要删除重复项，查询必须按如下方式编写–
 
-```
+```sql
 select distinct
 roll number, name, course
 from student 
@@ -77,7 +77,7 @@ from student
 
 查询应写成–
 
-```
+```sql
 select distinct
 roll number, name, course
 from student 
@@ -117,7 +117,7 @@ from student
 
 请注意，在 Deepa 的情况下，名称和课程为空，因此查询编写为–
 
-```
+```sql
 select distinct 
 name, roll number, course 
 from student 

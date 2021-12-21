@@ -20,7 +20,7 @@
 
 **语法–**
 
-```
+```sql
 CREATE ROLE manager;
 Role created.
 
@@ -35,7 +35,7 @@ Role created.
 
 **授予角色权限–**
 
-```
+```sql
 GRANT create table, create view
 TO manager;
 Grant succeeded.
@@ -44,7 +44,7 @@ Grant succeeded.
 
 **向用户授予角色**
 
-```
+```sql
 GRANT manager TO SAM, STARK;
 Grant succeeded.
 
@@ -52,14 +52,14 @@ Grant succeeded.
 
 **撤销角色的权限:**
 
-```
+```sql
 REVOKE create table FROM manager;
 
 ```
 
 **放下角色:**
 
-```
+```sql
 DROP ROLE manager;
 
 ```

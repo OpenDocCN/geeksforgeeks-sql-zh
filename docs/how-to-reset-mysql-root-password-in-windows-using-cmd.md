@@ -11,7 +11,7 @@
 *   首先检查您是否以管理员身份登录。
 *   按 **Win+R** (按住 Windows/Super 键，按“R”。)一旦出现“**运行**框，键入:
 
-```
+```sql
 *services.msc*
 ```
 
@@ -29,7 +29,7 @@
 
 *   在文本编辑器中输入以下行:
 
-```
+```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 ```
 
@@ -52,7 +52,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 
 *   使用命令提示符导航到 MySQL 目录:
 
-```
+```sql
 cd "C:\Program Files\MySQL\MySQL Server 8.0\bin"
 ```
 
@@ -60,7 +60,7 @@ cd "C:\Program Files\MySQL\MySQL Server 8.0\bin"
 
 *   输入以下内容:
 
-```
+```sql
 mysqld --init-file=C:\\mysql-init.txt
 ```
 

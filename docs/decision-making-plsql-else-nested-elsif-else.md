@@ -16,7 +16,7 @@
 
 **语法:**
 
-```
+```sql
 if condition then
 -- do something
 end if; 
@@ -29,7 +29,7 @@ if 和 endif 在这里视为一个块。**
 
 ## **结构化查询语言**
 
-```
+```sql
 declare
 -- declare the values here
 
@@ -48,7 +48,7 @@ end;
 
 ## **结构化查询语言**
 
-```
+```sql
 -- pl/sql program to illustrate If statement
 declare
 num1 number:= 10;
@@ -68,7 +68,7 @@ end;
 **因为 if 语句中的条件为假。所以，if 语句下面的块没有被执行。
 输出:**
 
-```
+```sql
 I am Not in if 
 ```
 
@@ -76,7 +76,7 @@ I am Not in if
     The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.
     Syntax:-
 
-    ```
+    ```sql
     if (condition) then
         -- Executes this block if
         -- condition is true
@@ -92,7 +92,7 @@ I am Not in if
 
     ## 结构化查询语言
 
-    ```
+    ```sql
     -- pl/sql program to illustrate If else statement
     declare
     num1 number:= 10;
@@ -113,7 +113,7 @@ I am Not in if
 
     输出:-
 
-    ```
+    ```sql
     i'm in if Block
     i'm not in if and not in else Block
 
@@ -124,7 +124,7 @@ I am Not in if
 
     语法:-
 
-    ```
+    ```sql
     if (condition1) then
        -- Executes when condition1 is true
        if (condition2) then 
@@ -138,7 +138,7 @@ I am Not in if
 
     ## 结构化查询语言
 
-    ```
+    ```sql
     -- pl/sql program to illustrate nested If statement
     declare
     num1 number:= 10;

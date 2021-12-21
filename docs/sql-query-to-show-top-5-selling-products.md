@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksforGeeks;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GeeksforGeeks;
 
 **查询:**
 
-```
+```sql
 USE GeeksforGeeks
 ```
 
@@ -28,7 +28,7 @@ USE GeeksforGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE sales_details(
 item_id VARCHAR(20),
 item_price INT,
@@ -42,7 +42,7 @@ items_sold INT
 
 **查询:**
 
-```
+```sql
 EXEC sp_columns sales_details
 ```
 
@@ -52,7 +52,7 @@ EXEC sp_columns sales_details
 
 **查询:**
 
-```
+```sql
 INSERT INTO sales_details VALUES
 ('I4001',20000, 5000),
 ('I4098',1000, 10000),
@@ -70,7 +70,7 @@ INSERT INTO sales_details VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM sales_details  
 ORDER BY items_sold DESC
 ```
@@ -81,14 +81,14 @@ ORDER BY items_sold DESC
 
 **语法:**
 
-```
+```sql
 SELECT TOP N column_name 
 FROM table_name ORDER BY column_name ordering_type
 ```
 
 **查询:**
 
-```
+```sql
 SELECT TOP 5  item_id , items_sold  
 FROM sales_details ORDER BY  items_sold DESC
 ```

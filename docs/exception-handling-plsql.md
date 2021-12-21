@@ -11,7 +11,7 @@ PL/SQL 中定义了两种类型的异常
 
 编写异常的语法
 
-```
+```sql
 WHEN exception THEN 
     statement;
 
@@ -46,7 +46,7 @@ WHEN exception THEN
 
         让我们创建一个极客表
 
-        ```
+        ```sql
         create table geeks(g_id int , g_name varchar(20), marks int); 
         insert into geeks values(1, 'Suraj',100);
         insert into geeks values(2, 'Praveen',97);
@@ -58,7 +58,7 @@ WHEN exception THEN
 
         1.  **NO _ DATA _ FOUND**:SELECT INTO 语句返回 *no* 行时引发。例如:
 
-            ```
+            ```sql
             DECLARE
                temp varchar(20);
 
@@ -75,7 +75,7 @@ WHEN exception THEN
 
             输出:
 
-            ```
+            ```sql
             ERROR
             there is no name as GeeksforGeeks in geeks table
 
@@ -83,7 +83,7 @@ WHEN exception THEN
 
         2.  **TOO _ multi _ ROWS**:当 SELECT INTO 语句返回的*多于一行时，该语句被引发。
 
-            ```
+            ```sql
             DECLARE
                temp varchar(20);
 
@@ -103,7 +103,7 @@ WHEN exception THEN
 
             输出:
 
-            ```
+            ```sql
             error trying to SELECT too many rows
 
             ```* 
@@ -111,14 +111,14 @@ WHEN exception THEN
 
             输出:
 
-            ```
+            ```sql
             Error
             Change data type of temp to varchar(20)
 
             ```* 
         4.  ***ZERO _ DIVIDE**=用零除时引发异常。
 
-            ```
+            ```sql
             DECLARE
                a int:=10;
                b int:=0;
@@ -138,7 +138,7 @@ WHEN exception THEN
 
             输出:
 
-            ```
+            ```sql
             dividing by zero please check the values again
             the value of a is 10
             the value of b is 0
@@ -150,7 +150,7 @@ WHEN exception THEN
     The way to handle to these exceptions is to *assign name* to them using **Pragma EXCEPTION_INIT**
     Syntax:
 
-    ```
+    ```sql
     PRAGMA EXCEPTION_INIT(exception_name, -error_number);
 
     ```
@@ -159,7 +159,7 @@ WHEN exception THEN
 
     **示例:**
 
-    ```
+    ```sql
     DECLARE
        exp exception;
        pragma exception_init (exp, -20015);
@@ -182,7 +182,7 @@ WHEN exception THEN
 
     输出:
 
-    ```
+    ```sql
     1
     4
     9
@@ -203,7 +203,7 @@ WHEN exception THEN
         *   除法为零。
         *   如果结果大于或等于 1，则表示 y 小于或等于 x。
 
-        ```
+        ```sql
         DECLARE
            x int:=&x; /*taking value at run time*/
            y int:=&y;
@@ -236,7 +236,7 @@ WHEN exception THEN
         END;
         ```
 
-        ```
+        ```sql
         *Input 1:* x = 20
                  y = 10
 
@@ -244,7 +244,7 @@ WHEN exception THEN
 
         ```
 
-        ```
+        ```sql
         *Input 2:* x = 20
                  y = 0
 
@@ -254,7 +254,7 @@ WHEN exception THEN
 
         ```
 
-        ```
+        ```sql
         *Input 3:* x=20
                  y = 30
 
@@ -268,7 +268,7 @@ WHEN exception THEN
 
     **示例:**
 
-    ```
+    ```sql
     DECLARE
         myex EXCEPTION;
         n NUMBER :=10;
@@ -290,7 +290,7 @@ WHEN exception THEN
 
     输出:
 
-    ```
+    ```sql
     Error report:
     ORA-20015: Welcome to GeeksForGeeks
     ORA-06512: at line 13
@@ -316,7 +316,7 @@ WHEN exception THEN
 
     *****示例:*****
 
-    ```
+    ```sql
     ***DECLARE
        GeeksforGeeks EXCEPTION;
        age NUMBER:=16;
@@ -351,7 +351,7 @@ WHEN exception THEN
 
     ***输出:***
 
-    ```
+    ```sql
     ***Could not recognize exception GeeksforGeeks  in this scope.*** 
     ```
 
@@ -360,7 +360,7 @@ WHEN exception THEN
     *   ***Exception handling is very useful for error handling, without it we have to issue the command at every point to check for execution errors:
         **Example:**
 
-        ```
+        ```sql
         Select ..
         .. check for 'no data found' error
         Select ..
@@ -374,7 +374,7 @@ WHEN exception THEN
     *   ***通过异常处理，我们无需多次编写语句即可处理错误，甚至可以在一个异常块中处理不同类型的错误:
         **示例:**
 
-        ```
+        ```sql
         BEGIN
            SELECT ...
            SELECT ...

@@ -10,7 +10,7 @@ SQL 中的 UPDATE 语句用于更新数据库中现有表的数据。根据我�
 
 **查询:**
 
-```
+```sql
 create database geeksforgeeks;
 ```
 
@@ -20,7 +20,7 @@ create database geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 use geeksforgeeks;
 ```
 
@@ -30,7 +30,7 @@ use geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 create table Salary(id int  , name varchar(20) , sex varchar(1) ,
  salary int);
 ```
@@ -41,7 +41,7 @@ create table Salary(id int  , name varchar(20) , sex varchar(1) ,
 
 **查询:**
 
-```
+```sql
 insert into Salary values(1 , "A" , "m" , 2500);
 insert into Salary values(2 , "B" , "f" , 1500);
 insert into Salary values(3 , "C" , "m" , 5500);
@@ -54,7 +54,7 @@ insert into Salary values(4 , "D" , "f" ,  500);
 
 **MySQL 查询:**
 
-```
+```sql
 update Salary set sex = if(sex='m' , 'f','m');
 ```
 

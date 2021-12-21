@@ -10,7 +10,7 @@
 
 ### **创建视图语法:**
 
-```
+```sql
 CREATE VIEW view_name AS SELECT
 column_1, column_2, ...
 FROM table_name WHERE condition;
@@ -24,7 +24,7 @@ FROM table_name WHERE condition;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeks;
 ```
 
@@ -32,7 +32,7 @@ CREATE TABLE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -42,7 +42,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeksforgeeks
 (FIRSTNAME varchar(20), 
 LASTNAME varchar(20),
@@ -57,7 +57,7 @@ GENDER varchar(10), AGE int);
 
 **查询:**
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES
 ('ROMY','KUMARI','FEMALE', 22),
  ('PUSHKAR', 'JHA', 'MALE', 23),
@@ -75,7 +75,7 @@ INSERT INTO geeksforgeeks VALUES
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -87,7 +87,7 @@ SELECT * FROM geeksforgeeks;
 
 **查询:**
 
-```
+```sql
 CREATE VIEW FEMALE AS SELECT fIRSTNAME, LASTNAME,AGE
 FROM geeksforgeeks WHERE GENDER='FEMALE';
 ```
@@ -100,7 +100,7 @@ FROM geeksforgeeks WHERE GENDER='FEMALE';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM female;
 ```
 
@@ -141,7 +141,7 @@ SELECT * FROM female;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Changed_name;
 ```
 

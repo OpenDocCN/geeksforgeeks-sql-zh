@@ -11,7 +11,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT * from table1 (query1)
 UNION
 SELECT * from table2 (query2);
@@ -30,7 +30,7 @@ SELECT * from table2 (query2);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -40,7 +40,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -50,7 +50,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 ID int,
 NAME VARCHAR(20),
@@ -61,7 +61,7 @@ DOB DATE);
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 ID int,
 NAME VARCHAR(20),
@@ -73,7 +73,7 @@ DOB DATE);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 (11,'Romy',23,'Delhi','1999-11-30'),
 (23,'Rahul',23,'Delhi','1998-10-01'),
@@ -87,7 +87,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES
 (31,'Fanny',25, '1996-07-08' ),
 (77,'Prem', 30, '2003-05-09'),
@@ -102,7 +102,7 @@ INSERT INTO demo_table2 VALUES
 
 **查询(demo_table1):**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -112,7 +112,7 @@ SELECT * FROM demo_table1;
 
 **查询(demo_table2):**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -124,7 +124,7 @@ SELECT * FROM demo_table2;
 
 **查询:**
 
-```
+```sql
 SELECT d1.NAME, d1.AGE, d1.DOB
 FROM demo_table1 d1 WHERE DOB BETWEEN
 '1990-01-01' and '2000-01-01'

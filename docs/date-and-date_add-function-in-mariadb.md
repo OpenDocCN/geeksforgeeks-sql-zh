@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 DATE(expression)
 ```
 
@@ -20,37 +20,37 @@ DATE(expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DATE('2020-09-11 11:13:19');
 ```
 
 **输出:**
 
-```
+```sql
 '2020-09-11'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DATE('2020-04-12 11:13:01.000001');
 ```
 
 **输出:**
 
-```
+```sql
 '2020-04-12'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT DATE('Today is 2020-10-17');
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -60,7 +60,7 @@ NULL
 
 **语法:**
 
-```
+```sql
 DATE_ADD(date, INTERVAL value unit)
 ```
 
@@ -75,36 +75,36 @@ DATE_ADD(date, INTERVAL value unit)
 
 **示例-1 :**
 
-```
+```sql
 SELECT DATE_ADD('2020-01-10 08:44:21', INTERVAL 25 MINUTE);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-01-10 09:09:21'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT DATE_ADD('2014-05-17 08:44:21.000001', INTERVAL '7 1:03:12.000001' DAY_MICROSECOND);
 ```
 
 **输出:**
 
-```
+```sql
 '2014-05-24 09:47:33.000002'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT DATE_ADD('2019-07-10', INTERVAL '1-2' YEAR_MONTH);
 ```
 
 **输出:**
 
-```
+```sql
 '2020-09-10'
 ```

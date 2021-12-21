@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 StDev (expr)
 ```
 
@@ -30,7 +30,7 @@ StDev (expr)
 **示例 1 :**
 产品价格的标准偏差。
 
-```
+```sql
 SELECT stDev(Product_Price) AS StDEV_Value FROM ProcuctDetails;
 ```
 
@@ -43,7 +43,7 @@ SELECT stDev(Product_Price) AS StDEV_Value FROM ProcuctDetails;
 **例 2 :**
 只有一条记录的标准偏差。
 
-```
+```sql
 SELECT stDev(100) AS StDEV_Value ;
 ```
 
@@ -60,7 +60,7 @@ SELECT stDev(100) AS StDEV_Value ;
 
 **语法:**
 
-```
+```sql
 StDevP (expr)
 ```
 
@@ -82,7 +82,7 @@ StDevP (expr)
 
 **示例-1 :**
 
-```
+```sql
 SELECT stDevP(P_Price) AS StDEVp_Value FROM Procucts;
 ```
 
@@ -94,7 +94,7 @@ SELECT stDevP(P_Price) AS StDEVp_Value FROM Procucts;
 
 **示例-2 :**
 
-```
+```sql
 SELECT stDevP(10) AS StDEVp_Value;
 ```
 

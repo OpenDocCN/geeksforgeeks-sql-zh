@@ -10,7 +10,7 @@ SQL 中的 RIGHT JOIN 关键字返回所有**匹配的记录(或行)**和**记�
 
 右连接的语法是:-
 
-```
+```sql
 SELECT column_name(s) 
 FROM tableA 
 RIGHT JOIN tableB ON tableA.column_name = tableB.column_name;
@@ -38,7 +38,7 @@ RIGHT JOIN tableB ON tableA.column_name = tableB.column_name;
 
 **为了对这两个表执行右连接，我们将使用以下 SQL 查询:**
 
-```
+```sql
 select emp_no , emp_name ,d_name, location 
 from employee 
 right join dept on employee.dept_no = department.dept_no;

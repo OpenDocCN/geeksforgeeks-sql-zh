@@ -12,7 +12,7 @@ SQL WITH 子句是由 Oracle 在 Oracle 9i 版本 2 数据库中引入的。SQL 
 
 **语法:**
 
-```
+```sql
 WITH temporaryTable (averageValue) as
     (SELECT avg(Attr1)
     FROM Table)
@@ -43,7 +43,7 @@ WITH temporaryTable (averageValue) as
 
 **SQL 查询:**
 
-```
+```sql
 WITH temporaryTable(averageValue) as
     (SELECT avg(Salary)
     from Employee)
@@ -79,7 +79,7 @@ WITH temporaryTable(averageValue) as
 
 **SQL 查询:**
 
-```
+```sql
 WITH totalSalary(Airline, total) as
     (SELECT Airline, sum(Salary)
     FROM Pilot

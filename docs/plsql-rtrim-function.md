@@ -11,7 +11,7 @@ Oracle 数据库从字符的第一个字符开始扫描字符，并删除出现�
 
 **语法:**
 
-```
+```sql
 RTRIM( input_string [, trim_string] )
 ```
 
@@ -30,7 +30,7 @@ RTRIM( input_string [, trim_string] )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks    ';
 
@@ -42,13 +42,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks      ';
 
@@ -60,13 +60,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-3:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks123';
 
@@ -78,13 +78,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks123123';
 
@@ -96,13 +96,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeks123forgeeks123';
 
@@ -114,6 +114,6 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeks123forgeeks 
 ```

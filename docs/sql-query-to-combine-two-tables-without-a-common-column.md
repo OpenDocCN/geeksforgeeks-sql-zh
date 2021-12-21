@@ -10,7 +10,7 @@
 
 使用下面的 SQL 语句创建一个名为*极客*的数据库:
 
-```
+```sql
 CREATE DATABASE GFG;
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GFG;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE GFG;
 ```
 
@@ -26,7 +26,7 @@ USE GFG;
 
 现在，我们创建了两个名为表 1 和表 2 的表
 
-```
+```sql
 CREATE TABLE table1
 (
     Name1 VARCHAR(20),
@@ -44,7 +44,7 @@ CREATE TABLE table2
 
 现在，向表中添加数据
 
-```
+```sql
 INSERT INTO table1
 ValUES
 ('Harish',1,1000),
@@ -63,13 +63,13 @@ VALUES
 
 对于表 1:
 
-```
+```sql
 SELECT * FROM table1;
 ```
 
 对于表 2:
 
-```
+```sql
 SELECT * FROM table2;
 ```
 
@@ -81,7 +81,7 @@ SELECT * FROM table2;
 
 为了进行交叉连接，我们只需要在 FROM 子句中指定表的名称。不，需要 WHERE 子句。
 
-```
+```sql
 SELECT * FROM table1, table2;
 ```
 
@@ -91,7 +91,7 @@ SELECT * FROM table1, table2;
 
 **方法 2 (UNION 方法):**这个方法不同于上面的方法，因为它不仅仅是一个连接。它的主要目的是通过逐行方法组合表。它只是将两个表的**唯一**行数相加，并根据方法中指定的第一个表命名列。
 
-```
+```sql
 SELECT *
 FROM TABLE1
 UNION
@@ -105,7 +105,7 @@ FROM TABLE2;
 
 我们还可以在这个方法中查询单个列或重命名列，如下所示:
 
-```
+```sql
 SELECT salary1 as salary
 FROM TABLE1
 UNION
@@ -119,7 +119,7 @@ FROM TABLE2;
 
 **方法 3(UNION ALL):**UNION 和 UNION ALL 方法之间的唯一区别是，前一个方法允许非重复(唯一)行，但后一个方法也通过组合重复行来产生所有可能的行。
 
-```
+```sql
 SELECT salary1 as salary
 FROM TABLE1
 UNION all

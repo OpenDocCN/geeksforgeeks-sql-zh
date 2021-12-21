@@ -7,7 +7,7 @@ MySQL 中的这个函数用来比较给定的两个字符串表达式的 Soundex
 
 **语法:**
 
-```
+```sql
 expr1 SOUNDS LIKE expr2
 
 ```
@@ -24,7 +24,7 @@ expr1 SOUNDS LIKE expr2
 **示例-1 :**
 使用 SOUNDS LIKE 函数比较相似的两个给定字符串。
 
-```
+```sql
 SELECT 'geeks' SOUNDS LIKE 'geeks' 
 as Result;
 ```
@@ -38,7 +38,7 @@ as Result;
 **示例-2 :**
 使用 SOUNDS LIKE 函数比较相似的两个给定字符串。
 
-```
+```sql
 SELECT 'geeks' SOUNDS LIKE 'for' 
 as Result;
 ```
@@ -52,7 +52,7 @@ as Result;
 **示例-3 :**
 以下示例显示返回所有包含员工姓名的行，该员工姓名的名字听起来像“Sayan”。
 
-```
+```sql
 CREATE TABLE Employee
 (
 Employee_id INT AUTO_INCREMENT,  
@@ -65,7 +65,7 @@ PRIMARY KEY(Employee_id )
 
 **在员工表中插入一些数据:**
 
-```
+```sql
 INSERT INTO Employee
 (First_name ,Last_name , Joining_Date )
 VALUES
@@ -83,7 +83,7 @@ VALUES
 
 因此，员工表如下。
 
-```
+```sql
 select * from Employee ;
 ```
 
@@ -103,7 +103,7 @@ select * from Employee ;
 
 现在，我们要检查那些名字听起来像“sayan”的员工。
 
-```
+```sql
 SELECT * FROM Employee 
 WHERE First_name SOUNDS LIKE 'Sayan' ;
 ```

@@ -9,7 +9,7 @@
 给定一个字符串，任务是找出字符串中元音和辅音的数量。
 **例:**
 
-```
+```sql
 Input: str = 'Ramesh'
 Output: Vowels = 2, Consonants = 4
 
@@ -22,7 +22,7 @@ Output: Vowels = 6, Consonants = 7
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE 
     -- Here variable V is varchar datatype  
     -- and  flag variable is number datatype   
@@ -59,7 +59,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 No. of Vowels: 6
 No. of Consonants: 7
 

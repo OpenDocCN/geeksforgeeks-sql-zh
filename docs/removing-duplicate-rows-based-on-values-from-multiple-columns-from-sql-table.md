@@ -8,7 +8,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -20,7 +20,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -32,7 +32,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE RESULT(
 STUDENT_ID  INT,
 PHYSICS_MARKS INT,
@@ -49,7 +49,7 @@ TOTAL_MARKS INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS RESULT;
 ```
 
@@ -61,7 +61,7 @@ EXEC SP_COLUMNS RESULT;
 
 **查询:**
 
-```
+```sql
 INSERT INTO RESULT VALUES(1,90,88,75,253);
 INSERT INTO RESULT VALUES(2,99,88,75,262);
 INSERT INTO RESULT VALUES(3,96,88,75,256);
@@ -82,7 +82,7 @@ INSERT INTO RESULT VALUES(10,80,81,89,250);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM RESULT;
 ```
 
@@ -94,7 +94,7 @@ SELECT * FROM RESULT;
 
 **语法:**
 
-```
+```sql
 DELETE T1 FROM TABLE_NAME T1
 JOIN TABLE_NAME T2
 ON T1.COLUMN_NAME2 = T2.COLUMN_NAME2 AND
@@ -104,7 +104,7 @@ AND T2.COLUMN_NAME1 < T1.COLUMN_NAME1;
 
 **查询:**
 
-```
+```sql
 DELETE R1 FROM RESULT R1
 JOIN RESULT R2
 ON R1.CHEMISTRY_MARKS = R2.CHEMISTRY_MARKS
@@ -120,7 +120,7 @@ AND R2.STUDENT_ID < R1.STUDENT_ID;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM RESULT;
 ```
 
@@ -134,7 +134,7 @@ SELECT * FROM RESULT;
 
 **查询:**
 
-```
+```sql
 DELETE R1 FROM RESULT R1
 JOIN RESULT R2
 ON R1.TOTAL_MARKS = R2.TOTAL_MARKS AND R1.PHYSICS_MARKS = R2.PHYSICS_MARKS
@@ -149,7 +149,7 @@ AND R2.STUDENT_ID < R1.STUDENT_ID;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM RESULT;
 ```
 

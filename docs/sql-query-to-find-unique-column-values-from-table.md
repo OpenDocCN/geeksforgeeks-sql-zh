@@ -23,7 +23,7 @@
 
 从极客表中查找列部门唯一值的 SQL 查询。
 
-```
+```sql
 Select distinct DEPARTMENT 
 from Geeks;
 ```
@@ -43,7 +43,7 @@ from Geeks;
 
 **SQL 查询找到列部门所在名称为“DBA”的明细。**
 
-```
+```sql
 Select * 
 from Geeks 
 where DEPARTMENT like 'DBA%';
@@ -62,7 +62,7 @@ where DEPARTMENT like 'DBA%';
 
 **SQL 查询找到部门‘Admin’中的行数。**
 
-```
+```sql
 SELECT COUNT(*) 
 FROM Geeks 
 WHERE DEPARTMENT = 'Admin';

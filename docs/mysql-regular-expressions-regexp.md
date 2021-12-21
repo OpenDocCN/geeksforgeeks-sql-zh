@@ -34,7 +34,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Match beginning of string(^):**
     Gives all the names starting with ‘sa’.Example- sam,samarth.
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP '^sa';
 
     ```
@@ -42,7 +42,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Match the end of a string($):**
     Gives all the names ending with ‘on’.Example – norton,merton.
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP 'on{content}apos;;
 
     ```
@@ -50,7 +50,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Match zero or one instance of the strings preceding it(?):**
     Gives all the titles containing ‘com’.Example – comedy , romantic comedy.
 
-    ```
+    ```sql
     SELECT title FROM movies_tbl WHERE title REGEXP 'com?'; 
 
     ```
@@ -58,7 +58,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **matches any of the patterns p1, p2, or p3(p1|p2|p3):**
     Gives all the names containing ‘be’ or ‘ae’.Example – Abel, Baer.
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP 'be|ae' ;
 
     ```
@@ -66,7 +66,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Matches any character listed between the square brackets([abc]):**
     Gives all the names containing ‘j’ or ‘z’.Example – Lorentz, Rajs.
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP '[jz]' ;
 
     ```
@@ -76,7 +76,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 
     匹配任何单个字符(。)
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP '[b-g].[a]' ;
 
     ```
@@ -84,7 +84,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Matches any character not listed between the square brackets.([^abc]):**
     Gives all the names not containing ‘j’ or ‘z’. Example – nerton, sewall.
 
-    ```
+    ```sql
     SELECT name FROM student_tbl WHERE name REGEXP '[^jz]' ;
 
     ```
@@ -92,7 +92,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Matches the end of words[[:>:]]:**
     Gives all the titles ending with character “ack”. Example – Black.
 
-    ```
+    ```sql
     SELECT title FROM movies_tbl WHERE REGEXP 'ack[[:>:]]'; 
 
     ```
@@ -100,7 +100,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
 *   **Matches the beginning of words[[:<:]]:**
     Gives all the titles starting with character “for”. Example – Forgetting Sarah Marshal.
 
-    ```
+    ```sql
     SELECT title FROM movies_tbl WHERE title REGEXP '[[:<:]]for'; 
 
     ```
@@ -109,7 +109,7 @@ MySQL 支持另一种基于正则表达式和 REGEXP 运算符的模式匹配操
     ，即[:lower:]-小写字符、[:digit:]-数字字符等。
     给出所有仅包含字母字符的标题。例子——奇怪的事情，复仇者联盟。
 
-    ```
+    ```sql
     SELECT title FROM movies_tbl WHERE REGEXP '[:alpha:]' ;
 
     ```

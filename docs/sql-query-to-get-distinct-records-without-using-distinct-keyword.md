@@ -8,19 +8,19 @@
 
 ### **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
 ### **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
 我们的*极客*数据库中有以下 *dup_table* 表:
 
-```
+```sql
 CREATE TABLE dup_table(
   dup_id int,
   dup_name varchar(20));
@@ -28,7 +28,7 @@ CREATE TABLE dup_table(
 
 要查看表模式，请使用以下命令:
 
-```
+```sql
 EXEC SP_COLUMNS dup_table;
 ```
 
@@ -38,7 +38,7 @@ EXEC SP_COLUMNS dup_table;
 
 使用以下查询向表中添加记录:
 
-```
+```sql
 INSERT INTO dup_table
 VALUES
 (1, 'yogesh'),
@@ -52,7 +52,7 @@ VALUES
 
 现在我们将从 *dup_table* 表中检索所有数据:
 
-```
+```sql
 SELECT * FROM dup_table;
 ```
 
@@ -64,7 +64,7 @@ SELECT * FROM dup_table;
 
 GROUP BY 子句可用于查询表中不同的行:
 
-```
+```sql
 SELECT dup_id, dup_name FROM dup_table
 GROUP BY dup_id, dup_name;
 ```
@@ -75,7 +75,7 @@ GROUP BY dup_id, dup_name;
 
 set UNION 运算符也可用于查询表中的不同行:
 
-```
+```sql
 SELECT dup_id, dup_name FROM dup_table
 UNION
 SELECT dup_id, dup_name FROM dup_table;
@@ -87,7 +87,7 @@ SELECT dup_id, dup_name FROM dup_table;
 
 INTERSECT 运算符可用于查询表中不同的行:
 
-```
+```sql
 SELECT dup_id, dup_name FROM dup_table
 INTERSECT
 SELECT dup_id, dup_name FROM dup_table;
@@ -99,7 +99,7 @@ SELECT dup_id, dup_name FROM dup_table;
 
 CTE 代表通用表表达式。它也可以用来查询表中不同的行，函数 row_number()如下所示:
 
-```
+```sql
 WITH cte (dup_id, dup_name, dup_count)
 AS
 (SELECT dup_id, dup_name,

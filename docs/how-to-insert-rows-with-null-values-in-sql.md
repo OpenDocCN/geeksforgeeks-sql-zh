@@ -13,7 +13,7 @@
 
 **语法:**
 
-```
+```sql
 INSERT INTO TABLE_NAME values
 (COLUMN_VALUE,NULL,........);
 ```
@@ -22,7 +22,7 @@ INSERT INTO TABLE_NAME values
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -34,7 +34,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -46,7 +46,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE WORKER(
 W_NAME VARCHAR(20),
 CITY VARCHAR(20),
@@ -61,7 +61,7 @@ AGE INT);
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS 'WORKER';
 ```
 
@@ -73,7 +73,7 @@ EXEC SP_COLUMNS 'WORKER';
 
 **查询:**
 
-```
+```sql
 INSERT INTO WORKER VALUES('SAM','ONTARIO',NULL);
 INSERT INTO WORKER VALUES('TIM',NULL,56);
 INSERT INTO WORKER VALUES(NULL,'CAIRO',43);
@@ -89,7 +89,7 @@ INSERT INTO WORKER VALUES(NULL,NULL,NULL);
 
 **查询:**
 
-```
+```sql
 SELECT * FROM WORKER;
 ```
 

@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 AVG(expression)
 ```
 
@@ -35,7 +35,7 @@ AVG(expression)
 
 **创建表格–**
 
-```
+```sql
 CREATE TABLE item13
 (  
 user_id int,    
@@ -47,7 +47,7 @@ price int
 
 **插入数据–**
 
-```
+```sql
 INSERT item13(product01, price)  
 VALUES ('rice', 500);
 
@@ -57,13 +57,13 @@ VALUES ('grains', 700);
 
 **读取数据–**
 
-```
+```sql
 SELECT AVG(price) FROM item13;
 ```
 
 **输出:**
 
-```
+```sql
 600
 ```
 
@@ -75,7 +75,7 @@ SELECT AVG(price) FROM item13;
 
 **创建表格–**
 
-```
+```sql
 CREATE TABLE floats
 (  
 user_id int,
@@ -85,7 +85,7 @@ float_val float
 
 **插入数据–**
 
-```
+```sql
 INSERT floats(float_val)  
 VALUES (3.5);
 
@@ -95,13 +95,13 @@ VALUES (2.5);
 
 **读取数据–**
 
-```
+```sql
 SELECT AVG(float_val) FROM floats;
 ```
 
 **输出:**
 
-```
+```sql
 3
 ```
 
@@ -111,7 +111,7 @@ SELECT AVG(float_val) FROM floats;
 
 **创建表格–**
 
-```
+```sql
 CREATE TABLE package01
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -123,7 +123,7 @@ PRIMARY KEY(user_id)
 
 **插入数据–**
 
-```
+```sql
 INSERT package01(item, mrp)  
 VALUES ('book1', 250);
 
@@ -136,7 +136,7 @@ VALUES ('book3', 400);
 
 **读取数据–**
 
-```
+```sql
 SELECT * FROM package01
 WHERE mrp > (SELECT AVG(mrp) FROM package01);
 ```
@@ -157,7 +157,7 @@ WHERE mrp > (SELECT AVG(mrp) FROM package01);
 
 **创建表格–**
 
-```
+```sql
 CREATE TABLE package011
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -170,7 +170,7 @@ PRIMARY KEY(user_id)
 
 **插入数据–**
 
-```
+```sql
 INSERT package011(item, mrp, sp)  
 VALUES ('book1', 250, 240);
 
@@ -183,13 +183,13 @@ VALUES ('book3', 400, 350);
 
 **读取数据–**
 
-```
+```sql
 SELECT AVG(mrp-sp) FROM package011;
 ```
 
 **输出:**
 
-```
+```sql
 30
 ```
 

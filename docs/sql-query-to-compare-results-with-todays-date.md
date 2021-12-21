@@ -19,7 +19,7 @@
 
 检查当前日期
 
-```
+```sql
 SELECT GETDATE();
 ```
 
@@ -33,7 +33,7 @@ SELECT GETDATE();
 
 **语法:**
 
-```
+```sql
  CASE
     WHEN condition1 THEN result1
     WHEN condition2 THEN result2
@@ -52,7 +52,7 @@ END;
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -60,7 +60,7 @@ CREATE DATABASE geeks;
 
 使用下面的 SQL 语句将数据库上下文切换到极客:
 
-```
+```sql
 USE geeks;
 ```
 
@@ -70,7 +70,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE demo_table(
 NAME VARCHAR(20),
 ITEM varchar(20),
@@ -81,7 +81,7 @@ date DATE);
 
 **查询:**
 
-```
+```sql
 INSERT INTO demo_table VALUES('Romy','shirt','2021-10-21'),
 ('Shalini', 'shoes', '2021-10-14'),
 ('Sambhavi','hat','2021-10-10'),
@@ -93,7 +93,7 @@ INSERT INTO demo_table VALUES('Romy','shirt','2021-10-21'),
 
 **查询:**
 
-```
+```sql
 SELECT * from demo_table;
 ```
 
@@ -111,7 +111,7 @@ SELECT * from demo_table;
 
 **语法:**
 
-```
+```sql
 SELECT column_name,
 CASE  
        WHEN condition1 THEN result1
@@ -123,7 +123,7 @@ FROM table_name;
 
 **查询:**
 
-```
+```sql
 SELECT NAME, ITEM,date,
 CASE  
     WHEN date=GETDATE() THEN 'Today'

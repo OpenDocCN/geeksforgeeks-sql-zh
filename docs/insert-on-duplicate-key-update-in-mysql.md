@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 INSERT INTO table (column_names)
 VALUES (values)
 ON DUPLICATE KEY UPDATE
@@ -25,7 +25,7 @@ ON DUPLICATE KEY UPDATE
 **示例–**
 让我们创建一个名为‘geek _ demo’的表，如下所示。
 
-```
+```sql
 CREATE TABLE geek_demo
 (
 id INT AUTO_INCREMENT PRIMARY KEY, 
@@ -36,7 +36,7 @@ name VARCHAR(100)
 
 **将数据插入 geek_demo :**
 
-```
+```sql
 INSERT INTO geek_demo (name)
 VALUES('Neha'), ('Nisha'), ('Sara') ;
 
@@ -44,7 +44,7 @@ VALUES('Neha'), ('Nisha'), ('Sara') ;
 
 **从表中读取数据:**
 
-```
+```sql
 SELECT id, name
 FROM geek_demo;
 ```
@@ -59,7 +59,7 @@ FROM geek_demo;
 
 现在，一行将插入到表中。
 
-```
+```sql
 INSERT INTO geek_demo(name) 
 VALUES ('Sneha') 
 ON DUPLICATE KEY UPDATE name = 'Sneha';
@@ -68,7 +68,7 @@ ON DUPLICATE KEY UPDATE name = 'Sneha';
 
 由于没有重复，MySQL 在表中插入了一个新行。上面语句的输出类似于下面语句的输出，如下所示。
 
-```
+```sql
 INSERT INTO geek_demo(name)
 VALUES ('Sneha');
 
@@ -76,7 +76,7 @@ VALUES ('Sneha');
 
 **读取数据:**
 
-```
+```sql
 SELECT id, name
 FROM geek_demo; 
 
@@ -93,7 +93,7 @@ FROM geek_demo;
 
 让我们在 id 列中插入一个具有重复值的行，如下所示。
 
-```
+```sql
 INSERT INTO geek_demo (id, name) 
 VALUES (4, 'Mona')
 ON DUPLICATE KEY UPDATE name = 'Mona';
@@ -102,7 +102,7 @@ ON DUPLICATE KEY UPDATE name = 'Mona';
 
 **下面是输出:**
 
-```
+```sql
 2 row(s) affected
 
 ```
@@ -110,7 +110,7 @@ ON DUPLICATE KEY UPDATE name = 'Mona';
 因为 geek_demo 表中已经存在 id 为 4 的行，所以该语句将名称从 Sneha 更新为 Mona。
 **读取数据:**
 
-```
+```sql
 SELECT id, name
 FROM geek_demo;
 

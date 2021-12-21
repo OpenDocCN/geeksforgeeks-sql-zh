@@ -8,7 +8,7 @@ MySQL 中的这个函数用于返回字符串或数字输入的等效十六进�
 
 **语法:**
 
-```
+```sql
 HEX(string)
 OR
 HEX(N)
@@ -29,7 +29,7 @@ HEX(N)
 
 使用十六进制函数对十进制数 0 进行十六进制表示，如下所示。
 
-```
+```sql
 SELECT HEX(0) AS Hex_number ;
 ```
 
@@ -47,7 +47,7 @@ SELECT HEX(0) AS Hex_number ;
 
 使用十六进制函数对十进制数 2020 进行十六进制表示，如下所示。
 
-```
+```sql
 SELECT HEX( 2020 ) AS Hex_number ;
 ```
 
@@ -65,7 +65,7 @@ SELECT HEX( 2020 ) AS Hex_number ;
 
 使用十六进制函数的字符串“geeksforgeeks”的十六进制表示如下。
 
-```
+```sql
 SELECT HEX( 'geeksforgeeks') AS Hex_string ;
 ```
 
@@ -85,7 +85,7 @@ T17】</figure>
 
 **创建玩家表:**
 
-```
+```sql
 CREATE TABLE Player(
 
 Player_id INT AUTO_INCREMENT,  
@@ -99,7 +99,7 @@ PRIMARY KEY(Player_id )
 
 **将数据插入表格:**
 
-```
+```sql
 INSERT INTO  
 Player(Player_name, Playing_team, Highest_Run_Scored)
 VALUES
@@ -116,7 +116,7 @@ VALUES
 
 使用如下命令进行验证。
 
-```
+```sql
 SELECT * FROM Player;
 ```
 
@@ -133,7 +133,7 @@ SELECT * FROM Player;
 
 现在，我们将使用十六进制函数找到每个玩家的最高得分。
 
-```
+```sql
 SELECT  
 Player_id, Player_name,
 Playing_team, HEX(HIGHEST_RUN_SCORED) AS HighestRunInHexaDecimal

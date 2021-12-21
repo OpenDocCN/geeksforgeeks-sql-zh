@@ -7,7 +7,7 @@ SQL Server 中的这个函数有助于将两个或多个字符串连接在一起
 
 **语法:**
 
-```
+```sql
 CONCAT(string_1, string_2, .......string_n)
 ```
 
@@ -31,7 +31,7 @@ CONCAT(string_1, string_2, .......string_n)
 
 *   **Concatenating 3 strings together with space in between –**
 
-    ```
+    ```sql
     SELECT CONCAT('PYTHON', ' ', 'is', ' ', 'fun!!!') 
     As Combined;
     ```
@@ -43,7 +43,7 @@ CONCAT(string_1, string_2, .......string_n)
 
 *   **Concatenating more than 3 strings together –**
 
-    ```
+    ```sql
     SELECT CONCAT
     ('Every', 'next', 'level', 'of', 'your', 'life', 'demands', 'a', 'new', 'you!') 
     As Combined;
@@ -57,7 +57,7 @@ CONCAT(string_1, string_2, .......string_n)
 **示例-2 :**
 使用带有 CONCAT()函数的变量，我们将字符串分配给变量，然后连接它们。
 
-```
+```sql
 DECLARE @Str1 AS VARCHAR(100)='Think'
 DECLARE @Str2 AS VARCHAR(100)='-'
 DECLARE @Str3 AS VARCHAR(100)='green'
@@ -77,7 +77,7 @@ SELECT CONCAT(@Str1, @Str2, @Str3, @str4, @str5, @str6, @str7) AS Combined;
 **示例-3 :**
 使用 CONCAT()函数连接数值表达式，这里我们组合数值来代替字符串。
 
-```
+```sql
 SELECT CONCAT(13, 03, 1999) 
 AS Combined;
 ```

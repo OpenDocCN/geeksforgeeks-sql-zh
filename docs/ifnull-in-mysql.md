@@ -17,7 +17,7 @@
 
 查询:-
 
-```
+```sql
 SELECT 
 IFNULL(
   (SELECT NAME 
@@ -27,7 +27,7 @@ IFNULL(
 
 ```
 
-```
+```sql
 Output:-
 Geek2
 
@@ -35,7 +35,7 @@ Geek2
 
 查询:-
 
-```
+```sql
 SELECT 
 IFNULL(
   (SELECT NAME 
@@ -45,7 +45,7 @@ IFNULL(
 
 ```
 
-```
+```sql
 Output:-
 NULL
 

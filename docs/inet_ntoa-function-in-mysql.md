@@ -8,7 +8,7 @@ MySQL 中的这个函数按照网络字节顺序获取 IPv4 地址，然后以�
 
 **语法:**
 
-```
+```sql
 INET_NTOA(expr)
 ```
 
@@ -25,7 +25,7 @@ INET_NTOA(expr)
 
 借助 INET_NTOA 函数，检查以下地址“17171712”的等效点四字符串表示形式。由于这是一个有效的 IPv4 地址，我们将得到一个点串的结果。
 
-```
+```sql
 SELECT INET_NTOA(17171712)  
 AS Address_In_DottedString ;
 ```
@@ -44,7 +44,7 @@ AS Address_In_DottedString ;
 
 借助 INET_NTOA 函数检查以下地址“-121”的等效点四字符串表示形式。由于它不是有效的 IPv4 地址，我们将得到空值。
 
-```
+```sql
 SELECT INET_NTOA(-121)  
 AS Address_In_DottedString ;
 ```
@@ -62,7 +62,7 @@ AS Address_In_DottedString ;
 
 借助 INET_NTOA 函数检查以下十进制数字“171712.01223”的等效点四字符串表示形式。
 
-```
+```sql
 SELECT INET_NTOA (171712.01223)  
 AS Address_In_DottedString ;
 ```
@@ -81,7 +81,7 @@ AS Address_In_DottedString ;
 
 借助 INET_NTOA 函数，检查以下二进制数“101011001”的等效点四字符串表示形式。
 
-```
+```sql
 SELECT INET_NTOA(b'101011001')  
 AS Address_In_DottedString ;
 ```

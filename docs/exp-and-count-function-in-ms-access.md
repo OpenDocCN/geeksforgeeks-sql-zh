@@ -7,14 +7,14 @@
 
 **语法:**
 
-```
+```sql
 Exp(number)
 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Exp(6) AS ExpNum;
 
 ```
@@ -26,7 +26,7 @@ SELECT Exp(6) AS ExpNum;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Exp(1) AS ExpNum;
 
 ```
@@ -44,7 +44,7 @@ SELECT Exp(1) AS ExpNum;
 
 **语法:**
 
-```
+```sql
 Count(expression)
 
 ```
@@ -60,7 +60,7 @@ Count(expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Count(*) AS TOTAL FROM Stu_Details;
 
 ```
@@ -72,7 +72,7 @@ SELECT Count(*) AS TOTAL FROM Stu_Details;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Count(*) AS TOTAL FROM Stu_Details
 Where MARKS>50;
 

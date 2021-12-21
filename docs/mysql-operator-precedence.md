@@ -81,7 +81,7 @@ Case 运算符 |
 
 从上表中，我们需要那些分数大于 10 分，名字以“p”或“s”开头的学生的成绩。所以，它的查询可以写成-
 
-```
+```sql
 mysql>select * 
 from student 
 where marks>10 and name like 'p%' 
@@ -103,7 +103,7 @@ where marks>10 and name like 'p%'
 
 该结果集与查询中预期的不同。因为它给出了学生分数低于 10 分的“惩罚”结果，这是不必要的。由于运算符“与”的优先级高于“或”，上述查询给出了所有分数大于 10 且姓名以“s”开头的学生的结果，此外，输出中还给出了姓名以“p”开头的学生的结果。所以，圆括号的作用来了。上述查询可以写成，
 
-```
+```sql
 mysql>select * 
 from student 
 where marks>10 and (name like 'p%' 

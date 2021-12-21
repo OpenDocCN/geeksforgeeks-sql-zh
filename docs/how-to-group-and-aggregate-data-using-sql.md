@@ -21,7 +21,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column1, column2..., 
 Aggregate(column3, column4,..) 
 FROM Table_name WHERE Condition...
@@ -39,7 +39,7 @@ ORDER BY column1,column2,.. DESC(if required);
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Sales;   
 ```
 
@@ -51,7 +51,7 @@ CREATE DATABASE Sales;
 
 **查询:**
 
-```
+```sql
 USE Sales;
 ```
 
@@ -63,7 +63,7 @@ USE Sales;
 
 **查询:**
 
-```
+```sql
 Create Table Sales_Order
 (ORDERNO VARCHAR(20) Primary Key, 
 ClientNo VARCHAR(20),
@@ -78,7 +78,7 @@ Oredrstatus VARCHAR(30)0;
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS Sales_Order;
 ```
 
@@ -92,7 +92,7 @@ EXEC SP_COLUMNS Sales_Order;
 
 **查询:**
 
-```
+```sql
 INSERT INTO Sales_Order VALUES
 ('O19001', 'C00001', '2007-10-03', 'S00001', 'In Process'); 
 INSERT INTO Sales_Order VALUES('O19002', 'C00002', '2007-11-01', 'S00002', 'Cancelled');
@@ -108,7 +108,7 @@ INSERT INTO Sales_Order VALUES('O19006', 'C00006', '2007-8-01', 'S00006', 'In Pr
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Sales_Order; 
 ```
 
@@ -120,7 +120,7 @@ SELECT * FROM Sales_Order;
 
 **查询:**
 
-```
+```sql
 SELECT CLIENTNO, COUNT(ORDERSTATUS)
 AS Order_In_Process
 from Sales_Order WHERE 
@@ -141,7 +141,7 @@ ORDERSTATUS='In Process' GROUP BY CLIENTNO;
 
 **查询:**
 
-```
+```sql
 Create Table Ordered place VARCHAR(30), product VARCHAR(30), price DECIMAL);
 ```
 
@@ -159,7 +159,7 @@ Create Table Ordered place VARCHAR(30), product VARCHAR(30), price DECIMAL);
 
 **查询:**
 
-```
+```sql
 SELECT place, SUM(price) FROM ORDERED GROUP BY place; 
 ```
 

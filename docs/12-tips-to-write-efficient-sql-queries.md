@@ -38,13 +38,13 @@
 
 要检查某些数据的存在，您需要执行一个操作。人们经常这样尝试:
 
-```
+```sql
 SET @CT = (SELECT COUNT (*) FROM dbo.T1);If @CT > 0BEGIN <Do something>END
 ```
 
 写上面的语句是不必要的，只是浪费了很多时间。你可以写下面的语句来代替上面的语句…
 
-```
+```sql
 If EXISTS (SELECT 1 FROM dbo.T1)BEGIN<Do something>END
 ```
 

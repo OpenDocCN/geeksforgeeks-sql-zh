@@ -9,7 +9,7 @@
 **示例-1 :**
 创建个人信息客户表的 SQL 查询如下。
 
-```
+```sql
 CREATE TABLE CUSTOMERS (
 ID INT NOT NULL,
 NAME VARCHAR (20) NOT NULL,
@@ -22,7 +22,7 @@ ORDERS VARCHAR (155)
 **示例-2 :**
 创建客户表的 SQL 查询如下。
 
-```
+```sql
 CREATE TABLE CUSTOMERS (
 CUS_ID INT NOT NULL,
 CUST_NAME VARCHAR(20) NOT NULL,
@@ -45,13 +45,13 @@ PRIMARY KEY ( CUST_ID)
 
 效率低下–
 
-```
+```sql
 SELECT * FROM Customers     
 ```
 
 高效–
 
-```
+```sql
 SELECT FirstName, Last name, Address,City,State,Zip  
 FROM Customers       
 ```
@@ -61,21 +61,21 @@ SELECT DISTINCT 是一种从查询中删除重复项的方法。SELECT DISTINCT 
 
 低效且不准确–
 
-```
+```sql
 SELECT DISTINCT FirstName, Last name, State 
 FROM Customers       
 ```
 
 高效准确–
 
-```
+```sql
 SELECT FirstName, LastName, Address, City, State, Zip              
 FROM Customers        
 ```
 
 **4。加入(不是在哪里)–**
 
-```
+```sql
 SELECT Customers.CustomerID, Customers. Name, Sales. Last Sale.Date FROM Customers, Sales 
 WHERE Customers.CustomerID = Sales.customerID 
 ```
@@ -84,7 +84,7 @@ WHERE Customers.CustomerID = Sales.customerID
 
 内部连接–
 
-```
+```sql
 SELECT Customers.CustomerID, Customers.Name , Sales.Last SaleDate  
 from Customers 
 INNER JOIN Sales ON customers.CustomerID  = 
@@ -96,7 +96,7 @@ Sales.CustomerID
 **5。使用 where 而不是必须定义过滤器–**
 高效的 SQL 查询的目标必须是从数据库中只获取所需的记录。例如，假设 2017 年完成了 300 笔销售，我们想要查询 2017 年每个客户的销售数量。
 
-```
+```sql
 SELECT Customers.customerID,Customers.Name,Count (sales.saleID)
 FROM Customers
 INNER JOIN Sales       
@@ -110,7 +110,7 @@ BETWEEN
 **6。在结尾使用通配符–**
 使用通配符，尤其是与结尾通配符结合使用时，数据库负责在所选字段的任何位置搜索所有匹配记录。
 
-```
+```sql
 SELECT City FROM Customers                     
 WHERE city LIKE '%char%' 
 ```

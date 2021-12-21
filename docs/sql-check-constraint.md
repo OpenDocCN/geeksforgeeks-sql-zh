@@ -12,7 +12,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE pets(
         ID INT NOT NULL,
         Name VARCHAR(30) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE pets(
 限制条件:只有年龄≥17 岁的学生才能报读大学。
 **大学学生数据库模式:**
 
-```
+```sql
 CREATE TABLE student(
         StudentID INT NOT NULL,
         Name VARCHAR(30) NOT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE student(
 
 **说明:**在上述关系中，根据关系的图式中 check 语句提到的约束，所有学生的年龄都大于等于 17 岁。但是，如果执行了以下 SQL 语句:
 
-```
+```sql
 INSERT INTO student(STUDENTID, NAME, AGE, GENDER) 
 VALUES (1006, 'Emma', 16, 'Female');
 ```
@@ -64,27 +64,27 @@ VALUES (1006, 'Emma', 16, 'Female');
 
 *   **使用 alter:** 检查约束也可以使用语法:
 
-    ```
+    ```sql
     alter table TABLE_NAME modify COLUMN_NAME check(Predicate);
     ```
 
     添加到已经创建的关系中
 *   **为检查约束赋予变量名:**检查约束可以使用以下语法赋予变量名:
 
-    ```
+    ```sql
     alter table TABLE_NAME add constraint CHECK_CONST check (Predicate);
     ```
 
 *   **删除检查约束:**可以使用语法:
 
-    ```
+    ```sql
     alter table TABLE_NAME drop constraint CHECK_CONSTRAINT_NAME;
     ```
 
     从 SQL server 的数据库关系中删除检查约束
 *   **删除检查约束:**可以使用语法:
 
-    ```
+    ```sql
     alter table TABLE_NAME drop check CHECK_CONSTRAINT_NAME;
     ```
 

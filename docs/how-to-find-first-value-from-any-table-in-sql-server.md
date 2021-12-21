@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT *,
 FROM tablename;
 FIRST_VALUE ( scalar_value ) 
@@ -30,7 +30,7 @@ OVER (
 
 让我们假设我们有一个名为“geek_demo”的表:
 
-```
+```sql
 SELECT TOP 1000 [Name]
      ,[City], [Year]
 FROM [geek_demo];
@@ -53,7 +53,7 @@ FROM [geek_demo];
 
 要查找表“极客演示”的第一个城市，请使用以下查询:
 
-```
+```sql
 SELECT [Name],   [Year],
         FIRST_VALUE(City) OVER (
           ORDER BY City ASC
@@ -80,7 +80,7 @@ FROM geek_demo;
 
 要根据年份为表“极客-演示”找到第一个城市，请使用以下查询:
 
-```
+```sql
 SELECT TOP 1000 [Name] , [Year] ,
         FIRST_VALUE(City) OVER (
         PARTITION BY Year

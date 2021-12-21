@@ -36,7 +36,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE TABLE TABLE_NAME(
     Column 1 datatype,
     Column 2 datatype,
@@ -60,7 +60,7 @@ CREATE TABLE TABLE_NAME(
 
 为了创建下表，我们使用以下命令
 
-```
+```sql
 CREATE TABLE Customer(
     Customer_id int primary key,
     Customer_name varchar(20),
@@ -82,7 +82,7 @@ CREATE TABLE Customer(
 
 所以在这个关系中， *Customer_id* 是从上面的客户关系中获取的外键。我们可以使用以下命令创建该表。
 
-```
+```sql
 CREATE TABLE SALES(
     Customer_id int FOREIGN KEY REFERENCES Customer(Customer_id)
     Item_id int,
@@ -94,7 +94,7 @@ CREATE TABLE SALES(
 
 **语法:**
 
-```
+```sql
 CREATE TABLE TABLE_NAME(
     Column 1 datatype,
     Column 2 datatype,
@@ -108,7 +108,7 @@ CREATE TABLE TABLE_NAME(
 
 现在为了使用客户表创建相同的销售表，我们可以运行以下命令
 
-```
+```sql
 CREATE TABLE SALES(
     Customer_id int,
     Item_id int,

@@ -7,43 +7,43 @@
 
 **语法:**
 
-```
+```sql
 FLOOR( number )
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT FLOOR(-17.7);
 ```
 
 **输出:**
 
-```
+```sql
 18
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT FLOOR(34.2);
 ```
 
 **输出:**
 
-```
+```sql
 34
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT FLOOR(73);
 ```
 
 **输出:**
 
-```
+```sql
 73
 ```
 
@@ -52,43 +52,43 @@ SELECT FLOOR(73);
 
 **语法:**
 
-```
+```sql
 GREATEST( expr1, expr2, ... expr_n )
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT GREATEST(45, 19, 109);
 ```
 
 **输出:**
 
-```
+```sql
 109
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT GREATEST('gfg','xyz,'abc');
 ```
 
 **输出:**
 
-```
+```sql
 abc
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT GREATEST('geeks', 'for',NULL,'geek');
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -97,42 +97,42 @@ NULL
 
 **语法:**
 
-```
+```sql
 LEAST( expr1, expr2, ... expr_n )
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT LEAST(87, 49, 12);
 ```
 
 **输出:**
 
-```
+```sql
 12
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT LEAST('GFG', 'ABC', 'XYZ');
 ```
 
 **输出:**
 
-```
+```sql
 ABC
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT LEAST('GEEKS',NULL,'FOR');
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```

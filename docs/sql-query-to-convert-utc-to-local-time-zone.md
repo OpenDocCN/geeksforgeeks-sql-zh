@@ -6,13 +6,13 @@
 
 **步骤 1:** 使用以下 SQL 查询创建数据库 time_converter，如下所示。
 
-```
+```sql
 CREATE DATABASE time_converter;
 ```
 
 **步骤 2:** 使用数据库 time_converter 使用如下 SQL 查询如下。
 
-```
+```sql
 USE time_converter;
 ```
 
@@ -20,7 +20,7 @@ USE time_converter;
 
 让我们创建一个以索引和**日期时间**作为数据类型的表。
 
-```
+```sql
 CREATE TABLE times
 (Sno INT,
  date_time DATETIME);
@@ -30,7 +30,7 @@ CREATE TABLE times
 
 **步骤 4:** 使用如下 SQL 查询查看数据库中表的描述。
 
-```
+```sql
 EXEC sp_columns times;
 ```
 
@@ -38,7 +38,7 @@ EXEC sp_columns times;
 
 **步骤 5:** 使用如下 SQL 查询将行插入时间表。
 
-```
+```sql
 INSERT INTO times VALUES
 (1,'2021-03-01 12:00:00'),
 (2,'2021-04-01 09:30:00'),
@@ -50,7 +50,7 @@ INSERT INTO times VALUES
 
 **步骤 6:** 使用如下 SQL 查询查看插入行后的表时间。
 
-```
+```sql
 SELECT * FROM times;
 ```
 
@@ -62,7 +62,7 @@ SELECT * FROM times;
 
 **语法:**
 
-```
+```sql
 SELECT colum_name,
 CONVERT(datetime, 
 SWITCHOFFSET(CONVERT(DATETIMEOFFSET, column_name), 
@@ -70,7 +70,7 @@ DATENAME(TZOFFSET, SYSDATETIMEOFFSET())))
 AS general_name
 ```
 
-```
+```sql
 SELECT 
 CONVERT(datetime, 
 SWITCHOFFSET(CONVERT(DATETIMEOFFSET, GETUTCDATE()), 
@@ -90,7 +90,7 @@ AS LOCAL_IST;
 
 **语法:**
 
-```
+```sql
 SELECT colum_name,
 CONVERT(datetime, 
 SWITCHOFFSET(CONVERT(DATETIMEOFFSET, column_name), 
@@ -99,7 +99,7 @@ AS general_name
 FROM table_name;
 ```
 
-```
+```sql
 SELECT date_time,
 CONVERT(datetime, 
 SWITCHOFFSET(CONVERT(DATETIMEOFFSET, date_time), 
@@ -116,7 +116,7 @@ FROM times;
 
 **语法:**
 
-```
+```sql
 SELECT 
 column_name,
 DATEADD(MI, DATEDIFF(MI, GETUTCDATE(), GETDATE()), date_time) 
@@ -124,7 +124,7 @@ AS LOCAL_IST
 FROM times;
 ```
 
-```
+```sql
 SELECT date_time,
 DATEADD(MI, DATEDIFF(MI, GETUTCDATE(), GETDATE()), date_time) 
 AS LOCAL_IST 

@@ -7,7 +7,7 @@
 
 **语法:**
 
-```
+```sql
 First(expr)
 
 ```
@@ -31,7 +31,7 @@ First(expr)
 
 **示例-1 :**
 
-```
+```sql
 SELECT First(Emp_id) AS EmployeeId FROM Employee_Details;
 
 ```
@@ -44,7 +44,7 @@ SELECT First(Emp_id) AS EmployeeId FROM Employee_Details;
 
 **示例-2 :**
 
-```
+```sql
 SELECT First(Emp_Name) AS FirstEmployee FROM Employee_Details;
 
 ```
@@ -60,7 +60,7 @@ SELECT First(Emp_Name) AS FirstEmployee FROM Employee_Details;
 
 **语法:**
 
-```
+```sql
 Last(expr)
 
 ```
@@ -73,7 +73,7 @@ Last(expr)
 
 **示例-2 :**
 
-```
+```sql
 SELECT Last(Emp_id) AS EmployeeId FROM Employee_Details;
 
 ```
@@ -86,7 +86,7 @@ SELECT Last(Emp_id) AS EmployeeId FROM Employee_Details;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Last(Emp_Name) AS LastEmployee FROM Employee_Details;
 
 ```

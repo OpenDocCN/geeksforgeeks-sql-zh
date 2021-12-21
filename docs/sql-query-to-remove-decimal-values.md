@@ -16,7 +16,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -26,7 +26,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -36,7 +36,7 @@ USE geeks;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE geeksforgeeks(
 NAME VARCHAR(10),
 MARKS float);
@@ -48,7 +48,7 @@ MARKS float);
 
 **查询:**
 
-```
+```sql
 INSERT INTO geeksforgeeks VALUES ('ROMY',80.9),('MEENAKSHI',86.89),('SHALINI',85.9),('SAMBHAVI', 89.45);
 ```
 
@@ -60,7 +60,7 @@ INSERT INTO geeksforgeeks VALUES ('ROMY',80.9),('MEENAKSHI',86.89),('SHALINI',85
 
 **查询:**
 
-```
+```sql
 SELECT * FROM geeksforgeeks;
 ```
 
@@ -74,13 +74,13 @@ SELECT * FROM geeksforgeeks;
 
 **语法:**
 
-```
+```sql
 ROUND(Value, decimal_place)
 ```
 
 **查询:**
 
-```
+```sql
 SELECT NAME, ROUND(MARKS,0) AS MARKS FROM geeksforgeeks;
 ```
 
@@ -98,13 +98,13 @@ SELECT NAME, ROUND(MARKS,0) AS MARKS FROM geeksforgeeks;
 
 **语法:**
 
-```
+```sql
  FLOOR(value)
 ```
 
 **查询:**
 
-```
+```sql
 SELECT NAME, FLOOR(MARKS) AS MARKS FROM geeksforgeeks;
 ```
 
@@ -122,13 +122,13 @@ SELECT NAME, FLOOR(MARKS) AS MARKS FROM geeksforgeeks;
 
 **语法:**
 
-```
+```sql
 CAST( value as datatype)
 ```
 
 **查询:**
 
-```
+```sql
 SELECT NAME, CAST(MARKS as INT) AS MARKS FROM geeksforgeeks;
 ```
 

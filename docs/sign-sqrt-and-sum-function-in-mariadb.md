@@ -7,43 +7,43 @@
 
 **语法:**
 
-```
+```sql
 SIGN( number )
 ```
 
 **示例-1:**
 
-```
+```sql
 SELECT SIGN(509);
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2:**
 
-```
+```sql
 SELECT SIGN(0);
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-3:**
 
-```
+```sql
 SELECT SIGN(-346);
 ```
 
 **输出:**
 
-```
+```sql
 -1
 ```
 
@@ -52,43 +52,43 @@ SELECT SIGN(-346);
 
 **语法:**
 
-```
+```sql
 SQRT( number )
 ```
 
 **示例-1:**
 
-```
+```sql
 SELECT SQRT(121);
 ```
 
 **输出:**
 
-```
+```sql
 11
 ```
 
 **示例-2:**
 
-```
+```sql
 SELECT SQRT(0);
 ```
 
 **输出:**
 
-```
+```sql
 0
 ```
 
 **例-3:**
 
-```
+```sql
 SELECT SQRT(-64);
 ```
 
 **输出:**
 
-```
+```sql
 NULL
 ```
 
@@ -97,7 +97,7 @@ NULL
 
 **语法:**
 
-```
+```sql
 Sum(expression)
 ```
 
@@ -115,7 +115,7 @@ Sum(expression)
 
 **示例-1:**
 
-```
+```sql
 SELECT Sum(SCORE) AS Total 
 From IPL;
 ```
@@ -131,7 +131,7 @@ From IPL;
 
 **示例-2:**
 
-```
+```sql
 SELECT Sum(SCORE) AS Total 
 From IPL
 WHERE SCORE<200;
@@ -148,7 +148,7 @@ WHERE SCORE<200;
 
 **例-3:**
 
-```
+```sql
 SELECT Sum(SCORE) AS Total 
 From IPL
 WHERE SCORE>200;

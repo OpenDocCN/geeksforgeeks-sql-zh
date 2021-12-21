@@ -21,7 +21,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     Create table people (no int references person, 
                               Fname varchar2(20));
                     OR
@@ -36,7 +36,7 @@
 
     *   如果父表没有主键。
 
-        ```
+        ```sql
         OUTPUT : 
         Error at line 1 : referenced table does not have a primary key.
 
@@ -44,7 +44,7 @@
 
     *   如果父表具有不同数据类型的主键。
 
-        ```
+        ```sql
         OUTPUT : 
         Error at line 1 : column type incompatible with referenced column type.
 
@@ -54,7 +54,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     create table people(no varchar2(10), 
                          fname varchar2(20), 
                          foreign key(no) references person);
@@ -70,7 +70,7 @@
 3.  **外键表中的插入操作:**
     如果外键表中没有对应的值，则不能插入子表中的记录。
 
-    ```
+    ```sql
     OUTPUT : 
     Error at line 1 : integrity constraint violated - parent key not found.
 
@@ -79,7 +79,7 @@
 4.  **外键表中的删除操作:**
     当主表中的一条记录被删除，并且子表中存在相应的记录时，会显示一条错误消息，阻止删除操作的进行。
 
-    ```
+    ```sql
     OUTPUT : 
     Error at line 1 : integrity constraint violated - child record found.
 
@@ -90,7 +90,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     create table people(no varchar2(10), 
                        fname varchar2(20), 
                        foreign key(no) 
@@ -100,7 +100,7 @@
 
     现在从人员中删除记录将从子表中删除所有相应的记录。
 
-    ```
+    ```sql
     OUTPUT :
     select * from person;
     no rows selected 
@@ -114,7 +114,7 @@
 
     **语法–**
 
-    ```
+    ```sql
     create table people(no varchar2(10), 
                      fname varchar2(20), 
                         foreign key(no)
@@ -122,7 +122,7 @@
 
     ```
 
-    ```
+    ```sql
     OUTPUT :
     select * from person;
     no rows selected

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 IPmt (rate, per, nper, pv [, fv ] [, type ])
 ```
 
@@ -26,7 +26,7 @@ IPmt (rate, per, nper, pv [, fv ] [, type ])
 **示例-1 :**
 以 10%卢比支付的利息。当年利率为 8 %且 TermInYears 为 5 时，为 100000。
 
-```
+```sql
 SELECT IPMT(0.08/12, 10, 5*12, -100000, 0, 0) AS Interest_Paid ;
 ```
 
@@ -52,7 +52,7 @@ SELECT IPMT(0.08/12, 10, 5*12, -100000, 0, 0) AS Interest_Paid ;
 
 </figure>
 
-```
+```sql
 SELECT IPMT([AnnualRate]/12, 10, [TermInYears]*12, -[LoanAmount], 0, 0) AS INTPaid 
 FROM Accounts;
 ```

@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 VAR_POP(expr);
 ```
 
@@ -21,7 +21,7 @@ VAR_POP(expr);
 
 **创建玩家表:**
 
-```
+```sql
 CREATE TABLE Player  
 (
 PlayerId INT AUTO_INCREMENT,  
@@ -34,7 +34,7 @@ PRIMARY KEY(PlayerId)
 
 **将数据插入表中:**
 
-```
+```sql
 INSERT INTO Player  
 (PlayerName, RunScored,  WicketsTaken )
 VALUES
@@ -48,7 +48,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 SELECT  * from Player ;
 ```
 
@@ -65,7 +65,7 @@ SELECT  * from Player ;
 
 现在我们要找到运行得分列的总体标准方差。
 
-```
+```sql
 SELECT  VAR_POP(RunScored ) as Run_POPVariance  
 FROM Player ;
 ```
@@ -79,7 +79,7 @@ FROM Player ;
 **示例-2 :**
 现在我们要找到 WicketsTaken 列的总体标准方差。
 
-```
+```sql
 SELECT  VAR_POP(WicketsTaken) as Wicket_POPVariance  
 FROM Player ;
 ```
@@ -93,7 +93,7 @@ FROM Player ;
 **示例-3 :**
 在本例中，我们将找到在地点“德里”工作的员工收入的总体标准差异，以演示如何创建名为 EmloyeeDetails 的表。
 
-```
+```sql
 CREATE TABLE EmployeeDetails(
 
 Employee_Id INT AUTO_INCREMENT,  
@@ -108,7 +108,7 @@ PRIMARY KEY(Employee_Id )
 
 向表中插入数据:
 
-```
+```sql
 INSERT INTO  
 EmployeeDetails(Employee_Name, Working_At, Work_Location, Joining_Date, Annual_Income )
 
@@ -128,7 +128,7 @@ VALUES
 
 要验证是否使用了以下命令，如下所示。
 
-```
+```sql
 Select * FROM EmployeeDetails;
 ```
 
@@ -149,7 +149,7 @@ Select * FROM EmployeeDetails;
 
 现在我们要找出工作地点在“德里”的员工的年收入的人口标准方差
 
-```
+```sql
 SELECT  'Delhi' AS 'Work_Location',
 VAR_POP(Annual_Income) as PopStdDevOfAnnualIncome  
 FROM EmployeeDetails where Work_Location = 'Delhi';

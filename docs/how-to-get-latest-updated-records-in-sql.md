@@ -10,13 +10,13 @@ SQL Server 是一个通用的数据库，它是许多软件行业中使用最多
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GEEKSFORGEEKS;
 ```
 
 **步骤 2:** 利用创建数据库。
 
-```
+```sql
 USE GEEKSFORGEEKS;
 ```
 
@@ -31,7 +31,7 @@ USE GEEKSFORGEEKS;
 
 **步骤 3:** 表格创建
 
-```
+```sql
 CREATE TABLE [dbo].[AuthorsNew](
     [ID] [int] IDENTITY(1,1) NOT NULL,
     [AuthorName] [nvarchar](20) NULL,
@@ -45,7 +45,7 @@ CREATE TABLE [dbo].[AuthorsNew](
 
 **步骤 4:** 在表中插入记录
 
-```
+```sql
 INSERT INTO AuthorsNew (AuthorName,Age,Skillsets,
 NumberOfPosts,isActiveAuthor,lastUpdatedBy)
 VALUES ('Rachel',25,'Java,Python,.Net',
@@ -86,7 +86,7 @@ VALUES ('Monica Geller',25,'Android,Python,.Net',
 
 **查询:**
 
-```
+```sql
 SELECT * FROM AuthorsNew;
 ```
 
@@ -98,7 +98,7 @@ SELECT * FROM AuthorsNew;
 
 **查询:**
 
-```
+```sql
 SELECT CONVERT(VARCHAR(10), 
 lastUpdatedBy, 111)
  from AuthorsNew;
@@ -110,7 +110,7 @@ lastUpdatedBy, 111)
 
 **查询:**
 
-```
+```sql
 SELECT TOP 1 * FROM AuthorsNew ORDER BY 
 CONVERT(VARCHAR(10), lastUpdatedBy, 111) DESC
 ```
@@ -123,7 +123,7 @@ CONVERT(VARCHAR(10), lastUpdatedBy, 111) DESC
 
 **查询:**
 
-```
+```sql
 SELECT * FROM AuthorsNew WHERE 
 CONVERT(VARCHAR(10), lastUpdatedBy, 111) =
 (SELECT MAX(CONVERT(VARCHAR(10), 
@@ -140,7 +140,7 @@ lastUpdatedBy, 111)) FROM AuthorsNew )
 
 **语法:**
 
-```
+```sql
 SELECT column_name, ... FROM table_name
 WHERE date_column >= DATEADD
 day,-<n days>, GETDATE())
@@ -153,7 +153,7 @@ day,-<n days>, GETDATE())
 
 **查询:**
 
-```
+```sql
 SELECT * FROM AuthorsNew WHERE 
 CONVERT(VARCHAR(10), lastUpdatedBy, 
 111) >= DATEADD(day,-2, GETDATE());
@@ -167,7 +167,7 @@ CONVERT(VARCHAR(10), lastUpdatedBy,
 
 **语法:**
 
-```
+```sql
 SELECT column_name, ... FROM table_name
 WHERE date_column >= DATEADD
 (MONTH,-<n months>, GETDATE())
@@ -177,7 +177,7 @@ WHERE date_column >= DATEADD
 
 **要获取 SQL Server 中的最后一条更新记录:**我们可以编写触发器(它会自动触发)，即每当某行发生更改(更新)时，“lastupdatedby”列值应该会根据当前时间戳进行更新。
 
-```
+```sql
 --Trigger that fires automatically
  whenever a update is done in a row
 CREATE TRIGGER trigger_change_lastupdatedby
@@ -197,7 +197,7 @@ WHERE id IN (SELECT DISTINCT id FROM INSERTED);
 
 **查询:**
 
-```
+```sql
 UPDATE AuthorsNew SET AuthorName = 
 'Monica Ross Geller' WHERE ID = 3;
 --We can see that 'lastupdatedby'
@@ -219,7 +219,7 @@ IDENT_CURRENT()函数接受表名(AuthorsNew)，并返回为 AuthorsNew 表生�
 
 **查询:**
 
-```
+```sql
 SELECT * FROM dbo.AuthorsNew WHERE [id] = 
 (SELECT IDENT_CURRENT('dbo.AuthorsNew'));
 ```

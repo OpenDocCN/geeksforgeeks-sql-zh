@@ -9,7 +9,7 @@
 
 **语法:**
 
-```
+```sql
 CREATE SEQUENCE schema_name.sequence_name  
 AS integer_type 
 START WITH start_value
@@ -36,14 +36,14 @@ MAXVALUE max_value ;
 
 使用以下语句获取 SQL server 中序列的详细信息:
 
-```
+```sql
 SELECT * 
 FROM sys.sequences; 
 ```
 
 **示例-1 :** 创建简单序列
 
-```
+```sql
 CREATE SEQUENCE geeks_num
 AS INT
 START WITH 10
@@ -52,7 +52,7 @@ INCREMENT BY 10;
 
 **输出–**
 
-```
+```sql
 SELECT NEXT VALUE FOR geeks_num; 
 ```
 
@@ -64,7 +64,7 @@ SELECT NEXT VALUE FOR geeks_num;
 
 再次运行以下语句，geeks_num 的值将增加 10。
 
-```
+```sql
 SELECT NEXT VALUE FOR geeks_num; 
 ```
 
@@ -79,14 +79,14 @@ SELECT NEXT VALUE FOR geeks_num;
 **示例-2 :** 在表中使用序列对象。
 让我们创建一个名为 geeksch 的模式:
 
-```
+```sql
 CREATE SCHEMA geeksch;
 GO 
 ```
 
 并创建一个名为 geektab 的新表:
 
-```
+```sql
 CREATE TABLE geeksch.geektab
 (
 geek_id INT PRIMARY KEY, 
@@ -96,7 +96,7 @@ DOJ date NOT NULL
 
 现在，创建一个名为 geek_number 的序列，该序列以 1 开始并增加 1。
 
-```
+```sql
 CREATE SEQUENCE geeksch.geek_number 
 AS INT
 START WITH 1
@@ -105,7 +105,7 @@ INCREMENT BY 1;
 
 向 geeksch.geektab 表中插入行，并按 geeksch.geek_number 顺序使用值:
 
-```
+```sql
 INSERT INTO geeksch.geektab(g_id, DOJ)
 VALUES(NEXT VALUE FOR geeksch.geek_number, '2019-07-15');
 
@@ -115,7 +115,7 @@ VALUES(NEXT VALUE FOR geeksch.geek_number, '2018-04-10');
 
 要查看 geeksch.geektab 表的值:
 
-```
+```sql
 SELECT * FROM  geeksch.geektab; 
 ```
 
@@ -128,7 +128,7 @@ SELECT * FROM  geeksch.geektab;
 
 **示例-3 :** 在多个表中使用序列对象示例。
 
-```
+```sql
 CREATE SEQUENCE geeksch.g_no
 START WITH 1
 INCREMENT BY 1; 
@@ -136,7 +136,7 @@ INCREMENT BY 1;
 
 使用 geeksch 序列创建表格。
 
-```
+```sql
 CREATE TABLE geeksch.table1
 (id INT PRIMARY KEY
 DEFAULT (NEXT VALUE FOR geeksch.g_no),
@@ -146,7 +146,7 @@ City NVARCHAR(100) );
 
 这里，表有一个列 id，它的值是从 geeksch.g_no 序列中派生出来的。
 
-```
+```sql
 INSERT INTO geeksch.table1(DOJ, City )
 VALUES('2019-05-12', 'Delhi');
 
@@ -156,7 +156,7 @@ VALUES(  '2019-06-18',  'Delhi');
 
 使用 geeksch 序列创建另一个表。
 
-```
+```sql
 CREATE TABLE geeksch.table2
 (id INT PRIMARY KEY
 DEFAULT (NEXT VALUE FOR geeksch.g_no), 
@@ -168,7 +168,7 @@ City NVARCHAR(100) );
 
 让我们在表 2 中插入一些没有 id 列值的行:
 
-```
+```sql
 INSERT INTO geeksch.table2(DOJ, City )
 VALUES('2020-02-03','Noida');
 
@@ -178,7 +178,7 @@ VALUES('2020-03-14','Noida');
 
 **输出–**
 
-```
+```sql
 SELECT * 
 FROM geeksch.table1; 
 ```
@@ -190,7 +190,7 @@ FROM geeksch.table1;
 | one | 2019-05-12′ | 德里 |
 | Two | 2019-06-18 | 德里 |
 
-```
+```sql
 SELECT * 
 FROM geeksch.table2; 
 ```

@@ -8,13 +8,13 @@ SQL 是一种编程语言，用于操作存储在数据库中的数据。它既�
 
 **删除表格:**
 
-```
+```sql
 DROP TABLE table_name;
 ```
 
 **删除数据库:**
 
-```
+```sql
 DROP DATABASE database_name;
 ```
 
@@ -24,19 +24,19 @@ DROP DATABASE database_name;
 
 **第一步:创建数据库**
 
-```
+```sql
 CREATE DATABASE Newcafe;
 ```
 
 **第二步:使用数据库**
 
-```
+```sql
 USE Newcafe;
 ```
 
 **第三步:创建表格**
 
-```
+```sql
 CREATE TABLE [dbo].[categories]
 (
     [CategoryID] INT NOT NULL PRIMARY KEY, 
@@ -48,7 +48,7 @@ GO
 
 **在表内添加数据**
 
-```
+```sql
 INSERT INTO [dbo].[categories]
 ( 
     [CategoryID], [CategoryName], [ItemDescription]
@@ -68,7 +68,7 @@ GO
 
 **查看最终表格:**
 
-```
+```sql
 SELECT * FROM  categories;
 ```
 
@@ -76,7 +76,7 @@ SELECT * FROM  categories;
 
 **第四步:放下类别表**
 
-```
+```sql
 drop table categories;
 ```
 
@@ -86,7 +86,7 @@ drop table categories;
 
 现在我们删除上面的内容，使用以下命令创建数据库:
 
-```
+```sql
 drop database Newcafe;
 ```
 

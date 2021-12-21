@@ -17,7 +17,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT col_1, function_name(col_2)
 FROM tablename
 WHERE condition
@@ -34,19 +34,19 @@ ORDER BY column1, column2;
 
 **步骤 1:创建数据库**
 
-```
+```sql
 CREATE DATABASE Company;
 ```
 
 **第二步:使用该数据库**
 
-```
+```sql
 USE Company;
 ```
 
 **第三步:创建表格**
 
-```
+```sql
 CREATE TABLE Employee(
    EmployeeId int,
    Name Varchar(20),
@@ -59,7 +59,7 @@ CREATE TABLE Employee(
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO Employee VALUES (1, 'Rachit', 'M', 50000, 'Engineering', '6 year')
 INSERT INTO Employee VALUES (2, 'Shobit', 'M', 37000, 'HR', '3 year')
 INSERT INTO Employee VALUES (3, 'Isha', 'F', 56000, 'Sales', '7 year')
@@ -69,7 +69,7 @@ INSERT INTO Employee VALUES (5, 'Akhil', 'M', 90000, 'Engineering', '15 year')
 
 **最终表为:**
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 
@@ -79,7 +79,7 @@ SELECT * FROM Employee;
 
 这个员工表将帮助我们理解 HAVING 子句。它包含员工标识、姓名、性别、部门和工资。要知道工资总额，我们将编写查询:
 
-```
+```sql
 SELECT Department, sum(Salary) as Salary
 FROM employee
 GROUP BY department;  
@@ -91,7 +91,7 @@ GROUP BY department;
 
 现在如果我们需要显示工资总和为 5 万或更多的部门。在这种情况下，我们将使用 HAVING 子句。
 
-```
+```sql
 SELECT Department, sum(Salary) as Salary
 FROM employee
 GROUP BY department
@@ -106,19 +106,19 @@ HAVING SUM(Salary) >= 50000;
 
 **步骤 1:创建数据库**
 
-```
+```sql
 CREATE DATABASE School;
 ```
 
 **第二步:使用该数据库**
 
-```
+```sql
 USE School;
 ```
 
 **第三步:创建表格**
 
-```
+```sql
 CREATE TABLE Student(
    student Varchar(20),
    percentage int
@@ -127,7 +127,7 @@ CREATE TABLE Student(
 
 **在表格中添加数值:**
 
-```
+```sql
 INSERT INTO Student VALUES ('Isha Patel', 98)
 INSERT INTO Student VALUES ('Harsh Das', 94)
 INSERT INTO Student VALUES ('Rachit Sha', 93)
@@ -137,7 +137,7 @@ INSERT INTO Student VALUES ('Rahat Ali', 98)
 
 **最终表为:**
 
-```
+```sql
 SELECT * FROM Student;
 ```
 
@@ -145,7 +145,7 @@ SELECT * FROM Student;
 
 **第四步:执行查询**
 
-```
+```sql
 SELECT student, percentage
 FROM Student
 GROUP BY student, percentage
@@ -158,7 +158,7 @@ HAVING percentage > 95;
 
 此外，我们还可以使用 HAVING 子句过滤多个值上的行。HAVING 子句还允许使用多个聚合条件过滤行。
 
-```
+```sql
 SELECT student  
 FROM Student
 WHERE percentage > 90

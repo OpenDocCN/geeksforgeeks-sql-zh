@@ -14,7 +14,7 @@
 
 使用以下查询创建名为“员工”的示例表:
 
-```
+```sql
 CREATE TABLE EMPLOYEE
 (
 EmpCode   INT,
@@ -31,7 +31,7 @@ DEPTCODE  INT
 
 现在，您可以使用下面的查询将数据添加到上面创建的雇员表中:
 
-```
+```sql
 INSERT INTO EMPLOYEE
 VALUES (1, 'ROB', 'STARK', 'SOFTWARE ENGINEER', 7902, '2012-12-17',20),
   (2, 'JON', 'SNOW', 'SALESMAN', 7698, '2014-02-20', 30),  

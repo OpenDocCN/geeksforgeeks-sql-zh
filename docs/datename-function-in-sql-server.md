@@ -16,7 +16,7 @@ SQL Server 中的这个[函数用于查找指定日期的给定部分。此外�
 
 **语法:**
 
-```
+```sql
 DATENAME(interval, date)
 ```
 
@@ -26,7 +26,7 @@ DATENAME(interval, date)
 
 *   **interval–** is the designated part to be returned. In addition, the value of the interval can be given as follows.
 
-```
+```sql
 year, yyyy, yy   = Year, which is the specified year.
 quarter, qq, q   = Quarter, which is the specified quarter.
 month, mm, m     = month, which is the specified month.
@@ -50,13 +50,13 @@ millisecond, ms  = Millisecond, which is the specified millisecond.
 
 使用 DATENAME()函数并获取指定日期的年份部分。
 
-```
+```sql
 SELECT DATENAME(year, '2021/01/06');
 ```
 
 **输出:**
 
-```
+```sql
 2021
 ```
 
@@ -64,13 +64,13 @@ SELECT DATENAME(year, '2021/01/06');
 
 使用 DATENAME()函数并获取指定日期的月份部分。
 
-```
+```sql
 SELECT DATENAME(month, '2021/01/06');
 ```
 
 **输出:**
 
-```
+```sql
 January
 ```
 
@@ -78,13 +78,13 @@ January
 
 使用 DATENAME()函数并获取指定日期的日部分。
 
-```
+```sql
 SELECT DATENAME(day, '2021/01/06');
 ```
 
 **输出:**
 
-```
+```sql
 6
 ```
 
@@ -92,13 +92,13 @@ SELECT DATENAME(day, '2021/01/06');
 
 使用 DATENAME()函数并获取指定日期的小时部分，其中也包括时间。
 
-```
+```sql
 SELECT DATENAME(hour, '2021/01/06 05:30');
 ```
 
 **输出:**
 
-```
+```sql
 5
 ```
 
@@ -106,7 +106,7 @@ SELECT DATENAME(hour, '2021/01/06 05:30');
 
 使用 DATENAME()函数并获取指定日期的第二部分，其中包括时间以及使用变量。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '2019/06/05 07:37:54';
 SELECT DATENAME(second, @date);
@@ -114,7 +114,7 @@ SELECT DATENAME(second, @date);
 
 **输出:**
 
-```
+```sql
 54
 ```
 

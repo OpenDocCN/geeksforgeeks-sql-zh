@@ -13,21 +13,21 @@
 **步骤-1:创建数据库–**
 这里首先，我们将使用 SQL 查询创建数据库，如下所示。
 
-```
+```sql
 CREATE DATABASE geeksforgeeks;
 ```
 
 **步骤-2:** **使用数据库–**
 现在，我们将使用数据库使用 SQL 查询如下。
 
-```
+```sql
 USE geeksforgeeks;
 ```
 
 **步骤-3:创建表 1–**
 使用如下 SQL 查询创建表 1，名称为 s_marks。
 
-```
+```sql
 CREATE TABLE s_marks 
 (
 studentid int(10) PRIMARY KEY, 
@@ -39,7 +39,7 @@ professorid int(10)
 **第 4 步:创建表 2–**
 使用如下 SQL 查询为教授详细信息创建表 2 作为 p_details。
 
-```
+```sql
 CREATE TABLE p_details 
 (
 pid int(10) PRIMARY KEY, 
@@ -51,7 +51,7 @@ pemail VARCHAR(50)
 **步骤-5:创建表 3–**
 使用如下 SQL 查询为作为主题的主题创建一个表。
 
-```
+```sql
 CREATE TABLE subjects  
 (
 subjectid VARCHAR(10) PRIMARY KEY, 
@@ -62,7 +62,7 @@ total_marks INT(5)
 **步骤-6:创建表 4–**
 使用如下 SQL 查询为主题标记详细信息创建一个表。
 
-```
+```sql
 CREATE TABLE marks_details 
 (
 total_marks INT(5) PRIMARY KEY, 
@@ -81,28 +81,28 @@ practical INT(5)
 
 **插入 s _ marks–**
 
-```
+```sql
 INSERT INTO `s_marks` (`studentid`, `subjectid`, `professorid`) VALUES ('1', 'KCS101', '1');
 INSERT INTO `s_marks` (`studentid`, `subjectid`, `professorid`) VALUES ('2', 'KCS102', '2');
 ```
 
 **插入 p _ details–**
 
-```
+```sql
 INSERT INTO `p_details` (`pid`, `pname`, `pemail`) VALUES ('1', 'Devesh', 'geeks@abc.com');
 INSERT INTO `p_details` (`pid`, `pname`, `pemail`) VALUES ('2', 'Aditya', 'for@abc.com');
 ```
 
 **插入受试者–**
 
-```
+```sql
 INSERT INTO `subjects` (`subjectid`, `total_marks`) VALUES ('KCS101', '100');
 INSERT INTO `subjects` (`subjectid`, `total_marks`) VALUES ('KCS102', '150');
 ```
 
 **插入标记 _ 细节–**
 
-```
+```sql
 INSERT INTO `marks_details` (`total_marks`, `theory`, `practical`) VALUES ('100', '70', '30');
 INSERT INTO `marks_details` (`total_marks`, `theory`, `practical`) VALUES ('150', '100', '50');
 ```
@@ -110,7 +110,7 @@ INSERT INTO `marks_details` (`total_marks`, `theory`, `practical`) VALUES ('150'
 **第 8 步:验证和连接表格–**
 运行查询，找出一名学生的身份证、教授姓名，该学生的学科实践分数为 50，如下所示。
 
-```
+```sql
 SELECT s_marks.studentid, p_details.pname FROM s_marks 
 JOIN subjects ON s_marks.subjectid = subjects.subjectid 
 JOIN marks_details ON subjects.total_marks = marks_details.total_marks

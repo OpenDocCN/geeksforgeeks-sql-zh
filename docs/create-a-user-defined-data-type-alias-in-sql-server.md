@@ -13,7 +13,7 @@
 
 **语法–**
 
-```
+```sql
 use DatabaseName
 Create Type UserDefineDataTypeName    
 from datatype NOT NULL
@@ -22,7 +22,7 @@ from datatype NOT NULL
 **示例–**
 创建一个名为“代码”的用户定义数据类型，它只存储 4 个字母。
 
-```
+```sql
 use Database name
 Create Type Code    
 from varchar(4) NOT NULL
@@ -54,14 +54,14 @@ from varchar(4) NOT NULL
 
 **语法–**
 
-```
+```sql
 Create Rule RuleName  
 as @UserDefineDataTypeName not like ruletype
 ```
 
 **示例–**
 
-```
+```sql
 Create Rule Code_Rule  
 as @Code not like '%D%'
 ```
@@ -73,13 +73,13 @@ as @Code not like '%D%'
 
 **语法–**
 
-```
+```sql
 sp_bindrule RuleName,'UserDefineDataTypeName'
 ```
 
 **示例–**
 
-```
+```sql
 sp_bindrule Code_Rule,'Code'
 ```
 
@@ -91,12 +91,12 @@ sp_bindrule Code_Rule,'Code'
 
 **语法–**
 
-```
+```sql
 sp_unbindrule 'UserDefineDataTypeName'
 ```
 
 **示例–**
 
-```
+```sql
 sp_unbindrule 'Code'
 ```

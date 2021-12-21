@@ -9,7 +9,7 @@ length c 函数返回的值是数据类型 NUMBER。
 
 **语法:**
 
-```
+```sql
 LENGTHC( string )
 ```
 
@@ -25,7 +25,7 @@ LENGTHC( string )
 
 **示例-1:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := NULL;
 
@@ -37,13 +37,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **例-2:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := '';
 
@@ -55,13 +55,13 @@ END;
 
 **输出:**
 
-```
+```sql
 NULL 
 ```
 
 **例-3:**
 
-```
+```sql
 
 DECLARE 
    Test_String string(20) := ' ';
@@ -74,13 +74,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **例-4:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -92,13 +92,13 @@ END;
 
 **输出:**
 
-```
+```sql
 13 
 ```
 
 **例-5:**
 
-```
+```sql
 DECLARE 
    Test_String string(20) := ' Geeksforgeeks ';
 
@@ -110,6 +110,6 @@ END;
 
 **输出:**
 
-```
+```sql
 15 
 ```

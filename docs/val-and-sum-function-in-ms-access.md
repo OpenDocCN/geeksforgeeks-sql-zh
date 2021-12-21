@@ -9,13 +9,13 @@ val()函数返回在字符串中找到的数字。在这个函数中，它将字
 
 **语法:**
 
-```
+```sql
 Val(string) 
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT Val("234geeksforgeeks12") 
 AS ValNum;
 ```
@@ -27,7 +27,7 @@ AS ValNum;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Val("345") 
 AS ValNum;
 ```
@@ -44,7 +44,7 @@ Sum()函数返回该组值的和。在这个函数中，值集作为参数传递
 
 **语法:**
 
-```
+```sql
 Sum(expression) 
 ```
 
@@ -59,7 +59,7 @@ Sum(expression)
 
 **示例-1 :**
 
-```
+```sql
 SELECT Sum(marks) AS Total 
 From student;
 ```
@@ -71,7 +71,7 @@ From student;
 
 **示例-2 :**
 
-```
+```sql
 SELECT Sum(marks) AS Total 
 From student Where marks>50;
 ```

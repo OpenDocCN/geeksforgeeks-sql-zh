@@ -35,7 +35,7 @@ SQL join 语句用于根据一个公共属性或字段组合来自两个或两�
 
 **完全外部连接:**完全连接通过连接[左连接](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/)和[右连接](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/)提供结果。结果将包含表 1 和表 2 中的所有行。结果表中不匹配的行将具有空值。
 
-```
+```sql
 SELECT * FROM Table1
 FULL OUTER JOIN Table2
 ON Table1.column_match=Table2.column_match;
@@ -60,7 +60,7 @@ column_match: The column common to both the tables.
 
 **使用 WHERE 子句的完全外部连接**:使用带有完全外部连接的 WHERE 子句有助于检索在连接两个具有空条目的表时没有条目匹配的所有行。
 
-```
+```sql
 SELECT * FROM Table1
 FULL OUTER JOIN Table2
 ON Table1.column_match=Table2.column_match
@@ -81,13 +81,13 @@ column: The column having NULL value after Full Outer Join
 
 **1。创建数据库**
 
-```
+```sql
 CREATE DATABASE database_name;
 ```
 
 **2。创建表格**
 
-```
+```sql
 CREATE TABLE Table_name(
 col_1 TYPE col_1_constraint,
 col_2 TYPE col_2 constraint
@@ -101,7 +101,7 @@ col_constraint: Constraints in SQL like PRIMARY KEY, NOT NULL, UNIQUE, REFERENCE
 
 **3。插入表格**
 
-```
+```sql
 INSERT INTO Table_name
 VALUES(val_1, val_2, val_3, ..........)
 
@@ -110,7 +110,7 @@ val: Values in particular column
 
 **4。查看表格**
 
-```
+```sql
 SELECT * FROM Table_name
 ```
 

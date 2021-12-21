@@ -9,7 +9,7 @@ CREATE DOMAIN 创建一个新的域。域本质上是一种带有可选约束(�
 
 **示例:**
 
-```
+```sql
 CREATE DOMAIN CPI_DATA AS REAL CHECK
 (value >= 0 AND value <= 10);
 
@@ -17,7 +17,7 @@ CREATE DOMAIN CPI_DATA AS REAL CHECK
 
 现在创建了 CPI_DATA 域，因此我们可以在任何数据库表中使用这个域，如下所示:
 
-```
+```sql
 CREATE TABLE student(
 sid char(9) PRIMARY KEY,
 name varchar(30),
@@ -30,7 +30,7 @@ cpi CPI_DATA
 
 **例 1 :**
 
-```
+```sql
 Insert into student values (201501408,Raj,7.5); 
 This will not violate the property of cpi. 
 
@@ -38,7 +38,7 @@ This will not violate the property of cpi.
 
 **例 2 :**
 
-```
+```sql
 Insert into student values (201501188,Dhaval,12); 
 ```
 

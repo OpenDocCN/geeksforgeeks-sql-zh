@@ -13,7 +13,7 @@
 
 **语法:**
 
-```
+```sql
 CASE
     WHEN condition1 THEN result1
     WHEN condition2 THEN result2
@@ -33,7 +33,7 @@ END;
 
 **示例 1:** 使用 CASE()函数并获取输出。
 
-```
+```sql
 CREATE TABLE float01001
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -66,7 +66,7 @@ FROM float01001;
 
 **输出:**
 
-```
+```sql
 float_val  | float_txt
 -------------------------------------------
   1.9      | The value is under 5
@@ -84,7 +84,7 @@ float_val  | float_txt
 
 使用 CASE()函数，检查所述浮点值的长度是否大于、小于或等于 4。
 
-```
+```sql
 CREATE TABLE float01001
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -117,7 +117,7 @@ FROM float01001;
 
 **输出:**
 
-```
+```sql
 float_val  | float_txt
 -------------------------------------------
  9         | The length is less than 4
@@ -135,7 +135,7 @@ float_val  | float_txt
 
 使用 CASE()函数，检查所述项目的物料需求计划是否大于 400。
 
-```
+```sql
 CREATE TABLE package099
 (  
 user_id int NOT NULL AUTO_INCREMENT,
@@ -159,7 +159,7 @@ FROM package099;
 
 **输出:**
 
-```
+```sql
 mrp  | txt
 ------------------------------
  350 |  Don't buy this item
@@ -171,7 +171,7 @@ mrp  | txt
 
 使用 CASE()函数并检查损益。
 
-```
+```sql
 CREATE TABLE package72
 (  
 user_id int NOT NULL AUTO_INCREMENT,  
@@ -199,7 +199,7 @@ FROM package72;
 
 **输出:**
 
-```
+```sql
 mrp  | sp  | PL
 -----------------------
  250 | 255 | Profit

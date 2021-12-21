@@ -8,7 +8,7 @@
 
 **第一步:**创建**学生**表
 
-```
+```sql
 CREATE TABLE Student (
     sno INT PRIMARY KEY,
     sname VARCHAR(20),
@@ -19,7 +19,7 @@ CREATE TABLE Student (
 
 **第二步:**将行插入****学生**表格**
 
-```
+```sql
 INSERT INTO Student(sno, sname,age)
  VALUES(1,'Ankit',17),
        (2,'Ramya',18),
@@ -28,7 +28,7 @@ INSERT INTO Student(sno, sname,age)
 
 ****第三步:**执行的**选择**查询，检查**学生**表中的数据。**
 
-```
+```sql
 SELECT *
 FROM Student;
 ```
@@ -44,7 +44,7 @@ FROM Student;
 
 ****步骤 4:** 创建**课程**表**
 
-```
+```sql
 CREATE TABLE Course (
     cno INT PRIMARY KEY,
     cname VARCHAR(20)
@@ -53,7 +53,7 @@ CREATE TABLE Course (
 
 ****步骤 5:** 将行插入的**路线**表格**
 
-```
+```sql
 INSERT INTO Course(cno, cname)
  VALUES(101,'c'),
        (102,'c++'),
@@ -62,7 +62,7 @@ INSERT INTO Course(cno, cname)
 
 ****第 6 步:**执行的**选择**查询，查看**课程**表中的数据。**
 
-```
+```sql
 SELECT *
 FROM Course;
 ```
@@ -81,7 +81,7 @@ FROM Course;
 
 ****第七步:**创建**报名**表**
 
-```
+```sql
 CREATE TABLE Enroll (
     sno INT,
     cno INT,
@@ -98,7 +98,7 @@ CREATE TABLE Enroll (
 
 ****第 8 步:**在**报名**表格中插入行**
 
-```
+```sql
 INSERT INTO Enroll(sno,cno,jdate)
  VALUES(1, 101, '5-jun-2021'),
        (1, 102, '5-jun-2021'),
@@ -107,7 +107,7 @@ INSERT INTO Enroll(sno,cno,jdate)
 
 ****第九步:**执行的**选择**查询，查看**报名**表中的数据。**
 
-```
+```sql
 SELECT *
 FROM Enroll;
 ```
@@ -124,14 +124,14 @@ FROM Enroll;
 
 ****第 10 步**:这里的父表是**学生**和**课程**，子表是**报名**。如果学生退出课程或课程从课程列表中删除，它也必然会影响子表。**
 
-```
+```sql
 DELETE FROM Student
 WHERE sname="Ramya";
 ```
 
 ****第 11 步:**执行的**选择**查询查看数据。**
 
-```
+```sql
 Select * from Student;
 ```
 

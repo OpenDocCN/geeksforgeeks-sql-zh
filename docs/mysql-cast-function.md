@@ -16,7 +16,7 @@ MySQL **CAST()** 函数用于将一个值从一种数据类型转换为另一种
 
 **语法:**
 
-```
+```sql
 CAST(input_value AS datatype)
 ```
 
@@ -41,48 +41,48 @@ MySQL CAST()函数在转换后返回所需数据类型的值。
 
 **示例-1:** 实现 CAST()函数将值转换为 DATE 数据类型。
 
-```
+```sql
 SELECT CAST("2019-11-21" AS DATE); 
 ```
 
 **输出:**
 
-```
+```sql
 2019-11-21 
 ```
 
 **示例-2:** 实现 CAST()函数将值转换为 CHAR 数据类型。
 
-```
+```sql
 SELECT CAST(121 AS CHAR); 
 ```
 
 **输出:**
 
-```
+```sql
 121 
 ```
 
 **示例-3:** 实现 CAST()函数将值转换为 SIGNED 数据类型。
 
-```
+```sql
 SELECT CAST(2-4 AS SIGNED); 
 ```
 
 **输出:**
 
-```
+```sql
 -2 
 ```
 
 **示例-4:** 实现 CAST()函数将值转换为 UNSIGNED 数据类型。
 
-```
+```sql
 SELECT CAST(2-4 AS UNSIGNED); 
 ```
 
 **输出:**
 
-```
+```sql
 18446744073709551614 
 ```

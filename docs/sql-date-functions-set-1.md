@@ -10,7 +10,7 @@
 
 1.  **ADDDATE():** 它在添加了某个时间/日期间隔后返回一个日期。
 
-    ```
+    ```sql
     Syntax: SELECT ADDTIME("2018-07-16 02:52:47", "2");
     ```
 
@@ -18,7 +18,7 @@
 
 2.  **ADDTIME():**添加一定时间间隔后返回时间/日期时间。
 
-    ```
+    ```sql
     Syntax: SELECT ADDTIME("2017-06-15 09:34:21", "2");
     ```
 
@@ -26,7 +26,7 @@
 
 3.  **cordate():**返回当前日期。
 
-    ```
+    ```sql
     Syntax: SELECT CURDATE();
     ```
 
@@ -34,7 +34,7 @@
 
 4.  **CURRENT _ DATE():**返回当前日期。
 
-    ```
+    ```sql
     Syntax: SELECT CURRENT_DATE();
     ```
 
@@ -42,7 +42,7 @@
 
 5.  **CURRENT _ TIME():**返回当前时间。
 
-    ```
+    ```sql
     Syntax: SELECT CURRENT_TIME();
     ```
 
@@ -50,7 +50,7 @@
 
 6.  **CURRENT _ TIMESTAMP():**返回当前日期和时间。
 
-    ```
+    ```sql
     Syntax: SELECT CURRENT_TIMESTAMP();
     ```
 
@@ -58,7 +58,7 @@
 
 7.  **CURTIME():**返回当前时间。
 
-    ```
+    ```sql
     Syntax: SELECT CURTIME();
     ```
 
@@ -66,7 +66,7 @@
 
 8.  **DATE():**它从日期或日期时间表达式中提取日期值。
 
-    ```
+    ```sql
     Syntax: SELECT DATE("2017-06-15");
     ```
 
@@ -74,7 +74,7 @@
 
 9.  **DATEDIFF():**返回两个日期值的天差。
 
-    ```
+    ```sql
     Syntax: SELECT DATEDIFF("2017-06-25", "2017-06-15");
     ```
 
@@ -82,7 +82,7 @@
 
 10.  **DATE _ ADD():**添加一定的时间/日期间隔后返回日期。
 
-    ```
+    ```sql
     Syntax: SELECT DATE_ADD("2018-07-16", INTERVAL 10 DAY);
     ```
 
@@ -90,7 +90,7 @@
 
 11.  **DATE _ FORMAT():**按照格式掩码指定的格式设置日期。
 
-    ```
+    ```sql
     Syntax: SELECT DATE_FORMAT("2018-06-15", "%Y");
     ```
 
@@ -98,7 +98,7 @@
 
 12.  **DATE _ SUB():**减去一定的时间/日期间隔后返回日期。
 
-    ```
+    ```sql
     Syntax: SELECT DATE_SUB("2017-06-15", INTERVAL 10 DAY);
     ```
 
@@ -106,7 +106,7 @@
 
 13.  **DAY():**返回日期值的日部分。
 
-    ```
+    ```sql
     Syntax: SELECT DAY("2018-07-16");
     ```
 
@@ -114,7 +114,7 @@
 
 14.  **day name():**返回某个日期的工作日名称。
 
-    ```
+    ```sql
     Syntax: SELECT DAYNAME('2008-05-15');
     ```
 
@@ -122,7 +122,7 @@
 
 15.  **DAYOFMONTH():** 返回日期值的日部分。
 
-    ```
+    ```sql
     Syntax: SELECT DAYOFMONTH('2018-07-16');
     ```
 
@@ -130,7 +130,7 @@
 
 16.  **day week():**返回某个日期值的工作日索引。
 
-    ```
+    ```sql
     Syntax: SELECT WEEKDAY("2018-07-16");
     ```
 
@@ -138,7 +138,7 @@
 
 17.  **DAYOFYEAR():**返回一年中的某一天作为日期值。
 
-    ```
+    ```sql
     Syntax: SELECT DAYOFYEAR("2018-07-16");
     ```
 
@@ -146,7 +146,7 @@
 
 18.  **EXTRACT():**它从一个日期中提取零件。
 
-    ```
+    ```sql
     Syntax: SELECT EXTRACT(MONTH FROM "2018-07-16");
     ```
 
@@ -154,7 +154,7 @@
 
 19.  **FROM _ DAYS():**它从一天的数字表示中返回一个日期值。
 
-    ```
+    ```sql
     Syntax: SELECT FROM_DAYS(685467);
     ```
 
@@ -162,7 +162,7 @@
 
 20.  **HOUR():**返回日期值的小时部分。
 
-    ```
+    ```sql
     Syntax: SELECT HOUR("2018-07-16 09:34:00");
     ```
 
@@ -170,7 +170,7 @@
 
 21.  **LAST _ DAY():**返回给定日期当月的最后一天。
 
-    ```
+    ```sql
     Syntax: SELECT LAST_DAY('2018-07-16');
     ```
 
@@ -178,7 +178,7 @@
 
 22.  **LOCALTIME():**返回当前日期和时间。
 
-    ```
+    ```sql
     Syntax: SELECT LOCALTIME();
     ```
 
@@ -186,7 +186,7 @@
 
 23.  **LOCALTIMESTAMP():**返回当前日期和时间。
 
-    ```
+    ```sql
     Syntax: SELECT LOCALTIMESTAMP();
     ```
 
@@ -194,7 +194,7 @@
 
 24.  **MAKEDATE():**返回某年某月某日的日期值。
 
-    ```
+    ```sql
     Syntax: SELECT MAKEDATE(2009, 138);
     ```
 
@@ -202,7 +202,7 @@
 
 25.  **MAKETIME():**返回一定小时、分钟、秒组合的时间。
 
-    ```
+    ```sql
     Syntax: SELECT MAKETIME(11, 35, 4);
     ```
 

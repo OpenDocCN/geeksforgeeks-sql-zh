@@ -17,12 +17,12 @@
 
 以下查询将在数据库中创建一个名为 GFG 的新表。
 
-```
+```sql
 SQL> create table GFG (id number(4), author varchar2(50), 
                                           likes number(4)) 
 ```
 
-```
+```sql
 Table created.
 SQL> insert into GFG values(1, 'sam', 10);
 1 row created.
@@ -32,7 +32,7 @@ SQL> insert into GFG values(3, 'ria', 40);
 1 row created. 
 ```
 
-```
+```sql
 SQL> select * from GFG;
 ```
 
@@ -50,13 +50,13 @@ SQL> select * from GFG;
 
 **语法:**
 
-```
+```sql
 &value 
 ```
 
 **例-1:** 考虑一下，表 GFG。让我们选择一个具有给定 id 的记录。(这里，id 是一个数值)
 
-```
+```sql
 SQL> select * from GFG where id=&id;
 Enter value for id: 2
 old 1: select * from GFG where id=&id
@@ -72,7 +72,7 @@ new 1: select * from GFG where id=2
 
 **示例-2:** 让我们用给定的 id 更新一条记录。(这里，id 是一个数值)
 
-```
+```sql
 SQL> update GFG set likes=50 where id=&id;
 Enter value for id: 1
 old 1: update GFG set likes=50 where id=&id
@@ -80,7 +80,7 @@ new 1: update GFG set likes=50 where id=1
 1 row updated. 
 ```
 
-```
+```sql
 SQL> select * from GFG; 
 ```
 
@@ -98,13 +98,13 @@ SQL> select * from GFG;
 
 **语法:**
 
-```
+```sql
 '&value' 
 ```
 
 **例-1:** 考虑一下，表 GFG。让我们选择一个给定作者的记录。(这里，作者是文本值)
 
-```
+```sql
 SQL> select * from GFG where author='&author';
 Enter value for author: maria
 old 1: select * from GFG where author='&author'
@@ -120,7 +120,7 @@ new 1: select * from GFG where author='maria'
 
 **示例-2:** 让我们用给定的作者更新一条记录。(这里，作者是文本值)
 
-```
+```sql
 SQL> update GFG set likes=10 where author='&author';
 Enter value for author: sam
 old 1: update GFG set likes=10 where author='&author'
@@ -128,7 +128,7 @@ new 1: update GFG set likes=10 where author='sam'
 1 row updated. 
 ```
 
-```
+```sql
 SQL> select * from GFG; 
 ```
 

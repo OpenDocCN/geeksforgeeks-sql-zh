@@ -19,7 +19,7 @@
 
 **示例:**
 
-```
+```sql
 Input: 10  20
 Output: 11 13 17 19
 
@@ -29,7 +29,7 @@ Output: 23 29
 
 **下面是实现:**
 
-```
+```sql
 
 DECLARE
 --the upper limit and the lower limit are taken as user inputs.
@@ -63,7 +63,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Input: 
 Enter the lower and higher limit:1  10
 Output: 2

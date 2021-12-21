@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 UPPER( string )
 ```
 
@@ -29,7 +29,7 @@ PLSQL 中的 UPPER 函数返回一个字符串值。
 
 **示例-1:** 将字符串作为参数传递，第一个字符为大写，其余字符为小写。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'Geeksforgeeks';
 
@@ -41,13 +41,13 @@ END;
 
 **输出:**
 
-```
+```sql
 GEEKSFORGEEKS 
 ```
 
 **示例-2:** 传递一个字符串作为参数，所有字符都是小写的。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := 'geeksforgeeks';
 
@@ -59,13 +59,13 @@ END;
 
 **输出:**
 
-```
+```sql
 GEEKSFORGEEKS 
 ```
 
 **示例-3:** 将字符串作为参数传递，数值和字符为小写。
 
-```
+```sql
 DECLARE 
    Test_String string(20) := '123geeksforgeeks123';
 
@@ -77,7 +77,7 @@ END;
 
 **输出:**
 
-```
+```sql
 123GEEKSFORGEEKS123 
 ```
 

@@ -19,7 +19,7 @@ SQL 中的 **MERGE** 命令实际上是三个 SQL 语句的组合: **INSERT、UP
 
 现在，我们知道何时使用 INSERT、UPDATE 和 DELETE 语句，以防我们想要使用 MERGE 语句，这样您理解下面给出的语法应该没有问题:
 
-```
+```sql
 //.....syntax of MERGE statement....//
 
 //you can use any other name in place of target

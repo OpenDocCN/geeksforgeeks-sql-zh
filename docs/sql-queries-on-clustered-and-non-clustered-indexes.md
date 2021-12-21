@@ -13,7 +13,7 @@
 
 **示例:**
 
-```
+```sql
 Input:
 CREATE TABLE Student_info
 (
@@ -45,7 +45,7 @@ SELECT * FROM Student_info
 
 **语法:**
 
-```
+```sql
 //Drop index
 drop index table_name.index_name
 //Create Clustered index index
@@ -60,7 +60,7 @@ create Clustered index IX_table_name_column_name
 
 **示例:**
 
-```
+```sql
 Input: 
 CREATE TABLE Student_info
 (
@@ -90,7 +90,7 @@ SELECT * FROM Student_info
 
 **语法:**
 
-```
+```sql
 //Create Non-Clustered index
 create NonClustered index IX_table_name_column_name 
       on table_name (column_name ASC) 

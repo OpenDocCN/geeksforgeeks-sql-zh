@@ -7,13 +7,13 @@
 
 **语法:**
 
-```
+```sql
 SELECT UCASE(text)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT UCASE("MySQL on geeksforgeeks is FUN!") AS UpperText;
 ```
 
@@ -33,13 +33,13 @@ SELECT UCASE("MySQL on geeksforgeeks is FUN!") AS UpperText;
 
 **语法:**
 
-```
+```sql
 SELECT UPPER(text)
 ```
 
 **示例–**
 
-```
+```sql
 SELECT UPPER("MySQL on geeksforgeeks is FUN!") AS UpperText;
 ```
 
@@ -58,13 +58,13 @@ UPPER()函数不影响二进制字符串，如 binary、VARBINARY 或 BLOB。因
 
 **示例–**
 
-```
+```sql
 SET @str = BINARY 'Geeksforgeeks';
 ```
 
 现在，如果您想读取二进制字符串，请使用下面给出的语法。
 
-```
+```sql
 SELECT UPPER(@str), UPPER(CONVERT(@str USING utf8mb4)) AS UpperText;
 ```
 

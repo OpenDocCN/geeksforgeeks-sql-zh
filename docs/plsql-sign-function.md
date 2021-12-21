@@ -12,7 +12,7 @@ SIGN 函数返回的可能值有:
 
 **语法:**
 
-```
+```sql
 SIGN (number)
 ```
 
@@ -33,7 +33,7 @@ PLSQL 中的 SIGN 函数返回一个数值。
 
 **示例-1:** 在 SIGN 函数中使用正数值作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 5;
 
@@ -45,13 +45,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-2:** 在 SIGN 函数中使用负数值作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := -5;
 
@@ -64,13 +64,13 @@ END;
 
 **输出:**
 
-```
+```sql
 -1 
 ```
 
 **示例-3:** 在 SIGN 函数中使用零作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 0;
 
@@ -82,13 +82,13 @@ END;
 
 **输出:**
 
-```
+```sql
 0 
 ```
 
 **示例-4:** 在 SIGN 函数中使用带十进制值的正数作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := 0.0032;
 
@@ -100,13 +100,13 @@ END;
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-5:** 在 SIGN 函数中使用带十进制值的负数作为参数。
 
-```
+```sql
 DECLARE 
    Test_Number1 number := - 0.0032;
 
@@ -118,13 +118,13 @@ END;
 
 **示例-6:** 在选择查询中使用 SIGN 函数。
 
-```
+```sql
 SELECT SIGN(-5) "Sign" FROM DUAL; 
 ```
 
 **输出:**
 
-```
+```sql
 Sign
 -1 
 ```

@@ -14,7 +14,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE Sample;
 ```
 
@@ -24,7 +24,7 @@ CREATE DATABASE Sample;
 
 **查询:**
 
-```
+```sql
 use database_name;
 for this database…
 use Sample;    
@@ -36,7 +36,7 @@ use Sample;
 
 **查询:**
 
-```
+```sql
 CREATE TABLE EMPDATA
 (
 EMPNAME VARCHAR(25),
@@ -53,7 +53,7 @@ CITY VARCHAR(15)
 
 **查询:**
 
-```
+```sql
  EXEC sp_help EMPDATA
 ```
 
@@ -65,7 +65,7 @@ CITY VARCHAR(15)
 
 **查询:**
 
-```
+```sql
 INSERT INTO EMPDATA
 VALUES ('VISHAL','MALE','SALES',9193458625,'GAZIABAD'),
 ('DIVYA','FEMALE','MANAGER',7352158944,'BARIELLY'),
@@ -94,7 +94,7 @@ VALUES ('VISHAL','MALE','SALES',9193458625,'GAZIABAD'),
 
 **查询:**
 
-```
+```sql
 UPDATE [EMPDATA] SET GENDER = ‘FEMALE’;
 ```
 
@@ -106,7 +106,7 @@ UPDATE [EMPDATA] SET GENDER = ‘FEMALE’;
 
 **查询:**
 
-```
+```sql
 UPDATE [EMPDATA] SET GENDER = ‘FEMALE’ WHERE EMPNAME = ‘AMAN’
 ```
 
@@ -114,7 +114,7 @@ UPDATE [EMPDATA] SET GENDER = ‘FEMALE’ WHERE EMPNAME = ‘AMAN’
 
 **查询:**
 
-```
+```sql
 UPDATE [EMPDATA] SET GENDER = ‘FEMALE’ WHERE EMPNAME = ‘AMAN’ or EMPNAME = ‘VIJAY’; 
 ```
 
@@ -122,7 +122,7 @@ UPDATE [EMPDATA] SET GENDER = ‘FEMALE’ WHERE EMPNAME = ‘AMAN’ or EMPNAME
 
 **查询:**
 
-```
+```sql
 UPDATE [EMPDATA] SET GENDER = (CASE WHEN GENDER ='MALE' THEN 'FEMALE'
 WHEN GENDER = 'FEMALE' THEN 'MALE'
 END ) 

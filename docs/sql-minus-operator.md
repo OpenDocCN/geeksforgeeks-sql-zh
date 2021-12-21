@@ -10,7 +10,7 @@ SQL 中的减运算符与两个 SELECT 语句一起使用。减运算符用于�
 
 **基本语法**:
 
-```
+```sql
 SELECT column1 , column2 , ... columnN
 FROM table_name
 WHERE condition
@@ -35,7 +35,7 @@ columnN: column1, column2.. are the name of columns of the table.
 
 **查询**:
 
-```
+```sql
 SELECT NAME, AGE , GRADE
 FROM Table1
 MINUS 

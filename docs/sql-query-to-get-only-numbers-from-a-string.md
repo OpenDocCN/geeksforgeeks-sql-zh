@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GFG
 ```
 
@@ -18,7 +18,7 @@ CREATE DATABASE GFG
 
 **查询:**
 
-```
+```sql
 USE GFG
 ```
 
@@ -28,7 +28,7 @@ USE GFG
 
 **查询:**
 
-```
+```sql
 CREATE TABLE GetNum(
  StudentName varchar (255)
 )
@@ -39,7 +39,7 @@ CREATE TABLE GetNum(
 
 **查询:**
 
-```
+```sql
  INSERT INTO GetNum (StudentName) VALUES ('Devesh123')
 
  INSERT INTO GetNum (StudentName) VALUES ('Geeks2')
@@ -59,7 +59,7 @@ CREATE TABLE GetNum(
 
 **查询:**
 
-```
+```sql
 CREATE FUNCTION dbo.getNumericValue
  (
 @inputString VARCHAR(256)
@@ -87,7 +87,7 @@ GO
 
 **查询:**
 
-```
+```sql
 SELECT dbo.getNumericValue(StudentName) from GetNum
 ```
 

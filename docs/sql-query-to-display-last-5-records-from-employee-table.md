@@ -14,19 +14,19 @@
 
 **创建数据库:**
 
-```
+```sql
 CREATE DATABASE geeks; /* SQL is case insensitive thus 'create database geeks;' means the same
 ```
 
 **显示可用数据库:**
 
-```
+```sql
 SHOW DATABASES;
 ```
 
 **使用数据库:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -38,7 +38,7 @@ USE geeks;
 
 **创建员工表:**
 
-```
+```sql
 CREATE TABLE (
 ID INT PRIMARY KEY AUTO_INCREMENT,
 NAME VARCHAR(30) NOT NULL,
@@ -55,7 +55,7 @@ DATE_OF_JOINING DATE);
 
 **查看/描述员工表:**
 
-```
+```sql
 DESC Employee;
 ```
 
@@ -65,7 +65,7 @@ DESC Employee;
 
 **在员工表中添加值:**
 
-```
+```sql
 INSERT INTO Employee (NAME, PHONE, EMAIL, DATE_OF_JOINING)
 VALUES
 ('Yogesh Vaishnav', 0000000001, 'yogesh@mail.com', '2019-10-03'),
@@ -86,7 +86,7 @@ VALUES
 
 **从员工表中检索所有数据:**
 
-```
+```sql
 SELECT * FROM Employee;
 ```
 
@@ -110,7 +110,7 @@ SELECT * FROM Employee;
 
 **示例:**
 
-```
+```sql
 (SELECT * FROM Employee ORDER BY ID DESC LIMIT 5)
 ORDER BY ID ASC;
 ```
@@ -137,7 +137,7 @@ id >(总行数–要检索的行数(此处为 5))
 
 **示例:**
 
-```
+```sql
 SELECT * FROM Employee
 WHERE 
 ID > (SELECT COUNT(*) FROM Employee) - 5;
@@ -153,7 +153,7 @@ ID > (SELECT COUNT(*) FROM Employee) - 5;
 
 我们知道，我们可以在 LIMIT 子句的帮助下从指定的行开始检索任意数量的行，如下所示:
 
-```
+```sql
 SELECT * FROM <table_name> 
 LIMIT (row after which the data is to be retrieved), (no. of rows to retrieve)
 ```
@@ -172,7 +172,7 @@ LIMIT (row after which the data is to be retrieved), (no. of rows to retrieve)
 
 **示例:**
 
-```
+```sql
 /*declare and initialize a variable named 'rows' (here we want to retrieve last 5 rows thus the value 5*/
 SET @rows = 5;
 SET @startRow = (SELECT COUNT(*) FROM Employee) - @rows; /*Row after which we want to retrieve*/

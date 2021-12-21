@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 POSITION(substring IN string)
 ```
 
@@ -27,7 +27,7 @@ POSITION(substring IN string)
 
 在字符串“geeksforgeeks”中搜索字符串“g”，如下所示。
 
-```
+```sql
 SELECT POSITION('g' IN 'geeksforgeeks') AS location;
 ```
 
@@ -45,7 +45,7 @@ SELECT POSITION('g' IN 'geeksforgeeks') AS location;
 
 在字符串“这是一棵树”中搜索字符串“这”，使用如下位置函数。
 
-```
+```sql
 SELECT POSITION('this' IN 'That is a tree') AS location;
 ```
 
@@ -65,7 +65,7 @@ SELECT POSITION('this' IN 'That is a tree') AS location;
 
 **创建学生表:**
 
-```
+```sql
 CREATE TABLE Student
 (
 Student_id INT AUTO_INCREMENT,  
@@ -78,7 +78,7 @@ PRIMARY KEY(Student_id )
 
 **将数据插入表格:**
 
-```
+```sql
 INSERT INTO Student
 (Student_name ,Roll, Department )
 VALUES
@@ -92,7 +92,7 @@ VALUES
 
 验证使用如下命令。
 
-```
+```sql
 SELECT  * from Student ;
 ```
 
@@ -109,7 +109,7 @@ SELECT  * from Student ;
 
 现在，我们将为每个学生的名字找到字符串“a”的第一次出现。
 
-```
+```sql
 SELECT *,POSITION('a' IN Student_name ) AS First_Occ_A  
 FROM STUDENT;
 ```

@@ -16,7 +16,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT column1,column2,columnn
 FROM table1
 [WHERE condition]
@@ -50,7 +50,7 @@ FROM table1 [, table2 ]
 **数据库操作:**
 两个基于学生证的表的交集如下。
 
-```
+```sql
 SELECT id FROM student 
 INTERSECT 
 SELECT sid FROM subject
@@ -58,7 +58,7 @@ SELECT sid FROM subject
 
 **结果–**
 
-```
+```sql
 student id: 1
 student id: 2
 student id: 3
@@ -113,7 +113,7 @@ student id: 3
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -156,7 +156,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
 //servername
 $servername = "localhost";
@@ -219,7 +219,7 @@ $conn->close();
 
 ## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```
+```sql
 <?php
     // code
 ?><html>

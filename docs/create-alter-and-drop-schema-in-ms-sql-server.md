@@ -11,7 +11,7 @@
 
 **语法–**
 
-```
+```sql
 create schema schema_name
 [AUTHORIZATION owner_name] 
 ```
@@ -22,7 +22,7 @@ create schema schema_name
 
 **示例–**
 
-```
+```sql
 create schema student
 GO 
 ```
@@ -35,7 +35,7 @@ Alter 一般用于改变 SQL 中与表相关的内容。对于 SQL Server，alte
 
 **语法–**
 
-```
+```sql
 alter schema target_schemaname
 TRANSFER [entity_type::] securable name 
 ```
@@ -50,13 +50,13 @@ TRANSFER [entity_type::] securable name
 **示例–**
 一个名为“大学”的表有两个模式:
 
-```
+```sql
 student and lecturer  
 ```
 
 如果假设学生的分数必须转移到讲师模式，则查询如下–
 
-```
+```sql
 alter schema student
 TRANSFER [marks::] lecturer 
 ```
@@ -68,7 +68,7 @@ TRANSFER [marks::] lecturer
 
 **语法–**
 
-```
+```sql
 drop schema [IF EXISTS] schema_name 
 ```
 
@@ -76,7 +76,7 @@ drop schema [IF EXISTS] schema_name
 
 **示例–**
 
-```
+```sql
 drop schema [IF EXISTS] student 
 ```
 

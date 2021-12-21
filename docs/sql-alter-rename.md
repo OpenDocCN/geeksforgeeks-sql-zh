@@ -8,7 +8,7 @@
 
 **语法(Oracle、MySQL、MariaDB):**
 
-```
+```sql
 ALTER TABLE table_name
 RENAME TO new_table_name;
 ```
@@ -17,14 +17,14 @@ RENAME TO new_table_name;
 
 **语法(MySQL，Oracle):**
 
-```
+```sql
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;
 ```
 
 **语法(MariaDB):**
 
-```
+```sql
 ALTER TABLE table_name
 CHANGE COLUMN old_name TO new_name;
 ```
@@ -43,7 +43,7 @@ CHANGE COLUMN old_name TO new_name;
 
 *   将学生表中的列名更改为名字。
 
-```
+```sql
 ALTER TABLE Student RENAME COLUMN NAME TO FIRST_NAME;
 ```
 
@@ -57,7 +57,7 @@ ALTER TABLE Student RENAME COLUMN NAME TO FIRST_NAME;
 
 *   将学生表的名称更改为学生详细信息
 
-```
+```sql
 ALTER TABLE Student RENAME TO Student_Details;
 ```
 

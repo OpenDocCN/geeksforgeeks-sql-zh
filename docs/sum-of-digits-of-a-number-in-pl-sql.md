@@ -8,7 +8,7 @@
 给定一个数字，任务是找出这个数字的位数之和。
 **例:**
 
-```
+```sql
 Input: 123456
 Output: 21
 
@@ -21,7 +21,7 @@ Output: 28
 
 以下是所需的实现:
 
-```
+```sql
 DECLARE 
 
     --Declare variable n, temp_sum  
@@ -48,7 +48,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 sum of digits = 21
 
 ```

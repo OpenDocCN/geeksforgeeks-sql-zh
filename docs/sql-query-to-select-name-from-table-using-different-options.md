@@ -19,7 +19,7 @@
 
 使用别名作为名称从极客表中写入“名字”的 SQL 查询。
 
-```
+```sql
 Select FIRSTNAME AS NAME 
 from Geeks;
 ```
@@ -35,7 +35,7 @@ from Geeks;
 
 用大写字母从极客表中写出“名字”的 SQL 查询。
 
-```
+```sql
 Select upper(FIRSTNAME) 
 from Geeks;
 ```
@@ -49,7 +49,7 @@ from Geeks;
 
 从极客表中查找 FIRSTNAME 前三个字符的 SQL 查询。
 
-```
+```sql
 Select substring(FIRSTNAME, 1, 3) 
 from Geeks;
 ```
@@ -63,7 +63,7 @@ from Geeks;
 
 将极客表中的名字和姓氏写入带有空格字符的单列 COMPLETENAME 的 SQL 查询应该将它们分开。
 
-```
+```sql
 Select CONCAT(FIRSTNAME, ' ', LASTNAME) AS 'COMPLETENAME' 
 from Geeks;
 ```
@@ -77,7 +77,7 @@ from Geeks;
 
 编写一个 SQL 查询，按照名字升序打印极客表中的所有工作人员详细信息。
 
-```
+```sql
 Select * 
 from Geeks 
 order by FIRSTNAME asc;

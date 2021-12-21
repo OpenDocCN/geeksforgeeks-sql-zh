@@ -42,13 +42,13 @@ FETCH 是一个 SQL 命令，它与带有 OFFSET(起点)的 ORDER BY 子句一�
 
 **步骤 2:** 创建数据库:
 
-```
+```sql
 CREATE DATABASE gfg;
 ```
 
 **步骤 3:** 使用数据库:
 
-```
+```sql
 USE gfg;
 ```
 
@@ -56,7 +56,7 @@ USE gfg;
 
 使用以下 SQL 查询创建包含 5 列的表市场列表:
 
-```
+```sql
 CREATE TABLE MarkList
 (
     id int,
@@ -69,7 +69,7 @@ CREATE TABLE MarkList
 
 **步骤 5:** 将数据插入表中:
 
-```
+```sql
 INSERT INTO MarkList VALUES(501,'Surya',99,97,85);
 INSERT INTO MarkList VALUES(502,'Charan',99,93,88);
 INSERT INTO MarkList VALUES(503,'Sravan',91,98,94);
@@ -87,7 +87,7 @@ INSERT INTO MarkList VALUES(507,'Madhav',90,97,89);
 
 要检索前 3 名学生的姓名、id 和总分，fetch 命令的用法如下:
 
-```
+```sql
 SELECT Id, name, mathematics+physics+chemistry AS total
 FROM MarketList
 ORDER BY mathematics+physics+chemistry DESC

@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 SELECT owner, table_name FROM dba_tables;
 ```
 
@@ -28,7 +28,7 @@ SELECT owner, table_name FROM dba_tables;
 
 **查询:**
 
-```
+```sql
 SELECT owner, table_name FROM all_tables;
 ```
 
@@ -44,7 +44,7 @@ SELECT owner, table_name FROM all_tables;
 
 **查询:**
 
-```
+```sql
 SELECT table_name FROM user_tables;
 ```
 

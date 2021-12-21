@@ -14,7 +14,7 @@
 
 **语法:**
 
-```
+```sql
 ROUND(number, decimals, operation)
 ```
 
@@ -31,33 +31,33 @@ ROUND(number, decimals, operation)
 **示例-1 :**
 获取一个四舍五入到小数点后两位的数字。
 
-```
+```sql
 SELECT ROUND(12.3456, 2);
 ```
 
 **输出:**
 
-```
+```sql
 12.3500
 ```
 
 **示例-2 :**
 用操作参数 1 将数字舍入到下两个小数位，操作参数 1 表示只将指定的数字(-23.456)截断到给定的小数位，即 2。
 
-```
+```sql
 SELECT ROUND(12.3456, 2, 1);
 ```
 
 **输出:**
 
-```
+```sql
 12.3400
 ```
 
 **示例-3 :**
 使用带有变量的 ROUND()函数，并将舍入后的数字设置为-2 位小数。
 
-```
+```sql
 DECLARE @Parameter_Value FLOAT;
 SET @Parameter_Value = -2;
 SELECT ROUND(123.4567, @Parameter_Value);
@@ -66,7 +66,7 @@ SELECT ROUND(123.4567, @Parameter_Value);
 
 **输出:**
 
-```
+```sql
 100.0000
 ```
 
@@ -74,20 +74,20 @@ SELECT ROUND(123.4567, @Parameter_Value);
 
 将四舍五入到小数点后零位数。
 
-```
+```sql
 SELECT ROUND(123.467, 0);
 ```
 
 **输出:**
 
-```
+```sql
 123.000
 ```
 
 **示例-5 :**
 使用带变量的 ROUND()函数，将四舍五入后的数字四舍五入到小数点后两位。
 
-```
+```sql
 DECLARE @Number_Value FLOAT;
 DECLARE @Decimals_Value INT;
 SET @Number_Value = -23.456;
@@ -98,20 +98,20 @@ SELECT ROUND(@Number_Value, @Decimals_Value);
 
 **输出:**
 
-```
+```sql
 -23.460000000000001
 ```
 
 **示例-6 :**
 用操作参数 1 将数字舍入到下两个小数位，操作参数 1 表示只将指定的数字(-23.456)截断到给定的小数位，即 2。
 
-```
+```sql
 SELECT ROUND(-23.456, 2, 1);
 ```
 
 **输出:**
 
-```
+```sql
 -23.450
 ```
 

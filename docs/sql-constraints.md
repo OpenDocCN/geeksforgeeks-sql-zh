@@ -19,7 +19,7 @@ SQL 中可用的约束有:
 **语法** :
 下面是创建表时使用 CREATE TABLE 语句创建约束的语法。
 
-```
+```sql
 CREATE TABLE sample_table
 (
 column1 data_type(size) constraint_name,
@@ -39,7 +39,7 @@ constraint_name: Name of the constraint. for example- NOT NULL, UNIQUE, PRIMARY 
 如果我们在表中指定一个字段不为空。那么该字段将永远不接受空值。也就是说，在没有为该字段指定任何值的情况下，不允许在表中插入新行。
 例如，下面的查询创建了一个学生表，字段标识和名称不为空。也就是说，每次我们希望插入新行时，我们都必须为这两个字段指定值。
 
-```
+```sql
 CREATE TABLE Student
 (
 ID int(6) NOT NULL,
@@ -52,7 +52,7 @@ ADDRESS varchar(20)
 该约束有助于唯一地标识表格中的每一行。即对于特定的列，所有的行应该具有唯一的值。一个表中可以有多个 UNIQUE 列。
 例如，下面的查询创建了一个表 Student，其中字段 ID 被指定为 UNIQUE。也就是说，没有两个学生可以有相同的身份证。[细节上的独特约束。](https://www.geeksforgeeks.org/sql-unique-constraint/)
 
-```
+```sql
 CREATE TABLE Student
 (
 ID int(6) NOT NULL UNIQUE,
@@ -65,7 +65,7 @@ ADDRESS varchar(20)
 主键是唯一标识表中每一行的字段。如果表中的某个字段作为主键，则该字段将不能包含空值，并且该字段的所有行都应该具有唯一值。换句话说，我们可以说这是非空约束和唯一约束的组合。
 一个表只能有一个字段作为主键。下面的查询将创建一个名为 Student 的表，并将字段 ID 指定为主键。
 
-```
+```sql
 CREATE TABLE Student
 (
 ID int(6) NOT NULL UNIQUE,
@@ -94,7 +94,7 @@ PRIMARY KEY(ID)
 我们可以清楚地看到，Orders 表中的字段 C_ID 是 Customers 表中的主键，即它唯一标识 Customers 表中的每一行。因此，它是订单表中的外键。
 语法:
 
-```
+```sql
 CREATE TABLE Orders
 (
 O_ID int NOT NULL,
@@ -109,7 +109,7 @@ FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)
 使用 CHECK 约束，我们可以为字段指定一个条件，在为该字段输入值时应该满足该条件。
 例如，下面的查询创建了一个表 Student，并将字段 AGE 的条件指定为(AGE > = 18)。也就是说，用户将不被允许在带有年龄< 18 的表格中输入任何记录。[详细检查约束](https://www.geeksforgeeks.org/sql-check-constraint/)
 
-```
+```sql
 CREATE TABLE Student
 (
 ID int(6) NOT NULL,
@@ -122,7 +122,7 @@ AGE int NOT NULL CHECK (AGE >= 18)
 该约束用于为字段提供默认值。也就是说，如果在表中输入新记录时，如果用户没有为这些字段指定任何值，那么默认值将被分配给它们。
 例如，下面的查询将创建一个名为 Student 的表，并将字段 AGE 的默认值指定为 18。
 
-```
+```sql
 CREATE TABLE Student
 (
 ID int(6) NOT NULL,

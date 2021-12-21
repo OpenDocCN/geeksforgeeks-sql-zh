@@ -18,7 +18,7 @@ Teradata 管理器删除该表后，插入易失性表中的数据和定义将�
 
 **语法:**
 
-```
+```sql
 CREATE [SET | MULTISET] VOLATILE TABLE TABEL_NAME 
 (
 COLUMN1 DATATYPE;
@@ -36,7 +36,7 @@ ON COMMIT [DELETE|PRESERVE] ROWS;
 
 以下示例将创建一个名为“geek”的可变表。
 
-```
+```sql
 CREATE VOLATILE TABLE GEEK
 (
 ROLLNO INT,
@@ -56,7 +56,7 @@ ON COMMIT PRESERVE ROWS;
 
 让我们在 volatile 表中插入一些数据。
 
-```
+```sql
 INSERT INTO GEEK VALUES (1,'Aman','Goyal');
 INSERT INTO GEEK VALUES (2,'Pritam','Soni');
 INSERT INTO GEEK VALUES (3,'Swati','Jain');
@@ -67,7 +67,7 @@ INSERT INTO GEEK VALUES (3,'Swati','Jain');
 
 我们将运行 ***选择语句*** 进入挥发表。
 
-```
+```sql
 SELECT * FROM GEEK ORDER BY ROLLNO;
 ```
 
@@ -79,7 +79,7 @@ SELECT * FROM GEEK ORDER BY ROLLNO;
 
 ### 重新记录后的输出:
 
-```
+```sql
 SELECT * FROM GEEK ORDER BY ROLLNO;
 *** Failure 3807 Object 'GEEK' does not exist.
 Statement# 1, Info =0

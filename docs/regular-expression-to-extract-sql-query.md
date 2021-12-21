@@ -10,7 +10,7 @@
 
 **查询:**
 
-```
+```sql
 SELECT * FROM sys.databases WHERE name = 'GEEKSFORGEEKS'
     BEGIN
     CREATE DATABASE [GEEKSFORGEEKS]
@@ -21,7 +21,7 @@ SELECT * FROM sys.databases WHERE name = 'GEEKSFORGEEKS'
 
 **查询:**
 
-```
+```sql
 USE GEEKSFORGEEKS
 ```
 
@@ -29,7 +29,7 @@ USE GEEKSFORGEEKS
 
 **查询:**
 
-```
+```sql
 INSERT INTO Country(CountryID,CountryName) VALUES (1,'United States');
 INSERT INTO Country(CountryID,CountryName) VALUES (2,'United States');
 INSERT INTO Country(CountryID,CountryName) VALUES (3,'United Kingdom');
@@ -56,7 +56,7 @@ SELECT * FROM Country
 
 **查询:**
 
-```
+```sql
 --Find Country Names having:
 --First character should be A and D alphabets. 
 --The second character should be from U and Z alphabet
@@ -73,7 +73,7 @@ WHERE CountryName like '[A-D][U-Z]%'
 
 **查询:**
 
-```
+```sql
 --Find Country Names having:
 --First character should be A and D alphabets. 
 --Rest letters can be any character
@@ -92,7 +92,7 @@ WHERE CountryName like '[A-D]%'
 
 **查询:**
 
-```
+```sql
 --Find country names starting with 'U' alone
 SELECT * FROM Country
 WHERE CountryName like 'U%'  
@@ -107,7 +107,7 @@ WHERE CountryName like 'U%'
 
 **查询:**
 
-```
+```sql
 --Find country names starting with
 -- U and additional condition is given
 SELECT * FROM Country
@@ -138,7 +138,7 @@ WHERE CountryName like 'U% [S]%'
 
 让我们先来看看 PATINDEX 函数。它是一个接受搜索模式和输入字符串并返回与模式不匹配的字符的起始位置的函数。
 
-```
+```sql
 --pattern to check is A-Z or a-z(search pattern)
 -- in the input string and 
 --position of the non-matching pattern
@@ -155,7 +155,7 @@ NumericCharacterPosition;
 
 要仅从输入字符串中获取数字，我们也可以用下面的方法
 
-```
+```sql
 SELECT 'GFGVersion1' as InputString, 
 PATINDEX('%[0-9]%', 'GFGVersion1') as
 NumericCharacterPosition;
@@ -163,7 +163,7 @@ NumericCharacterPosition;
 
 即不使用[^A-Za-z]，而是使用[0-9]并得到与上面相同的结果
 
-```
+```sql
 -- 0 will indicate no numeric value present
 SELECT 'VERSION' as InputString, 
 PATINDEX('%[^A-Za-z]%', 'VERSION')
@@ -182,7 +182,7 @@ PATINDEX('%[^A-Za-z]%', 'VERSION')
 
 **STUFF 功能**
 
-```
+```sql
  --remove the integer from
  -- position 3 in the input string. 
  /* As only one character need to be removed, 
@@ -209,7 +209,7 @@ SELECT STUFF('GE098EKS9VER1', 3, 1, '' );
 
 **查询:**
 
-```
+```sql
 DECLARE @inputData NVARCHAR(MAX) = 'GE098EKS9VER1'       
 --input string
 DECLARE @intPosition INT    

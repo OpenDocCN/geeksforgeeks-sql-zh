@@ -12,7 +12,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE TABLE Demo( PersonID int, LastName varchar(255), FirstName varchar(255));
 INSERT INTO Demo VALUES (1, 'Geek1', 'Geeksforgeeks');
 INSERT INTO Demo VALUES (2, 'Geek2', 'Geeksforgeeks');
@@ -30,7 +30,7 @@ INSERT INTO Demo VALUES (2, 'Geek2', 'Geeksforgeeks');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Demo 
 WHERE rowid IN 
 ( SELECT MAX(rowid)  
@@ -46,7 +46,7 @@ GROUP BY PersonID, LastName, FirstName);
 
 **查询:**
 
-```
+```sql
 DELETE Demo  
 WHERE rowid NOT IN 
   (SELECT MAX(rowid)  

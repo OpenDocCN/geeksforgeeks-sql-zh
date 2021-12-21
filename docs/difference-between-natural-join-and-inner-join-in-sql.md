@@ -19,7 +19,7 @@
 
 考虑给定的查询
 
-```
+```sql
 SELECT * 
 FROM Student NATURAL JOIN Marks;
 ```
@@ -34,7 +34,7 @@ FROM Student NATURAL JOIN Marks;
 **示例:**
 考虑以上两个表，查询如下:
 
-```
+```sql
 SELECT * 
 FROM student S INNER JOIN Marks M ON S.Roll_No = M.Roll_No; 
 ```

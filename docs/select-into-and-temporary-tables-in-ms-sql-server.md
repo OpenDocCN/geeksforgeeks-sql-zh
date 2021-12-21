@@ -5,14 +5,14 @@
 **1。选择进入:**
 假设一个表有一些特定的行，必须转移到同一数据库的另一个表。可以使用**选择进入**语句，如下所示–
 
-```
+```sql
 select list into destination from source (where condition) 
 ```
 
 **例:**
 有学生和分数两个表。学生的分数必须从分数转移到学生表。这必须按照以下步骤进行:
 
-```
+```sql
 Select *
 from student;
 ```
@@ -23,7 +23,7 @@ from student;
 | 警察 | One hundred and thirteen | 东方马脑脊髓炎 |
 | [人名]克莱拉 | One hundred and fourteen | 技工 |
 
-```
+```sql
 Select *
 from marks;
 ```
@@ -34,7 +34,7 @@ from marks;
 | 警察 | One hundred and thirteen | Sixty-five |
 | [人名]克莱拉 | One hundred and fourteen | Fifty-five |
 
-```
+```sql
 Select mks into student 
 from marks;
 ```
@@ -53,7 +53,7 @@ from marks;
 **选择进入:**
 必须使用选择进入语句从学生表创建一个新表，如下所示:
 
-```
+```sql
 Select *
 from student;
 ```
@@ -64,7 +64,7 @@ from student;
 | 警察 | One hundred and thirteen | 东方马脑脊髓炎 |
 | [人名]克莱拉 | One hundred and fourteen | 技工 |
 
-```
+```sql
 Select name, rollno into temp_table #details 
 from student;
 ```
@@ -78,7 +78,7 @@ from student;
 **创建表:**
 可以使用创建表语句创建新表:
 
-```
+```sql
 Create table #details( name varchar2(30), rollno int);
 ```
 

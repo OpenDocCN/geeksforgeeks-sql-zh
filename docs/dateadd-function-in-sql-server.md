@@ -14,7 +14,7 @@ SQL Server 中的这个函数用来将一个时间或一个日期间隔加总到
 
 **语法:**
 
-```
+```sql
 DATEADD(interval, number, date)
 ```
 
@@ -24,7 +24,7 @@ DATEADD(interval, number, date)
 *   **间隔–**
     是要添加的指定时间或日期间隔。此外，区间的值可以如下给出。
 
-    ```
+    ```sql
     year, yyyy, yy   = Year, which is the specified year to be added.
     quarter, qq, q   = Quarter, which is the specified quarter to be added.
     month, mm, m     = month, which is the specified month to be added.
@@ -50,75 +50,75 @@ DATEADD(interval, number, date)
 **例-1 :**
 使用 DATEADD()函数，加上日期的年份部分，得到修改日期。
 
-```
+```sql
 SELECT DATEADD(year, 2, '2019/01/05');
 ```
 
 **输出:**
 
-```
+```sql
 2021-01-05 00:00:00.000
 ```
 
 **示例-2 :**
 使用 DATEADD()函数，添加日期的月份部分，得到修改日期。
 
-```
+```sql
 SELECT DATEADD(month, 11, '2019/01/05');
 
 ```
 
 **输出:**
 
-```
+```sql
 2019-12-05 00:00:00.000
 ```
 
 **示例-3 :**
 使用 DATEADD()函数，减去日期的月份部分，得到修改日期。
 
-```
+```sql
 SELECT DATEADD(month, -1, '2019/01/05');
 
 ```
 
 **输出:**
 
-```
+```sql
 2018-12-05 00:00:00.000
 ```
 
 **示例-4 :**
 使用 DATEADD()函数并添加日期中的天部分以获取修改日期。
 
-```
+```sql
 SELECT DATEADD(day, 32, '2015/04/14');
 ```
 
 **输出:**
 
-```
+```sql
 2015-05-16 00:00:00.000
 ```
 
 **例-5 :**
 使用 DATEADD()函数，加上日期的分钟部分，得到修改日期。
 
-```
+```sql
 SELECT DATEADD(minute, 6, '2015/04/14 09:55');
 
 ```
 
 **输出:**
 
-```
+```sql
 2015-04-14 10:01:00.000
 ```
 
 **示例-6 :**
 使用 DATEADD()函数，并使用变量添加日期的小时部分，以获取修改后的日期。
 
-```
+```sql
 DECLARE @number INT;
 SET @number = 8;
 SELECT 
@@ -127,14 +127,14 @@ DATEADD(hh, @number, '2021/01/02 08:50');
 
 **输出:**
 
-```
+```sql
 2021-01-02 16:50:00.000
 ```
 
 **示例-7 :**
 使用 DATEADD()函数并添加日期的第二部分使用变量获取修改日期。
 
-```
+```sql
 DECLARE @number INT;
 DECLARE @date VARCHAR(50);
 SET @number = 08;
@@ -145,7 +145,7 @@ DATEADD(ss, @number, @date);
 
 **输出:**
 
-```
+```sql
 2011-11-22 08:00:04.000
 ```
 

@@ -17,7 +17,7 @@
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE geeks;
 ```
 
@@ -27,7 +27,7 @@ CREATE DATABASE geeks;
 
 **查询:**
 
-```
+```sql
 USE geeks;
 ```
 
@@ -37,7 +37,7 @@ USE geeks;
 
 **查询(demo_table1):**
 
-```
+```sql
 CREATE TABLE demo_table1(
 ID int,
 NAME VARCHAR(20),
@@ -47,7 +47,7 @@ CITY VARCHAR(20) );
 
 **查询(demo_table2):**
 
-```
+```sql
 CREATE TABLE demo_table2(
 ID int,
 NAME VARCHAR(20),
@@ -58,7 +58,7 @@ AGE int);
 
 **查询(demo_table1):**
 
-```
+```sql
 INSERT INTO demo_table1 VALUES
 (11,'Romy',23,'Delhi'),
 (23,'Rahul',23,'Delhi'),
@@ -72,7 +72,7 @@ INSERT INTO demo_table1 VALUES
 
 **查询(demo_table2):**
 
-```
+```sql
 INSERT INTO demo_table2 VALUES
 (31,'Fanny',25 ),
 (77,'Prem', 30),
@@ -87,7 +87,7 @@ INSERT INTO demo_table2 VALUES
 
 **查询(demo_table1):**
 
-```
+```sql
 SELECT * FROM demo_table1;
 ```
 
@@ -97,7 +97,7 @@ SELECT * FROM demo_table1;
 
 **查询(demo_table2):**
 
-```
+```sql
 SELECT * FROM demo_table2;
 ```
 
@@ -113,7 +113,7 @@ SELECT * FROM demo_table2;
 
 **语法:**
 
-```
+```sql
 SELECT Column_name
 FROM table1 INNER JOIN
 table2 ON condition;
@@ -123,7 +123,7 @@ table2 ON condition;
 
 **查询:**
 
-```
+```sql
 SELECT demo_table1.ID
 FROM demo_table1
 INNER JOIN demo_table2
@@ -140,13 +140,13 @@ ON demo_table1.ID=demo_table2.ID;
 
 **语法:**
 
-```
+```sql
 SELECT column_name from table_name WHERE condition;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT demo_table1.ID
 FROM demo_table1, demo_table2
 WHERE demo_table1.ID=demo_table2.ID;

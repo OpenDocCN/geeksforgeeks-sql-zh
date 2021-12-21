@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 COALESCE(value_1, value_2, ...., value_n)
 ```
 
@@ -32,48 +32,48 @@ MySQL 聚结()函数返回表达式列表中的第一个非空值，如果列表
 
 **示例-1:** 在列表上实现 COMPETE()函数。
 
-```
+```sql
 SELECT COALESCE(NULL, 'A', 'B', NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 A 
 ```
 
 **示例-2:** 在列表上实现 COMPETE()函数。
 
-```
+```sql
 SELECT COALESCE('A', NULL, 'B', NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 A 
 ```
 
 **示例-3:** 在列表上实现 COMPETE()函数。
 
-```
+```sql
 SELECT COALESCE(NULL, 1, 2, 3, NULL, 'B', NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 1 
 ```
 
 **示例-4:** 在列表上实现 COMPETE()函数。
 
-```
+```sql
 SELECT COALESCE(NULL, NULL, 'geeksforgeeks', NULL); 
 ```
 
 **输出:**
 
-```
+```sql
 geeksforgeeks 
 ```

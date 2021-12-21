@@ -6,7 +6,7 @@
 
 **语法:**
 
-```
+```sql
 SELECT COLUMN_NAME_1, COLUMN_NAME_2, ....
  FROM TABLE_NAME WHERE CONDITION;
 ```
@@ -15,7 +15,7 @@ SELECT COLUMN_NAME_1, COLUMN_NAME_2, ....
 
 **查询:**
 
-```
+```sql
 CREATE DATABASE GeeksForGeeks
 ```
 
@@ -27,7 +27,7 @@ CREATE DATABASE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 USE GeeksForGeeks
 ```
 
@@ -39,7 +39,7 @@ USE GeeksForGeeks
 
 **查询:**
 
-```
+```sql
 CREATE TABLE EMPLOYEE(
 E_ID INT,
 E_NAME VARCHAR(6),
@@ -57,7 +57,7 @@ E_DEPT VARCHAR(5));
 
 **查询:**
 
-```
+```sql
 EXEC SP_COLUMNS 'EMPLOYEE';
 ```
 
@@ -69,7 +69,7 @@ EXEC SP_COLUMNS 'EMPLOYEE';
 
 **查询:**
 
-```
+```sql
 INSERT INTO EMPLOYEE VALUES(1,'KHUSHI',10000,17,'FEMALE','CSE');
 INSERT INTO EMPLOYEE VALUES(2,'KAMLA',20000,37,'FEMALE','EE');
 INSERT INTO EMPLOYEE VALUES(3,'GAUTAM',25000,27,'MALE','ME');
@@ -86,7 +86,7 @@ INSERT INTO EMPLOYEE VALUES(6,'MAYURI',42000,49,'FEMALE','CIVIL');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EMPLOYEE;
 ```
 
@@ -98,13 +98,13 @@ SELECT * FROM EMPLOYEE;
 
 **介于:**的语法
 
-```
+```sql
 ATTRIBUTE LOWER_LIMIT BETWEEN UPPER_LIMIT;
 ```
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EMPLOYEE WHERE E_AGE BETWEEN 20 AND 40;
 ```
 
@@ -116,7 +116,7 @@ SELECT * FROM EMPLOYEE WHERE E_AGE BETWEEN 20 AND 40;
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EMPLOYEE WHERE E_GENDER='FEMALE';
 ```
 
@@ -128,7 +128,7 @@ SELECT * FROM EMPLOYEE WHERE E_GENDER='FEMALE';
 
 **查询:**
 
-```
+```sql
 SELECT * FROM EMPLOYEE WHERE E_SALARY>40000 AND E_DEPT='CIVIL';
 ```
 

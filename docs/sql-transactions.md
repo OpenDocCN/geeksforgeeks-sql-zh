@@ -17,7 +17,7 @@
 
 **语法:**
 
-```
+```sql
 BEGIN TRANSACTION transaction_name ;
 ```
 
@@ -25,7 +25,7 @@ BEGIN TRANSACTION transaction_name ;
 
 **语法:**
 
-```
+```sql
 SET TRANSACTION [ READ WRITE | READ ONLY ];
 
 ```
@@ -34,7 +34,7 @@ SET TRANSACTION [ READ WRITE | READ ONLY ];
 
 **语法:**
 
-```
+```sql
 COMMIT;
 
 ```
@@ -46,7 +46,7 @@ COMMIT;
 下面是一个示例，它将从表中删除那些年龄= 20 的记录，然后提交数据库中的更改。
 **查询:**
 
-```
+```sql
 DELETE FROM Student WHERE AGE = 20;
 COMMIT;
 
@@ -60,7 +60,7 @@ COMMIT;
 **4。回滚:**如果任何 SQL 分组语句出现任何错误，则需要中止所有更改。逆转变化的过程称为**回退**。此命令只能用于撤消自上次发出 COMMIT 或 ROLLBACK 命令以来的事务。
 **语法:**
 
-```
+```sql
 ROLLBACK;
 
 ```
@@ -70,7 +70,7 @@ ROLLBACK;
 删除表中那些年龄= 20 的记录，然后回滚数据库中的更改。
 **查询:**
 
-```
+```sql
 DELETE FROM Student WHERE AGE = 20;
 ROLLBACK;
 
@@ -85,7 +85,7 @@ ROLLBACK;
 
 **保存点命令语法:**
 
-```
+```sql
 SAVEPOINT SAVEPOINT_NAME;
 
 ```
@@ -94,7 +94,7 @@ SAVEPOINT SAVEPOINT_NAME;
 一般来说，ROLLBACK 用于撤销一组事务。
 **回滚到保存点命令的语法:**
 
-```
+```sql
 ROLLBACK TO SAVEPOINT_NAME;
 
 ```
@@ -105,7 +105,7 @@ ROLLBACK TO SAVEPOINT_NAME;
 删除表中那些年龄= 20 的记录，然后通过保留保存点来回滚数据库中的更改。
 **查询:**
 
-```
+```sql
 SAVEPOINT SP1;
 //Savepoint created.
 DELETE FROM Student WHERE AGE = 20;
@@ -124,7 +124,7 @@ SAVEPOINT SP2;
 删除已经发生，让我们假设您已经改变了主意，并决定回滚到删除之前您标识为 SP1 的保存点。
 删除被该语句撤销，
 
-```
+```sql
 ROLLBACK TO SP1;
 //Rollback completed.
 
@@ -135,7 +135,7 @@ ROLLBACK TO SP1;
 **6。释放保存点:-** 此命令用于删除您创建的保存点。
 **语法:**
 
-```
+```sql
 RELEASE SAVEPOINT SAVEPOINT_NAME
 
 ```

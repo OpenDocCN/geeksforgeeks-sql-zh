@@ -7,42 +7,42 @@
 
 *   **NOW():** Returns the current date and time. Example:
 
-    ```
+    ```sql
     SELECT NOW();
 
     ```
 
     输出:
 
-    ```
+    ```sql
     2017-01-13 08:03:52
 
     ```
 
 *   **CURDATE()**: Returns the current date. Example:
 
-    ```
+    ```sql
     SELECT CURDATE();
 
     ```
 
     输出:
 
-    ```
+    ```sql
     2017-01-13
 
     ```
 
 *   **CURTIME(): **Returns the current time. Example:
 
-    ```
+    ```sql
     SELECT CURTIME();
 
     ```
 
     输出:
 
-    ```
+    ```sql
     08:05:15
 
     ```
@@ -54,7 +54,7 @@
     | --- | --- | --- |
     | Four thousand one hundred and twenty | 我在练习 | 1996-09-26 16:44:15.581 |
 
-    ```
+    ```sql
     SELECT Name, DATE(BirthTime) AS BirthDate FROM Test;
 
     ```
@@ -67,7 +67,7 @@
 
 *   **EXTRACT():** Returns a single part of a date/time. Syntax:
 
-    ```
+    ```sql
     EXTRACT(unit FROM date);
 
     ```
@@ -85,7 +85,7 @@
 
     **查询**
 
-    *   ```
+    *   ```sql
         SELECT Name, Extract(DAY FROM BirthTime) AS BirthDay FROM Test;
 
         ```
@@ -96,7 +96,7 @@
         | --- | --- |
         | 我在练习 | Twenty-six |
 
-    *   ```
+    *   ```sql
         SELECT Name, Extract(YEAR FROM BirthTime) AS BirthYear FROM Test;
 
         ```
@@ -107,7 +107,7 @@
         | --- | --- |
         | 我在练习 | One thousand nine hundred and ninety-six |
 
-    *   ```
+    *   ```sql
         SELECT Name, Extract(SECOND FROM BirthTime) AS BirthSecond FROM Test;
 
         ```
@@ -121,7 +121,7 @@
 *   **DATE_ADD() :** Adds a specified time interval to a date
     Syntax:
 
-    ```
+    ```sql
     DATE_ADD(date, INTERVAL expr type);
 
     ```
@@ -139,7 +139,7 @@
 
     **查询**
 
-    *   ```
+    *   ```sql
         SELECT Name, DATE_ADD(BirthTime, INTERVAL 1 YEAR) AS BirthTimeModified FROM Test;
 
         ```
@@ -150,7 +150,7 @@
         | --- | --- |
         | 我在练习 | 1997-09-26 16:44:15.581 |
 
-    *   ```
+    *   ```sql
         SELECT Name, DATE_ADD(BirthTime, INTERVAL 30 DAY) AS BirthDayModified FROM Test;
 
         ```
@@ -161,7 +161,7 @@
         | --- | --- |
         | 我在练习 | 1996-10-26 16:44:15.581 |
 
-    *   ```
+    *   ```sql
         SELECT Name, DATE_ADD(BirthTime, INTERVAL 4 HOUR) AS BirthHourModified FROM Test;
 
         ```
@@ -174,7 +174,7 @@
 
         *   **DATE_SUB():** 从日期中减去指定的时间间隔。DATE_SUB 的语法与 DATE_ADD 相同，不同的是 DATE_SUB 用于减去给定的日期间隔。*   **DATEDIFF(): **Returns the number of days between two dates.Syntax:
 
-    ```
+    ```sql
     DATEDIFF(date1, date2);
     date1 & date2- date/time expression
 
@@ -182,7 +182,7 @@
 
     示例:
 
-    ```
+    ```sql
     SELECT DATEDIFF('2017-01-13','2017-01-03') AS DateDiff;
 
     ```
@@ -195,7 +195,7 @@
 
     *   **DATE_FORMAT():** Displays date/time data in different formats.Syntax:
 
-    ```
+    ```sql
     DATE_FORMAT(date,format);
 
     ```
@@ -236,14 +236,14 @@
 
     示例:
 
-    ```
+    ```sql
     DATE_FORMAT(NOW(),'%d %b %y')
 
     ```
 
     结果:
 
-    ```
+    ```sql
     13 Jan 17
 
     ```

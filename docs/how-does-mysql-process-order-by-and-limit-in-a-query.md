@@ -45,7 +45,7 @@ Limit 子句接受一个或两个参数，每当指定两个参数时，第一�
 
 **查询:**
 
-```
+```sql
 -- create
 CREATE TABLE Student (
   Id INTEGER PRIMARY KEY,
@@ -59,7 +59,7 @@ CREATE TABLE Student (
 
 **查询:**
 
-```
+```sql
 -- insert
 INSERT INTO Student VALUES (55, 'Bhargavi', '81','civil');
 INSERT INTO Student VALUES (56, 'Nikita', '75','IT');
@@ -75,7 +75,7 @@ INSERT INTO Student VALUES (58, 'Shreya', '94','civil');
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student ORDER BY Score DESC LIMIT 2;
 ```
 
@@ -91,7 +91,7 @@ LIMIT 运算符可用于上述情况，我们需要找到得分最高的前 2 �
 
 **查询:**
 
-```
+```sql
 SELECT * FROM Student WHERE Branch != 'Civil' ORDER BY Score  LIMIT 2;
 ```
 

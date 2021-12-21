@@ -6,7 +6,7 @@
 
 **语法:**创建过程
 
-```
+```sql
 CREATE or REPLACE PROCEDURE name(parameters)
 IS
 variables;
@@ -27,7 +27,7 @@ END;
 **示例:**
 想象一个名为的表，其中 emp_table 存储在数据库中。我们正在编写一个程序，将员工的工资更新为 1000。
 
-```
+```sql
 CREATE or REPLACE PROCEDURE INC_SAL(eno IN NUMBER, up_sal OUT NUMBER)
 IS
 BEGIN
@@ -39,24 +39,24 @@ END;
 
 *   声明一个变量来存储来自过程的值:
 
-```
+```sql
 VARIABLE v NUMBER;
 ```
 
 *   程序的执行:
 
-```
+```sql
 EXECUTE INC_SAL(1002, :v);
 ```
 
 *   要检查更新的薪资，请使用 SELECT 语句:
 
-```
+```sql
  SELECT * FROM emp_table WHERE emp_no = 1002;
 ```
 
 *   或使用打印语句:
 
-```
+```sql
 PRINT :v
 ```

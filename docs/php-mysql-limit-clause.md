@@ -11,7 +11,7 @@ Limit 子句接受一个或两个参数，每当指定两个参数时，第一�
 
 **语法:**
 
-```
+```sql
 SELECT column1, column2, ...
 FROM table_name
 LIMIT offset, count;
@@ -25,14 +25,14 @@ LIMIT offset, count;
 
 要从表“数据”中检索前三行，我们将使用以下查询:
 
-```
+```sql
 SELECT * FROM Data LIMIT 3;
 
 ```
 
 要从表“数据”中检索第 2-3 行(含)，我们将使用以下查询:
 
-```
+```sql
 SELECT * FROM Data LIMIT 1, 2;
 
 ```
@@ -41,7 +41,7 @@ SELECT * FROM Data LIMIT 1, 2;
 
 1.  **Limit Clause using Procedural Method**
 
-    ```
+    ```sql
     < ? php $link = mysqli_connect("localhost", "root", "", "Mydb");
 
     if ($link == = false) {
@@ -89,7 +89,7 @@ SELECT * FROM Data LIMIT 1, 2;
     3.  while 循环用于循环遍历表“数据”的所有行。
 2.  **Limit Clause using Object Oriented Method**
 
-    ```
+    ```sql
     < ? php $mysqli = new mysqli("localhost", "root", "", "Mydb");
 
     if ($mysqli == = false) {
@@ -132,7 +132,7 @@ SELECT * FROM Data LIMIT 1, 2;
 
 3.  **Limit Clause using PDO Method**
 
-    ```
+    ```sql
     < ? php try {
         $pdo = new PDO("mysql:host=localhost;dbname=Mydb", "root", "");
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

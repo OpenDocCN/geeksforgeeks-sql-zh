@@ -8,7 +8,7 @@ TRANSLATE 函数接受三个参数 input_string、string_to_replace 和 replacem
 
 **语法:**
 
-```
+```sql
 TRANSLATE( input_string, string_to_replace, replacement_string )
 ```
 
@@ -31,7 +31,7 @@ PLSQL 中的 TRANSLATE 函数返回一个字符串值。
 
 **示例-1:** 将所有三个参数传递给 TRANSLATE 函数，以替换 input_string 中的连续字母。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Giiksforgiiks';
 
@@ -43,13 +43,13 @@ END;
 
 **输出:**
 
-```
+```sql
 Geeksforgeeks 
 ```
 
 **示例-2:** 将所有三个参数传递给 TRANSLATE 函数，以替换 input_string 中的非连续字母。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -61,13 +61,13 @@ END;
 
 **输出:**
 
-```
+```sql
 aeebdfocgeebd 
 ```
 
 **示例-3:** 将所有三个参数传递给 TRANSLATE 函数，以替换 input_string 中的大小写字母。
 
-```
+```sql
 DECLARE 
    Test_String string(25) := 'Geeksforgeeks';
 
@@ -79,7 +79,7 @@ END;
 
 **输出:**
 
-```
+```sql
 Aeeksforaeeks 
 ```
 

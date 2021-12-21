@@ -33,7 +33,7 @@
 
 **示例查询和输出:**
 
-```
+```sql
 SELECT SupplierID, Name, Address
 FROM Suppliers
 WHERE Name LIKE 'Ca%';

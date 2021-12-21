@@ -8,7 +8,7 @@
 给定一个字符串，任务是计算给定字符串中字符和单词的数量。
 **例:**
 
-```
+```sql
 Input: str = 'Geeks for geeks '
 Output: Characters = 13 , Words = 3
 
@@ -20,7 +20,7 @@ Output: Characters = 22, Words = 4
 **方法**是保持两个计数器变量，即一个用于字符，另一个用于单词。开始逐个遍历字符并增加计数，当有空格时，增加字数。
 **下面是需要的实现:**
 
-```
+```sql
 DECLARE 
     -- Declare required variables 
     str       VARCHAR2(40) := 'Geeks for Geeks'; 
@@ -51,7 +51,7 @@ END; 
 
 **输出:**
 
-```
+```sql
 No. of characters:15
 No. of words: 3
 

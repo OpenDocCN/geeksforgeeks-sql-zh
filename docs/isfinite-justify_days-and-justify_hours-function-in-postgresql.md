@@ -11,7 +11,7 @@ PostgreSQL 中的这个函数有助于测试有限的日期、时间戳和时间
 
 **语法–**
 
-```
+```sql
 isfinite(date)
 isfinite(timestamp)
 isfinite(interval)
@@ -30,7 +30,7 @@ isfinite(interval)
 **例 1–**
 使用日期“2021-09-13”检查 IsFinite()函数的工作情况
 
-```
+```sql
 SELECT isfinite(date '2021-09-13');
 ```
 
@@ -40,7 +40,7 @@ SELECT isfinite(date '2021-09-13');
 **例 2–**
 使用时间戳“2021-09-13 12:15:05”检查 IsFinite()函数的工作情况
 
-```
+```sql
 SELECT isfinite(timestamp '2021-09-13 12:15:05');
 ```
 
@@ -50,7 +50,7 @@ SELECT isfinite(timestamp '2021-09-13 12:15:05');
 **示例 3–**
 使用间隔“5 小时 15 分钟”检查 IsFinite()功能的工作情况
 
-```
+```sql
 SELECT isfinite(interval '5 hours 15 minutes');
 ```
 
@@ -60,7 +60,7 @@ SELECT isfinite(interval '5 hours 15 minutes');
 **示例 4–**
 使用“无穷大”常数检查 IsFinite()函数的工作情况
 
-```
+```sql
 SELECT isfinite('infinity'::timestamp);
 ```
 
@@ -70,7 +70,7 @@ SELECT isfinite('infinity'::timestamp);
 **示例 5–**
 使用“-infinite”(负无穷大)常数检查 IsFinite()函数的工作情况
 
-```
+```sql
 SELECT isfinite('-infinity'::timestamp);
 ```
 
@@ -82,7 +82,7 @@ PostgreSQL 中的该函数有助于调整间隔值，即该函数可以将 30 �
 
 **语法–**
 
-```
+```sql
 justify_days(interval)
 ```
 
@@ -97,7 +97,7 @@ justify_days(interval)
 **示例 1–**
 使用间隔“90 天”检查的工作情况
 
-```
+```sql
 SELECT justify_days(interval '90 days');
 ```
 
@@ -108,7 +108,7 @@ SELECT justify_days(interval '90 days');
 当间隔不是 30 的完美倍数
 时，检查狡辩 _days ()功能的工作情况，以间隔为 35 天。
 
-```
+```sql
 SELECT justify_days(interval '35 days');
 ```
 
@@ -118,7 +118,7 @@ SELECT justify_days(interval '35 days');
 **示例 3–**
 当间隔小于 30 天时，检查调整 _ 天()功能的工作情况
 
-```
+```sql
 SELECT justify_days(interval '14 days');
 ```
 
@@ -129,7 +129,7 @@ SELECT justify_days(interval '14 days');
 检查的工作情况证明 _ 天()功能当时间也随着流逝时间隔
 1。以 50 天 40 分钟为间隔。
 
-```
+```sql
 SELECT justify_days(interval '50 days 40 minutes');
 ```
 
@@ -137,7 +137,7 @@ SELECT justify_days(interval '50 days 40 minutes');
 
 2。以 160 天 2 小时 40 分 59 秒为间隔。
 
-```
+```sql
 SELECT justify_days(interval '160 days 2 hours 40 minutes 59 seconds');
 ```
 
@@ -149,7 +149,7 @@ PostgreSQL 中的这个函数有助于调整间隔值，即该函数可以将 24
 
 **语法–**
 
-```
+```sql
 justify_hours(interval)
 ```
 
@@ -164,7 +164,7 @@ justify_hours(interval)
 **示例 1–**
 使用间隔“72 小时”检查的工作情况
 
-```
+```sql
 SELECT justify_hours(interval '72 hours');
 ```
 
@@ -174,7 +174,7 @@ SELECT justify_hours(interval '72 hours');
 **示例 2–**
 当间隔小于 24 小时时，检查调整 _ 小时()功能的工作
 
-```
+```sql
 SELECT justify_hours(interval '14 hours');
 ```
 
@@ -185,7 +185,7 @@ SELECT justify_hours(interval '14 hours');
 当间隔处于形式时，检查调整 _ 小时()功能的工作情况。
 1。以 5.53 个月为间隔。
 
-```
+```sql
 SELECT justify_hours(interval '5.53 months');
 ```
 
@@ -193,7 +193,7 @@ SELECT justify_hours(interval '5.53 months');
 
 2。以间隔为 300 小时 58 分钟。
 
-```
+```sql
 SELECT justify_hours(interval '300 hours 58 minutes');
 ```
 
@@ -201,7 +201,7 @@ SELECT justify_hours(interval '300 hours 58 minutes');
 
 3。以间隔为 3000 小时 10 分 20 秒。
 
-```
+```sql
 SELECT justify_hours(interval '3000 hours 10 minutes 20 seconds');
 ```
 

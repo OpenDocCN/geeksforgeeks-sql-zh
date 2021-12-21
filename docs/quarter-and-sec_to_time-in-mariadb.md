@@ -8,13 +8,13 @@
 
 **语法:**
 
-```
+```sql
 QUARTER( date_value )
 ```
 
 **功能范围值:**
 
-```
+```sql
 1 year = 12/3 = 4 Quarter 
 Jan to Mar
 Apr to Jun
@@ -38,25 +38,25 @@ Oct to Nov
 
 **示例-1 :**
 
-```
+```sql
 SELECT QUARTER('2020-02-17');
 ```
 
 **输出:**
 
-```
+```sql
 1
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT QUARTER('2020-05-17 15:21:05');
 ```
 
 **输出:**
 
-```
+```sql
 2
 ```
 
@@ -64,13 +64,13 @@ SELECT QUARTER('2020-05-17 15:21:05');
 
 Curdate()函数将返回系统日期的当前季度
 
-```
+```sql
 SELECT QUARTER(CURDATE());
 ```
 
 **输出:**
 
-```
+```sql
 4
 ```
 
@@ -80,13 +80,13 @@ SELECT QUARTER(CURDATE());
 
 **语法:**
 
-```
+```sql
 SEC_TO_TIME( seconds )
 ```
 
 **函数返回值:**
 
-```
+```sql
 Range : '-838:59:59' to '838:59:59'
 ```
 
@@ -106,36 +106,36 @@ Range : '-838:59:59' to '838:59:59'
 
 **示例-1 :**
 
-```
+```sql
 SELECT SEC_TO_TIME(5);
 ```
 
 **输出:**
 
-```
+```sql
 '00:00:05'
 ```
 
 **示例-2 :**
 
-```
+```sql
 SELECT SEC_TO_TIME(18700);
 ```
 
 **输出:**
 
-```
+```sql
 '05:11:40'
 ```
 
 **示例-3 :**
 
-```
+```sql
 SELECT SEC_TO_TIME(-999);
 ```
 
 **输出:**
 
-```
+```sql
 '-00:16:39'
 ```

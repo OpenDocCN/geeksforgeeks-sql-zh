@@ -7,7 +7,7 @@ MySQL 中的这个函数用来检查指定的字符串是否是有效的 IPV6 �
 
 **语法:**
 
-```
+```sql
 IS_IPV6(expr)
 ```
 
@@ -22,7 +22,7 @@ IS_IPV6(expr)
 **示例-1 :**
 使用 IS_IPV6 函数检查给定地址是否有效。
 
-```
+```sql
 SELECT IS_IPV6('10.4.2.256') 
 AS ValidOrNot;
 ```
@@ -37,7 +37,7 @@ AS ValidOrNot;
 **示例-2 :**
 使用 IS_IPV6 函数检查给定地址是否有效。
 
-```
+```sql
 SELECT IS_IPV6('::2') 
 AS ValidOrNot;
 ```
@@ -53,7 +53,7 @@ AS ValidOrNot;
 **示例-3 :**
 使用 IS_IPV6 功能检查 IPv4 地址是否为有效的 IPv6 地址。
 
-```
+```sql
 SELECT IS_IPV6('2001:0db8:85a3:0000:0000:8a2e:0370:7334')  
 IPv6ValidOrNot,
 IS_IPV4('2001:0db8:85a3:0000:0000:8a2e:0370:7334') 

@@ -8,7 +8,7 @@
 
 **语法:**
 
-```
+```sql
 select select_list 
 from table_name 
 group by column_1 column_2 
@@ -31,7 +31,7 @@ group by column_1 column_2
 
 In case a user wants to group data according to the roll number, it can be done as shown below-
 
-```
+```sql
 select name
 from student 
 group by roll number 
@@ -69,7 +69,7 @@ group by roll number
 
 **使用排序依据和分组依据的查询–**
 
-```
+```sql
 select  roll number
 from student 
 order by name ASC 
@@ -90,7 +90,7 @@ order by name ASC
 
 </center>
 
-```
+```sql
 select roll number
 from student 
 group by  name 
@@ -113,7 +113,7 @@ group by  name
 
 从例子中，我们可以清楚地注意到 group by 子句和 order by 子句之间的区别。如果是按顺序排列，则名称按字母顺序(A-Z)排列。如果用户必须从 Z-A 安排，可以按如下方式进行。
 
-```
+```sql
 select 
 roll number 
 from 

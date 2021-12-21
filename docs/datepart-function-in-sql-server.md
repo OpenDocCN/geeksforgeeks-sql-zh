@@ -15,7 +15,7 @@
 
 **语法:**
 
-```
+```sql
 DATEPART(interval, date)
 ```
 
@@ -25,7 +25,7 @@ DATEPART(interval, date)
 *   **区间–**
     是要退回的指定部分。此外，区间的值可以如下给出。
 
-```
+```sql
 year, yyyy, yy      = Year, which is the specified year.
 quarter, qq, q      = Quarter, which is the specified quarter.
 month, mm, m        = month, which is the specified month.
@@ -49,59 +49,59 @@ millisecond, ms     = Millisecond, which is the specified millisecond.
 
 使用 DATEPART()函数并获取指定日期的年份部分。
 
-```
+```sql
 SELECT DATEPART(year, '2017/08/25');
 ```
 
 **输出:**
 
-```
+```sql
 2017
 ```
 
 **示例-2 :**
 使用 DATEPART()函数，获取指定日期的月份部分。
 
-```
+```sql
 SELECT DATEPART(month, '2017/08/25');
 ```
 
 **输出:**
 
-```
+```sql
 8
 ```
 
 **示例-3 :**
 使用 DATEPART()函数，获取指定日期的日部分。
 
-```
+```sql
 SELECT DATEPART(day, '2017/08/25');
 ```
 
 **输出:**
 
-```
+```sql
 25
 ```
 
 **示例-4 :**
 使用 DATEPART()函数并获取指定日期的小时部分，其中也包括时间。
 
-```
+```sql
 SELECT DATEPART(hour, '2021/01/06 05:30');
 ```
 
 **输出:**
 
-```
+```sql
 5
 ```
 
 **示例-5 :**
 使用 DATEPART()函数，并使用变量获取指定日期的第二部分，其中包括时间。
 
-```
+```sql
 DECLARE @date VARCHAR(50);
 SET @date = '2019/06/05 07:37:54';
 SELECT DATEPART(second, @date);
@@ -109,7 +109,7 @@ SELECT DATEPART(second, @date);
 
 **输出:**
 
-```
+```sql
 54
 ```
 

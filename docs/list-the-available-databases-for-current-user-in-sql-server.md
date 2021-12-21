@@ -8,7 +8,7 @@
 
 让我们看一个脚本，它可以列出当前登录用户可以访问的所有数据库–
 
-```
+```sql
 SELECT Name, HAS_DBACCESS(Name) AS HasAcces FROM sys.databases
 ```
 
@@ -30,13 +30,13 @@ SELECT Name, HAS_DBACCESS(Name) AS HasAcces FROM sys.databases
 
 **查询以检查我们是否可以访问特定的数据库–**
 
-```
+```sql
 SELECT HAS_DBACCESS('databasename') AS HasAccess
 ```
 
 **示例-1 :**
 
-```
+```sql
 SELECT HAS_DBACCESS('geekdb') AS HasAccess
 ```
 
@@ -62,7 +62,7 @@ SELECT HAS_DBACCESS('geekdb') AS HasAccess
 
 让我们检查一下当前用户在哪里可以访问“SQL _ DBA1”–
 
-```
+```sql
 SELECT HAS_DBACCESS('SQL_DBA1') AS HasAccess
 ```
 
